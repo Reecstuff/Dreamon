@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3084d819b20c6849aa800dea6e861e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clickAudio: {fileID: 8300000, guid: 36de40cf37918d34fb179061508c6ccd, type: 3}
+  clickAudio: {fileID: 8300000, guid: 860c9b60e9ee4b946b42b04f07807196, type: 3}
   hoverAudio: {fileID: 8300000, guid: 4207cafd1aa1c7b4e9d6728a42ee425e, type: 3}
 --- !u!1 &8675673900980995803
 GameObject:

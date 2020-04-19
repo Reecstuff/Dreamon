@@ -17,7 +17,7 @@ public class ButtonSound : MonoBehaviour, IPointerEnterHandler, ISelectHandler
 
     void Start()
     {
-        InitialiseValues();
+        Initialise();
     }
 
 
@@ -32,7 +32,7 @@ public class ButtonSound : MonoBehaviour, IPointerEnterHandler, ISelectHandler
     }
 
 
-    void InitialiseValues()
+    void Initialise()
     {
         source = GetComponent<AudioSource>();
         GetComponent<Button>().onClick.AddListener(() => ButtonClicked());
@@ -43,8 +43,7 @@ public class ButtonSound : MonoBehaviour, IPointerEnterHandler, ISelectHandler
 
     void ButtonClicked()
     {
-        source.clip = clickAudio;
-        source.Play();
+        AudioManager.Instance?.TakeAudioToNextScene(clickAudio);
     }
 
     void OverButton()
@@ -52,6 +51,4 @@ public class ButtonSound : MonoBehaviour, IPointerEnterHandler, ISelectHandler
         source.clip = hoverAudio;
         source.Play();
     }
-
-
 }
