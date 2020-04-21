@@ -45,6 +45,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d996e178499322a49a2cb959a01371bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMixer: {fileID: 24100000, guid: aaf1ef32f3fd50c4d9bb9cea86e36964, type: 2}
+  volumeStrings:
+  - MasterVolume
+  - MusicVolume
+  - FXVolume
+  - CharacterVolume
 --- !u!82 &7702697048992747531
 AudioSource:
   m_ObjectHideFlags: 0
