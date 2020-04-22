@@ -23,11 +23,13 @@ public class OutlineObject : MonoBehaviour
 
     private void OnMouseEnter()
     {
+        // Take this to Interactable
         SwitchOutlined(true);
     }
 
-    private void OnMouseExit()
+    void OnMouseExit()
     {
+        // Take this to Interactable
         SwitchOutlined(false);
     }
 
