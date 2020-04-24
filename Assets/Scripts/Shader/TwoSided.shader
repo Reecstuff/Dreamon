@@ -55,7 +55,7 @@ Shader "CustomShader/TwoSided"
     {
         Tags { "RenderType"="Opaque" "PerformanceChecks"="False" }
         LOD 300
-        Cull Back
+        Cull Front
 
         // ------------------------------------------------------------------
         //  Base forward pass (directional light, emission, lightmaps, ...)
@@ -225,7 +225,7 @@ Shader "CustomShader/TwoSided"
     {
         Tags { "RenderType"="Opaque" "PerformanceChecks"="False" }
         LOD 150
-        Cull Back
+        Cull Front
         // ------------------------------------------------------------------
         //  Base forward pass (directional light, emission, lightmaps, ...)
         Pass
@@ -347,7 +347,7 @@ Shader "CustomShader/TwoSided"
     {
         Tags { "RenderType"="Opaque" "PerformanceChecks"="False" }
         LOD 300
-        Cull Front
+        Cull Back
 
         // ------------------------------------------------------------------
         //  Base forward pass (directional light, emission, lightmaps, ...)
@@ -517,7 +517,7 @@ Shader "CustomShader/TwoSided"
     {
         Tags { "RenderType"="Opaque" "PerformanceChecks"="False" }
         LOD 150
-        Cull Front
+        Cull Back
         // ------------------------------------------------------------------
         //  Base forward pass (directional light, emission, lightmaps, ...)
         Pass
