@@ -225,6 +225,7 @@ Shader "Custom/TwoSided"
         {
             Tags { "RenderType" = "Opaque" "PerformanceChecks" = "False" }
             LOD 150
+            Cull Off
 
             // ------------------------------------------------------------------
             //  Base forward pass (directional light, emission, lightmaps, ...)
