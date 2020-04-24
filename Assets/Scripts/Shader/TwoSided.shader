@@ -61,7 +61,7 @@ Shader "CustomShader/TwoSided"
         Pass
         {
             Name "FORWARD"
-            Tags { "LightMode" = "Deferred" }
+            Tags { "LightMode" = "ForwardBase" }
 
             Blend [_SrcBlend] [_DstBlend]
             ZWrite [_ZWrite]
@@ -230,7 +230,7 @@ Shader "CustomShader/TwoSided"
         Pass
         {
             Name "FORWARD"
-            Tags { "LightMode" = "Deferred" }
+            Tags { "LightMode" = "ForwardBase" }
 
             Blend [_SrcBlend] [_DstBlend]
             ZWrite [_ZWrite]
