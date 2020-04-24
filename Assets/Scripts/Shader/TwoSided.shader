@@ -55,7 +55,7 @@ Shader "Custom/TwoSided"
         {
             Tags { "RenderType" = "Opaque" "PerformanceChecks" = "False" }
             LOD 300
-            Cull Off
+            Cull Back
 
             // ------------------------------------------------------------------
             //  Base forward pass (directional light, emission, lightmaps, ...)
@@ -242,7 +242,7 @@ Shader "Custom/TwoSided"
                 Name "META"
                 Tags { "LightMode" = "Meta" }
 
-                Cull Off
+                Cull off
 
                 CGPROGRAM
                 #pragma vertex vert_meta
@@ -263,7 +263,7 @@ Shader "Custom/TwoSided"
         {
             Tags { "RenderType" = "Opaque" "PerformanceChecks" = "False" }
             LOD 150
-            Cull Off
+            Cull Back
 
             // ------------------------------------------------------------------
             //  Base forward pass (directional light, emission, lightmaps, ...)
