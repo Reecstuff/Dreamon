@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -18,10 +19,6 @@ public class AudioManager : MonoBehaviour
     private void Awake()
     {
         MakeSingelton();
-    }
-
-    private void Start()
-    {
         Initialise();
     }
 
@@ -84,5 +81,18 @@ public class AudioManager : MonoBehaviour
             volume = -80;
 
         mainMixer.SetFloat(volumeStrings[index], volume);
+    }
+
+    /// <summary>
+    /// Set the current Backgroundmusic
+    /// </summary>
+    /// <param name="clip">New Backgroundmusic</param>
+    public void SetBackGroundMusic(AudioClip clip)
+    {
+        if(!backgroundMusic.clip || !backgroundMusic.clip.Equals(clip))
+        {
+            backgroundMusic.clip = clip;
+            backgroundMusic.Play();
+        }
     }
 }

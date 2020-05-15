@@ -95,7 +95,21 @@ public class OptionMenu : MonoBehaviour
         {
             if(volumeSlider[i])
             {
-                volumeSlider[i].onValueChanged.AddListener((float volume) => SetVolume(i, volume));
+                switch(i)
+                {
+                    case 0:
+                        volumeSlider[i].onValueChanged.AddListener((float volume) => SetMasterVolume(volume));
+                        break;
+                    case 1:
+                        volumeSlider[i].onValueChanged.AddListener((float volume) => SetMusicVolume(volume));
+                        break;
+                    case 2:
+                        volumeSlider[i].onValueChanged.AddListener((float volume) => SetFXVolume(volume));
+                        break;
+                    case 3:
+                        volumeSlider[i].onValueChanged.AddListener((float volume) => SetCharacterVolume(volume));
+                        break;
+                }
             }
 
             GetVolume(i);
@@ -119,9 +133,34 @@ public class OptionMenu : MonoBehaviour
     /// <summary>
     /// Set the Volume on changed value
     /// </summary>
-    public void SetVolume(int index, float volume)
+    public void SetMasterVolume(float volume)
     {
-        AudioManager.Instance.SetCurrentVolume(index, volume);
+        AudioManager.Instance.SetCurrentVolume(0, volume);
+    }
+
+
+    /// <summary>
+    /// Set the Volume on changed value
+    /// </summary>
+    public void SetMusicVolume(float volume)
+    {
+        AudioManager.Instance.SetCurrentVolume(1, volume);
+    }
+
+    /// <summary>
+    /// Set the Volume on changed value
+    /// </summary>
+    public void SetFXVolume(float volume)
+    {
+        AudioManager.Instance.SetCurrentVolume(2, volume);
+    }
+
+    /// <summary>
+    /// Set the Volume on changed value
+    /// </summary>
+    public void SetCharacterVolume(float volume)
+    {
+        AudioManager.Instance.SetCurrentVolume(3, volume);
     }
 
     /// <summary>
