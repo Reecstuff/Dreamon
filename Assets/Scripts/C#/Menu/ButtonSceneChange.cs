@@ -11,18 +11,18 @@ using UnityEngine.UI;
 public class ButtonSceneChange : MonoBehaviour
 {
     [SerializeField]
-    string nextScene;
+    protected string nextScene;
 
-    void Start()
+    protected void Start()
     {
         GetComponent<Button>().onClick.AddListener(() => ChangeScene());
     }
 
-    void ChangeScene()
+    protected void ChangeScene()
     {
         if(!string.IsNullOrEmpty(nextScene))
         {
-            SceneManager.LoadScene(nextScene);
+            SceneLoading();
         }
         else
         {
@@ -34,5 +34,8 @@ public class ButtonSceneChange : MonoBehaviour
         }
     }
 
-    
+    protected virtual void SceneLoading()
+    {
+        SceneManager.LoadScene(nextScene);
+    }
 }

@@ -95,4 +95,9 @@ public class AudioManager : MonoBehaviour
             backgroundMusic.Play();
         }
     }
+
+    public void PitchManual(float pitch)
+    {
+        backgroundMusic.pitch = pitch;
+    }
 }
