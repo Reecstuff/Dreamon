@@ -1,12 +1,19 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
 {
-    public Text nameText;
-    public Text dialogueText;
+    [SerializeField]
+    float timeForTextInSeconds = 0.5f;
+
+
+    public TextMeshProUGUI nameText;
+    public TextMeshProUGUI dialogueText;
 
     public Animator animator;
 
@@ -16,40 +23,48 @@ public class DialogueManager : MonoBehaviour
     public GameObject endButton;
 
     public GameObject decisions;
-    public GameObject[] decisionsButtons = new GameObject[3];
+    public Button[] decisionsButtons = new Button[3];
+
 
     bool end;
 
     public int selectedOpinion;
 
+    /// <summary>
+    /// Save the size of one TextLine
+    /// </summary>
+    float oneTextLineSizeY = 0;
+
     void Start()
     {
         sentences = new Queue<string>();
+        oneTextLineSizeY = nameText.GetPreferredValues("0").y;
     }
 
-    public void StartDialogue (Dialogue dialogue)
+    // Set DialogTrigger instead of only Dialog
+    public void StartDialogue (DialogueTrigger currentTrigger)
     {
         continueButton.SetActive(true);
         decisions.SetActive(false);
 
-        Dialogue.Opinion opinion = dialogue.opinion[0];
+        Dialogue.Opinion opinion = currentTrigger.dialogue.opinion[0];
 
         if (opinion.decisions.Length != decisionsButtons.Length && opinion.decisions.Length != 0)
         {
             if (opinion.decisions.Length == 2)
             {
-                decisionsButtons[2].SetActive(false);
+                decisionsButtons[2].gameObject.SetActive(false);
             }
             if (opinion.decisions.Length == 1)
             {
-                decisionsButtons[1].SetActive(false);
-                decisionsButtons[2].SetActive(false);
+                decisionsButtons[1].gameObject.SetActive(false);
+                decisionsButtons[2].gameObject.SetActive(false);
             }
         }
 
         for (int i = 0; i < opinion.decisions.Length; i++)
         {
-            decisionsButtons[i].GetComponentInChildren<Text>().text = opinion.decisions[i].ToString();
+            decisionsButtons[i].GetComponentInChildren<TextMeshProUGUI>().SetText(opinion.decisions[i].ToString());
 
             decisionsButtons[i].GetComponent<DecisionButtons>().decisionNumber = opinion.nextDecisions[i];
         }
@@ -67,6 +82,14 @@ public class DialogueManager : MonoBehaviour
 
         end = opinion.endSentence;
 
+        // SetupButtons to select new Opinion
+        for (int i = 0; i < decisionsButtons.Length; i++)
+        {
+            decisionsButtons[i].onClick.RemoveListener(() => SelectOpinion(currentTrigger.dialogue));
+            decisionsButtons[i].onClick.AddListener(() => SelectOpinion(currentTrigger.dialogue));
+
+        }
+
         DisplayNextSentence();
     }
 
@@ -81,18 +104,20 @@ public class DialogueManager : MonoBehaviour
         {
             if (opinion.decisions.Length == 2)
             {
-                decisionsButtons[2].SetActive(false);
+                decisionsButtons[2].gameObject.SetActive(false);
             }
             if (opinion.decisions.Length == 1)
             {
-                decisionsButtons[1].SetActive(false);
-                decisionsButtons[2].SetActive(false);
+                decisionsButtons[1].gameObject.SetActive(false);
+                decisionsButtons[2].gameObject.SetActive(false);
             }
         }
 
         for (int i = 0; i < opinion.decisions.Length; i++)
         {
-            decisionsButtons[i].GetComponentInChildren<Text>().text = opinion.decisions[i].ToString();
+            
+            // Set Text
+            decisionsButtons[i].GetComponentInChildren<TextMeshProUGUI>().SetText(opinion.decisions[i].ToString());
 
             decisionsButtons[i].GetComponent<DecisionButtons>().decisionNumber = opinion.nextDecisions[i];
         }
@@ -128,7 +153,14 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
+        
+        // Stop Typing
         StopAllCoroutines();
+
+       
+
+
+        // Star typing
         StartCoroutine(TypeSentence(sentence));
     }
 
@@ -136,10 +168,28 @@ public class DialogueManager : MonoBehaviour
     IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
+
+        int lastlineCount = 1;
+
+
+
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return null;
+
+            // Check for new lines
+            if (lastlineCount < dialogueText.textInfo.lineCount)
+            {
+                dialogueText.ForceMeshUpdate();
+                // Resize Dialog rect to match the lines in Text
+                dialogueText.rectTransform.sizeDelta = new Vector2(
+                    dialogueText.rectTransform.sizeDelta.x,
+                    oneTextLineSizeY * (dialogueText.textInfo.lineCount + 1)
+                    );
+                lastlineCount = dialogueText.textInfo.lineCount;
+                
+            }
+            yield return new WaitForSeconds(timeForTextInSeconds);
         }
     }
 

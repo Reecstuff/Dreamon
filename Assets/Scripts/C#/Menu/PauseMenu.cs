@@ -11,9 +11,6 @@ public class PauseMenu : MonoBehaviour
     Canvas pauseMenu;
 
 
-
-
-    // Start is called before the first frame update
     void Start()
     {
         pauseMenu.gameObject.SetActive(false);
@@ -22,7 +19,7 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Return))
         {
             if (pauseMenuOpen)
             {
@@ -60,6 +57,7 @@ public class PauseMenu : MonoBehaviour
 
     private void OnDisable()
     {
+        Cursor.visible = true;
         Time.timeScale = 1;
         AudioManager.Instance?.PitchManual(1);
     }

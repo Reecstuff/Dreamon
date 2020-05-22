@@ -87,10 +87,13 @@ public class AudioManager : MonoBehaviour
     /// Set the current Backgroundmusic
     /// </summary>
     /// <param name="clip">New Backgroundmusic</param>
-    public void SetBackGroundMusic(AudioClip clip)
+    public void SetBackGroundMusic(AudioClip clip, int timeSamples = 0)
     {
         if(!backgroundMusic.clip || !backgroundMusic.clip.Equals(clip))
         {
+            if (timeSamples > 0)
+                backgroundMusic.timeSamples = timeSamples;
+
             backgroundMusic.clip = clip;
             backgroundMusic.Play();
         }
@@ -99,5 +102,10 @@ public class AudioManager : MonoBehaviour
     public void PitchManual(float pitch)
     {
         backgroundMusic.pitch = pitch;
+    }
+
+    public bool CompareClip(AudioClip clip)
+    {
+        return backgroundMusic.clip.Equals(clip);
     }
 }

@@ -13,11 +13,11 @@ public class DialogueTrigger : Interactable
 
 	public void TriggerDialogue()
 	{
-		FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+		FindObjectOfType<DialogueManager>().StartDialogue(this);
 	}
 
-	public void SetOpinion()
-	{
-		FindObjectOfType<DialogueManager>().SelectOpinion(dialogue);
-	}
+	//public void SetOpinion()
+	//{
+	//	FindObjectOfType<DialogueManager>().SelectOpinion(dialogue);
+	//}
 }
