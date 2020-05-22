@@ -27,7 +27,9 @@ public class SetOnCursor : MonoBehaviour
         if (!cam)
             cam = Camera.main;
 
-        Cursor.visible = false;
+        Cursor.visible = isMenu;
+
+
         var main = GetComponent<ParticleSystem>().main;
         main.useUnscaledTime = true;
     }
@@ -38,7 +40,7 @@ public class SetOnCursor : MonoBehaviour
 
         if(Time.timeScale > 0 && !isMenu)
         {
-            if(Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, maxDistance))
+            if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, maxDistance))
             {
                 nextPosition = new Vector3(hit.point.x, hit.point.y + yOffset, hit.point.z);
             }
