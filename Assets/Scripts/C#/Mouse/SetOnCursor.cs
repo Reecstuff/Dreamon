@@ -48,6 +48,7 @@ public class SetOnCursor : MonoBehaviour
 
             if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, maxDistance))
             {
+
                 nextPosition = new Vector3(hit.point.x, hit.point.y + yOffset, hit.point.z);
             }
             else
