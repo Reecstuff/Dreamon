@@ -6,11 +6,15 @@ using UnityEngine;
 public class Dialogue
 {
 	[System.Serializable]
-	public class Opinion
+	public class Option
 	{
 		public string name;
 
 		public bool endSentence;
+
+		public int nextDialogue;
+
+		public bool nextMinigame;
 
 		[TextArea(3, 10)]
 		public string[] sentences;
@@ -20,5 +24,5 @@ public class Dialogue
 		public int[] nextDecisions;
 	}
 
-	public Opinion[] opinion;
+	public Option[] option;
 }

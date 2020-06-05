@@ -198,6 +198,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7105008126344685745, guid: 4d5de77574eac6e4697ff91bdc8c890b,
+        type: 3}
+      propertyPath: interactionTransform
+      value: 
+      objectReference: {fileID: 930764891}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5de77574eac6e4697ff91bdc8c890b, type: 3}
 --- !u!1 &320588754
@@ -367,6 +372,7 @@ GameObject:
   - component: {fileID: 482246484}
   - component: {fileID: 482246483}
   - component: {fileID: 482246488}
+  - component: {fileID: 482246487}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -448,6 +454,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &482246487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 482246482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c4268f7c154c645be5dcf1130bf241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 511798053}
+  cameraPosition: {x: 0, y: -0.5, z: 0}
+  minigame: {fileID: 1937785360}
 --- !u!114 &482246488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -463,54 +484,10 @@ MonoBehaviour:
   radius: 3
   interactionTransform: {fileID: 482246486}
   dialogue:
-    opinion:
-    - name: Helga
-      endSentence: 0
-      sentences:
-      - 'Hallo und herzlich Willkommen.
-
-        Ich bin Helga.'
-      - wie geht es dir?
-      decisions:
-      - gut
-      - schlecht
-      nextDecisions: 0100000002000000
-    - name: Helga
-      endSentence: 0
-      sentences:
-      - "Sch\xF6n das zu h\xF6ren, mir geht es auch gut"
-      - Was machst du grade?
-      decisions:
-      - Nichts
-      - Geht dich nichts an
-      nextDecisions: 0300000004000000
-    - name: Helga
-      endSentence: 0
-      sentences:
-      - Das tut mir leid
-      - Warum geht es dir denn schlecht?
-      decisions:
-      - Sohalt
-      - Weil du da bist
-      nextDecisions: 0300000005000000
-    - name: Helga
-      endSentence: 1
-      sentences:
-      - "OK Tsch\xFCss"
-      decisions: []
-      nextDecisions: 
-    - name: Helga
-      endSentence: 1
-      sentences:
-      - Du bist gemein, ich gehe!
-      decisions: []
-      nextDecisions: 
-    - name: Helga
-      endSentence: 1
-      sentences:
-      - "Ok dann halt nicht, Tsch\xFCss"
-      decisions: []
-      nextDecisions: 
+  - option: []
+  - option: []
+  currentDialogue: 0
+  minigameManager: {fileID: 482246487}
 --- !u!1 &511798053
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,6 +679,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7105008126344685745, guid: 4d5de77574eac6e4697ff91bdc8c890b,
+        type: 3}
+      propertyPath: interactionTransform
+      value: 
+      objectReference: {fileID: 930764891}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5de77574eac6e4697ff91bdc8c890b, type: 3}
 --- !u!1 &648618592
@@ -834,6 +816,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 887010546259145995, guid: 8e7d85c5036bf234586106830204b26d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3625145728277787652, guid: 8e7d85c5036bf234586106830204b26d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -894,8 +881,43 @@ PrefabInstance:
       propertyPath: m_Name
       value: MouseParticle
       objectReference: {fileID: 0}
+    - target: {fileID: 3625145728277787675, guid: 8e7d85c5036bf234586106830204b26d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e7d85c5036bf234586106830204b26d, type: 3}
+--- !u!1 &930764890
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 930764891}
+  m_Layer: 0
+  m_Name: InteractionTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &930764891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930764890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.8}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1937785362}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &974376715
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -963,6 +985,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bottle
       objectReference: {fileID: 0}
+    - target: {fileID: 7105008126344685745, guid: 4d5de77574eac6e4697ff91bdc8c890b,
+        type: 3}
+      propertyPath: interactionTransform
+      value: 
+      objectReference: {fileID: 930764891}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5de77574eac6e4697ff91bdc8c890b, type: 3}
 --- !u!1 &1034463155
@@ -1087,7 +1114,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cac733714dca9884ea16397253c9b427, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  assignedTarget: {fileID: 0}
   hiddenObjects: []
+  winDialogue: 0
 --- !u!4 &1174870227
 Transform:
   m_ObjectHideFlags: 0
@@ -1625,6 +1654,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7105008126344685745, guid: 4d5de77574eac6e4697ff91bdc8c890b,
+        type: 3}
+      propertyPath: interactionTransform
+      value: 
+      objectReference: {fileID: 930764891}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5de77574eac6e4697ff91bdc8c890b, type: 3}
 --- !u!1 &1908170168
@@ -1743,7 +1777,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1937785361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1756,12 +1790,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b232d3b49d4504ca39b8ce4d719fd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  assignedTarget: {fileID: 482246482}
+  bottle: {fileID: 5519899311941996611, guid: 4d5de77574eac6e4697ff91bdc8c890b, type: 3}
   drinkBottles: 0
   maxBottles: 4
   drunkBottles: 0
   maxAlcBottles: 2
-  bottle: {fileID: 5519899311941996611, guid: 4d5de77574eac6e4697ff91bdc8c890b, type: 3}
-  drinkTime: 3
+  drinkTime: 10
+  winDialogue: 0
+  loseDialogue: 1
 --- !u!4 &1937785362
 Transform:
   m_ObjectHideFlags: 0
@@ -1777,6 +1814,7 @@ Transform:
   - {fileID: 1919091211}
   - {fileID: 1494806041}
   - {fileID: 535769980}
+  - {fileID: 930764891}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1812,6 +1850,11 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3926476137980061847, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
+        type: 3}
+      propertyPath: minigame
+      value: 
+      objectReference: {fileID: 1220774210}
     - target: {fileID: 4304245155032533655, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2177,6 +2220,27 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7709306282987045828, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709306282987045828, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709306282987045828, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709306282987045828, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: d7c4268f7c154c645be5dcf1130bf241,
+        type: 3}
     - target: {fileID: 7840211717470916086, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
         type: 3}
       propertyPath: m_textInfo.characterCount

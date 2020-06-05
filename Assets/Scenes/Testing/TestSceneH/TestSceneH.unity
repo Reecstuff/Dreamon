@@ -120,7 +120,7 @@ NavMeshSettings:
     accuratePlacement: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: b173110032067a64d88ed89a116574a2, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 37e8caea9a59e3b41964255db7123f13, type: 2}
 --- !u!1 &16307063
 GameObject:
   m_ObjectHideFlags: 0
@@ -1457,16 +1457,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73f2502481f44bb45835fecfe130ebf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nameText: {fileID: 849032428}
-  dialogueText: {fileID: 1152414989}
+  timeForTextInSeconds: 0.5
+  nameText: {fileID: 0}
+  dialogueText: {fileID: 0}
   animator: {fileID: 787425355}
   continueButton: {fileID: 1952622715}
   endButton: {fileID: 16307063}
   decisions: {fileID: 1608547444}
   decisionsButtons:
-  - {fileID: 316285898}
-  - {fileID: 954658535}
-  - {fileID: 1156999802}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   selectedOpinion: 0
 --- !u!4 &886665028
 Transform:
@@ -2144,7 +2145,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1174870226
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -6,6 +6,6 @@ public class DrinkTrigger : Interactable
 {
 	public override void Interact()
 	{
-		GetComponent<Drink>().DrinkBottle();
+	 	GetComponent<Drink>().DrinkBottle();
 	}
 }

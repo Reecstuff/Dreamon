@@ -11,7 +11,6 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     float timeForTextInSeconds = 0.5f;
 
-
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI dialogueText;
 
@@ -25,10 +24,13 @@ public class DialogueManager : MonoBehaviour
     public GameObject decisions;
     public Button[] decisionsButtons = new Button[3];
 
+    public MinigameManager minigameManager;
 
     bool end;
 
     public int selectedOpinion;
+
+    bool selectMinigame;
 
     /// <summary>
     /// Save the size of one TextLine
@@ -41,103 +43,133 @@ public class DialogueManager : MonoBehaviour
         oneTextLineSizeY = nameText.GetPreferredValues("0").y;
     }
 
-    // Set DialogTrigger instead of only Dialog
+    /// <summary>
+    /// Starts the dialog by triggering it from the DialogueTrigger
+    /// </summary>
+    /// <param name="currentTrigger"></param>
     public void StartDialogue (DialogueTrigger currentTrigger)
     {
+        //Reset the Buttons
         continueButton.SetActive(true);
         decisions.SetActive(false);
 
-        Dialogue.Opinion opinion = currentTrigger.dialogue.opinion[0];
+        //Opens the first dialog option
+        Dialogue.Option option = currentTrigger.dialogue[currentTrigger.currentDialogue].option[0];
 
-        if (opinion.decisions.Length != decisionsButtons.Length && opinion.decisions.Length != 0)
+        //Checks the number of options and then activates the corresponding buttons
+        if (option.decisions.Length != decisionsButtons.Length && option.decisions.Length != 0)
         {
-            if (opinion.decisions.Length == 2)
+            if (option.decisions.Length == 2)
             {
                 decisionsButtons[2].gameObject.SetActive(false);
             }
-            if (opinion.decisions.Length == 1)
+            if (option.decisions.Length == 1)
             {
                 decisionsButtons[1].gameObject.SetActive(false);
                 decisionsButtons[2].gameObject.SetActive(false);
             }
         }
 
-        for (int i = 0; i < opinion.decisions.Length; i++)
+        //Changes the corresponding values of the buttons
+        for (int i = 0; i < option.decisions.Length; i++)
         {
-            decisionsButtons[i].GetComponentInChildren<TextMeshProUGUI>().SetText(opinion.decisions[i].ToString());
+            //Set text
+            decisionsButtons[i].GetComponentInChildren<TextMeshProUGUI>().SetText(option.decisions[i].ToString());
 
-            decisionsButtons[i].GetComponent<DecisionButtons>().decisionNumber = opinion.nextDecisions[i];
+            //Set decision number
+            decisionsButtons[i].GetComponent<DecisionButtons>().decisionNumber = option.nextDecisions[i];
         }
 
+        //Opens the dialog box
         animator.SetBool("IsOpen", true);
 
-        nameText.text = opinion.name;
+        nameText.text = option.name;
 
         sentences.Clear();
 
-        foreach (string sentence in opinion.sentences)
+        foreach (string sentence in option.sentences)
         {
             sentences.Enqueue(sentence);
         }
 
-        end = opinion.endSentence;
+        end = option.endSentence;
 
-        // SetupButtons to select new Opinion
+        // SetupButtons to select new options
         for (int i = 0; i < decisionsButtons.Length; i++)
         {
-            decisionsButtons[i].onClick.RemoveListener(() => SelectOpinion(currentTrigger.dialogue));
-            decisionsButtons[i].onClick.AddListener(() => SelectOpinion(currentTrigger.dialogue));
-
+            decisionsButtons[i].onClick.RemoveListener(() => SelectOption(currentTrigger.dialogue[currentTrigger.currentDialogue], currentTrigger));
+            decisionsButtons[i].onClick.AddListener(() => SelectOption(currentTrigger.dialogue[currentTrigger.currentDialogue], currentTrigger));
         }
 
         DisplayNextSentence();
     }
 
-    public void SelectOpinion(Dialogue dialogue)
+    /// <summary>
+    /// Opens the further dialogues
+    /// </summary>
+    /// <param name="dialogue"></param>
+    /// <param name="currentTrigger"></param>
+    public void SelectOption(Dialogue dialogue, DialogueTrigger currentTrigger)
     {
+        //Reset the Buttons
         continueButton.SetActive(true);
         decisions.SetActive(false);
 
-        Dialogue.Opinion opinion = dialogue.opinion[selectedOpinion];
+        //Opens the next correct dialog option
+        Dialogue.Option option = dialogue.option[selectedOpinion];
 
-        if (opinion.decisions.Length != decisionsButtons.Length && opinion.decisions.Length != 0)
+        //Checks the number of options and then activates the corresponding buttons
+        if (option.decisions.Length != decisionsButtons.Length && option.decisions.Length != 0)
         {
-            if (opinion.decisions.Length == 2)
+            if (option.decisions.Length == 2)
             {
                 decisionsButtons[2].gameObject.SetActive(false);
             }
-            if (opinion.decisions.Length == 1)
+            if (option.decisions.Length == 1)
             {
                 decisionsButtons[1].gameObject.SetActive(false);
                 decisionsButtons[2].gameObject.SetActive(false);
             }
         }
 
-        for (int i = 0; i < opinion.decisions.Length; i++)
-        {
-            
-            // Set Text
-            decisionsButtons[i].GetComponentInChildren<TextMeshProUGUI>().SetText(opinion.decisions[i].ToString());
+        //Changes the corresponding values of the buttons
+        for (int i = 0; i < option.decisions.Length; i++)
+        { 
+            //Set text
+            decisionsButtons[i].GetComponentInChildren<TextMeshProUGUI>().SetText(option.decisions[i].ToString());
 
-            decisionsButtons[i].GetComponent<DecisionButtons>().decisionNumber = opinion.nextDecisions[i];
+            //Set decision number
+            decisionsButtons[i].GetComponent<DecisionButtons>().decisionNumber = option.nextDecisions[i];
         }
 
+        //Opens the dialog box
         animator.SetBool("IsOpen", true);
 
-        nameText.text = opinion.name;
+        nameText.text = option.name;
 
         sentences.Clear();
 
-        foreach (string sentence in opinion.sentences)
+        foreach (string sentence in option.sentences)
         {
             sentences.Enqueue(sentence);
         }
 
-        end = opinion.endSentence;
+        end = option.endSentence;
+
+        //Checks whether the dialog is over to start a mini-game
+        if (end == true)
+        {
+            currentTrigger.currentDialogue = option.nextDialogue;
+            selectMinigame = option.nextMinigame;
+            minigameManager = currentTrigger.minigameManager;
+        }
 
         DisplayNextSentence();
     }
 
+    /// <summary>
+    /// Displays the next sentence
+    /// </summary>
     public void DisplayNextSentence()
     {
         if (end == true && sentences.Count == 1)
@@ -157,20 +189,20 @@ public class DialogueManager : MonoBehaviour
         // Stop Typing
         StopAllCoroutines();
 
-       
-
-
         // Star typing
         StartCoroutine(TypeSentence(sentence));
     }
 
-    //Animate the words
+    /// <summary>
+    /// Animates the words
+    /// </summary>
+    /// <param name="sentence"></param>
+    /// <returns></returns>
     IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
 
         int lastlineCount = 1;
-
 
 
         foreach (char letter in sentence.ToCharArray())
@@ -181,18 +213,18 @@ public class DialogueManager : MonoBehaviour
             if (lastlineCount < dialogueText.textInfo.lineCount)
             {
                 dialogueText.ForceMeshUpdate();
+
                 // Resize Dialog rect to match the lines in Text
-                dialogueText.rectTransform.sizeDelta = new Vector2(
-                    dialogueText.rectTransform.sizeDelta.x,
-                    oneTextLineSizeY * (dialogueText.textInfo.lineCount + 1)
-                    );
+                dialogueText.rectTransform.sizeDelta = new Vector2(dialogueText.rectTransform.sizeDelta.x, oneTextLineSizeY * (dialogueText.textInfo.lineCount + 1));
                 lastlineCount = dialogueText.textInfo.lineCount;
-                
             }
             yield return new WaitForSeconds(timeForTextInSeconds);
         }
     }
 
+    /// <summary>
+    /// Ends the dialog
+    /// </summary>
     public void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
@@ -200,8 +232,15 @@ public class DialogueManager : MonoBehaviour
         //Stop focusing any objects
         GameObject.Find("Player").GetComponent<PlayerController>().RemoveFocus();
 
+        //Reset the Buttons
         continueButton.SetActive(true);
         decisions.SetActive(true);
         endButton.SetActive(false);
+
+        //Starts Minigame
+        if (selectMinigame)
+        {
+            minigameManager.StartNewMinigame();
+        }
     }
 }
