@@ -23,11 +23,22 @@ public class Drink : MonoBehaviour
 
 			GetComponent<MeshRenderer>().enabled = true;
 		}
+
+		//Changes the color of the bottle if it contains alcohol
+		if (isAlc == true)
+		{
+			GetComponent<Renderer>().material.SetColor("_Color", new Color(1, 0.92f, 0.016f, 1));
+		}
+		else
+		{
+			GetComponent<Renderer>().material.SetColor("_Color", new Color(1, 1, 1, 1));
+		}
 	}
 
+	//Drink the bottle by deactivating the MeshRenderer
 	public void DrinkBottle()
 	{
-		DrinkManager drinkManager = GameObject.Find("DrinkGame").GetComponent<DrinkManager>();
+		DrinkManager drinkManager = gameObject.GetComponentInParent<DrinkManager>();
 
 		if (isAlc == true)
 		{
@@ -41,6 +52,7 @@ public class Drink : MonoBehaviour
 		GetComponent<MeshRenderer>().enabled = false;
 	}
 
+	//Randomly determines whether a bottle contains alcohol
 	private bool RandomAlc()
 	{
 		float rNumber = Random.Range(0.0f, 1.0f);

@@ -9,6 +9,7 @@ public class HOTrigger : Interactable
 		GetComponent<HOTrigger>().HODestroy();
 	}
 
+	//Destroys the object when you pick it up
 	public void HODestroy()
 	{
 		Destroy(this.gameObject);

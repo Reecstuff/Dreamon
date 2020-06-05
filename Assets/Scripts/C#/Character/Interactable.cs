@@ -10,6 +10,7 @@ public class Interactable : MonoBehaviour
 
 	bool hasInteracted = false;
 
+	//Allows interaction with integrable objects
 	public virtual void Interact()
 	{
 		//This method is meant to be overwritten
