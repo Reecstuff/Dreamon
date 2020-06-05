@@ -16,7 +16,11 @@ public class SetOnCursor : MonoBehaviour
     float maxDistance = 20;
 
     [SerializeField]
-    bool isMenu = false;
+    ParticleSystem particleSystem;
+
+    [SerializeField]
+    Light light;
+
 
     RaycastHit hit;
     Vector3 nextPosition;
@@ -27,19 +31,21 @@ public class SetOnCursor : MonoBehaviour
         if (!cam)
             cam = Camera.main;
 
-        Cursor.visible = isMenu;
-
-
-        var main = GetComponent<ParticleSystem>().main;
-        main.useUnscaledTime = true;
+        Cursor.visible = false;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if(Time.timeScale > 0 && !isMenu)
+        if(Time.timeScale > 0 && !Cursor.visible)
         {
+            if(particleSystem.isPaused)
+            {
+                particleSystem.Play();
+                light.enabled = true;
+            }
+
             if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, maxDistance))
             {
                 nextPosition = new Vector3(hit.point.x, hit.point.y + yOffset, hit.point.z);
@@ -51,7 +57,10 @@ public class SetOnCursor : MonoBehaviour
         }
         else
         {
-            nextPosition = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, maxDistance));
+            particleSystem.Pause();
+            particleSystem.Clear();
+            light.enabled = false;
+            return;
         }
         transform.position = nextPosition;
     }

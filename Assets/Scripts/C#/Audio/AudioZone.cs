@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 
 /// <summary>
@@ -20,7 +21,7 @@ public class AudioZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(AudioManager.Instance)
+        if(AudioManager.Instance && clip)
         {
             if(!AudioManager.Instance.CompareClip(clip))
             {

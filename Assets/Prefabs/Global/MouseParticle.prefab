@@ -4940,4 +4940,5 @@ MonoBehaviour:
   cam: {fileID: 0}
   yOffset: 0.2
   maxDistance: 15
-  isMenu: 0
+  particleSystem: {fileID: 3625145728277787653}
+  light: {fileID: 3625145728277787655}
