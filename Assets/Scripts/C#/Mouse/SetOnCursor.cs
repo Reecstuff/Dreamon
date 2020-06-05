@@ -16,13 +16,20 @@ public class SetOnCursor : MonoBehaviour
     float maxDistance = 20;
 
     [SerializeField]
+    float minDistance = 6;
+
+    [SerializeField]
     ParticleSystem particleSystem;
 
     [SerializeField]
     Light light;
 
+    [SerializeField]
+    int layerMask = 9;
+
 
     RaycastHit hit;
+    RaycastHit secondHit;
     Vector3 nextPosition;
 
     // Start is called before the first frame update
@@ -32,6 +39,8 @@ public class SetOnCursor : MonoBehaviour
             cam = Camera.main;
 
         Cursor.visible = false;
+        layerMask = 1 << layerMask;
+        layerMask = ~layerMask;
     }
 
     // Update is called once per frame
@@ -46,10 +55,24 @@ public class SetOnCursor : MonoBehaviour
                 light.enabled = true;
             }
 
-            if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, maxDistance))
+            if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, maxDistance, -1, QueryTriggerInteraction.Ignore))
             {
-
-                nextPosition = new Vector3(hit.point.x, hit.point.y + yOffset, hit.point.z);
+                //if(Vector3.Distance(cam.transform.position, hit.point) <= minDistance)
+                //{
+                //    //if(Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out secondHit, maxDistance, layerMask, QueryTriggerInteraction.Ignore))
+                //    //{
+                //    //    Debug.Log(secondHit.collider.gameObject.name);
+                //    //    nextPosition = new Vector3(secondHit.point.x, secondHit.point.y + yOffset, secondHit.point.z);
+                //    //}
+                //    //else
+                //    {
+                //        nextPosition = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, maxDistance));
+                //    }
+                //}
+                //else
+                {
+                    nextPosition = new Vector3(hit.point.x, hit.point.y + yOffset, hit.point.z);
+                }
             }
             else
             {
