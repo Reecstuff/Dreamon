@@ -57,22 +57,8 @@ public class SetOnCursor : MonoBehaviour
 
             if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, maxDistance, -1, QueryTriggerInteraction.Ignore))
             {
-                //if(Vector3.Distance(cam.transform.position, hit.point) <= minDistance)
-                //{
-                //    //if(Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out secondHit, maxDistance, layerMask, QueryTriggerInteraction.Ignore))
-                //    //{
-                //    //    Debug.Log(secondHit.collider.gameObject.name);
-                //    //    nextPosition = new Vector3(secondHit.point.x, secondHit.point.y + yOffset, secondHit.point.z);
-                //    //}
-                //    //else
-                //    {
-                //        nextPosition = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, maxDistance));
-                //    }
-                //}
-                //else
-                {
-                    nextPosition = new Vector3(hit.point.x, hit.point.y + yOffset, hit.point.z);
-                }
+
+                nextPosition = new Vector3(hit.point.x, hit.point.y + yOffset, hit.point.z);
             }
             else
             {

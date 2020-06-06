@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using System.Linq;
 
 [RequireComponent(typeof(AudioSource), typeof(AudioSource))]
 public class AudioManager : MonoBehaviour
@@ -14,7 +15,7 @@ public class AudioManager : MonoBehaviour
 
     public string[] volumeStrings;
 
-    AudioSource backgroundMusic, nextSceneSource;
+    AudioSource[] sources;
 
     private void Awake()
     {
@@ -39,11 +40,7 @@ public class AudioManager : MonoBehaviour
 
     void Initialise()
     {
-        backgroundMusic = GetComponents<AudioSource>()[0];
-        nextSceneSource = GetComponents<AudioSource>()[1];
-
-        backgroundMusic.loop = true;
-        backgroundMusic.playOnAwake = true;
+        sources = GetComponents<AudioSource>();
     }
 
     /// <summary>
@@ -52,8 +49,8 @@ public class AudioManager : MonoBehaviour
     /// <param name="c">AudioClip that is going to be played</param>
     public void TakeAudioToNextScene(AudioClip c)
     {
-        nextSceneSource.clip = c;
-        nextSceneSource.Play();
+        sources.Last().clip = c;
+        sources.Last().Play();
     }
 
     /// <summary>
@@ -87,25 +84,37 @@ public class AudioManager : MonoBehaviour
     /// Set the current Backgroundmusic
     /// </summary>
     /// <param name="clip">New Backgroundmusic</param>
-    public void SetBackGroundMusic(AudioClip clip, int timeSamples = 0)
+    public void SetSourceClip(AudioClip clip, int index = 0, int timeSamples = 0)
     {
-        if(!backgroundMusic.clip || !backgroundMusic.clip.Equals(clip))
-        {
-            if (timeSamples > 0)
-                backgroundMusic.timeSamples = timeSamples;
+        if (timeSamples > 0)
+            sources[index].timeSamples = timeSamples;
 
-            backgroundMusic.clip = clip;
-            backgroundMusic.Play();
-        }
+        sources[index].clip = clip;
+        sources[index].Play();
     }
 
-    public void PitchManual(float pitch)
+    public void PitchManual(float pitch, int index = 0)
     {
-        backgroundMusic.pitch = pitch;
+        sources[index].pitch = pitch;
     }
 
     public bool CompareClip(AudioClip clip)
     {
-        return backgroundMusic.clip.Equals(clip);
+
+        for (int i = 0; i < sources.Length; i++)
+        {
+            if (sources[i].clip && sources[i].clip.Equals(clip))
+                return true;
+        }
+
+        return false;
+    }
+
+    public int GetSamples(int index)
+    {
+        if (!sources[index])
+            return 0;
+
+        return sources[index].timeSamples;
     }
 }

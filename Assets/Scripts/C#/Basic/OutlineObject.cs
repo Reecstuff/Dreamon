@@ -21,13 +21,13 @@ public class OutlineObject : MonoBehaviour
         InitValues();
     }
 
-    private void OnMouseEnter()
+    protected virtual void OnMouseEnter()
     {
         // Take this to Interactable
         SwitchOutlined(true);
     }
 
-    void OnMouseExit()
+    protected virtual void OnMouseExit()
     {
         // Take this to Interactable
         SwitchOutlined(false);
@@ -38,7 +38,7 @@ public class OutlineObject : MonoBehaviour
     /// <summary>
     /// Initialise Values
     /// </summary>
-    void InitValues()
+    protected virtual void InitValues()
     {
         rendererCollecton = GetComponentsInChildren<Renderer>();
         propBlock = new MaterialPropertyBlock();
