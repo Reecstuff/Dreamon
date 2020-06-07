@@ -3,11 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class ButtonColorText : OverButton
 {
     [SerializeField]
     TextMeshProUGUI text;
+
+    [SerializeField]
+    float time = 0.2f;
 
     Button button;
 
@@ -20,7 +24,7 @@ public class ButtonColorText : OverButton
     protected override void OnButton()
     {
         base.OnButton();
-        text.color = button.colors.highlightedColor;
+        text.DOColor(button.colors.highlightedColor, time);
     }
 
     protected override void ButtonClicked()
@@ -32,7 +36,7 @@ public class ButtonColorText : OverButton
     protected override void ButtonExit()
     {
         base.ButtonExit();
-        text.color = button.colors.normalColor;
+        text.DOColor(button.colors.normalColor, time);
     }
 
 }

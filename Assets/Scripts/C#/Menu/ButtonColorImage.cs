@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,6 +8,9 @@ public class ButtonColorImage : OverButton
 {
     [SerializeField]
     Image image;
+
+    [SerializeField]
+    float time = 0.2f;
 
     Button button;
 
@@ -19,7 +23,7 @@ public class ButtonColorImage : OverButton
     protected override void OnButton()
     {
         base.OnButton();
-        image.color = button.colors.highlightedColor;
+        image.DOColor(button.colors.highlightedColor, time);
     }
 
     protected override void ButtonClicked()
@@ -31,7 +35,7 @@ public class ButtonColorImage : OverButton
     protected override void ButtonExit()
     {
         base.ButtonExit();
-        image.color = button.colors.normalColor;
+        image.DOColor(button.colors.normalColor, time);
     }
 
 }
