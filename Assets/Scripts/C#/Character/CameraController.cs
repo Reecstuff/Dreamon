@@ -18,7 +18,7 @@ public class CameraController : MonoBehaviour
         transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         //Rotates the camera when you hold down the middle mouse button
-        if (Input.GetKey(KeyCode.Mouse2))
+        if (Input.GetKey(KeyCode.Mouse1))
         {
             Quaternion camTurnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * Time.deltaTime * 1000f, Vector3.up);
 

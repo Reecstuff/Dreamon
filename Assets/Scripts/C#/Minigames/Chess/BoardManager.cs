@@ -16,10 +16,14 @@ public class BoardManager : MonoBehaviour
 	public List<GameObject> chessmanPrefabs;
 	private List<GameObject> activeChessman = new List<GameObject>();
 
+	public GameObject selectedHighlight;
+
 	private void Start()
 	{
 		Instance = this;
 		SpawnAllChessmans();
+
+		selectedHighlight = Instantiate(selectedHighlight, transform);
 	}
 
 	private void Update()
@@ -86,6 +90,8 @@ public class BoardManager : MonoBehaviour
 		{
 			selectionX = (int)hit.point.x;
 			selectionY = (int)hit.point.z;
+
+			Debug.Log(hit.collider.gameObject.name);
 		}
 		else
 		{
@@ -99,6 +105,7 @@ public class BoardManager : MonoBehaviour
 		GameObject go = Instantiate(chessmanPrefabs[index], new Vector3(x + 0.5f, 0.5f, z + 0.5f), Quaternion.identity) as GameObject;
 		go.transform.SetParent(transform);
 		Chessmans[x, z] = go.GetComponent<Chessman>();
+		Chessmans[x, z].SetPosition(x, z);
 		activeChessman.Add(go);
 	}
 
@@ -139,7 +146,7 @@ public class BoardManager : MonoBehaviour
 		//Draw the selection
 		if (selectionX >= 0 && selectionY >= 0)
 		{
-			Debug.DrawLine(Vector3.forward * selectionY + Vector3.right * selectionX, Vector3.forward * (selectionY + 1) + Vector3.right * (selectionX + 1));
+			selectedHighlight.transform.position = Vector3.forward * (selectionY + 0.5f) + Vector3.right * (selectionX + 0.5f) + Vector3.up * 0.002f;
 		}
 	}
 }
