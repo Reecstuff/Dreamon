@@ -36,6 +36,9 @@ public class MinigameManager : MonoBehaviour
 	{
 		minigame.SetActive(false);
 
+		//Focusing the demon
+		GameObject.Find("Player").GetComponent<PlayerController>().SetFocus(this.GetComponent<Interactable>());
+
 		cameraController.offset = playerOffset;
 		cameraController.target = GameObject.Find("Player").transform;
 	}

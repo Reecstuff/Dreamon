@@ -240,6 +240,7 @@ public class DialogueManager : MonoBehaviour
         //Starts Minigame
         if (selectMinigame)
         {
+            selectMinigame = false;
             minigameManager.StartNewMinigame();
         }
     }
