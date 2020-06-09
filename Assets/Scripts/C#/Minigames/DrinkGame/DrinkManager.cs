@@ -18,25 +18,30 @@ public class DrinkManager : MonoBehaviour
 	public int winDialogue;
 	public int loseDialogue;
 
+	public bool gameFinishied = false;
+
 	private void Update()
 	{
 		drinkTime -= Time.deltaTime;
 
-		if (drinkTime >= 0)
+		if (gameFinishied == false)
 		{
-			if (drinkBottles == maxBottles)
+			if (drinkTime >= 0)
 			{
-				Win();
+				if (drinkBottles == maxBottles)
+				{
+					Win();
+				}
+				if (drunkBottles == maxAlcBottles)
+				{
+					//Drink to much alcohole
+					Lost();
+				}
 			}
-			if (drunkBottles == maxAlcBottles)
+			else
 			{
-				//Drink to much alcohole
 				Lost();
 			}
-		}
-		else
-		{
-			Lost();
 		}
 	}
 
@@ -44,23 +49,25 @@ public class DrinkManager : MonoBehaviour
 	{
 		//Win the DontGetDrunk game
 		Debug.Log("You Win");
+		gameFinishied = true;
 		//Dialogue.Opinion opinion = dialogue.opinion[selectedOpinion];
 
 		//Stop game
 		assignedTarget.GetComponent<MinigameManager>().EndMinigame();
-		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
 		assignedTarget.GetComponent<DialogueTrigger>().currentDialogue = winDialogue;
+		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
 	}
 
 	public void Lost()
 	{
 		//Lose the DontGetDrunk game
 		Debug.Log("You Lose");
+		gameFinishied = true;
 		//Dialogue.Opinion opinion = dialogue.opinion[selectedOpinion];
 
 		//Stop game
 		assignedTarget.GetComponent<MinigameManager>().EndMinigame();
-		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
 		assignedTarget.GetComponent<DialogueTrigger>().currentDialogue = loseDialogue;
+		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
 	}
 }

@@ -6,20 +6,19 @@ public class HOManager : MonoBehaviour
 {
 	public GameObject assignedTarget;
 
-	public List<GameObject> hiddenObjects;
+	public GameObject[] hiddenObjects;
+	public int foundObjects;
 
 	public int winDialogue;
 
 	private void Update()
 	{
-		if (hiddenObjects == null)
+		if (hiddenObjects.Length == foundObjects)
 		{
-			//Win the game
-
 			//Stop game
 			assignedTarget.GetComponent<MinigameManager>().EndMinigame();
-			assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
 			assignedTarget.GetComponent<DialogueTrigger>().currentDialogue = winDialogue;
+			assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
 		}
 	}
 }

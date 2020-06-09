@@ -53,17 +53,17 @@ public class Drink : MonoBehaviour
 	}
 
 	//Randomly determines whether a bottle contains alcohol
-	private bool RandomAlc()
+	private void RandomAlc()
 	{
 		float rNumber = Random.Range(0.0f, 1.0f);
 
 		if (rNumber < 0.75f)
 		{
-			return isAlc = true;
+			isAlc = true;
 		}
 		else
 		{
-			return isAlc = false;
+			isAlc = false;
 		}
 	}
 }
