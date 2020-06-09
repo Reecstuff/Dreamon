@@ -3671,8 +3671,8 @@ GameObject:
   m_Name: FassLP
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2447033941604945716
 Transform:
@@ -10175,7 +10175,7 @@ GameObject:
   m_Name: TableAsset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &76292192138061866
@@ -11274,13 +11274,13 @@ GameObject:
   - component: {fileID: 2854638847414193064}
   - component: {fileID: 2992323517286091713}
   - component: {fileID: 530569174291991865}
-  - component: {fileID: 5795473558799020118}
+  - component: {fileID: 6622982563476787584}
   m_Layer: 0
   m_Name: BenchAsset3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 2
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2854638847414193064
 Transform:
@@ -11343,8 +11343,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &5795473558799020118
-MeshCollider:
+--- !u!65 &6622982563476787584
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -11353,10 +11353,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7995766105238524328, guid: 134e85e9aee393f40b9be59398d8a05b, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.083954744, y: 0.03526904, z: 0.024798816}
+  m_Center: {x: 0.000000001862645, y: 0, z: -0.000000014901161}
 --- !u!1 &4625242501821581727
 GameObject:
   m_ObjectHideFlags: 0
@@ -11531,7 +11530,7 @@ GameObject:
   m_Name: TableAsset1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &4197472450031619527
@@ -13837,13 +13836,13 @@ GameObject:
   - component: {fileID: 1064477438621642218}
   - component: {fileID: 8780371803179111232}
   - component: {fileID: 6326441512629488918}
-  - component: {fileID: 491507843468688465}
+  - component: {fileID: 1468913382572987789}
   m_Layer: 0
   m_Name: BenchAsset1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 2
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1064477438621642218
 Transform:
@@ -13906,8 +13905,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &491507843468688465
-MeshCollider:
+--- !u!65 &1468913382572987789
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -13916,10 +13915,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7032591397476955282, guid: 134e85e9aee393f40b9be59398d8a05b, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.08395475, y: 0.03526904, z: 0.024798818}
+  m_Center: {x: 0.0000000018626451, y: 0.0000000018626451, z: -1.3877788e-17}
 --- !u!1 &5704027735766590461
 GameObject:
   m_ObjectHideFlags: 0
@@ -14214,13 +14212,13 @@ GameObject:
   - component: {fileID: 5336445592790290523}
   - component: {fileID: 1286060316010770536}
   - component: {fileID: 4516072662744226019}
-  - component: {fileID: 2732349517627841069}
+  - component: {fileID: 5057726947231561325}
   m_Layer: 0
   m_Name: BenchAsset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 2
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5336445592790290523
 Transform:
@@ -14283,8 +14281,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &2732349517627841069
-MeshCollider:
+--- !u!65 &5057726947231561325
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -14293,10 +14291,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 2298259307515622662, guid: 134e85e9aee393f40b9be59398d8a05b, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.08395475, y: 0.03526904, z: 0.02479882}
+  m_Center: {x: -0.0000000055879354, y: 0.0000000018626451, z: 2.7755576e-17}
 --- !u!1 &5897200459995198782
 GameObject:
   m_ObjectHideFlags: 0
@@ -15347,7 +15344,7 @@ GameObject:
   m_Name: TresenAsset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
+  m_NavMeshLayer: 1
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6321706371427318194
@@ -19649,13 +19646,13 @@ GameObject:
   - component: {fileID: 5665022552716368246}
   - component: {fileID: 784150393483692030}
   - component: {fileID: 2370786601897619560}
-  - component: {fileID: 8204165372322388820}
+  - component: {fileID: 1538496957411873036}
   m_Layer: 0
   m_Name: BenchAsset2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 2
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5665022552716368246
 Transform:
@@ -19718,8 +19715,8 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &8204165372322388820
-MeshCollider:
+--- !u!65 &1538496957411873036
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -19728,10 +19725,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -5901573383641316480, guid: 134e85e9aee393f40b9be59398d8a05b, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.08395476, y: 0.03526904, z: 0.024798822}
+  m_Center: {x: 0.0000000055879354, y: 0, z: 0.000000007450581}
 --- !u!1 &8276912423464002433
 GameObject:
   m_ObjectHideFlags: 0

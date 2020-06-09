@@ -22,7 +22,7 @@ public class DrinkManager : MonoBehaviour
 	public int loseDialogue;
 
 	public Drink[] bottles;
-
+	bool gameFinishied = false;
 
 	private void Start()
 	{
