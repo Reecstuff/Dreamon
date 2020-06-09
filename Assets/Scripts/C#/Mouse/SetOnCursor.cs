@@ -16,13 +16,20 @@ public class SetOnCursor : MonoBehaviour
     float maxDistance = 20;
 
     [SerializeField]
+    float minDistance = 6;
+
+    [SerializeField]
     ParticleSystem particleSystem;
 
     [SerializeField]
     Light light;
 
+    [SerializeField]
+    int layerMask = 9;
+
 
     RaycastHit hit;
+    RaycastHit secondHit;
     Vector3 nextPosition;
 
     // Start is called before the first frame update
@@ -32,6 +39,8 @@ public class SetOnCursor : MonoBehaviour
             cam = Camera.main;
 
         Cursor.visible = false;
+        layerMask = 1 << layerMask;
+        layerMask = ~layerMask;
     }
 
     // Update is called once per frame
@@ -46,8 +55,9 @@ public class SetOnCursor : MonoBehaviour
                 light.enabled = true;
             }
 
-            if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, maxDistance))
+            if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, maxDistance, -1, QueryTriggerInteraction.Ignore))
             {
+
                 nextPosition = new Vector3(hit.point.x, hit.point.y + yOffset, hit.point.z);
             }
             else

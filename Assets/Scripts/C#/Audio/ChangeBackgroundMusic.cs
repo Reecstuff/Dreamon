@@ -13,6 +13,6 @@ public class ChangeBackgroundMusic : MonoBehaviour
     void Start()
     {
         if (newMusic)
-            AudioManager.Instance?.SetBackGroundMusic(newMusic);
+            AudioManager.Instance?.SetSourceClip(newMusic);
     }
 }

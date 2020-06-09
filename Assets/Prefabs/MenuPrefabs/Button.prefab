@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8675673900953465722}
   - component: {fileID: 8675673900953465723}
   - component: {fileID: 8478850825089524229}
+  - component: {fileID: 1838173552550563909}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -99,7 +100,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 1, g: 0, b: 0.11897373, a: 1}
+    m_HighlightedColor: {r: 0.53333336, g: 0, b: 0, a: 1}
     m_PressedColor: {r: 0.26415092, g: 0, b: 0.0063396664, a: 1}
     m_SelectedColor: {r: 0.21176472, g: 0.21176472, b: 0.21176472, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -245,6 +246,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: 
+--- !u!114 &1838173552550563909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8675673900953465668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d63a455dd3c8261488fb34771fd22368, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleSpeed: 6
+  scaleVector: {x: 1.1, y: 1.8, z: 1}
+  backScaleFactor: 100
 --- !u!1 &8675673900980995803
 GameObject:
   m_ObjectHideFlags: 0

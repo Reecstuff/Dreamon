@@ -10,9 +10,13 @@ using UnityEngine;
 public class AudioZone : MonoBehaviour
 {
     [SerializeField]
-    AudioClip clip;
+    AudioClip BackGroundMusicClip;
 
-    int currentTimeSamples;
+    [SerializeField]
+    AudioClip FXSoundClip;
+
+    int currentBackTimeSamples;
+    int currentFXTimeSamples;
 
     void Start()
     {
@@ -21,12 +25,28 @@ public class AudioZone : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(AudioManager.Instance && clip)
+        if (AudioManager.Instance)
         {
-            if(!AudioManager.Instance.CompareClip(clip))
+            if (BackGroundMusicClip && FXSoundClip)
             {
-                AudioManager.Instance.SetBackGroundMusic(clip, currentTimeSamples);
+                if (!AudioManager.Instance.CompareClip(BackGroundMusicClip))
+                {
+                    AudioManager.Instance.SetSourceClip(BackGroundMusicClip, currentBackTimeSamples);
+                }
+                if (!AudioManager.Instance.CompareClip(FXSoundClip))
+                {
+                    AudioManager.Instance.SetSourceClip(FXSoundClip, 1, currentFXTimeSamples);
+                }
             }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (AudioManager.Instance)
+        {
+            currentBackTimeSamples = AudioManager.Instance.GetSamples(0);
+            currentFXTimeSamples = AudioManager.Instance.GetSamples(1);
         }
     }
 }

@@ -8,30 +8,14 @@ using UnityEngine.UI;
 /// Play Sound on Button Mouse over and Click
 /// </summary>
 [RequireComponent(typeof(AudioSource), typeof(Button))]
-public class ButtonSound : MonoBehaviour, IPointerEnterHandler, ISelectHandler
+public class ButtonSound : OverButton
 {
     AudioSource source;
 
     [SerializeField]
     AudioClip clickAudio, hoverAudio;
 
-    void Start()
-    {
-        Initialise();
-    }
-
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        OverButton();
-    }
-
-    public void OnSelect(BaseEventData eventData)
-    {
-        OverButton();
-    }
-
-
-    void Initialise()
+    protected override void Initialise()
     {
         source = GetComponent<AudioSource>();
         GetComponent<Button>().onClick.AddListener(() => ButtonClicked());
@@ -40,12 +24,13 @@ public class ButtonSound : MonoBehaviour, IPointerEnterHandler, ISelectHandler
     }
 
 
-    void ButtonClicked()
+    protected override void ButtonClicked()
     {
         AudioManager.Instance?.TakeAudioToNextScene(clickAudio);
     }
 
-    void OverButton()
+
+    protected override void OnButton()
     {
         source.clip = hoverAudio;
         source.Play();
