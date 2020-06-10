@@ -18,6 +18,12 @@ public class BoardManager : MonoBehaviour
 
 	public GameObject selectedHighlight;
 
+	int currentChessmans = 3;
+
+	public GameObject assignedTarget;
+	public int winDialogue;
+	public int loseDialogue;
+
 	private void Start()
 	{
 		Instance = this;
@@ -28,6 +34,12 @@ public class BoardManager : MonoBehaviour
 
 	private void Update()
 	{
+		//If the player lose the game
+		if (currentChessmans < 1)
+		{
+			EndGame(loseDialogue);
+		}
+
 		UpdateSelection();
 		DrawChessboard();
 
@@ -42,6 +54,12 @@ public class BoardManager : MonoBehaviour
 				}
 				else
 				{
+					//If the player win the game
+					if (selectionY == 7)
+					{
+						EndGame(winDialogue);
+					}
+
 					//Move the chessman
 					MoveChessman(selectionX, selectionY);
 				}
@@ -59,15 +77,23 @@ public class BoardManager : MonoBehaviour
 		allowedMoves = Chessmans[x, z].PossibleMove();
 		selectedChessman = Chessmans[x, z];
 		BoardHighlights.Instance.HighlightAllowedMoves(allowedMoves);
-
-		Debug.Log("x,z: " + x + " " + z);
-		Debug.Log("Selected: " + selectedChessman.transform.position);
 	}
 
 	private void MoveChessman(int x, int z)
 	{
-		if(allowedMoves[x,z])
+		if (allowedMoves[x,z])
 		{
+			Chessman c = Chessmans[x, z];
+
+			if (c != null)
+			{
+				//capture a piece
+				activeChessman.Remove(c.gameObject);
+				Destroy(c.gameObject);
+				Destroy(selectedChessman.gameObject);
+				currentChessmans--;
+			}
+
 			Chessmans[selectedChessman.CurrentX, selectedChessman.CurrentY] = null;
 			selectedChessman.transform.position = new Vector3(x + 0.5f, 0.5f, z + 0.5f);
 			selectedChessman.SetPosition(x, z);
@@ -76,6 +102,14 @@ public class BoardManager : MonoBehaviour
 
 		BoardHighlights.Instance.Hidehighlights();
 		selectedChessman = null;
+	}
+
+	private void EndGame(int newDialog)
+	{
+		//Stop game
+		assignedTarget.GetComponent<MinigameManager>().EndMinigame();
+		assignedTarget.GetComponent<DialogueTrigger>().currentDialogue = newDialog;
+		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
 	}
 
 	private void UpdateSelection()
@@ -90,8 +124,6 @@ public class BoardManager : MonoBehaviour
 		{
 			selectionX = (int)hit.point.x;
 			selectionY = (int)hit.point.z;
-
-			Debug.Log(hit.collider.gameObject.name);
 		}
 		else
 		{

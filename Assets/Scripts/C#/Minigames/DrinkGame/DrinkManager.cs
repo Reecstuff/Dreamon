@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class DrinkManager : MonoBehaviour
 {
-	public GameObject assignedTarget;
-
 	public int drinkBottles;
 	public int maxBottles;
 
@@ -17,17 +15,18 @@ public class DrinkManager : MonoBehaviour
 	public float maxBottleTimer = 3;
 	public float bottleTime;
 
-
-	public int winDialogue;
-	public int loseDialogue;
-
 	public Drink[] bottles;
 	bool gameFinishied = false;
+
+	public GameObject assignedTarget;
+	public int winDialogue;
+	public int loseDialogue;
 
 	private void Start()
 	{
 		bottles = GetComponentsInChildren<Drink>();
 		bottleTime = maxBottleTimer;
+		RandomAlc();
 	}
 
 	private void Update()

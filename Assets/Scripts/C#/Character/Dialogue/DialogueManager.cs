@@ -233,8 +233,8 @@ public class DialogueManager : MonoBehaviour
         GameObject.Find("Player").GetComponent<PlayerController>().RemoveFocus();
 
         //Reset the Buttons
-        continueButton.SetActive(true);
-        decisions.SetActive(true);
+        continueButton.SetActive(false);
+        decisions.SetActive(false);
         endButton.SetActive(false);
 
         //Starts Minigame

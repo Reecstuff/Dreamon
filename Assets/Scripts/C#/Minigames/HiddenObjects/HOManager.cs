@@ -4,11 +4,10 @@ using UnityEngine;
 
 public class HOManager : MonoBehaviour
 {
-	public GameObject assignedTarget;
-
 	public GameObject[] hiddenObjects;
 	public int foundObjects;
 
+	public GameObject assignedTarget;
 	public int winDialogue;
 
 	private void Update()

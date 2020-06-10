@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class ShellTrigger : Interactable
 {
-	public GameObject assignedTarget;
-
 	public bool isWin;
 
+	public GameObject assignedTarget;
 	public int winDialogue;
 	public int loseDialogue;
 
@@ -40,8 +39,8 @@ public class ShellTrigger : Interactable
 
 		//Stop game
 		assignedTarget.GetComponent<MinigameManager>().EndMinigame();
-		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
 		assignedTarget.GetComponent<DialogueTrigger>().currentDialogue = winDialogue;
+		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
 	}
 
 	public void Lost()
@@ -51,7 +50,7 @@ public class ShellTrigger : Interactable
 
 		//Stop game
 		assignedTarget.GetComponent<MinigameManager>().EndMinigame();
-		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
 		assignedTarget.GetComponent<DialogueTrigger>().currentDialogue = loseDialogue;
+		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
 	}
 }
