@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Interactable : MonoBehaviour
+public class Interactable : OutlineObject
 {
 	public float radius = 3f;
 	public Transform interactionTransform;

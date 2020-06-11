@@ -12,6 +12,8 @@ public class DrinkManager : MonoBehaviour
 	public int maxAlcBottles;
 
 	public float drinkTime = 3;
+	private float startDrinkTime;
+
 	public float maxBottleTimer = 3;
 	public float bottleTime;
 
@@ -24,6 +26,7 @@ public class DrinkManager : MonoBehaviour
 
 	private void Start()
 	{
+		startDrinkTime = drinkTime;
 		bottles = GetComponentsInChildren<Drink>();
 		bottleTime = maxBottleTimer;
 		RandomAlc();
@@ -73,28 +76,24 @@ public class DrinkManager : MonoBehaviour
 
 	public void Win()
 	{
-		//Win the DontGetDrunk game
-		Debug.Log("You Win");
+		drinkBottles = 0;
+		drunkBottles = 0;
+		drinkTime = startDrinkTime;
+
 		gameFinishied = true;
-		//Dialogue.Opinion opinion = dialogue.opinion[selectedOpinion];
 
 		//Stop game
-		assignedTarget.GetComponent<MinigameManager>().EndMinigame();
-		assignedTarget.GetComponent<DialogueTrigger>().currentDialogue = winDialogue;
-		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
+		assignedTarget.GetComponent<MinigameManager>().StartNewDialog(winDialogue);
 	}
 
 	public void Lost()
 	{
-		//Lose the DontGetDrunk game
-		Debug.Log("You Lose");
-		gameFinishied = true;
-		//Dialogue.Opinion opinion = dialogue.opinion[selectedOpinion];
+		drinkBottles = 0;
+		drunkBottles = 0;
+		drinkTime = startDrinkTime;
 
 		//Stop game
-		assignedTarget.GetComponent<MinigameManager>().EndMinigame();
-		assignedTarget.GetComponent<DialogueTrigger>().currentDialogue = loseDialogue;
-		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
+		assignedTarget.GetComponent<MinigameManager>().StartNewDialog(loseDialogue);
 	}
 
 	void RandomAlc()

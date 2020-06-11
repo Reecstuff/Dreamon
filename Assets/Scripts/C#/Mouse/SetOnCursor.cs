@@ -25,6 +25,9 @@ public class SetOnCursor : MonoBehaviour
     Light light;
 
     [SerializeField]
+    LensFlare flare;
+
+    [SerializeField]
     int layerMask = 9;
 
 
@@ -53,6 +56,8 @@ public class SetOnCursor : MonoBehaviour
             {
                 particleSystem.Play();
                 light.enabled = true;
+                cam.GetComponent<FlareLayer>().enabled = false;
+
             }
 
             if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, maxDistance, -1, QueryTriggerInteraction.Ignore))
@@ -70,6 +75,7 @@ public class SetOnCursor : MonoBehaviour
             particleSystem.Pause();
             particleSystem.Clear();
             light.enabled = false;
+            cam.GetComponent<FlareLayer>().enabled = false;
             return;
         }
         transform.position = nextPosition;

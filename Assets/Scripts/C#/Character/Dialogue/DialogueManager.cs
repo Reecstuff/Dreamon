@@ -30,7 +30,7 @@ public class DialogueManager : MonoBehaviour
 
     public int selectedOpinion;
 
-    bool selectMinigame;
+    public bool selectMinigame;
 
     /// <summary>
     /// Save the size of one TextLine
@@ -49,6 +49,7 @@ public class DialogueManager : MonoBehaviour
     /// <param name="currentTrigger"></param>
     public void StartDialogue (DialogueTrigger currentTrigger)
     {
+        Cursor.visible = true;
         //Reset the Buttons
         continueButton.SetActive(true);
         decisions.SetActive(false);
@@ -99,6 +100,12 @@ public class DialogueManager : MonoBehaviour
         {
             decisionsButtons[i].onClick.RemoveListener(() => SelectOption(currentTrigger.dialogue[currentTrigger.currentDialogue], currentTrigger));
             decisionsButtons[i].onClick.AddListener(() => SelectOption(currentTrigger.dialogue[currentTrigger.currentDialogue], currentTrigger));
+        }
+
+        if (end == true && option.nextMinigame)
+        {
+            currentTrigger.currentDialogue = option.nextDialogue;
+            selectMinigame = option.nextMinigame;
         }
 
         DisplayNextSentence();
@@ -227,6 +234,7 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void EndDialogue()
     {
+        Cursor.visible = false;
         animator.SetBool("IsOpen", false);
 
         //Stop focusing any objects
