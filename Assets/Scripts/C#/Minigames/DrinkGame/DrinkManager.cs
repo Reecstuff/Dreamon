@@ -21,8 +21,9 @@ public class DrinkManager : MonoBehaviour
 	bool gameFinishied = false;
 
 	public GameObject assignedTarget;
-	public int winDialogue;
-	public int loseDialogue;
+
+	public int winNextDialog;
+	public int loseNextDialog;
 
 	private void Start()
 	{
@@ -83,7 +84,7 @@ public class DrinkManager : MonoBehaviour
 		gameFinishied = true;
 
 		//Stop game
-		assignedTarget.GetComponent<MinigameManager>().StartNewDialog(winDialogue);
+		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(winNextDialog);
 	}
 
 	public void Lost()
@@ -93,7 +94,7 @@ public class DrinkManager : MonoBehaviour
 		drinkTime = startDrinkTime;
 
 		//Stop game
-		assignedTarget.GetComponent<MinigameManager>().StartNewDialog(loseDialogue);
+		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(loseNextDialog);
 	}
 
 	void RandomAlc()

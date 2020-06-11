@@ -43,7 +43,7 @@ public class MinigameManager : MonoBehaviour
 		cameraController.target = GameObject.Find("Player").transform;
 	}
 
-	public void StartNewDialog(int nextDialog)
+	public void StartNextDialog(int nextDialog)
 	{
 		//Stop game
 		EndMinigame();

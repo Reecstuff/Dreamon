@@ -32,6 +32,8 @@ public class DialogueManager : MonoBehaviour
 
     public bool selectMinigame;
 
+    int minigameDialogue;
+
     /// <summary>
     /// Save the size of one TextLine
     /// </summary>
@@ -103,7 +105,6 @@ public class DialogueManager : MonoBehaviour
 
         if (end == true && option.nextMinigame)
         {
-            currentTrigger.currentDialogue = option.nextDialogue;
             selectMinigame = option.nextMinigame;
         }
 
@@ -165,7 +166,6 @@ public class DialogueManager : MonoBehaviour
         //Checks whether the dialog is over to start a mini-game
         if (end == true)
         {
-            currentTrigger.currentDialogue = option.nextDialogue;
             selectMinigame = option.nextMinigame;
             minigameManager = currentTrigger.minigameManager;
         }

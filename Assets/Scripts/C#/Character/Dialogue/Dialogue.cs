@@ -12,8 +12,6 @@ public class Dialogue
 
 		public bool endSentence;
 
-		public int nextDialogue;
-
 		public bool nextMinigame;
 
 		[TextArea(3, 10)]
