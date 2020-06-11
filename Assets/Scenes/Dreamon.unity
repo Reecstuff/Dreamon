@@ -325,6 +325,26 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7709306282956404319, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
+        type: 3}
+      propertyPath: m_textInfo.characterCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709306282956404319, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
+        type: 3}
+      propertyPath: m_textInfo.wordCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709306282956404319, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
+        type: 3}
+      propertyPath: m_textInfo.lineCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7709306282956404319, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
+        type: 3}
+      propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7840211717470916086, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -526,7 +546,7 @@ PrefabInstance:
         type: 3}
       propertyPath: allPolterObjects.Array.data[25]
       value: 
-      objectReference: {fileID: 975024826}
+      objectReference: {fileID: 0}
     - target: {fileID: 7676284057619152456, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: allPolterObjects.Array.data[26]
@@ -1963,11 +1983,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 837758263415675634, guid: 8e7d85c5036bf234586106830204b26d,
-        type: 3}
-      propertyPath: m_Directional
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3625145728277787652, guid: 8e7d85c5036bf234586106830204b26d,
         type: 3}
       propertyPath: m_LocalPosition.x

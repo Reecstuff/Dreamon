@@ -49,6 +49,7 @@ public class DialogueManager : MonoBehaviour
     /// <param name="currentTrigger"></param>
     public void StartDialogue (DialogueTrigger currentTrigger)
     {
+        Cursor.visible = true;
         //Reset the Buttons
         continueButton.SetActive(true);
         decisions.SetActive(false);
@@ -233,6 +234,7 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void EndDialogue()
     {
+        Cursor.visible = false;
         animator.SetBool("IsOpen", false);
 
         //Stop focusing any objects
