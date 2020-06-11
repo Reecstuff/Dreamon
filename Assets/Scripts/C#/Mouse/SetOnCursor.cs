@@ -56,7 +56,6 @@ public class SetOnCursor : MonoBehaviour
             {
                 particleSystem.Play();
                 light.enabled = true;
-                cam.GetComponent<FlareLayer>().enabled = false;
 
             }
 
@@ -75,7 +74,6 @@ public class SetOnCursor : MonoBehaviour
             particleSystem.Pause();
             particleSystem.Clear();
             light.enabled = false;
-            cam.GetComponent<FlareLayer>().enabled = false;
             return;
         }
         transform.position = nextPosition;
