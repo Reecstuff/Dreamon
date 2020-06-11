@@ -122,12 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 18fabf04e12623449bc1374232347fab, type: 2}
---- !u!4 &17981076 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8508404635887066977, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
-    type: 3}
-  m_PrefabInstance: {fileID: 571200853}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &209320991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -367,9 +361,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 446af6dcc3ea53d4a84ae199664f1e6b, type: 3}
---- !u!4 &399322875 stripped
+--- !u!4 &230653626 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 4297205028185828218, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+  m_CorrespondingSourceObject: {fileID: 3615724662136783378, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
     type: 3}
   m_PrefabInstance: {fileID: 571200853}
   m_PrefabAsset: {fileID: 0}
@@ -457,6 +451,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3911213630623938567, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_UseGravity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3911213630623938567, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4607701907949658550, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697930394964993930, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864842603617618430, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494229096170458449, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6558981377273023176, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -519,62 +543,73 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7676284057619152456, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
-      propertyPath: delayTime
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7676284057619152456, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
-        type: 3}
       propertyPath: allPolterObjects.Array.data[25]
       value: 
-      objectReference: {fileID: 975024826}
+      objectReference: {fileID: 1106516702}
     - target: {fileID: 7676284057619152456, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: allPolterObjects.Array.data[26]
       value: 
-      objectReference: {fileID: 17981076}
+      objectReference: {fileID: 576739497}
     - target: {fileID: 7676284057619152456, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: allPolterObjects.Array.data[27]
       value: 
-      objectReference: {fileID: 1705082210}
+      objectReference: {fileID: 2004259397}
     - target: {fileID: 7676284057619152456, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: allPolterObjects.Array.data[28]
       value: 
-      objectReference: {fileID: 399322875}
+      objectReference: {fileID: 2122013578}
     - target: {fileID: 7676284057619152456, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: allPolterObjects.Array.data[29]
       value: 
-      objectReference: {fileID: 1726786355}
+      objectReference: {fileID: 230653626}
     - target: {fileID: 7676284057619152456, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: allPolterObjects.Array.data[30]
       value: 
-      objectReference: {fileID: 938131369}
+      objectReference: {fileID: 1232625559}
     - target: {fileID: 7676284057619152456, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: allPolterObjects.Array.data[31]
       value: 
-      objectReference: {fileID: 1867970920}
+      objectReference: {fileID: 1232836540}
     - target: {fileID: 7880585864296020187, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: m_Name
       value: TaverneFertig
       objectReference: {fileID: 0}
-    - target: {fileID: 8264342550631543325, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+    - target: {fileID: 8211060335373376583, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
-      propertyPath: m_Mesh
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8211060335373376583, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: -1764240431042640746, guid: 134e85e9aee393f40b9be59398d8a05b,
+      objectReference: {fileID: -205629353262513385, guid: 134e85e9aee393f40b9be59398d8a05b,
         type: 3}
-    - target: {fileID: 8635117213482747223, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+    - target: {fileID: 8245998654389668295, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
-      propertyPath: playTime
-      value: 2.2
+      propertyPath: m_NavMeshLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8579170468596423399, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72b0f8bf5295a3347aa0b84b86b9c910, type: 3}
+--- !u!4 &576739497 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8508404635887066977, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+    type: 3}
+  m_PrefabInstance: {fileID: 571200853}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &706934585
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,115 +914,53 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  radius: 5
+  radius: 3
   interactionTransform: {fileID: 804654124}
   dialogue:
   - option:
-    - name: Dementum
+    - name: Helga
       endSentence: 0
       nextDialogue: 0
       nextMinigame: 0
       sentences:
-      - "Dementum: Hey you brat, I need your help. We\u2019re gonna play a game!\r"
+      - Hallo
+      - Willst du ein Spiel spielen?
       decisions:
-      - Are you talking with me?
-      - Yes, I guess so.
-      - No. I am not into games anymore.
-      nextDecisions: 010000000200000003000000
-    - name: Dementum
-      endSentence: 0
-      nextDialogue: 0
-      nextMinigame: 0
-      sentences:
-      - 'Dementum: You bet! Or is there any other soul?'
-      - 'Elios:  I guess not.'
-      - 'Dementum: What are you waiting for? Get your ass here and drink a bottle
-        of booze!'
-      - 'Elios: I am not interested.'
-      - "Dementum: Hey do you know, who you\u2019re talking with? Show some respect
-        and drink with an old man!"
-      - "Elios: But I don\u2019t drink anymore."
-      - "Dementum: You shut up! Y\u2019all know nothing! You are so weak. "
-      - 'Elios: How do you know?'
-      - "Dementum: Haven\u2019t you even noticed yet? You left your wife night by
-        night. All the empty bottles in front of your eyes. Are you that blind!?"
-      - 'Elios: Stop it. '
-      - "Dementum: Broken relationship to the whole family, total isolation and\u2026
-        the wish to die\u2026. doesn\u2019t it remind you at somebody!"
-      - 'Elios: Stop it.'
-      - "Dementum: You coward! Remember the pain you feel\u2026 about the kiss\u2026
-        about the love\u2026 about the betrayal\u2026 "
-      - 'Elios: STOP IT! STOP IT! STOP IT!'
-      - "Ego: Calm down buddy. Calm down. He is just teasing you. Let\u2019s play
-        the game with him. Trust me, it\u2019s gonna be fun. "
-      - 'Elios: [exhausted sighs]'
-      decisions:
-      - Fine!
-      nextDecisions: 02000000
-    - name: Dementum
-      endSentence: 1
-      nextDialogue: 0
-      nextMinigame: 1
-      sentences:
-      - "Dementum reveals \u201CHIS FACE\u201D and smiles wider."
-      - "Ego (moving backwards): Ahhhhh. What\u2019s that ugly thing! What\u2019s
-        happening! Elios protect me!"
-      - "Elios: [sighs] How annoying\u2026"
-      - "Dementum reveals his \u201CFULL APPEARANCE\u201D."
-      - 'Dementum: Finally. Took you long enough. '
-      - Dementum is turning back and prepares mugs with alcohol in the background.
-      - 'Dementum: You know what I really like about the booze?'
-      - 'Elios (pressed lips to the inside): ...'
-      - "Dementum (fills mugs): It\u2019s the golden elixir! You gotta try this joyness...
-        to fall in love!"
-      - "Ego: It wows me. That\u2019s beautiful!"
-      - 'Elios (looks distracted away): [sad sighs]'
-      - Dementum is turning back again and prepares 5 mugs on the counter.
-      - "Dementum: Let\u2019s drink, kid. Cheers."
-      decisions: []
-      nextDecisions: 
-    - name: Dementum
-      endSentence: 0
-      nextDialogue: 0
-      nextMinigame: 0
-      sentences:
-      - "Ego: Wait Elios! Why do you say no? We haven\u2019t even played yet."
-      - 'Elios: No. '
-      - "Ego: Oh come on! Don\u2019t be a douchebag. It\u2019s gonna be fun."
-      - "Dementum: Consider your decision well, kid\u2026 before your time runs out."
-      - 'Elios: [sighs]'
-      decisions:
-      - Fine!
-      nextDecisions: 02000000
-  - option:
-    - name: Dementum
+      - Ja
+      - Nein
+      nextDecisions: 0100000002000000
+    - name: Helga
       endSentence: 1
       nextDialogue: 1
       nextMinigame: 1
       sentences:
-      - "Dementum: I knew you couldn\u2019t resist! Do you feel free now?"
-      - 'Ego: Chill out, Elios. Take it easy! We feel great!'
+      - Gut
       decisions: []
       nextDecisions: 
-    - name: Dementum
+    - name: Helga
       endSentence: 1
-      nextDialogue: 0
+      nextDialogue: 1
       nextMinigame: 0
       sentences:
-      - "Dementum: Ohh, Elios. You gutted me. I have to admit, I expected better
-        from you. You can\u2019t make it. I am a part of you. hahaha"
-      - 'The view gets dark. Elios and Ego wake up in an empty tavern without neither
-        any interaction nor conversation. '
+      - Dann halt nicht
       decisions: []
       nextDecisions: 
   - option:
-    - name: Dementum
+    - name: Helga
       endSentence: 1
       nextDialogue: 0
       nextMinigame: 0
       sentences:
-      - 'Dementum: You gotta be kidding me! How dare you to ruin my game! '
-      - 'Ego: We won?... I mean, of course we did!'
+      - Du hast gewonnen
+      decisions: []
+      nextDecisions: 
+  - option:
+    - name: Helga
+      endSentence: 1
+      nextDialogue: 0
+      nextMinigame: 1
+      sentences:
+      - Du hast verloren, also nochmal!
       decisions: []
       nextDecisions: 
   currentDialogue: 0
@@ -1002,10 +975,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2.59
+  m_Radius: 0.5
+  m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &804654122
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1052,7 +1025,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804654118}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &804654124
 Transform:
   m_ObjectHideFlags: 0
@@ -1061,7 +1034,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 804654118}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.337, y: 2.71, z: -5.99}
+  m_LocalPosition: {x: -2.54, y: 2.53, z: -6.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1133,23 +1106,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &938131369 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8321752872338159150, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
-    type: 3}
-  m_PrefabInstance: {fileID: 571200853}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &968828441 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2824791702060548854, guid: 42fbe90f27e2b9341b3452e7a3770d55,
     type: 3}
   m_PrefabInstance: {fileID: 1378851287}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1263106587 stripped
+--- !u!4 &1106516702 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
+  m_CorrespondingSourceObject: {fileID: 6955173130622305581, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
     type: 3}
-  m_PrefabInstance: {fileID: 1378851287}
+  m_PrefabInstance: {fileID: 571200853}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1232625559 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8321752872338159150, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+    type: 3}
+  m_PrefabInstance: {fileID: 571200853}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1232836540 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4498382256341697864, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+    type: 3}
+  m_PrefabInstance: {fileID: 571200853}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1286486968
 PrefabInstance:
@@ -1451,16 +1430,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2824791702060548858, guid: 42fbe90f27e2b9341b3452e7a3770d55,
-        type: 3}
-      propertyPath: offset.y
-      value: -0.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2824791702060548858, guid: 42fbe90f27e2b9341b3452e7a3770d55,
-        type: 3}
-      propertyPath: offset.z
-      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42fbe90f27e2b9341b3452e7a3770d55, type: 3}
@@ -1825,137 +1794,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: OptionMenu
---- !u!4 &1705082210 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7693979654223135877, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
-    type: 3}
-  m_PrefabInstance: {fileID: 571200853}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1726786355 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3615724662136783378, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
-    type: 3}
-  m_PrefabInstance: {fileID: 571200853}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1774529493
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1263106587}
-    m_Modifications:
-    - target: {fileID: -6874540395504895234, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 27c8458056801f1438c8d4568e0dd03a, type: 2}
-    - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -3240801524000497711, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7933a3ae04d5c6540a8352422c93f107, type: 2}
-    - target: {fileID: -2677510830424957523, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: fedf252d409173d478ee3deb2bc7b3f2, type: 2}
-    - target: {fileID: -1307802162901923461, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 27c8458056801f1438c8d4568e0dd03a, type: 2}
-    - target: {fileID: -927199367670048503, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_Name
-      value: Elios_Demo
-      objectReference: {fileID: 0}
-    - target: {fileID: 3950180619983573033, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 47267b504fa7c154592c0189e6254844, type: 2}
-    - target: {fileID: 4701080151404704739, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 7933a3ae04d5c6540a8352422c93f107, type: 2}
-    - target: {fileID: 4928771201237304937, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 27c8458056801f1438c8d4568e0dd03a, type: 2}
-    - target: {fileID: 5242580469142234475, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: fedf252d409173d478ee3deb2bc7b3f2, type: 2}
-    - target: {fileID: 7123738995383398289, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: fedf252d409173d478ee3deb2bc7b3f2, type: 2}
-    - target: {fileID: 8465234877638403451, guid: 76099105a5d5ca042887626e80f42f13,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3bcc8b124c3dc3742948b4cfeb70ac02, type: 2}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 76099105a5d5ca042887626e80f42f13, type: 3}
 --- !u!1001 &1821549315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2045,12 +1883,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e7d85c5036bf234586106830204b26d, type: 3}
---- !u!4 &1867970920 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4498382256341697864, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
-    type: 3}
-  m_PrefabInstance: {fileID: 571200853}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1965782542
 GameObject:
   m_ObjectHideFlags: 0
@@ -2148,6 +1980,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5738023402585142806, guid: 28f39d92bb08188449602cd35f923bda,
     type: 3}
   m_PrefabInstance: {fileID: 2133544470}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2004259397 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7693979654223135877, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+    type: 3}
+  m_PrefabInstance: {fileID: 571200853}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2070405389
 PrefabInstance:
@@ -2298,6 +2136,12 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8675673900953465671, guid: fad27ae807bf8c9459db58ef836eaf48,
     type: 3}
   m_PrefabInstance: {fileID: 2070405389}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2122013578 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4297205028185828218, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+    type: 3}
+  m_PrefabInstance: {fileID: 571200853}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2127918796
 PrefabInstance:
@@ -2465,16 +2309,6 @@ PrefabInstance:
       propertyPath: assignedTarget
       value: 
       objectReference: {fileID: 804654118}
-    - target: {fileID: 5738023402585142807, guid: 28f39d92bb08188449602cd35f923bda,
-        type: 3}
-      propertyPath: winDialogue
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5738023402585142807, guid: 28f39d92bb08188449602cd35f923bda,
-        type: 3}
-      propertyPath: loseDialogue
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5738023403576437853, guid: 28f39d92bb08188449602cd35f923bda,
         type: 3}
       propertyPath: m_LocalPosition.z
