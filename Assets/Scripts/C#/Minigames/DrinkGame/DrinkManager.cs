@@ -12,6 +12,8 @@ public class DrinkManager : MonoBehaviour
 	public int maxAlcBottles;
 
 	public float drinkTime = 3;
+	private float startDrinkTime;
+
 	public float maxBottleTimer = 3;
 	public float bottleTime;
 
@@ -24,6 +26,7 @@ public class DrinkManager : MonoBehaviour
 
 	private void Start()
 	{
+		startDrinkTime = drinkTime;
 		bottles = GetComponentsInChildren<Drink>();
 		bottleTime = maxBottleTimer;
 		RandomAlc();
@@ -73,6 +76,10 @@ public class DrinkManager : MonoBehaviour
 
 	public void Win()
 	{
+		drinkBottles = 0;
+		drunkBottles = 0;
+		drinkTime = startDrinkTime;
+
 		//Win the DontGetDrunk game
 		Debug.Log("You Win");
 		gameFinishied = true;
@@ -86,9 +93,12 @@ public class DrinkManager : MonoBehaviour
 
 	public void Lost()
 	{
+		drinkBottles = 0;
+		drunkBottles = 0;
+		drinkTime = startDrinkTime;
+
 		//Lose the DontGetDrunk game
 		Debug.Log("You Lose");
-		gameFinishied = true;
 		//Dialogue.Opinion opinion = dialogue.opinion[selectedOpinion];
 
 		//Stop game

@@ -861,7 +861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e6aa5402ccc1d4196ca193f2d3de99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 3
+  radius: 5
   interactionTransform: {fileID: 804654124}
   dialogue:
   - option:
@@ -902,7 +902,7 @@ MonoBehaviour:
       decisions: []
       nextDecisions: 
   - option:
-    - name: Helga
+    - name: Hugo
       endSentence: 1
       nextDialogue: 0
       nextMinigame: 1
@@ -2344,6 +2344,16 @@ PrefabInstance:
       propertyPath: assignedTarget
       value: 
       objectReference: {fileID: 804654118}
+    - target: {fileID: 5738023402585142807, guid: 28f39d92bb08188449602cd35f923bda,
+        type: 3}
+      propertyPath: winDialogue
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5738023402585142807, guid: 28f39d92bb08188449602cd35f923bda,
+        type: 3}
+      propertyPath: loseDialogue
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5738023403576437853, guid: 28f39d92bb08188449602cd35f923bda,
         type: 3}
       propertyPath: m_LocalPosition.z
