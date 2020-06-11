@@ -3715,7 +3715,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: ec11f850f658f594c8245f0f4164b481, type: 2}
+  - {fileID: 5561349426305759274, guid: 38c0be124db833a4a97957b565eb543d, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4746,7 +4746,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 0
+  m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7865694150191613224, guid: 134e85e9aee393f40b9be59398d8a05b, type: 3}
 --- !u!54 &3911213630623938567
@@ -4764,7 +4764,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &2165935716548178195
 GameObject:
   m_ObjectHideFlags: 0
@@ -11293,7 +11293,7 @@ GameObject:
   m_Name: BenchAsset3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 2
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &2854638847414193064
@@ -13855,7 +13855,7 @@ GameObject:
   m_Name: BenchAsset1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 2
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1064477438621642218
@@ -14231,7 +14231,7 @@ GameObject:
   m_Name: BenchAsset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 2
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5336445592790290523
@@ -19665,7 +19665,7 @@ GameObject:
   m_Name: BenchAsset2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 2
+  m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &5665022552716368246
@@ -20783,7 +20783,7 @@ GameObject:
   - component: {fileID: 3770672703967751112}
   - component: {fileID: 7834219261793264911}
   - component: {fileID: 888302635908727086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Boden
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21528,7 +21528,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9003973357501729907}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.045763, y: 2.6497188, z: -5.4426193}
+  m_LocalPosition: {x: 1.4, y: 2.6497188, z: -6.92}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3250704021136211072}
@@ -22406,6 +22406,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6664204334613820729}
     m_Modifications:
+    - target: {fileID: 440799174531645454, guid: 48a61327a8284cc418663250367bede8,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1489510964535613613, guid: 48a61327a8284cc418663250367bede8,
         type: 3}
       propertyPath: m_LocalPosition.x

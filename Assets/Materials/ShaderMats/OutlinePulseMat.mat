@@ -79,8 +79,8 @@ Material:
     - _enable: 0
     - _outline_middleValue: 0.1
     - _outline_pulse: 4
-    - _outline_range: 10
-    - _outline_thickness: 1
+    - _outline_range: 6
+    - _outline_thickness: 0.1
     - _pulse_bool: 0
     m_Colors:
     - _AmbientColor: {r: 0.4, g: 0.4, b: 0.4, a: 1}
