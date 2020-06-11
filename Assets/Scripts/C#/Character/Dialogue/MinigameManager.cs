@@ -42,4 +42,12 @@ public class MinigameManager : MonoBehaviour
 		cameraController.offset = playerOffset;
 		cameraController.target = GameObject.Find("Player").transform;
 	}
+
+	public void StartNewDialog(int nextDialog)
+	{
+		//Stop game
+		EndMinigame();
+		GetComponent<DialogueTrigger>().currentDialogue = nextDialog;
+		GetComponent<DialogueTrigger>().TriggerDialogue();
+	}
 }

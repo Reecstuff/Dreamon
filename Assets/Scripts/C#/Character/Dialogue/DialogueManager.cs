@@ -103,6 +103,7 @@ public class DialogueManager : MonoBehaviour
 
         if (end == true && option.nextMinigame)
         {
+            currentTrigger.currentDialogue = option.nextDialogue;
             selectMinigame = option.nextMinigame;
         }
 

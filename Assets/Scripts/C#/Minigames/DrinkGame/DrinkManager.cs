@@ -80,15 +80,10 @@ public class DrinkManager : MonoBehaviour
 		drunkBottles = 0;
 		drinkTime = startDrinkTime;
 
-		//Win the DontGetDrunk game
-		Debug.Log("You Win");
 		gameFinishied = true;
-		//Dialogue.Opinion opinion = dialogue.opinion[selectedOpinion];
 
 		//Stop game
-		assignedTarget.GetComponent<MinigameManager>().EndMinigame();
-		assignedTarget.GetComponent<DialogueTrigger>().currentDialogue = winDialogue;
-		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
+		assignedTarget.GetComponent<MinigameManager>().StartNewDialog(winDialogue);
 	}
 
 	public void Lost()
@@ -97,14 +92,8 @@ public class DrinkManager : MonoBehaviour
 		drunkBottles = 0;
 		drinkTime = startDrinkTime;
 
-		//Lose the DontGetDrunk game
-		Debug.Log("You Lose");
-		//Dialogue.Opinion opinion = dialogue.opinion[selectedOpinion];
-
 		//Stop game
-		assignedTarget.GetComponent<MinigameManager>().EndMinigame();
-		assignedTarget.GetComponent<DialogueTrigger>().currentDialogue = loseDialogue;
-		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
+		assignedTarget.GetComponent<MinigameManager>().StartNewDialog(loseDialogue);
 	}
 
 	void RandomAlc()

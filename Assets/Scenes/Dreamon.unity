@@ -172,7 +172,7 @@ PrefabInstance:
     - target: {fileID: 5694374949202117750, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5694374949202117750, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
         type: 3}
@@ -483,7 +483,7 @@ PrefabInstance:
     - target: {fileID: 6558981377273023176, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6558981377273023176, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
@@ -536,7 +536,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &706934587
 MonoBehaviour:
@@ -815,49 +815,111 @@ MonoBehaviour:
   interactionTransform: {fileID: 804654124}
   dialogue:
   - option:
-    - name: Helga
+    - name: Dementum
       endSentence: 0
       nextDialogue: 0
       nextMinigame: 0
       sentences:
-      - Hallo
-      - Willst du ein Spiel spielen?
+      - "Dementum: Hey you brat, I need your help. We\u2019re gonna play a game!\r"
       decisions:
-      - Ja
-      - Nein
-      nextDecisions: 0100000002000000
-    - name: Helga
+      - Are you talking with me?
+      - Yes, I guess so.
+      - No. I am not into games anymore.
+      nextDecisions: 010000000200000003000000
+    - name: Dementum
+      endSentence: 0
+      nextDialogue: 0
+      nextMinigame: 0
+      sentences:
+      - 'Dementum: You bet! Or is there any other soul?'
+      - 'Elios:  I guess not.'
+      - 'Dementum: What are you waiting for? Get your ass here and drink a bottle
+        of booze!'
+      - 'Elios: I am not interested.'
+      - "Dementum: Hey do you know, who you\u2019re talking with? Show some respect
+        and drink with an old man!"
+      - "Elios: But I don\u2019t drink anymore."
+      - "Dementum: You shut up! Y\u2019all know nothing! You are so weak. "
+      - 'Elios: How do you know?'
+      - "Dementum: Haven\u2019t you even noticed yet? You left your wife night by
+        night. All the empty bottles in front of your eyes. Are you that blind!?"
+      - 'Elios: Stop it. '
+      - "Dementum: Broken relationship to the whole family, total isolation and\u2026
+        the wish to die\u2026. doesn\u2019t it remind you at somebody!"
+      - 'Elios: Stop it.'
+      - "Dementum: You coward! Remember the pain you feel\u2026 about the kiss\u2026
+        about the love\u2026 about the betrayal\u2026 "
+      - 'Elios: STOP IT! STOP IT! STOP IT!'
+      - "Ego: Calm down buddy. Calm down. He is just teasing you. Let\u2019s play
+        the game with him. Trust me, it\u2019s gonna be fun. "
+      - 'Elios: [exhausted sighs]'
+      decisions:
+      - Fine!
+      nextDecisions: 02000000
+    - name: Dementum
+      endSentence: 1
+      nextDialogue: 0
+      nextMinigame: 1
+      sentences:
+      - "Dementum reveals \u201CHIS FACE\u201D and smiles wider."
+      - "Ego (moving backwards): Ahhhhh. What\u2019s that ugly thing! What\u2019s
+        happening! Elios protect me!"
+      - "Elios: [sighs] How annoying\u2026"
+      - "Dementum reveals his \u201CFULL APPEARANCE\u201D."
+      - 'Dementum: Finally. Took you long enough. '
+      - Dementum is turning back and prepares mugs with alcohol in the background.
+      - 'Dementum: You know what I really like about the booze?'
+      - 'Elios (pressed lips to the inside): ...'
+      - "Dementum (fills mugs): It\u2019s the golden elixir! You gotta try this joyness...
+        to fall in love!"
+      - "Ego: It wows me. That\u2019s beautiful!"
+      - 'Elios (looks distracted away): [sad sighs]'
+      - Dementum is turning back again and prepares 5 mugs on the counter.
+      - "Dementum: Let\u2019s drink, kid. Cheers."
+      decisions: []
+      nextDecisions: 
+    - name: Dementum
+      endSentence: 0
+      nextDialogue: 0
+      nextMinigame: 0
+      sentences:
+      - "Ego: Wait Elios! Why do you say no? We haven\u2019t even played yet."
+      - 'Elios: No. '
+      - "Ego: Oh come on! Don\u2019t be a douchebag. It\u2019s gonna be fun."
+      - "Dementum: Consider your decision well, kid\u2026 before your time runs out."
+      - 'Elios: [sighs]'
+      decisions:
+      - Fine!
+      nextDecisions: 02000000
+  - option:
+    - name: Dementum
       endSentence: 1
       nextDialogue: 1
       nextMinigame: 1
       sentences:
-      - Gut
+      - "Dementum: I knew you couldn\u2019t resist! Do you feel free now?"
+      - 'Ego: Chill out, Elios. Take it easy! We feel great!'
       decisions: []
       nextDecisions: 
-    - name: Helga
-      endSentence: 1
-      nextDialogue: 1
-      nextMinigame: 0
-      sentences:
-      - Dann halt nicht
-      decisions: []
-      nextDecisions: 
-  - option:
-    - name: Helga
+    - name: Dementum
       endSentence: 1
       nextDialogue: 0
       nextMinigame: 0
       sentences:
-      - Du hast gewonnen
+      - "Dementum: Ohh, Elios. You gutted me. I have to admit, I expected better
+        from you. You can\u2019t make it. I am a part of you. hahaha"
+      - 'The view gets dark. Elios and Ego wake up in an empty tavern without neither
+        any interaction nor conversation. '
       decisions: []
       nextDecisions: 
   - option:
-    - name: Hugo
+    - name: Dementum
       endSentence: 1
       nextDialogue: 0
-      nextMinigame: 1
+      nextMinigame: 0
       sentences:
-      - Du hast verloren, also nochmal!
+      - 'Dementum: You gotta be kidding me! How dare you to ruin my game! '
+      - 'Ego: We won?... I mean, of course we did!'
       decisions: []
       nextDecisions: 
   currentDialogue: 0
@@ -1001,11 +1063,17 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &968828441 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2824791702060548854, guid: 42fbe90f27e2b9341b3452e7a3770d55,
+    type: 3}
+  m_PrefabInstance: {fileID: 1378851287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1263106587 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
     type: 3}
   m_PrefabInstance: {fileID: 1378851287}
   m_PrefabAsset: {fileID: 0}
@@ -1069,7 +1137,7 @@ PrefabInstance:
     - target: {fileID: 2255709759897920732, guid: 61a8626989b54724e88c26b88f669121,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2255709759897920732, guid: 61a8626989b54724e88c26b88f669121,
         type: 3}
@@ -1293,7 +1361,7 @@ PrefabInstance:
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
@@ -1309,6 +1377,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824791702060548858, guid: 42fbe90f27e2b9341b3452e7a3770d55,
+        type: 3}
+      propertyPath: offset.y
+      value: -0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2824791702060548858, guid: 42fbe90f27e2b9341b3452e7a3770d55,
+        type: 3}
+      propertyPath: offset.z
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 42fbe90f27e2b9341b3452e7a3770d55, type: 3}
@@ -1404,7 +1482,7 @@ RectTransform:
   m_Children:
   - {fileID: 455476535}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1673,12 +1751,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: OptionMenu
---- !u!1001 &1774529493
+--- !u!1001 &1681048574
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1263106587}
     m_Modifications:
     - target: {fileID: -6874540395504895234, guid: 76099105a5d5ca042887626e80f42f13,
         type: 3}
@@ -1688,7 +1766,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
         type: 3}
@@ -1698,32 +1776,32 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.665
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.2791122
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9602585
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
         type: 3}
@@ -1733,7 +1811,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -32.414
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 76099105a5d5ca042887626e80f42f13,
         type: 3}
@@ -1842,7 +1920,7 @@ PrefabInstance:
     - target: {fileID: 3625145728277787652, guid: 8e7d85c5036bf234586106830204b26d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 3625145728277787652, guid: 8e7d85c5036bf234586106830204b26d,
         type: 3}
@@ -1971,7 +2049,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1995144029 stripped
 GameObject:
@@ -2179,7 +2257,7 @@ PrefabInstance:
     - target: {fileID: 7702697048992747540, guid: 560a176989c1f064e8175bfb1aaf64af,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7702697048992747540, guid: 560a176989c1f064e8175bfb1aaf64af,
         type: 3}
@@ -2298,12 +2376,12 @@ PrefabInstance:
     - target: {fileID: 5738023402585142807, guid: 28f39d92bb08188449602cd35f923bda,
         type: 3}
       propertyPath: winDialogue
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5738023402585142807, guid: 28f39d92bb08188449602cd35f923bda,
         type: 3}
       propertyPath: loseDialogue
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5738023403576437853, guid: 28f39d92bb08188449602cd35f923bda,
         type: 3}
@@ -2367,7 +2445,7 @@ PrefabInstance:
     - target: {fileID: 2373144106839695406, guid: 64f33a92c10d8eb429bbc1c8d2d9f9d5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2373144106839695406, guid: 64f33a92c10d8eb429bbc1c8d2d9f9d5,
         type: 3}
