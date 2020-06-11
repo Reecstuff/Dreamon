@@ -6,17 +6,17 @@ using DG.Tweening;
 [RequireComponent(typeof(Light))]
 public class PulseOnClick : MonoBehaviour
 {
-    [SerializeField]
-    float maxIntensity = 2;
 
     [SerializeField]
     float time = 0.5f;
 
     Light light;
+    float maxIntensity;
 
     void Start()
     {
-        light = GetComponent<Light>();    
+        light = GetComponent<Light>();
+        maxIntensity = light.intensity * 2;
     }
 
     // Update is called once per frame

@@ -30,6 +30,11 @@ public class Pieces : Chessman
 			}
 			else
 			{
+				if (isEnemy != c.isEnemy)
+				{
+					r[i, j] = true;
+				}
+
 				break;
 			}
 		}
@@ -53,6 +58,11 @@ public class Pieces : Chessman
 			}
 			else
 			{
+				if (isEnemy != c.isEnemy)
+				{
+					r[i, j] = true;
+				}
+
 				break;
 			}
 		}
@@ -76,6 +86,11 @@ public class Pieces : Chessman
 			}
 			else
 			{
+				if (isEnemy != c.isEnemy)
+				{
+					r[i, j] = true;
+				}
+
 				break;
 			}
 		}
@@ -99,6 +114,11 @@ public class Pieces : Chessman
 			}
 			else
 			{
+				if (isEnemy != c.isEnemy)
+				{
+					r[i, j] = true;
+				}
+
 				break;
 			}
 		}

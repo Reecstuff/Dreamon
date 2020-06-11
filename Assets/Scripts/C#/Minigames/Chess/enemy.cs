@@ -2,8 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class enemy : Chessman
+public class Enemy : Chessman
 {
+	private void Start()
+	{
+		isEnemy = true;
+	}
+
 	public override bool[,] PossibleMove()
 	{
 		bool[,] r = new bool[8, 8];

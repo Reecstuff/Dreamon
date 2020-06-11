@@ -16,9 +16,20 @@ public class SetOnCursor : MonoBehaviour
     float maxDistance = 20;
 
     [SerializeField]
-    bool isMenu = false;
+    float minDistance = 6;
+
+    [SerializeField]
+    ParticleSystem particleSystem;
+
+    [SerializeField]
+    Light light;
+
+    [SerializeField]
+    int layerMask = 9;
+
 
     RaycastHit hit;
+    RaycastHit secondHit;
     Vector3 nextPosition;
 
     // Start is called before the first frame update
@@ -27,21 +38,26 @@ public class SetOnCursor : MonoBehaviour
         if (!cam)
             cam = Camera.main;
 
-        Cursor.visible = isMenu;
-
-
-        var main = GetComponent<ParticleSystem>().main;
-        main.useUnscaledTime = true;
+        Cursor.visible = false;
+        layerMask = 1 << layerMask;
+        layerMask = ~layerMask;
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        if(Time.timeScale > 0 && !isMenu)
+        if(Time.timeScale > 0 && !Cursor.visible)
         {
-            if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, maxDistance))
+            if(particleSystem.isPaused)
             {
+                particleSystem.Play();
+                light.enabled = true;
+            }
+
+            if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, maxDistance, -1, QueryTriggerInteraction.Ignore))
+            {
+
                 nextPosition = new Vector3(hit.point.x, hit.point.y + yOffset, hit.point.z);
             }
             else
@@ -51,7 +67,10 @@ public class SetOnCursor : MonoBehaviour
         }
         else
         {
-            nextPosition = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, maxDistance));
+            particleSystem.Pause();
+            particleSystem.Clear();
+            light.enabled = false;
+            return;
         }
         transform.position = nextPosition;
     }

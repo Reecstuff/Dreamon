@@ -10,16 +10,23 @@ public class PauseMenu : MonoBehaviour
     [SerializeField]
     Canvas pauseMenu;
 
+    KeyCode openPauseMenu;
 
     void Start()
     {
+        #if UNITY_EDITOR
+                openPauseMenu = KeyCode.Backspace;
+        #else
+                openPauseMenu = KeyCode.Escape;
+        #endif
+
         pauseMenu.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (Input.GetKeyDown(openPauseMenu))
         {
             if (pauseMenuOpen)
             {
@@ -41,6 +48,8 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1;
         AudioManager.Instance?.PitchManual(1);
 
+        // Set Cursor to 3D Particle Cursor
+        Cursor.visible = false;
 
         pauseMenuOpen = false;
     }
@@ -53,6 +62,9 @@ public class PauseMenu : MonoBehaviour
 
         AudioManager.Instance?.PitchManual(0.7f);
 
+        // Set Cursor to MenuCursor
+        Cursor.visible = true;
+
     }
 
     private void OnDisable()
@@ -60,5 +72,8 @@ public class PauseMenu : MonoBehaviour
         Cursor.visible = true;
         Time.timeScale = 1;
         AudioManager.Instance?.PitchManual(1);
+
+        // Set Cursor to 3D Particle Cursor
+        Cursor.visible = true;
     }
 }

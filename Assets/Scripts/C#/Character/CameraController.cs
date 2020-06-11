@@ -17,7 +17,8 @@ public class CameraController : MonoBehaviour
     {
         transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-        if (Input.GetKey(KeyCode.Mouse2))
+        //Rotates the camera when you hold down the middle mouse button
+        if (Input.GetKey(KeyCode.Mouse1))
         {
             Quaternion camTurnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * Time.deltaTime * 1000f, Vector3.up);
 
@@ -27,6 +28,7 @@ public class CameraController : MonoBehaviour
 
     void LateUpdate()
     {
+        //The camera follows the player
         transform.position = target.position - offset * currentZoom;
         transform.LookAt(target.position + Vector3.up * pitch);
 

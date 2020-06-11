@@ -29,6 +29,7 @@ public class PlayerMotor : MonoBehaviour
         agent.SetDestination(point);
     }
 
+    //Moves the player towards the object he wants to interact with
     public void FollowTarget(Interactable newTarget)
     {
         agent.stoppingDistance = newTarget.radius * .8f;
@@ -45,6 +46,7 @@ public class PlayerMotor : MonoBehaviour
         target = null;
     }
 
+    //The player turns to the object he wants to interact with so that he looks at it
     void FaceTarget()
     {
         Vector3 direction = (target.position - transform.position).normalized;

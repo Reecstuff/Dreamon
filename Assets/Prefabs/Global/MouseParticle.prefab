@@ -44,7 +44,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -77,8 +77,8 @@ Light:
     m_UseCullingMatrixOverride: 0
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
+  m_Flare: {fileID: 12100000, guid: 70bb52110f117fd4ea28cc551bf57316, type: 2}
+  m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -105,7 +105,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851511612cf67264a8811054a82bbac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxIntensity: 2
   time: 0.5
 --- !u!1 &3625145728277787675
 GameObject:
@@ -120,6 +119,7 @@ GameObject:
   - component: {fileID: 3625145728277787674}
   - component: {fileID: 3625145728277787655}
   - component: {fileID: 3625145728277787654}
+  - component: {fileID: 837758263415675634}
   m_Layer: 0
   m_Name: MouseParticle
   m_TagString: Untagged
@@ -394,7 +394,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 0.35
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -4871,13 +4871,13 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3625145728277787675}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
-  m_Range: 1
+  m_Range: 0.5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -4940,4 +4940,23 @@ MonoBehaviour:
   cam: {fileID: 0}
   yOffset: 0.2
   maxDistance: 15
-  isMenu: 0
+  minDistance: 6
+  particleSystem: {fileID: 3625145728277787653}
+  light: {fileID: 3625145728277787655}
+  layerMask: 9
+--- !u!123 &837758263415675634
+LensFlare:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3625145728277787675}
+  m_Enabled: 1
+  m_Flare: {fileID: 12100000, guid: 70bb52110f117fd4ea28cc551bf57316, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Brightness: 1
+  m_FadeSpeed: 3
+  m_IgnoreLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Directional: 1

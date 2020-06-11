@@ -6,29 +6,16 @@ public class Drink : MonoBehaviour
 {
 	public bool isAlc;
 
-	private float bottleTimer;
-	public float maxBottleTimer = 3;
+	DrinkManager drinkManager;
 
-	private void Update()
+	private void Start()
 	{
-		if (GetComponent<MeshRenderer>().enabled == false)
-		{
-			bottleTimer -= Time.deltaTime;
-		}
-		if (bottleTimer <= 0)
-		{
-			bottleTimer = maxBottleTimer;
-
-			RandomAlc();
-
-			GetComponent<MeshRenderer>().enabled = true;
-		}
+		drinkManager = GetComponentInParent<DrinkManager>();
 	}
 
+	//Drink the bottle by deactivating the MeshRenderer
 	public void DrinkBottle()
 	{
-		DrinkManager drinkManager = GameObject.Find("DrinkGame").GetComponent<DrinkManager>();
-
 		if (isAlc == true)
 		{
 			drinkManager.drunkBottles++;
@@ -41,17 +28,19 @@ public class Drink : MonoBehaviour
 		GetComponent<MeshRenderer>().enabled = false;
 	}
 
-	private bool RandomAlc()
+	public void SetBottle(bool isAlcoholic = true)
 	{
-		float rNumber = Random.Range(0.0f, 1.0f);
+		isAlc = isAlcoholic;
 
-		if (rNumber < 0.75f)
+		if(isAlcoholic)
 		{
-			return isAlc = true;
+
+			GetComponent<Renderer>().material.SetColor("_Color", new Color(1, 0.92f, 0.016f, 1));
+			GetComponent<MeshRenderer>().enabled = true;
 		}
 		else
 		{
-			return isAlc = false;
+			GetComponent<Renderer>().material.SetColor("_Color", new Color(1, 1, 1, 1));
 		}
 	}
 }
