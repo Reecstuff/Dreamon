@@ -30,7 +30,7 @@ public class DialogueManager : MonoBehaviour
 
     public int selectedOpinion;
 
-    bool selectMinigame;
+    public bool selectMinigame;
 
     /// <summary>
     /// Save the size of one TextLine
@@ -99,6 +99,11 @@ public class DialogueManager : MonoBehaviour
         {
             decisionsButtons[i].onClick.RemoveListener(() => SelectOption(currentTrigger.dialogue[currentTrigger.currentDialogue], currentTrigger));
             decisionsButtons[i].onClick.AddListener(() => SelectOption(currentTrigger.dialogue[currentTrigger.currentDialogue], currentTrigger));
+        }
+
+        if (end == true && option.nextMinigame)
+        {
+            selectMinigame = option.nextMinigame;
         }
 
         DisplayNextSentence();
