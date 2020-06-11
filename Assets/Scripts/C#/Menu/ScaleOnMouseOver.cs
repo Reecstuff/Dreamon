@@ -66,7 +66,7 @@ public class ScaleOnMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExi
             //    StopCoroutine(coroutine);
 
             recT.DOKill();
-            recT.DOScale(scaleVector, scaleSpeed);
+            recT.DOScale(scaleVector, scaleSpeed).SetUpdate(true);
 
             //coroutine = StartCoroutine(LerpVector(scaleVector, scaleSpeed));
         }
