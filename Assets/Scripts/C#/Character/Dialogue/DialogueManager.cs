@@ -32,6 +32,8 @@ public class DialogueManager : MonoBehaviour
 
     public bool selectMinigame;
 
+    int minigameDialogue;
+
     /// <summary>
     /// Save the size of one TextLine
     /// </summary>
@@ -49,6 +51,7 @@ public class DialogueManager : MonoBehaviour
     /// <param name="currentTrigger"></param>
     public void StartDialogue (DialogueTrigger currentTrigger)
     {
+        Cursor.visible = true;
         //Reset the Buttons
         continueButton.SetActive(true);
         decisions.SetActive(false);
@@ -164,7 +167,6 @@ public class DialogueManager : MonoBehaviour
         //Checks whether the dialog is over to start a mini-game
         if (end == true)
         {
-            currentTrigger.currentDialogue = option.nextDialogue;
             selectMinigame = option.nextMinigame;
             minigameManager = currentTrigger.minigameManager;
         }
@@ -232,6 +234,7 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void EndDialogue()
     {
+        Cursor.visible = false;
         animator.SetBool("IsOpen", false);
 
         //Stop focusing any objects

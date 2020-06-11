@@ -10,7 +10,7 @@ Material:
   m_Name: Candle
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _EMISSION
-  m_LightmapFlags: 1
+  m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -73,5 +73,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 0.7653514, b: 0, a: 1}
-    - _EmissionColor: {r: 10.293256, g: 8.696027, b: 2.0852718, a: 1}
+    - _Color: {r: 0.9528302, g: 0.738008, b: 0.22921856, a: 1}
+    - _EmissionColor: {r: 5.2164755, g: 2.594582, b: 1.0651442, a: 1}
