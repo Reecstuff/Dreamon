@@ -8,16 +8,31 @@ public class HOManager : MonoBehaviour
 	public int foundObjects;
 
 	public GameObject assignedTarget;
-	public int winDialogue;
+
+	public float searchTime = 60;
+
+	public int winDialog;
+	public int loseDialog;
 
 	private void Update()
 	{
-		if (hiddenObjects.Length == foundObjects)
+		searchTime -= Time.deltaTime;
+
+		if (searchTime <= 0)
 		{
-			//Stop game
-			assignedTarget.GetComponent<MinigameManager>().EndMinigame();
-			assignedTarget.GetComponent<DialogueTrigger>().currentDialogue = winDialogue;
-			assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
+			EndGame(loseDialog);
 		}
+		else if (hiddenObjects.Length == foundObjects)
+		{
+			EndGame(winDialog);
+		}
+	}
+
+	void EndGame(int dialogNumber)
+	{
+		//Stop game
+		assignedTarget.GetComponent<MinigameManager>().EndMinigame();
+		assignedTarget.GetComponent<DialogueTrigger>().currentDialogue = dialogNumber;
+		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
 	}
 }
