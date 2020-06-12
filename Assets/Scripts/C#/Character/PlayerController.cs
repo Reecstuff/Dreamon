@@ -6,11 +6,14 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public Interactable focus;
-
     public LayerMask movementMask;
 
+    [HideInInspector]
+    public PlayerMotor motor;
+
     Camera cam;
-    PlayerMotor motor;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -47,11 +50,8 @@ public class PlayerController : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 100, movementMask, QueryTriggerInteraction.Ignore))
             {
-                if (!hit.transform.gameObject.GetComponent<Interactable>())
-                {
-                    //Move our player to what we hit
-                    motor.MoveToPoint(hit.point);
-                }
+                //Move our player to what we hit
+                motor.MoveToPoint(hit.point);
             }
         }
     }

@@ -10,6 +10,8 @@ public class DialogueTrigger : Interactable
 
 	public MinigameManager minigameManager;
 
+	public Transform CameraPosition;
+
 	//Starts interacting with the player
 	public override void Interact()
 	{

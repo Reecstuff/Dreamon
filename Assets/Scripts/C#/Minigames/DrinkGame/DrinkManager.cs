@@ -81,6 +81,7 @@ public class DrinkManager : MonoBehaviour
 	{
 		drinkBottles = 0;
 		drunkBottles = 0;
+		bottleTime = 0;
 		drinkTime = startDrinkTime;
 
 		//Stop game
@@ -91,6 +92,7 @@ public class DrinkManager : MonoBehaviour
 	{
 		drinkBottles = 0;
 		drunkBottles = 0;
+		bottleTime = 0;
 		drinkTime = startDrinkTime;
 
 		//Stop game
