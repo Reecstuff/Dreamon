@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7102725894539711598
+--- !u!1 &7156026689946373129
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,22 +8,23 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7102725894539711599}
-  - component: {fileID: 7102725894539711592}
+  - component: {fileID: 7156026689946373128}
+  - component: {fileID: 7156026689946373135}
+  - component: {fileID: 1133812109691748872}
   m_Layer: 0
-  m_Name: StartDialog
+  m_Name: StartDialog 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &7102725894539711599
+--- !u!4 &7156026689946373128
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7102725894539711598}
+  m_GameObject: {fileID: 7156026689946373129}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.213, y: 3.328, z: 0.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -31,13 +32,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7102725894539711592
+--- !u!114 &7156026689946373135
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7102725894539711598}
+  m_GameObject: {fileID: 7156026689946373129}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2bdce08c02355b94ab3da141e9827148, type: 3}
@@ -49,24 +50,34 @@ MonoBehaviour:
   dialogue:
   - option:
     - endSentence: 1
-      nextMinigame: 0
+      nextMinigame: 1
       talks:
       - cameraTarget: {fileID: 0}
+        name: Narrator
+        sentence: "Elios lies on the ground. Ego is growing out of Elios\u2019 body
+          and wants to go forward, but his body is sticking to Elios."
+      - cameraTarget: {fileID: 0}
+        name: Narrator
+        sentence: ' Both are looking to the center of their body and then to each
+          other. Elios gets up quickly.'
+      - cameraTarget: {fileID: 0}
         name: Ego
-        sentence: Wow... this place is so cool! Wait..., I can't move! Where are
-          my legs?!
+        sentence: '(looking around) Wow... this place is so cool! Wait.., I can''t
+          move! Where are my legs?!
+
+'
       - cameraTarget: {fileID: 0}
         name: Elios
-        sentence: What... ? Who... ?
+        sentence: "What\u2026? Who\u2026? "
       - cameraTarget: {fileID: 0}
         name: Ego
-        sentence: Oh... Ehm... hey... my name is Ego, and yours... ?
+        sentence: "Oh\u2026 Ehm...hey... my name is Ego, and yours\u2026?"
       - cameraTarget: {fileID: 0}
-        name: Elios
-        sentence: '[sighs] Elios...'
+        name: 'Elios '
+        sentence: " (depressed) [sighs] Elios\u2026"
       - cameraTarget: {fileID: 0}
         name: Ego
-        sentence: Ehm... Do you know this place?
+        sentence: "Ehm\u2026 Do you know this place? "
       - cameraTarget: {fileID: 0}
         name: Elios
         sentence: No...
@@ -78,25 +89,95 @@ MonoBehaviour:
         sentence: I guess so.
       - cameraTarget: {fileID: 0}
         name: Ego
-        sentence: Not today! Let's be friends!
+        sentence: "Not today! Let\u2019s be friends! "
       - cameraTarget: {fileID: 0}
         name: Elios
-        sentence: I don't want a friend now...
+        sentence: "I don\u2019t want a friend now..."
+      - cameraTarget: {fileID: 0}
+        name: 'Ego '
+        sentence: "(surprised) Ohh\u2026 So you already have a friend!?"
+      - cameraTarget: {fileID: 0}
+        name: 'Elios '
+        sentence: (annoyed) No. I am not interested.
+      - cameraTarget: {fileID: 0}
+        name: 'Ego '
+        sentence: "(excited) No? So let\u2019s be friends then!"
+      - cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: Get off me! I am not in the mood for speaking...
       - cameraTarget: {fileID: 0}
         name: Ego
-        sentence: Ohh... So you already have a friend!?
+        sentence: "Maybe...if we play a game\u2026I will go."
       - cameraTarget: {fileID: 0}
         name: Elios
-        sentence: No. I am not interested.
+        sentence: "[sighs] If you say so\u2026 "
       - cameraTarget: {fileID: 0}
         name: Ego
-        sentence: No? So let's be friends then!
+        sentence: "Really\u2026?! Awesome! You good at chess? Let\u2019s play! Let\u2019s
+          play! Let\u2019s play! (pure excitement)"
+      decisions: []
+      nextDecisions: 
+  - option:
+    - endSentence: 1
+      nextMinigame: 0
+      talks:
       - cameraTarget: {fileID: 0}
         name: Elios
-        sentence: "Get off me! I am not in the mood for speaking... \r"
+        sentence: "Uhh\u2026 I didn\u2019t win."
+      - cameraTarget: {fileID: 0}
+        name: 'Ego '
+        sentence: "(happy) Yea\u2026 of course I won, I knew it!"
+      - cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: '[sighs]
+
+'
+      decisions: []
+      nextDecisions: 
+  - option:
+    - endSentence: 1
+      nextMinigame: 0
+      talks:
+      - cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: "Oh\u2026 I suppose I won\u2026"
+      - cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: "Yea, you won... I wanna play again! Please\u2026 Please\u2026.
+          Please\u2026.!"
+      - cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: 'No. I won. We had a deal...
+
+'
+      - cameraTarget: {fileID: 0}
+        name: 'Ego '
+        sentence: "(serious) I said maybe\u2026 no matter if you win or lose I will
+          be with you... "
+      - cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: '[sighs]'
       decisions: []
       nextDecisions: 
   currentDialogue: 0
-  minigameManager: {fileID: 0}
+  minigameManager: {fileID: 1133812109691748872}
   isClick: 0
-  objectsToDeactivate: []
+--- !u!114 &1133812109691748872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7156026689946373129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c4268f7c154c645be5dcf1130bf241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
+  cameraPosition: {fileID: 7156026689946373128}
+  minigame: {fileID: 0}
+  endDoor: {fileID: 0}
+  winRounds: 0
+  nextWinDialog: 02000000
+  nextLoseDialog: 03000000
