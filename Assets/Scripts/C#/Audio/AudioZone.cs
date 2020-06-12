@@ -49,4 +49,12 @@ public class AudioZone : MonoBehaviour
             currentFXTimeSamples = AudioManager.Instance.GetSamples(1);
         }
     }
+
+    private void OnDisable()
+    {
+        if(AudioManager.Instance)
+        {
+            AudioManager.Instance.SetSourceClip(null, 1);
+        }
+    }
 }

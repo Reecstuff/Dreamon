@@ -86,6 +86,12 @@ public class AudioManager : MonoBehaviour
     /// <param name="clip">New Backgroundmusic</param>
     public void SetSourceClip(AudioClip clip, int index = 0, int timeSamples = 0)
     {
+        if (!clip)
+        {
+            sources[index].Stop();
+            return;
+        }
+
         if (timeSamples > 0)
             sources[index].timeSamples = timeSamples;
 

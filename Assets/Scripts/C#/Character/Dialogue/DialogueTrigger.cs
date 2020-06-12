@@ -13,6 +13,10 @@ public class DialogueTrigger : Interactable
 
 	public bool isClick = false;
 
+	// Delete this, it is already in Dementum
+	[SerializeField]
+	GameObject[] objectsToDeactivate;
+
 	//Starts interacting with the player
 	public override void Interact()
 	{
@@ -39,6 +43,15 @@ public class DialogueTrigger : Interactable
 		s.Append(transform.DOScale(Vector3.zero, animationTime));
 		s.Join(transform.DOShakeRotation(animationTime));
 		s.Play();
+
+		if (objectsToDeactivate.Length > 0)
+		{
+			for (int i = 0; i < objectsToDeactivate.Length; i++)
+			{
+				objectsToDeactivate[i].SetActive(false);
+			}
+		}
+
 		Invoke(nameof(SetInactive), animationTime + 0.5f);
 	}
 

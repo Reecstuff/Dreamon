@@ -2,15 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class Drink : MonoBehaviour
 {
 	public bool isAlc;
 
 	DrinkManager drinkManager;
 
+	[SerializeField]
+	AudioClip drinkAlc;
+	
+	[SerializeField]
+	AudioClip drinkWater;
+
+
+	AudioSource source;
 	private void Start()
 	{
 		drinkManager = GetComponentInParent<DrinkManager>();
+		source = GetComponent<AudioSource>();
 	}
 
 	//Drink the bottle by deactivating the MeshRenderer
@@ -19,12 +29,14 @@ public class Drink : MonoBehaviour
 		if (isAlc == true)
 		{
 			drinkManager.drunkBottles++;
+			source.clip = drinkAlc;
 		}
 		else
 		{
 			drinkManager.drinkBottles++;
+			source.clip = drinkWater;
 		}
-
+		source.Play();
 		GetComponent<MeshRenderer>().enabled = false;
 	}
 

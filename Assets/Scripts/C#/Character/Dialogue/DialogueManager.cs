@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
+using System.Linq;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -18,6 +19,8 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
 
     private Queue<string> sentences;
+    Queue<Transform> positions;
+    Queue<string> names;
 
     public GameObject continueButton;
     public GameObject endButton;
@@ -29,7 +32,7 @@ public class DialogueManager : MonoBehaviour
 
     bool end;
 
-    public int selectedOpinion;
+    public int selectedOpinion = 0;
 
     public bool selectMinigame;
     public DialogueTrigger currentDialogObject;
@@ -45,6 +48,8 @@ public class DialogueManager : MonoBehaviour
     void Awake()
     {
         sentences = new Queue<string>();
+        positions = new Queue<Transform>();
+        names = new Queue<string>();
         oneTextLineSizeY = nameText.GetPreferredValues("0").y;
         cameraController = Camera.main.GetComponent<CameraController>();
         player = FindObjectOfType<PlayerController>();
@@ -97,19 +102,9 @@ public class DialogueManager : MonoBehaviour
         //Opens the dialog box
         animator.SetBool("IsOpen", true);
 
-        sentences.Clear();
+      
 
-        // Go through Talks and switch Camera
-        for (int i = 0; i < option.talks.Length; i++)
-        {
-            if (!string.IsNullOrEmpty(option.talks[i].name) && !option.talks[i].name.Equals(nameText.text))
-            {
-                nameText.text = option.talks[i].name;
-                if (option.talks[i].cameraTarget)
-                    cameraController.target = option.talks[i].cameraTarget;
-            }
-            sentences.Enqueue(option.talks[i].sentence);
-        }
+        StartTalk(option);
 
         end = option.endSentence;
 
@@ -170,19 +165,8 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool("IsOpen", true);
 
 
-        sentences.Clear();
 
-        // Go through Talks and switch Camera
-        for (int i = 0; i < option.talks.Length; i++)
-        {
-            if (!string.IsNullOrEmpty(option.talks[i].name) && !option.talks[i].name.Equals(nameText.text))
-            {
-                nameText.text = option.talks[i].name;
-                if(option.talks[i].cameraTarget)
-                    cameraController.target = option.talks[i].cameraTarget;
-            }
-            sentences.Enqueue(option.talks[i].sentence);
-        }
+        StartTalk(option);
 
         end = option.endSentence;
 
@@ -214,11 +198,23 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
-        
+        string charName = names.Dequeue();
+        Transform nextTarget = positions.Dequeue();
+
+        if(!string.IsNullOrEmpty(charName) && !nameText.text.Equals(charName))
+        {
+            nameText.SetText(charName);
+        }
+
+        if(nextTarget && !nextTarget.Equals(cameraController.target))
+        {
+            cameraController.LerpLookAt(nextTarget);
+        }
+
         // Stop Typing
         StopAllCoroutines();
 
-        // Star typing
+        // Start typing
         StartCoroutine(TypeSentence(sentence));
     }
 
@@ -281,6 +277,22 @@ public class DialogueManager : MonoBehaviour
             player.motor.ResumeAgent();
             currentDialogObject.TheEnd();
             currentDialogObject = null;
+        }
+    }
+
+    void StartTalk(Dialogue.Option option)
+    {
+        sentences.Clear();
+        names.Clear();
+        positions.Clear();
+
+
+        // Go through Talks and switch Camera
+        for (int i = 0; i < option.talks.Length; i++)
+        {
+            names.Enqueue(option.talks[i].name);
+            positions.Enqueue(option.talks[i].cameraTarget);
+            sentences.Enqueue(option.talks[i].sentence);
         }
     }
 }
