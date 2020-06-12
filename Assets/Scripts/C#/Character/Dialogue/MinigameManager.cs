@@ -12,7 +12,7 @@ public class MinigameManager : MonoBehaviour
 	CameraController cameraController;
 
 
-	int winRounds;
+	public int winRounds;
 	int loseRounds;
 	public int[] nextWinDialog;
 	public int[] nextLoseDialog;

@@ -3,15 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartCredits : Interactable
+public class StartCredits : MonoBehaviour
 {
 	public Animator transition;
+	public MinigameManager minigameManager;
 
-	public override void Interact()
+	private void OnTriggerEnter(Collider other)
 	{
-		StartCoroutine(LoadLevel());
+		if (other.name == "Player" && minigameManager.nextWinDialog.Length == minigameManager.winRounds)
+		{
+			StartCoroutine(LoadLevel());
+		}
 	}
-	
+
 	IEnumerator LoadLevel()
 	{
 		//Play animation
@@ -23,4 +27,5 @@ public class StartCredits : Interactable
 		//Load scene
 		SceneManager.LoadScene("Credits");
 	}
+
 }
