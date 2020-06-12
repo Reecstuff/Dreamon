@@ -222,6 +222,29 @@ MonoBehaviour:
         any interaction nor conversation. '
       decisions: []
       nextDecisions: 
+  - option:
+    - name: Dementum
+      endSentence: 1
+      nextMinigame: 1
+      sentences:
+      - 'Dementum: You gotta be kidding me! How dare you to ruin my game! '
+      - 'Ego: We won?... I mean, of course we did!'
+      decisions: []
+      nextDecisions: 
+  - option:
+    - name: Dementum
+      endSentence: 1
+      nextMinigame: 0
+      sentences:
+      - 'Dementum throws the bottle to the bottom and flinches. The bottle screams. '
+      - "Dementum: Ahhhh. Why are you doing this to me. Don\u2019t you love me? You
+        can\u2019t escape. I am a part of you!"
+      - 'Elios: Get out of my sight! We had enough. n. '
+      - "Dementum:  We haven\u2019t even started yet! Drink one more, Elios!"
+      - 'Elios: Stop it! We have nothing more to say!'
+      - 'Dementum (holding hands in front of his eyes and leaves the bar): [Screams]'
+      decisions: []
+      nextDecisions: 
   currentDialogue: 0
   minigameManager: {fileID: 5219269308381401115}
 --- !u!114 &5219269308381401115
@@ -237,8 +260,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 0}
-  cameraPosition: {x: 0, y: -0.5, z: 0}
+  cameraPosition: {x: 0, y: -0.45, z: -0.18}
   minigame: {fileID: 0}
+  nextWinDialog: 0300000004000000
+  nextLoseDialog: 0100000002000000
 --- !u!136 &5219269308381401109
 CapsuleCollider:
   m_ObjectHideFlags: 0

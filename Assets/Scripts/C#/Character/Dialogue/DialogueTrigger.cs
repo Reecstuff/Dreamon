@@ -13,12 +13,16 @@ public class DialogueTrigger : Interactable
 	//Starts interacting with the player
 	public override void Interact()
 	{
-		GetComponent<DialogueTrigger>().TriggerDialogue();
+		TriggerDialogue();
 	}
 
 	//Starts the dialog
 	public void TriggerDialogue()
 	{
+		//CameraController cameraController = minigameManager.mainCamera.GetComponent<CameraController>();
+		//cameraController.offset = cameraPosition;
+		//cameraController.target = minigame.transform;
+
 		FindObjectOfType<DialogueManager>().StartDialogue(this);
 	}
 }

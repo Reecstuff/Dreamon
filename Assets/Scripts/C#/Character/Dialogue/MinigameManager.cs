@@ -12,6 +12,11 @@ public class MinigameManager : MonoBehaviour
 
 	Vector3 playerOffset;
 
+	int winRounds;
+	int loseRounds;
+	public int[] nextWinDialog;
+	public int[] nextLoseDialog;
+
 	private void Start()
 	{
 		cameraController = mainCamera.GetComponent<CameraController>();
@@ -23,10 +28,14 @@ public class MinigameManager : MonoBehaviour
 	/// </summary>
 	public void StartNewMinigame()
 	{
-		minigame.SetActive(true);
+		cameraController.SetOffset(cameraPosition, minigame.transform);
 
-		cameraController.offset = cameraPosition;
-		cameraController.target = minigame.transform;
+		Invoke(nameof(SetMinigameActive), cameraController.drivingTime);
+	}
+
+	void SetMinigameActive()
+	{
+		minigame.SetActive(true);
 	}
 
 	/// <summary>
@@ -43,11 +52,37 @@ public class MinigameManager : MonoBehaviour
 		cameraController.target = GameObject.Find("Player").transform;
 	}
 
-	public void StartNextDialog(int nextDialog)
+	public void StartNextDialog(bool isWin)
 	{
-		//Stop game
-		EndMinigame();
-		GetComponent<DialogueTrigger>().currentDialogue = nextDialog;
-		GetComponent<DialogueTrigger>().TriggerDialogue();
+		if (isWin == true)
+		{
+			for (int i = 0; i < nextWinDialog.Length; i++)
+			{
+				if (winRounds == i)
+				{
+					//Stop losing round
+					EndMinigame();
+					GetComponent<DialogueTrigger>().currentDialogue = nextWinDialog[i];
+					GetComponent<DialogueTrigger>().TriggerDialogue();
+				}
+			}
+
+			winRounds++;
+		}
+		else if (isWin == false)
+		{
+			for (int i = 0; i < nextLoseDialog.Length; i++)
+			{
+				if (loseRounds == i)
+				{
+					//Stop losing round
+					EndMinigame();
+					GetComponent<DialogueTrigger>().currentDialogue = nextLoseDialog[i];
+					GetComponent<DialogueTrigger>().TriggerDialogue();
+				}
+			}
+
+			loseRounds++;
+		}
 	}
 }

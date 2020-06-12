@@ -2,9 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DrinkManager : MonoBehaviour
 {
+	public Text timerText;
+	public Text drinkBottleText;
+	public Text drunkBottleText;
+
 	public int drinkBottles;
 	public int maxBottles;
 
@@ -18,12 +23,8 @@ public class DrinkManager : MonoBehaviour
 	public float bottleTime;
 
 	public Drink[] bottles;
-	bool gameFinishied = false;
 
 	public GameObject assignedTarget;
-
-	public int winNextDialog;
-	public int loseNextDialog;
 
 	private void Start()
 	{
@@ -35,6 +36,10 @@ public class DrinkManager : MonoBehaviour
 
 	private void Update()
 	{
+		timerText.text = Mathf.Round(drinkTime).ToString();
+		drinkBottleText.text = "Needed bottles: " + maxBottles.ToString() + "  Drunk bottles: " + drinkBottles.ToString();
+		drunkBottleText.text = "Prohibited alcohol : " + maxAlcBottles.ToString() + "  Drunk alcohol: " + drunkBottles.ToString();
+
 		CheckGame();
 		TimingBottle();
 	}
@@ -54,24 +59,21 @@ public class DrinkManager : MonoBehaviour
 	{
 		drinkTime -= Time.deltaTime;
 
-		if (gameFinishied == false)
+		if (drinkTime >= 0)
 		{
-			if (drinkTime >= 0)
+			if (drinkBottles == maxBottles)
 			{
-				if (drinkBottles == maxBottles)
-				{
-					Win();
-				}
-				if (drunkBottles == maxAlcBottles)
-				{
-					//Drink to much alcohole
-					Lost();
-				}
+				Win();
 			}
-			else
+			if (drunkBottles == maxAlcBottles)
 			{
+				//Drink to much alcohole
 				Lost();
 			}
+		}
+		else
+		{
+			Lost();
 		}
 	}
 
@@ -81,10 +83,8 @@ public class DrinkManager : MonoBehaviour
 		drunkBottles = 0;
 		drinkTime = startDrinkTime;
 
-		gameFinishied = true;
-
 		//Stop game
-		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(winNextDialog);
+		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
 	}
 
 	public void Lost()
@@ -94,7 +94,7 @@ public class DrinkManager : MonoBehaviour
 		drinkTime = startDrinkTime;
 
 		//Stop game
-		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(loseNextDialog);
+		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
 	}
 
 	void RandomAlc()
