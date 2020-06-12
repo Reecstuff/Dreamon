@@ -11,6 +11,8 @@ public class DialogueTrigger : Interactable
 
 	public MinigameManager minigameManager;
 
+	public bool isClick = false;
+
 	//Starts interacting with the player
 	public override void Interact()
 	{
@@ -20,7 +22,11 @@ public class DialogueTrigger : Interactable
 	//Starts the dialog
 	public void TriggerDialogue()
 	{
-		FindObjectOfType<DialogueManager>().StartDialogue(this);
+		if (isClick == false)
+		{
+			FindObjectOfType<DialogueManager>().StartDialogue(this);
+			isClick = true;
+		}
 	}
 
 	public virtual void TheEnd()

@@ -68,6 +68,7 @@ public class MinigameManager : MonoBehaviour
 					//Stop losing round
 					EndMinigame();
 					GetComponent<DialogueTrigger>().currentDialogue = nextWinDialog[i];
+					GetComponent<DialogueTrigger>().isClick = false;
 					GetComponent<DialogueTrigger>().TriggerDialogue();
 				}
 			}
@@ -83,6 +84,7 @@ public class MinigameManager : MonoBehaviour
 					//Stop losing round
 					EndMinigame();
 					GetComponent<DialogueTrigger>().currentDialogue = nextLoseDialog[i];
+					GetComponent<DialogueTrigger>().isClick = false;
 					GetComponent<DialogueTrigger>().TriggerDialogue();
 				}
 			}
