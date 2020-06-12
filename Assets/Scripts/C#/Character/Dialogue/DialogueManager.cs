@@ -97,13 +97,13 @@ public class DialogueManager : MonoBehaviour
         //Opens the dialog box
         animator.SetBool("IsOpen", true);
 
-        nameText.text = option.name;
-
         sentences.Clear();
 
-        foreach (string sentence in option.sentences)
+        for (int i = 0; i < option.talks.Length; i++)
         {
-            sentences.Enqueue(sentence);
+            if (!string.IsNullOrEmpty(option.talks[i].name) && !option.talks[i].name.Equals(nameText.text))
+                nameText.text = option.talks[i].name;
+            sentences.Enqueue(option.talks[i].sentence);
         }
 
         end = option.endSentence;
@@ -164,13 +164,14 @@ public class DialogueManager : MonoBehaviour
         //Opens the dialog box
         animator.SetBool("IsOpen", true);
 
-        nameText.text = option.name;
 
         sentences.Clear();
 
-        foreach (string sentence in option.sentences)
+        for (int i = 0; i < option.talks.Length; i++)
         {
-            sentences.Enqueue(sentence);
+            if (!string.IsNullOrEmpty(option.talks[i].name) && !option.talks[i].name.Equals(nameText.text))
+                nameText.text = option.talks[i].name;
+            sentences.Enqueue(option.talks[i].sentence);
         }
 
         end = option.endSentence;
