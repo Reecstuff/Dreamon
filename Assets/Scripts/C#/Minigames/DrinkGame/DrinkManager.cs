@@ -2,9 +2,18 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class DrinkManager : MonoBehaviour
 {
+	[SerializeField]
+	Canvas MiniGameCanvas;
+	
+	public TextMeshProUGUI timerText;
+	public TextMeshProUGUI drinkBottleText;
+	public TextMeshProUGUI drunkBottleText;
+
 	public int drinkBottles;
 	public int maxBottles;
 
@@ -18,12 +27,8 @@ public class DrinkManager : MonoBehaviour
 	public float bottleTime;
 
 	public Drink[] bottles;
-	bool gameFinishied = false;
 
 	public GameObject assignedTarget;
-
-	public int winNextDialog;
-	public int loseNextDialog;
 
 	private void Start()
 	{
@@ -33,8 +38,25 @@ public class DrinkManager : MonoBehaviour
 		RandomAlc();
 	}
 
+	private void OnEnable()
+	{
+		MiniGameCanvas.gameObject.SetActive(true);
+	}
+
+	private void OnDisable()
+	{
+		MiniGameCanvas.gameObject.SetActive(false);
+	}
+
 	private void Update()
 	{
+		if(MiniGameCanvas.gameObject.activeInHierarchy)
+		{
+			// TODO: Slider im Krug
+			timerText.text = string.Join(":", (((drinkTime - drinkTime % 60) / 60)).ToString("00"), Mathf.Round(drinkTime % 60).ToString("00"));
+			drinkBottleText.text = string.Concat("Water: ", drinkBottles.ToString(), " / ",  maxBottles.ToString());
+			drunkBottleText.text = string.Concat("<color=red>Alcohol: ", drunkBottles.ToString(), " / ", maxAlcBottles.ToString());
+		}
 		CheckGame();
 		TimingBottle();
 	}
@@ -54,24 +76,21 @@ public class DrinkManager : MonoBehaviour
 	{
 		drinkTime -= Time.deltaTime;
 
-		if (gameFinishied == false)
+		if (drinkTime >= 0)
 		{
-			if (drinkTime >= 0)
+			if (drinkBottles == maxBottles)
 			{
-				if (drinkBottles == maxBottles)
-				{
-					Win();
-				}
-				if (drunkBottles == maxAlcBottles)
-				{
-					//Drink to much alcohole
-					Lost();
-				}
+				Win();
 			}
-			else
+			if (drunkBottles == maxAlcBottles)
 			{
+				//Drink to much alcohole
 				Lost();
 			}
+		}
+		else
+		{
+			Lost();
 		}
 	}
 
@@ -79,22 +98,22 @@ public class DrinkManager : MonoBehaviour
 	{
 		drinkBottles = 0;
 		drunkBottles = 0;
+		bottleTime = 0;
 		drinkTime = startDrinkTime;
 
-		gameFinishied = true;
-
 		//Stop game
-		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(winNextDialog);
+		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
 	}
 
 	public void Lost()
 	{
 		drinkBottles = 0;
 		drunkBottles = 0;
+		bottleTime = 0;
 		drinkTime = startDrinkTime;
 
 		//Stop game
-		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(loseNextDialog);
+		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
 	}
 
 	void RandomAlc()

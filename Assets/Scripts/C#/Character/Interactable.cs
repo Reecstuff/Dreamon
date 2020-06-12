@@ -45,7 +45,10 @@ public class Interactable : OutlineObject
 
 	private void OnDrawGizmosSelected()
 	{
-		Gizmos.color = Color.yellow;
-		Gizmos.DrawWireSphere(interactionTransform.position, radius);
+		if(interactionTransform)
+		{
+			Gizmos.color = Color.yellow;
+			Gizmos.DrawWireSphere(interactionTransform.position, radius);
+		}
 	}
 }

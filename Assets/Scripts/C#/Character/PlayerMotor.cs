@@ -17,16 +17,37 @@ public class PlayerMotor : MonoBehaviour
 
     private void Update()
     {
-        if (target != null)
+        if (target != null && !agent.isStopped)
         {
-            agent.SetDestination(target.position);
+            MoveToPoint(target.position);
             FaceTarget();
         }
     }
 
+    /// <summary>
+    /// Move Player to Point on Layer Ground
+    /// </summary>
+    /// <param name="point"></param>
     public void MoveToPoint(Vector3 point)
     {
         agent.SetDestination(point);
+    }
+
+    /// <summary>
+    /// Stop moving Player on Navmesh
+    /// </summary>
+    public void StopAgent()
+    {
+        agent.isStopped = true;
+        agent.velocity = Vector3.zero;
+    }
+
+    /// <summary>
+    /// Resume Moving Player around
+    /// </summary>
+    public void ResumeAgent()
+    {
+        agent.isStopped = false;
     }
 
     //Moves the player towards the object he wants to interact with

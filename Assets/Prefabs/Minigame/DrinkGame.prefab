@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5500964232817333721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 256332593883656613}
+  m_Layer: 0
+  m_Name: CameraPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &256332593883656613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5500964232817333721}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.869, z: 1.808}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5738023402585142804}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5738023402585142806
 GameObject:
   m_ObjectHideFlags: 0
@@ -33,6 +63,7 @@ Transform:
   - {fileID: 232800489041312737}
   - {fileID: 232800490234101298}
   - {fileID: 5738023403576437853}
+  - {fileID: 256332593883656613}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -48,6 +79,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b232d3b49d4504ca39b8ce4d719fd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timerText: {fileID: 0}
+  drinkBottleText: {fileID: 0}
+  drunkBottleText: {fileID: 0}
   drinkBottles: 0
   maxBottles: 10
   drunkBottles: 0
@@ -57,8 +91,6 @@ MonoBehaviour:
   bottleTime: 0
   bottles: []
   assignedTarget: {fileID: 0}
-  winDialogue: 0
-  loseDialogue: 1
 --- !u!1 &5738023403576437852
 GameObject:
   m_ObjectHideFlags: 0
@@ -83,7 +115,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5738023403576437852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.8}
+  m_LocalPosition: {x: 0, y: -2.25, z: 1.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5738023402585142804}
@@ -171,6 +203,11 @@ PrefabInstance:
       propertyPath: interactionTransform
       value: 
       objectReference: {fileID: 5738023403576437853}
+    - target: {fileID: 7105008126344685745, guid: 4d5de77574eac6e4697ff91bdc8c890b,
+        type: 3}
+      propertyPath: radius
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5de77574eac6e4697ff91bdc8c890b, type: 3}
 --- !u!4 &232800489041312737 stripped
@@ -261,6 +298,11 @@ PrefabInstance:
       propertyPath: interactionTransform
       value: 
       objectReference: {fileID: 5738023403576437853}
+    - target: {fileID: 7105008126344685745, guid: 4d5de77574eac6e4697ff91bdc8c890b,
+        type: 3}
+      propertyPath: radius
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5de77574eac6e4697ff91bdc8c890b, type: 3}
 --- !u!4 &232800490234101298 stripped
@@ -341,6 +383,11 @@ PrefabInstance:
       propertyPath: interactionTransform
       value: 
       objectReference: {fileID: 5738023403576437853}
+    - target: {fileID: 7105008126344685745, guid: 4d5de77574eac6e4697ff91bdc8c890b,
+        type: 3}
+      propertyPath: radius
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5de77574eac6e4697ff91bdc8c890b, type: 3}
 --- !u!4 &232800489805015885 stripped
@@ -431,6 +478,11 @@ PrefabInstance:
       propertyPath: interactionTransform
       value: 
       objectReference: {fileID: 5738023403576437853}
+    - target: {fileID: 7105008126344685745, guid: 4d5de77574eac6e4697ff91bdc8c890b,
+        type: 3}
+      propertyPath: radius
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5de77574eac6e4697ff91bdc8c890b, type: 3}
 --- !u!4 &232800489536910161 stripped

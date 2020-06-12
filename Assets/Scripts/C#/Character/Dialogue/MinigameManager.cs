@@ -2,20 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(DialogueTrigger))]
 public class MinigameManager : MonoBehaviour
 {
 	public GameObject mainCamera;
-	public Vector3 cameraPosition;
+	public Transform cameraPosition;
 	public GameObject minigame;
+	public GameObject endDoor;
 
 	CameraController cameraController;
 
-	Vector3 playerOffset;
+
+	public int winRounds;
+	int loseRounds;
+	public int[] nextWinDialog;
+	public int[] nextLoseDialog;
+
+	PlayerController player;
+	DialogueTrigger dialogTrigger;
 
 	private void Start()
 	{
 		cameraController = mainCamera.GetComponent<CameraController>();
-		playerOffset = cameraController.offset;
+		player = GameObject.FindObjectOfType<PlayerController>();
+		dialogTrigger = GetComponent<DialogueTrigger>();
 	}
 
 	/// <summary>
@@ -23,10 +33,14 @@ public class MinigameManager : MonoBehaviour
 	/// </summary>
 	public void StartNewMinigame()
 	{
-		minigame.SetActive(true);
+		cameraController.MoveToFixedPosition(cameraPosition.position, minigame.transform);
+		player.motor.StopAgent();
+		Invoke(nameof(SetMinigameActive), cameraController.drivingTime);
+	}
 
-		cameraController.offset = cameraPosition;
-		cameraController.target = minigame.transform;
+	void SetMinigameActive()
+	{
+		minigame.SetActive(true);
 	}
 
 	/// <summary>
@@ -37,17 +51,51 @@ public class MinigameManager : MonoBehaviour
 		minigame.SetActive(false);
 
 		//Focusing the demon
-		GameObject.Find("Player").GetComponent<PlayerController>().SetFocus(this.GetComponent<Interactable>());
+		player.SetFocus(this.GetComponent<Interactable>());
+		player.motor.ResumeAgent();
 
-		cameraController.offset = playerOffset;
-		cameraController.target = GameObject.Find("Player").transform;
+		if(nextWinDialog.Length == winRounds)
+		{
+			endDoor.SetActive(true);
+		}
+
+
+		cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(transform.position, cameraController.transform.position, 0.5f), 0.5f), dialogTrigger.interactionTransform);
 	}
 
-	public void StartNextDialog(int nextDialog)
+	public void StartNextDialog(bool isWin)
 	{
-		//Stop game
-		EndMinigame();
-		GetComponent<DialogueTrigger>().currentDialogue = nextDialog;
-		GetComponent<DialogueTrigger>().TriggerDialogue();
+		if (isWin == true)
+		{
+			for (int i = 0; i < nextWinDialog.Length; i++)
+			{
+				if (winRounds == i)
+				{
+					//Stop losing round
+					EndMinigame();
+					GetComponent<DialogueTrigger>().currentDialogue = nextWinDialog[i];
+					GetComponent<DialogueTrigger>().isClick = false;
+					GetComponent<DialogueTrigger>().TriggerDialogue();
+				}
+			}
+
+			winRounds++;
+		}
+		else if (isWin == false)
+		{
+			for (int i = 0; i < nextLoseDialog.Length; i++)
+			{
+				if (loseRounds == i)
+				{
+					//Stop losing round
+					EndMinigame();
+					GetComponent<DialogueTrigger>().currentDialogue = nextLoseDialog[i];
+					GetComponent<DialogueTrigger>().isClick = false;
+					GetComponent<DialogueTrigger>().TriggerDialogue();
+				}
+			}
+
+			loseRounds++;
+		}
 	}
 }

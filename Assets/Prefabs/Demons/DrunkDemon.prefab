@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2959868926908075439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4132076722556807739}
+  m_Layer: 0
+  m_Name: CameraPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4132076722556807739
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2959868926908075439}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.108, y: 1.968, z: 1.72}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5219269308381401104}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3806040174959881313
 GameObject:
   m_ObjectHideFlags: 0
@@ -39,11 +69,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5219269308381401104}
-  - component: {fileID: 5219269308381401111}
-  - component: {fileID: 5219269308381401110}
   - component: {fileID: 5219269308381401108}
   - component: {fileID: 5219269308381401115}
-  - component: {fileID: 5219269308381401109}
+  - component: {fileID: 1605131746}
   m_Layer: 0
   m_Name: DrunkDemon
   m_TagString: Untagged
@@ -63,24 +91,268 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1859216236295679692}
+  - {fileID: 4132076722556807739}
+  - {fileID: 3162822658344194024}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5219269308381401111
+--- !u!114 &5219269308381401108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5219269308381401114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e6aa5402ccc1d4196ca193f2d3de99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  radius: 7.1
+  interactionTransform: {fileID: 1859216236295679692}
+  dialogue:
+  - option:
+    - endSentence: 0
+      nextMinigame: 0
+      talks:
+      - name: Dementum
+        sentence: "Hey you brat, I need your help. We\u2019re gonna play a game!"
+      decisions:
+      - Are you talking with me?
+      - Yes, I guess so.
+      - No. I am not into games anymore.
+      nextDecisions: 010000000200000003000000
+    - endSentence: 0
+      nextMinigame: 0
+      talks:
+      - name: Dementum
+        sentence: You bet! Or is there any other soul?
+      - name: Elios
+        sentence: I guess not.
+      - name: Dementum
+        sentence: What are you waiting for? Get your ass here and drink a bottle
+          of booze!
+      - name: Elios
+        sentence: I am not interested.
+      - name: Dementum
+        sentence: "Hey do you know, who you\u2019re talking with? Show some respect
+          and drink with an old man!"
+      - name: Elios
+        sentence: "But I don\u2019t drink anymore."
+      - name: Dementum
+        sentence: "You shut up! Y\u2019all know nothing! You are so weak. "
+      - name: Elios
+        sentence: How do you know?
+      - name: Dementum
+        sentence: "Haven\u2019t you even noticed yet? You left your wife night by
+          night. All the empty bottles in front of your eyes. Are you that blind!?"
+      - name: Elios
+        sentence: 'Stop it. '
+      - name: Dementum
+        sentence: "Broken relationship with the whole family, total isolation and\u2026
+          the wish to die\u2026. doesn\u2019t it remind you of somebody!"
+      - name: Elios
+        sentence: Stop it.
+      - name: Dementum
+        sentence: "You coward! Remember the pain you feel\u2026 about the kiss\u2026
+          about the love\u2026 about the betrayal\u2026 "
+      - name: Elios
+        sentence: <b>STOP IT! STOP IT! STOP IT!</b>
+      - name: Ego
+        sentence: "<b>Calm down buddy. Calm down. He is just teasing you. Let\u2019s
+          play the game with him. Trust me, it\u2019s gonna be fun. </b>"
+      - name: Elios
+        sentence: '[exhausted sighs]'
+      decisions:
+      - Fine!
+      nextDecisions: 02000000
+    - endSentence: 1
+      nextMinigame: 1
+      talks:
+      - name: Narrator
+        sentence: "Dementum reveals \u201CHIS FACE\u201D and smiles wider."
+      - name: 'Ego '
+        sentence: "(moving backwards)<b> Ahhhhh. What\u2019s that ugly thing! What\u2019s
+          happening! Elios protect me!</b>"
+      - name: Elios
+        sentence: "[sighs] How annoying\u2026"
+      - name: Narrator
+        sentence: "Dementum reveals his \u201CFULL APPEARANCE\u201D."
+      - name: Dementum
+        sentence: Finally. Took you long enough.
+      - name: Narrator
+        sentence: 'Dementum is turning back and prepares mugs with alcohol in the
+          background. '
+      - name: Dementum
+        sentence: You know what I really like about the booze?
+      - name: 'Elios '
+        sentence: (pressed lips to the inside) ...
+      - name: 'Dementum '
+        sentence: "(fills mugs) It\u2019s the golden elixir! You gotta try this joyness...
+          to fall in love! "
+      - name: Ego
+        sentence: "It wows me... That\u2019s beautiful!"
+      - name: Elios
+        sentence: (looks away distractedly)  [sad sighs]
+      - name: Narrator
+        sentence: Dementum is turning back again and prepares 5 mugs on the counter.
+      - name: Dementum
+        sentence: "Cheers, kid. Let\u2019s see how much you can deal with."
+      decisions: []
+      nextDecisions: 
+    - endSentence: 0
+      nextMinigame: 0
+      talks:
+      - name: Ego
+        sentence: "<b>Wait Elios! Why do you say no? We haven\u2019t even played
+          yet.</b>"
+      - name: Elios
+        sentence: No.
+      - name: Ego
+        sentence: "<b>Oh come on! Don\u2019t be a douchebag. It\u2019s gonna be fun.</b> "
+      - name: Dementum
+        sentence: "Consider your decision well, kid\u2026 before your time runs out. "
+      - name: Elios
+        sentence: '[sighs]'
+      decisions:
+      - Fine!
+      nextDecisions: 02000000
+  - option:
+    - endSentence: 1
+      nextMinigame: 1
+      talks:
+      - name: Dementum
+        sentence: "I knew you couldn\u2019t resist! Do you feel free now?"
+      - name: Ego
+        sentence: Chill out, Elios. Take it easy! We feel great!
+      decisions: []
+      nextDecisions: 
+  - option:
+    - endSentence: 1
+      nextMinigame: 0
+      talks:
+      - name: Dementum
+        sentence: "Ohh, Elios. You gutted me. I have to admit, I expected better
+          from you. You can\u2019t make it. I am a part of you. hahaha"
+      - name: Narrator
+        sentence: 'The view gets dark. Elios and Ego wake up in an empty tavern without
+          any interaction or conversation. '
+      decisions: []
+      nextDecisions: 
+  - option:
+    - endSentence: 1
+      nextMinigame: 1
+      talks:
+      - name: Dementum
+        sentence: 'You gotta be kidding me! How dare you ruin my game! '
+      - name: Ego
+        sentence: We won?... I mean, of course we did!
+      decisions: []
+      nextDecisions: 
+  - option:
+    - endSentence: 1
+      nextMinigame: 0
+      talks:
+      - name: Narrator
+        sentence: 'Dementum throws the bottle to the bottom and flinches. The bottle
+          screams. '
+      - name: Dementum
+        sentence: "Ahhhh. Why are you doing this to me. Don\u2019t you love me? You
+          can\u2019t escape. I am part of you! "
+      - name: Elios
+        sentence: Get out of my sight! We had enough.
+      - name: Dementum
+        sentence: "We haven\u2019t even started yet! Drink one more, Elios!"
+      - name: Elios
+        sentence: Stop it! We have nothing more to say!
+      - name: 'Dementum '
+        sentence: (holds hands in front of his eyes and leaves the bar) [Screams]
+      decisions: []
+      nextDecisions: 
+  currentDialogue: 0
+  minigameManager: {fileID: 5219269308381401115}
+  isClick: 0
+--- !u!114 &5219269308381401115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5219269308381401114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7c4268f7c154c645be5dcf1130bf241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 0}
+  cameraPosition: {fileID: 0}
+  minigame: {fileID: 0}
+  endDoor: {fileID: 0}
+  winRounds: 0
+  nextWinDialog: 0300000004000000
+  nextLoseDialog: 0100000002000000
+--- !u!136 &1605131746
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5219269308381401114}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &7699717223950563517
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3162822658344194024}
+  - component: {fileID: 8353808854175558772}
+  - component: {fileID: 8475095350427320773}
+  m_Layer: 0
+  m_Name: Mesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3162822658344194024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7699717223950563517}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5219269308381401104}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &8353808854175558772
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5219269308381401114}
-  m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &5219269308381401110
+  m_GameObject: {fileID: 7699717223950563517}
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &8475095350427320773
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5219269308381401114}
+  m_GameObject: {fileID: 7699717223950563517}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -113,143 +385,3 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!114 &5219269308381401108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5219269308381401114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7e6aa5402ccc1d4196ca193f2d3de99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  radius: 5
-  interactionTransform: {fileID: 1859216236295679692}
-  dialogue:
-  - option:
-    - name: Dementum
-      endSentence: 0
-      nextMinigame: 0
-      sentences:
-      - "Dementum: Hey you brat, I need your help. We\u2019re gonna play a game!\r"
-      decisions:
-      - Are you talking with me?
-      - Yes, I guess so.
-      - No. I am not into games anymore.
-      nextDecisions: 010000000200000003000000
-    - name: Dementum
-      endSentence: 0
-      nextMinigame: 0
-      sentences:
-      - 'Dementum: You bet! Or is there any other soul?'
-      - 'Elios:  I guess not.'
-      - 'Dementum: What are you waiting for? Get your ass here and drink a bottle
-        of booze!'
-      - 'Elios: I am not interested.'
-      - "Dementum: Hey do you know, who you\u2019re talking with? Show some respect
-        and drink with an old man!"
-      - "Elios: But I don\u2019t drink anymore."
-      - "Dementum: You shut up! Y\u2019all know nothing! You are so weak. "
-      - 'Elios: How do you know?'
-      - "Dementum: Haven\u2019t you even noticed yet? You left your wife night by
-        night. All the empty bottles in front of your eyes. Are you that blind!?"
-      - 'Elios: Stop it. '
-      - "Dementum: Broken relationship to the whole family, total isolation and\u2026
-        the wish to die\u2026. doesn\u2019t it remind you at somebody!"
-      - 'Elios: Stop it.'
-      - "Dementum: You coward! Remember the pain you feel\u2026 about the kiss\u2026
-        about the love\u2026 about the betrayal\u2026 "
-      - 'Elios: STOP IT! STOP IT! STOP IT!'
-      - "Ego: Calm down buddy. Calm down. He is just teasing you. Let\u2019s play
-        the game with him. Trust me, it\u2019s gonna be fun. "
-      - 'Elios: [exhausted sighs]'
-      decisions:
-      - Fine!
-      nextDecisions: 02000000
-    - name: Dementum
-      endSentence: 1
-      nextMinigame: 1
-      sentences:
-      - "Dementum reveals \u201CHIS FACE\u201D and smiles wider."
-      - "Ego (moving backwards): Ahhhhh. What\u2019s that ugly thing! What\u2019s
-        happening! Elios protect me!"
-      - "Elios: [sighs] How annoying\u2026"
-      - "Dementum reveals his \u201CFULL APPEARANCE\u201D."
-      - 'Dementum: Finally. Took you long enough. '
-      - Dementum is turning back and prepares mugs with alcohol in the background.
-      - 'Dementum: You know what I really like about the booze?'
-      - 'Elios (pressed lips to the inside): ...'
-      - "Dementum (fills mugs): It\u2019s the golden elixir! You gotta try this joyness...
-        to fall in love!"
-      - "Ego: It wows me. That\u2019s beautiful!"
-      - 'Elios (looks distracted away): [sad sighs]'
-      - Dementum is turning back again and prepares 5 mugs on the counter.
-      - "Dementum: Let\u2019s drink, kid. Cheers."
-      decisions: []
-      nextDecisions: 
-    - name: Dementum
-      endSentence: 0
-      nextMinigame: 0
-      sentences:
-      - "Ego: Wait Elios! Why do you say no? We haven\u2019t even played yet."
-      - 'Elios: No. '
-      - "Ego: Oh come on! Don\u2019t be a douchebag. It\u2019s gonna be fun."
-      - "Dementum: Consider your decision well, kid\u2026 before your time runs out."
-      - 'Elios: [sighs]'
-      decisions:
-      - Fine!
-      nextDecisions: 02000000
-  - option:
-    - name: Dementum
-      endSentence: 1
-      nextMinigame: 1
-      sentences:
-      - "Dementum: I knew you couldn\u2019t resist! Do you feel free now?"
-      - 'Ego: Chill out, Elios. Take it easy! We feel great!'
-      decisions: []
-      nextDecisions: 
-  - option:
-    - name: Dementum
-      endSentence: 1
-      nextMinigame: 0
-      sentences:
-      - "Dementum: Ohh, Elios. You gutted me. I have to admit, I expected better
-        from you. You can\u2019t make it. I am a part of you. hahaha"
-      - 'The view gets dark. Elios and Ego wake up in an empty tavern without neither
-        any interaction nor conversation. '
-      decisions: []
-      nextDecisions: 
-  currentDialogue: 0
-  minigameManager: {fileID: 5219269308381401115}
---- !u!114 &5219269308381401115
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5219269308381401114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7c4268f7c154c645be5dcf1130bf241, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCamera: {fileID: 0}
-  cameraPosition: {x: 0, y: -0.5, z: 0}
-  minigame: {fileID: 0}
---- !u!136 &5219269308381401109
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5219269308381401114}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5000001
-  m_Height: 2.59
-  m_Direction: 1
-  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}

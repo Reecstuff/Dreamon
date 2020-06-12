@@ -5,6 +5,7 @@ using System.Globalization;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject endButton;
 
     public GameObject decisions;
-    public Button[] decisionsButtons = new Button[3];
+    public UnityEngine.UI.Button[] decisionsButtons = new UnityEngine.UI.Button[3];
 
     public MinigameManager minigameManager;
 
@@ -31,18 +32,22 @@ public class DialogueManager : MonoBehaviour
     public int selectedOpinion;
 
     public bool selectMinigame;
+    public DialogueTrigger currentDialogObject;
 
-    int minigameDialogue;
+    CameraController cameraController;
+    PlayerController player;
 
     /// <summary>
     /// Save the size of one TextLine
     /// </summary>
     float oneTextLineSizeY = 0;
 
-    void Start()
+    void Awake()
     {
         sentences = new Queue<string>();
         oneTextLineSizeY = nameText.GetPreferredValues("0").y;
+        cameraController = Camera.main.GetComponent<CameraController>();
+        player = FindObjectOfType<PlayerController>();
     }
 
     /// <summary>
@@ -51,10 +56,16 @@ public class DialogueManager : MonoBehaviour
     /// <param name="currentTrigger"></param>
     public void StartDialogue (DialogueTrigger currentTrigger)
     {
-        Cursor.visible = true;
+        UnityEngine.Cursor.visible = true;
+        currentDialogObject = currentTrigger;
+
         //Reset the Buttons
         continueButton.SetActive(true);
         decisions.SetActive(false);
+
+        // Set up Camera between Dialogtrigger, Camera and Player
+        cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(currentTrigger.transform.position, cameraController.transform.position, 0.5f), 0.5f), currentTrigger.transform);
+        player.motor.StopAgent();
 
         //Opens the first dialog option
         Dialogue.Option option = currentTrigger.dialogue[currentTrigger.currentDialogue].option[0];
@@ -86,13 +97,18 @@ public class DialogueManager : MonoBehaviour
         //Opens the dialog box
         animator.SetBool("IsOpen", true);
 
-        nameText.text = option.name;
-
         sentences.Clear();
 
-        foreach (string sentence in option.sentences)
+        // Go through Talks and switch Camera
+        for (int i = 0; i < option.talks.Length; i++)
         {
-            sentences.Enqueue(sentence);
+            if (!string.IsNullOrEmpty(option.talks[i].name) && !option.talks[i].name.Equals(nameText.text))
+            {
+                nameText.text = option.talks[i].name;
+                if (option.talks[i].cameraTarget)
+                    cameraController.target = option.talks[i].cameraTarget;
+            }
+            sentences.Enqueue(option.talks[i].sentence);
         }
 
         end = option.endSentence;
@@ -153,13 +169,19 @@ public class DialogueManager : MonoBehaviour
         //Opens the dialog box
         animator.SetBool("IsOpen", true);
 
-        nameText.text = option.name;
 
         sentences.Clear();
 
-        foreach (string sentence in option.sentences)
+        // Go through Talks and switch Camera
+        for (int i = 0; i < option.talks.Length; i++)
         {
-            sentences.Enqueue(sentence);
+            if (!string.IsNullOrEmpty(option.talks[i].name) && !option.talks[i].name.Equals(nameText.text))
+            {
+                nameText.text = option.talks[i].name;
+                if(option.talks[i].cameraTarget)
+                    cameraController.target = option.talks[i].cameraTarget;
+            }
+            sentences.Enqueue(option.talks[i].sentence);
         }
 
         end = option.endSentence;
@@ -234,8 +256,9 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void EndDialogue()
     {
-        Cursor.visible = false;
+        UnityEngine.Cursor.visible = false;
         animator.SetBool("IsOpen", false);
+
 
         //Stop focusing any objects
         GameObject.Find("Player").GetComponent<PlayerController>().RemoveFocus();
@@ -250,6 +273,14 @@ public class DialogueManager : MonoBehaviour
         {
             selectMinigame = false;
             minigameManager.StartNewMinigame();
+        }
+        else
+        {
+            cameraController.MoveToOffset(player.transform);
+            cameraController.StartResetCameraToPlayer();
+            player.motor.ResumeAgent();
+            currentDialogObject.TheEnd();
+            currentDialogObject = null;
         }
     }
 }
