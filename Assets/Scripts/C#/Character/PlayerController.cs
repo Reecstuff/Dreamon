@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour
 {
     public Interactable focus;
     public LayerMask movementMask;
+    
+    public Transform facePoint;
 
     [HideInInspector]
     public PlayerMotor motor;
