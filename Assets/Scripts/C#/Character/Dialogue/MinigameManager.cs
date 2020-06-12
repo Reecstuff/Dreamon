@@ -54,7 +54,7 @@ public class MinigameManager : MonoBehaviour
 		player.motor.ResumeAgent();
 
 
-		cameraController.MoveToFixedPosition(dialogTrigger.CameraPosition.position, dialogTrigger.interactionTransform);
+		cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(transform.position, cameraController.transform.position, 0.5f), 0.5f), dialogTrigger.interactionTransform);
 	}
 
 	public void StartNextDialog(bool isWin)

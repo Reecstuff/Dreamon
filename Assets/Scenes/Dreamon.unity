@@ -166,6 +166,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 571200853}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &207355048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207355043}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69c85d978b42e80459e6283ab57e8deb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  radius: 3
+  interactionTransform: {fileID: 207355044}
+  transition: {fileID: 449541309}
 --- !u!1001 &209320991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2026,6 +2042,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: OptionMenu
+--- !u!4 &1668239232 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 256332593883656613, guid: 28f39d92bb08188449602cd35f923bda,
+    type: 3}
+  m_PrefabInstance: {fileID: 2133544470}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1714926933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2181,7 +2203,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cameraPosition
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1668239232}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a02ddb6b34c88c42a6fb3167d60249b, type: 3}
 --- !u!1001 &1821549315
