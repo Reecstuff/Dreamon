@@ -15,8 +15,10 @@ public class CameraController : MonoBehaviour
     private float currentYaw = 0;
 
     bool fixedCamera = false;
+    bool onOffsetReset = false;
 
     public float drivingTime = 2;
+
 
     void Update()
     {
@@ -44,26 +46,39 @@ public class CameraController : MonoBehaviour
 
             transform.RotateAround(target.position, Vector3.up, currentYaw);
         }
+        else
+        {
+            if (!onOffsetReset)
+                transform.LookAt(target.position);
+            else
+                transform.LookAt(target.position + Vector3.up * pitch);
+        }
     }
 
-    public void SetOffset(Vector3 newOffset, Transform newTarget)
+    public void MoveToFixedPosition(Vector3 newPosition, Transform newTarget)
     {
-        Sequence s = DOTween.Sequence();
-
         fixedCamera = true;
-
-        offset = newOffset;
         target = newTarget;
 
-        s.Append(transform.DOMove(target.position - offset * currentZoom, drivingTime/2));
-        s.Append(transform.DOLookAt(target.position, drivingTime / 2));
-        s.Play();
+        // Move Camera to Position
+        transform.DOMove(newPosition, drivingTime);
+    }
 
-        //Invoke(nameof(ResetCameraToPlayer), 2);
+    public void MoveToOffset(Transform newTarget)
+    {
+        onOffsetReset = true;
+        target = newTarget;
+        transform.DOMove(target.position - offset * currentZoom, drivingTime);
+    }
+
+    public void StartResetCameraToPlayer()
+    {
+        Invoke(nameof(ResetCameraToPlayer), drivingTime);
     }
 
     void ResetCameraToPlayer()
     {
+        onOffsetReset = false;
         fixedCamera = false;
     }
 }

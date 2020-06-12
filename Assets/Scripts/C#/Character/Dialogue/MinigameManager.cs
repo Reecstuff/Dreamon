@@ -2,25 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(DialogueTrigger))]
 public class MinigameManager : MonoBehaviour
 {
 	public GameObject mainCamera;
-	public Vector3 cameraPosition;
+	public Transform cameraPosition;
 	public GameObject minigame;
 
 	CameraController cameraController;
 
-	Vector3 playerOffset;
 
 	int winRounds;
 	int loseRounds;
 	public int[] nextWinDialog;
 	public int[] nextLoseDialog;
 
+	PlayerController player;
+	DialogueTrigger dialogTrigger;
+
 	private void Start()
 	{
 		cameraController = mainCamera.GetComponent<CameraController>();
-		playerOffset = cameraController.offset;
+		player = GameObject.FindObjectOfType<PlayerController>();
+		dialogTrigger = GetComponent<DialogueTrigger>();
 	}
 
 	/// <summary>
@@ -28,8 +32,8 @@ public class MinigameManager : MonoBehaviour
 	/// </summary>
 	public void StartNewMinigame()
 	{
-		cameraController.SetOffset(cameraPosition, minigame.transform);
-
+		cameraController.MoveToFixedPosition(cameraPosition.position, minigame.transform);
+		player.motor.StopAgent();
 		Invoke(nameof(SetMinigameActive), cameraController.drivingTime);
 	}
 
@@ -46,10 +50,11 @@ public class MinigameManager : MonoBehaviour
 		minigame.SetActive(false);
 
 		//Focusing the demon
-		GameObject.Find("Player").GetComponent<PlayerController>().SetFocus(this.GetComponent<Interactable>());
+		player.SetFocus(this.GetComponent<Interactable>());
+		player.motor.ResumeAgent();
 
-		cameraController.offset = playerOffset;
-		cameraController.target = GameObject.Find("Player").transform;
+
+		cameraController.MoveToFixedPosition(dialogTrigger.CameraPosition.position, dialogTrigger.interactionTransform);
 	}
 
 	public void StartNextDialog(bool isWin)
