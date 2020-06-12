@@ -6,14 +6,11 @@ using UnityEngine.SceneManagement;
 public class StartCredits : MonoBehaviour
 {
 	public Animator transition;
-	public MinigameManager minigameManager;
 
 	private void OnTriggerEnter(Collider other)
 	{
-		if (other.name == "Player" && minigameManager.nextWinDialog.Length == minigameManager.winRounds)
-		{
+		if(other.GetComponent<PlayerController>())
 			StartCoroutine(LoadLevel());
-		}
 	}
 
 	IEnumerator LoadLevel()

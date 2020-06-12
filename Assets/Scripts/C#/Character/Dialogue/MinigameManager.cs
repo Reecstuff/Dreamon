@@ -8,6 +8,7 @@ public class MinigameManager : MonoBehaviour
 	public GameObject mainCamera;
 	public Transform cameraPosition;
 	public GameObject minigame;
+	public GameObject endDoor;
 
 	CameraController cameraController;
 
@@ -52,6 +53,11 @@ public class MinigameManager : MonoBehaviour
 		//Focusing the demon
 		player.SetFocus(this.GetComponent<Interactable>());
 		player.motor.ResumeAgent();
+
+		if(nextWinDialog.Length == winRounds)
+		{
+			endDoor.SetActive(true);
+		}
 
 
 		cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(transform.position, cameraController.transform.position, 0.5f), 0.5f), dialogTrigger.interactionTransform);
