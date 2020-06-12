@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class DialogueTrigger : Interactable
 {
@@ -19,10 +20,24 @@ public class DialogueTrigger : Interactable
 	//Starts the dialog
 	public void TriggerDialogue()
 	{
-		//CameraController cameraController = minigameManager.mainCamera.GetComponent<CameraController>();
-		//cameraController.offset = cameraPosition;
-		//cameraController.target = minigame.transform;
-
 		FindObjectOfType<DialogueManager>().StartDialogue(this);
+	}
+
+	public virtual void TheEnd()
+	{
+		float animationTime = 6;
+
+		Sequence s = DOTween.Sequence();
+		// Fly Away
+
+		s.Append(transform.DOScale(Vector3.zero, animationTime));
+		s.Join(transform.DOShakeRotation(animationTime));
+		s.Play();
+		Invoke(nameof(SetInactive), animationTime + 0.5f);
+	}
+
+	protected virtual void SetInactive()
+	{
+		gameObject.SetActive(false);
 	}
 }

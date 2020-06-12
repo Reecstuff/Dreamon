@@ -32,6 +32,7 @@ public class DialogueManager : MonoBehaviour
     public int selectedOpinion;
 
     public bool selectMinigame;
+    public DialogueTrigger currentDialogObject;
 
     CameraController cameraController;
     PlayerController player;
@@ -56,6 +57,8 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue (DialogueTrigger currentTrigger)
     {
         UnityEngine.Cursor.visible = true;
+        currentDialogObject = currentTrigger;
+
         //Reset the Buttons
         continueButton.SetActive(true);
         decisions.SetActive(false);
@@ -265,6 +268,8 @@ public class DialogueManager : MonoBehaviour
             cameraController.MoveToOffset(player.transform);
             cameraController.StartResetCameraToPlayer();
             player.motor.ResumeAgent();
+            currentDialogObject.TheEnd();
+            currentDialogObject = null;
         }
     }
 }

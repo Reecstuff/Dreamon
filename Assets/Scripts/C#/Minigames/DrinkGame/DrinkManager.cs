@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DrinkManager : MonoBehaviour
 {
-	public Text timerText;
-	public Text drinkBottleText;
-	public Text drunkBottleText;
+	[SerializeField]
+	Canvas MiniGameCanvas;
+	
+	public TextMeshProUGUI timerText;
+	public TextMeshProUGUI drinkBottleText;
+	public TextMeshProUGUI drunkBottleText;
 
 	public int drinkBottles;
 	public int maxBottles;
@@ -34,12 +38,25 @@ public class DrinkManager : MonoBehaviour
 		RandomAlc();
 	}
 
+	private void OnEnable()
+	{
+		MiniGameCanvas.gameObject.SetActive(true);
+	}
+
+	private void OnDisable()
+	{
+		MiniGameCanvas.gameObject.SetActive(false);
+	}
+
 	private void Update()
 	{
-		timerText.text = Mathf.Round(drinkTime).ToString();
-		drinkBottleText.text = "Needed bottles: " + maxBottles.ToString() + "  Drunk bottles: " + drinkBottles.ToString();
-		drunkBottleText.text = "Prohibited alcohol : " + maxAlcBottles.ToString() + "  Drunk alcohol: " + drunkBottles.ToString();
-
+		if(MiniGameCanvas.gameObject.activeInHierarchy)
+		{
+			// TODO: Slider im Krug
+			timerText.text = string.Join(":", (((drinkTime - drinkTime % 60) / 60)).ToString("00"), Mathf.Round(drinkTime % 60).ToString("00"));
+			drinkBottleText.text = string.Concat("Water: ", drinkBottles.ToString(), " / ",  maxBottles.ToString());
+			drunkBottleText.text = string.Concat("<color=red>Alcohol: ", drunkBottles.ToString(), " / ", maxAlcBottles.ToString());
+		}
 		CheckGame();
 		TimingBottle();
 	}
