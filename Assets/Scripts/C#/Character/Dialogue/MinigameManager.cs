@@ -92,9 +92,12 @@ public class MinigameManager : MonoBehaviour
 			loseRounds++;
 		}
 
-		if (nextWinDialog.Length == winRounds || nextLoseDialog.Length == loseRounds)
+		if(endDoor)
 		{
-			endDoor.SetActive(true);
+			if (nextWinDialog.Length == winRounds || nextLoseDialog.Length == loseRounds)
+			{
+				endDoor.SetActive(true);
+			}
 		}
 	}
 }

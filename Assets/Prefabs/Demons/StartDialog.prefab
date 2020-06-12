@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7156026689946373135}
   - component: {fileID: 1133812109691748872}
   m_Layer: 0
-  m_Name: StartDialog 1
+  m_Name: StartDialog
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54,8 +54,11 @@ MonoBehaviour:
       talks:
       - cameraTarget: {fileID: 0}
         name: Narrator
-        sentence: "Elios lies on the ground. Ego is growing out of Elios\u2019 body
-          and wants to go forward, but his body is sticking to Elios."
+        sentence: Elios lies on the ground.
+      - cameraTarget: {fileID: 0}
+        name: Narrator
+        sentence: "Ego is growing out of Elios\u2019 body and wants to go forward,
+          but his body is sticking to Elios."
       - cameraTarget: {fileID: 0}
         name: Narrator
         sentence: ' Both are looking to the center of their body and then to each
@@ -162,6 +165,7 @@ MonoBehaviour:
   currentDialogue: 0
   minigameManager: {fileID: 1133812109691748872}
   isClick: 0
+  objectsToDeactivate: []
 --- !u!114 &1133812109691748872
 MonoBehaviour:
   m_ObjectHideFlags: 0
