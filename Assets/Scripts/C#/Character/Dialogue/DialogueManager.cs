@@ -64,7 +64,7 @@ public class DialogueManager : MonoBehaviour
         decisions.SetActive(false);
 
         // Set up Camera between Dialogtrigger, Camera and Player
-        cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(currentTrigger.transform.position, cameraController.transform.position, 0.5f), 0.5f), currentTrigger.interactionTransform);
+        cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(currentTrigger.transform.position, cameraController.transform.position, 0.5f), 0.5f), currentTrigger.transform);
         player.motor.StopAgent();
 
         //Opens the first dialog option
