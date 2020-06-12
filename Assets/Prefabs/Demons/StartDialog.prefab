@@ -62,40 +62,38 @@ MonoBehaviour:
         name: Ego
         sentence: Oh... Ehm... hey... my name is Ego, and yours... ?
       - cameraTarget: {fileID: 0}
-        name: 
-        sentence: 
+        name: Elios
+        sentence: '[sighs] Elios...'
       - cameraTarget: {fileID: 0}
-        name: 
-        sentence: 
+        name: Ego
+        sentence: Ehm... Do you know this place?
       - cameraTarget: {fileID: 0}
-        name: 
-        sentence: 
+        name: Elios
+        sentence: No...
       - cameraTarget: {fileID: 0}
-        name: 
-        sentence: 
+        name: Ego
+        sentence: Are you alone here?
       - cameraTarget: {fileID: 0}
-        name: 
-        sentence: 
+        name: Elios
+        sentence: I guess so.
       - cameraTarget: {fileID: 0}
-        name: 
-        sentence: 
+        name: Ego
+        sentence: Not today! Let's be friends!
       - cameraTarget: {fileID: 0}
-        name: 
-        sentence: 
+        name: Elios
+        sentence: I don't want a friend now...
       - cameraTarget: {fileID: 0}
-        name: 
-        sentence: 
+        name: Ego
+        sentence: Ohh... So you already have a friend!?
       - cameraTarget: {fileID: 0}
-        name: 
-        sentence: 
+        name: Elios
+        sentence: No. I am not interested.
       - cameraTarget: {fileID: 0}
-        name: 
-        sentence: 
-      decisions: []
-      nextDecisions: 
-    - endSentence: 0
-      nextMinigame: 0
-      talks: []
+        name: Ego
+        sentence: No? So let's be friends then!
+      - cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: "Get off me! I am not in the mood for speaking... \r"
       decisions: []
       nextDecisions: 
   - option: []
