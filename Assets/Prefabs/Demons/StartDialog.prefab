@@ -1,0 +1,106 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7102725894539711598
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7102725894539711599}
+  - component: {fileID: 7102725894539711592}
+  m_Layer: 0
+  m_Name: StartDialog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7102725894539711599
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7102725894539711598}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 6.213, y: 3.328, z: 0.07}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7102725894539711592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7102725894539711598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bdce08c02355b94ab3da141e9827148, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  radius: 3
+  interactionTransform: {fileID: 0}
+  dialogue:
+  - option:
+    - endSentence: 0
+      nextMinigame: 0
+      talks:
+      - cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: Wow... this place is so cool! Wait..., I can't move! Where are
+          my legs?!
+      - cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: What... ? Who... ?
+      - cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: Oh... Ehm... hey... my name is Ego, and yours... ?
+      - cameraTarget: {fileID: 0}
+        name: 
+        sentence: 
+      - cameraTarget: {fileID: 0}
+        name: 
+        sentence: 
+      - cameraTarget: {fileID: 0}
+        name: 
+        sentence: 
+      - cameraTarget: {fileID: 0}
+        name: 
+        sentence: 
+      - cameraTarget: {fileID: 0}
+        name: 
+        sentence: 
+      - cameraTarget: {fileID: 0}
+        name: 
+        sentence: 
+      - cameraTarget: {fileID: 0}
+        name: 
+        sentence: 
+      - cameraTarget: {fileID: 0}
+        name: 
+        sentence: 
+      - cameraTarget: {fileID: 0}
+        name: 
+        sentence: 
+      - cameraTarget: {fileID: 0}
+        name: 
+        sentence: 
+      decisions: []
+      nextDecisions: 
+    - endSentence: 0
+      nextMinigame: 0
+      talks: []
+      decisions: []
+      nextDecisions: 
+  - option: []
+  - option: []
+  - option: []
+  currentDialogue: 0
+  minigameManager: {fileID: 0}
+  isClick: 0
