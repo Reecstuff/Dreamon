@@ -6,16 +6,24 @@ using UnityEngine;
 public class Dialogue
 {
 	[System.Serializable]
-	public class Option
+	public class Talk
 	{
 		public string name;
 
+		[TextArea(3, 10)]
+		public string sentence;
+	}
+
+
+	[System.Serializable]
+	public class Option
+	{
 		public bool endSentence;
 
 		public bool nextMinigame;
 
-		[TextArea(3, 10)]
-		public string[] sentences;
+		public Talk[] talks;
+		
 
 		public string[] decisions;
 
