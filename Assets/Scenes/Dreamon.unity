@@ -188,7 +188,6 @@ MonoBehaviour:
   radius: 3
   interactionTransform: {fileID: 207355044}
   transition: {fileID: 449541309}
-  transitionTime: 1
 --- !u!1001 &209320991
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -204,7 +203,7 @@ PrefabInstance:
     - target: {fileID: 5694374949202117746, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5694374949202117750, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
         type: 3}
@@ -2014,6 +2013,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextScene: OptionMenu
+--- !u!4 &1668239232 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 256332593883656613, guid: 28f39d92bb08188449602cd35f923bda,
+    type: 3}
+  m_PrefabInstance: {fileID: 2133544470}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1714926933
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2169,7 +2174,7 @@ PrefabInstance:
         type: 3}
       propertyPath: cameraPosition
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1668239232}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a02ddb6b34c88c42a6fb3167d60249b, type: 3}
 --- !u!1001 &1821549315
