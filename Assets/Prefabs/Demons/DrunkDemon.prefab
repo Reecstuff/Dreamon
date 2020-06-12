@@ -260,10 +260,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 0}
-  cameraPosition: {x: 0, y: -0.5, z: 0}
+  cameraPosition: {x: 0, y: -0.45, z: -0.18}
   minigame: {fileID: 0}
-  nextWinDialog: 
-  nextLoseDialog: 
+  nextWinDialog: 0300000004000000
+  nextLoseDialog: 0100000002000000
 --- !u!136 &5219269308381401109
 CapsuleCollider:
   m_ObjectHideFlags: 0

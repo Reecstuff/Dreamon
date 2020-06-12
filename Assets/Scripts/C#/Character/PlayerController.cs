@@ -22,18 +22,6 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && focus == null)
-        {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, 100, movementMask, QueryTriggerInteraction.Ignore))
-            {
-                //Move our player to what we hit
-                motor.MoveToPoint(hit.point);
-            }
-        }
-
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -48,6 +36,21 @@ public class PlayerController : MonoBehaviour
                 if (interactable != null)
                 {
                     SetFocus(interactable);
+                }
+            }
+        }
+
+        if (Input.GetMouseButtonDown(0) && focus == null)
+        {
+            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+
+            if (Physics.Raycast(ray, out hit, 100, movementMask, QueryTriggerInteraction.Ignore))
+            {
+                if (!hit.transform.gameObject.GetComponent<Interactable>())
+                {
+                    //Move our player to what we hit
+                    motor.MoveToPoint(hit.point);
                 }
             }
         }

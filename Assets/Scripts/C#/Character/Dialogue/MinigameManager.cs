@@ -28,10 +28,14 @@ public class MinigameManager : MonoBehaviour
 	/// </summary>
 	public void StartNewMinigame()
 	{
-		minigame.SetActive(true);
+		cameraController.SetOffset(cameraPosition, minigame.transform);
 
-		cameraController.offset = cameraPosition;
-		cameraController.target = minigame.transform;
+		Invoke(nameof(SetMinigameActive), cameraController.drivingTime);
+	}
+
+	void SetMinigameActive()
+	{
+		minigame.SetActive(true);
 	}
 
 	/// <summary>

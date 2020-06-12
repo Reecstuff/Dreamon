@@ -32,14 +32,12 @@ public class DialogueManager : MonoBehaviour
 
     public bool selectMinigame;
 
-    int minigameDialogue;
-
     /// <summary>
     /// Save the size of one TextLine
     /// </summary>
     float oneTextLineSizeY = 0;
 
-    void Start()
+    void Awake()
     {
         sentences = new Queue<string>();
         oneTextLineSizeY = nameText.GetPreferredValues("0").y;
