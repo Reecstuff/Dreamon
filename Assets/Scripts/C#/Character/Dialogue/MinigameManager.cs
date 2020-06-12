@@ -54,11 +54,6 @@ public class MinigameManager : MonoBehaviour
 		player.SetFocus(this.GetComponent<Interactable>());
 		player.motor.ResumeAgent();
 
-		if(nextWinDialog.Length == winRounds)
-		{
-			endDoor.SetActive(true);
-		}
-
 
 		cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(transform.position, cameraController.transform.position, 0.5f), 0.5f), dialogTrigger.interactionTransform);
 	}
@@ -78,8 +73,8 @@ public class MinigameManager : MonoBehaviour
 					GetComponent<DialogueTrigger>().TriggerDialogue();
 				}
 			}
-
 			winRounds++;
+
 		}
 		else if (isWin == false)
 		{
@@ -94,8 +89,15 @@ public class MinigameManager : MonoBehaviour
 					GetComponent<DialogueTrigger>().TriggerDialogue();
 				}
 			}
-
 			loseRounds++;
+		}
+
+		if(endDoor)
+		{
+			if (nextWinDialog.Length == winRounds || nextLoseDialog.Length == loseRounds)
+			{
+				endDoor.SetActive(true);
+			}
 		}
 	}
 }

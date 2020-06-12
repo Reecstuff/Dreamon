@@ -9,6 +9,11 @@ public class StartEgoDialog : DialogueTrigger
 		base.InitValues();
 
 		//Starts interacting with the player
+		Invoke(nameof(StartDialogAfterTime), 1);
+	}
+
+	void StartDialogAfterTime()
+	{
 		TriggerDialogue();
 		FindObjectOfType<DialogueManager>().minigameManager = minigameManager;
 	}

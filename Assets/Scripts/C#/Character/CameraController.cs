@@ -16,6 +16,7 @@ public class CameraController : MonoBehaviour
 
     bool fixedCamera = false;
     bool onOffsetReset = false;
+    bool onLookAtLerp = false;
 
     public float drivingTime = 2;
 
@@ -46,7 +47,7 @@ public class CameraController : MonoBehaviour
 
             transform.RotateAround(target.position, Vector3.up, currentYaw);
         }
-        else
+        else if(!onLookAtLerp)
         {
             if (!onOffsetReset)
                 transform.LookAt(target.position);
@@ -71,9 +72,23 @@ public class CameraController : MonoBehaviour
         transform.DOMove(target.position - offset * currentZoom, drivingTime);
     }
 
+    public void LerpLookAt(Transform newLookAt)
+    {
+        onLookAtLerp = true;
+        transform.DOLookAt(newLookAt.position, drivingTime / 2);
+        target = newLookAt;
+        CancelInvoke(nameof(ResetLookAt));
+        Invoke(nameof(ResetLookAt), drivingTime / 2);
+    }
+
     public void StartResetCameraToPlayer()
     {
         Invoke(nameof(ResetCameraToPlayer), drivingTime);
+    }
+
+    void ResetLookAt()
+    {
+        onLookAtLerp = false;
     }
 
     void ResetCameraToPlayer()
