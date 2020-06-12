@@ -8,6 +8,7 @@ public class Dialogue
 	[System.Serializable]
 	public class Talk
 	{
+		public Transform cameraTarget;
 		public string name;
 
 		[TextArea(3, 10)]

@@ -99,10 +99,15 @@ public class DialogueManager : MonoBehaviour
 
         sentences.Clear();
 
+        // Go through Talks and switch Camera
         for (int i = 0; i < option.talks.Length; i++)
         {
             if (!string.IsNullOrEmpty(option.talks[i].name) && !option.talks[i].name.Equals(nameText.text))
+            {
                 nameText.text = option.talks[i].name;
+                if (option.talks[i].cameraTarget)
+                    cameraController.target = option.talks[i].cameraTarget;
+            }
             sentences.Enqueue(option.talks[i].sentence);
         }
 
@@ -167,10 +172,15 @@ public class DialogueManager : MonoBehaviour
 
         sentences.Clear();
 
+        // Go through Talks and switch Camera
         for (int i = 0; i < option.talks.Length; i++)
         {
             if (!string.IsNullOrEmpty(option.talks[i].name) && !option.talks[i].name.Equals(nameText.text))
+            {
                 nameText.text = option.talks[i].name;
+                if(option.talks[i].cameraTarget)
+                    cameraController.target = option.talks[i].cameraTarget;
+            }
             sentences.Enqueue(option.talks[i].sentence);
         }
 
