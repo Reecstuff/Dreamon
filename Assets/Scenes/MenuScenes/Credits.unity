@@ -770,7 +770,7 @@ MonoBehaviour:
     Artist\n&\nAnimation Artist\n\n\n\n\n\n\nHenrik Hafner\nas\nGameplay Programmer\n\n\n\n\n\nSoundtrack
     \n& \nSFX\nby\nSebastian Fenske\n&\nWaldemar Markin\n\n\n\n\n\n\nLaura Wurst\n&\nLucas
     Wetzel\nas\nEnvironment Artist\n\n\n\n\n\n\nSpecial Thanks\nto\n\nAli Hamid\r\n&\nLouis
-    Fernando Galicia Hastedt\r\n\n\n\n\n\n\n\nThank you for \nplaying Dreamon!"
+    Fernando Galicia Hastedt\r\n\n\n\n\n\n\n\nThank you for \ntesting Dreamon!"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

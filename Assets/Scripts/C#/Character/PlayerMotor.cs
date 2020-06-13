@@ -53,11 +53,7 @@ public class PlayerMotor : MonoBehaviour
     //Moves the player towards the object he wants to interact with
     public void FollowTarget(Interactable newTarget)
     {
-        if(newTarget.GetComponent<DialogueTrigger>())
-        {
-            if (newTarget.GetComponent<DialogueTrigger>().isClick)
-                return;
-        }
+        
 
         agent.stoppingDistance = newTarget.radius * .8f;
         agent.updateRotation = false;

@@ -35,7 +35,7 @@ public class BoardManager : MonoBehaviour
 	private void Update()
 	{
 		//If the player lose the game
-		if (currentChessmans < 1)
+		if (currentChessmans < 0)
 		{
 			assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
 		}
