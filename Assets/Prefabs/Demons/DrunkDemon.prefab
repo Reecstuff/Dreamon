@@ -109,14 +109,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  radius: 7.1
+  radius: 1
   interactionTransform: {fileID: 1859216236295679692}
   dialogue:
   - option:
     - endSentence: 0
       nextMinigame: 0
       talks:
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "Hey you brat, I need your help. We\u2019re gonna play a game!"
       decisions:
@@ -127,57 +127,57 @@ MonoBehaviour:
     - endSentence: 0
       nextMinigame: 0
       talks:
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: You bet! Or is there any other soul?
       - cameraTarget: {fileID: 0}
         name: Elios
         sentence: I guess not.
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: What are you waiting for? Get your ass here and drink a bottle
           of booze!
       - cameraTarget: {fileID: 0}
         name: Elios
         sentence: I am not interested.
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "Hey do you know, who you\u2019re talking with? Show some respect
           and drink with an old man!"
       - cameraTarget: {fileID: 0}
         name: Elios
         sentence: "But I don\u2019t drink anymore."
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "You shut up! Y\u2019all know nothing! You are so weak. "
       - cameraTarget: {fileID: 0}
         name: Elios
         sentence: How do you know?
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "Haven\u2019t you even noticed yet? You left your wife night by
           night. All the empty bottles in front of your eyes. Are you that blind!?"
       - cameraTarget: {fileID: 0}
         name: Elios
         sentence: 'Stop it. '
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "Broken relationship with the whole family, total isolation and\u2026
           the wish to die\u2026. doesn\u2019t it remind you of somebody!"
       - cameraTarget: {fileID: 0}
         name: Elios
         sentence: Stop it.
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "You coward! Remember the pain you feel\u2026 about the kiss\u2026
           about the love\u2026 about the betrayal\u2026 "
       - cameraTarget: {fileID: 0}
         name: Elios
-        sentence: <b>STOP IT! STOP IT! STOP IT!</b>
+        sentence: STOP IT! STOP IT! STOP IT!
       - cameraTarget: {fileID: 0}
         name: Ego
-        sentence: "<b>Calm down buddy. Calm down. He is just teasing you. Let\u2019s
-          play the game with him. Trust me, it\u2019s gonna be fun. </b>"
+        sentence: "Calm down buddy. Calm down. He is just teasing you. Let\u2019s
+          play the game with him. Trust me, it\u2019s gonna be fun."
       - cameraTarget: {fileID: 0}
         name: Elios
         sentence: '[exhausted sighs]'
@@ -192,28 +192,28 @@ MonoBehaviour:
         sentence: "Dementum reveals \u201CHIS FACE\u201D and smiles wider."
       - cameraTarget: {fileID: 0}
         name: 'Ego '
-        sentence: "(moving backwards)<b> Ahhhhh. What\u2019s that ugly thing! What\u2019s
-          happening! Elios protect me!</b>"
+        sentence: "(moving backwards) Ahhhhh. What\u2019s that ugly thing! What\u2019s
+          happening! Elios protect me!"
       - cameraTarget: {fileID: 0}
         name: Elios
         sentence: "[sighs] How annoying\u2026"
       - cameraTarget: {fileID: 0}
         name: Narrator
         sentence: "Dementum reveals his \u201CFULL APPEARANCE\u201D."
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: Finally. Took you long enough.
       - cameraTarget: {fileID: 0}
         name: Narrator
         sentence: 'Dementum is turning back and prepares mugs with alcohol in the
           background. '
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: You know what I really like about the booze?
       - cameraTarget: {fileID: 0}
         name: 'Elios '
         sentence: (pressed lips to the inside) ...
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: 'Dementum '
         sentence: "(fills mugs) It\u2019s the golden elixir! You gotta try this joyness...
           to fall in love! "
@@ -226,7 +226,11 @@ MonoBehaviour:
       - cameraTarget: {fileID: 0}
         name: Narrator
         sentence: Dementum is turning back again and prepares 5 mugs on the counter.
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
+        name: Dementum
+        sentence: You need to drink 10 jugs, but be careful, sometimes what's in
+          the jugs is quite strong. (Dementum grins)
+      - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "Cheers, kid. Let\u2019s see how much you can deal with."
       decisions: []
@@ -236,15 +240,14 @@ MonoBehaviour:
       talks:
       - cameraTarget: {fileID: 0}
         name: Ego
-        sentence: "<b>Wait Elios! Why do you say no? We haven\u2019t even played
-          yet.</b>"
+        sentence: "Wait Elios! Why do you say no? We haven\u2019t even played yet."
       - cameraTarget: {fileID: 0}
         name: Elios
         sentence: No.
       - cameraTarget: {fileID: 0}
         name: Ego
-        sentence: "<b>Oh come on! Don\u2019t be a douchebag. It\u2019s gonna be fun.</b> "
-      - cameraTarget: {fileID: 0}
+        sentence: "Oh come on! Don\u2019t be a douchebag. It\u2019s gonna be fun. "
+      - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "Consider your decision well, kid\u2026 before your time runs out. "
       - cameraTarget: {fileID: 0}
@@ -257,7 +260,7 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 1
       talks:
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "I knew you couldn\u2019t resist! Do you feel free now?"
       - cameraTarget: {fileID: 0}
@@ -269,7 +272,7 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 0
       talks:
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "Ohh, Elios. You gutted me. I have to admit, I expected better
           from you. You can\u2019t make it. I am a part of you. hahaha"
@@ -283,7 +286,7 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 1
       talks:
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: 'You gotta be kidding me! How dare you ruin my game! '
       - cameraTarget: {fileID: 0}
@@ -299,20 +302,20 @@ MonoBehaviour:
         name: Narrator
         sentence: 'Dementum throws the bottle to the bottom and flinches. The bottle
           screams. '
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "Ahhhh. Why are you doing this to me. Don\u2019t you love me? You
           can\u2019t escape. I am part of you! "
       - cameraTarget: {fileID: 0}
         name: Elios
         sentence: Get out of my sight! We had enough.
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "We haven\u2019t even started yet! Drink one more, Elios!"
       - cameraTarget: {fileID: 0}
         name: Elios
         sentence: Stop it! We have nothing more to say!
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: 'Dementum '
         sentence: (holds hands in front of his eyes and leaves the bar) [Screams]
       decisions: []
@@ -320,6 +323,16 @@ MonoBehaviour:
   currentDialogue: 0
   minigameManager: {fileID: 5219269308381401115}
   isClick: 0
+  objectsToDeactivate:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &5219269308381401115
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,6 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c4268f7c154c645be5dcf1130bf241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camTarget: {fileID: 0}
   mainCamera: {fileID: 0}
   cameraPosition: {fileID: 0}
   minigame: {fileID: 0}
