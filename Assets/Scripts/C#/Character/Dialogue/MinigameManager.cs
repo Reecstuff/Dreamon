@@ -5,6 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(DialogueTrigger))]
 public class MinigameManager : MonoBehaviour
 {
+	[SerializeField]
+	Transform camTarget;
+
 	public GameObject mainCamera;
 	public Transform cameraPosition;
 	public GameObject minigame;
@@ -26,6 +29,8 @@ public class MinigameManager : MonoBehaviour
 		cameraController = mainCamera.GetComponent<CameraController>();
 		player = GameObject.FindObjectOfType<PlayerController>();
 		dialogTrigger = GetComponent<DialogueTrigger>();
+		if (!camTarget)
+			camTarget = transform;
 	}
 
 	/// <summary>
@@ -33,7 +38,7 @@ public class MinigameManager : MonoBehaviour
 	/// </summary>
 	public void StartNewMinigame()
 	{
-		cameraController.MoveToFixedPosition(cameraPosition.position, minigame.transform);
+		cameraController.MoveToFixedPosition(cameraPosition.position, camTarget);
 		player.motor.StopAgent();
 		Invoke(nameof(SetMinigameActive), cameraController.drivingTime);
 	}
