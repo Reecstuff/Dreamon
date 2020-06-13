@@ -79,15 +79,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b232d3b49d4504ca39b8ce4d719fd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MiniGameCanvas: {fileID: 0}
   timerText: {fileID: 0}
   drinkBottleText: {fileID: 0}
   drunkBottleText: {fileID: 0}
   drinkBottles: 0
   maxBottles: 10
   drunkBottles: 0
-  maxAlcBottles: 5
-  drinkTime: 120
-  maxBottleTimer: 3
+  maxAlcBottles: 4
+  drinkTime: 30
+  maxBottleTimer: 0.7
   bottleTime: 0
   bottles: []
   assignedTarget: {fileID: 0}
