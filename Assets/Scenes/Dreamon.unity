@@ -473,7 +473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.01886791, g: 0.01886791, b: 0.01886791, a: 0.3764706}
+  m_Color: {r: 0.01886791, g: 0.01886791, b: 0.01886791, a: 0.8235294}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1483,7 +1483,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1444691795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2417,27 +2417,27 @@ PrefabInstance:
     - target: {fileID: 8675673900980995805, guid: fad27ae807bf8c9459db58ef836eaf48,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8675673900980995805, guid: fad27ae807bf8c9459db58ef836eaf48,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8675673900980995805, guid: fad27ae807bf8c9459db58ef836eaf48,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8675673900980995805, guid: fad27ae807bf8c9459db58ef836eaf48,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8675673900980995805, guid: fad27ae807bf8c9459db58ef836eaf48,
         type: 3}
       propertyPath: m_text
-      value: forsake
+      value: exit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fad27ae807bf8c9459db58ef836eaf48, type: 3}
