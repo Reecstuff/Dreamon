@@ -66,7 +66,7 @@ MonoBehaviour:
   m_text: Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -309,7 +309,7 @@ MonoBehaviour:
   m_text: Name
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
+  m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -524,6 +524,7 @@ MonoBehaviour:
   minigameManager: {fileID: 0}
   selectedOpinion: 0
   selectMinigame: 0
+  currentDialogObject: {fileID: 0}
 --- !u!1 &5694374949559338533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1011,6 +1012,11 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 42
       objectReference: {fileID: 0}
+    - target: {fileID: 8675673900980995805, guid: fad27ae807bf8c9459db58ef836eaf48,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
     m_RemovedComponents:
     - {fileID: 8478850825089524229, guid: fad27ae807bf8c9459db58ef836eaf48, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fad27ae807bf8c9459db58ef836eaf48, type: 3}
@@ -1222,7 +1228,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
     - target: {fileID: 8675673900980995805, guid: fad27ae807bf8c9459db58ef836eaf48,
         type: 3}
       propertyPath: m_fontSize
@@ -1471,7 +1477,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
     - target: {fileID: 8675673900980995805, guid: fad27ae807bf8c9459db58ef836eaf48,
         type: 3}
       propertyPath: m_fontSize
@@ -1710,7 +1716,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
     - target: {fileID: 8675673900980995805, guid: fad27ae807bf8c9459db58ef836eaf48,
         type: 3}
       propertyPath: m_fontSize
@@ -1969,7 +1975,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_sharedMaterial
       value: 
-      objectReference: {fileID: 2100000, guid: 79459efec17a4d00a321bdcc27bbc385, type: 2}
+      objectReference: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}
     - target: {fileID: 8675673900980995805, guid: fad27ae807bf8c9459db58ef836eaf48,
         type: 3}
       propertyPath: m_textAlignment
