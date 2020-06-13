@@ -102,6 +102,7 @@ public class MinigameManager : MonoBehaviour
 			if (nextWinDialog.Length == winRounds || nextLoseDialog.Length == loseRounds)
 			{
 				endDoor.SetActive(true);
+				endDoor.GetComponent<AudioSource>()?.Play();
 			}
 		}
 	}
