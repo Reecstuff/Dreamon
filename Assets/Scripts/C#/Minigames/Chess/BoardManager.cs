@@ -37,7 +37,7 @@ public class BoardManager : MonoBehaviour
 		//If the player lose the game
 		if (currentChessmans < 1)
 		{
-			EndGame(loseDialogue);
+			assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
 		}
 
 		UpdateSelection();
@@ -57,7 +57,7 @@ public class BoardManager : MonoBehaviour
 					//If the player win the game
 					if (selectionY == 7)
 					{
-						EndGame(winDialogue);
+						assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
 					}
 
 					//Move the chessman
@@ -102,14 +102,6 @@ public class BoardManager : MonoBehaviour
 
 		BoardHighlights.Instance.Hidehighlights();
 		selectedChessman = null;
-	}
-
-	private void EndGame(int newDialog)
-	{
-		//Stop game
-		assignedTarget.GetComponent<MinigameManager>().EndMinigame();
-		assignedTarget.GetComponent<DialogueTrigger>().currentDialogue = newDialog;
-		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
 	}
 
 	private void UpdateSelection()
@@ -161,20 +153,6 @@ public class BoardManager : MonoBehaviour
 
 	private void DrawChessboard()
 	{
-		//Vector3 widthLine = Vector3.right * 8;
-		//Vector3 heightLine = Vector3.forward * 8;
-
-		//for (int i = 0; i <= 8; i++)
-		//{
-		//	Vector3 start = Vector3.forward * i;
-		//	Debug.DrawLine(start, start + widthLine);
-		//	for (int j = 0; j <= 8; j++)
-		//	{
-		//		start = Vector3.right * j;
-		//		Debug.DrawLine(start, start + heightLine);
-		//	}
-		//}
-
 		//Draw the selection
 		if (selectionX >= 0 && selectionY >= 0)
 		{
