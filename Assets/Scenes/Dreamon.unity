@@ -1483,7 +1483,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1444691795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2980,21 +2980,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.959
-      objectReference: {fileID: 0}
-    - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.342
-      objectReference: {fileID: 0}
-    - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.239
-      objectReference: {fileID: 0}
     - target: {fileID: 1133812109691748872, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: camTarget
@@ -3074,11 +3059,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StartDialog
-      objectReference: {fileID: 0}
-    - target: {fileID: 7156026689946373129, guid: 1ecaff3d0076bb6428f674170f69227b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
@@ -3172,6 +3152,16 @@ PrefabInstance:
       objectReference: {fileID: 1378851288}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[20].cameraTarget
+      value: 
+      objectReference: {fileID: 1378851288}
+    - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[21].cameraTarget
+      value: 
+      objectReference: {fileID: 1378851288}
+    - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
       propertyPath: dialogue.Array.data[1].option.Array.data[0].talks.Array.data[0].cameraTarget
       value: 
       objectReference: {fileID: 1378851289}
@@ -3210,15 +3200,5 @@ PrefabInstance:
       propertyPath: dialogue.Array.data[2].option.Array.data[0].talks.Array.data[4].cameraTarget
       value: 
       objectReference: {fileID: 1378851289}
-    - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[20].cameraTarget
-      value: 
-      objectReference: {fileID: 1378851288}
-    - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[21].cameraTarget
-      value: 
-      objectReference: {fileID: 1378851288}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ecaff3d0076bb6428f674170f69227b, type: 3}

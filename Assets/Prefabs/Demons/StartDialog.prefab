@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 387284189409848624}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -4.959, y: 0.239, z: -0.342}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7156026689946373128}
@@ -84,16 +84,16 @@ MonoBehaviour:
       nextMinigame: 1
       talks:
       - cameraTarget: {fileID: 0}
-        name: Narrator
-        sentence: Elios lies on the ground.
+        name: ...
+        sentence: A man lies on the ground.
       - cameraTarget: {fileID: 0}
-        name: Narrator
-        sentence: "Ego is growing out of Elios\u2019 body and wants to go forward,
-          but his body is sticking to Elios."
+        name: ...
+        sentence: A creature is growing out of the man's body and wants to go forward,
+          but his body is sticking to the creature.
       - cameraTarget: {fileID: 0}
-        name: Narrator
+        name: ...
         sentence: Both are looking to the center of their body and then to each other.
-          Elios gets up quickly.
+          The man gets up quickly.
       - cameraTarget: {fileID: 0}
         name: Ego
         sentence: '(looking around) Wow... this place is so cool! Wait.., I can''t

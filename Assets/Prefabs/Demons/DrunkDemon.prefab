@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3806040174959881313}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.5, z: 2.59}
+  m_LocalPosition: {x: 0, y: -2.5, z: 3.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5219269308381401104}
@@ -188,7 +188,7 @@ MonoBehaviour:
       nextMinigame: 1
       talks:
       - cameraTarget: {fileID: 0}
-        name: Narrator
+        name: ...
         sentence: "Dementum reveals \u201CHIS FACE\u201D and smiles wider."
       - cameraTarget: {fileID: 0}
         name: 'Ego '
@@ -198,13 +198,13 @@ MonoBehaviour:
         name: Elios
         sentence: "[sighs] How annoying\u2026"
       - cameraTarget: {fileID: 0}
-        name: Narrator
+        name: ...
         sentence: "Dementum reveals his \u201CFULL APPEARANCE\u201D."
       - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: Finally. Took you long enough.
       - cameraTarget: {fileID: 0}
-        name: Narrator
+        name: ...
         sentence: 'Dementum is turning back and prepares mugs with alcohol in the
           background. '
       - cameraTarget: {fileID: 5219269308381401104}
@@ -224,7 +224,7 @@ MonoBehaviour:
         name: Elios
         sentence: (looks away distractedly)  [sad sighs]
       - cameraTarget: {fileID: 0}
-        name: Narrator
+        name: ...
         sentence: Dementum is turning back again and prepares 5 mugs on the counter.
       - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
@@ -277,7 +277,7 @@ MonoBehaviour:
         sentence: "Ohh, Elios. You gutted me. I have to admit, I expected better
           from you. You can\u2019t make it. I am a part of you. hahaha"
       - cameraTarget: {fileID: 0}
-        name: Narrator
+        name: ...
         sentence: 'The view gets dark. Elios and Ego wake up in an empty tavern without
           any interaction or conversation. '
       decisions: []
@@ -299,7 +299,7 @@ MonoBehaviour:
       nextMinigame: 0
       talks:
       - cameraTarget: {fileID: 0}
-        name: Narrator
+        name: ...
         sentence: 'Dementum throws the bottle to the bottom and flinches. The bottle
           screams. '
       - cameraTarget: {fileID: 5219269308381401104}
