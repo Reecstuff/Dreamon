@@ -61,8 +61,8 @@ MonoBehaviour:
           but his body is sticking to Elios."
       - cameraTarget: {fileID: 0}
         name: Narrator
-        sentence: ' Both are looking to the center of their body and then to each
-          other. Elios gets up quickly.'
+        sentence: Both are looking to the center of their body and then to each other.
+          Elios gets up quickly.
       - cameraTarget: {fileID: 0}
         name: Ego
         sentence: '(looking around) Wow... this place is so cool! Wait.., I can''t
@@ -178,10 +178,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c4268f7c154c645be5dcf1130bf241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camTarget: {fileID: 0}
   mainCamera: {fileID: 0}
-  cameraPosition: {fileID: 7156026689946373128}
+  cameraPosition: {fileID: 0}
   minigame: {fileID: 0}
   endDoor: {fileID: 0}
   winRounds: 0
   nextWinDialog: 02000000
-  nextLoseDialog: 03000000
+  nextLoseDialog: 01000000
