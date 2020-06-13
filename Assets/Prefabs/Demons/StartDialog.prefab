@@ -95,20 +95,20 @@ MonoBehaviour:
         sentence: Both are looking to the center of their body and then to each other.
           The man gets up quickly.
       - cameraTarget: {fileID: 0}
-        name: Ego
+        name: Creature
         sentence: '(looking around) Wow... this place is so cool! Wait.., I can''t
           move! Where are my legs?!
 
 '
       - cameraTarget: {fileID: 0}
-        name: Elios
+        name: Man
         sentence: "What\u2026? Who\u2026? "
       - cameraTarget: {fileID: 0}
-        name: Ego
+        name: Creature
         sentence: "Oh\u2026 Ehm...hey... my name is Ego, and yours\u2026?"
       - cameraTarget: {fileID: 0}
-        name: 'Elios '
-        sentence: " (depressed) [sighs] Elios\u2026"
+        name: Man
+        sentence: " [sighs] Elios\u2026"
       - cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Ehm\u2026 Do you know this place? "

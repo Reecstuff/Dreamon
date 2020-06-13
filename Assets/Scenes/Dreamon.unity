@@ -1570,6 +1570,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1784327006}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1605131748 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5219269308381401104, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1784327006}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1645786150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2047,6 +2053,31 @@ PrefabInstance:
       propertyPath: objectsToDeactivate.Array.data[8]
       value: 
       objectReference: {fileID: 390445741}
+    - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[3].cameraTarget
+      value: 
+      objectReference: {fileID: 1605131748}
+    - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[0].cameraTarget
+      value: 
+      objectReference: {fileID: 1605131748}
+    - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[5].cameraTarget
+      value: 
+      objectReference: {fileID: 1605131748}
+    - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[11].cameraTarget
+      value: 
+      objectReference: {fileID: 1605131748}
+    - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[0].cameraTarget
+      value: 
+      objectReference: {fileID: 1605131748}
     - target: {fileID: 5219269308381401114, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: m_Name
