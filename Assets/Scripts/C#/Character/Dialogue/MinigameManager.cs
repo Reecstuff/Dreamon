@@ -30,7 +30,7 @@ public class MinigameManager : MonoBehaviour
 		player = GameObject.FindObjectOfType<PlayerController>();
 		dialogTrigger = GetComponent<DialogueTrigger>();
 		if (!camTarget)
-			camTarget = transform;
+			camTarget = minigame.transform;
 	}
 
 	/// <summary>
