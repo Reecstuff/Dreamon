@@ -118,6 +118,13 @@ MonoBehaviour:
         name: Ego
         sentence: "Really\u2026?! Awesome! You good at chess? Let\u2019s play! Let\u2019s
           play! Let\u2019s play! (pure excitement)"
+      - cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: You just have to get one of your characters behind mine, but be
+          careful.
+      - cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: Because if you hit one of my figures then yours will be destroyed.
       decisions: []
       nextDecisions: 
   - option:
