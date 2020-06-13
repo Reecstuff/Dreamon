@@ -9,7 +9,7 @@ public class StartEgoDialog : DialogueTrigger
 		base.InitValues();
 
 		//Starts interacting with the player
-		Invoke(nameof(StartDialogAfterTime), 1);
+		Invoke(nameof(StartDialogAfterTime), .5f);
 	}
 
 	void StartDialogAfterTime()

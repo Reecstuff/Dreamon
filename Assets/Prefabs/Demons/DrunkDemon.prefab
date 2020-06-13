@@ -23,8 +23,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2959868926908075439}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.108, y: 1.968, z: 1.72}
+  m_LocalRotation: {x: -0.09340777, y: -0.6987904, z: 0.09105518, w: -0.70333207}
+  m_LocalPosition: {x: -2.3290215, y: 1.0161071, z: 1.9973812}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5219269308381401104}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3806040174959881313}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -2.5, z: 2.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5219269308381401104}
@@ -323,6 +323,7 @@ MonoBehaviour:
   currentDialogue: 0
   minigameManager: {fileID: 5219269308381401115}
   isClick: 0
+  camPosition: {fileID: 4132076722556807739}
   objectsToDeactivate:
   - {fileID: 0}
   - {fileID: 0}
