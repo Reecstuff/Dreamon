@@ -4623,6 +4623,39 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!114 &887285147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2087410667016176418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f01d29d88278f45458d99e6b5199e920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 1
+  useScattering: 0
+  overrideScattering: 0
+  overridingScattering: 0.5
+  scatteringBias: 0
+  useColorTemperatureTint: 0
+  overrideColor: 0
+  overridingColor: {r: 1, g: 1, b: 1, a: 1}
+  useShadow: 1
+  useCookie: 1
+  cookieMapRenderTexture: {fileID: 0}
+  enableOutOfPhaseColor: 0
+  outOfPhaseColorStrength: 0.1
+  outOfPhaseColor: {r: 0, g: 1, b: 1, a: 1}
+  customDistanceFalloffThreshold: 0.5
+  customDistanceFalloffPower: 2
+  customCookieDistanceFalloffStartThreshold: 0.1
+  customCookieDistanceFalloffEndThreshold: 0.25
+  customCookieDistanceFalloffPower: 2
+  customAngularFalloffThreshold: 0.8
+  customAngularFalloffPower: 2
 --- !u!1 &2165935716548178195
 GameObject:
   m_ObjectHideFlags: 0
@@ -12596,6 +12629,39 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!114 &907674277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5247317763734645182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f01d29d88278f45458d99e6b5199e920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 1
+  useScattering: 0
+  overrideScattering: 0
+  overridingScattering: 0.5
+  scatteringBias: 0
+  useColorTemperatureTint: 0
+  overrideColor: 0
+  overridingColor: {r: 1, g: 1, b: 1, a: 1}
+  useShadow: 1
+  useCookie: 1
+  cookieMapRenderTexture: {fileID: 0}
+  enableOutOfPhaseColor: 0
+  outOfPhaseColorStrength: 0.1
+  outOfPhaseColor: {r: 0, g: 1, b: 1, a: 1}
+  customDistanceFalloffThreshold: 0.5
+  customDistanceFalloffPower: 2
+  customCookieDistanceFalloffStartThreshold: 0.1
+  customCookieDistanceFalloffEndThreshold: 0.25
+  customCookieDistanceFalloffPower: 2
+  customAngularFalloffThreshold: 0.8
+  customAngularFalloffPower: 2
 --- !u!1 &5248355276437762346
 GameObject:
   m_ObjectHideFlags: 0
@@ -13847,6 +13913,39 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -4862292035708559940, guid: 134e85e9aee393f40b9be59398d8a05b, type: 3}
+--- !u!114 &172506730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5778060763589038686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f01d29d88278f45458d99e6b5199e920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 1
+  useScattering: 0
+  overrideScattering: 0
+  overridingScattering: 0.5
+  scatteringBias: 0
+  useColorTemperatureTint: 0
+  overrideColor: 0
+  overridingColor: {r: 1, g: 1, b: 1, a: 1}
+  useShadow: 1
+  useCookie: 1
+  cookieMapRenderTexture: {fileID: 0}
+  enableOutOfPhaseColor: 0
+  outOfPhaseColorStrength: 0.1
+  outOfPhaseColor: {r: 0, g: 1, b: 1, a: 1}
+  customDistanceFalloffThreshold: 0.5
+  customDistanceFalloffPower: 2
+  customCookieDistanceFalloffStartThreshold: 0.1
+  customCookieDistanceFalloffEndThreshold: 0.25
+  customCookieDistanceFalloffPower: 2
+  customAngularFalloffThreshold: 0.8
+  customAngularFalloffPower: 2
 --- !u!1 &5786645271478638956
 GameObject:
   m_ObjectHideFlags: 0
@@ -16309,6 +16408,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9170216334723886743}
   - component: {fileID: 8089846945832897973}
+  - component: {fileID: 390445744}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -16342,7 +16442,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9150943, g: 0.43921366, b: 0, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -16391,6 +16491,39 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &390445744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6848547501841756805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f01d29d88278f45458d99e6b5199e920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 1
+  useScattering: 0
+  overrideScattering: 0
+  overridingScattering: 0.5
+  scatteringBias: 0
+  useColorTemperatureTint: 0
+  overrideColor: 0
+  overridingColor: {r: 1, g: 1, b: 1, a: 1}
+  useShadow: 1
+  useCookie: 1
+  cookieMapRenderTexture: {fileID: 0}
+  enableOutOfPhaseColor: 0
+  outOfPhaseColorStrength: 0.1
+  outOfPhaseColor: {r: 0, g: 1, b: 1, a: 1}
+  customDistanceFalloffThreshold: 0.5
+  customDistanceFalloffPower: 2
+  customCookieDistanceFalloffStartThreshold: 0.1
+  customCookieDistanceFalloffEndThreshold: 0.25
+  customCookieDistanceFalloffPower: 2
+  customAngularFalloffThreshold: 0.8
+  customAngularFalloffPower: 2
 --- !u!1 &6914327042907709826
 GameObject:
   m_ObjectHideFlags: 0
@@ -16988,6 +17121,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8969792065486691264}
   - component: {fileID: 735318931320365366}
+  - component: {fileID: 1162916205}
   m_Layer: 0
   m_Name: Light
   m_TagString: Untagged
@@ -17021,7 +17155,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0.9150943, g: 0.43921366, b: 0, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -17070,6 +17204,39 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1162916205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7240099534011098601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f01d29d88278f45458d99e6b5199e920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 1
+  useScattering: 0
+  overrideScattering: 0
+  overridingScattering: 0.5
+  scatteringBias: 0
+  useColorTemperatureTint: 0
+  overrideColor: 0
+  overridingColor: {r: 1, g: 1, b: 1, a: 1}
+  useShadow: 1
+  useCookie: 1
+  cookieMapRenderTexture: {fileID: 0}
+  enableOutOfPhaseColor: 0
+  outOfPhaseColorStrength: 0.1
+  outOfPhaseColor: {r: 0, g: 1, b: 1, a: 1}
+  customDistanceFalloffThreshold: 0.5
+  customDistanceFalloffPower: 2
+  customCookieDistanceFalloffStartThreshold: 0.1
+  customCookieDistanceFalloffEndThreshold: 0.25
+  customCookieDistanceFalloffPower: 2
+  customAngularFalloffThreshold: 0.8
+  customAngularFalloffPower: 2
 --- !u!1 &7305374048043723886
 GameObject:
   m_ObjectHideFlags: 0
@@ -19319,6 +19486,39 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.26, y: 4.44, z: 4.82}
   m_Center: {x: -0.0000009536743, y: -3.43, z: 0.00000011920929}
+--- !u!114 &208537151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8132310755061989525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f01d29d88278f45458d99e6b5199e920, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  strength: 1
+  useScattering: 0
+  overrideScattering: 0
+  overridingScattering: 0.5
+  scatteringBias: 0
+  useColorTemperatureTint: 0
+  overrideColor: 0
+  overridingColor: {r: 1, g: 1, b: 1, a: 1}
+  useShadow: 1
+  useCookie: 1
+  cookieMapRenderTexture: {fileID: 0}
+  enableOutOfPhaseColor: 0
+  outOfPhaseColorStrength: 0.1
+  outOfPhaseColor: {r: 0, g: 1, b: 1, a: 1}
+  customDistanceFalloffThreshold: 0.5
+  customDistanceFalloffPower: 2
+  customCookieDistanceFalloffStartThreshold: 0.1
+  customCookieDistanceFalloffEndThreshold: 0.25
+  customCookieDistanceFalloffPower: 2
+  customAngularFalloffThreshold: 0.8
+  customAngularFalloffPower: 2
 --- !u!1 &8174363955979238799
 GameObject:
   m_ObjectHideFlags: 0
@@ -21615,6 +21815,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+--- !u!1 &2087410667016176418 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100012, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 2087410667016275342}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2087410667016150798 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
@@ -21730,11 +21936,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10800000, guid: 360ea4fe6497e6b4d8031a32610bcf60, type: 3}
       propertyPath: m_Intensity
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 10800000, guid: 360ea4fe6497e6b4d8031a32610bcf60, type: 3}
       propertyPath: m_Range
-      value: 30
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 10800000, guid: 360ea4fe6497e6b4d8031a32610bcf60, type: 3}
       propertyPath: m_BounceIntensity
@@ -21924,6 +22130,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+--- !u!1 &5247317763734645182 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100012, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 5247317763734744850}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5247317763735139730 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
@@ -21991,6 +22203,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+--- !u!1 &5778060763589038686 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100012, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 5778060763589072114}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5778060763589463666 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
@@ -22074,6 +22292,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+--- !u!1 &8132310755061989525 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100012, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 8132310755061958201}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8132310755061570745 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
