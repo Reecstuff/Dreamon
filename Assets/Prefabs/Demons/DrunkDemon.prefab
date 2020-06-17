@@ -120,7 +120,7 @@ MonoBehaviour:
         name: Dementum
         sentence: "Hey you brat, I need your help. We\u2019re gonna play a game!"
       decisions:
-      - Are you talking with me?
+      - Are you talking to me?
       - Yes, I guess so.
       - No. I am not into games anymore.
       nextDecisions: 010000000200000003000000
@@ -142,7 +142,7 @@ MonoBehaviour:
         sentence: I am not interested.
       - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
-        sentence: "Hey do you know, who you\u2019re talking with? Show some respect
+        sentence: "Hey do you know, who you\u2019re talking to? Show some respect
           and drink with an old man!"
       - cameraTarget: {fileID: 0}
         name: Elios
@@ -187,7 +187,7 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 1
       talks:
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: ...
         sentence: "Dementum reveals \u201CHIS FACE\u201D and smiles wider."
       - cameraTarget: {fileID: 0}
@@ -197,13 +197,13 @@ MonoBehaviour:
       - cameraTarget: {fileID: 0}
         name: Elios
         sentence: "[sighs] How annoying\u2026"
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: ...
         sentence: "Dementum reveals his \u201CFULL APPEARANCE\u201D."
       - cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: Finally. Took you long enough.
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: ...
         sentence: 'Dementum is turning back and prepares mugs with alcohol in the
           background. '
@@ -223,7 +223,7 @@ MonoBehaviour:
       - cameraTarget: {fileID: 0}
         name: Elios
         sentence: (looks away distractedly)  [sad sighs]
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: ...
         sentence: Dementum is turning back again and prepares 5 mugs on the counter.
       - cameraTarget: {fileID: 5219269308381401104}
@@ -298,7 +298,7 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 0
       talks:
-      - cameraTarget: {fileID: 0}
+      - cameraTarget: {fileID: 5219269308381401104}
         name: ...
         sentence: 'Dementum throws the bottle to the bottom and flinches. The bottle
           screams. '
