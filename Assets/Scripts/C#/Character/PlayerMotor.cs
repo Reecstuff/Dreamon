@@ -39,8 +39,11 @@ public class PlayerMotor : MonoBehaviour
     /// <param name="point"></param>
     public void MoveToPoint(Vector3 point)
     {
-        agent.SetDestination(point);
-        PlayAnimation(1);
+        if(!agent.isStopped)
+        {
+            agent.SetDestination(point);
+            PlayAnimation(1);
+        }
     }
 
     /// <summary>
