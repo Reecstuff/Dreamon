@@ -1341,6 +1341,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2824791701659454389, guid: 42fbe90f27e2b9341b3452e7a3770d55,
+        type: 3}
+      propertyPath: facePoint
+      value: 
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1349,7 +1354,7 @@ PrefabInstance:
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.015676
+      value: 0.24
       objectReference: {fileID: 0}
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
@@ -1459,9 +1464,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1378851287}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1378851289 stripped
+--- !u!4 &1411189595 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 3385429803248472496, guid: 42fbe90f27e2b9341b3452e7a3770d55,
+  m_CorrespondingSourceObject: {fileID: 5030839855778669375, guid: 42fbe90f27e2b9341b3452e7a3770d55,
     type: 3}
   m_PrefabInstance: {fileID: 1378851287}
   m_PrefabAsset: {fileID: 0}
@@ -1843,6 +1848,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.09062931
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7237422
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.089343406
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.67823404
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.3537102
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.8686981
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7898464
+      objectReference: {fileID: 0}
     - target: {fileID: 5219269308381401104, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1856,7 +1896,7 @@ PrefabInstance:
     - target: {fileID: 5219269308381401104, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -20.06
+      value: -19.833
       objectReference: {fileID: 0}
     - target: {fileID: 5219269308381401104, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
@@ -1902,37 +1942,37 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[1].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[3].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 0}
     - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[5].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[7].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[9].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 0}
     - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[11].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[13].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[14].cameraTarget
@@ -1942,7 +1982,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[15].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[1].cameraTarget
@@ -1952,12 +1992,12 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[2].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[7].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[9].cameraTarget
@@ -1967,7 +2007,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[10].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[3].talks.Array.data[0].cameraTarget
@@ -1977,7 +2017,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[3].talks.Array.data[1].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[3].talks.Array.data[2].cameraTarget
@@ -1987,7 +2027,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[3].talks.Array.data[4].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[1].option.Array.data[0].talks.Array.data[1].cameraTarget
@@ -2002,12 +2042,12 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[2].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[4].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: objectsToDeactivate.Array.data[0]
@@ -2209,6 +2249,12 @@ PrefabInstance:
 --- !u!1 &1825958852 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7156026689946373129, guid: 1ecaff3d0076bb6428f674170f69227b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7156026689738615707}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1895373244 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
     type: 3}
   m_PrefabInstance: {fileID: 7156026689738615707}
   m_PrefabAsset: {fileID: 0}
@@ -3011,6 +3057,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.48799706
+      objectReference: {fileID: 0}
+    - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.948721
+      objectReference: {fileID: 0}
+    - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.053147573
+      objectReference: {fileID: 0}
+    - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.2154874
+      objectReference: {fileID: 0}
+    - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.016623534
+      objectReference: {fileID: 0}
+    - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9749176
+      objectReference: {fileID: 0}
+    - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.28588748
+      objectReference: {fileID: 0}
     - target: {fileID: 1133812109691748872, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: camTarget
@@ -3034,7 +3115,7 @@ PrefabInstance:
     - target: {fileID: 7156026689946373128, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -16.245
+      value: -22.231
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373128, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
@@ -3044,7 +3125,7 @@ PrefabInstance:
     - target: {fileID: 7156026689946373128, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.726
+      value: -11.004
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373128, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
@@ -3091,11 +3172,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartDialog
       objectReference: {fileID: 0}
+    - target: {fileID: 7156026689946373129, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[3].cameraTarget
@@ -3105,7 +3191,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[4].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[5].cameraTarget
@@ -3115,7 +3201,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[6].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[7].cameraTarget
@@ -3125,7 +3211,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[8].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[9].cameraTarget
@@ -3135,7 +3221,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[10].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[11].cameraTarget
@@ -3145,7 +3231,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[12].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[13].cameraTarget
@@ -3155,7 +3241,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[14].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[15].cameraTarget
@@ -3165,7 +3251,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[16].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[17].cameraTarget
@@ -3175,7 +3261,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[18].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[19].cameraTarget
@@ -3195,7 +3281,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[1].option.Array.data[0].talks.Array.data[0].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[1].option.Array.data[0].talks.Array.data[1].cameraTarget
@@ -3205,12 +3291,12 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[1].option.Array.data[0].talks.Array.data[2].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[2].option.Array.data[0].talks.Array.data[0].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[2].option.Array.data[0].talks.Array.data[1].cameraTarget
@@ -3220,7 +3306,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[2].option.Array.data[0].talks.Array.data[2].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[2].option.Array.data[0].talks.Array.data[3].cameraTarget
@@ -3230,6 +3316,11 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[2].option.Array.data[0].talks.Array.data[4].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 1411189595}
+    - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: camPosition
+      value: 
+      objectReference: {fileID: 1895373244}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ecaff3d0076bb6428f674170f69227b, type: 3}
