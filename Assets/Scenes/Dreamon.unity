@@ -1575,12 +1575,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1784327006}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &1605131748 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5219269308381401104, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-    type: 3}
-  m_PrefabInstance: {fileID: 1784327006}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1645786150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1945,11 +1939,6 @@ PrefabInstance:
       objectReference: {fileID: 1411189595}
     - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[3].cameraTarget
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[5].cameraTarget
       value: 
       objectReference: {fileID: 1411189595}
@@ -1958,11 +1947,6 @@ PrefabInstance:
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[7].cameraTarget
       value: 
       objectReference: {fileID: 1411189595}
-    - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[9].cameraTarget
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[11].cameraTarget
@@ -2093,31 +2077,6 @@ PrefabInstance:
       propertyPath: objectsToDeactivate.Array.data[8]
       value: 
       objectReference: {fileID: 390445741}
-    - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[3].cameraTarget
-      value: 
-      objectReference: {fileID: 1605131748}
-    - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[0].cameraTarget
-      value: 
-      objectReference: {fileID: 1605131748}
-    - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[5].cameraTarget
-      value: 
-      objectReference: {fileID: 1605131748}
-    - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[11].cameraTarget
-      value: 
-      objectReference: {fileID: 1605131748}
-    - target: {fileID: 5219269308381401108, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[0].cameraTarget
-      value: 
-      objectReference: {fileID: 1605131748}
     - target: {fileID: 5219269308381401114, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: m_Name
@@ -2231,8 +2190,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3625145728277787654, guid: 8e7d85c5036bf234586106830204b26d,
         type: 3}
-      propertyPath: minDistance
-      value: 10
+      propertyPath: maxDistance
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3625145728277787675, guid: 8e7d85c5036bf234586106830204b26d,
         type: 3}
@@ -2612,6 +2571,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3593583593960480323, guid: 28f39d92bb08188449602cd35f923bda,
+        type: 3}
+      propertyPath: m_InnerSpotAngle
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 5738023402585142804, guid: 28f39d92bb08188449602cd35f923bda,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2671,6 +2635,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: DrinkGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5738023402585142806, guid: 28f39d92bb08188449602cd35f923bda,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5738023402585142807, guid: 28f39d92bb08188449602cd35f923bda,
         type: 3}
@@ -3175,7 +3144,7 @@ PrefabInstance:
     - target: {fileID: 7156026689946373129, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
