@@ -5,7 +5,7 @@
         _Color("Mesh color", Color) = (0,0,1,1)
         [PerRendererData] [Toggle] _enable("Outline enable", Float) = 1
         _outline_thickness("Outline thickness", Float) = 0.05
-        [PerRendererData] _outline_color("Outline color", Color) = (0,0,0,1)
+        [PerRendererData] _outline_color("Outline color", Color) = (0,0,0,0)
     }
         SubShader
     {
@@ -25,20 +25,15 @@
 
             float4 vertex_shader(float4 vertex:POSITION, float3 normal : NORMAL) :SV_POSITION
             {
+                _outline_thickness *= _enable;
+
                 return UnityObjectToClipPos(float4(vertex.xyz + normal * _outline_thickness,1));
             }
 
-            float4 pixel_shader(float4 vertex:SV_POSITION) : COLOR
+                float4 pixel_shader(float4 vertex:SV_POSITION) : COLOR
             {
-                if (_enable == 1)
-                {
-                    return float4(_outline_color.rgb,0);
-                }
-                else
-                {
-                    discard;
-                    return 0;
-                }
+                _outline_color.a = _enable;
+                return float4(_outline_color.rgb,0);
             }
             ENDCG
         }

@@ -41,11 +41,13 @@ public class DrinkManager : MonoBehaviour
 	private void OnEnable()
 	{
 		MiniGameCanvas.gameObject.SetActive(true);
+		UnityEngine.Cursor.visible = true;
 	}
 
 	private void OnDisable()
 	{
-		MiniGameCanvas.gameObject.SetActive(false);
+		if(MiniGameCanvas)
+			MiniGameCanvas.gameObject.SetActive(false);
 	}
 
 	private void Update()
@@ -96,10 +98,7 @@ public class DrinkManager : MonoBehaviour
 
 	public void Win()
 	{
-		drinkBottles = 0;
-		drunkBottles = 0;
-		bottleTime = 0;
-		drinkTime = startDrinkTime;
+		ResetGame();
 
 		//Stop game
 		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
@@ -107,10 +106,7 @@ public class DrinkManager : MonoBehaviour
 
 	public void Lost()
 	{
-		drinkBottles = 0;
-		drunkBottles = 0;
-		bottleTime = 0;
-		drinkTime = startDrinkTime;
+		ResetGame();
 
 		//Stop game
 		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
@@ -131,5 +127,13 @@ public class DrinkManager : MonoBehaviour
 		{
 			bottles[Random.Range(0, bottles.Length)].SetBottle(false);
 		}
+	}
+
+	void ResetGame()
+	{
+		drinkBottles = 0;
+		drunkBottles = 0;
+		bottleTime = 0;
+		drinkTime = startDrinkTime;
 	}
 }

@@ -14,6 +14,12 @@ public class OutlineObject : MonoBehaviour
 
     MaterialPropertyBlock propBlock;
 
+    Camera cam;
+
+    RaycastHit hit;
+
+    float maxDistance = 10;
+
     #region Unity Methods
 
     void Start()
@@ -33,13 +39,19 @@ public class OutlineObject : MonoBehaviour
         SwitchOutlined(false);
     }
 
+    private void OnDisable()
+    {
+        SwitchOutlined(false);
+    }
+
     #endregion
-    
+
     /// <summary>
     /// Initialise Values
     /// </summary>
     protected virtual void InitValues()
     {
+        cam = Camera.main;
         rendererCollecton = GetComponentsInChildren<Renderer>();
         propBlock = new MaterialPropertyBlock();
     }

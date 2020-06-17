@@ -72,7 +72,9 @@ public class PauseMenu : MonoBehaviour
     {
         Cursor.visible = true;
         Time.timeScale = 1;
-        AudioManager.Instance?.PitchManual(1);
+
+        if(AudioManager.Instance)
+            AudioManager.Instance.PitchManual(1);
 
         // Set Cursor to 3D Particle Cursor
         Cursor.visible = true;

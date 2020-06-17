@@ -8,11 +8,16 @@ public class PlayerMotor : MonoBehaviour
 {
     Transform target;       //Target to follow
     NavMeshAgent agent;     //Reference to our agent
+    Animator anim;          // Reference to Animationcontroller
+
+    [SerializeField]
+    string[] animStates;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
+        anim = GetComponentInChildren<Animator>();
     }
 
     private void Update()
@@ -21,6 +26,10 @@ public class PlayerMotor : MonoBehaviour
         {
             MoveToPoint(target.position);
             FaceTarget();
+        }
+        if(agent.remainingDistance < 0.1f)
+        {
+            PlayAnimation(0);
         }
     }
 
@@ -31,6 +40,7 @@ public class PlayerMotor : MonoBehaviour
     public void MoveToPoint(Vector3 point)
     {
         agent.SetDestination(point);
+        PlayAnimation(1);
     }
 
     /// <summary>
@@ -40,6 +50,7 @@ public class PlayerMotor : MonoBehaviour
     {
         agent.isStopped = true;
         agent.velocity = Vector3.zero;
+        PlayAnimation(0);
     }
 
     /// <summary>
@@ -53,8 +64,6 @@ public class PlayerMotor : MonoBehaviour
     //Moves the player towards the object he wants to interact with
     public void FollowTarget(Interactable newTarget)
     {
-        
-
         agent.stoppingDistance = newTarget.radius * .8f;
         agent.updateRotation = false;
 
@@ -65,9 +74,10 @@ public class PlayerMotor : MonoBehaviour
     {
         agent.stoppingDistance = 0f;
         agent.updateRotation = true;
-
+        PlayAnimation(0);
         target = null;
     }
+
 
     //The player turns to the object he wants to interact with so that he looks at it
     void FaceTarget()
@@ -75,5 +85,16 @@ public class PlayerMotor : MonoBehaviour
         Vector3 direction = (target.position - transform.position).normalized;
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0f, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+    }
+
+    void PlayAnimation(int index)
+    {
+        if(anim)
+        {
+            if(!anim.GetCurrentAnimatorStateInfo(0).IsName(animStates[index]))
+            {
+                anim.Play(animStates[index]);
+            }
+        }
     }
 }

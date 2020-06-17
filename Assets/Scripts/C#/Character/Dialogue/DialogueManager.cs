@@ -68,14 +68,14 @@ public class DialogueManager : MonoBehaviour
         continueButton.SetActive(true);
         decisions.SetActive(false);
 
-        if (currentTrigger.camPosition)
+        if (currentTrigger.camPosition != null)
         {
             cameraController.MoveToFixedPosition(currentTrigger.camPosition.position, currentTrigger.transform);
         }
         else
         {
             // Set up Camera between Dialogtrigger, Camera and Player
-            cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(currentTrigger.transform.position, cameraController.transform.position, 0.3f), 0.5f), currentTrigger.transform);
+            cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(currentTrigger.transform.position, cameraController.transform.position, 0.1f), 0.2f), currentTrigger.transform);
         }
 
         player.motor.StopAgent();

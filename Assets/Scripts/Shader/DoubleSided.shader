@@ -1,5 +1,10 @@
 Shader "CustomShader/DoubleSided" {
     Properties {
+        // Outline
+[PerRendererData] [Toggle] _enable("Outline enable", Float) = 0
+_outline_thickness("Outline thickness", Float) = 0.01
+[PerRendererData] _outline_color("Outline color", Color) = (0,0,0,0)
+
         _Color ("Diffuse Color", Color) = (1,1,1,1)
         _MainTex ("Diffuse map (Cutout A)", 2D) = "white" {}
         _BumpMap ("Normal map", 2D) = "bump" {}
@@ -15,6 +20,7 @@ Shader "CustomShader/DoubleSided" {
             "Queue"="AlphaTest"
             "RenderType"="TransparentCutout"
         }
+
         Pass {
             Name "FORWARD"
             Tags {
@@ -211,6 +217,8 @@ Shader "CustomShader/DoubleSided" {
             }
             ENDCG
         }
+
+
         Pass {
             Name "FORWARD_DELTA"
             Tags {
@@ -345,6 +353,9 @@ Shader "CustomShader/DoubleSided" {
             }
             ENDCG
         }
+
+
+
         Pass {
             Name "ShadowCaster"
             Tags {
@@ -404,6 +415,7 @@ Shader "CustomShader/DoubleSided" {
             }
             ENDCG
         }
+
         Pass {
             Name "Meta"
             Tags {
@@ -478,6 +490,7 @@ Shader "CustomShader/DoubleSided" {
             }
             ENDCG
         }
+
     }
     FallBack "Diffuse"
 }

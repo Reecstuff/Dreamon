@@ -27,9 +27,6 @@ public class SetOnCursor : MonoBehaviour
     [SerializeField]
     LensFlare flare;
 
-    [SerializeField]
-    int layerMask = 9;
-
 
     RaycastHit hit;
     RaycastHit secondHit;
@@ -38,44 +35,66 @@ public class SetOnCursor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Init();
+    }
+
+    void Init()
+    {
         if (!cam)
             cam = Camera.main;
 
         Cursor.visible = false;
-        layerMask = 1 << layerMask;
-        layerMask = ~layerMask;
+        flare = GetComponent<LensFlare>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
         if(Time.timeScale > 0 && !Cursor.visible)
         {
             if(particleSystem.isPaused)
             {
-                particleSystem.Play();
-                light.enabled = true;
+                InterruptParticleSystem(false);
 
             }
 
-            if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition),  out hit, maxDistance, -1, QueryTriggerInteraction.Ignore))
-            {
-
-                nextPosition = new Vector3(hit.point.x, hit.point.y + yOffset, hit.point.z);
-            }
-            else
-            {
-                nextPosition = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, maxDistance));
-            }
+            nextPosition = RayCastPosition();
         }
         else
+        {
+            InterruptParticleSystem(true);
+            return;
+        }
+        transform.position = nextPosition;
+    }
+
+    Vector3 RayCastPosition()
+    {
+        if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit, maxDistance, -1, QueryTriggerInteraction.Ignore))
+        {
+
+            return new Vector3(hit.point.x, hit.point.y + yOffset, hit.point.z);
+        }
+        else
+        {
+            return cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, maxDistance));
+        }
+    }
+
+    void InterruptParticleSystem(bool stop)
+    {
+        if(stop)
         {
             particleSystem.Pause();
             particleSystem.Clear();
             light.enabled = false;
-            return;
+            flare.enabled = false;
         }
-        transform.position = nextPosition;
+        else
+        {
+            particleSystem.Play();
+            light.enabled = true;
+            flare.enabled = true;
+        }
     }
 }
