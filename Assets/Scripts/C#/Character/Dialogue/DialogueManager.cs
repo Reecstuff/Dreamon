@@ -68,8 +68,16 @@ public class DialogueManager : MonoBehaviour
         continueButton.SetActive(true);
         decisions.SetActive(false);
 
-        // Set up Camera between Dialogtrigger, Camera and Player
-        cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(currentTrigger.transform.position, cameraController.transform.position, 0.5f), 0.5f), currentTrigger.transform);
+        if (currentTrigger.camPosition)
+        {
+            cameraController.MoveToFixedPosition(currentTrigger.camPosition.position, currentTrigger.transform);
+        }
+        else
+        {
+            // Set up Camera between Dialogtrigger, Camera and Player
+            cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(currentTrigger.transform.position, cameraController.transform.position, 0.3f), 0.5f), currentTrigger.transform);
+        }
+
         player.motor.StopAgent();
 
         //Opens the first dialog option
@@ -111,7 +119,8 @@ public class DialogueManager : MonoBehaviour
         // SetupButtons to select new options
         for (int i = 0; i < decisionsButtons.Length; i++)
         {
-            decisionsButtons[i].onClick.RemoveListener(() => SelectOption(currentTrigger.dialogue[currentTrigger.currentDialogue], currentTrigger));
+            decisionsButtons[i].onClick.RemoveAllListeners();
+            //decisionsButtons[i].onClick.RemoveListener(() => SelectOption(currentTrigger.dialogue[currentTrigger.currentDialogue], currentTrigger));
             decisionsButtons[i].onClick.AddListener(() => SelectOption(currentTrigger.dialogue[currentTrigger.currentDialogue], currentTrigger));
         }
 

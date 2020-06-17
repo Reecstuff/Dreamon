@@ -13,9 +13,13 @@ public class DialogueTrigger : Interactable
 
 	public bool isClick = false;
 
+	public Transform camPosition;
+
 	// Delete this, it is already in Dementum
 	[SerializeField]
 	GameObject[] objectsToDeactivate;
+
+
 
 	//Starts interacting with the player
 	public override void Interact()

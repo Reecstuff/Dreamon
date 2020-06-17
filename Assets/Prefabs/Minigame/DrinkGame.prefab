@@ -79,15 +79,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b232d3b49d4504ca39b8ce4d719fd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MiniGameCanvas: {fileID: 0}
   timerText: {fileID: 0}
   drinkBottleText: {fileID: 0}
   drunkBottleText: {fileID: 0}
   drinkBottles: 0
   maxBottles: 10
   drunkBottles: 0
-  maxAlcBottles: 5
-  drinkTime: 120
-  maxBottleTimer: 3
+  maxAlcBottles: 4
+  drinkTime: 30
+  maxBottleTimer: 0.9
   bottleTime: 0
   bottles: []
   assignedTarget: {fileID: 0}
@@ -115,7 +116,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5738023403576437852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.25, z: 1.07}
+  m_LocalPosition: {x: 0, y: -2.25, z: 1.41}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5738023402585142804}
@@ -206,7 +207,7 @@ PrefabInstance:
     - target: {fileID: 7105008126344685745, guid: 4d5de77574eac6e4697ff91bdc8c890b,
         type: 3}
       propertyPath: radius
-      value: 15
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5de77574eac6e4697ff91bdc8c890b, type: 3}
@@ -301,7 +302,7 @@ PrefabInstance:
     - target: {fileID: 7105008126344685745, guid: 4d5de77574eac6e4697ff91bdc8c890b,
         type: 3}
       propertyPath: radius
-      value: 15
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5de77574eac6e4697ff91bdc8c890b, type: 3}
@@ -386,7 +387,7 @@ PrefabInstance:
     - target: {fileID: 7105008126344685745, guid: 4d5de77574eac6e4697ff91bdc8c890b,
         type: 3}
       propertyPath: radius
-      value: 15
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5de77574eac6e4697ff91bdc8c890b, type: 3}
@@ -481,7 +482,7 @@ PrefabInstance:
     - target: {fileID: 7105008126344685745, guid: 4d5de77574eac6e4697ff91bdc8c890b,
         type: 3}
       propertyPath: radius
-      value: 15
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4d5de77574eac6e4697ff91bdc8c890b, type: 3}

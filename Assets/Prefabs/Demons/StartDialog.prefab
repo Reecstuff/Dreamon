@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &387284189409848624
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 266097371674798222}
+  m_Layer: 0
+  m_Name: CamPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &266097371674798222
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387284189409848624}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.959, y: 0.239, z: -0.342}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7156026689946373128}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7156026689946373129
 GameObject:
   m_ObjectHideFlags: 0
@@ -28,7 +58,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 6.213, y: 3.328, z: 0.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 266097371674798222}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -53,31 +84,31 @@ MonoBehaviour:
       nextMinigame: 1
       talks:
       - cameraTarget: {fileID: 0}
-        name: Narrator
-        sentence: Elios lies on the ground.
+        name: ...
+        sentence: A man lies on the ground.
       - cameraTarget: {fileID: 0}
-        name: Narrator
-        sentence: "Ego is growing out of Elios\u2019 body and wants to go forward,
-          but his body is sticking to Elios."
+        name: ...
+        sentence: A creature is growing out of the man's body and wants to go forward,
+          but his body is sticking to the creature.
       - cameraTarget: {fileID: 0}
-        name: Narrator
-        sentence: ' Both are looking to the center of their body and then to each
-          other. Elios gets up quickly.'
+        name: ...
+        sentence: Both are looking to the center of their body and then to each other.
+          The man gets up quickly.
       - cameraTarget: {fileID: 0}
-        name: Ego
+        name: Creature
         sentence: '(looking around) Wow... this place is so cool! Wait.., I can''t
           move! Where are my legs?!
 
 '
       - cameraTarget: {fileID: 0}
-        name: Elios
+        name: Man
         sentence: "What\u2026? Who\u2026? "
       - cameraTarget: {fileID: 0}
-        name: Ego
+        name: Creature
         sentence: "Oh\u2026 Ehm...hey... my name is Ego, and yours\u2026?"
       - cameraTarget: {fileID: 0}
-        name: 'Elios '
-        sentence: " (depressed) [sighs] Elios\u2026"
+        name: Man
+        sentence: " [sighs] Elios\u2026"
       - cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Ehm\u2026 Do you know this place? "
@@ -118,6 +149,13 @@ MonoBehaviour:
         name: Ego
         sentence: "Really\u2026?! Awesome! You good at chess? Let\u2019s play! Let\u2019s
           play! Let\u2019s play! (pure excitement)"
+      - cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: You just have to get one of your characters behind mine, but be
+          careful.
+      - cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: Because if you hit one of my figures then yours will be destroyed.
       decisions: []
       nextDecisions: 
   - option:
@@ -165,6 +203,7 @@ MonoBehaviour:
   currentDialogue: 0
   minigameManager: {fileID: 1133812109691748872}
   isClick: 0
+  camPosition: {fileID: 266097371674798222}
   objectsToDeactivate: []
 --- !u!114 &1133812109691748872
 MonoBehaviour:
@@ -178,10 +217,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c4268f7c154c645be5dcf1130bf241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camTarget: {fileID: 0}
   mainCamera: {fileID: 0}
-  cameraPosition: {fileID: 7156026689946373128}
+  cameraPosition: {fileID: 0}
   minigame: {fileID: 0}
   endDoor: {fileID: 0}
   winRounds: 0
   nextWinDialog: 02000000
-  nextLoseDialog: 03000000
+  nextLoseDialog: 01000000

@@ -18,7 +18,7 @@ public class Interactable : OutlineObject
 
 	void Update()
 	{
-		if (isFocus && !hasInteracted)
+		if (interactionTransform && isFocus && !hasInteracted)
 		{
 			float distance = Vector3.Distance(player.position, interactionTransform.position);
 			if (distance <= radius)

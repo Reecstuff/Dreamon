@@ -3,14 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[RequireComponent(typeof(AudioSource))]
 public class StartCredits : MonoBehaviour
 {
 	public Animator transition;
+
 
 	private void OnTriggerEnter(Collider other)
 	{
 		if(other.GetComponent<PlayerController>())
 			StartCoroutine(LoadLevel());
+
 	}
 
 	IEnumerator LoadLevel()

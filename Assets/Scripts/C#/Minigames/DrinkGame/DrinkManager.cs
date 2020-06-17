@@ -55,7 +55,7 @@ public class DrinkManager : MonoBehaviour
 			// TODO: Slider im Krug
 			timerText.text = string.Join(":", (((drinkTime - drinkTime % 60) / 60)).ToString("00"), Mathf.Round(drinkTime % 60).ToString("00"));
 			drinkBottleText.text = string.Concat("Water: ", drinkBottles.ToString(), " / ",  maxBottles.ToString());
-			drunkBottleText.text = string.Concat("<color=red>Alcohol: ", drunkBottles.ToString(), " / ", maxAlcBottles.ToString());
+			drunkBottleText.text = string.Concat("<color=yellow>Alcohol: ", drunkBottles.ToString(), " / ", maxAlcBottles.ToString());
 		}
 		CheckGame();
 		TimingBottle();

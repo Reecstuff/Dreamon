@@ -5,6 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(DialogueTrigger))]
 public class MinigameManager : MonoBehaviour
 {
+	[SerializeField]
+	Transform camTarget;
+
 	public GameObject mainCamera;
 	public Transform cameraPosition;
 	public GameObject minigame;
@@ -26,6 +29,8 @@ public class MinigameManager : MonoBehaviour
 		cameraController = mainCamera.GetComponent<CameraController>();
 		player = GameObject.FindObjectOfType<PlayerController>();
 		dialogTrigger = GetComponent<DialogueTrigger>();
+		if (!camTarget)
+			camTarget = minigame.transform;
 	}
 
 	/// <summary>
@@ -33,7 +38,7 @@ public class MinigameManager : MonoBehaviour
 	/// </summary>
 	public void StartNewMinigame()
 	{
-		cameraController.MoveToFixedPosition(cameraPosition.position, minigame.transform);
+		cameraController.MoveToFixedPosition(cameraPosition.position, camTarget);
 		player.motor.StopAgent();
 		Invoke(nameof(SetMinigameActive), cameraController.drivingTime);
 	}
@@ -55,7 +60,7 @@ public class MinigameManager : MonoBehaviour
 		player.motor.ResumeAgent();
 
 
-		cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(transform.position, cameraController.transform.position, 0.5f), 0.5f), dialogTrigger.interactionTransform);
+		cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(transform.position, cameraController.transform.position, 0.5f), 0.5f), dialogTrigger.transform);
 	}
 
 	public void StartNextDialog(bool isWin)
@@ -97,6 +102,7 @@ public class MinigameManager : MonoBehaviour
 			if (nextWinDialog.Length == winRounds || nextLoseDialog.Length == loseRounds)
 			{
 				endDoor.SetActive(true);
+				endDoor.GetComponent<AudioSource>()?.Play();
 			}
 		}
 	}
