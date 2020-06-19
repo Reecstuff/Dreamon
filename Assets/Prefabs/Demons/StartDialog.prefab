@@ -83,77 +83,209 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 1
       talks:
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: ...
         sentence: A man lies on the ground.
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: ...
         sentence: A creature is growing out of the man's body and wants to go forward,
           but his body is sticking to the creature.
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: ...
         sentence: Both are looking to the center of their body and then to each other.
           The man gets up quickly.
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Creature
         sentence: '(looking around) Wow... this place is so cool! Wait.., I can''t
           move! Where are my legs?!
 
 '
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Man
         sentence: "What\u2026? Who\u2026? "
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Creature
         sentence: "Oh\u2026 Ehm...hey... my name is Ego, and yours\u2026?"
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Man
         sentence: " [sighs] Elios\u2026"
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Ehm\u2026 Do you know this place? "
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Elios
         sentence: No...
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Ego
         sentence: Are you alone here?
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Elios
         sentence: I guess so.
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Not today! Let\u2019s be friends! "
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Elios
         sentence: "I don\u2019t want a friend now..."
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: 'Ego '
         sentence: "(surprised) Ohh\u2026 So you already have a friend!?"
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: 'Elios '
         sentence: (annoyed) No. I am not interested.
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: 'Ego '
         sentence: "(excited) No? So let\u2019s be friends then!"
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Elios
         sentence: Get off me! I am not in the mood for speaking...
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Maybe...if we play a game\u2026I will go."
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Elios
         sentence: "[sighs] If you say so\u2026 "
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Really\u2026?! Awesome! You good at chess? Let\u2019s play! Let\u2019s
           play! Let\u2019s play! (pure excitement)"
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Ego
         sentence: You just have to get one of your characters behind mine, but be
           careful.
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Ego
         sentence: Because if you hit one of my figures then yours will be destroyed.
       decisions: []
@@ -162,13 +294,31 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 0
       talks:
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Elios
         sentence: "Uhh\u2026 I didn\u2019t win."
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: 'Ego '
         sentence: "(happy) Yea\u2026 of course I won, I knew it!"
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Elios
         sentence: '[sighs]
 
@@ -179,23 +329,53 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 0
       talks:
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Elios
         sentence: "Oh\u2026 I suppose I won\u2026"
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Yea, you won... I wanna play again! Please\u2026 Please\u2026.
           Please\u2026.!"
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Elios
         sentence: 'No. I won. We had a deal...
 
 '
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: 'Ego '
         sentence: "(serious) I said maybe\u2026 no matter if you win or lose I will
           be with you... "
-      - cameraTarget: {fileID: 0}
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Elios
         sentence: '[sighs]'
       decisions: []

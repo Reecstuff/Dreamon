@@ -21,6 +21,8 @@ public class DialogueManager : MonoBehaviour
     private Queue<string> sentences;
     Queue<Transform> positions;
     Queue<string> names;
+    Queue<AnimationObject> animations;
+    Queue<AudioObject> audios;
 
     public GameObject continueButton;
     public GameObject endButton;
@@ -50,6 +52,8 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
         positions = new Queue<Transform>();
         names = new Queue<string>();
+        animations = new Queue<AnimationObject>();
+        audios = new Queue<AudioObject>();
         oneTextLineSizeY = nameText.GetPreferredValues("0").y;
         cameraController = Camera.main.GetComponent<CameraController>();
         player = FindObjectOfType<PlayerController>();
@@ -209,15 +213,34 @@ public class DialogueManager : MonoBehaviour
         string sentence = sentences.Dequeue();
         string charName = names.Dequeue();
         Transform nextTarget = positions.Dequeue();
+        AudioObject audio = audios.Dequeue();
+        AnimationObject animation = animations.Dequeue();
 
+        // Set Charactername
         if(!string.IsNullOrEmpty(charName) && !nameText.text.Equals(charName))
         {
             nameText.SetText(charName);
         }
 
+        // Camera
         if(nextTarget && !nextTarget.Equals(cameraController.target))
         {
             cameraController.LerpLookAt(nextTarget);
+        }
+
+        // Audio
+        if(audio.clip && audio.source)
+        {
+            // Clip Audio for Dialogue
+            audio.source.clip = audio.clip;
+            // Play Audio
+            audio.source.Play();
+        }
+
+        // Animation
+        if(animation.animator && !string.IsNullOrEmpty(animation.AnimationStateName))
+        {
+            animation.animator.CrossFade(animation.AnimationStateName, 0.3f);
         }
 
         // Stop Typing
@@ -294,11 +317,15 @@ public class DialogueManager : MonoBehaviour
         sentences.Clear();
         names.Clear();
         positions.Clear();
+        animations.Clear();
+        audios.Clear();
 
 
         // Go through Talks and switch Camera
         for (int i = 0; i < option.talks.Length; i++)
         {
+            audios.Enqueue(option.talks[i].audio);
+            animations.Enqueue(option.talks[i].animation);
             names.Enqueue(option.talks[i].name);
             positions.Enqueue(option.talks[i].cameraTarget);
             sentences.Enqueue(option.talks[i].sentence);

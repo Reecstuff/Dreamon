@@ -2983,6 +2983,7 @@ GameObject:
   - component: {fileID: 3974449968897166218}
   - component: {fileID: 1123661508755550609}
   - component: {fileID: 6565381444773450829}
+  - component: {fileID: 6294546286153626216}
   m_Layer: 0
   m_Name: Kerze3
   m_TagString: Untagged
@@ -3032,7 +3033,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: da586d01912a9c44990b38cc0dd76291, type: 2}
-  - {fileID: -205629353262513385, guid: 134e85e9aee393f40b9be59398d8a05b, type: 3}
+  - {fileID: 2100000, guid: 68340239f4c40a6478a362d255972dec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3067,6 +3068,51 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1764240431042640746, guid: 134e85e9aee393f40b9be59398d8a05b, type: 3}
+--- !u!114 &6294546286153626216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547218018113572489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e6aa5402ccc1d4196ca193f2d3de99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  radius: 3
+  interactionTransform: {fileID: 7351349278180376846}
+  dialogue:
+  - option:
+    - endSentence: 1
+      nextMinigame: 0
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 7351349278180376846}
+        name: Ego
+        sentence: Elios, look at this light...! I feel so warm and cozy.
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 7351349278180376846}
+        name: Elios
+        sentence: '[sighs]'
+      decisions: []
+      nextDecisions: 
+  currentDialogue: 0
+  minigameManager: {fileID: 0}
+  isClick: 0
+  camPosition: {fileID: 0}
+  objectsToDeactivate: []
 --- !u!1 &1564500804589812072
 GameObject:
   m_ObjectHideFlags: 0
@@ -7527,6 +7573,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &3292996570756067254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5436522712479667035}
+  m_Layer: 0
+  m_Name: InteractionTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5436522712479667035
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3292996570756067254}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -2.88, z: 1.284}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6678624174127021424}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3295849900700055823
 GameObject:
   m_ObjectHideFlags: 0
@@ -12290,6 +12366,8 @@ GameObject:
   - component: {fileID: 8054822406851787423}
   - component: {fileID: 2957146531448055158}
   - component: {fileID: 806710139735706002}
+  - component: {fileID: 5992834131383316200}
+  - component: {fileID: 1184107319813808304}
   m_Layer: 0
   m_Name: Door1
   m_TagString: Untagged
@@ -12309,6 +12387,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 131695256278106367}
+  - {fileID: 5751484556359774203}
   m_Father: {fileID: 2571283891455063502}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12338,7 +12417,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 5561349426305759274, guid: 134e85e9aee393f40b9be59398d8a05b, type: 3}
+  - {fileID: 2100000, guid: 68340239f4c40a6478a362d255972dec, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12359,6 +12438,56 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!65 &5992834131383316200
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5138805801812047898}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.5121002, y: 4.4380393, z: 2.826171}
+  m_Center: {x: -0.0028023422, y: 0, z: 0.00000011920929}
+--- !u!114 &1184107319813808304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5138805801812047898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e6aa5402ccc1d4196ca193f2d3de99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  radius: 3
+  interactionTransform: {fileID: 5751484556359774203}
+  dialogue:
+  - option:
+    - endSentence: 1
+      nextMinigame: 0
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 8054822406851787423}
+        name: Ego
+        sentence: "Why you wanna go now? Don\u2019t run from the things. You have
+          to face them!\r"
+      decisions: []
+      nextDecisions: 
+  currentDialogue: 0
+  minigameManager: {fileID: 0}
+  isClick: 0
+  camPosition: {fileID: 0}
+  objectsToDeactivate: []
 --- !u!1 &5155652747579670648
 GameObject:
   m_ObjectHideFlags: 0
@@ -15371,6 +15500,36 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &6355238413350420519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5751484556359774203}
+  m_Layer: 0
+  m_Name: InteractionTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5751484556359774203
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6355238413350420519}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.04, y: -2.39, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8054822406851787423}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6429019752831521088
 GameObject:
   m_ObjectHideFlags: 0
@@ -17553,6 +17712,146 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &7434100894795800743
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6678624174127021424}
+  - component: {fileID: 1253042820801792989}
+  - component: {fileID: 6583862442107643108}
+  - component: {fileID: 2743695255234901343}
+  - component: {fileID: 1470810869}
+  m_Layer: 0
+  m_Name: Interact_Mug
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6678624174127021424
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7434100894795800743}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.656, y: 0.113681436, z: 0.161}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5436522712479667035}
+  m_Father: {fileID: 4940516262991778608}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &1253042820801792989
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7434100894795800743}
+  m_Mesh: {fileID: 7748032902961961524, guid: 134e85e9aee393f40b9be59398d8a05b, type: 3}
+--- !u!23 &6583862442107643108
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7434100894795800743}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 68340239f4c40a6478a362d255972dec, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &2743695255234901343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7434100894795800743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e6aa5402ccc1d4196ca193f2d3de99, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  radius: 1
+  interactionTransform: {fileID: 5436522712479667035}
+  dialogue:
+  - option:
+    - endSentence: 1
+      nextMinigame: 0
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: I am thirsty! What kind of drinks do they have?
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: '[sighs] Nothing for you...'
+      decisions: []
+      nextDecisions: 
+  currentDialogue: 0
+  minigameManager: {fileID: 0}
+  isClick: 0
+  camPosition: {fileID: 0}
+  objectsToDeactivate: []
+--- !u!135 &1470810869
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7434100894795800743}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.20323226
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7456502213158064341
 GameObject:
   m_ObjectHideFlags: 0
@@ -18278,7 +18577,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7691909243766688827}
   m_LocalRotation: {x: 7.74537e-17, y: 0.94868135, z: -7.74537e-17, w: 0.31623355}
-  m_LocalPosition: {x: 2.1814325, y: 0.113681436, z: 0.15495422}
+  m_LocalPosition: {x: 2.969, y: 0.18849, z: -5.198}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4940516262991778608}
@@ -19553,6 +19852,7 @@ Transform:
   - {fileID: 4498382256341697864}
   - {fileID: 6923037259968219631}
   - {fileID: 2710827978246027926}
+  - {fileID: 6678624174127021424}
   m_Father: {fileID: 2571283891455063502}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
