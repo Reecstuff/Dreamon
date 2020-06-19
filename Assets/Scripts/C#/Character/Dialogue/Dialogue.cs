@@ -8,6 +8,8 @@ public class Dialogue
 	[System.Serializable]
 	public class Talk
 	{
+		public AnimationObject animation;
+		public AudioObject audio;
 		public Transform cameraTarget;
 		public string name;
 
@@ -32,4 +34,18 @@ public class Dialogue
 	}
 
 	public Option[] option;
+}
+
+[System.Serializable]
+public class AnimationObject
+{
+	public Animator animator;
+	public string AnimationStateName;
+}
+
+[System.Serializable]
+public class AudioObject
+{
+	public AudioSource source;
+	public AudioClip clip;
 }

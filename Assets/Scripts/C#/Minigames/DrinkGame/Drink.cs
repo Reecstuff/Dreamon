@@ -52,7 +52,7 @@ public class Drink : MonoBehaviour
 		}
 		else
 		{
-			GetComponent<Renderer>().material.SetColor("_Color", new Color(1, 1, 1, 1));
+			GetComponent<Renderer>().material.SetColor("_Color", new Color(0.5f, 0.25f, 0.05f));
 		}
 	}
 }
