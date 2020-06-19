@@ -13,6 +13,8 @@ public class PlayerMotor : MonoBehaviour
     [SerializeField]
     string[] animStates;
 
+    int currentAnimationIndex = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +31,7 @@ public class PlayerMotor : MonoBehaviour
         }
         if(agent.remainingDistance < 0.1f)
         {
-            PlayAnimation(0);
+            PlayAnimation(0, true);
         }
     }
 
@@ -53,7 +55,7 @@ public class PlayerMotor : MonoBehaviour
     {
         agent.isStopped = true;
         agent.velocity = Vector3.zero;
-        PlayAnimation(0);
+        PlayAnimation(0, true);
     }
 
     /// <summary>
@@ -77,7 +79,7 @@ public class PlayerMotor : MonoBehaviour
     {
         agent.stoppingDistance = 0f;
         agent.updateRotation = true;
-        PlayAnimation(0);
+        PlayAnimation(0, true);
         target = null;
     }
 
@@ -90,13 +92,21 @@ public class PlayerMotor : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
     }
 
-    void PlayAnimation(int index)
+    void PlayAnimation(int index, bool crossfade = false)
     {
         if(anim)
         {
-            if(!anim.GetCurrentAnimatorStateInfo(0).IsName(animStates[index]))
+            if(currentAnimationIndex != index)
             {
-                anim.Play(animStates[index]);
+                currentAnimationIndex = index;
+                if (crossfade)
+                {
+                    anim.CrossFade(animStates[index], 0.3f);
+                }
+                else
+                {
+                    anim.Play(animStates[index]);
+                }
             }
         }
     }
