@@ -494,16 +494,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2743695255234901343, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+    - target: {fileID: 1123661508755550609, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].cameraTarget
+      propertyPath: m_Materials.Array.data[1]
       value: 
-      objectReference: {fileID: 1470810869}
-    - target: {fileID: 2743695255234901343, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[1].cameraTarget
-      value: 
-      objectReference: {fileID: 1411189595}
+      objectReference: {fileID: 2100000, guid: d7b10f51a0879c849a63e853d230e874, type: 2}
     - target: {fileID: 4762247148625174641, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: transition
@@ -1100,6 +1095,12 @@ MonoBehaviour:
   frustumSettings:
     baseSettings: {fileID: 50979535}
     qualitySettings: {fileID: 1269672538}
+--- !u!4 &977994657 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3316068189003582346, guid: 42fbe90f27e2b9341b3452e7a3770d55,
+    type: 3}
+  m_PrefabInstance: {fileID: 1378851287}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1162916202 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7240099534011098601, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
@@ -1794,6 +1795,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1378851287}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1378851289 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 1932702095778716631, guid: 42fbe90f27e2b9341b3452e7a3770d55,
+    type: 3}
+  m_PrefabInstance: {fileID: 1378851287}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1411189595 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5030839855778669375, guid: 42fbe90f27e2b9341b3452e7a3770d55,
@@ -1899,11 +1906,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!4 &1470810869 stripped
+--- !u!4 &1486137123 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 6678624174127021424, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+  m_CorrespondingSourceObject: {fileID: 4478455252826722532, guid: 42fbe90f27e2b9341b3452e7a3770d55,
     type: 3}
-  m_PrefabInstance: {fileID: 571200853}
+  m_PrefabInstance: {fileID: 1378851287}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1605131745 stripped
 GameObject:
@@ -3371,37 +3378,37 @@ PrefabInstance:
     - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.48799706
+      value: 0.68792534
       objectReference: {fileID: 0}
     - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.948721
+      value: 2.5441742
       objectReference: {fileID: 0}
     - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.053147573
+      value: 0.2472939
       objectReference: {fileID: 0}
     - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.2154874
+      value: -0.2343187
       objectReference: {fileID: 0}
     - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.016623534
+      value: 0.07344148
       objectReference: {fileID: 0}
     - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9749176
+      value: 0.9373084
       objectReference: {fileID: 0}
     - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.28588748
+      value: 0.808985
       objectReference: {fileID: 0}
     - target: {fileID: 1133812109691748872, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
@@ -3486,98 +3493,98 @@ PrefabInstance:
     - target: {fileID: 7156026689946373129, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].cameraTarget
       value: 
-      objectReference: {fileID: 1411189595}
+      objectReference: {fileID: 1486137123}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[3].cameraTarget
       value: 
-      objectReference: {fileID: 1378851288}
+      objectReference: {fileID: 977994657}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[4].cameraTarget
       value: 
-      objectReference: {fileID: 1411189595}
+      objectReference: {fileID: 1378851288}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[5].cameraTarget
       value: 
-      objectReference: {fileID: 1378851288}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[6].cameraTarget
       value: 
-      objectReference: {fileID: 1411189595}
+      objectReference: {fileID: 1378851288}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[7].cameraTarget
       value: 
-      objectReference: {fileID: 1378851288}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[8].cameraTarget
       value: 
-      objectReference: {fileID: 1411189595}
+      objectReference: {fileID: 1378851288}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[9].cameraTarget
       value: 
-      objectReference: {fileID: 1378851288}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[10].cameraTarget
       value: 
-      objectReference: {fileID: 1411189595}
+      objectReference: {fileID: 1378851288}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[11].cameraTarget
       value: 
-      objectReference: {fileID: 1378851288}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[12].cameraTarget
       value: 
-      objectReference: {fileID: 1411189595}
+      objectReference: {fileID: 1378851288}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[13].cameraTarget
       value: 
-      objectReference: {fileID: 1378851288}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[14].cameraTarget
       value: 
-      objectReference: {fileID: 1411189595}
+      objectReference: {fileID: 1378851288}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[15].cameraTarget
       value: 
-      objectReference: {fileID: 1378851288}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[16].cameraTarget
       value: 
-      objectReference: {fileID: 1411189595}
+      objectReference: {fileID: 1378851288}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[17].cameraTarget
       value: 
-      objectReference: {fileID: 1378851288}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[18].cameraTarget
       value: 
-      objectReference: {fileID: 1411189595}
+      objectReference: {fileID: 1378851288}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[19].cameraTarget
       value: 
-      objectReference: {fileID: 1378851288}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[20].cameraTarget
@@ -3633,5 +3640,40 @@ PrefabInstance:
       propertyPath: camPosition
       value: 
       objectReference: {fileID: 1895373244}
+    - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
+    - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[2].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
+    - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[3].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
+    - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[1].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
+    - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[4].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
+    - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[22].cameraTarget
+      value: 
+      objectReference: {fileID: 1378851288}
+    - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[5].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ecaff3d0076bb6428f674170f69227b, type: 3}

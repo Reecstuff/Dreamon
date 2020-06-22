@@ -3081,6 +3081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  OutlineThickness: 0.1
   radius: 3
   interactionTransform: {fileID: 7351349278180376846}
   dialogue:
@@ -3667,6 +3668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineColor: {r: 1, g: 0, b: 0, a: 1}
+  OutlineThickness: 0.2
 --- !u!1 &1763753209686222866
 GameObject:
   m_ObjectHideFlags: 0
@@ -12464,6 +12466,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  OutlineThickness: 0.2
   radius: 3
   interactionTransform: {fileID: 5751484556359774203}
   dialogue:
@@ -17807,6 +17810,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  OutlineThickness: 0.2
   radius: 1
   interactionTransform: {fileID: 5436522712479667035}
   dialogue:
@@ -17820,7 +17824,7 @@ MonoBehaviour:
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
-        cameraTarget: {fileID: 0}
+        cameraTarget: {fileID: 6678624174127021424}
         name: Ego
         sentence: I am thirsty! What kind of drinks do they have?
       - animation:

@@ -27,6 +27,8 @@ public class SetOnCursor : MonoBehaviour
     [SerializeField]
     LensFlare flare;
 
+    [SerializeField]
+    Color interactColor = Color.blue;
 
     RaycastHit hit;
     RaycastHit secondHit;
@@ -72,7 +74,7 @@ public class SetOnCursor : MonoBehaviour
     {
         if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit, maxDistance, -1, QueryTriggerInteraction.Ignore))
         {
-
+            CheckForInteractable();
             return new Vector3(hit.point.x, hit.point.y + yOffset, hit.point.z);
         }
         else
@@ -95,6 +97,26 @@ public class SetOnCursor : MonoBehaviour
             particleSystem.Play();
             light.enabled = true;
             flare.enabled = true;
+        }
+    }
+
+    void CheckForInteractable()
+    {
+        if(hit.transform.GetComponent<Interactable>())
+        {
+            if(light.color != interactColor)
+            {
+                light.color = interactColor;
+                flare.color = interactColor;
+            }
+        }
+        else
+        {
+            if(light.color != Color.white)
+            {
+                light.color = Color.white;
+                flare.color = Color.white;
+            }
         }
     }
 }

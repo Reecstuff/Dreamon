@@ -19,7 +19,14 @@ public class DialogueTrigger : Interactable
 	[SerializeField]
 	GameObject[] objectsToDeactivate;
 
+	protected DialogueManager dialogueManager;
 
+
+	protected override void InitValues()
+	{
+		base.InitValues();
+		dialogueManager = FindObjectOfType<DialogueManager>();
+	}
 
 	//Starts interacting with the player
 	public override void Interact()
@@ -30,9 +37,9 @@ public class DialogueTrigger : Interactable
 	//Starts the dialog
 	public void TriggerDialogue()
 	{
-		if (isClick == false)
+		if (isClick == false && !dialogueManager.currentDialogObject || !dialogueManager.selectMinigame)
 		{
-			FindObjectOfType<DialogueManager>().StartDialogue(this);
+			dialogueManager.StartDialogue(this);
 			isClick = true;
 		}
 	}

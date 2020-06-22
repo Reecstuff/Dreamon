@@ -6,7 +6,7 @@ Shader "CustomShader/AutodeskOutline"
     {
         // Outline
         [PerRendererData] [Toggle] _enable("Outline enable", Float) = 0
-        _outline_thickness("Outline thickness", Float) = 0.02
+        [PerRendererData] _outline_thickness("Outline thickness", Float) = 0.01
         [PerRendererData] _outline_color("Outline color", Color) = (0,0,0,0)
 
         _Color("Color", Color) = (1,1,1,1)
@@ -57,7 +57,7 @@ Shader "CustomShader/AutodeskOutline"
 #define UNITY_SETUP_BRDF_INPUT RoughnessSetup
             ENDCG
 
-            SubShader
+        SubShader
         {
        
 

@@ -10,6 +10,9 @@ public class OutlineObject : MonoBehaviour
     [SerializeField]
     Color outlineColor = Color.white;
 
+    [SerializeField]
+    float outlineSpacing = 0.01f;
+
     Renderer[] rendererCollecton;
 
     MaterialPropertyBlock propBlock;
@@ -69,6 +72,7 @@ public class OutlineObject : MonoBehaviour
 
             // Change Values
             propBlock.SetFloat("_currentTime", Time.time);
+            propBlock.SetFloat("_outline_thickness", outlineSpacing);
             propBlock.SetColor("_outline_color", outlineColor);
             propBlock.SetFloat("_enable", (outlined ? 1.0f : 0.0f));
 

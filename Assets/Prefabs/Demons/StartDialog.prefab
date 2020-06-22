@@ -85,7 +85,7 @@ MonoBehaviour:
       talks:
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Lying
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -94,7 +94,7 @@ MonoBehaviour:
         sentence: A man lies on the ground.
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Lying
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -104,17 +104,25 @@ MonoBehaviour:
           but his body is sticking to the creature.
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Waking_Up
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: ...
         sentence: Both are looking to the center of their body and then to each other.
-          The man gets up quickly.
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Getting_Up
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: ...
+        sentence: The man gets up quickly.
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: Elios_Looking
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -126,7 +134,7 @@ MonoBehaviour:
 '
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Looking
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
