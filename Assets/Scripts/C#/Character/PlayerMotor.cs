@@ -79,7 +79,7 @@ public class PlayerMotor : MonoBehaviour
     {
         agent.stoppingDistance = 0f;
         agent.updateRotation = true;
-        PlayAnimation(0, true);
+        PlayAnimation(1);
         target = null;
     }
 

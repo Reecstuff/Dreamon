@@ -10,6 +10,13 @@ public class Interactable : OutlineObject
 
 	bool hasInteracted = false;
 
+	protected override void InitValues()
+	{
+		base.InitValues();
+		if (!interactionTransform)
+			interactionTransform = transform;
+	}
+
 	//Allows interaction with integrable objects
 	public virtual void Interact()
 	{
@@ -21,7 +28,7 @@ public class Interactable : OutlineObject
 		if (interactionTransform && isFocus && !hasInteracted)
 		{
 			float distance = Vector3.Distance(player.position, interactionTransform.position);
-			if (distance <= radius)
+			if (distance < radius)
 			{
 				Interact();
 				hasInteracted = true;

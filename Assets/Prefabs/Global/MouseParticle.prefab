@@ -4913,8 +4913,8 @@ MonoBehaviour:
   yOffset: 0.2
   maxDistance: 15
   minDistance: 10
-  particleSystem: {fileID: 3625145728277787653}
-  light: {fileID: 8229088239424004418}
+  cursorParticleSystem: {fileID: 3625145728277787653}
+  cursorLight: {fileID: 8229088239424004418}
   flare: {fileID: 837758263415675634}
   interactColor: {r: 0.53333336, g: 0, b: 0, a: 1}
 --- !u!123 &837758263415675634

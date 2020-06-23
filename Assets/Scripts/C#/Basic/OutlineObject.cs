@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor;
+using UnityEngine;
 
 /// <author>Christian</author>
 /// <summary>
@@ -6,6 +7,8 @@
 /// </summary>
 public class OutlineObject : MonoBehaviour
 {
+    public bool isClick = false;
+
 
     [SerializeField]
     Color outlineColor = Color.white;
@@ -65,19 +68,36 @@ public class OutlineObject : MonoBehaviour
     /// </summary>
     void SwitchOutlined(bool outlined)
     {
-        for (int i = 0; i < rendererCollecton.Length; i++)
+        if(!isClick)
         {
-            // Get the current PropertyBlock
-            rendererCollecton[i].GetPropertyBlock(propBlock);
+            for (int i = 0; i < rendererCollecton.Length; i++)
+            {
+                // Get the current PropertyBlock
+                rendererCollecton[i].GetPropertyBlock(propBlock);
 
-            // Change Values
-            propBlock.SetFloat("_currentTime", Time.time);
-            propBlock.SetFloat("_outline_thickness", outlineSpacing);
-            propBlock.SetColor("_outline_color", outlineColor);
-            propBlock.SetFloat("_enable", (outlined ? 1.0f : 0.0f));
+                // Change Values
+                propBlock.SetFloat("_currentTime", Time.time);
+                propBlock.SetFloat("_outline_thickness", outlineSpacing);
+                propBlock.SetColor("_outline_color", outlineColor);
+                propBlock.SetFloat("_enable", (outlined ? 1.0f : 0.0f));
 
-            // Write it back in
-            rendererCollecton[i].SetPropertyBlock(propBlock);
+                // Write it back in
+                rendererCollecton[i].SetPropertyBlock(propBlock);
+            }
+        }
+        else
+        {
+            for (int i = 0; i < rendererCollecton.Length; i++)
+            {
+                // Get the current PropertyBlock
+                rendererCollecton[i].GetPropertyBlock(propBlock);
+
+                // Change Values
+                propBlock.SetFloat("_enable", (0.0f));
+
+                // Write it back in
+                rendererCollecton[i].SetPropertyBlock(propBlock);
+            }
         }
     }
 }

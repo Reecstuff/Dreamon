@@ -76,6 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineSpacing: 0.01
   radius: 3
   interactionTransform: {fileID: 0}
   dialogue:
@@ -122,7 +123,7 @@ MonoBehaviour:
         sentence: The man gets up quickly.
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: Elios_Looking
+          AnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -392,7 +393,6 @@ MonoBehaviour:
   minigameManager: {fileID: 1133812109691748872}
   isClick: 0
   camPosition: {fileID: 266097371674798222}
-  objectsToDeactivate: []
 --- !u!114 &1133812109691748872
 MonoBehaviour:
   m_ObjectHideFlags: 0

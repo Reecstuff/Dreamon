@@ -11,13 +11,8 @@ public class DialogueTrigger : Interactable
 
 	public MinigameManager minigameManager;
 
-	public bool isClick = false;
 
 	public Transform camPosition;
-
-	// Delete this, it is already in Dementum
-	[SerializeField]
-	GameObject[] objectsToDeactivate;
 
 	protected DialogueManager dialogueManager;
 
@@ -46,24 +41,7 @@ public class DialogueTrigger : Interactable
 
 	public virtual void TheEnd()
 	{
-		float animationTime = 6;
-
-		Sequence s = DOTween.Sequence();
-		// Fly Away
-
-		s.Append(transform.DOScale(Vector3.zero, animationTime));
-		s.Join(transform.DOShakeRotation(animationTime));
-		s.Play();
-
-		if (objectsToDeactivate.Length > 0)
-		{
-			for (int i = 0; i < objectsToDeactivate.Length; i++)
-			{
-				objectsToDeactivate[i].SetActive(false);
-			}
-		}
-
-		Invoke(nameof(SetInactive), animationTime + 0.5f);
+		// Do Something
 	}
 
 	protected virtual void SetInactive()

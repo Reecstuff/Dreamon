@@ -289,7 +289,7 @@ public class DialogueManager : MonoBehaviour
 
 
         //Stop focusing any objects
-        GameObject.Find("Player").GetComponent<PlayerController>().RemoveFocus();
+        player.RemoveFocus();
 
         //Reset the Buttons
         continueButton.SetActive(false);
