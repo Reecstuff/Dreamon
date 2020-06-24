@@ -71,11 +71,8 @@ public class PlayerController : MonoBehaviour
 
     public void SetFocus(Interactable newFocus)
     {
-        if (newFocus.GetComponent<DialogueTrigger>())
-        {
-            if (newFocus.GetComponent<DialogueTrigger>().isClick)
-                return;
-        }
+        if (newFocus.isClick)
+            return;
 
         if (newFocus != focus)
         {
