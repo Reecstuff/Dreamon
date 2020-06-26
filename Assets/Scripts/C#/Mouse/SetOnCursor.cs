@@ -19,17 +19,18 @@ public class SetOnCursor : MonoBehaviour
     float minDistance = 6;
 
     [SerializeField]
-    ParticleSystem particleSystem;
+    ParticleSystem cursorParticleSystem;
 
     [SerializeField]
-    Light light;
+    Light cursorLight;
 
     [SerializeField]
     LensFlare flare;
 
+    [SerializeField]
+    Color interactColor = Color.blue;
 
     RaycastHit hit;
-    RaycastHit secondHit;
     Vector3 nextPosition;
 
     // Start is called before the first frame update
@@ -52,7 +53,7 @@ public class SetOnCursor : MonoBehaviour
     {
         if(Time.timeScale > 0 && !Cursor.visible)
         {
-            if(particleSystem.isPaused)
+            if(cursorParticleSystem.isPaused)
             {
                 InterruptParticleSystem(false);
 
@@ -72,7 +73,7 @@ public class SetOnCursor : MonoBehaviour
     {
         if (Physics.Raycast(cam.ScreenPointToRay(Input.mousePosition), out hit, maxDistance, -1, QueryTriggerInteraction.Ignore))
         {
-
+            CheckForInteractable();
             return new Vector3(hit.point.x, hit.point.y + yOffset, hit.point.z);
         }
         else
@@ -85,16 +86,41 @@ public class SetOnCursor : MonoBehaviour
     {
         if(stop)
         {
-            particleSystem.Pause();
-            particleSystem.Clear();
-            light.enabled = false;
+            cursorParticleSystem.Pause();
+            cursorParticleSystem.Clear();
+            cursorLight.enabled = false;
             flare.enabled = false;
         }
         else
         {
-            particleSystem.Play();
-            light.enabled = true;
+            cursorParticleSystem.Play();
+            cursorLight.enabled = true;
             flare.enabled = true;
+        }
+    }
+
+    void CheckForInteractable()
+    {
+        Interactable interactable = hit.transform.GetComponent<Interactable>();
+
+        if (interactable)
+        {
+            if(!interactable.isClick)
+            {
+                if(cursorLight.color != interactColor)
+                {
+                    cursorLight.color = interactColor;
+                    flare.color = interactColor;
+                }
+            }
+        }
+        else
+        {
+            if(cursorLight.color != Color.white)
+            {
+                cursorLight.color = Color.white;
+                flare.color = Color.white;
+            }
         }
     }
 }

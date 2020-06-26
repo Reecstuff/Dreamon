@@ -20,6 +20,7 @@ public class CameraController : MonoBehaviour
 
     public float drivingTime = 2;
 
+    public float dampingTime = 15;
 
     void Update()
     {
@@ -50,7 +51,7 @@ public class CameraController : MonoBehaviour
         else if(!onLookAtLerp)
         {
             if (!onOffsetReset)
-                transform.LookAt(target.position);
+                LookAtTarget(target.position);
             else
                 transform.LookAt(target.position + Vector3.up * pitch);
         }
@@ -95,5 +96,15 @@ public class CameraController : MonoBehaviour
     {
         onOffsetReset = false;
         fixedCamera = false;
+    }
+
+    /// <summary>
+    /// Control Speed of LookAt
+    /// </summary>
+    /// <param name="focusPoint">Point to focus on</param>
+    void LookAtTarget(Vector3 focusPoint)
+    {
+        var rotation = Quaternion.LookRotation(focusPoint- transform.position);
+        transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * dampingTime);
     }
 }

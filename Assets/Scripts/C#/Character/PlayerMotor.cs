@@ -53,6 +53,7 @@ public class PlayerMotor : MonoBehaviour
     /// </summary>
     public void StopAgent()
     {
+        FaceTarget();
         agent.isStopped = true;
         agent.velocity = Vector3.zero;
         PlayAnimation(0, true);
@@ -63,13 +64,15 @@ public class PlayerMotor : MonoBehaviour
     /// </summary>
     public void ResumeAgent()
     {
+        if(agent.hasPath)
+            PlayAnimation(1);
         agent.isStopped = false;
     }
 
     //Moves the player towards the object he wants to interact with
     public void FollowTarget(Interactable newTarget)
     {
-        agent.stoppingDistance = newTarget.radius * .8f;
+        agent.stoppingDistance = newTarget.radius * 0.5f;
         agent.updateRotation = false;
 
         target = newTarget.interactionTransform;
@@ -79,7 +82,6 @@ public class PlayerMotor : MonoBehaviour
     {
         agent.stoppingDistance = 0f;
         agent.updateRotation = true;
-        PlayAnimation(0, true);
         target = null;
     }
 
@@ -87,9 +89,12 @@ public class PlayerMotor : MonoBehaviour
     //The player turns to the object he wants to interact with so that he looks at it
     void FaceTarget()
     {
-        Vector3 direction = (target.position - transform.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0f, direction.z));
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+        if(target)
+        {
+            Vector3 direction = (target.position - transform.position).normalized;
+            Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0f, direction.z));
+            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 20f);
+        }
     }
 
     void PlayAnimation(int index, bool crossfade = false)
