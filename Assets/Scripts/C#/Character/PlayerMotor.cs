@@ -97,7 +97,7 @@ public class PlayerMotor : MonoBehaviour
         }
     }
 
-    void PlayAnimation(int index, bool crossfade = false)
+    public void PlayAnimation(int index, bool crossfade = false)
     {
         if(anim)
         {
