@@ -266,10 +266,9 @@ public class DialogueManager : MonoBehaviour
 
         int lastlineCount = 1;
 
-
-        foreach (char letter in sentence.ToCharArray())
+        for (int i = 0; i < sentence.ToCharArray().Length; i++)
         {
-            dialogueText.text += letter;
+            dialogueText.text += sentence.ToCharArray()[i];
 
             // Check for new lines
             if (lastlineCount < dialogueText.textInfo.lineCount)
@@ -280,6 +279,7 @@ public class DialogueManager : MonoBehaviour
                 dialogueText.rectTransform.sizeDelta = new Vector2(dialogueText.rectTransform.sizeDelta.x, oneTextLineSizeY * (dialogueText.textInfo.lineCount + 1));
                 lastlineCount = dialogueText.textInfo.lineCount;
             }
+
             yield return new WaitForSeconds(timeForTextInSeconds);
         }
     }
