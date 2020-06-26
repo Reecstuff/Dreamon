@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class BoardManager : MonoBehaviour
@@ -21,13 +22,15 @@ public class BoardManager : MonoBehaviour
 	int currentChessmans = 3;
 
 	public GameObject assignedTarget;
-	public int winDialogue;
-	public int loseDialogue;
+
+	int rounds;
+	int winRounds;
+	int loseRounds;
 
 	private void Start()
 	{
 		Instance = this;
-		SpawnAllChessmans();
+		SpawnAllChessmans(rounds);
 
 		selectedHighlight = Instantiate(selectedHighlight, transform);
 	}
@@ -35,9 +38,23 @@ public class BoardManager : MonoBehaviour
 	private void Update()
 	{
 		//If the player lose the game
-		if (currentChessmans < 0)
+		if (currentChessmans == 0)
 		{
-			assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
+			if (rounds == 3)
+			{
+				if (winRounds < loseRounds)
+				{
+					assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
+				}
+				else if (winRounds > loseRounds)
+				{
+					assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
+				}
+			}
+
+			loseRounds++;
+
+			SpawnAllChessmans(rounds);
 		}
 
 		UpdateSelection();
@@ -57,7 +74,21 @@ public class BoardManager : MonoBehaviour
 					//If the player win the game
 					if (selectionY == 7)
 					{
-						assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
+						if (rounds == 3)
+						{
+							if (winRounds < loseRounds)
+							{
+								assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
+							}
+							else if (winRounds > loseRounds)
+							{
+								assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
+							}
+						}
+
+						winRounds++;
+
+						SpawnAllChessmans(rounds);
 					}
 
 					//Move the chessman
@@ -133,22 +164,79 @@ public class BoardManager : MonoBehaviour
 		activeChessman.Add(go);
 	}
 
-	private void SpawnAllChessmans()
+	private void SpawnAllChessmans(int round)
 	{
-		activeChessman = new List<GameObject>();
 		Chessmans = new Chessman[8, 8];
 
-		//Spawn the players pieces
-		SpawnChessman(0, 0, 0);
-		SpawnChessman(0, 7, 2);
-		SpawnChessman(0, 7, 0);
-		SpawnChessman(0, 0, 2);
-
-		//Spawn the enemys pieces
-		for (int i = 0; i < 8; i++)
+		if (round > 0)
 		{
-			SpawnChessman(1, i, 6);
+			for (int i = 0; i < activeChessman.Count; i++)
+			{
+				Destroy(activeChessman[i]);
+			}
+
+			activeChessman.Clear();
 		}
+
+		if (round == 0)
+		{
+			//Spawn the players pieces
+			SpawnChessman(0, 0, 2);
+			SpawnChessman(0, 7, 1);
+			SpawnChessman(0, 6, 0);
+			SpawnChessman(0, 2, 0);
+
+			//Spawn the enemys pieces
+			SpawnChessman(1, 3, 2);
+			SpawnChessman(1, 4, 2);
+			SpawnChessman(1, 5, 3);
+			SpawnChessman(1, 5, 4);
+			SpawnChessman(1, 2, 3);
+			SpawnChessman(1, 2, 4);
+
+			for (int i = 0; i < 8; i++)
+			{
+				SpawnChessman(1, i, 6);
+			}
+		}
+		else if (round == 1)
+		{
+			//Spawn the players pieces
+			SpawnChessman(0, 0, 2);
+			SpawnChessman(0, 7, 1);
+			SpawnChessman(0, 6, 0);
+			SpawnChessman(0, 2, 0);
+
+			//Spawn the enemys pieces
+			for (int i = 0; i < 8; i++)
+			{
+				SpawnChessman(1, i, 6);
+			}
+		}
+		else if (round == 2)
+		{
+			//Spawn the players pieces
+			SpawnChessman(0, 0, 2);
+			SpawnChessman(0, 7, 1);
+			SpawnChessman(0, 6, 0);
+			SpawnChessman(0, 2, 0);
+
+			//Spawn the enemys pieces
+			for (int i = 0; i < 8; i++)
+			{
+				SpawnChessman(1, i, 6);
+			}
+		}
+
+		ResetChess();
+	}
+
+	private void ResetChess()
+	{
+		rounds++;
+		currentChessmans = activeChessman.Count(c => c.GetComponent<Pieces>() == true);
+		selectionX = 0;
+		selectionY = 0;
 	}
 
 	private void DrawChessboard()

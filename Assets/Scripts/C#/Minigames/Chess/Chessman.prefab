@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 68340239f4c40a6478a362d255972dec, type: 2}
+  - {fileID: 2100000, guid: 4b9f84bca7c7d2a46b721f57cdd2a6c1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -120,4 +120,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31d67678b46af864e883978e63a952ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isClick: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineSpacing: 0.01

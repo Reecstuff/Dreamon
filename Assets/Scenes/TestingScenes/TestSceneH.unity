@@ -228,9 +228,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c4268f7c154c645be5dcf1130bf241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  camTarget: {fileID: 0}
   mainCamera: {fileID: 511798053}
-  cameraPosition: {x: 0, y: -0.5, z: 0}
+  cameraPosition: {fileID: 0}
   minigame: {fileID: 1937785360}
+  endDoor: {fileID: 0}
+  winRounds: 0
   nextWinDialog: 
   nextLoseDialog: 
 --- !u!114 &482246488
@@ -245,53 +248,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e6aa5402ccc1d4196ca193f2d3de99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isClick: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineSpacing: 0.01
   radius: 3
   interactionTransform: {fileID: 482246486}
   dialogue:
   - option:
-    - name: Helga
-      endSentence: 0
+    - endSentence: 0
       nextMinigame: 0
-      sentences:
-      - Hallo
-      - Willst du ein Spiel spielen?
+      talks: []
       decisions:
       - Ja
       - Nein
       nextDecisions: 0100000002000000
-    - name: Helga
-      endSentence: 1
+    - endSentence: 1
       nextMinigame: 1
-      sentences:
-      - Gut
+      talks: []
       decisions: []
       nextDecisions: 
-    - name: Helga
-      endSentence: 1
+    - endSentence: 1
       nextMinigame: 0
-      sentences:
-      - Dann halt nicht
+      talks: []
       decisions: []
       nextDecisions: 
   - option:
-    - name: Helga
-      endSentence: 1
+    - endSentence: 1
       nextMinigame: 0
-      sentences:
-      - Du hast gewonnen
+      talks: []
       decisions: []
       nextDecisions: 
   - option:
-    - name: Helga
-      endSentence: 1
+    - endSentence: 1
       nextMinigame: 1
-      sentences:
-      - Du hast verloren, also nochmal!
+      talks: []
       decisions: []
       nextDecisions: 
   currentDialogue: 0
   minigameManager: {fileID: 482246487}
+  camPosition: {fileID: 0}
 --- !u!1 &511798053 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2824791702060548854, guid: 42fbe90f27e2b9341b3452e7a3770d55,
@@ -918,7 +913,7 @@ PrefabInstance:
     - target: {fileID: 1492315046694155711, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.000015258789
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1507010162923565163, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
         type: 3}
@@ -1463,6 +1458,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ChessBoard
+      objectReference: {fileID: 0}
+    - target: {fileID: 7748925604601613184, guid: 4f62762282eee734d95da04c5cec6920,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7748925604601613185, guid: 4f62762282eee734d95da04c5cec6920,
         type: 3}
