@@ -12,6 +12,7 @@ public class PauseMenu : MonoBehaviour
     Canvas pauseMenu;
 
     KeyCode openPauseMenu;
+    bool cursorWasVisible;
 
     void Start()
     {
@@ -50,7 +51,7 @@ public class PauseMenu : MonoBehaviour
         AudioManager.Instance?.PitchManual(1);
 
         // Set Cursor to 3D Particle Cursor
-        Cursor.visible = false;
+        Cursor.visible = cursorWasVisible;
 
         pauseMenuOpen = false;
     }
@@ -63,6 +64,7 @@ public class PauseMenu : MonoBehaviour
 
         AudioManager.Instance?.PitchManual(0.7f);
 
+        cursorWasVisible = Cursor.visible;
         // Set Cursor to MenuCursor
         Cursor.visible = true;
 
