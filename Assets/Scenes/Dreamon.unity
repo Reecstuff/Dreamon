@@ -1641,6 +1641,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2824791702060548857, guid: 42fbe90f27e2b9341b3452e7a3770d55,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2824791702060548858, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
       propertyPath: m_Enabled
@@ -2483,6 +2488,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 837758263415675634, guid: 8e7d85c5036bf234586106830204b26d,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3625145728277787652, guid: 8e7d85c5036bf234586106830204b26d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2542,6 +2552,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MouseParticle
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625145728277787675, guid: 8e7d85c5036bf234586106830204b26d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e7d85c5036bf234586106830204b26d, type: 3}
