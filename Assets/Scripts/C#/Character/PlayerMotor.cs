@@ -28,11 +28,16 @@ public class PlayerMotor : MonoBehaviour
         {
             MoveToPoint(target.position);
             FaceTarget();
+
+           
         }
         if(agent.remainingDistance < 0.1f)
         {
             PlayAnimation(0, true);
         }
+        else if (agent.velocity.magnitude > 0.1f)
+            PlayAnimation(1);
+
     }
 
     /// <summary>
@@ -44,7 +49,6 @@ public class PlayerMotor : MonoBehaviour
         if(!agent.isStopped)
         {
             agent.SetDestination(point);
-            PlayAnimation(1);
         }
     }
 
@@ -64,8 +68,6 @@ public class PlayerMotor : MonoBehaviour
     /// </summary>
     public void ResumeAgent()
     {
-        if(agent.hasPath)
-            PlayAnimation(1);
         agent.isStopped = false;
     }
 
