@@ -163,6 +163,7 @@ public class BoardManager : MonoBehaviour
 
 		GameObject go = Instantiate(chessmanPrefabs[index]) as GameObject;
 		go.transform.SetParent(transform);
+		go.transform.rotation = transform.rotation;
 
 
 		go.transform.localPosition = new Vector3(x + 0.5f, go.transform.localScale.y / 2, z + 0.5f);

@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7748925604601613190
 Transform:
   m_ObjectHideFlags: 0
@@ -51,8 +51,6 @@ MonoBehaviour:
   selectedHighlight: {fileID: 3855067032046630639, guid: 3b4f29e23f9b7e648a1a3755c96eda32,
     type: 3}
   assignedTarget: {fileID: 0}
-  winDialogue: 1
-  loseDialogue: 2
 --- !u!114 &7748925604601613191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -126,7 +124,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: -1976799459468813334, guid: 507db65c597a50e40b6467614f205d30, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
