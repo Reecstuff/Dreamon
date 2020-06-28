@@ -31,7 +31,7 @@ public class BoardManager : MonoBehaviour
 	{
 		Instance = this;
 		SpawnAllChessmans(rounds);
-
+		Cursor.visible = true;
 		selectedHighlight = Instantiate(selectedHighlight, transform);
 	}
 
@@ -126,7 +126,7 @@ public class BoardManager : MonoBehaviour
 			}
 
 			Chessmans[selectedChessman.CurrentX, selectedChessman.CurrentY] = null;
-			selectedChessman.transform.position = transform.position + new Vector3(x + 0.5f, 0.5f, z + 0.5f);
+			selectedChessman.transform.localPosition = new Vector3(x + 0.5f, selectedChessman.transform.localScale.y / 2, z + 0.5f);
 			selectedChessman.SetPosition(x, z);
 			Chessmans[x, z] = selectedChessman;
 		} 
@@ -145,8 +145,11 @@ public class BoardManager : MonoBehaviour
 		RaycastHit hit;
 		if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 25.0f, LayerMask.GetMask("ChessPlane")))
 		{
-			selectionX = (int)hit.point.x;
-			selectionY = (int)hit.point.z;
+			
+			selectionX = (int)transform.InverseTransformPoint(hit.point).x;
+			selectionY = (int)transform.InverseTransformPoint(hit.point).z;
+
+			Debug.Log(selectionX + " | " + selectionY);
 		}
 		else
 		{
@@ -157,8 +160,13 @@ public class BoardManager : MonoBehaviour
 
 	private void SpawnChessman(int index, int x, int z)
 	{
-		GameObject go = Instantiate(chessmanPrefabs[index], transform.position + new Vector3(x + 0.5f, 0.5f, z + 0.5f), Quaternion.identity) as GameObject;
+
+		GameObject go = Instantiate(chessmanPrefabs[index]) as GameObject;
 		go.transform.SetParent(transform);
+
+
+		go.transform.localPosition = new Vector3(x + 0.5f, go.transform.localScale.y / 2, z + 0.5f);
+
 		Chessmans[x, z] = go.GetComponent<Chessman>();
 		Chessmans[x, z].SetPosition(x, z);
 		activeChessman.Add(go);
@@ -244,7 +252,7 @@ public class BoardManager : MonoBehaviour
 		//Draw the selection
 		if (selectionX >= 0 && selectionY >= 0)
 		{
-			selectedHighlight.transform.position = Vector3.forward * (selectionY + 0.5f) + Vector3.right * (selectionX + 0.5f) + Vector3.up * 0.002f;
+			selectedHighlight.transform.localPosition = Vector3.forward * (selectionY + 0.5f )  + Vector3.right * (selectionX + 0.5f )  + Vector3.up * 0.002f;
 		}
 	}
 }

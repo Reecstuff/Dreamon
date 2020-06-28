@@ -20,7 +20,7 @@ public class BoardHighlights : MonoBehaviour
 		GameObject go = highlights.Find(g => !g.activeSelf);
 		if (go == null)
 		{
-			go = Instantiate(highlightPrefab);
+			go = Instantiate(highlightPrefab, transform);
 			highlights.Add(go);
 		}
 
@@ -37,7 +37,7 @@ public class BoardHighlights : MonoBehaviour
 				{
 					GameObject go = GetHighlightObject();
 					go.SetActive(true);
-					go.transform.position = new Vector3(i + 0.5f, 0.001f, j + 0.5f);
+					go.transform.localPosition = new Vector3(i + 0.5f, 0.001f, j + 0.5f);
 				}
 			}
 		}
