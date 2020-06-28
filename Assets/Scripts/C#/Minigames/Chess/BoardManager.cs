@@ -40,6 +40,8 @@ public class BoardManager : MonoBehaviour
 		//If the player lose the game
 		if (currentChessmans == 0)
 		{
+			loseRounds++;
+
 			if (rounds == 3)
 			{
 				if (winRounds < loseRounds)
@@ -52,7 +54,6 @@ public class BoardManager : MonoBehaviour
 				}
 			}
 
-			loseRounds++;
 
 			SpawnAllChessmans(rounds);
 		}
@@ -74,6 +75,7 @@ public class BoardManager : MonoBehaviour
 					//If the player win the game
 					if (selectionY == 7)
 					{
+						winRounds++;
 						if (rounds == 3)
 						{
 							if (winRounds < loseRounds)
@@ -86,7 +88,6 @@ public class BoardManager : MonoBehaviour
 							}
 						}
 
-						winRounds++;
 
 						SpawnAllChessmans(rounds);
 					}
