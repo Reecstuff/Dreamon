@@ -189,10 +189,8 @@ public class BoardManager : MonoBehaviour
 		if (round == 0)
 		{
 			//Spawn the players pieces
-			SpawnChessman(0, 0, 2);
 			SpawnChessman(0, 7, 1);
 			SpawnChessman(0, 6, 0);
-			SpawnChessman(0, 2, 0);
 
 			//Spawn the enemys pieces
 			for (int i = 0; i < 8; i++)
