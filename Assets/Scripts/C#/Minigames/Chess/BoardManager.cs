@@ -149,7 +149,6 @@ public class BoardManager : MonoBehaviour
 			selectionX = (int)transform.InverseTransformPoint(hit.point).x;
 			selectionY = (int)transform.InverseTransformPoint(hit.point).z;
 
-			Debug.Log(selectionX + " | " + selectionY);
 		}
 		else
 		{
