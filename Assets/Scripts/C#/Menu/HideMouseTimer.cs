@@ -63,4 +63,9 @@ public class HideMouseTimer : MonoBehaviour
         }
     }
 
+    private void OnDisable()
+    {
+        Cursor.visible = true;
+    }
+
 }
