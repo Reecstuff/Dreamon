@@ -195,13 +195,6 @@ public class BoardManager : MonoBehaviour
 			SpawnChessman(0, 2, 0);
 
 			//Spawn the enemys pieces
-			SpawnChessman(1, 3, 2);
-			SpawnChessman(1, 4, 2);
-			SpawnChessman(1, 5, 3);
-			SpawnChessman(1, 5, 4);
-			SpawnChessman(1, 2, 3);
-			SpawnChessman(1, 2, 4);
-
 			for (int i = 0; i < 8; i++)
 			{
 				SpawnChessman(1, i, 6);
@@ -216,6 +209,13 @@ public class BoardManager : MonoBehaviour
 			SpawnChessman(0, 2, 0);
 
 			//Spawn the enemys pieces
+			SpawnChessman(1, 3, 2);
+			SpawnChessman(1, 4, 2);
+			SpawnChessman(1, 5, 3);
+			SpawnChessman(1, 5, 4);
+			SpawnChessman(1, 2, 3);
+			SpawnChessman(1, 2, 4);
+
 			for (int i = 0; i < 8; i++)
 			{
 				SpawnChessman(1, i, 6);
@@ -224,10 +224,16 @@ public class BoardManager : MonoBehaviour
 		else if (round == 2)
 		{
 			//Spawn the players pieces
-			SpawnChessman(0, 0, 2);
-			SpawnChessman(0, 7, 1);
-			SpawnChessman(0, 6, 0);
-			SpawnChessman(0, 2, 0);
+			SpawnChessman(0, 4, 0);
+			SpawnChessman(0, 2, 2);
+			SpawnChessman(0, 0, 4);
+
+			SpawnChessman(1, 2, 5);
+			SpawnChessman(1, 2, 4);
+			SpawnChessman(1, 5, 5);
+			SpawnChessman(1, 5, 4);
+			SpawnChessman(1, 0, 2);
+			SpawnChessman(1, 7, 2);
 
 			//Spawn the enemys pieces
 			for (int i = 0; i < 8; i++)
