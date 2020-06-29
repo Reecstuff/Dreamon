@@ -65,6 +65,8 @@ public class MinigameManager : MonoBehaviour
 
 	public void StartNextDialog(bool isWin)
 	{
+		// Reset Playeranimation
+		player.motor.PlayAnimation(0);
 		if (isWin == true)
 		{
 			for (int i = 0; i < nextWinDialog.Length; i++)

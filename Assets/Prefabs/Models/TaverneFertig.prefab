@@ -2982,8 +2982,8 @@ GameObject:
   - component: {fileID: 7351349278180376846}
   - component: {fileID: 3974449968897166218}
   - component: {fileID: 1123661508755550609}
-  - component: {fileID: 6565381444773450829}
   - component: {fileID: 6294546286153626216}
+  - component: {fileID: 3992417580158302676}
   m_Layer: 0
   m_Name: Kerze3
   m_TagString: Untagged
@@ -3054,20 +3054,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &6565381444773450829
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1547218018113572489}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1764240431042640746, guid: 134e85e9aee393f40b9be59398d8a05b, type: 3}
 --- !u!114 &6294546286153626216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3080,8 +3066,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e6aa5402ccc1d4196ca193f2d3de99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isClick: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  OutlineThickness: 0.1
+  outlineSpacing: 0.01
   radius: 3
   interactionTransform: {fileID: 7351349278180376846}
   dialogue:
@@ -3111,9 +3098,20 @@ MonoBehaviour:
       nextDecisions: 
   currentDialogue: 0
   minigameManager: {fileID: 0}
-  isClick: 0
   camPosition: {fileID: 0}
-  objectsToDeactivate: []
+--- !u!135 &3992417580158302676
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1547218018113572489}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.44
+  m_Center: {x: 0.000000059604645, y: 0.2855204, z: -0.00000008195639}
 --- !u!1 &1564500804589812072
 GameObject:
   m_ObjectHideFlags: 0
@@ -3667,8 +3665,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31d67678b46af864e883978e63a952ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isClick: 0
   outlineColor: {r: 1, g: 0, b: 0, a: 1}
-  OutlineThickness: 0.2
+  outlineSpacing: 0.01
 --- !u!1 &1763753209686222866
 GameObject:
   m_ObjectHideFlags: 0
@@ -12465,8 +12464,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e6aa5402ccc1d4196ca193f2d3de99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isClick: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  OutlineThickness: 0.2
+  outlineSpacing: 0.01
   radius: 3
   interactionTransform: {fileID: 5751484556359774203}
   dialogue:
@@ -12488,9 +12488,7 @@ MonoBehaviour:
       nextDecisions: 
   currentDialogue: 0
   minigameManager: {fileID: 0}
-  isClick: 0
   camPosition: {fileID: 0}
-  objectsToDeactivate: []
 --- !u!1 &5155652747579670648
 GameObject:
   m_ObjectHideFlags: 0
@@ -17809,8 +17807,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e6aa5402ccc1d4196ca193f2d3de99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isClick: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  OutlineThickness: 0.2
+  outlineSpacing: 0.01
   radius: 1
   interactionTransform: {fileID: 5436522712479667035}
   dialogue:
@@ -17840,9 +17839,7 @@ MonoBehaviour:
       nextDecisions: 
   currentDialogue: 0
   minigameManager: {fileID: 0}
-  isClick: 0
   camPosition: {fileID: 0}
-  objectsToDeactivate: []
 --- !u!135 &1470810869
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -17854,7 +17851,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.20323226
+  m_Radius: 0.47
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7456502213158064341
 GameObject:

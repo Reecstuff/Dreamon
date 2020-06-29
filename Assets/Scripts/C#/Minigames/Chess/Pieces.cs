@@ -26,7 +26,10 @@ public class Pieces : Chessman
 			c = BoardManager.Instance.Chessmans[i, j];
 			if (c == null)
 			{
-				r[i, j] = true;
+				if (i == 7 || i == 0 || j == 7 || j == 0)
+				{
+					r[i, j] = true;
+				}
 			}
 			else
 			{
@@ -54,7 +57,10 @@ public class Pieces : Chessman
 			c = BoardManager.Instance.Chessmans[i, j];
 			if (c == null)
 			{
-				r[i, j] = true;
+				if (i == 7 || i == 0 || j == 7 || j == 0)
+				{
+					r[i, j] = true;
+				}
 			}
 			else
 			{
@@ -82,7 +88,10 @@ public class Pieces : Chessman
 			c = BoardManager.Instance.Chessmans[i, j];
 			if (c == null)
 			{
-				r[i, j] = true;
+				if (i == 7 || i == 0 || j == 7 || j == 0)
+				{
+					r[i, j] = true;
+				}
 			}
 			else
 			{
@@ -110,7 +119,10 @@ public class Pieces : Chessman
 			c = BoardManager.Instance.Chessmans[i, j];
 			if (c == null)
 			{
-				r[i, j] = true;
+				if (i == 7 || i == 0 || j == 7 || j == 0)
+				{
+					r[i, j] = true;
+				}
 			}
 			else
 			{

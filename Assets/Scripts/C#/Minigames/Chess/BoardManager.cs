@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class BoardManager : MonoBehaviour
@@ -21,23 +22,40 @@ public class BoardManager : MonoBehaviour
 	int currentChessmans = 3;
 
 	public GameObject assignedTarget;
-	public int winDialogue;
-	public int loseDialogue;
+
+	int rounds;
+	int winRounds;
+	int loseRounds;
 
 	private void Start()
 	{
 		Instance = this;
-		SpawnAllChessmans();
-
+		SpawnAllChessmans(rounds);
+		Cursor.visible = true;
 		selectedHighlight = Instantiate(selectedHighlight, transform);
 	}
 
 	private void Update()
 	{
 		//If the player lose the game
-		if (currentChessmans < 0)
+		if (currentChessmans == 0)
 		{
-			assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
+			loseRounds++;
+
+			if (rounds == 3)
+			{
+				if (winRounds < loseRounds)
+				{
+					assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
+				}
+				else if (winRounds > loseRounds)
+				{
+					assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
+				}
+			}
+
+
+			SpawnAllChessmans(rounds);
 		}
 
 		UpdateSelection();
@@ -57,7 +75,21 @@ public class BoardManager : MonoBehaviour
 					//If the player win the game
 					if (selectionY == 7)
 					{
-						assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
+						winRounds++;
+						if (rounds == 3)
+						{
+							if (winRounds < loseRounds)
+							{
+								assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
+							}
+							else if (winRounds > loseRounds)
+							{
+								assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
+							}
+						}
+
+
+						SpawnAllChessmans(rounds);
 					}
 
 					//Move the chessman
@@ -95,7 +127,7 @@ public class BoardManager : MonoBehaviour
 			}
 
 			Chessmans[selectedChessman.CurrentX, selectedChessman.CurrentY] = null;
-			selectedChessman.transform.position = transform.position + new Vector3(x + 0.5f, 0.5f, z + 0.5f);
+			selectedChessman.transform.localPosition = new Vector3(x + 0.5f, selectedChessman.transform.localScale.y / 2, z + 0.5f);
 			selectedChessman.SetPosition(x, z);
 			Chessmans[x, z] = selectedChessman;
 		} 
@@ -114,8 +146,10 @@ public class BoardManager : MonoBehaviour
 		RaycastHit hit;
 		if (Physics.Raycast(Camera.main.ScreenPointToRay(Input.mousePosition), out hit, 25.0f, LayerMask.GetMask("ChessPlane")))
 		{
-			selectionX = (int)hit.point.x;
-			selectionY = (int)hit.point.z;
+			
+			selectionX = (int)transform.InverseTransformPoint(hit.point).x;
+			selectionY = (int)transform.InverseTransformPoint(hit.point).z;
+
 		}
 		else
 		{
@@ -126,29 +160,96 @@ public class BoardManager : MonoBehaviour
 
 	private void SpawnChessman(int index, int x, int z)
 	{
-		GameObject go = Instantiate(chessmanPrefabs[index], transform.position + new Vector3(x + 0.5f, 0.5f, z + 0.5f), Quaternion.identity) as GameObject;
+
+		GameObject go = Instantiate(chessmanPrefabs[index]) as GameObject;
 		go.transform.SetParent(transform);
+		go.transform.rotation = transform.rotation;
+
+
+		go.transform.localPosition = new Vector3(x + 0.5f, go.transform.localScale.y / 2, z + 0.5f);
+
 		Chessmans[x, z] = go.GetComponent<Chessman>();
 		Chessmans[x, z].SetPosition(x, z);
 		activeChessman.Add(go);
 	}
 
-	private void SpawnAllChessmans()
+	private void SpawnAllChessmans(int round)
 	{
-		activeChessman = new List<GameObject>();
 		Chessmans = new Chessman[8, 8];
 
-		//Spawn the players pieces
-		SpawnChessman(0, 0, 0);
-		SpawnChessman(0, 7, 2);
-		SpawnChessman(0, 7, 0);
-		SpawnChessman(0, 0, 2);
-
-		//Spawn the enemys pieces
-		for (int i = 0; i < 8; i++)
+		if (round > 0)
 		{
-			SpawnChessman(1, i, 6);
+			for (int i = 0; i < activeChessman.Count; i++)
+			{
+				Destroy(activeChessman[i]);
+			}
+
+			activeChessman.Clear();
 		}
+
+		if (round == 0)
+		{
+			//Spawn the players pieces
+			SpawnChessman(0, 7, 1);
+			SpawnChessman(0, 6, 0);
+
+			//Spawn the enemys pieces
+			for (int i = 0; i < 8; i++)
+			{
+				SpawnChessman(1, i, 6);
+			}
+		}
+		else if (round == 1)
+		{
+			//Spawn the players pieces
+			SpawnChessman(0, 0, 2);
+			SpawnChessman(0, 7, 1);
+			SpawnChessman(0, 6, 0);
+			SpawnChessman(0, 2, 0);
+
+			//Spawn the enemys pieces
+			SpawnChessman(1, 3, 2);
+			SpawnChessman(1, 4, 2);
+			SpawnChessman(1, 5, 3);
+			SpawnChessman(1, 5, 4);
+			SpawnChessman(1, 2, 3);
+			SpawnChessman(1, 2, 4);
+
+			for (int i = 0; i < 8; i++)
+			{
+				SpawnChessman(1, i, 6);
+			}
+		}
+		else if (round == 2)
+		{
+			//Spawn the players pieces
+			SpawnChessman(0, 4, 0);
+			SpawnChessman(0, 2, 2);
+			SpawnChessman(0, 0, 4);
+
+			SpawnChessman(1, 2, 5);
+			SpawnChessman(1, 2, 4);
+			SpawnChessman(1, 5, 5);
+			SpawnChessman(1, 5, 4);
+			SpawnChessman(1, 0, 2);
+			SpawnChessman(1, 7, 2);
+
+			//Spawn the enemys pieces
+			for (int i = 0; i < 8; i++)
+			{
+				SpawnChessman(1, i, 6);
+			}
+		}
+
+		ResetChess();
+	}
+
+	private void ResetChess()
+	{
+		rounds++;
+		currentChessmans = activeChessman.Count(c => c.GetComponent<Pieces>() == true);
+		selectionX = 0;
+		selectionY = 0;
 	}
 
 	private void DrawChessboard()
@@ -156,7 +257,7 @@ public class BoardManager : MonoBehaviour
 		//Draw the selection
 		if (selectionX >= 0 && selectionY >= 0)
 		{
-			selectedHighlight.transform.position = Vector3.forward * (selectionY + 0.5f) + Vector3.right * (selectionX + 0.5f) + Vector3.up * 0.002f;
+			selectedHighlight.transform.localPosition = Vector3.forward * (selectionY + 0.5f )  + Vector3.right * (selectionX + 0.5f )  + Vector3.up * 0.002f;
 		}
 	}
 }

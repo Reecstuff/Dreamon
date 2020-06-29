@@ -13,11 +13,13 @@ public class ButtonColorImage : OverButton
     float time = 0.2f;
 
     Button button;
+    Color normalColor;
 
     protected override void Initialise()
     {
         base.Initialise();
         button = GetComponent<Button>();
+        normalColor = image.color;
     }
 
     protected override void OnButton()
@@ -35,7 +37,7 @@ public class ButtonColorImage : OverButton
     protected override void ButtonExit()
     {
         base.ButtonExit();
-        image.DOColor(button.colors.normalColor, time);
+        image.DOColor(normalColor, time);
     }
 
 }

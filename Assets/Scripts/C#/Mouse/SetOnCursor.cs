@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Aura2API;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -30,6 +31,7 @@ public class SetOnCursor : MonoBehaviour
     [SerializeField]
     Color interactColor = Color.blue;
 
+    AuraLight auraLight;
     RaycastHit hit;
     Vector3 nextPosition;
 
@@ -46,6 +48,7 @@ public class SetOnCursor : MonoBehaviour
 
         Cursor.visible = false;
         flare = GetComponent<LensFlare>();
+        auraLight = cursorLight.gameObject.GetComponent<AuraLight>();
     }
 
     // Update is called once per frame
@@ -89,12 +92,14 @@ public class SetOnCursor : MonoBehaviour
             cursorParticleSystem.Pause();
             cursorParticleSystem.Clear();
             cursorLight.enabled = false;
+            auraLight.enabled = false;
             flare.enabled = false;
         }
         else
         {
             cursorParticleSystem.Play();
             cursorLight.enabled = true;
+            auraLight.enabled = true;
             flare.enabled = true;
         }
     }
