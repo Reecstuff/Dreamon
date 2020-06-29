@@ -11,6 +11,7 @@ Shader "CustomShader/WaveBlobShader"
         _Frequency ("Frequency", Range(0,100)) = 10
         _Amplitude ("Amplitude", Range(0,1)) = 0.1
         _Speed ("Speed", Range(0, 10)) = 2
+        _Axis ("Axis", Vector) = (1,1,1,1)
         
     }
     SubShader 
@@ -36,6 +37,7 @@ Shader "CustomShader/WaveBlobShader"
         half _Frequency;
         half _Amplitude;
         float _Speed;
+        fixed4 _Axis;
 
       
         UNITY_INSTANCING_BUFFER_START(Props)
@@ -43,8 +45,8 @@ Shader "CustomShader/WaveBlobShader"
 
         void vertex_shader (inout appdata_base v) 
         {
-
-            v.vertex.xyz += v.normal * sin(v.vertex.y * _Frequency + _Time.y * _Speed) * _Amplitude;
+            _Axis.xyz *= v.normal * sin(v.vertex.y * _Frequency + _Time.y * _Speed) * _Amplitude;
+            v.vertex.xyz += _Axis.xyz;
         }
 
         void surf (Input IN, inout SurfaceOutputStandard o) 

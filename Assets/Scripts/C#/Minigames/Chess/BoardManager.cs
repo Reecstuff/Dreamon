@@ -72,8 +72,9 @@ public class BoardManager : MonoBehaviour
 				}
 				else
 				{
+
 					//If the player win the game
-					if (selectionY == 7)
+					if (selectionY == 7 && selectedHighlight.transform.localPosition.z >= 7)
 					{
 						winRounds++;
 						if (rounds == 3)
