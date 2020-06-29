@@ -23,8 +23,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2959868926908075439}
-  m_LocalRotation: {x: 0.09062931, y: 0.7237422, z: -0.089343406, w: 0.67823404}
-  m_LocalPosition: {x: -1.3537102, y: 0.8686981, z: 1.7898464}
+  m_LocalRotation: {x: 0.0940498, y: -0.27458933, z: 0.037039068, w: 0.956234}
+  m_LocalPosition: {x: 0.95591736, y: 1.0114336, z: 2.4730263}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5219269308381401104}
@@ -142,9 +142,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7370e93f5d3bec34ab9fe648c44b2d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isClick: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineSpacing: 0.01
-  radius: 1
+  radius: 0.1
   interactionTransform: {fileID: 1859216236295679692}
   dialogue:
   - option:
@@ -179,7 +180,7 @@ MonoBehaviour:
         sentence: You bet! Or is there any other soul?
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Depressive
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -198,7 +199,7 @@ MonoBehaviour:
           of booze!
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Rejecting
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -217,7 +218,7 @@ MonoBehaviour:
           and drink with an old man!"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Serious
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -235,7 +236,7 @@ MonoBehaviour:
         sentence: "You shut up! Y\u2019all know nothing! You are so weak. "
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Idle
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -254,7 +255,7 @@ MonoBehaviour:
           night. All the empty bottles in front of your eyes. Are you that blind!?"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Serious
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -273,7 +274,7 @@ MonoBehaviour:
           the wish to die\u2026. doesn\u2019t it remind you of somebody!"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Stop_It
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -292,7 +293,7 @@ MonoBehaviour:
           about the love\u2026 about the betrayal\u2026 "
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Stop_It
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -311,7 +312,7 @@ MonoBehaviour:
           play the game with him. Trust me, it\u2019s gonna be fun."
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Annoyed
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -345,7 +346,7 @@ MonoBehaviour:
           happening! Elios protect me!"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Annoyed
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -391,7 +392,7 @@ MonoBehaviour:
         sentence: You know what I really like about the booze?
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_Accused
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -419,13 +420,13 @@ MonoBehaviour:
         sentence: "It wows me... That\u2019s beautiful!"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Annoyed
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: Elios
-        sentence: (looks away distractedly)  [sad sighs]
+        sentence: '[sad sighs]'
       - animation:
           animator: {fileID: 0}
           AnimationStateName: 
@@ -470,7 +471,7 @@ MonoBehaviour:
         sentence: "Wait Elios! Why do you say no? We haven\u2019t even played yet."
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Serious
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -497,7 +498,7 @@ MonoBehaviour:
         sentence: "Consider your decision well, kid\u2026 before your time runs out. "
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Annoyed
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -607,7 +608,7 @@ MonoBehaviour:
           can\u2019t escape. I am part of you! "
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Serious
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -625,7 +626,7 @@ MonoBehaviour:
         sentence: "We haven\u2019t even started yet! Drink one more, Elios!"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Stop_It
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -645,7 +646,6 @@ MonoBehaviour:
       nextDecisions: 
   currentDialogue: 0
   minigameManager: {fileID: 5219269308381401115}
-  isClick: 0
   camPosition: {fileID: 4132076722556807739}
   objectsToDeactivate:
   - {fileID: 0}
