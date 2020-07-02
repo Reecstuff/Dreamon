@@ -2005,6 +2005,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1449287464991017927, guid: 4f62762282eee734d95da04c5cec6920,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7748925604601613184, guid: 4f62762282eee734d95da04c5cec6920,
         type: 3}
       propertyPath: m_Name
@@ -2013,7 +2018,7 @@ PrefabInstance:
     - target: {fileID: 7748925604601613184, guid: 4f62762282eee734d95da04c5cec6920,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7748925604601613185, guid: 4f62762282eee734d95da04c5cec6920,
         type: 3}
@@ -2025,6 +2030,11 @@ PrefabInstance:
       propertyPath: chessPlane
       value: 
       objectReference: {fileID: 754041506}
+    - target: {fileID: 7748925604601613185, guid: 4f62762282eee734d95da04c5cec6920,
+        type: 3}
+      propertyPath: movePiece
+      value: 
+      objectReference: {fileID: 8300000, guid: e0f3898d89c2ce448851af4212041147, type: 3}
     - target: {fileID: 7748925604601613190, guid: 4f62762282eee734d95da04c5cec6920,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2929,7 +2939,7 @@ PrefabInstance:
     - target: {fileID: 5738023402585142806, guid: 28f39d92bb08188449602cd35f923bda,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5738023402585142807, guid: 28f39d92bb08188449602cd35f923bda,
         type: 3}
