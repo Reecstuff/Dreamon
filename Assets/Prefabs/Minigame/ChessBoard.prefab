@@ -52,6 +52,8 @@ MonoBehaviour:
   selectedHighlight: {fileID: 3855067032046630639, guid: 3b4f29e23f9b7e648a1a3755c96eda32,
     type: 3}
   assignedTarget: {fileID: 0}
+  movePiece: {fileID: 8300000, guid: e0f3898d89c2ce448851af4212041147, type: 3}
+  hitPiece: {fileID: 8300000, guid: 361f526c704f3bf4f8cbe2b01c8ae422, type: 3}
 --- !u!114 &7748925604601613191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -77,7 +79,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -6547479504731321655, guid: aaf1ef32f3fd50c4d9bb9cea86e36964,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: e0f3898d89c2ce448851af4212041147, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
