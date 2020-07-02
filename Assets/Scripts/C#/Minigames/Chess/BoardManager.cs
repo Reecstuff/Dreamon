@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class BoardManager : MonoBehaviour
 {
 	public static BoardManager Instance { set; get; }
@@ -27,8 +28,11 @@ public class BoardManager : MonoBehaviour
 	int winRounds;
 	int loseRounds;
 
+	AudioSource source;
+
 	private void Start()
 	{
+		source = GetComponent<AudioSource>();
 		Instance = this;
 		SpawnAllChessmans(rounds);
 		Cursor.visible = true;
@@ -131,7 +135,8 @@ public class BoardManager : MonoBehaviour
 			selectedChessman.transform.localPosition = new Vector3(x + 0.5f, selectedChessman.transform.localScale.y / 2, z + 0.5f);
 			selectedChessman.SetPosition(x, z);
 			Chessmans[x, z] = selectedChessman;
-		} 
+		}
+		source.Play();
 
 		BoardHighlights.Instance.Hidehighlights();
 		selectedChessman = null;
