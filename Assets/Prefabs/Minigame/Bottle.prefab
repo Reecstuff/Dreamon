@@ -191,8 +191,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isAlc: 0
-  drinkAlc: {fileID: 8300000, guid: 22da7244c6f746046b6ae11bd77b9955, type: 3}
-  drinkWater: {fileID: 8300000, guid: f703a54c4ec58b84ca2002d664c20ead, type: 3}
+  drinkAlc: {fileID: 8300000, guid: 301a07cdb11330a4eaaf3b8da681fac2, type: 3}
+  drinkWater: {fileID: 8300000, guid: c1122316b7a818a4ab16191bd0c0fe42, type: 3}
   changeColorOnThis: {fileID: 6469375693512636281}
   alcColor: {r: 1, g: 0.88236654, b: 0.482, a: 0.5019608}
   normalColor: {r: 0.47500002, g: 0.60676473, b: 1, a: 0.5019608}
