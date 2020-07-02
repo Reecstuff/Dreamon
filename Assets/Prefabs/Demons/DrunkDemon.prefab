@@ -648,6 +648,7 @@ MonoBehaviour:
   currentDialogue: 0
   minigameManager: {fileID: 5219269308381401115}
   camPosition: {fileID: 4132076722556807739}
+  source: {fileID: 1080324107628060643}
   objectsToDeactivate:
   - {fileID: 0}
   - {fileID: 0}
