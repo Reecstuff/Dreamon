@@ -2846,6 +2846,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 232800489805015884, guid: 28f39d92bb08188449602cd35f923bda,
+        type: 3}
+      propertyPath: drinkWater
+      value: 
+      objectReference: {fileID: 8300000, guid: 301a07cdb11330a4eaaf3b8da681fac2, type: 3}
+    - target: {fileID: 232800489805015884, guid: 28f39d92bb08188449602cd35f923bda,
+        type: 3}
+      propertyPath: drinkAlc
+      value: 
+      objectReference: {fileID: 8300000, guid: c1122316b7a818a4ab16191bd0c0fe42, type: 3}
     - target: {fileID: 3593583593960480323, guid: 28f39d92bb08188449602cd35f923bda,
         type: 3}
       propertyPath: m_InnerSpotAngle
@@ -2941,6 +2951,11 @@ PrefabInstance:
       propertyPath: assignedTarget
       value: 
       objectReference: {fileID: 1605131745}
+    - target: {fileID: 6456374673831038916, guid: 28f39d92bb08188449602cd35f923bda,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28f39d92bb08188449602cd35f923bda, type: 3}
 --- !u!1001 &730186039905894042
