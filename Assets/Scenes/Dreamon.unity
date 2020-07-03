@@ -2005,6 +2005,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1449287464991017927, guid: 4f62762282eee734d95da04c5cec6920,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7748925604601613184, guid: 4f62762282eee734d95da04c5cec6920,
         type: 3}
       propertyPath: m_Name
@@ -2025,6 +2030,11 @@ PrefabInstance:
       propertyPath: chessPlane
       value: 
       objectReference: {fileID: 754041506}
+    - target: {fileID: 7748925604601613185, guid: 4f62762282eee734d95da04c5cec6920,
+        type: 3}
+      propertyPath: movePiece
+      value: 
+      objectReference: {fileID: 8300000, guid: e0f3898d89c2ce448851af4212041147, type: 3}
     - target: {fileID: 7748925604601613190, guid: 4f62762282eee734d95da04c5cec6920,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2099,6 +2109,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1080324107628060643, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[1].cameraTarget
@@ -2846,6 +2861,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 232800489805015884, guid: 28f39d92bb08188449602cd35f923bda,
+        type: 3}
+      propertyPath: drinkWater
+      value: 
+      objectReference: {fileID: 8300000, guid: 72bc68b2e0cd7c5458b0497fc2ed0321, type: 3}
+    - target: {fileID: 232800489805015884, guid: 28f39d92bb08188449602cd35f923bda,
+        type: 3}
+      propertyPath: drinkAlc
+      value: 
+      objectReference: {fileID: 8300000, guid: beef9fe9b545eb94288d92c22edbf988, type: 3}
     - target: {fileID: 3593583593960480323, guid: 28f39d92bb08188449602cd35f923bda,
         type: 3}
       propertyPath: m_InnerSpotAngle
@@ -2941,6 +2966,11 @@ PrefabInstance:
       propertyPath: assignedTarget
       value: 
       objectReference: {fileID: 1605131745}
+    - target: {fileID: 6456374673831038916, guid: 28f39d92bb08188449602cd35f923bda,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28f39d92bb08188449602cd35f923bda, type: 3}
 --- !u!1001 &730186039905894042

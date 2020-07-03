@@ -11,11 +11,11 @@ public class DialogueTrigger : Interactable
 
 	public MinigameManager minigameManager;
 
-
 	public Transform camPosition;
 
 	protected DialogueManager dialogueManager;
 
+	public AudioSource source;
 
 	protected override void InitValues()
 	{
@@ -26,6 +26,8 @@ public class DialogueTrigger : Interactable
 	//Starts interacting with the player
 	public override void Interact()
 	{
+		source.Play();
+
 		TriggerDialogue();
 	}
 
