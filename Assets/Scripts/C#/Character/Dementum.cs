@@ -14,8 +14,10 @@ public class Dementum : DialogueTrigger
     [SerializeField]
     float deathAnimationTime = 6;
 
-    public override void TheEnd()
+    public override void TheEnd(bool isLose)
     {
+        Debug.Log(isLose);
+
         Sequence s = DOTween.Sequence();
         // Fly Away
 

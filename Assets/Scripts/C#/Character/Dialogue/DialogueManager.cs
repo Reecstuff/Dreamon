@@ -312,7 +312,16 @@ public class DialogueManager : MonoBehaviour
             cameraController.MoveToOffset(player.transform);
             cameraController.StartResetCameraToPlayer();
             player.motor.ResumeAgent();
-            currentDialogObject.TheEnd();
+
+            if (currentDialogObject.isLost == true)
+            {
+                currentDialogObject.TheEnd(true);
+            }
+            else
+            {
+                currentDialogObject.TheEnd(false);
+            }
+
             currentDialogObject = null;
         }
     }
