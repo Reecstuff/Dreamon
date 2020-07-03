@@ -15,12 +15,22 @@ public class Drink : MonoBehaviour
 	[SerializeField]
 	AudioClip drinkWater;
 
+	[SerializeField]
+	MeshRenderer changeColorOnThis;
 
+	[SerializeField]
+	Color alcColor = Color.yellow;
+
+	[SerializeField]
+	Color normalColor = Color.white;
+
+	MeshRenderer[] allRenderer;
 	AudioSource source;
-	private void Start()
+	private void Awake()
 	{
 		drinkManager = GetComponentInParent<DrinkManager>();
 		source = GetComponent<AudioSource>();
+		allRenderer = GetComponentsInChildren<MeshRenderer>();
 	}
 
 	//Drink the bottle by deactivating the MeshRenderer
@@ -37,7 +47,9 @@ public class Drink : MonoBehaviour
 			source.clip = drinkWater;
 		}
 		source.Play();
-		GetComponent<MeshRenderer>().enabled = false;
+
+
+		SetAllRenderer(false);
 	}
 
 	public void SetBottle(bool isAlcoholic = true)
@@ -47,12 +59,20 @@ public class Drink : MonoBehaviour
 		if(isAlcoholic)
 		{
 
-			GetComponent<Renderer>().material.SetColor("_Color", new Color(1, 0.92f, 0.016f, 1));
-			GetComponent<MeshRenderer>().enabled = true;
+			changeColorOnThis.material.SetColor("_Color", alcColor);
+			SetAllRenderer(true);
 		}
 		else
 		{
-			GetComponent<Renderer>().material.SetColor("_Color", new Color(0.5f, 0.25f, 0.05f));
+			changeColorOnThis.material.SetColor("_Color", normalColor);
+		}
+	}
+
+	void SetAllRenderer(bool enable)
+	{
+		for (int i = 0; i < allRenderer.Length; i++)
+		{
+			allRenderer[i].enabled = enable;
 		}
 	}
 }

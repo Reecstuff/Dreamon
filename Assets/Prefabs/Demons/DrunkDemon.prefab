@@ -23,8 +23,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2959868926908075439}
-  m_LocalRotation: {x: 0.09062931, y: 0.7237422, z: -0.089343406, w: 0.67823404}
-  m_LocalPosition: {x: -1.3537102, y: 0.8686981, z: 1.7898464}
+  m_LocalRotation: {x: 0.0940498, y: -0.27458933, z: 0.037039068, w: 0.956234}
+  m_LocalPosition: {x: 0.95591736, y: 1.0114336, z: 2.4730263}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5219269308381401104}
@@ -72,6 +72,7 @@ GameObject:
   - component: {fileID: 5219269308381401115}
   - component: {fileID: 1605131746}
   - component: {fileID: 2510484452659403245}
+  - component: {fileID: 1080324107628060643}
   m_Layer: 0
   m_Name: DrunkDemon
   m_TagString: Untagged
@@ -142,9 +143,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7370e93f5d3bec34ab9fe648c44b2d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isClick: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineSpacing: 0.01
-  radius: 1
+  radius: 0.1
   interactionTransform: {fileID: 1859216236295679692}
   dialogue:
   - option:
@@ -179,7 +181,7 @@ MonoBehaviour:
         sentence: You bet! Or is there any other soul?
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Depressive
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -198,7 +200,7 @@ MonoBehaviour:
           of booze!
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Rejecting
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -217,7 +219,7 @@ MonoBehaviour:
           and drink with an old man!"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Serious
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -235,7 +237,7 @@ MonoBehaviour:
         sentence: "You shut up! Y\u2019all know nothing! You are so weak. "
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Idle
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -254,7 +256,7 @@ MonoBehaviour:
           night. All the empty bottles in front of your eyes. Are you that blind!?"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Serious
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -273,7 +275,7 @@ MonoBehaviour:
           the wish to die\u2026. doesn\u2019t it remind you of somebody!"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Stop_It
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -292,7 +294,7 @@ MonoBehaviour:
           about the love\u2026 about the betrayal\u2026 "
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Stop_It
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -311,7 +313,7 @@ MonoBehaviour:
           play the game with him. Trust me, it\u2019s gonna be fun."
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Annoyed
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -345,7 +347,7 @@ MonoBehaviour:
           happening! Elios protect me!"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Annoyed
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -391,7 +393,7 @@ MonoBehaviour:
         sentence: You know what I really like about the booze?
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_Accused
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -419,13 +421,13 @@ MonoBehaviour:
         sentence: "It wows me... That\u2019s beautiful!"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Annoyed
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: Elios
-        sentence: (looks away distractedly)  [sad sighs]
+        sentence: '[sad sighs]'
       - animation:
           animator: {fileID: 0}
           AnimationStateName: 
@@ -470,7 +472,7 @@ MonoBehaviour:
         sentence: "Wait Elios! Why do you say no? We haven\u2019t even played yet."
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Serious
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -497,7 +499,7 @@ MonoBehaviour:
         sentence: "Consider your decision well, kid\u2026 before your time runs out. "
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Annoyed
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -607,7 +609,7 @@ MonoBehaviour:
           can\u2019t escape. I am part of you! "
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Serious
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -625,7 +627,7 @@ MonoBehaviour:
         sentence: "We haven\u2019t even started yet! Drink one more, Elios!"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Stop_It
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -645,8 +647,8 @@ MonoBehaviour:
       nextDecisions: 
   currentDialogue: 0
   minigameManager: {fileID: 5219269308381401115}
-  isClick: 0
   camPosition: {fileID: 4132076722556807739}
+  source: {fileID: 1080324107628060643}
   objectsToDeactivate:
   - {fileID: 0}
   - {fileID: 0}
@@ -658,6 +660,103 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   deathAnimationTime: 6
+--- !u!82 &1080324107628060643
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5219269308381401114}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 721591663623174352, guid: aaf1ef32f3fd50c4d9bb9cea86e36964,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 92b98deff534038409a8ace4aba6f49c, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 20
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &6358166049041753480
 PrefabInstance:
   m_ObjectHideFlags: 0

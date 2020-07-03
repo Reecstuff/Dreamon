@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class BoardManager : MonoBehaviour
 {
 	public static BoardManager Instance { set; get; }
@@ -27,8 +28,17 @@ public class BoardManager : MonoBehaviour
 	int winRounds;
 	int loseRounds;
 
+	[SerializeField]
+	AudioClip movePiece;
+
+	[SerializeField]
+	AudioClip hitPiece;
+
+	AudioSource source;
+
 	private void Start()
 	{
+		source = GetComponent<AudioSource>();
 		Instance = this;
 		SpawnAllChessmans(rounds);
 		Cursor.visible = true;
@@ -72,8 +82,9 @@ public class BoardManager : MonoBehaviour
 				}
 				else
 				{
+
 					//If the player win the game
-					if (selectionY == 7)
+					if (selectionY == 7 && selectedHighlight.transform.localPosition.z >= 7)
 					{
 						winRounds++;
 						if (rounds == 3)
@@ -124,13 +135,21 @@ public class BoardManager : MonoBehaviour
 				Destroy(c.gameObject);
 				Destroy(selectedChessman.gameObject);
 				currentChessmans--;
+
+				source.clip = hitPiece;
+			}
+			else
+			{
+				source.clip = movePiece;
 			}
 
 			Chessmans[selectedChessman.CurrentX, selectedChessman.CurrentY] = null;
 			selectedChessman.transform.localPosition = new Vector3(x + 0.5f, selectedChessman.transform.localScale.y / 2, z + 0.5f);
 			selectedChessman.SetPosition(x, z);
 			Chessmans[x, z] = selectedChessman;
-		} 
+
+			source.Play();
+		}
 
 		BoardHighlights.Instance.Hidehighlights();
 		selectedChessman = null;
@@ -225,7 +244,6 @@ public class BoardManager : MonoBehaviour
 			//Spawn the players pieces
 			SpawnChessman(0, 4, 0);
 			SpawnChessman(0, 2, 2);
-			SpawnChessman(0, 0, 4);
 
 			SpawnChessman(1, 2, 5);
 			SpawnChessman(1, 2, 4);

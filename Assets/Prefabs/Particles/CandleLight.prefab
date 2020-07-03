@@ -9583,6 +9583,7 @@ GameObject:
   - component: {fileID: 400012}
   - component: {fileID: 10800000}
   - component: {fileID: 3439651691918324614}
+  - component: {fileID: 1145617535516771059}
   m_Layer: 0
   m_Name: Point light
   m_TagString: Untagged
@@ -9598,7 +9599,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.127, z: 0}
   m_LocalScale: {x: 1.3333334, y: 1.3333334, z: 1.3333334}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -9698,3 +9699,15 @@ MonoBehaviour:
   customCookieDistanceFalloffPower: 2
   customAngularFalloffThreshold: 0.8
   customAngularFalloffPower: 2
+--- !u!122 &1145617535516771059
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100012}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4281112302
+  m_Size: 0.2

@@ -273,12 +273,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 446af6dcc3ea53d4a84ae199664f1e6b, type: 3}
---- !u!1 &390445741 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6848547501841756805, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
-    type: 3}
-  m_PrefabInstance: {fileID: 571200853}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &449541309 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5373525419170948193, guid: 1801d5c861831044bba2b0f5e1203b02,
@@ -369,21 +363,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1123661508755550609, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
-        type: 3}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: d7b10f51a0879c849a63e853d230e874, type: 2}
     - target: {fileID: 4762247148625174641, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: transition
       value: 
       objectReference: {fileID: 449541309}
-    - target: {fileID: 6294546286153626216, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
-        type: 3}
-      propertyPath: radius
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 6558981377273023176, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -485,6 +469,18 @@ GameObject:
 --- !u!1 &571200860 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2481677735279295903, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+    type: 3}
+  m_PrefabInstance: {fileID: 571200853}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &571200861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 682538369242249932, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+    type: 3}
+  m_PrefabInstance: {fileID: 571200853}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &571200862 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2106620807604978049, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
     type: 3}
   m_PrefabInstance: {fileID: 571200853}
   m_PrefabAsset: {fileID: 0}
@@ -1009,12 +1005,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3316068189003582346, guid: 42fbe90f27e2b9341b3452e7a3770d55,
     type: 3}
   m_PrefabInstance: {fileID: 1378851287}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1162916202 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7240099534011098601, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
-    type: 3}
-  m_PrefabInstance: {fileID: 571200853}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1269672538
 MonoBehaviour:
@@ -2015,6 +2005,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -1449287464991017927, guid: 4f62762282eee734d95da04c5cec6920,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7748925604601613184, guid: 4f62762282eee734d95da04c5cec6920,
         type: 3}
       propertyPath: m_Name
@@ -2035,6 +2030,11 @@ PrefabInstance:
       propertyPath: chessPlane
       value: 
       objectReference: {fileID: 754041506}
+    - target: {fileID: 7748925604601613185, guid: 4f62762282eee734d95da04c5cec6920,
+        type: 3}
+      propertyPath: movePiece
+      value: 
+      objectReference: {fileID: 8300000, guid: e0f3898d89c2ce448851af4212041147, type: 3}
     - target: {fileID: 7748925604601613190, guid: 4f62762282eee734d95da04c5cec6920,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2109,6 +2109,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1080324107628060643, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[1].cameraTarget
@@ -2161,9 +2166,19 @@ PrefabInstance:
       objectReference: {fileID: 1378851288}
     - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[2].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
+    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[2].cameraTarget
       value: 
       objectReference: {fileID: 1411189595}
+    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[7].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
     - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[7].cameraTarget
@@ -2184,6 +2199,11 @@ PrefabInstance:
       propertyPath: dialogue.Array.data[0].option.Array.data[3].talks.Array.data[0].cameraTarget
       value: 
       objectReference: {fileID: 1378851288}
+    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[3].talks.Array.data[1].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
     - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[3].talks.Array.data[1].cameraTarget
@@ -2209,6 +2229,11 @@ PrefabInstance:
       propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[1].cameraTarget
       value: 
       objectReference: {fileID: 1378851288}
+    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[2].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
     - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[2].cameraTarget
@@ -2258,152 +2283,12 @@ PrefabInstance:
         type: 3}
       propertyPath: objectsToDeactivate.Array.data[7]
       value: 
-      objectReference: {fileID: 390445741}
+      objectReference: {fileID: 571200862}
     - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: objectsToDeactivate.Array.data[8]
       value: 
-      objectReference: {fileID: 1162916202}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[1].animation.AnimationStateName
-      value: Elios_Emo_ Depressive
-      objectReference: {fileID: 0}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[3].animation.AnimationStateName
-      value: Elios_Emo_ Rejecting
-      objectReference: {fileID: 0}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[5].animation.AnimationStateName
-      value: Elios_Emo_ Serious
-      objectReference: {fileID: 0}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[7].animation.AnimationStateName
-      value: Elios_Idle
-      objectReference: {fileID: 0}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[9].animation.AnimationStateName
-      value: Elios_Emo_ Serious
-      objectReference: {fileID: 0}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[11].animation.AnimationStateName
-      value: Elios_Emo_ Stop_It
-      objectReference: {fileID: 0}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[13].animation.AnimationStateName
-      value: Elios_Emo_ Stop_It
-      objectReference: {fileID: 0}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[15].animation.AnimationStateName
-      value: Elios_Emo_ Annoyed
-      objectReference: {fileID: 0}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[2].animation.animator
-      value: 
-      objectReference: {fileID: 1378851289}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[2].animation.AnimationStateName
-      value: Elios_Emo_ Annoyed
-      objectReference: {fileID: 0}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[7].animation.AnimationStateName
-      value: Elios_Emo_Accused
-      objectReference: {fileID: 0}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[7].animation.animator
-      value: 
-      objectReference: {fileID: 1378851289}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[10].sentence
-      value: '[sad sighs]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[2].talks.Array.data[10].animation.AnimationStateName
-      value: Elios_Emo_ Annoyed
-      objectReference: {fileID: 0}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[3].talks.Array.data[1].animation.AnimationStateName
-      value: Elios_Emo_ Serious
-      objectReference: {fileID: 0}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[3].talks.Array.data[1].animation.animator
-      value: 
-      objectReference: {fileID: 1378851289}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[3].talks.Array.data[4].animation.AnimationStateName
-      value: Elios_Emo_ Annoyed
-      objectReference: {fileID: 0}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[2].animation.animator
-      value: 
-      objectReference: {fileID: 1378851289}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[2].animation.AnimationStateName
-      value: Elios_Emo_ Serious
-      objectReference: {fileID: 0}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[4].animation.AnimationStateName
-      value: Elios_Emo_ Stop_It
-      objectReference: {fileID: 0}
-    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: radius
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.0940498
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.27458933
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.037039068
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.956234
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.95591736
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.0114336
-      objectReference: {fileID: 0}
-    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.4730263
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 571200861}
     - target: {fileID: 5219269308381401104, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2466,9 +2351,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5219269308381401115, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
-      propertyPath: endDoor
+      propertyPath: camTarget
       value: 
-      objectReference: {fileID: 1980949822}
+      objectReference: {fileID: 1995144031}
     - target: {fileID: 5219269308381401115, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: mainCamera
@@ -2481,14 +2366,14 @@ PrefabInstance:
       objectReference: {fileID: 1668239232}
     - target: {fileID: 5219269308381401115, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
-      propertyPath: camTarget
-      value: 
-      objectReference: {fileID: 1995144031}
-    - target: {fileID: 5219269308381401115, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
-        type: 3}
       propertyPath: minigame
       value: 
       objectReference: {fileID: 1995144029}
+    - target: {fileID: 5219269308381401115, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: endDoor
+      value: 
+      objectReference: {fileID: 1980949822}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a02ddb6b34c88c42a6fb3167d60249b, type: 3}
 --- !u!1001 &1821549315
@@ -2976,6 +2861,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 232800489805015884, guid: 28f39d92bb08188449602cd35f923bda,
+        type: 3}
+      propertyPath: drinkWater
+      value: 
+      objectReference: {fileID: 8300000, guid: 72bc68b2e0cd7c5458b0497fc2ed0321, type: 3}
+    - target: {fileID: 232800489805015884, guid: 28f39d92bb08188449602cd35f923bda,
+        type: 3}
+      propertyPath: drinkAlc
+      value: 
+      objectReference: {fileID: 8300000, guid: beef9fe9b545eb94288d92c22edbf988, type: 3}
     - target: {fileID: 3593583593960480323, guid: 28f39d92bb08188449602cd35f923bda,
         type: 3}
       propertyPath: m_InnerSpotAngle
@@ -3071,6 +2966,11 @@ PrefabInstance:
       propertyPath: assignedTarget
       value: 
       objectReference: {fileID: 1605131745}
+    - target: {fileID: 6456374673831038916, guid: 28f39d92bb08188449602cd35f923bda,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28f39d92bb08188449602cd35f923bda, type: 3}
 --- !u!1001 &730186039905894042
