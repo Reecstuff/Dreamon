@@ -2461,6 +2461,20 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7156026689738615707}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1825958856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1825958852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79279d3116f88bb419897cf8aadc24bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathAnimation: {fileID: 0}
+  animationDuration: 0
 --- !u!4 &1895373244 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,

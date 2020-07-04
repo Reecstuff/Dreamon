@@ -17,6 +17,8 @@ public class DialogueTrigger : Interactable
 
 	public AudioSource source;
 
+	public bool isLost;
+
 	protected override void InitValues()
 	{
 		base.InitValues();
@@ -41,7 +43,7 @@ public class DialogueTrigger : Interactable
 		}
 	}
 
-	public virtual void TheEnd()
+	public virtual void TheEnd(bool isLose)
 	{
 		// Do Something
 	}

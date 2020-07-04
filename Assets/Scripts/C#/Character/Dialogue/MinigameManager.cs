@@ -15,9 +15,8 @@ public class MinigameManager : MonoBehaviour
 
 	CameraController cameraController;
 
-
 	public int winRounds;
-	int loseRounds;
+	public int loseRounds;
 	public int[] nextWinDialog;
 	public int[] nextLoseDialog;
 
@@ -75,9 +74,9 @@ public class MinigameManager : MonoBehaviour
 				{
 					//Stop losing round
 					EndMinigame();
-					GetComponent<DialogueTrigger>().currentDialogue = nextWinDialog[i];
-					GetComponent<DialogueTrigger>().isClick = false;
-					GetComponent<DialogueTrigger>().TriggerDialogue();
+					dialogTrigger.currentDialogue = nextWinDialog[i];
+					dialogTrigger.isClick = false;
+					dialogTrigger.TriggerDialogue();
 				}
 			}
 			winRounds++;
@@ -91,12 +90,17 @@ public class MinigameManager : MonoBehaviour
 				{
 					//Stop losing round
 					EndMinigame();
-					GetComponent<DialogueTrigger>().currentDialogue = nextLoseDialog[i];
-					GetComponent<DialogueTrigger>().isClick = false;
-					GetComponent<DialogueTrigger>().TriggerDialogue();
+					dialogTrigger.currentDialogue = nextLoseDialog[i];
+					dialogTrigger.isClick = false;
+					dialogTrigger.TriggerDialogue();
 				}
 			}
 			loseRounds++;
+		}
+
+		if (nextLoseDialog.Length == loseRounds)
+		{
+			dialogTrigger.isLost = true;
 		}
 
 		if(endDoor)
