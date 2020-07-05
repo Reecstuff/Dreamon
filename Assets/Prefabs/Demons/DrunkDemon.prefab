@@ -71,7 +71,6 @@ GameObject:
   - component: {fileID: 5219269308381401104}
   - component: {fileID: 1605131746}
   - component: {fileID: 5219269308381401115}
-  - component: {fileID: 8980778719959874488}
   - component: {fileID: 2510484452659403245}
   - component: {fileID: 1080324107628060643}
   m_Layer: 0
@@ -130,22 +129,9 @@ MonoBehaviour:
   minigame: {fileID: 0}
   endDoor: {fileID: 0}
   winRounds: 0
+  loseRounds: 0
   nextWinDialog: 0300000004000000
   nextLoseDialog: 0100000002000000
---- !u!114 &8980778719959874488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5219269308381401114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79279d3116f88bb419897cf8aadc24bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  deathAnimation: {fileID: 0}
-  animationDuration: 0
 --- !u!114 &2510484452659403245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7370e93f5d3bec34ab9fe648c44b2d14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isClick: 0
+  hasInteracted: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineSpacing: 0.01
   radius: 0.1
@@ -664,6 +650,7 @@ MonoBehaviour:
   minigameManager: {fileID: 5219269308381401115}
   camPosition: {fileID: 4132076722556807739}
   source: {fileID: 1080324107628060643}
+  saveIndex: 2
   objectsToDeactivate:
   - {fileID: 0}
   - {fileID: 0}
@@ -687,7 +674,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 721591663623174352, guid: aaf1ef32f3fd50c4d9bb9cea86e36964,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 92b98deff534038409a8ace4aba6f49c, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1

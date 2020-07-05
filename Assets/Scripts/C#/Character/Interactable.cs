@@ -9,7 +9,7 @@ public class Interactable : OutlineObject
 	bool isFocus = false;
 	Transform player;
 
-	bool hasInteracted = false;
+	bool hasFocused = true;
 
 	protected override void InitValues()
 	{
@@ -26,13 +26,13 @@ public class Interactable : OutlineObject
 
 	void Update()
 	{
-		if (interactionTransform && isFocus && !hasInteracted)
+		if (interactionTransform && isFocus && !hasFocused)
 		{
 			float distance = Vector2.Distance(player.position, interactionTransform.position);
 			if (distance < radius)
 			{
 				Interact();
-				hasInteracted = true;
+				hasFocused = true;
 			}
 		}
 	}
@@ -41,14 +41,14 @@ public class Interactable : OutlineObject
 	{
 		isFocus = true;
 		player = playerTransform;
-		hasInteracted = false;
+		hasFocused = false;
 	}
 
 	public void OnDefocused()
 	{
 		isFocus = false;
 		player = null;
-		hasInteracted = false;
+		hasFocused = false;
 	}
 
 	private void OnDrawGizmosSelected()

@@ -17,4 +17,10 @@ public class StartEgoDialog : DialogueTrigger
 		TriggerDialogue();
 		FindObjectOfType<DialogueManager>().minigameManager = minigameManager;
 	}
+
+	public override void TheEnd(bool isLose)
+	{
+		base.TheEnd(isLose);
+		SetInactive();
+	}
 }

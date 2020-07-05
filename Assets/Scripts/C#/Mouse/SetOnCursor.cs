@@ -110,7 +110,7 @@ public class SetOnCursor : MonoBehaviour
 
         if (interactable)
         {
-            if(!interactable.isClick)
+            if(!interactable.hasInteracted)
             {
                 if(cursorLight.color != interactColor)
                 {

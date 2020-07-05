@@ -74,8 +74,11 @@ public class ScaleOnMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     void OnDisable()
     {
-        recT.DOKill();
-        recT.localScale = Vector3.one;
+        if(recT)
+        {
+            recT.DOKill();
+            recT.localScale = Vector3.one;
+        }
     }
 
     /// <summary>

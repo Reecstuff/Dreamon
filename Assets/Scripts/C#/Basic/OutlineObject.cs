@@ -7,7 +7,7 @@ using UnityEngine;
 /// </summary>
 public class OutlineObject : MonoBehaviour
 {
-    public bool isClick = false;
+    public bool hasInteracted = false;
 
 
     [SerializeField]
@@ -16,7 +16,7 @@ public class OutlineObject : MonoBehaviour
     [SerializeField]
     float outlineSpacing = 0.01f;
 
-    Renderer[] rendererCollecton;
+    Renderer[] rendererCollection;
 
     MaterialPropertyBlock propBlock;
 
@@ -58,7 +58,7 @@ public class OutlineObject : MonoBehaviour
     protected virtual void InitValues()
     {
         cam = Camera.main;
-        rendererCollecton = GetComponentsInChildren<Renderer>();
+        rendererCollection = GetComponentsInChildren<Renderer>();
         propBlock = new MaterialPropertyBlock();
     }
 
@@ -68,12 +68,13 @@ public class OutlineObject : MonoBehaviour
     /// </summary>
     void SwitchOutlined(bool outlined)
     {
-        if(!isClick)
+        if(rendererCollection != null)
+        if(!hasInteracted)
         {
-            for (int i = 0; i < rendererCollecton.Length; i++)
+            for (int i = 0; i < rendererCollection.Length; i++)
             {
                 // Get the current PropertyBlock
-                rendererCollecton[i].GetPropertyBlock(propBlock);
+                rendererCollection[i].GetPropertyBlock(propBlock);
 
                 // Change Values
                 propBlock.SetFloat("_currentTime", Time.time);
@@ -82,21 +83,21 @@ public class OutlineObject : MonoBehaviour
                 propBlock.SetFloat("_enable", (outlined ? 1.0f : 0.0f));
 
                 // Write it back in
-                rendererCollecton[i].SetPropertyBlock(propBlock);
+                rendererCollection[i].SetPropertyBlock(propBlock);
             }
         }
         else
         {
-            for (int i = 0; i < rendererCollecton.Length; i++)
+            for (int i = 0; i < rendererCollection.Length; i++)
             {
                 // Get the current PropertyBlock
-                rendererCollecton[i].GetPropertyBlock(propBlock);
+                rendererCollection[i].GetPropertyBlock(propBlock);
 
                 // Change Values
                 propBlock.SetFloat("_enable", (0.0f));
 
                 // Write it back in
-                rendererCollecton[i].SetPropertyBlock(propBlock);
+                rendererCollection[i].SetPropertyBlock(propBlock);
             }
         }
     }

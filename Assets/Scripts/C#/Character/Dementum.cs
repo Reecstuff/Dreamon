@@ -16,7 +16,9 @@ public class Dementum : DialogueTrigger
 
     public override void TheEnd(bool isLose)
     {
-        Debug.Log(isLose);
+        base.TheEnd(isLose);
+
+        Debug.Log(gameObject.name + " " + isLose);
 
         Sequence s = DOTween.Sequence();
         // Fly Away

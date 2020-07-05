@@ -23,8 +23,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 387284189409848624}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.959, y: 0.239, z: -0.342}
+  m_LocalRotation: {x: -0.071000315, y: 0.06861853, z: -0.015916666, w: -0.994986}
+  m_LocalPosition: {x: 6.352644, y: 0.31208277, z: -1.0717716}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7156026689946373128}
@@ -75,6 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bdce08c02355b94ab3da141e9827148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasInteracted: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineSpacing: 0.01
   radius: 3
@@ -153,7 +154,7 @@ MonoBehaviour:
         sentence: "Oh\u2026 Ehm...hey... my name is Ego, and yours\u2026?"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Annoyed
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -171,7 +172,7 @@ MonoBehaviour:
         sentence: "Ehm\u2026 Do you know this place? "
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Depressive
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -207,7 +208,7 @@ MonoBehaviour:
         sentence: "Not today! Let\u2019s be friends! "
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Rejecting
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -225,7 +226,7 @@ MonoBehaviour:
         sentence: "(surprised) Ohh\u2026 So you already have a friend!?"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Annoyed
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -261,7 +262,7 @@ MonoBehaviour:
         sentence: "Maybe...if we play a game\u2026I will go."
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Annoyed
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -305,7 +306,7 @@ MonoBehaviour:
       talks:
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Depressive
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -323,7 +324,7 @@ MonoBehaviour:
         sentence: "(happy) Yea\u2026 of course I won, I knew it!"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Annoyed
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -340,7 +341,7 @@ MonoBehaviour:
       talks:
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ FakeSmile
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -359,7 +360,7 @@ MonoBehaviour:
           Please\u2026.!"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ LookingAtEgo
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -380,7 +381,7 @@ MonoBehaviour:
           be with you... "
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Annoyed
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -391,8 +392,9 @@ MonoBehaviour:
       nextDecisions: 
   currentDialogue: 0
   minigameManager: {fileID: 1133812109691748872}
-  isClick: 0
   camPosition: {fileID: 266097371674798222}
+  source: {fileID: 0}
+  saveIndex: 1
 --- !u!114 &1133812109691748872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -411,5 +413,6 @@ MonoBehaviour:
   minigame: {fileID: 0}
   endDoor: {fileID: 0}
   winRounds: 0
+  loseRounds: 0
   nextWinDialog: 02000000
   nextLoseDialog: 01000000

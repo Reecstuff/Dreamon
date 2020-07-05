@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-
+using System.Reflection;
 
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour
@@ -24,6 +24,12 @@ public class PlayerController : MonoBehaviour
     {
         cam = Camera.main;
         motor = GetComponent<PlayerMotor>();
+
+        if (SaveManager.instance)
+        {
+            SaveManager.instance.OnLoadSave += LoadPlayer;
+            SaveManager.instance.currentAutoSave.OnAutoSave += SavePlayer;
+        }
     }
 
     // Update is called once per frame
@@ -31,6 +37,16 @@ public class PlayerController : MonoBehaviour
     {
         CheckForInteractable();
         MoveCharacter();
+    }
+
+    public void LoadPlayer()
+    {
+        transform.position = SaveManager.instance.GetPlayerPosition();
+    }
+
+    public void SavePlayer()
+    {
+        SaveManager.instance.Save(transform.position);
     }
 
     void CheckForInteractable()
@@ -71,7 +87,7 @@ public class PlayerController : MonoBehaviour
 
     public void SetFocus(Interactable newFocus)
     {
-        if (newFocus.isClick)
+        if (newFocus.hasInteracted)
             return;
 
         if (newFocus != focus)
@@ -97,5 +113,13 @@ public class PlayerController : MonoBehaviour
 
         focus = null;
         motor.StopFollowingTarget();
+    }
+
+    private void OnDisable()
+    {
+        if (SaveManager.instance)
+        {
+            SaveManager.instance.OnLoadSave -= LoadPlayer;
+        }
     }
 }

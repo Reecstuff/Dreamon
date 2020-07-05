@@ -75,7 +75,7 @@ public class MinigameManager : MonoBehaviour
 					//Stop losing round
 					EndMinigame();
 					dialogTrigger.currentDialogue = nextWinDialog[i];
-					dialogTrigger.isClick = false;
+					dialogTrigger.hasInteracted = false;
 					dialogTrigger.TriggerDialogue();
 				}
 			}
@@ -91,7 +91,7 @@ public class MinigameManager : MonoBehaviour
 					//Stop losing round
 					EndMinigame();
 					dialogTrigger.currentDialogue = nextLoseDialog[i];
-					dialogTrigger.isClick = false;
+					dialogTrigger.hasInteracted = false;
 					dialogTrigger.TriggerDialogue();
 				}
 			}

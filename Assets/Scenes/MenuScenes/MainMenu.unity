@@ -663,6 +663,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: {fileID: 1250482552}
   time: 4
+--- !u!114 &563071676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563071673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c3cbe9f0419446f44ab1aade92b0af02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadText: dream on
 --- !u!1 &586505316 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8675673900953465668, guid: fad27ae807bf8c9459db58ef836eaf48,
@@ -1452,6 +1465,16 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 298.90002
       objectReference: {fileID: 0}
+    - target: {fileID: 8675673900980995802, guid: fad27ae807bf8c9459db58ef836eaf48,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8675673900980995802, guid: fad27ae807bf8c9459db58ef836eaf48,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8675673900980995805, guid: fad27ae807bf8c9459db58ef836eaf48,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -1496,6 +1519,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontSizeBase
       value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 8675673900980995805, guid: fad27ae807bf8c9459db58ef836eaf48,
+        type: 3}
+      propertyPath: m_textAlignment
+      value: 514
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fad27ae807bf8c9459db58ef836eaf48, type: 3}
