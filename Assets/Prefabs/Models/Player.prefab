@@ -242,8 +242,8 @@ MonoBehaviour:
       clip: {fileID: 0}
     cameraTarget: {fileID: 0}
     name: Elios
-    sentence: Huh
-    delay: 4
+    sentence: "How annoying\u2026"
+    delay: 3
     resultIndex: 0
   - animation:
       animator: {fileID: 0}
@@ -253,8 +253,30 @@ MonoBehaviour:
       clip: {fileID: 0}
     cameraTarget: {fileID: 0}
     name: Ego
-    sentence: What? What? What?
-    delay: 2
+    sentence: "Finally\u2026! It\u2019s playtime!"
+    delay: 5
+    resultIndex: 0
+  - animation:
+      animator: {fileID: 0}
+      AnimationStateName: 
+    audio:
+      source: {fileID: 0}
+      clip: {fileID: 0}
+    cameraTarget: {fileID: 0}
+    name: Ego
+    sentence: "How did you do that?! You\u2019re the best!"
+    delay: 5
+    resultIndex: 0
+  - animation:
+      animator: {fileID: 0}
+      AnimationStateName: 
+    audio:
+      source: {fileID: 0}
+      clip: {fileID: 0}
+    cameraTarget: {fileID: 0}
+    name: Elios
+    sentence: "How do you know\u2026"
+    delay: 5
     resultIndex: 0
 --- !u!1 &2824791702060548854
 GameObject:

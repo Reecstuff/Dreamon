@@ -56,6 +56,13 @@ public class BetweenText : MonoBehaviour
         StartCoroutine(GoThroughDialogues());
     }
 
+    public void ClearText()
+    {
+        StopCoroutine(GoThroughDialogues());
+        currentCount = 0;
+        currentTalks.Clear();
+        dialogueManager.animator.SetBool("IsOpen", false);
+    }
 
     void InitValues()
     {
@@ -69,6 +76,9 @@ public class BetweenText : MonoBehaviour
 
         while(i < currentCount)
         {
+            if (currentTalks.Count <= 0)
+                break;
+
             if(!dialogueManager.CheckIsOpen())
             {
                 if(currentTalks[i].delay > 0)
@@ -118,7 +128,7 @@ public class BetweenText : MonoBehaviour
         if(!string.IsNullOrEmpty(text))
             StartCoroutine(TypeSentence(text));
 
-        StartCoroutine(CloseDialogue());
+        StartCoroutine(CloseDialogue(text));
     }
 
     /// <summary>
@@ -188,11 +198,12 @@ public class BetweenText : MonoBehaviour
     /// <summary>
     /// Clear text after a specific amount of time
     /// </summary>
-    IEnumerator CloseDialogue()
+    IEnumerator CloseDialogue(string text)
     {
         yield return new WaitForSeconds(timeToRead);
 
-        if(!dialogueManager.CheckIsDialogue())
+
+        if(textField.text.Equals(text))
             dialogueManager.animator.SetBool("IsOpen", false);
     }
 }
