@@ -38,6 +38,7 @@ public class AutoSave : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if(OnAutoSave != null)
         if(Time.time - currentTimer >= autoSaveSeconds)
         {
             OnAutoSave();
