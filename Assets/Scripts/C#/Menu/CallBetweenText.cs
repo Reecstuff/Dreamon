@@ -23,4 +23,9 @@ public class CallBetweenText : MonoBehaviour
 
         betweenText.SetText(introTalk);
     }
+
+    public void CallBetween(TimedTalk[] timedTalk)
+    {
+        betweenText.SetText(timedTalk);
+    }
 }
