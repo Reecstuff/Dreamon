@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &156197122331905069
+--- !u!1 &9173834014691732109
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3029471949424239701}
-  - component: {fileID: 4606404119064983191}
-  - component: {fileID: 319973830481152471}
-  - component: {fileID: 3538207769398628994}
-  - component: {fileID: 1578116814462750604}
+  - component: {fileID: 9173834014691732105}
+  - component: {fileID: 9173834014691732106}
+  - component: {fileID: 9173834014691732107}
+  - component: {fileID: 9173834014691732108}
+  - component: {fileID: 9173834014691732104}
+  - component: {fileID: 5724604354764669987}
   m_Layer: 0
-  m_Name: Shell
+  m_Name: Dayak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
---- !u!4 &3029471949424239701
+--- !u!4 &9173834014691732105
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156197122331905069}
+  m_GameObject: {fileID: 9173834014691732109}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_LocalPosition: {x: -27.43, y: 0.46, z: -7.3700004}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &4606404119064983191
+--- !u!33 &9173834014691732106
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156197122331905069}
+  m_GameObject: {fileID: 9173834014691732109}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &319973830481152471
+--- !u!23 &9173834014691732107
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156197122331905069}
+  m_GameObject: {fileID: 9173834014691732109}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -60,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: -7573661587976805087, guid: 58a2b8608ec6a5b4a92e160358d8b8b7, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -81,37 +82,62 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &3538207769398628994
+--- !u!65 &9173834014691732108
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156197122331905069}
+  m_GameObject: {fileID: 9173834014691732109}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1578116814462750604
+--- !u!114 &9173834014691732104
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156197122331905069}
+  m_GameObject: {fileID: 9173834014691732109}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48fbd4c8603d98c41a3447c5c954330d, type: 3}
+  m_Script: {fileID: 11500000, guid: d7c4268f7c154c645be5dcf1130bf241, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTarget: {fileID: 0}
+  mainCamera: {fileID: 0}
+  cameraPosition: {fileID: 0}
+  minigame: {fileID: 0}
+  endDoor: {fileID: 0}
+  winRounds: 0
+  loseRounds: 0
+  nextWinDialog: 01000000
+  nextLoseDialog: 02000000
+--- !u!114 &5724604354764669987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9173834014691732109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e125945790ad149a299f5623043af3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hasInteracted: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineSpacing: 0.01
   radius: 3
-  interactionTransform: {fileID: 3029471949424239701}
-  isWin: 0
-  assignedTarget: {fileID: 0}
-  winDialogue: 0
-  loseDialogue: 0
+  interactionTransform: {fileID: 0}
+  dialogue: []
+  currentDialogue: 0
+  minigameManager: {fileID: 0}
+  camPosition: {fileID: 0}
+  source: {fileID: 0}
+  saveIndex: 0
+  objectsToDeactivate: []
+  deathAnimationTime: 6
