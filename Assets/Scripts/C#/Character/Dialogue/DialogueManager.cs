@@ -306,6 +306,13 @@ public class DialogueManager : MonoBehaviour
         {
             selectMinigame = false;
             minigameManager.StartNewMinigame();
+
+            if (minigameManager.minigame.name == "Wimmelbild")
+            {
+                cameraController.MoveToOffset(player.transform);
+                cameraController.StartResetCameraToPlayer();
+                player.motor.ResumeAgent();
+            }
         }
         else
         {
