@@ -243,7 +243,7 @@ public class DialogueManager : MonoBehaviour
         {
             if(animation.animator)
                 currentAnimator = animation.animator;
-
+            
             if(currentAnimator)
                 currentAnimator.CrossFade(animation.AnimationStateName, 0.3f);
         }
@@ -268,6 +268,10 @@ public class DialogueManager : MonoBehaviour
 
         for (int i = 0; i < sentence.ToCharArray().Length; i++)
         {
+
+            if (!CheckIsOpen())
+                break;
+
             dialogueText.text += sentence.ToCharArray()[i];
 
             // Check for new lines
@@ -281,7 +285,20 @@ public class DialogueManager : MonoBehaviour
             }
 
             yield return new WaitForSeconds(timeForTextInSeconds);
+
         }
+    }
+
+    public void DisableButtons()
+    {
+
+        for (int i = 0; i < decisionsButtons.Length; i++)
+        {
+            decisionsButtons[i].gameObject.SetActive(false);
+        }
+
+        continueButton.gameObject.SetActive(false);
+        endButton.gameObject.SetActive(false);
     }
 
     /// <summary>
@@ -290,8 +307,8 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         UnityEngine.Cursor.visible = false;
+        StopCoroutine(nameof(TypeSentence));
         animator.SetBool("IsOpen", false);
-
 
         //Stop focusing any objects
         player.RemoveFocus();
@@ -324,6 +341,20 @@ public class DialogueManager : MonoBehaviour
 
             currentDialogObject = null;
         }
+    }
+
+    public bool CheckIsOpen()
+    {
+        return animator.GetBool("IsOpen");
+    }
+
+    /// <summary>
+    /// Check for running Dialogue
+    /// </summary>
+    /// <returns>Returns true if current a dialogue is running</returns>
+    public bool CheckIsDialogue()
+    {
+        return currentDialogObject;
     }
 
     void StartTalk(Dialogue.Option option)

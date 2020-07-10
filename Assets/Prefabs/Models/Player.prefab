@@ -111,6 +111,7 @@ GameObject:
   - component: {fileID: 2824791701659454386}
   - component: {fileID: 2824791701659454389}
   - component: {fileID: 2824791701659454390}
+  - component: {fileID: 1378851291}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -219,6 +220,42 @@ MonoBehaviour:
   animStates:
   - Elios_Idle
   - Elios_Walking
+--- !u!114 &1378851291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2824791701659454387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d0944b6f569e80418f89defb456b0d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  betweenText: {fileID: 0}
+  introTalk:
+  - animation:
+      animator: {fileID: 0}
+      AnimationStateName: 
+    audio:
+      source: {fileID: 0}
+      clip: {fileID: 0}
+    cameraTarget: {fileID: 0}
+    name: Elios
+    sentence: Huh
+    delay: 4
+    resultIndex: 0
+  - animation:
+      animator: {fileID: 0}
+      AnimationStateName: 
+    audio:
+      source: {fileID: 0}
+      clip: {fileID: 0}
+    cameraTarget: {fileID: 0}
+    name: Ego
+    sentence: What? What? What?
+    delay: 2
+    resultIndex: 0
 --- !u!1 &2824791702060548854
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,9 +769,9 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: dec065616a6d91f49a3be16611549e13, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 425f4c0a9a94fcf4fba6bf1a83a1bf2c, type: 3}
---- !u!4 &5618148965763509242 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 425f4c0a9a94fcf4fba6bf1a83a1bf2c,
+--- !u!1 &8911767620690713065 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 425f4c0a9a94fcf4fba6bf1a83a1bf2c,
     type: 3}
   m_PrefabInstance: {fileID: 616175633434034400}
   m_PrefabAsset: {fileID: 0}
@@ -744,9 +781,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 616175633434034400}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8911767620690713065 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 425f4c0a9a94fcf4fba6bf1a83a1bf2c,
+--- !u!4 &5618148965763509242 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 425f4c0a9a94fcf4fba6bf1a83a1bf2c,
     type: 3}
   m_PrefabInstance: {fileID: 616175633434034400}
   m_PrefabAsset: {fileID: 0}

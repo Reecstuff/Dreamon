@@ -1465,6 +1465,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 298.90002
       objectReference: {fileID: 0}
+    - target: {fileID: 8675673900953465723, guid: fad27ae807bf8c9459db58ef836eaf48,
+        type: 3}
+      propertyPath: clickAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 494ce135eb089714e87ced27366a194a, type: 3}
     - target: {fileID: 8675673900980995802, guid: fad27ae807bf8c9459db58ef836eaf48,
         type: 3}
       propertyPath: m_AnchoredPosition.x
