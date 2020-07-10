@@ -3066,7 +3066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e6aa5402ccc1d4196ca193f2d3de99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isClick: 0
+  hasInteracted: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineSpacing: 0.01
   radius: 4
@@ -3099,6 +3099,8 @@ MonoBehaviour:
   currentDialogue: 0
   minigameManager: {fileID: 0}
   camPosition: {fileID: 0}
+  source: {fileID: 0}
+  saveIndex: 0
 --- !u!135 &3992417580158302676
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3570,7 +3572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31d67678b46af864e883978e63a952ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isClick: 0
+  hasInteracted: 0
   outlineColor: {r: 1, g: 0, b: 0, a: 1}
   outlineSpacing: 0.01
 --- !u!1 &1763753209686222866
@@ -12367,7 +12369,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e6aa5402ccc1d4196ca193f2d3de99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isClick: 0
+  hasInteracted: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineSpacing: 0.01
   radius: 3
@@ -12392,6 +12394,8 @@ MonoBehaviour:
   currentDialogue: 0
   minigameManager: {fileID: 0}
   camPosition: {fileID: 0}
+  source: {fileID: 0}
+  saveIndex: 0
 --- !u!1 &5155652747579670648
 GameObject:
   m_ObjectHideFlags: 0
@@ -17458,7 +17462,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7e6aa5402ccc1d4196ca193f2d3de99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isClick: 0
+  hasInteracted: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineSpacing: 0.01
   radius: 1
@@ -17491,6 +17495,8 @@ MonoBehaviour:
   currentDialogue: 0
   minigameManager: {fileID: 0}
   camPosition: {fileID: 0}
+  source: {fileID: 0}
+  saveIndex: 0
 --- !u!135 &1470810869
 SphereCollider:
   m_ObjectHideFlags: 0
