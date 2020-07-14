@@ -42,11 +42,12 @@ public class PlayerController : MonoBehaviour
     public void LoadPlayer()
     {
         transform.position = SaveManager.instance.GetPlayerPosition();
+        motor.SetAnimationState(SaveManager.instance.GetAnimationState());
     }
 
     public void SavePlayer()
     {
-        SaveManager.instance.Save(transform.position);
+        SaveManager.instance.Save(transform.position, motor.GetAnimationState());
     }
 
     void CheckForInteractable()

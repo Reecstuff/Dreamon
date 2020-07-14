@@ -11,12 +11,14 @@ public class SaveData
     public int currentScene;
     public bool[] resultHistory;
     public bool[] interactHistory;
+    public string animationStateName;
 
     public SaveData()
     {
         position = new float[3];
         resultHistory = new bool[1];
         interactHistory = new bool[1];
+        animationStateName = string.Empty;
     }
 
     public void ChangePosition(Vector3 pos)

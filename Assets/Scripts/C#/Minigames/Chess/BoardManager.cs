@@ -29,10 +29,10 @@ public class BoardManager : MonoBehaviour
 	int loseRounds;
 
 	[SerializeField]
-	AudioClip movePiece;
+	AudioClip[] movePiece;
 
 	[SerializeField]
-	AudioClip hitPiece;
+	AudioClip[] hitPiece;
 
 	AudioSource source;
 
@@ -136,11 +136,11 @@ public class BoardManager : MonoBehaviour
 				Destroy(selectedChessman.gameObject);
 				currentChessmans--;
 
-				source.clip = hitPiece;
+				source.clip = hitPiece[Random.Range(0, hitPiece.Length)];
 			}
 			else
 			{
-				source.clip = movePiece;
+				source.clip = movePiece[Random.Range(0, movePiece.Length)];
 			}
 
 			Chessmans[selectedChessman.CurrentX, selectedChessman.CurrentY] = null;
