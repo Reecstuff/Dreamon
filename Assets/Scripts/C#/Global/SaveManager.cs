@@ -81,9 +81,10 @@ public class SaveManager : MonoBehaviour
     /// <summary>
     /// Save current position of player
     /// </summary>
-    public void Save(Vector3 pos)
+    public void Save(Vector3 pos, string animationState)
     {
         data.ChangePosition(pos);
+        data.animationStateName = animationState;
         SaveGame();
     }
 
@@ -120,6 +121,15 @@ public class SaveManager : MonoBehaviour
     public Vector3 GetPlayerPosition()
     {
         return new Vector3(data.position[0], data.position[1], data.position[2]);
+    }
+
+    /// <summary>
+    /// Get Animationstate name
+    /// </summary>
+    /// <returns>Animationstate as string</returns>
+    public string GetAnimationState()
+    {
+        return data.animationStateName;
     }
 
     /// <summary>
