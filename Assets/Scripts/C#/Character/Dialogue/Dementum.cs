@@ -18,7 +18,6 @@ public class Dementum : DialogueTrigger
     {
         base.TheEnd(isLose);
 
-        Debug.Log(gameObject.name + " " + isLose);
 
         Sequence s = DOTween.Sequence();
         // Fly Away

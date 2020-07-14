@@ -50,6 +50,8 @@ public class SaveManager : MonoBehaviour
         }
     }
 
+    #region Save Methods
+
     /// <summary>
     /// Save Interaction with Object
     /// </summary>
@@ -81,12 +83,17 @@ public class SaveManager : MonoBehaviour
     /// <summary>
     /// Save current position of player
     /// </summary>
-    public void Save(Vector3 pos, string animationState)
+    public void Save(Vector3 pos, string animationState, int footstepIndex)
     {
         data.ChangePosition(pos);
         data.animationStateName = animationState;
+        data.footstepIndex = footstepIndex;
         SaveGame();
     }
+
+    #endregion
+
+    #region Get Methods
 
     /// <summary>
     /// Check if player interacted with this object
@@ -131,6 +138,13 @@ public class SaveManager : MonoBehaviour
     {
         return data.animationStateName;
     }
+
+    public int GetFootstepIndex()
+    {
+        return data.footstepIndex;
+    }
+
+    #endregion
 
     /// <summary>
     /// Create a new Game

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -13,13 +14,22 @@ public class PlayerMotor : MonoBehaviour
     [SerializeField]
     string[] animStates;
 
+    [SerializeField]
+    AudioClip[] footsteps;
+
+    [SerializeField]
+    AudioSource footSource;
+
     int currentAnimationIndex = 0;
+    int currentFootstepIndex = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponentInChildren<Animator>();
+        if (footSource && footsteps != null)
+            footSource.clip = footsteps[0];
     }
 
     private void Update()
@@ -28,17 +38,34 @@ public class PlayerMotor : MonoBehaviour
         {
             MoveToPoint(target.position);
             FaceTarget();
-
-           
         }
-        if(agent.remainingDistance < 0.1f)
+        if (agent.remainingDistance < 0.1f)
         {
-            PlayAnimation(0, true);
+            Idle();
         }
         else if (agent.velocity.magnitude > 0.1f)
-            PlayAnimation(1);
+            Walk();
 
     }
+
+    void Walk()
+    {
+        if (agent.isStopped)
+            return;
+
+        if (footSource)
+            PlaySound();
+
+        PlayAnimation(1);
+    }
+
+    void Idle()
+    {
+        PlayAnimation(0, true);
+        StopSound();
+    }
+
+    
 
     /// <summary>
     /// Move Player to Point on Layer Ground
@@ -60,7 +87,7 @@ public class PlayerMotor : MonoBehaviour
         FaceTarget();
         agent.isStopped = true;
         agent.velocity = Vector3.zero;
-        PlayAnimation(0, true);
+        Idle();
     }
 
     /// <summary>
@@ -99,6 +126,17 @@ public class PlayerMotor : MonoBehaviour
         }
     }
 
+    void PlaySound()
+    {
+        if (!footSource.isPlaying)
+            footSource.Play();
+    }
+
+    void StopSound()
+    {
+        footSource.Stop();
+    }
+
     public void PlayAnimation(int index, bool crossfade = false)
     {
         if(anim)
@@ -129,5 +167,20 @@ public class PlayerMotor : MonoBehaviour
             anim.Play(animStates[0]);
         else
             anim.Play(animationState);
+    }
+
+    public int GetFootstepIndex()
+    {
+        return currentFootstepIndex;
+    }
+
+    public void ChangeFootstepsSound(int index)
+    {
+        if (index < footsteps.Length)
+        {
+            currentFootstepIndex = index;
+            footSource.Stop();
+            footSource.clip = footsteps[index];
+        }
     }
 }
