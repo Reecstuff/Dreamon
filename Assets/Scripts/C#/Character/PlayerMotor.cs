@@ -117,4 +117,17 @@ public class PlayerMotor : MonoBehaviour
             }
         }
     }
+
+    public string GetAnimationState()
+    {
+        return animStates[currentAnimationIndex];
+    }
+
+    public void SetAnimationState(string animationState)
+    {
+        if (animationState.Equals(animStates[1]))
+            anim.Play(animStates[0]);
+        else
+            anim.Play(animationState);
+    }
 }

@@ -38,9 +38,9 @@ public class DialogueManager : MonoBehaviour
 
     public bool selectMinigame;
     public DialogueTrigger currentDialogObject;
+    public PlayerController player;
 
     CameraController cameraController;
-    PlayerController player;
     Animator currentAnimator;
 
     /// <summary>

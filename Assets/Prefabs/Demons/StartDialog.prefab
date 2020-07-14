@@ -395,6 +395,51 @@ MonoBehaviour:
   camPosition: {fileID: 266097371674798222}
   source: {fileID: 0}
   saveIndex: 1
+  chessTalk:
+  - animation:
+      animator: {fileID: 0}
+      AnimationStateName: 
+    audio:
+      source: {fileID: 0}
+      clip: {fileID: 0}
+    cameraTarget: {fileID: 0}
+    name: Elios
+    sentence: "How annoying\u2026"
+    delay: 3
+    resultIndex: 0
+  - animation:
+      animator: {fileID: 0}
+      AnimationStateName: 
+    audio:
+      source: {fileID: 0}
+      clip: {fileID: 0}
+    cameraTarget: {fileID: 0}
+    name: Ego
+    sentence: "Finally\u2026! It\u2019s playtime!"
+    delay: 5
+    resultIndex: 0
+  - animation:
+      animator: {fileID: 0}
+      AnimationStateName: 
+    audio:
+      source: {fileID: 0}
+      clip: {fileID: 0}
+    cameraTarget: {fileID: 0}
+    name: Ego
+    sentence: "How did you do that?! You\u2019re the best!"
+    delay: 5
+    resultIndex: 0
+  - animation:
+      animator: {fileID: 0}
+      AnimationStateName: 
+    audio:
+      source: {fileID: 0}
+      clip: {fileID: 0}
+    cameraTarget: {fileID: 0}
+    name: Elios
+    sentence: "How do you know\u2026"
+    delay: 5
+    resultIndex: 0
 --- !u!114 &1133812109691748872
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -841,6 +841,11 @@ PrefabInstance:
       propertyPath: newMusic
       value: 
       objectReference: {fileID: 8300000, guid: 0c25d35aedd7e7f4695f5ff80f118e3c, type: 3}
+    - target: {fileID: 2367149461085815815, guid: 25a28d490cbc15143ab85affefd27c2c,
+        type: 3}
+      propertyPath: FXSoundClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 494ce135eb089714e87ced27366a194a, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25a28d490cbc15143ab85affefd27c2c, type: 3}
 --- !u!1001 &707973602
