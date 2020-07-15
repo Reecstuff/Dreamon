@@ -29,7 +29,7 @@ public class Interactable : OutlineObject
 		if (interactionTransform && isFocus && !hasFocused)
 		{
 			float distance = Vector2.Distance(player.position, interactionTransform.position);
-			if (distance < radius + 0.1f)
+			if (distance < radius || distance < 0.2f)
 			{
 				Interact();
 				hasFocused = true;

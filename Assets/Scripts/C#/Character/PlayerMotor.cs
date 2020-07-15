@@ -39,7 +39,7 @@ public class PlayerMotor : MonoBehaviour
             MoveToPoint(target.position);
             FaceTarget();
         }
-        if (agent.remainingDistance < 0.1f)
+        if (agent.remainingDistance < 0.05f)
         {
             Idle();
         }
