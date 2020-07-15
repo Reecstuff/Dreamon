@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class BoardManager : MonoBehaviour
+public class BoardManager : MiniGame
 {
 	public static BoardManager Instance { set; get; }
 	private bool[,] allowedMoves { set; get; }
@@ -45,7 +45,12 @@ public class BoardManager : MonoBehaviour
 		selectedHighlight = Instantiate(selectedHighlight, transform);
 	}
 
-	private void Update()
+    public override void StartMiniGame()
+    {
+        base.StartMiniGame();
+    }
+
+    private void Update()
 	{
 		//If the player lose the game
 		if (currentChessmans == 0)

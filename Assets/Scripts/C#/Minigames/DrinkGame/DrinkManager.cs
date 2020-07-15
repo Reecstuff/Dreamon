@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class DrinkManager : MonoBehaviour
+public class DrinkManager : MiniGame
 {
 	[SerializeField]
 	Canvas MiniGameCanvas;
@@ -38,8 +38,9 @@ public class DrinkManager : MonoBehaviour
 		RandomAlc();
 	}
 
-	private void OnEnable()
-	{
+    public override void StartMiniGame()
+    {
+        base.StartMiniGame();
 		MiniGameCanvas.gameObject.SetActive(true);
 		UnityEngine.Cursor.visible = true;
 	}

@@ -2,17 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ShellgameManager : MonoBehaviour
+public class ShellgameManager : MiniGame
 {
 	public Animation[] animations = new Animation[3];
 	public GameObject[] shells = new GameObject[3];
 
-	private void Start()
-	{
-		ShellAnimation();
-	}
 
-	private void ShellAnimation()
+    public override void StartMiniGame()
+    {
+        base.StartMiniGame();
+		ShellAnimation();
+    }
+
+    private void ShellAnimation()
 	{
 		//Start random animation
 		int rNumber = Random.Range(1, 3);

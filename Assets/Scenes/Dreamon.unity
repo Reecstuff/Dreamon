@@ -1946,6 +1946,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f62762282eee734d95da04c5cec6920, type: 3}
+--- !u!114 &1714926934 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7748925604601613185, guid: 4f62762282eee734d95da04c5cec6920,
+    type: 3}
+  m_PrefabInstance: {fileID: 1714926933}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 776cc6a1d2816434a8d63f255493c0b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1784327006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2272,7 +2284,7 @@ PrefabInstance:
         type: 3}
       propertyPath: minigame
       value: 
-      objectReference: {fileID: 1995144029}
+      objectReference: {fileID: 2133544471}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a02ddb6b34c88c42a6fb3167d60249b, type: 3}
 --- !u!1001 &1821549315
@@ -2498,12 +2510,6 @@ MonoBehaviour:
   customCookieDistanceFalloffPower: 2
   customAngularFalloffThreshold: 0.8
   customAngularFalloffPower: 2
---- !u!1 &1995144029 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5738023402585142806, guid: 28f39d92bb08188449602cd35f923bda,
-    type: 3}
-  m_PrefabInstance: {fileID: 2133544470}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1995144031 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5738023402585142804, guid: 28f39d92bb08188449602cd35f923bda,
@@ -2659,12 +2665,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8675673900953465671, guid: fad27ae807bf8c9459db58ef836eaf48,
     type: 3}
   m_PrefabInstance: {fileID: 2070405389}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2079224236 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7748925604601613184, guid: 4f62762282eee734d95da04c5cec6920,
-    type: 3}
-  m_PrefabInstance: {fileID: 1714926933}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2127918796
 PrefabInstance:
@@ -2854,6 +2854,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28f39d92bb08188449602cd35f923bda, type: 3}
+--- !u!114 &2133544471 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5738023402585142807, guid: 28f39d92bb08188449602cd35f923bda,
+    type: 3}
+  m_PrefabInstance: {fileID: 2133544470}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4b232d3b49d4504ca39b8ce4d719fd6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &730186039905894042
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5458,7 +5470,7 @@ PrefabInstance:
         type: 3}
       propertyPath: minigame
       value: 
-      objectReference: {fileID: 2079224236}
+      objectReference: {fileID: 1714926934}
     - target: {fileID: 7156026689946373128, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5518,11 +5530,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StartDialog
-      objectReference: {fileID: 0}
-    - target: {fileID: 7156026689946373129, guid: 1ecaff3d0076bb6428f674170f69227b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}

@@ -47,7 +47,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7156026689946373128
 Transform:
   m_ObjectHideFlags: 0
@@ -456,7 +456,6 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   cameraPosition: {fileID: 0}
   minigame: {fileID: 0}
-  endDoor: {fileID: 0}
   winRounds: 0
   loseRounds: 0
   nextWinDialog: 02000000

@@ -10,7 +10,7 @@ public class MinigameManager : MonoBehaviour
 
 	public GameObject mainCamera;
 	public Transform cameraPosition;
-	public GameObject minigame;
+	public MiniGame minigame;
 
 	CameraController cameraController;
 
@@ -43,7 +43,7 @@ public class MinigameManager : MonoBehaviour
 
 	void SetMinigameActive()
 	{
-		minigame.SetActive(true);
+		minigame.StartMiniGame();
 	}
 
 	/// <summary>
@@ -51,7 +51,7 @@ public class MinigameManager : MonoBehaviour
 	/// </summary>
 	public void EndMinigame()
 	{
-		minigame.SetActive(false);
+		minigame.gameObject.SetActive(false);
 
 		//Focusing the demon
 		player.SetFocus(this.GetComponent<Interactable>());
