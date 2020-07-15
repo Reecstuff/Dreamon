@@ -70,6 +70,8 @@ public class DialogueManager : MonoBehaviour
         currentDialogObject = currentTrigger;
 
         //Reset the Buttons
+        DisableButtons(true);
+
         continueButton.SetActive(true);
         decisions.SetActive(false);
 
@@ -289,15 +291,15 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void DisableButtons()
+    public void DisableButtons(bool enabled = false)
     {
 
         for (int i = 0; i < decisionsButtons.Length; i++)
         {
-            decisionsButtons[i].gameObject.SetActive(false);
+            decisionsButtons[i].gameObject.SetActive(enabled);
         }
 
-        continueButton.gameObject.SetActive(false);
+        continueButton.gameObject.SetActive(enabled);
         endButton.gameObject.SetActive(false);
     }
 

@@ -148,13 +148,12 @@ public class CameraController : MonoBehaviour
                     currentZoom = Mathf.SmoothDamp(currentZoom, minZoom, ref zoomValue, zoomSpeed);
                 else
                     currentZoom = Mathf.SmoothDamp(currentZoom, targetZoom, ref zoomValue, zoomSpeed);
-
             }
-            else
+            else if(Input.mouseScrollDelta.y == 0)
             {
-                // Zoom slower at the End
                 zoomValue = 0;
-                currentZoom = Mathf.SmoothDamp(currentZoom, targetZoom, ref zoomValue, zoomSpeed * 3);
+
+                currentZoom = Mathf.SmoothDamp(currentZoom, targetZoom, ref zoomValue, zoomSpeed * 2);
             }
         }
         else
