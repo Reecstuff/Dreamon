@@ -40,7 +40,7 @@ public class DialogueManager : MonoBehaviour
     public DialogueTrigger currentDialogObject;
     public PlayerController player;
 
-    CameraController cameraController;
+    public CameraController cameraController;
     Animator currentAnimator;
 
     /// <summary>
@@ -339,13 +339,16 @@ public class DialogueManager : MonoBehaviour
             cameraController.StartResetCameraToPlayer();
             player.motor.ResumeAgent();
 
-            if (currentDialogObject.isLost == true)
+            if(currentDialogObject)
             {
-                currentDialogObject.TheEnd(true);
-            }
-            else
-            {
-                currentDialogObject.TheEnd(false);
+                if (currentDialogObject.isLost == true)
+                {
+                    currentDialogObject.TheEnd(true);
+                }
+                else
+                {
+                    currentDialogObject.TheEnd(false);
+                }
             }
 
             currentDialogObject = null;

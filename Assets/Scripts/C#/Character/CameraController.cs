@@ -106,6 +106,12 @@ public class CameraController : MonoBehaviour
         Invoke(nameof(ResetCameraToPlayer), drivingTime);
     }
 
+    public void CancelResetCameraToPlayer()
+    {
+        onOffsetReset = false;
+        CancelInvoke(nameof(ResetCameraToPlayer));
+    }
+
     void ResetLookAt()
     {
         onLookAtLerp = false;

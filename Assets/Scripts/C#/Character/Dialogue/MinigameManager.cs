@@ -11,7 +11,6 @@ public class MinigameManager : MonoBehaviour
 	public GameObject mainCamera;
 	public Transform cameraPosition;
 	public GameObject minigame;
-	public GameObject endDoor;
 
 	CameraController cameraController;
 
@@ -100,15 +99,6 @@ public class MinigameManager : MonoBehaviour
 		if (nextLoseDialog.Length == loseRounds)
 		{
 			dialogTrigger.isLost = true;
-		}
-
-		if(endDoor)
-		{
-			if (nextWinDialog.Length == winRounds || nextLoseDialog.Length == loseRounds)
-			{
-				endDoor.SetActive(true);
-				endDoor.GetComponent<AudioSource>()?.Play();
-			}
 		}
 	}
 }
