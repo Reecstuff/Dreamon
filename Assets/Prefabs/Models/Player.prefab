@@ -223,6 +223,7 @@ MonoBehaviour:
   - Elios_Walking
   footsteps:
   - {fileID: 8300000, guid: c67098cff741c9f40a701ec3409afc92, type: 3}
+  - {fileID: 8300000, guid: 95d305501ce087e499bb156567b867a9, type: 3}
   footSource: {fileID: 4788438241376480171}
 --- !u!114 &1378851291
 MonoBehaviour:
@@ -435,6 +436,9 @@ MonoBehaviour:
   target: {fileID: 2824791701659454391}
   offset: {x: 0, y: -1, z: 1}
   pitch: 2
+  maxZoom: 10
+  minZoom: 3.6
+  zoomSpeed: 0.025
   drivingTime: 2
   dampingTime: 15
 --- !u!124 &2824791702060548857
