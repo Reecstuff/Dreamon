@@ -137,14 +137,25 @@ public class CameraController : MonoBehaviour
             // Set End Value after Zoom
             targetZoom = currentZoom - Input.mouseScrollDelta.y;
         }
-        else if (Mathf.Abs(targetZoom) > 0 && Mathf.Abs(targetZoom - currentZoom) > 0)
+        else if (Mathf.Abs(targetZoom) > 0 && Mathf.Abs(targetZoom - currentZoom) > 0.0001f)
         {
-            if (targetZoom > maxZoom)
-                currentZoom = Mathf.SmoothDamp(currentZoom, maxZoom, ref zoomValue, zoomSpeed);
-            else if (targetZoom < minZoom)
-                currentZoom = Mathf.SmoothDamp(currentZoom, minZoom, ref zoomValue, zoomSpeed);
+            if (Mathf.Abs(targetZoom - currentZoom) > 0.6f)
+            {
+                // Zoom in normal Speed
+                if (targetZoom > maxZoom)
+                    currentZoom = Mathf.SmoothDamp(currentZoom, maxZoom, ref zoomValue, zoomSpeed);
+                else if (targetZoom < minZoom)
+                    currentZoom = Mathf.SmoothDamp(currentZoom, minZoom, ref zoomValue, zoomSpeed);
+                else
+                    currentZoom = Mathf.SmoothDamp(currentZoom, targetZoom, ref zoomValue, zoomSpeed);
+
+            }
             else
-                currentZoom = Mathf.SmoothDamp(currentZoom, targetZoom, ref zoomValue, zoomSpeed);
+            {
+                // Zoom slower at the End
+                zoomValue = 0;
+                currentZoom = Mathf.SmoothDamp(currentZoom, targetZoom, ref zoomValue, zoomSpeed * 3);
+            }
         }
         else
         {
