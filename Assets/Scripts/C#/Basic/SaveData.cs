@@ -12,6 +12,7 @@ public class SaveData
     public bool[] resultHistory;
     public bool[] interactHistory;
     public string animationStateName;
+    public int footstepIndex;
 
     public SaveData()
     {

@@ -68,6 +68,7 @@ public class PauseMenu : MonoBehaviour
         // Set Cursor to MenuCursor
         Cursor.visible = true;
 
+        SaveManager.instance?.currentAutoSave.ForceSave();
     }
 
     private void OnDisable()
