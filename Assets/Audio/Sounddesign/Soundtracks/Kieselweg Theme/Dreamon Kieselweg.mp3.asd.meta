@@ -1,5 +1,14 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/Audio/Sounddesign/Soundtracks/Kieselweg Theme/Dreamon Kieselweg.mp3.asd.meta
 guid: 51a3f566ae78bd04884dcea4f37b1f0d
+=======
+guid: 5f55a0817a99b184d8a1d4be297e3d64
+folderAsset: yes
+>>>>>>> 757c462acad581179b79213d1a4549fd7fd7e7ae:Assets/Audio/Sounddesign/Recordings.meta
+=======
+guid: d6b24b14192ffc843b8adaf97d3e720c
+>>>>>>> 757c462acad581179b79213d1a4549fd7fd7e7ae
 DefaultImporter:
   externalObjects: {}
   userData: 

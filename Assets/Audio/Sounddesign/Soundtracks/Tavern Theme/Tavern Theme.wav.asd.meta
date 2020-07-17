@@ -1,5 +1,14 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
+<<<<<<< HEAD:Assets/Audio/Sounddesign/Soundtracks/Tavern Theme/Tavern Theme.wav.asd.meta
 guid: 144e9f5c587f06c42892336ebc1d0d87
+=======
+guid: 642431b68360bbe4fb6ccb32e5b4fabb
+folderAsset: yes
+>>>>>>> 757c462acad581179b79213d1a4549fd7fd7e7ae:Assets/Audio/Sounddesign/Soundtracks/Belphe Theme.meta
+=======
+guid: f58558869835d3843b4d5762bae03663
+>>>>>>> 757c462acad581179b79213d1a4549fd7fd7e7ae
 DefaultImporter:
   externalObjects: {}
   userData: 
