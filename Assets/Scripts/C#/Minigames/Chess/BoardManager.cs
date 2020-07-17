@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class BoardManager : MonoBehaviour
+public class BoardManager : MiniGame
 {
 	public static BoardManager Instance { set; get; }
 	private bool[,] allowedMoves { set; get; }
@@ -29,10 +29,10 @@ public class BoardManager : MonoBehaviour
 	int loseRounds;
 
 	[SerializeField]
-	AudioClip movePiece;
+	AudioClip[] movePiece;
 
 	[SerializeField]
-	AudioClip hitPiece;
+	AudioClip[] hitPiece;
 
 	AudioSource source;
 
@@ -45,7 +45,12 @@ public class BoardManager : MonoBehaviour
 		selectedHighlight = Instantiate(selectedHighlight, transform);
 	}
 
-	private void Update()
+    public override void StartMiniGame()
+    {
+        base.StartMiniGame();
+    }
+
+    private void Update()
 	{
 		//If the player lose the game
 		if (currentChessmans == 0)
@@ -82,9 +87,8 @@ public class BoardManager : MonoBehaviour
 				}
 				else
 				{
-
-					//If the player win the game
-					if (selectionY == 7 && selectedHighlight.transform.localPosition.z >= 7)
+					// Move Chessman and check if Chessman is standing in the last row
+					if (MoveChessman(selectionX, selectionY))
 					{
 						winRounds++;
 						if (rounds == 3)
@@ -103,8 +107,6 @@ public class BoardManager : MonoBehaviour
 						SpawnAllChessmans(rounds);
 					}
 
-					//Move the chessman
-					MoveChessman(selectionX, selectionY);
 				}
 			}
 		}
@@ -122,8 +124,10 @@ public class BoardManager : MonoBehaviour
 		BoardHighlights.Instance.HighlightAllowedMoves(allowedMoves);
 	}
 
-	private void MoveChessman(int x, int z)
+	private bool MoveChessman(int x, int z)
 	{
+		bool winningMove = false;
+
 		if (allowedMoves[x,z])
 		{
 			Chessman c = Chessmans[x, z];
@@ -136,11 +140,11 @@ public class BoardManager : MonoBehaviour
 				Destroy(selectedChessman.gameObject);
 				currentChessmans--;
 
-				source.clip = hitPiece;
+				source.clip = hitPiece[Random.Range(0, hitPiece.Length)];
 			}
 			else
 			{
-				source.clip = movePiece;
+				source.clip = movePiece[Random.Range(0, movePiece.Length)];
 			}
 
 			Chessmans[selectedChessman.CurrentX, selectedChessman.CurrentY] = null;
@@ -149,10 +153,14 @@ public class BoardManager : MonoBehaviour
 			Chessmans[x, z] = selectedChessman;
 
 			source.Play();
+
+			winningMove = selectedChessman.transform.localPosition.z > 7;
 		}
 
 		BoardHighlights.Instance.Hidehighlights();
 		selectedChessman = null;
+
+		return winningMove;
 	}
 
 	private void UpdateSelection()

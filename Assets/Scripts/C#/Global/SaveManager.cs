@@ -50,13 +50,15 @@ public class SaveManager : MonoBehaviour
         }
     }
 
+    #region Save Methods
+
     /// <summary>
     /// Save Interaction with Object
     /// </summary>
     /// <param name="interactIndex">"0" is default value</param>
-    public void Save(int interactIndex)
+    public void Save(string interactIndex)
     {
-        if (interactIndex != 0)
+        if (!string.IsNullOrEmpty(interactIndex))
         {
             data.AddInteract(interactIndex);
             SaveGame();
@@ -68,9 +70,9 @@ public class SaveManager : MonoBehaviour
     /// </summary>
     /// <param name="resultIndex">"0" is default value</param>
     /// <param name="resultValue">the result</param>
-    public void Save(int index, bool resultValue)
+    public void Save(string index, bool resultValue)
     {
-        if (index != 0)
+        if (!string.IsNullOrEmpty(index))
         {
             data.AddInteract(index);
             data.AddResult(index, resultValue);
@@ -81,20 +83,26 @@ public class SaveManager : MonoBehaviour
     /// <summary>
     /// Save current position of player
     /// </summary>
-    public void Save(Vector3 pos)
+    public void Save(Vector3 pos, string animationState, int footstepIndex)
     {
         data.ChangePosition(pos);
+        data.animationStateName = animationState;
+        data.footstepIndex = footstepIndex;
         SaveGame();
     }
+
+    #endregion
+
+    #region Get Methods
 
     /// <summary>
     /// Check if player interacted with this object
     /// </summary>
     /// <param name="index">"0" is default value</param>
     /// <returns>Returns true if player interacted with object</returns>
-    public bool HasInteracted(int index)
+    public bool HasInteracted(string index)
     {
-        if (index != 0)
+        if (!string.IsNullOrEmpty(index))
             return data.GetInteraction(index);
             
         return false;
@@ -105,9 +113,9 @@ public class SaveManager : MonoBehaviour
     /// </summary>
     /// <param name="index">index of resultObject</param>
     /// <returns>Returns "null" if player didn't interacted with it</returns>
-    public bool? HasResult(int index)
+    public bool? HasResult(string index)
     {
-        if (index != 0)
+        if (!string.IsNullOrEmpty(index))
             return data.GetResult(index);
 
         return null;
@@ -121,6 +129,22 @@ public class SaveManager : MonoBehaviour
     {
         return new Vector3(data.position[0], data.position[1], data.position[2]);
     }
+
+    /// <summary>
+    /// Get Animationstate name
+    /// </summary>
+    /// <returns>Animationstate as string</returns>
+    public string GetAnimationState()
+    {
+        return data.animationStateName;
+    }
+
+    public int GetFootstepIndex()
+    {
+        return data.footstepIndex;
+    }
+
+    #endregion
 
     /// <summary>
     /// Create a new Game

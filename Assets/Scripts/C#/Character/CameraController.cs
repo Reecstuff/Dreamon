@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using System;
 
 public class CameraController : MonoBehaviour
 {
@@ -10,6 +11,23 @@ public class CameraController : MonoBehaviour
     public Vector3 offset;
 
     public float pitch = 2f;
+
+    [SerializeField]
+    float maxZoom = 10f;
+
+    [SerializeField]
+    float minZoom = 2f;
+
+    [Range(0, 0.25f)]
+    [SerializeField]
+    float zoomSpeed = 0.05f;
+
+    [SerializeField]
+    float betweenFacesSpeed = 0.1f;
+
+
+    float targetZoom = 0;
+    float zoomValue = 0.5f;
 
     private float currentZoom = 10f;
     private float currentYaw = 0;
@@ -21,6 +39,7 @@ public class CameraController : MonoBehaviour
     public float drivingTime = 2;
 
     public float dampingTime = 15;
+    float timer = 0;
 
     void Update()
     {
@@ -35,6 +54,9 @@ public class CameraController : MonoBehaviour
 
                 offset = camTurnAngle * offset;
             }
+
+            // Zooms the Camera
+            Camerazoom();
         }
     }
 
@@ -54,6 +76,14 @@ public class CameraController : MonoBehaviour
                 LookAtTarget(target.position);
             else
                 transform.LookAt(target.position + Vector3.up * pitch);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Slerp(
+                transform.rotation,
+                Quaternion.LookRotation(
+                    target.position - transform.position),
+                timer += Time.deltaTime * betweenFacesSpeed);
         }
     }
 
@@ -76,15 +106,36 @@ public class CameraController : MonoBehaviour
     public void LerpLookAt(Transform newLookAt)
     {
         onLookAtLerp = true;
-        transform.DOLookAt(newLookAt.position, drivingTime / 2);
+        timer = 0;
         target = newLookAt;
         CancelInvoke(nameof(ResetLookAt));
         Invoke(nameof(ResetLookAt), drivingTime / 2);
     }
 
+    IEnumerator RotateTowardsSmooth(Transform lookAt)
+    {
+        float timer = 0;
+        Quaternion rotation = Quaternion.LookRotation(lookAt.position - transform.position);
+
+        while (transform.rotation != rotation)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, timer += Time.deltaTime);
+            yield return new WaitForEndOfFrame();
+        }
+
+        ResetLookAt();
+    }
+
+
     public void StartResetCameraToPlayer()
     {
         Invoke(nameof(ResetCameraToPlayer), drivingTime);
+    }
+
+    public void CancelResetCameraToPlayer()
+    {
+        onOffsetReset = false;
+        CancelInvoke(nameof(ResetCameraToPlayer));
     }
 
     void ResetLookAt()
@@ -106,5 +157,40 @@ public class CameraController : MonoBehaviour
     {
         var rotation = Quaternion.LookRotation(focusPoint- transform.position);
         transform.rotation = Quaternion.Slerp(transform.rotation, rotation, Time.deltaTime * dampingTime);
+    }
+
+    /// <summary>
+    /// Zoom Camera on Mousewheel
+    /// </summary>
+    void Camerazoom()
+    {
+        if (Input.mouseScrollDelta.y != 0)
+        {
+            // Set End Value after Zoom
+            targetZoom = currentZoom - Input.mouseScrollDelta.y;
+        }
+        else if (Mathf.Abs(targetZoom) > 0 && Mathf.Abs(targetZoom - currentZoom) > 0.0001f)
+        {
+            if (Mathf.Abs(targetZoom - currentZoom) > 0.6f)
+            {
+                // Zoom in normal Speed
+                if (targetZoom > maxZoom)
+                    currentZoom = Mathf.SmoothDamp(currentZoom, maxZoom, ref zoomValue, zoomSpeed);
+                else if (targetZoom < minZoom)
+                    currentZoom = Mathf.SmoothDamp(currentZoom, minZoom, ref zoomValue, zoomSpeed);
+                else
+                    currentZoom = Mathf.SmoothDamp(currentZoom, targetZoom, ref zoomValue, zoomSpeed);
+            }
+            else if(Input.mouseScrollDelta.y == 0)
+            {
+                zoomValue = 0;
+
+                currentZoom = Mathf.SmoothDamp(currentZoom, targetZoom, ref zoomValue, zoomSpeed * 2);
+            }
+        }
+        else
+        {
+            targetZoom = 0;
+        }
     }
 }

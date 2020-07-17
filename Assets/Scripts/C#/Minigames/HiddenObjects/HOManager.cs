@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HOManager : MonoBehaviour
+public class HOManager : MiniGame
 {
 	public GameObject[] hiddenObjects;
 	public int foundObjects;
@@ -11,28 +11,22 @@ public class HOManager : MonoBehaviour
 
 	public float searchTime = 60;
 
-	public int winDialog;
-	public int loseDialog;
+    public override void StartMiniGame()
+    {
+        base.StartMiniGame();
+    }
 
-	private void Update()
+    private void Update()
 	{
 		searchTime -= Time.deltaTime;
 
-		if (searchTime <= 0)
+		if (searchTime < 0)
 		{
-			EndGame(loseDialog);
+			assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
 		}
 		else if (hiddenObjects.Length == foundObjects)
 		{
-			EndGame(winDialog);
+			assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
 		}
-	}
-
-	void EndGame(int dialogNumber)
-	{
-		//Stop game
-		assignedTarget.GetComponent<MinigameManager>().EndMinigame();
-		assignedTarget.GetComponent<DialogueTrigger>().currentDialogue = dialogNumber;
-		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
 	}
 }

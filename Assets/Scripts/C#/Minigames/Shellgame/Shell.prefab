@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 156197122331905069}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -106,5 +106,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48fbd4c8603d98c41a3447c5c954330d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasInteracted: 0
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineSpacing: 0.01
   radius: 3
   interactionTransform: {fileID: 3029471949424239701}
+  isWin: 0
+  assignedTarget: {fileID: 0}
+  winDialogue: 0
+  loseDialogue: 0

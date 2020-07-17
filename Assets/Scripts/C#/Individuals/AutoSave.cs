@@ -28,6 +28,15 @@ public class AutoSave : MonoBehaviour
         currentTimer = Time.time;
     }
 
+    public void ForceSave()
+    {
+        if(OnAutoSave != null)
+        {
+            OnAutoSave();
+            currentTimer = Time.time;
+        }
+    }
+
     IEnumerator LateStartLoad()
     {
         yield return new WaitForFixedUpdate();

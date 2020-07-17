@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using System.Reflection;
+using UnityEngine.AI;
 
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour
@@ -14,6 +15,8 @@ public class PlayerController : MonoBehaviour
 
     [HideInInspector]
     public PlayerMotor motor;
+
+    public CallBetweenText callBetween;
 
     Camera cam;
 
@@ -41,12 +44,18 @@ public class PlayerController : MonoBehaviour
 
     public void LoadPlayer()
     {
+        // Fixing Positionbug
+        GetComponent<NavMeshAgent>().enabled = false;
+
         transform.position = SaveManager.instance.GetPlayerPosition();
+        motor.SetAnimationState(SaveManager.instance.GetAnimationState());
+        motor.ChangeFootstepsSound(SaveManager.instance.GetFootstepIndex());
+        GetComponent<NavMeshAgent>().enabled = true;
     }
 
     public void SavePlayer()
     {
-        SaveManager.instance.Save(transform.position);
+        SaveManager.instance.Save(transform.position, motor.GetAnimationState(), motor.GetFootstepIndex());
     }
 
     void CheckForInteractable()

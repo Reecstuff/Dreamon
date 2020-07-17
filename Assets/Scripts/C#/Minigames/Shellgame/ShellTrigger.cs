@@ -38,9 +38,7 @@ public class ShellTrigger : Interactable
 		Debug.Log("You Win");
 
 		//Stop game
-		assignedTarget.GetComponent<MinigameManager>().EndMinigame();
-		assignedTarget.GetComponent<DialogueTrigger>().currentDialogue = winDialogue;
-		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
+		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
 	}
 
 	public void Lost()
@@ -49,8 +47,6 @@ public class ShellTrigger : Interactable
 		Debug.Log("You Lose");
 
 		//Stop game
-		assignedTarget.GetComponent<MinigameManager>().EndMinigame();
-		assignedTarget.GetComponent<DialogueTrigger>().currentDialogue = loseDialogue;
-		assignedTarget.GetComponent<DialogueTrigger>().TriggerDialogue();
+		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
 	}
 }

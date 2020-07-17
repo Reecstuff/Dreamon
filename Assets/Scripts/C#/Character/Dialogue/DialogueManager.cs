@@ -38,9 +38,9 @@ public class DialogueManager : MonoBehaviour
 
     public bool selectMinigame;
     public DialogueTrigger currentDialogObject;
+    public PlayerController player;
 
-    CameraController cameraController;
-    PlayerController player;
+    public CameraController cameraController;
     Animator currentAnimator;
 
     /// <summary>
@@ -70,6 +70,8 @@ public class DialogueManager : MonoBehaviour
         currentDialogObject = currentTrigger;
 
         //Reset the Buttons
+        DisableButtons(true);
+
         continueButton.SetActive(true);
         decisions.SetActive(false);
 
@@ -243,7 +245,7 @@ public class DialogueManager : MonoBehaviour
         {
             if(animation.animator)
                 currentAnimator = animation.animator;
-
+            
             if(currentAnimator)
                 currentAnimator.CrossFade(animation.AnimationStateName, 0.3f);
         }
@@ -262,12 +264,16 @@ public class DialogueManager : MonoBehaviour
     /// <returns></returns>
     IEnumerator TypeSentence(string sentence)
     {
-        dialogueText.text = "";
+        dialogueText.SetText("");
 
         int lastlineCount = 1;
 
         for (int i = 0; i < sentence.ToCharArray().Length; i++)
         {
+
+            if (!CheckIsOpen())
+                break;
+
             dialogueText.text += sentence.ToCharArray()[i];
 
             // Check for new lines
@@ -281,7 +287,20 @@ public class DialogueManager : MonoBehaviour
             }
 
             yield return new WaitForSeconds(timeForTextInSeconds);
+
         }
+    }
+
+    public void DisableButtons(bool enabled = false)
+    {
+
+        for (int i = 0; i < decisionsButtons.Length; i++)
+        {
+            decisionsButtons[i].gameObject.SetActive(enabled);
+        }
+
+        continueButton.gameObject.SetActive(enabled);
+        endButton.gameObject.SetActive(false);
     }
 
     /// <summary>
@@ -290,8 +309,8 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         UnityEngine.Cursor.visible = false;
+        StopCoroutine(nameof(TypeSentence));
         animator.SetBool("IsOpen", false);
-
 
         //Stop focusing any objects
         player.RemoveFocus();
@@ -306,6 +325,13 @@ public class DialogueManager : MonoBehaviour
         {
             selectMinigame = false;
             minigameManager.StartNewMinigame();
+
+            if (minigameManager.minigame.name == "Wimmelbild")
+            {
+                cameraController.MoveToOffset(player.transform);
+                cameraController.StartResetCameraToPlayer();
+                player.motor.ResumeAgent();
+            }
         }
         else
         {
@@ -313,17 +339,34 @@ public class DialogueManager : MonoBehaviour
             cameraController.StartResetCameraToPlayer();
             player.motor.ResumeAgent();
 
-            if (currentDialogObject.isLost == true)
+            if(currentDialogObject)
             {
-                currentDialogObject.TheEnd(true);
-            }
-            else
-            {
-                currentDialogObject.TheEnd(false);
+                if (currentDialogObject.isLost == true)
+                {
+                    currentDialogObject.TheEnd(true);
+                }
+                else
+                {
+                    currentDialogObject.TheEnd(false);
+                }
             }
 
             currentDialogObject = null;
         }
+    }
+
+    public bool CheckIsOpen()
+    {
+        return animator.GetBool("IsOpen");
+    }
+
+    /// <summary>
+    /// Check for running Dialogue
+    /// </summary>
+    /// <returns>Returns true if current a dialogue is running</returns>
+    public bool CheckIsDialogue()
+    {
+        return currentDialogObject;
     }
 
     void StartTalk(Dialogue.Option option)

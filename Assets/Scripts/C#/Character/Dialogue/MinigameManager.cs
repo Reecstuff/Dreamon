@@ -10,8 +10,7 @@ public class MinigameManager : MonoBehaviour
 
 	public GameObject mainCamera;
 	public Transform cameraPosition;
-	public GameObject minigame;
-	public GameObject endDoor;
+	public MiniGame minigame;
 
 	CameraController cameraController;
 
@@ -44,7 +43,7 @@ public class MinigameManager : MonoBehaviour
 
 	void SetMinigameActive()
 	{
-		minigame.SetActive(true);
+		minigame.StartMiniGame();
 	}
 
 	/// <summary>
@@ -52,7 +51,7 @@ public class MinigameManager : MonoBehaviour
 	/// </summary>
 	public void EndMinigame()
 	{
-		minigame.SetActive(false);
+		minigame.gameObject.SetActive(false);
 
 		//Focusing the demon
 		player.SetFocus(this.GetComponent<Interactable>());
@@ -63,9 +62,8 @@ public class MinigameManager : MonoBehaviour
 	}
 
 	public void StartNextDialog(bool isWin)
-	{
-		// Reset Playeranimation
-		player.motor.PlayAnimation(0);
+	{ 
+
 		if (isWin == true)
 		{
 			for (int i = 0; i < nextWinDialog.Length; i++)
@@ -101,15 +99,6 @@ public class MinigameManager : MonoBehaviour
 		if (nextLoseDialog.Length == loseRounds)
 		{
 			dialogTrigger.isLost = true;
-		}
-
-		if(endDoor)
-		{
-			if (nextWinDialog.Length == winRounds || nextLoseDialog.Length == loseRounds)
-			{
-				endDoor.SetActive(true);
-				endDoor.GetComponent<AudioSource>()?.Play();
-			}
 		}
 	}
 }

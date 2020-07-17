@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Data.Common;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -8,18 +9,35 @@ public class PlayerMotor : MonoBehaviour
 {
     Transform target;       //Target to follow
     NavMeshAgent agent;     //Reference to our agent
-    Animator anim;          // Reference to Animationcontroller
+    Animator animElios;     // Reference to Animationcontroller
+    Animator animEgo;
 
     [SerializeField]
-    string[] animStates;
+    string[] animStatesElios;
 
-    int currentAnimationIndex = 0;
+    [SerializeField]
+    string[] animIdleStatesEgo;
+
+    [SerializeField]
+    AudioClip[] footsteps;
+
+    [SerializeField]
+    AudioSource footSource;
+
+    string currentEliosState = string.Empty;
+    int currentFootstepIndex = 0;
+    string currentEgoState = string.Empty;
+    int currentEgoStateCounter = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        anim = GetComponentInChildren<Animator>();
+        animElios = GetComponentInChildren<Animator>();
+        animEgo = GetComponentsInChildren<Animator>()[1];
+
+        if (footSource && footsteps != null)
+            footSource.clip = footsteps[0];
     }
 
     private void Update()
@@ -28,17 +46,50 @@ public class PlayerMotor : MonoBehaviour
         {
             MoveToPoint(target.position);
             FaceTarget();
-
-           
         }
-        if(agent.remainingDistance < 0.1f)
+        if (agent.remainingDistance < 0.05f)
         {
-            PlayAnimation(0, true);
+            Idle();
         }
         else if (agent.velocity.magnitude > 0.1f)
-            PlayAnimation(1);
+            Walk();
 
     }
+
+    void Walk()
+    {
+        if (agent.isStopped)
+            return;
+
+        if (footSource)
+            PlaySound();
+
+        PlayAnimation(ref animElios, ref animStatesElios[1], ref currentEliosState);
+    }
+
+    void Idle()
+    {
+        PlayAnimation(ref animElios, ref animStatesElios[0], ref currentEliosState, true);
+        PlayAnimation(ref animEgo, ref animIdleStatesEgo[currentEgoStateCounter], ref currentEgoState, true);
+
+
+        if(animEgo.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !animEgo.IsInTransition(0))
+        {
+            StartCoroutine(WaitforSecondsToSetEgoAnimation(5));
+        }
+
+        StopSound();
+    }
+
+    
+    IEnumerator WaitforSecondsToSetEgoAnimation(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+
+        // Count in sequence for Ego Idle Animation
+        currentEgoStateCounter = currentEgoStateCounter + 1 < animIdleStatesEgo.Length ? currentEgoStateCounter + 1 : 0;
+    }
+
 
     /// <summary>
     /// Move Player to Point on Layer Ground
@@ -60,7 +111,7 @@ public class PlayerMotor : MonoBehaviour
         FaceTarget();
         agent.isStopped = true;
         agent.velocity = Vector3.zero;
-        PlayAnimation(0, true);
+        Idle();
     }
 
     /// <summary>
@@ -99,22 +150,56 @@ public class PlayerMotor : MonoBehaviour
         }
     }
 
-    public void PlayAnimation(int index, bool crossfade = false)
+    void PlaySound()
     {
-        if(anim)
+        if (!footSource.isPlaying)
+            footSource.Play();
+    }
+
+    void StopSound()
+    {
+        footSource.Stop();
+    }
+
+    void PlayAnimation(ref Animator anim, ref string state, ref string currentState, bool crossfade = false)
+    {
+        if(!state.Equals(currentState))
         {
-            if(currentAnimationIndex != index)
-            {
-                currentAnimationIndex = index;
-                if (crossfade)
-                {
-                    anim.CrossFade(animStates[index], 0.3f);
-                }
-                else
-                {
-                    anim.Play(animStates[index]);
-                }
-            }
+            currentState = state;
+
+            if (crossfade)
+                anim.CrossFade(state, 0.3f);
+            else
+                anim.Play(state);
+        }
+
+    }
+
+    public string GetAnimationState()
+    {
+        return currentEliosState;
+    }
+
+    public void SetAnimationState(string animationState)
+    {
+        if (animationState.Equals(animStatesElios[1]))
+            animElios.Play(animStatesElios[0]);
+        else
+            animElios.Play(animationState);
+    }
+
+    public int GetFootstepIndex()
+    {
+        return currentFootstepIndex;
+    }
+
+    public void ChangeFootstepsSound(int index)
+    {
+        if (index < footsteps.Length)
+        {
+            currentFootstepIndex = index;
+            footSource.Stop();
+            footSource.clip = footsteps[index];
         }
     }
 }

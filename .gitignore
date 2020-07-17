@@ -59,3 +59,5 @@ sysinfo.txt
 crashlytics-build.properties
 
 .DS_Store
+Assets/StreamingAssets/auto.dream
+Assets/StreamingAssets/auto.dream.meta
