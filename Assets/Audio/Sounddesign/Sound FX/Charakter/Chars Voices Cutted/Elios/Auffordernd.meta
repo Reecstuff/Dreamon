@@ -1,6 +1,10 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Audio/Sounddesign/Soundtracks/Tavern Theme/Tavern Theme.mp3.asd.meta
+guid: 3700e7283612f1e4a83207d0de6d3304
+=======
 guid: 81574065cfc1fd54ba750519d88c6f05
 folderAsset: yes
+>>>>>>> 757c462acad581179b79213d1a4549fd7fd7e7ae:Assets/Audio/Sounddesign/Sound FX/Charakter/Chars Voices Cutted/Elios/Auffordernd.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
