@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]
     public PlayerMotor motor;
 
+    public CallBetweenText callBetween;
+
     Camera cam;
 
 

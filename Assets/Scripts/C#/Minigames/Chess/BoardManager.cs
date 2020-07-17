@@ -87,9 +87,8 @@ public class BoardManager : MiniGame
 				}
 				else
 				{
-
-					//If the player win the game
-					if (selectionY == 7 && selectedHighlight.transform.localPosition.z >= 7)
+					// Move Chessman and check if Chessman is standing in the last row
+					if (MoveChessman(selectionX, selectionY))
 					{
 						winRounds++;
 						if (rounds == 3)
@@ -108,8 +107,6 @@ public class BoardManager : MiniGame
 						SpawnAllChessmans(rounds);
 					}
 
-					//Move the chessman
-					MoveChessman(selectionX, selectionY);
 				}
 			}
 		}
@@ -127,8 +124,10 @@ public class BoardManager : MiniGame
 		BoardHighlights.Instance.HighlightAllowedMoves(allowedMoves);
 	}
 
-	private void MoveChessman(int x, int z)
+	private bool MoveChessman(int x, int z)
 	{
+		bool winningMove = false;
+
 		if (allowedMoves[x,z])
 		{
 			Chessman c = Chessmans[x, z];
@@ -154,10 +153,14 @@ public class BoardManager : MiniGame
 			Chessmans[x, z] = selectedChessman;
 
 			source.Play();
+
+			winningMove = selectedChessman.transform.localPosition.z > 7;
 		}
 
 		BoardHighlights.Instance.Hidehighlights();
 		selectedChessman = null;
+
+		return winningMove;
 	}
 
 	private void UpdateSelection()

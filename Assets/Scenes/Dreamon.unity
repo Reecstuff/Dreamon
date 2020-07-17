@@ -5660,11 +5660,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: StartDialog
       objectReference: {fileID: 0}
-    - target: {fileID: 7156026689946373129, guid: 1ecaff3d0076bb6428f674170f69227b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].animation.animator

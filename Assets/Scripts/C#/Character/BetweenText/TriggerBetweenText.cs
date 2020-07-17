@@ -6,9 +6,7 @@ public class TriggerBetweenText : MonoBehaviour
 {
     [SerializeField]
     TimedTalk[] timedTalks;
-
-    [SerializeField]
-    int saveIndex = 0;
+   
 
     bool triggered = false;
 
@@ -32,6 +30,7 @@ public class TriggerBetweenText : MonoBehaviour
             {
                 other.GetComponent<CallBetweenText>().CallBetween(timedTalks);
                 triggered = true;
+                SaveState();
             }
     }
 
@@ -39,9 +38,9 @@ public class TriggerBetweenText : MonoBehaviour
     {
         if (SaveManager.instance)
         {
-            if (!SaveManager.instance.HasInteracted(saveIndex))
+            if (!SaveManager.instance.HasInteracted(gameObject.name))
             {
-                SaveManager.instance.Save(saveIndex);
+                SaveManager.instance.Save(gameObject.name);
             }
         }
     }
@@ -52,7 +51,7 @@ public class TriggerBetweenText : MonoBehaviour
 	/// </summary>
 	void LoadState()
     {
-        if (SaveManager.instance.HasInteracted(saveIndex))
+        if (triggered = SaveManager.instance.HasInteracted(gameObject.name))
         {
             gameObject.SetActive(false);
         }

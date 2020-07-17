@@ -19,12 +19,11 @@ public class DialogueTrigger : Interactable
 
 	public bool? isLost;
 
-	[SerializeField]
-	protected int saveIndex;
 
 
 	protected override void InitValues()
 	{
+
 		base.InitValues();
 		dialogueManager = FindObjectOfType<DialogueManager>();
 		if (SaveManager.instance)
@@ -57,6 +56,11 @@ public class DialogueTrigger : Interactable
 		// Do Something
 	}
 
+	public virtual void SetEndState(bool isLose)
+    {
+
+    }
+
 	protected virtual void PlaySound()
 	{
 		if (source)
@@ -73,9 +77,9 @@ public class DialogueTrigger : Interactable
 	{
 		if(SaveManager.instance)
 		{
-			if(!SaveManager.instance.HasInteracted(saveIndex))
+			if(!SaveManager.instance.HasInteracted(gameObject.name))
 			{
-				SaveManager.instance.Save(saveIndex, result);
+				SaveManager.instance.Save(gameObject.name, result);
 			}
 		}
 	}
@@ -86,12 +90,12 @@ public class DialogueTrigger : Interactable
 	/// </summary>
 	protected virtual void LoadState()
 	{
-		hasInteracted = SaveManager.instance.HasInteracted(saveIndex);
-		isLost = !SaveManager.instance.HasResult(saveIndex);
+		hasInteracted = SaveManager.instance.HasInteracted(gameObject.name);
+		isLost = !SaveManager.instance.HasResult(gameObject.name);
 		if (hasInteracted)
 		{
 			CancelInvoke();
-			TheEnd((bool)isLost);
+			SetEndState((bool)isLost);
 		}
 	}
 

@@ -19,7 +19,7 @@ public class Dementum : DialogueTrigger
     float deathAnimationTime = 6;
 
     [SerializeField]
-    PolterGeist Taverpoltergeist;
+    PolterGeist Tavernpoltergeist;
 
     [SerializeField]
     PathBlocker blocker;
@@ -48,19 +48,38 @@ public class Dementum : DialogueTrigger
     {
         base.TheEnd(isLose);
 
-        // Both Endings:
-        // Tür geht auf
-        blocker?.ClearPathBlocker();
-        // Poltergeist off
-        if (Taverpoltergeist)
-            Taverpoltergeist.enabled = false;
-        // Ambience Music off
-        if(AudioManager.Instance)
-            AudioManager.Instance.SetSourceClip(null, 1, AudioManager.Instance.GetSamples(1));
-        // Dementum dissapears
-        DementumDisapears();
+        SetEndState(isLose);
 
         // Lost the Game:
+        if(isLose)
+        {
+            // Lost Dialogue
+            LostDialogue();
+
+            // Backgroundmusic off
+            if (AudioManager.Instance)
+                AudioManager.Instance.SetSourceClip(null, 0, AudioManager.Instance.GetSamples(0));
+        }
+        else
+        {
+            AudioManager.Instance.SetSourceClip(oldBackgroundMusic);
+        }
+
+        // Both Endings:
+        
+        // Ambience Music off
+        if (AudioManager.Instance)
+            AudioManager.Instance.SetSourceClip(null, 1, AudioManager.Instance.GetSamples(1));
+
+        // Tür speichern
+        blocker?.ClearPathBlocker();
+
+    }
+
+    public override void SetEndState(bool isLose)
+    {
+        base.SetEndState(isLose);
+
         if(isLose)
         {
             // Remove all Chairs, etc.
@@ -69,14 +88,6 @@ public class Dementum : DialogueTrigger
             // Except one Light
             // Activate this Light beside Elios
             lostCandleLight.SetActive(true);
-
-            // Backgroundmusic off
-            if (AudioManager.Instance)
-                AudioManager.Instance.SetSourceClip(null, 0, AudioManager.Instance.GetSamples(0));
-
-            // Lost Dialogue
-            LostDialogue();
-            
         }
         else
         {
@@ -84,12 +95,22 @@ public class Dementum : DialogueTrigger
             // Light near Dementum disappears
             // This Light is the first in the List
             objectsToDeactivate.First().SetActive(false);
-            AudioManager.Instance.SetSourceClip(oldBackgroundMusic);
         }
+
+        // Both Endings
+
+        // Tür geht auf
+        blocker?.EndState();
+        
+        // Poltergeist off
+        if (Tavernpoltergeist)
+            Tavernpoltergeist.enabled = false;
+
+        // Dementum dissapears
+        DementumDisapears();
 
         // Set Gameobject inactive
         Invoke(nameof(SetInactive), deathAnimationTime + 0.5f);
-
     }
 
     void DementumDisapears()
@@ -115,6 +136,10 @@ public class Dementum : DialogueTrigger
 
     void LostDialogue()
     {
+        if (SaveManager.instance)
+            if (SaveManager.instance.HasInteracted(gameObject.name))
+                return;
+
         if (lostDialogue.Length > 0)
         {
             dialogue = lostDialogue;

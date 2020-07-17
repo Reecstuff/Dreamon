@@ -79,14 +79,14 @@ public class BetweenText : MonoBehaviour
             if (currentTalks.Count <= 0)
                 break;
 
-            if(!dialogueManager.CheckIsOpen())
-            {
-                if(currentTalks[i].delay > 0)
-                    yield return new WaitForSeconds(currentTalks[i].delay);
+            // Delay before Betweentext
+            yield return new WaitForSeconds(2);
 
+            if (!dialogueManager.CheckIsOpen())
+            {
                 // Play Text
-                if(!string.IsNullOrEmpty(currentTalks[i].sentence))
-                    ShowText(currentTalks[i].name, currentTalks[i].sentence);
+                if (!string.IsNullOrEmpty(currentTalks[i].sentence))
+                ShowText(currentTalks[i].name, currentTalks[i].sentence);
 
                 // Play Animation
                 if (!string.IsNullOrEmpty(currentTalks[i].animation.AnimationStateName))
@@ -96,7 +96,7 @@ public class BetweenText : MonoBehaviour
                 if (currentTalks[i].audio.clip)
                     PlayAudio(currentTalks[i].audio.source, currentTalks[i].audio.clip);
 
-                yield return new WaitForSeconds(timeToRead);
+                yield return new WaitForSeconds(timeToRead + currentTalks[i].delay);
                 i++;
                 currentCount = currentTalks.Count;
             }
@@ -119,6 +119,7 @@ public class BetweenText : MonoBehaviour
         dialogueManager.DisableButtons();
         dialogueManager.animator.SetBool("IsOpen", true);
 
+        
         if (!string.IsNullOrEmpty(name))
             currentName = name;
 
@@ -180,6 +181,7 @@ public class BetweenText : MonoBehaviour
                 break;
 
             textField.text += sentence.ToCharArray()[i];
+
 
             // Check for new lines
             if (lastlineCount < textField.textInfo.lineCount)

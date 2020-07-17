@@ -47,7 +47,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7156026689946373128
 Transform:
   m_ObjectHideFlags: 0
@@ -394,7 +394,6 @@ MonoBehaviour:
   minigameManager: {fileID: 1133812109691748872}
   camPosition: {fileID: 266097371674798222}
   source: {fileID: 0}
-  saveIndex: 1
   chessTalk:
   - animation:
       animator: {fileID: 0}
@@ -438,6 +437,53 @@ MonoBehaviour:
     cameraTarget: {fileID: 0}
     name: Elios
     sentence: "How do you know\u2026"
+    delay: 5
+    resultIndex: 0
+  tutorialTalk:
+  - animation:
+      animator: {fileID: 0}
+      AnimationStateName: 
+    audio:
+      source: {fileID: 0}
+      clip: {fileID: 0}
+    cameraTarget: {fileID: 0}
+    name: Ego
+    sentence: Why dont you try to look around a bit, by holding the right mouse button?
+    delay: 2
+    resultIndex: 0
+  - animation:
+      animator: {fileID: 0}
+      AnimationStateName: 
+    audio:
+      source: {fileID: 0}
+      clip: {fileID: 0}
+    cameraTarget: {fileID: 0}
+    name: Ego
+    sentence: Get a closer look by scrolling your mouse wheel.
+    delay: 2
+    resultIndex: 0
+  - animation:
+      animator: {fileID: 0}
+      AnimationStateName: 
+    audio:
+      source: {fileID: 0}
+      clip: {fileID: 0}
+    cameraTarget: {fileID: 0}
+    name: 
+    sentence: Elios! comon lets go over there! its easy! just hold your left mouse
+      button to walk.
+    delay: 4
+    resultIndex: 0
+  - animation:
+      animator: {fileID: 0}
+      AnimationStateName: 
+    audio:
+      source: {fileID: 0}
+      clip: {fileID: 0}
+    cameraTarget: {fileID: 0}
+    name: 
+    sentence: Oh wow the little light goes red if you can interact with something!
+      Left click, left click, left click!!
     delay: 5
     resultIndex: 0
 --- !u!114 &1133812109691748872
