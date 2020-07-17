@@ -30,6 +30,20 @@ public class Dementum : DialogueTrigger
     [SerializeField]
     Transform lostCameraTransform;
 
+    [SerializeField]
+    AudioClip backgroundMusicClip;
+
+    AudioClip oldBackgroundMusic;
+
+    protected override void PlaySound()
+    {
+        base.PlaySound();
+        oldBackgroundMusic = AudioManager.Instance.GetSourceClip(0);
+
+        AudioManager.Instance.SetSourceClip(backgroundMusicClip);
+
+    }
+
     public override void TheEnd(bool isLose)
     {
         base.TheEnd(isLose);
@@ -70,6 +84,7 @@ public class Dementum : DialogueTrigger
             // Light near Dementum disappears
             // This Light is the first in the List
             objectsToDeactivate.First().SetActive(false);
+            AudioManager.Instance.SetSourceClip(oldBackgroundMusic);
         }
 
         // Set Gameobject inactive

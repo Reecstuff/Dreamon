@@ -99,6 +99,15 @@ public class AudioManager : MonoBehaviour
         sources[index].Play();
     }
 
+    public AudioClip GetSourceClip(int index = 0)
+    {
+        if (!sources[index].clip)
+            return null;
+
+        return sources[index].clip;
+
+    }
+
     public void PitchManual(float pitch, int index = 0)
     {
         sources[index].pitch = pitch;

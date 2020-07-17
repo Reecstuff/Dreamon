@@ -723,7 +723,7 @@ MonoBehaviour:
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: Ego
-        sentence: Why is are the lights out???
+        sentence: Why are the lights out???
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Getting_Up
@@ -736,6 +736,7 @@ MonoBehaviour:
       decisions: []
       nextDecisions: 
   lostCameraTransform: {fileID: 219572550171235772}
+  backgroundMusicClip: {fileID: 8300000, guid: 92b98deff534038409a8ace4aba6f49c, type: 3}
 --- !u!82 &1080324107628060643
 AudioSource:
   m_ObjectHideFlags: 0
@@ -747,17 +748,17 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 721591663623174352, guid: aaf1ef32f3fd50c4d9bb9cea86e36964,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 92b98deff534038409a8ace4aba6f49c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 0ac3e1c61abc3c448a996ae357061bbb, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 10
   MaxDistance: 20
   Pan2D: 0
   rolloffMode: 0
@@ -793,7 +794,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
