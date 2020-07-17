@@ -22,6 +22,9 @@ public class CameraController : MonoBehaviour
     [SerializeField]
     float zoomSpeed = 0.05f;
 
+    [SerializeField]
+    float betweenFacesSpeed = 0.1f;
+
 
     float targetZoom = 0;
     float zoomValue = 0.5f;
@@ -36,7 +39,7 @@ public class CameraController : MonoBehaviour
     public float drivingTime = 2;
 
     public float dampingTime = 15;
-
+    float timer = 0;
 
     void Update()
     {
@@ -74,6 +77,14 @@ public class CameraController : MonoBehaviour
             else
                 transform.LookAt(target.position + Vector3.up * pitch);
         }
+        else
+        {
+            transform.rotation = Quaternion.Slerp(
+                transform.rotation,
+                Quaternion.LookRotation(
+                    target.position - transform.position),
+                timer += Time.deltaTime * betweenFacesSpeed);
+        }
     }
 
     public void MoveToFixedPosition(Vector3 newPosition, Transform newTarget)
@@ -95,11 +106,26 @@ public class CameraController : MonoBehaviour
     public void LerpLookAt(Transform newLookAt)
     {
         onLookAtLerp = true;
-        transform.DOLookAt(newLookAt.position, drivingTime / 2);
+        timer = 0;
         target = newLookAt;
         CancelInvoke(nameof(ResetLookAt));
         Invoke(nameof(ResetLookAt), drivingTime / 2);
     }
+
+    IEnumerator RotateTowardsSmooth(Transform lookAt)
+    {
+        float timer = 0;
+        Quaternion rotation = Quaternion.LookRotation(lookAt.position - transform.position);
+
+        while (transform.rotation != rotation)
+        {
+            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, timer += Time.deltaTime);
+            yield return new WaitForEndOfFrame();
+        }
+
+        ResetLookAt();
+    }
+
 
     public void StartResetCameraToPlayer()
     {

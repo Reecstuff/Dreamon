@@ -1601,16 +1601,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 2824791701659454390, guid: 42fbe90f27e2b9341b3452e7a3770d55,
-        type: 3}
-      propertyPath: footsteps.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 0fae5fa15b06feb4a8b493228dd19d60, type: 3}
-    - target: {fileID: 2824791701659454390, guid: 42fbe90f27e2b9341b3452e7a3770d55,
-        type: 3}
-      propertyPath: footsteps.Array.data[1]
-      value: 
-      objectReference: {fileID: 8300000, guid: 92a50dfa992166846b0c9a2e364af5de, type: 3}
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5659,6 +5649,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StartDialog
+      objectReference: {fileID: 0}
+    - target: {fileID: 7156026689946373129, guid: 1ecaff3d0076bb6428f674170f69227b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
