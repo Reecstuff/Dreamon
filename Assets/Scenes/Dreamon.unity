@@ -5689,7 +5689,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[3].cameraTarget
       value: 
-      objectReference: {fileID: 977994657}
+      objectReference: {fileID: 1378851288}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[4].cameraTarget
