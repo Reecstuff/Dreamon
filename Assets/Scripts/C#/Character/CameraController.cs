@@ -112,20 +112,6 @@ public class CameraController : MonoBehaviour
         Invoke(nameof(ResetLookAt), drivingTime / 2);
     }
 
-    IEnumerator RotateTowardsSmooth(Transform lookAt)
-    {
-        float timer = 0;
-        Quaternion rotation = Quaternion.LookRotation(lookAt.position - transform.position);
-
-        while (transform.rotation != rotation)
-        {
-            transform.rotation = Quaternion.Slerp(transform.rotation, rotation, timer += Time.deltaTime);
-            yield return new WaitForEndOfFrame();
-        }
-
-        ResetLookAt();
-    }
-
 
     public void StartResetCameraToPlayer()
     {
