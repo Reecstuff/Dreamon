@@ -6,18 +6,58 @@ using DG.Tweening;
 [RequireComponent(typeof(AudioSource))]
 public class PathBlocker : MonoBehaviour
 {
+    [SerializeField]
+    Transform pathBlockerEndPosition;
 
     AudioSource audioSource;
     DialogueTrigger dialogueTrigger;
 
+
+    private void Start()
+    {
+        LoadState();
+    }
+
+
     public void ClearPathBlocker()
     {
         PlayAudio();
-        if (dialogueTrigger = GetComponent<DialogueTrigger>())
-            dialogueTrigger.enabled = false;
+        SaveState();
+    }
 
-        // Missing Animation
-        transform.DOMoveY(transform.localPosition.y + 10, 0.1f);
+    public void EndState()
+    {
+        if (dialogueTrigger = GetComponent<DialogueTrigger>())
+        {
+            dialogueTrigger.enabled = false;
+            dialogueTrigger.TheEnd(false);
+        }
+        transform.position = pathBlockerEndPosition.position;
+        transform.rotation = pathBlockerEndPosition.rotation;
+    }
+
+    protected virtual void SaveState()
+    {
+        if (SaveManager.instance)
+        {
+            if (!SaveManager.instance.HasInteracted(gameObject.name))
+            {
+                SaveManager.instance.Save(gameObject.name);
+            }
+        }
+    }
+
+
+    /// <summary>
+    /// Load the state of this Trigger from savegame
+    /// </summary>
+    protected virtual void LoadState()
+    {
+        if(SaveManager.instance)
+        if (SaveManager.instance.HasInteracted(gameObject.name))
+        {
+            ClearPathBlocker();
+        }
     }
 
 

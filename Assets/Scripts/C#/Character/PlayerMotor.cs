@@ -9,10 +9,14 @@ public class PlayerMotor : MonoBehaviour
 {
     Transform target;       //Target to follow
     NavMeshAgent agent;     //Reference to our agent
-    Animator anim;          // Reference to Animationcontroller
+    Animator animElios;     // Reference to Animationcontroller
+    Animator animEgo;
 
     [SerializeField]
-    string[] animStates;
+    string[] animStatesElios;
+
+    [SerializeField]
+    string[] animIdleStatesEgo;
 
     [SerializeField]
     AudioClip[] footsteps;
@@ -20,14 +24,18 @@ public class PlayerMotor : MonoBehaviour
     [SerializeField]
     AudioSource footSource;
 
-    int currentAnimationIndex = 0;
+    string currentEliosState = string.Empty;
     int currentFootstepIndex = 0;
+    string currentEgoState = string.Empty;
+    int currentEgoStateCounter = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        anim = GetComponentInChildren<Animator>();
+        animElios = GetComponentInChildren<Animator>();
+        animEgo = GetComponentsInChildren<Animator>()[1];
+
         if (footSource && footsteps != null)
             footSource.clip = footsteps[0];
     }
@@ -56,16 +64,32 @@ public class PlayerMotor : MonoBehaviour
         if (footSource)
             PlaySound();
 
-        PlayAnimation(1);
+        PlayAnimation(ref animElios, ref animStatesElios[1], ref currentEliosState);
     }
 
     void Idle()
     {
-        PlayAnimation(0, true);
+        PlayAnimation(ref animElios, ref animStatesElios[0], ref currentEliosState, true);
+        PlayAnimation(ref animEgo, ref animIdleStatesEgo[currentEgoStateCounter], ref currentEgoState, true);
+
+
+        if(animEgo.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !animEgo.IsInTransition(0))
+        {
+            StartCoroutine(WaitforSecondsToSetEgoAnimation(5));
+        }
+
         StopSound();
     }
 
     
+    IEnumerator WaitforSecondsToSetEgoAnimation(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+
+        // Count in sequence for Ego Idle Animation
+        currentEgoStateCounter = currentEgoStateCounter + 1 < animIdleStatesEgo.Length ? currentEgoStateCounter + 1 : 0;
+    }
+
 
     /// <summary>
     /// Move Player to Point on Layer Ground
@@ -137,36 +161,31 @@ public class PlayerMotor : MonoBehaviour
         footSource.Stop();
     }
 
-    public void PlayAnimation(int index, bool crossfade = false)
+    void PlayAnimation(ref Animator anim, ref string state, ref string currentState, bool crossfade = false)
     {
-        if(anim)
+        if(!state.Equals(currentState))
         {
-            if(currentAnimationIndex != index)
-            {
-                currentAnimationIndex = index;
-                if (crossfade)
-                {
-                    anim.CrossFade(animStates[index], 0.3f);
-                }
-                else
-                {
-                    anim.Play(animStates[index]);
-                }
-            }
+            currentState = state;
+
+            if (crossfade)
+                anim.CrossFade(state, 0.3f);
+            else
+                anim.Play(state);
         }
+
     }
 
     public string GetAnimationState()
     {
-        return animStates[currentAnimationIndex];
+        return currentEliosState;
     }
 
     public void SetAnimationState(string animationState)
     {
-        if (animationState.Equals(animStates[1]))
-            anim.Play(animStates[0]);
+        if (animationState.Equals(animStatesElios[1]))
+            animElios.Play(animStatesElios[0]);
         else
-            anim.Play(animationState);
+            animElios.Play(animationState);
     }
 
     public int GetFootstepIndex()

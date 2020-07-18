@@ -265,7 +265,7 @@ public class DialogueManager : MonoBehaviour
     /// <returns></returns>
     IEnumerator TypeSentence(string sentence)
     {
-        dialogueText.text = "";
+        dialogueText.SetText("");
 
         int lastlineCount = 1;
 

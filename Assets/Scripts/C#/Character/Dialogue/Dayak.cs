@@ -38,4 +38,10 @@ public class Dayak : DialogueTrigger
         Invoke(nameof(SetInactive), deathAnimationTime + 0.5f);
 
     }
+
+    public override void SetEndState(bool isLose)
+    {
+        base.SetEndState(isLose);
+        TheEnd(isLose);
+    }
 }
