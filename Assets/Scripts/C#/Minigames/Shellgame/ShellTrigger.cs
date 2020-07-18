@@ -6,47 +6,26 @@ public class ShellTrigger : Interactable
 {
 	public bool isWin;
 
-	public GameObject assignedTarget;
-	public int winDialogue;
-	public int loseDialogue;
-
 	public override void Interact()
 	{
-		GetComponent<ShellTrigger>().SelectShell();
+		if (GetComponentInParent<ShellgameManager>().animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
+		{
+			GetComponent<ShellTrigger>().SelectShell();
+		}
 	}
 
 	public void SelectShell()
 	{
-		//Play animation
-
 		//Check for winthing
 		if (isWin == true)
 		{
 			//Win the game
-			Win();
+			GetComponentInParent<ShellgameManager>().Win();
 		}
 		else if (isWin == false)
 		{
 			//Lose the game
-			Lost();
+			GetComponentInParent<ShellgameManager>().Lost();
 		}
-	}
-
-	public void Win()
-	{
-		//Win the DontGetDrunk game
-		Debug.Log("You Win");
-
-		//Stop game
-		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
-	}
-
-	public void Lost()
-	{
-		//Lose the DontGetDrunk game
-		Debug.Log("You Lose");
-
-		//Stop game
-		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
 	}
 }

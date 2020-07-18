@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2607370184280613952}
   - component: {fileID: 2607370184280613953}
+  - component: {fileID: 47977396048909992}
   m_Layer: 0
   m_Name: Shellgame
   m_TagString: Untagged
@@ -46,11 +47,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcd085a8469c2414aa735fc43fdf01c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animations: []
+  assignedTarget: {fileID: 0}
+  animator: {fileID: 0}
   shells:
   - {fileID: 4656587066357730479}
   - {fileID: 2739825929630125631}
   - {fileID: 2739825929941905072}
+  pointPrefab: {fileID: 4259239415831732587, guid: 3a2bb8756f6588a44b5a41198f8db2f0,
+    type: 3}
+--- !u!95 &47977396048909992
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2607370184280615870}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5e77679c763750c42b6b8fdb360aa530, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2607370184105263634
 PrefabInstance:
   m_ObjectHideFlags: 0

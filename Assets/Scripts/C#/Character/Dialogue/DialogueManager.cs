@@ -134,6 +134,7 @@ public class DialogueManager : MonoBehaviour
         if (end == true && option.nextMinigame)
         {
             selectMinigame = option.nextMinigame;
+            minigameManager = currentTrigger.minigameManager;
         }
 
         DisplayNextSentence();

@@ -111,7 +111,6 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   cameraPosition: {fileID: 0}
   minigame: {fileID: 0}
-  endDoor: {fileID: 0}
   winRounds: 0
   loseRounds: 0
   nextWinDialog: 01000000
