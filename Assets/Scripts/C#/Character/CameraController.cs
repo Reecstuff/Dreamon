@@ -27,7 +27,7 @@ public class CameraController : MonoBehaviour
 
 
     float targetZoom = 0;
-    float zoomValue = 0; //0.5f;
+    float zoomValue = 0;
 
     private float currentZoom = 10f;
     private float currentYaw = 0;
