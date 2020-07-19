@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using TMPro;
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
@@ -34,6 +35,9 @@ public class BoardManager : MiniGame
 	[SerializeField]
 	AudioClip[] hitPiece;
 
+	[SerializeField]
+	TextMeshProUGUI roundText;
+
 	AudioSource source;
 
 	private void Start()
@@ -57,18 +61,7 @@ public class BoardManager : MiniGame
 		{
 			loseRounds++;
 
-			if (rounds == 3)
-			{
-				if (winRounds < loseRounds)
-				{
-					assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
-				}
-				else if (winRounds > loseRounds)
-				{
-					assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
-				}
-			}
-
+			CheckForWinLose();
 
 			SpawnAllChessmans(rounds);
 		}
@@ -91,23 +84,28 @@ public class BoardManager : MiniGame
 					if (MoveChessman(selectionX, selectionY))
 					{
 						winRounds++;
-						if (rounds == 3)
-						{
-							if (winRounds < loseRounds)
-							{
-								assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
-							}
-							else if (winRounds > loseRounds)
-							{
-								assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
-							}
-						}
+						CheckForWinLose();
 
 
 						SpawnAllChessmans(rounds);
 					}
 
 				}
+			}
+		}
+	}
+
+	void CheckForWinLose()
+    {
+		if (rounds == 3)
+		{
+			if (winRounds < loseRounds)
+			{
+				assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
+			}
+			else if (winRounds > loseRounds)
+			{
+				assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
 			}
 		}
 	}
@@ -276,6 +274,7 @@ public class BoardManager : MiniGame
 		currentChessmans = activeChessman.Count(c => c.GetComponent<Pieces>() == true);
 		selectionX = 0;
 		selectionY = 0;
+		ShowRounds();
 	}
 
 	private void DrawChessboard()
@@ -285,5 +284,13 @@ public class BoardManager : MiniGame
 		{
 			selectedHighlight.transform.localPosition = Vector3.forward * (selectionY + 0.5f )  + Vector3.right * (selectionX + 0.5f )  + Vector3.up * 0.002f;
 		}
+	}
+
+	void ShowRounds()
+    {
+		if(rounds <= 3)
+			roundText.SetText(string.Concat("Round\n", rounds));
+		else
+			roundText.SetText(string.Empty);
 	}
 }

@@ -130,8 +130,8 @@ MonoBehaviour:
   hasInteracted: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineSpacing: 0.01
-  radius: 3
-  interactionTransform: {fileID: 0}
+  radius: 4
+  interactionTransform: {fileID: 9173834014691732105}
   dialogue:
   - option:
     - endSentence: 1
@@ -221,6 +221,5 @@ MonoBehaviour:
   minigameManager: {fileID: 9173834014691732104}
   camPosition: {fileID: 9173834014691732105}
   source: {fileID: 0}
-  saveIndex: 2
   objectsToDeactivate: []
   deathAnimationTime: 6

@@ -27,7 +27,7 @@ public class CameraController : MonoBehaviour
 
 
     float targetZoom = 0;
-    float zoomValue = 0.5f;
+    float zoomValue = 0;
 
     private float currentZoom = 10f;
     private float currentYaw = 0;
@@ -45,48 +45,85 @@ public class CameraController : MonoBehaviour
     {
         if (!fixedCamera)
         {
-            transform.position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
-            //Rotates the camera when you hold down the middle mouse button
-            if (Input.GetKey(KeyCode.Mouse1))
-            {
-                Quaternion camTurnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * Time.deltaTime * 1000f, Vector3.up);
-
-                offset = camTurnAngle * offset;
-            }
-
-            // Zooms the Camera
-            Camerazoom();
+            NotFixedCamera();
         }
     }
+
+    #region UpdateMethods
+
+    void NotFixedCamera()
+    {
+        //Rotates the camera when you hold down the middle mouse button
+        RotateCameraOnInput();
+
+        // Zooms the Camera
+        Camerazoom();
+    }
+
+    void RotateCameraOnInput()
+    {
+        if (Input.GetKey(KeyCode.Mouse1))
+        {
+            Quaternion camTurnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * Time.deltaTime * 1000f, Vector3.up);
+
+            offset = camTurnAngle * offset;
+        }
+    }
+
+    #endregion
 
     void LateUpdate()
     {
         if (!fixedCamera)
         {
             //The camera follows the player
-            transform.position = target.position - offset * currentZoom;
-            transform.LookAt(target.position + Vector3.up * pitch);
-
-            transform.RotateAround(target.position, Vector3.up, currentYaw);
+            FollowPlayer();
+            
         }
         else if(!onLookAtLerp)
         {
-            if (!onOffsetReset)
-                LookAtTarget(target.position);
-            else
-                transform.LookAt(target.position + Vector3.up * pitch);
+            LookAtPlayerNormal();
         }
         else
         {
-            transform.rotation = Quaternion.Slerp(
+            LookAtFacesInDialogue();
+        }
+    }
+
+    #region LateUpdateMethods
+
+    void FollowPlayer()
+    {
+        transform.position = target.position - offset * currentZoom;
+        transform.LookAt(target.position + Vector3.up * pitch);
+
+        transform.RotateAround(target.position, Vector3.up, currentYaw);
+    }
+
+    void LookAtPlayerNormal()
+    {
+        if (!onOffsetReset)
+            LookAtTarget(target.position);
+        else
+            transform.LookAt(target.position + Vector3.up * pitch);
+    }
+
+    void LookAtFacesInDialogue()
+    {
+        transform.rotation = Quaternion.Slerp(
                 transform.rotation,
                 Quaternion.LookRotation(
                     target.position - transform.position),
                 timer += Time.deltaTime * betweenFacesSpeed);
-        }
     }
 
+    #endregion
+
+    #region MoveCamera
+
+    /// <summary>
+    /// Move Camera to a fixed position, instead of following the player
+    /// </summary>
     public void MoveToFixedPosition(Vector3 newPosition, Transform newTarget)
     {
         fixedCamera = true;
@@ -96,6 +133,9 @@ public class CameraController : MonoBehaviour
         transform.DOMove(newPosition, drivingTime);
     }
 
+    /// <summary>
+    /// Move Camera back to following player
+    /// </summary>
     public void MoveToOffset(Transform newTarget)
     {
         onOffsetReset = true;
@@ -103,6 +143,11 @@ public class CameraController : MonoBehaviour
         transform.DOMove(target.position - offset * currentZoom, drivingTime);
     }
 
+    #endregion
+
+    /// <summary>
+    /// Trigger LookAtFaces() on moving between faces in dialogue
+    /// </summary>
     public void LerpLookAt(Transform newLookAt)
     {
         onLookAtLerp = true;
@@ -112,6 +157,7 @@ public class CameraController : MonoBehaviour
         Invoke(nameof(ResetLookAt), drivingTime / 2);
     }
 
+    #region ResetCamera
 
     public void StartResetCameraToPlayer()
     {
@@ -123,17 +169,17 @@ public class CameraController : MonoBehaviour
         onOffsetReset = false;
         CancelInvoke(nameof(ResetCameraToPlayer));
     }
-
     void ResetLookAt()
     {
         onLookAtLerp = false;
     }
-
     void ResetCameraToPlayer()
     {
         onOffsetReset = false;
         fixedCamera = false;
     }
+
+    #endregion
 
     /// <summary>
     /// Control Speed of LookAt
@@ -157,6 +203,7 @@ public class CameraController : MonoBehaviour
         }
         else if (Mathf.Abs(targetZoom) > 0 && Mathf.Abs(targetZoom - currentZoom) > 0.0001f)
         {
+            // Zoom for one part of the route
             if (Mathf.Abs(targetZoom - currentZoom) > 0.6f)
             {
                 // Zoom in normal Speed
@@ -167,6 +214,7 @@ public class CameraController : MonoBehaviour
                 else
                     currentZoom = Mathf.SmoothDamp(currentZoom, targetZoom, ref zoomValue, zoomSpeed);
             }
+            // Zoom slower for the last part of the route
             else if(Input.mouseScrollDelta.y == 0)
             {
                 zoomValue = 0;
@@ -176,7 +224,9 @@ public class CameraController : MonoBehaviour
         }
         else
         {
+            // Reset zoom to be
             targetZoom = 0;
         }
     }
+
 }

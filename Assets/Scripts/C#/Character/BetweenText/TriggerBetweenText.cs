@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 
-
+/// <summary>
+/// Trigger BetweenText on player enter
+/// </summary>
 [RequireComponent(typeof(Collider))]
 public class TriggerBetweenText : MonoBehaviour
 {
@@ -19,10 +21,14 @@ public class TriggerBetweenText : MonoBehaviour
     {
         GetComponent<Collider>().isTrigger = true;
 
+        //Subscribe event for loading Savefile
         if (SaveManager.instance)
             SaveManager.instance.OnLoadSave += LoadState;
     }
 
+    /// <summary>
+    /// If not already triggerd Callbetweentext and save
+    /// </summary>
     private void OnTriggerEnter(Collider other)
     {
         if(!triggered)
@@ -34,6 +40,9 @@ public class TriggerBetweenText : MonoBehaviour
             }
     }
 
+    /// <summary>
+    /// Save state of this Trigger
+    /// </summary>
     void SaveState()
     {
         if (SaveManager.instance)
@@ -57,6 +66,9 @@ public class TriggerBetweenText : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Unsubscribe event for loading savedata
+    /// </summary>
     private void OnDisable()
     {
         if (SaveManager.instance)

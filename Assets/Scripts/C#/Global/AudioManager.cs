@@ -1,10 +1,10 @@
-﻿using DG.Tweening;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.Audio;
 using System.Linq;
 
+/// <summary>
+/// Manager of all Audio
+/// </summary>
 [RequireComponent(typeof(AudioSource), typeof(AudioSource))]
 public class AudioManager : MonoBehaviour
 {
@@ -113,6 +113,9 @@ public class AudioManager : MonoBehaviour
         sources[index].pitch = pitch;
     }
 
+    /// <summary>
+    /// Compare clip with all clips in sources
+    /// </summary>
     public bool CompareClip(AudioClip clip)
     {
 

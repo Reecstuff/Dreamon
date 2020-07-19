@@ -1,9 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 
-
+/// <summary>
+/// Control BetweenText
+/// </summary>
 public class CallBetweenText : MonoBehaviour
 {
     [SerializeField]
