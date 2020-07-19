@@ -303,12 +303,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 741028792}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &312706730 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9173834014691732105, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-    type: 3}
-  m_PrefabInstance: {fileID: 741028792}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &355202932 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2607370184280613953, guid: fa8338af931a9b544b8d1daefb686829,
@@ -662,16 +656,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: interactionTransform
-      value: 
-      objectReference: {fileID: 312706730}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: radius
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 9173834014691732104, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: mainCamera
@@ -1040,24 +1024,6 @@ Transform:
 --- !u!1 &918208671 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 333434876531243821, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1798434590}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &918208673 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 333434876531243822, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1798434590}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 918208671}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7c4268f7c154c645be5dcf1130bf241, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &918208677 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 333434876531243819, guid: 49b1e9fe4328d6943baefa71a6a229eb,
     type: 3}
   m_PrefabInstance: {fileID: 1798434590}
   m_PrefabAsset: {fileID: 0}
@@ -2878,120 +2844,9 @@ PrefabInstance:
       objectReference: {fileID: 564862952}
     - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
         type: 3}
-      propertyPath: dialogue.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[1].option.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[0].talks.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[1].option.Array.data[0].talks.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: minigameManager
-      value: 
-      objectReference: {fileID: 918208673}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
       propertyPath: camPosition
       value: 
       objectReference: {fileID: 1411189595}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[0].nextMinigame
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[0].endSentence
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].name
-      value: Belphe
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].sentence
-      value: "Ich soll dir von Henrik ausrichten das die Dialoge von Bernhardt noch
-        nicht fertig sind und er sie deshalb noch nicht eingef\xFCgt hat."
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[1].option.Array.data[0].endSentence
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[0].endSentence
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[0].talks.Array.data[0].name
-      value: Belphe
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[0].talks.Array.data[0].sentence
-      value: Lose
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[1].option.Array.data[0].talks.Array.data[0].sentence
-      value: Win
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[1].option.Array.data[0].talks.Array.data[0].name
-      value: Belphe
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[1].option.Array.data[0].talks.Array.data[0].cameraTarget
-      value: 
-      objectReference: {fileID: 918208677}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[0].talks.Array.data[0].cameraTarget
-      value: 
-      objectReference: {fileID: 918208677}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[1].name
-      value: Belphe
-      objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[1].sentence
-      value: UND NUN SPIELE!
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49b1e9fe4328d6943baefa71a6a229eb, type: 3}
 --- !u!1001 &1821549315
