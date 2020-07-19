@@ -1,8 +1,9 @@
 ﻿using DG.Tweening;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Look at a specific transform in a set amount of time
+/// </summary>
 public class LookAtInTime : MonoBehaviour
 {
     [SerializeField]
@@ -16,6 +17,11 @@ public class LookAtInTime : MonoBehaviour
         Look(lookAtStart.position, timeAtStart);
     }
 
+    /// <summary>
+    /// Look at an object after a set amount of time
+    /// </summary>
+    /// <param name="position">Position of object</param>
+    /// <param name="time">Time until the object is in focus</param>
     public void Look(Vector3 position, float time)
     {
         transform.DOLookAt(position, time);

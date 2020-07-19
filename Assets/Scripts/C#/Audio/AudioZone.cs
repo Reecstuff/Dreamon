@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 
 /// <summary>
@@ -23,6 +22,10 @@ public class AudioZone : MonoBehaviour
         GetComponent<Collider>().isTrigger = true;
     }
 
+
+    /// <summary>
+    /// Set Background & FXclip to this Clip if not already set
+    /// </summary>
     private void OnTriggerEnter(Collider other)
     {
         if (AudioManager.Instance)
@@ -41,6 +44,9 @@ public class AudioZone : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Set clips to no clip on exit zone
+    /// </summary>
     private void OnTriggerExit(Collider other)
     {
         if (AudioManager.Instance)
@@ -53,6 +59,9 @@ public class AudioZone : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// On Disable set Ambience off
+    /// </summary>
     private void OnDisable()
     {
         if(AudioManager.Instance)

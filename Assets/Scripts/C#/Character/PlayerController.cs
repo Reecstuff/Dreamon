@@ -1,10 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using DG.Tweening;
-using System.Reflection;
+﻿using UnityEngine;
 using UnityEngine.AI;
 
+/// <summary>
+/// Control player by input
+/// </summary>
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour
 {
@@ -22,12 +21,12 @@ public class PlayerController : MonoBehaviour
 
 
 
-    // Start is called before the first frame update
     void Start()
     {
         cam = Camera.main;
         motor = GetComponent<PlayerMotor>();
 
+        // Subscribe to load and autoSave event
         if (SaveManager.instance)
         {
             SaveManager.instance.OnLoadSave += LoadPlayer;
@@ -35,13 +34,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         CheckForInteractable();
         MoveCharacter();
     }
 
+    /// <summary>
+    /// Load player in scene
+    /// </summary>
     public void LoadPlayer()
     {
         // Fixing Positionbug
@@ -53,11 +55,17 @@ public class PlayerController : MonoBehaviour
         GetComponent<NavMeshAgent>().enabled = true;
     }
 
+    /// <summary>
+    /// Save all data from player
+    /// </summary>
     public void SavePlayer()
     {
         SaveManager.instance.Save(transform.position, motor.GetAnimationState(), motor.GetFootstepIndex());
     }
 
+    /// <summary>
+    /// Check for Interactable on Leftclick
+    /// </summary>
     void CheckForInteractable()
     {
         if (Input.GetMouseButtonDown(0))
@@ -79,6 +87,9 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Move Character in direction of Mousecursor
+    /// </summary>
     void MoveCharacter()
     {
         if (Input.GetMouseButton(0) && focus == null)
@@ -94,6 +105,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Set interactable Focus of Character
+    /// </summary>
+    /// <param name="newFocus"></param>
     public void SetFocus(Interactable newFocus)
     {
         if (newFocus.hasInteracted)
@@ -107,6 +122,8 @@ public class PlayerController : MonoBehaviour
             }
 
             focus = newFocus;
+
+            // Move to Interactable
             motor.FollowTarget(newFocus);
         }
 
@@ -126,9 +143,11 @@ public class PlayerController : MonoBehaviour
 
     private void OnDisable()
     {
+        // Unsubscribe events
         if (SaveManager.instance)
         {
             SaveManager.instance.OnLoadSave -= LoadPlayer;
+            SaveManager.instance.currentAutoSave.OnAutoSave -= SavePlayer;
         }
     }
 }

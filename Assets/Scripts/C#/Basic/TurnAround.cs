@@ -1,7 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
+/// <summary>
+/// Just rotate this object around y axis
+/// </summary>
 public class TurnAround : MonoBehaviour
 {
     [Range(0,20)]

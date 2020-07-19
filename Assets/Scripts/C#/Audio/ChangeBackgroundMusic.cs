@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 /// <summary>
 /// Set new Backgroundmusic on Sceneload
@@ -15,13 +13,20 @@ public class ChangeBackgroundMusic : MonoBehaviour
 
     void Start()
     {
-        if (newMusic)
-            AudioManager.Instance?.SetSourceClip(newMusic);
+        SetClip(newMusic);
+        SetClip(FXSoundClip, 1);
+    }
 
-        if(FXSoundClip)
-        if (!AudioManager.Instance.CompareClip(FXSoundClip))
-        {
-            AudioManager.Instance.SetSourceClip(FXSoundClip, 1);
-        }
+    /// <summary>
+    /// Set Audioclip in Audiosources of AudioManager
+    /// </summary>
+    /// <param name="clip"></param>
+    /// <param name="index"></param>
+    void SetClip(AudioClip clip, int index = 0)
+    {
+        if(AudioManager.Instance)
+            if (clip)
+                if(!AudioManager.Instance.CompareClip(clip))
+                    AudioManager.Instance.SetSourceClip(clip, 0);
     }
 }

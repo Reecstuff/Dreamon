@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 
+/// <summary>
+/// Objects that the player can interact with
+/// </summary>
 public class Interactable : OutlineObject
 {
 	public float radius = 3f;
@@ -26,6 +29,11 @@ public class Interactable : OutlineObject
 
 	void Update()
 	{
+		CheckForInteraction();
+	}
+
+	void CheckForInteraction()
+    {
 		if (interactionTransform && isFocus && !hasFocused)
 		{
 			float distance = Vector2.Distance(player.position, interactionTransform.position);
@@ -37,6 +45,9 @@ public class Interactable : OutlineObject
 		}
 	}
 
+	/// <summary>
+	/// Interactable is focused by the player 
+	/// </summary>
 	public void OnFocused(Transform playerTransform)
 	{
 		isFocus = true;
@@ -44,6 +55,9 @@ public class Interactable : OutlineObject
 		hasFocused = false;
 	}
 
+	/// <summary>
+	/// Interactable is no longer focused by the player
+	/// </summary>
 	public void OnDefocused()
 	{
 		isFocus = false;
@@ -53,6 +67,7 @@ public class Interactable : OutlineObject
 
 	private void OnDrawGizmosSelected()
 	{
+		// Draw Interactionradius
 		if(interactionTransform)
 		{
 			Gizmos.color = Color.yellow;

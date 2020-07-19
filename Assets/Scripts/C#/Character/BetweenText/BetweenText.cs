@@ -4,9 +4,15 @@ using TMPro;
 using UnityEngine;
 
 
+/// <summary>
+/// Talk with a delay for longer readingtime
+/// </summary>
 [System.Serializable]
 public class TimedTalk : Dialogue.Talk
 {
+    /// <summary>
+    /// Is added to readingtime
+    /// </summary>
     public float delay = 0;
     public int resultIndex = 0;
 }

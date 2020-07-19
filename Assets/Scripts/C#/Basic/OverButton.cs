@@ -1,9 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+
+/// <summary>
+/// Parentclass to check if mousecursor is hovering over a Button
+/// </summary>
 [RequireComponent(typeof(Button))]
 public class OverButton : MonoBehaviour, IPointerEnterHandler, ISelectHandler, IPointerExitHandler
 {
@@ -33,21 +35,27 @@ public class OverButton : MonoBehaviour, IPointerEnterHandler, ISelectHandler, I
         GetComponent<Button>().onClick.AddListener(() => ButtonClicked());
     }
 
-
+    /// <summary>
+    /// Button is clicked
+    /// </summary>
     protected virtual void ButtonClicked()
     {
 
     }
 
+    /// <summary>
+    /// Mouse is over button
+    /// </summary>
     protected virtual void OnButton()
     {
 
     }
 
+    /// <summary>
+    /// Mouse is no longer on button
+    /// </summary>
     protected virtual void ButtonExit()
     {
 
     }
-
-   
 }
