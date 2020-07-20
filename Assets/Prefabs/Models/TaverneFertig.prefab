@@ -3089,8 +3089,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 5263941446477949815}
+          clip: {fileID: 8300000, guid: ecfcadf9efbc06e4b9bbe5365063064f, type: 3}
         cameraTarget: {fileID: 7351349278180376846}
         name: Elios
         sentence: '[sighs]'
@@ -17488,8 +17488,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 5263941446477949815}
+          clip: {fileID: 8300000, guid: 8dcdb9d935856dc4b9097e5c096deb67, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: '[sighs] Nothing for you...'
