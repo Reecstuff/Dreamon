@@ -6031,41 +6031,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.15657142
-      objectReference: {fileID: 0}
-    - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.29883164
-      objectReference: {fileID: 0}
-    - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.049669877
-      objectReference: {fileID: 0}
-    - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.94006276
-      objectReference: {fileID: 0}
-    - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 7.4904785
-      objectReference: {fileID: 0}
-    - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.47923684
-      objectReference: {fileID: 0}
-    - target: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.15433502
-      objectReference: {fileID: 0}
     - target: {fileID: 1133812109691748872, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: camTarget
@@ -6160,7 +6125,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[1].animation.animator
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 575323367}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[2].animation.animator
