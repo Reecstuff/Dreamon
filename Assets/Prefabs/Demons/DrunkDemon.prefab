@@ -188,8 +188,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 8300000, guid: ea92f452c66a2024b9e91d4061ea85ce, type: 3}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 1675d13edf7479541a15125eccff9631, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "Hey you brat, I need your help. We\u2019re gonna play a game!"
@@ -205,8 +205,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Uncomfortable
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 01d5de9bed787b247adc9f214f318c78, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Ohm.. what the\u2026\r"
@@ -214,8 +214,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 2bf2eb8caf6728941a2084299ff5a7dd, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: You bet! Or is there any other soul?
@@ -223,8 +223,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Depressive
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: fdf16b20f6b14c9429db0525d285e420, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: I guess not.
@@ -232,8 +232,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Questioning
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 10e79216213852e47ad79dfaf96502ba, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Hey, what about me?\r"
@@ -241,8 +241,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 79bf04bad98ff5d41b7268555371646b, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: What are you waiting for? Get your ass here and drink a bottle
@@ -251,8 +251,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Sulky
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: c2951428792baeb4f98b151c02e0be38, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "How rude\u2026\r"
@@ -260,8 +260,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Rejecting
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 9fe6c9db52d54e443a1edea255852bdf, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: I am not interested.
@@ -269,8 +269,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 6bd64e4495f545d4ca90e99e31547747, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "Hey do you know, who you\u2019re talking to? Show some respect
@@ -279,8 +279,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Serious
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: f7f46e8ceb96a2345ad8141011d9baf5, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "But I don\u2019t drink anymore."
@@ -288,8 +288,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 335b6cdedd2730b49a3f63aa4863f06e, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "You shut up! Y\u2019all know nothing! You are so weak. "
@@ -297,8 +297,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Elios_Idle
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 87be85cd20ce50544b0a13768fd6d4e4, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: How do you know?
@@ -306,8 +306,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 93cdf65833310c94f8090c44f69fa1ac, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "Haven\u2019t you even noticed yet? You left your wife night by
@@ -316,8 +316,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Serious
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 0044ed43783c1424393b48e70483ef6a, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: 'Stop it. '
@@ -325,8 +325,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 5c0465711ef72a54985e99a95526900a, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "Broken relationship with the whole family, total isolation and\u2026
@@ -335,8 +335,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Stop_It
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 1d2ace3c2b61b9d488a37a1b457624bf, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: Stop it.
@@ -344,8 +344,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: c6b7a00e4fcb7d84a83c66b3f533141e, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "You coward! Remember the pain you feel\u2026 about the kiss\u2026
@@ -355,7 +355,7 @@ MonoBehaviour:
           AnimationStateName: Elios_Emo_ Stop_It
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 5f743877ef78af44389212b2a810cb9e, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: STOP IT! STOP IT! STOP IT!
@@ -363,8 +363,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Calmdown
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: fac248c5553edd44ea6a6edb52a633b1, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Calm down buddy. Calm down. He is just teasing you. Let\u2019s
@@ -373,8 +373,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 05b282e63f63fd8488503092961297ea, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: '[exhausted sighs]'
@@ -397,8 +397,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Frightened
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 908dbc573eb5c2e44a3d8e6cfb09bddc, type: 3}
         cameraTarget: {fileID: 0}
         name: 'Ego '
         sentence: Ahhhhh.
@@ -406,8 +406,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Uncomfortable
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: bde4b0b52df76f248a80ea0461de793b, type: 3}
         cameraTarget: {fileID: 0}
         name: 'Ego '
         sentence: "What\u2019s that ugly thing! What\u2019s happening! Elios protect
@@ -416,8 +416,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 2525df8f397fc604b8ecc601c3f4e5f0, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "How annoying\u2026"
@@ -425,7 +425,7 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 1080324107628060643}
           clip: {fileID: 0}
         cameraTarget: {fileID: 5219269308381401104}
         name: ...
@@ -434,8 +434,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 838132bc4587c6e4a8ef79f6df1bdbb1, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: Finally. Took you long enough.
@@ -443,8 +443,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: c4944a2a12c75ff45bd578379260613a, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "I know.\r"
@@ -452,8 +452,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Uncomfortable
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 7f8ed00a851bfe4488ba24227d5e117f, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Hey Elios. I\u2026 I don\u2019t feel safe here. Can we go?\r"
@@ -461,8 +461,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Serious
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 8f61ba6446d64884c8b3307929a6a2cd, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: 'No, we stay.
@@ -472,8 +472,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 1f1ef8796ceabd24983ac6686a90fb27, type: 3}
         cameraTarget: {fileID: 2109385137002942098}
         name: Dementum
         sentence: "Good, really good. Haha oh.ch.ohch\r"
@@ -481,7 +481,7 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 1080324107628060643}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: ...
@@ -491,8 +491,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 5e7e913a75d9d5d4b83cf6f0c48f4d88, type: 3}
         cameraTarget: {fileID: 0}
         name: Dementum
         sentence: You know what I really like about the booze?
@@ -509,8 +509,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 715697622ab1054459093c0b5d09aea4, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: 'Dementum '
         sentence: "(fills mugs) It\u2019s the golden elixir! You gotta try this joyness...
@@ -519,8 +519,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Exited
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: d142c2a68d0ff4f4880da82fc7ea9ac6, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Wow... That sounds so beautiful! We really need to drink it, Elios!\r"
@@ -528,8 +528,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: e3c3e34e6278f7c49b2eb365572bf4af, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: '[sad sighs]'
@@ -537,7 +537,7 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 1080324107628060643}
           clip: {fileID: 0}
         cameraTarget: {fileID: 5219269308381401104}
         name: ...
@@ -546,8 +546,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 740d2115fa652a64fa6238b543d85759, type: 3}
         cameraTarget: {fileID: 0}
         name: Dementum
         sentence: 'Open your lug holes, kid. I have two kind of drinks here. '
@@ -555,8 +555,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: e903f4f58ca2cc540b188b065b4710e8, type: 3}
         cameraTarget: {fileID: 0}
         name: Dementum
         sentence: "The one will make you tired and weak, the other will beat me.
@@ -565,7 +565,7 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 1080324107628060643}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: Dementum
@@ -574,8 +574,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Demanding
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 2486578f8d56c93469db60d2a9633aa6, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Finally! Let\u2019s drink it all! haha\r"
@@ -588,8 +588,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Questioning
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: cf5c69dd039512f4286b52806f079192, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Wait Elios! Why do you say no? We haven\u2019t even played yet."
@@ -597,8 +597,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Serious
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: b4f5415d47ed9de4ca047e423add0689, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: No.
@@ -606,8 +606,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Begging
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 69657c8175f8c094a88ae78d6f05e0a4, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Oh come on! Don\u2019t be a douchebag. It\u2019s gonna be fun. "
@@ -615,8 +615,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 5c0465711ef72a54985e99a95526900a, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "Consider your decision well, kid\u2026 before your time runs out. "
@@ -624,8 +624,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 9fe6c9db52d54e443a1edea255852bdf, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: '[sighs]'
@@ -640,8 +640,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 9810126b30f1c474c900feea3f9028c9, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "I knew you couldn\u2019t resist! Do you feel free now?"
@@ -649,8 +649,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Calmdown
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 7d9255ee9baff3c44bfac79193896cb8, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: Chill out, Elios. Take it easy! We feel great!
@@ -664,8 +664,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 39fb5c9f074f6fb47beec7fd3280af64, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "Ohh, Elios. You gutted me. I have to admit, I expected better
@@ -680,8 +680,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 6bd64e4495f545d4ca90e99e31547747, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: 'You gotta be kidding me! How dare you ruin my game! '
@@ -689,8 +689,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Ego_ PleasentlySuprised
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: cf967cc205dece447bf587418eb541b4, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: We won?... I mean, of course we did!
@@ -704,8 +704,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 44da30d9754908f4592e27810275d421, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: ...
         sentence: 'Dementum throws the bottle to the bottom and flinches. The bottle
@@ -714,8 +714,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 335b6cdedd2730b49a3f63aa4863f06e, type: 3}
         cameraTarget: {fileID: 0}
         name: Dementum
         sentence: "Ahhhh. Why are you doing this to me. Don\u2019t you love me? You
@@ -724,8 +724,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Serious
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 8f61ba6446d64884c8b3307929a6a2cd, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: Get out of my sight! We had enough.
@@ -733,8 +733,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 1675d13edf7479541a15125eccff9631, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "We haven\u2019t even started yet! Drink one more, Elios!"
@@ -742,8 +742,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Stop_It
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 1d2ace3c2b61b9d488a37a1b457624bf, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: Stop it! We have nothing more to say!
@@ -751,8 +751,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 335b6cdedd2730b49a3f63aa4863f06e, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: 'Dementum '
         sentence: (holds hands in front of his eyes and leaves the bar screaming)
@@ -827,9 +827,9 @@ AudioSource:
   m_GameObject: {fileID: 5219269308381401114}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 721591663623174352, guid: aaf1ef32f3fd50c4d9bb9cea86e36964,
+  OutputAudioMixerGroup: {fileID: -2670160846787771562, guid: aaf1ef32f3fd50c4d9bb9cea86e36964,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 0ac3e1c61abc3c448a996ae357061bbb, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
