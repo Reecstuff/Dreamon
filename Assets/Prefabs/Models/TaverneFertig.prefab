@@ -3080,8 +3080,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 5263941446477949815}
+          clip: {fileID: 8300000, guid: bde4b0b52df76f248a80ea0461de793b, type: 3}
         cameraTarget: {fileID: 7351349278180376846}
         name: Ego
         sentence: Elios, look at this light...! I feel so warm and cozy.
@@ -12261,8 +12261,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 1601369895}
+          clip: {fileID: 8300000, guid: cf5c69dd039512f4286b52806f079192, type: 3}
         cameraTarget: {fileID: 8054822406851787423}
         name: Ego
         sentence: "Why you wanna go now? Don\u2019t run from the things. You have
@@ -17479,8 +17479,8 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 5263941446477949815}
+          clip: {fileID: 8300000, guid: dbe779a1da4a27749a9443ec1be4debf, type: 3}
         cameraTarget: {fileID: 6678624174127021424}
         name: Ego
         sentence: I am thirsty! What kind of drinks do they have?
@@ -18053,6 +18053,134 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!1 &7647739856185689416
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 420265787010553672}
+  - component: {fileID: 5263941446477949815}
+  m_Layer: 0
+  m_Name: CharakterSounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &420265787010553672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7647739856185689416}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.7286024, y: 0.86843157, z: 5.5223284}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6558981377273023176}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &5263941446477949815
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7647739856185689416}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -2670160846787771562, guid: aaf1ef32f3fd50c4d9bb9cea86e36964,
+    type: 2}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &7648684489978167029
 GameObject:
   m_ObjectHideFlags: 0
@@ -18542,6 +18670,7 @@ Transform:
   - {fileID: 7423445841904634827}
   - {fileID: 2637295399624912599}
   - {fileID: 1050597396}
+  - {fileID: 420265787010553672}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21988,11 +22117,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 10800000, guid: 360ea4fe6497e6b4d8031a32610bcf60, type: 3}
       propertyPath: m_Intensity
-      value: 5
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 10800000, guid: 360ea4fe6497e6b4d8031a32610bcf60, type: 3}
       propertyPath: m_Range
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 10800000, guid: 360ea4fe6497e6b4d8031a32610bcf60, type: 3}
       propertyPath: m_BounceIntensity
@@ -22145,6 +22274,16 @@ PrefabInstance:
       propertyPath: saveIndex
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
+        type: 3}
+      propertyPath: timedTalks.Array.data[0].audio.source
+      value: 
+      objectReference: {fileID: 5263941446477949815}
+    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
+        type: 3}
+      propertyPath: timedTalks.Array.data[0].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 852408b3cef3fcd4db57326006673eaf, type: 3}
     - target: {fileID: 1466146782633867827, guid: 075e782944edeb849b60783a3552c5db,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22345,6 +22484,16 @@ PrefabInstance:
       propertyPath: saveIndex
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
+        type: 3}
+      propertyPath: timedTalks.Array.data[0].audio.source
+      value: 
+      objectReference: {fileID: 5263941446477949815}
+    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
+        type: 3}
+      propertyPath: timedTalks.Array.data[0].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 31184b1edba935b4fa2a508de13b1bad, type: 3}
     - target: {fileID: 1466146782633867827, guid: 075e782944edeb849b60783a3552c5db,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22482,15 +22631,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
---- !u!1 &5247317763734645182 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100012, guid: f6ed800c864114a42a2b17acd84a6188,
-    type: 3}
-  m_PrefabInstance: {fileID: 5247317763734744850}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5247317763735139730 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 5247317763734744850}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5247317763734645182 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100012, guid: f6ed800c864114a42a2b17acd84a6188,
     type: 3}
   m_PrefabInstance: {fileID: 5247317763734744850}
   m_PrefabAsset: {fileID: 0}
@@ -22555,15 +22704,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
---- !u!4 &5778060763589463666 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
-    type: 3}
-  m_PrefabInstance: {fileID: 5778060763589072114}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5778060763589038686 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100012, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 5778060763589072114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5778060763589463666 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
     type: 3}
   m_PrefabInstance: {fileID: 5778060763589072114}
   m_PrefabAsset: {fileID: 0}
@@ -22727,15 +22876,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
---- !u!4 &8132310755061570745 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
-    type: 3}
-  m_PrefabInstance: {fileID: 8132310755061958201}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8132310755061989525 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100012, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 8132310755061958201}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8132310755061570745 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
     type: 3}
   m_PrefabInstance: {fileID: 8132310755061958201}
   m_PrefabAsset: {fileID: 0}
@@ -22771,6 +22920,16 @@ PrefabInstance:
       propertyPath: saveIndex
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
+        type: 3}
+      propertyPath: timedTalks.Array.data[0].audio.source
+      value: 
+      objectReference: {fileID: 5263941446477949815}
+    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
+        type: 3}
+      propertyPath: timedTalks.Array.data[0].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1bf5388176dd56c4dbbfd65cc022402e, type: 3}
     - target: {fileID: 1466146782633867827, guid: 075e782944edeb849b60783a3552c5db,
         type: 3}
       propertyPath: m_LocalPosition.x

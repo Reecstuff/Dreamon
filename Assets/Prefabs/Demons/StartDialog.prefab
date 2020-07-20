@@ -23,8 +23,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 387284189409848624}
-  m_LocalRotation: {x: -0.071000315, y: 0.06861853, z: -0.015916666, w: -0.994986}
-  m_LocalPosition: {x: 6.352644, y: 0.31208277, z: -1.0717716}
+  m_LocalRotation: {x: -0.17033117, y: 0.36578456, z: -0.06816374, w: -0.9124378}
+  m_LocalPosition: {x: 7.637686, y: 0.3908112, z: 0.82206726}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7156026689946373128}
@@ -124,14 +124,22 @@ MonoBehaviour:
         sentence: The man gets up quickly.
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Wow
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: Creature
-        sentence: '(looking around) Wow... this place is so cool! Wait.., I can''t
-          move! Where are my legs?!
+        sentence: Wow... this place is so cool! Wait.., I can't move!
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: Ego_ Frightened
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Creature
+        sentence: 'Where are my legs?!
 
 '
       - animation:
@@ -145,7 +153,7 @@ MonoBehaviour:
         sentence: "What\u2026? Who\u2026? "
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Questioning
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -163,7 +171,7 @@ MonoBehaviour:
         sentence: " [sighs] Elios\u2026"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Wow
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -181,7 +189,7 @@ MonoBehaviour:
         sentence: No...
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Questioning
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -199,7 +207,7 @@ MonoBehaviour:
         sentence: I guess so.
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Exited
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -217,13 +225,13 @@ MonoBehaviour:
         sentence: "I don\u2019t want a friend now..."
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Dissappointed
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: 'Ego '
-        sentence: "(surprised) Ohh\u2026 So you already have a friend!?"
+        sentence: "Ohh\u2026 So you already have a friend!?"
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
@@ -235,16 +243,16 @@ MonoBehaviour:
         sentence: (annoyed) No. I am not interested.
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Begging
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: 'Ego '
-        sentence: "(excited) No? So let\u2019s be friends then!"
+        sentence: "No? So let\u2019s be friends then!"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Rejecting
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -253,7 +261,7 @@ MonoBehaviour:
         sentence: Get off me! I am not in the mood for speaking...
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_Absent
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -271,17 +279,17 @@ MonoBehaviour:
         sentence: "[sighs] If you say so\u2026 "
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Exited
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Really\u2026?! Awesome! You good at chess? Let\u2019s play! Let\u2019s
-          play! Let\u2019s play! (pure excitement)"
+          play! Let\u2019s play!"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Serious
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -291,7 +299,7 @@ MonoBehaviour:
           careful.
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_Absent
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -315,13 +323,13 @@ MonoBehaviour:
         sentence: "Uhh\u2026 I didn\u2019t win."
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ PleasentlySuprised
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: 'Ego '
-        sentence: "(happy) Yea\u2026 of course I won, I knew it!"
+        sentence: "Yea\u2026 of course I won, I knew it!"
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
@@ -350,7 +358,7 @@ MonoBehaviour:
         sentence: "Oh\u2026 I suppose I won\u2026"
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Begging
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -371,14 +379,14 @@ MonoBehaviour:
 '
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Serious
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: 'Ego '
-        sentence: "(serious) I said maybe\u2026 no matter if you win or lose I will
-          be with you... "
+        sentence: "I said maybe\u2026 no matter if you win or lose I will be with
+          you... "
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed

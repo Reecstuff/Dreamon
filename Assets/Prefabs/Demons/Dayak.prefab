@@ -111,11 +111,10 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   cameraPosition: {fileID: 0}
   minigame: {fileID: 0}
-  endDoor: {fileID: 0}
   winRounds: 0
   loseRounds: 0
-  nextWinDialog: 01000000
-  nextLoseDialog: 02000000
+  nextWinDialog: 0100000002000000
+  nextLoseDialog: 0300000004000000
 --- !u!114 &5724604354764669987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -131,13 +130,96 @@ MonoBehaviour:
   hasInteracted: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineSpacing: 0.01
-  radius: 3
-  interactionTransform: {fileID: 0}
-  dialogue: []
+  radius: 4
+  interactionTransform: {fileID: 9173834014691732105}
+  dialogue:
+  - option:
+    - endSentence: 1
+      nextMinigame: 1
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Dayak
+        sentence: SPIEL!
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Dayak
+        sentence: SPIEL!
+      decisions: []
+      nextDecisions: 
+  - option:
+    - endSentence: 1
+      nextMinigame: 1
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: Win1
+      decisions: []
+      nextDecisions: 
+  - option:
+    - endSentence: 1
+      nextMinigame: 0
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: Win2
+      decisions: []
+      nextDecisions: 
+  - option:
+    - endSentence: 1
+      nextMinigame: 1
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: 
+        sentence: Lose1
+      decisions: []
+      nextDecisions: 
+  - option:
+    - endSentence: 1
+      nextMinigame: 0
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: 
+        sentence: Lose2
+      decisions: []
+      nextDecisions: 
   currentDialogue: 0
-  minigameManager: {fileID: 0}
-  camPosition: {fileID: 0}
+  minigameManager: {fileID: 9173834014691732104}
+  camPosition: {fileID: 9173834014691732105}
   source: {fileID: 0}
-  saveIndex: 0
   objectsToDeactivate: []
   deathAnimationTime: 6

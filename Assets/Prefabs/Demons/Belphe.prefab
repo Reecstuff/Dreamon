@@ -111,7 +111,6 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   cameraPosition: {fileID: 0}
   minigame: {fileID: 0}
-  endDoor: {fileID: 0}
   winRounds: 0
   loseRounds: 0
   nextWinDialog: 01000000
@@ -133,11 +132,65 @@ MonoBehaviour:
   outlineSpacing: 0.01
   radius: 3
   interactionTransform: {fileID: 0}
-  dialogue: []
+  dialogue:
+  - option:
+    - endSentence: 1
+      nextMinigame: 1
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Belphe
+        sentence: "Ich soll dir von Henrik ausrichten das die Dialoge von Bernhardt
+          noch nicht fertig sind und er sie deshalb noch nicht eingef\xFCgt hat."
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Belphe
+        sentence: UND NUN SPIELE!
+      decisions: []
+      nextDecisions: 
+  - option:
+    - endSentence: 1
+      nextMinigame: 0
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 333434876531243819}
+        name: Belphe
+        sentence: Win
+      decisions: []
+      nextDecisions: 
+  - option:
+    - endSentence: 1
+      nextMinigame: 0
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 333434876531243819}
+        name: Belphe
+        sentence: Lose
+      decisions: []
+      nextDecisions: 
   currentDialogue: 0
-  minigameManager: {fileID: 0}
+  minigameManager: {fileID: 333434876531243822}
   camPosition: {fileID: 0}
   source: {fileID: 0}
-  saveIndex: 0
   objectsToDeactivate: []
   deathAnimationTime: 6

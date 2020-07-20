@@ -1,9 +1,10 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
-using System.Data.Common;
 using UnityEngine;
 using UnityEngine.AI;
 
+/// <summary>
+/// Controls the movement of the Player
+/// </summary>
 [RequireComponent(typeof(NavMeshAgent))]
 public class PlayerMotor : MonoBehaviour
 {
@@ -28,19 +29,35 @@ public class PlayerMotor : MonoBehaviour
     int currentFootstepIndex = 0;
     string currentEgoState = string.Empty;
     int currentEgoStateCounter = 0;
+    DialogueManager dialogueManager;
 
     // Start is called before the first frame update
     void Start()
     {
+        InitValues();
+    }
+
+    void InitValues()
+    {
         agent = GetComponent<NavMeshAgent>();
         animElios = GetComponentInChildren<Animator>();
         animEgo = GetComponentsInChildren<Animator>()[1];
+        dialogueManager = FindObjectOfType<DialogueManager>();
 
         if (footSource && footsteps != null)
             footSource.clip = footsteps[0];
     }
 
+
     private void Update()
+    {
+        SwitchMovement();
+    }
+
+    /// <summary>
+    /// Switch between different animations and movements
+    /// </summary>
+    void SwitchMovement()
     {
         if (target != null && !agent.isStopped)
         {
@@ -53,32 +70,42 @@ public class PlayerMotor : MonoBehaviour
         }
         else if (agent.velocity.magnitude > 0.1f)
             Walk();
-
     }
 
+    /// <summary>
+    /// Player is walking
+    /// </summary>
     void Walk()
     {
-        if (agent.isStopped)
-            return;
+        if (!agent.isStopped)
+        {
+            if (footSource)
+                PlaySound();
 
-        if (footSource)
-            PlaySound();
-
-        PlayAnimation(ref animElios, ref animStatesElios[1], ref currentEliosState);
+            PlayAnimation(ref animElios, ref animStatesElios[1], ref currentEliosState);
+        }
     }
 
+    /// <summary>
+    /// Player is not walking
+    /// </summary>
     void Idle()
     {
         PlayAnimation(ref animElios, ref animStatesElios[0], ref currentEliosState, true);
-        PlayAnimation(ref animEgo, ref animIdleStatesEgo[currentEgoStateCounter], ref currentEgoState, true);
-
-
-        if(animEgo.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !animEgo.IsInTransition(0))
-        {
-            StartCoroutine(WaitforSecondsToSetEgoAnimation(5));
-        }
-
         StopSound();
+        
+        if(!dialogueManager.CheckIsDialogue())
+        {
+            PlayAnimation(ref animEgo, ref animIdleStatesEgo[currentEgoStateCounter], ref currentEgoState, true);
+
+
+            if(animEgo.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !animEgo.IsInTransition(0))
+            {
+                // Set another Ego animation after an specfic amount of time
+                StartCoroutine(WaitforSecondsToSetEgoAnimation(5));
+            }
+
+        }
     }
 
     
@@ -161,6 +188,13 @@ public class PlayerMotor : MonoBehaviour
         footSource.Stop();
     }
 
+    /// <summary>
+    /// Play animation from an animator
+    /// </summary>
+    /// <param name="anim">Animator</param>
+    /// <param name="state">Next state</param>
+    /// <param name="currentState">Current state</param>
+    /// <param name="crossfade">Should the animation crossfade?</param>
     void PlayAnimation(ref Animator anim, ref string state, ref string currentState, bool crossfade = false)
     {
         if(!state.Equals(currentState))
@@ -175,11 +209,17 @@ public class PlayerMotor : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Get the current animationstate of Elios
+    /// </summary>
     public string GetAnimationState()
     {
         return currentEliosState;
     }
 
+    /// <summary>
+    /// Set the current animationstate of Elios
+    /// </summary>
     public void SetAnimationState(string animationState)
     {
         if (animationState.Equals(animStatesElios[1]))

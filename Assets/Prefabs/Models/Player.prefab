@@ -428,6 +428,7 @@ MonoBehaviour:
   maxZoom: 10
   minZoom: 3.6
   zoomSpeed: 0.025
+  betweenFacesSpeed: 0.1
   drivingTime: 2
   dampingTime: 15
 --- !u!124 &2824791702060548857
@@ -478,7 +479,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5082040228002502149}
   m_LocalRotation: {x: 0.23746988, y: -0.67401755, z: 0.20732519, w: 0.6680754}
-  m_LocalPosition: {x: -0.0531, y: -0.0212, z: 0.0069}
+  m_LocalPosition: {x: -0.0351, y: -0.0215, z: 0.0068}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2960616758666215743}
@@ -495,7 +496,7 @@ Halo:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
-  m_Size: 0.027
+  m_Size: 0.018
 --- !u!1 &6359498965610856942
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,7 +522,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6359498965610856942}
   m_LocalRotation: {x: 0.67401755, y: 0.23746988, z: 0.6680754, w: -0.20732519}
-  m_LocalPosition: {x: 0.03391156, y: 0.019197084, z: -0.0052453065}
+  m_LocalPosition: {x: 0.0238, y: 0.0151, z: 0.0002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4903262697486044773}
@@ -538,7 +539,7 @@ Halo:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
-  m_Size: 0.034
+  m_Size: 0.02
 --- !u!1 &6813164480086927683
 GameObject:
   m_ObjectHideFlags: 0

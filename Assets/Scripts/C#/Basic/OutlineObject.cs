@@ -1,5 +1,4 @@
-﻿using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 
 /// <author>Christian</author>
 /// <summary>
@@ -20,12 +19,6 @@ public class OutlineObject : MonoBehaviour
 
     MaterialPropertyBlock propBlock;
 
-    Camera cam;
-
-    RaycastHit hit;
-
-    float maxDistance = 10;
-
     #region Unity Methods
 
     void Start()
@@ -35,13 +28,11 @@ public class OutlineObject : MonoBehaviour
 
     protected virtual void OnMouseEnter()
     {
-        // Take this to Interactable
         SwitchOutlined(true);
     }
 
     protected virtual void OnMouseExit()
     {
-        // Take this to Interactable
         SwitchOutlined(false);
     }
 
@@ -57,7 +48,6 @@ public class OutlineObject : MonoBehaviour
     /// </summary>
     protected virtual void InitValues()
     {
-        cam = Camera.main;
         rendererCollection = GetComponentsInChildren<Renderer>();
         propBlock = new MaterialPropertyBlock();
     }
@@ -68,6 +58,7 @@ public class OutlineObject : MonoBehaviour
     /// </summary>
     void SwitchOutlined(bool outlined)
     {
+        if(!Cursor.visible)
         if(rendererCollection != null)
         if(!hasInteracted)
         {
