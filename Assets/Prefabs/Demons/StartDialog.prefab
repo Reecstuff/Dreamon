@@ -88,15 +88,19 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Lying
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: Ego_ HiddenInElios
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: ...
-        sentence: A man lies on the ground.
+        sentence: ' '
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ GrowingOutOfElios
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -106,24 +110,30 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Waking_Up
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: Ego_ LookingAtElios
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: ...
-        sentence: Both are looking to the center of their body and then to each other.
+        sentence: ' '
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Getting_Up
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: ...
-        sentence: The man gets up quickly.
+        sentence: ' '
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Wow
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -133,6 +143,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Frightened
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -144,6 +156,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Looking
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -153,6 +167,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Questioning
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -162,6 +178,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -171,6 +189,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Wow
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -180,6 +200,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Depressive
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -189,6 +211,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Questioning
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -198,6 +222,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -207,6 +233,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Exited
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -216,6 +244,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Rejecting
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -225,6 +255,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Dissappointed
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -234,6 +266,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -243,6 +277,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Begging
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -252,6 +288,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Rejecting
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -261,6 +299,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_Absent
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -270,6 +310,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -279,6 +321,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Exited
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -289,6 +333,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Serious
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -299,6 +345,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_Absent
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -314,6 +362,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Depressive
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -323,6 +373,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ PleasentlySuprised
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -332,6 +384,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -349,6 +403,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ FakeSmile
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -358,6 +414,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Begging
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -368,6 +426,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ LookingAtEgo
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -379,6 +439,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Serious
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -389,6 +451,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -405,6 +469,8 @@ MonoBehaviour:
   - animation:
       animator: {fileID: 0}
       AnimationStateName: 
+      secondAnimator: {fileID: 0}
+      SecondAnimationStateName: 
     audio:
       source: {fileID: 0}
       clip: {fileID: 0}
@@ -416,6 +482,8 @@ MonoBehaviour:
   - animation:
       animator: {fileID: 0}
       AnimationStateName: 
+      secondAnimator: {fileID: 0}
+      SecondAnimationStateName: 
     audio:
       source: {fileID: 0}
       clip: {fileID: 0}
@@ -427,6 +495,8 @@ MonoBehaviour:
   - animation:
       animator: {fileID: 0}
       AnimationStateName: 
+      secondAnimator: {fileID: 0}
+      SecondAnimationStateName: 
     audio:
       source: {fileID: 0}
       clip: {fileID: 0}
@@ -438,6 +508,8 @@ MonoBehaviour:
   - animation:
       animator: {fileID: 0}
       AnimationStateName: 
+      secondAnimator: {fileID: 0}
+      SecondAnimationStateName: 
     audio:
       source: {fileID: 0}
       clip: {fileID: 0}
@@ -450,6 +522,8 @@ MonoBehaviour:
   - animation:
       animator: {fileID: 0}
       AnimationStateName: 
+      secondAnimator: {fileID: 0}
+      SecondAnimationStateName: 
     audio:
       source: {fileID: 0}
       clip: {fileID: 0}
@@ -461,6 +535,8 @@ MonoBehaviour:
   - animation:
       animator: {fileID: 0}
       AnimationStateName: 
+      secondAnimator: {fileID: 0}
+      SecondAnimationStateName: 
     audio:
       source: {fileID: 0}
       clip: {fileID: 0}
@@ -472,6 +548,8 @@ MonoBehaviour:
   - animation:
       animator: {fileID: 0}
       AnimationStateName: 
+      secondAnimator: {fileID: 0}
+      SecondAnimationStateName: 
     audio:
       source: {fileID: 0}
       clip: {fileID: 0}
@@ -484,6 +562,8 @@ MonoBehaviour:
   - animation:
       animator: {fileID: 0}
       AnimationStateName: 
+      secondAnimator: {fileID: 0}
+      SecondAnimationStateName: 
     audio:
       source: {fileID: 0}
       clip: {fileID: 0}

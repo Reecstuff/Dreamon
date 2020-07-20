@@ -42,6 +42,7 @@ public class DialogueManager : MonoBehaviour
 
     public CameraController cameraController;
     Animator currentAnimator;
+    Animator secondCurrentAnimator;
 
     /// <summary>
     /// Save the size of one TextLine
@@ -249,6 +250,17 @@ public class DialogueManager : MonoBehaviour
             
             if(currentAnimator)
                 currentAnimator.CrossFade(animation.AnimationStateName, 0.3f);
+        }
+
+        // Second Animation
+        if(!string.IsNullOrEmpty(animation.SecondAnimationStateName))
+        {
+            if (animation.secondAnimator)
+                secondCurrentAnimator = animation.secondAnimator;
+
+            if (secondCurrentAnimator)
+                secondCurrentAnimator.CrossFade(animation.SecondAnimationStateName, 0.3f);
+
         }
 
         // Stop Typing
