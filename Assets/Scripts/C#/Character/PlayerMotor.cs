@@ -29,6 +29,7 @@ public class PlayerMotor : MonoBehaviour
     int currentFootstepIndex = 0;
     string currentEgoState = string.Empty;
     int currentEgoStateCounter = 0;
+    DialogueManager dialogueManager;
 
     // Start is called before the first frame update
     void Start()
@@ -41,6 +42,7 @@ public class PlayerMotor : MonoBehaviour
         agent = GetComponent<NavMeshAgent>();
         animElios = GetComponentInChildren<Animator>();
         animEgo = GetComponentsInChildren<Animator>()[1];
+        dialogueManager = FindObjectOfType<DialogueManager>();
 
         if (footSource && footsteps != null)
             footSource.clip = footsteps[0];
@@ -90,16 +92,20 @@ public class PlayerMotor : MonoBehaviour
     void Idle()
     {
         PlayAnimation(ref animElios, ref animStatesElios[0], ref currentEliosState, true);
-        PlayAnimation(ref animEgo, ref animIdleStatesEgo[currentEgoStateCounter], ref currentEgoState, true);
-
-
-        if(animEgo.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !animEgo.IsInTransition(0))
-        {
-            // Set another Ego animation after an specfic amount of time
-            StartCoroutine(WaitforSecondsToSetEgoAnimation(5));
-        }
-
         StopSound();
+        
+        if(!dialogueManager.CheckIsDialogue())
+        {
+            PlayAnimation(ref animEgo, ref animIdleStatesEgo[currentEgoStateCounter], ref currentEgoState, true);
+
+
+            if(animEgo.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !animEgo.IsInTransition(0))
+            {
+                // Set another Ego animation after an specfic amount of time
+                StartCoroutine(WaitforSecondsToSetEgoAnimation(5));
+            }
+
+        }
     }
 
     

@@ -58,6 +58,7 @@ public class OutlineObject : MonoBehaviour
     /// </summary>
     void SwitchOutlined(bool outlined)
     {
+        if(!Cursor.visible)
         if(rendererCollection != null)
         if(!hasInteracted)
         {
