@@ -417,6 +417,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1184107319813808304, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].audio.source
+      value: 
+      objectReference: {fileID: 1605131746}
     - target: {fileID: 6558981377273023176, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2008,6 +2013,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1784327006}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &1605131746 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1080324107628060643, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1784327006}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1629000418 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3926476137980061847, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
@@ -2442,7 +2453,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].audio.source
       value: 
-      objectReference: {fileID: 2040989030}
+      objectReference: {fileID: 1605131746}
     - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[0].animation.animator
@@ -3242,12 +3253,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5738023402585142804, guid: 28f39d92bb08188449602cd35f923bda,
     type: 3}
   m_PrefabInstance: {fileID: 2133544470}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &2040989030 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4788438241376480171, guid: 42fbe90f27e2b9341b3452e7a3770d55,
-    type: 3}
-  m_PrefabInstance: {fileID: 1378851287}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2070405389
 PrefabInstance:
