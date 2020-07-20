@@ -5,7 +5,7 @@ ModelImporter:
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: Ego_HiddenInElios
+    second: Ego_HiddenInElios_rd
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -35,7 +35,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Ego_HiddenInElios
+      name: Ego_HiddenInElios_rd
       takeName: Take 001
       internalID: 0
       firstFrame: 1780
