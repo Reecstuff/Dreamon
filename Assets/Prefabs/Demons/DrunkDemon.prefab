@@ -190,7 +190,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 1080324107628060643}
           clip: {fileID: 8300000, guid: 1675d13edf7479541a15125eccff9631, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
@@ -209,7 +209,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: 01d5de9bed787b247adc9f214f318c78, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
@@ -231,7 +231,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: fdf16b20f6b14c9429db0525d285e420, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
@@ -242,7 +242,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: 10e79216213852e47ad79dfaf96502ba, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
@@ -265,7 +265,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: c2951428792baeb4f98b151c02e0be38, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
@@ -276,7 +276,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: 9fe6c9db52d54e443a1edea255852bdf, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
@@ -299,7 +299,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: f7f46e8ceb96a2345ad8141011d9baf5, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
@@ -321,7 +321,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: 87be85cd20ce50544b0a13768fd6d4e4, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
@@ -344,7 +344,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: 0044ed43783c1424393b48e70483ef6a, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
@@ -367,7 +367,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: 1d2ace3c2b61b9d488a37a1b457624bf, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
@@ -401,7 +401,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: fac248c5553edd44ea6a6edb52a633b1, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
@@ -413,7 +413,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: 05b282e63f63fd8488503092961297ea, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
@@ -441,8 +441,8 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
-          clip: {fileID: 8300000, guid: 908dbc573eb5c2e44a3d8e6cfb09bddc, type: 3}
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 10e79216213852e47ad79dfaf96502ba, type: 3}
         cameraTarget: {fileID: 0}
         name: 'Ego '
         sentence: Ahhhhh.
@@ -464,7 +464,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: 2525df8f397fc604b8ecc601c3f4e5f0, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
@@ -497,7 +497,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: c4944a2a12c75ff45bd578379260613a, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
@@ -508,7 +508,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: 7f8ed00a851bfe4488ba24227d5e117f, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
@@ -519,7 +519,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: 8f61ba6446d64884c8b3307929a6a2cd, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
@@ -589,7 +589,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: d142c2a68d0ff4f4880da82fc7ea9ac6, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
@@ -600,7 +600,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: e3c3e34e6278f7c49b2eb365572bf4af, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
@@ -646,7 +646,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 1080324107628060643}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 9a957cb3af9e2e64cb3fd86dbec0ffe9, type: 3}
         cameraTarget: {fileID: 0}
         name: Dementum
         sentence: "Cheers! Let\u2019s see how much you can deal with."
@@ -656,7 +656,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: 2486578f8d56c93469db60d2a9633aa6, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
@@ -672,7 +672,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: cf5c69dd039512f4286b52806f079192, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
@@ -683,7 +683,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: b4f5415d47ed9de4ca047e423add0689, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
@@ -694,7 +694,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: 69657c8175f8c094a88ae78d6f05e0a4, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
@@ -716,7 +716,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: 9fe6c9db52d54e443a1edea255852bdf, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
@@ -745,7 +745,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: 7d9255ee9baff3c44bfac79193896cb8, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
@@ -791,7 +791,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: cf967cc205dece447bf587418eb541b4, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
@@ -832,7 +832,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: 8f61ba6446d64884c8b3307929a6a2cd, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
@@ -854,7 +854,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 1080324107628060643}
+          source: {fileID: 0}
           clip: {fileID: 8300000, guid: 1d2ace3c2b61b9d488a37a1b457624bf, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
@@ -908,7 +908,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 5f82e4c00225e974ea4823008af81afb, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: '[Sigh]'
@@ -919,7 +919,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: c07a970965d582b43af547235e074994, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: Why are the lights out???
@@ -930,7 +930,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 581845f88e1b648439223407ee6560fe, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: Whatever...

@@ -136,7 +136,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: ea45bf52436c4014f91bba2c9e654d98, type: 3}
+          clip: {fileID: 8300000, guid: cf967cc205dece447bf587418eb541b4, type: 3}
         cameraTarget: {fileID: 0}
         name: Creature
         sentence: Wow... this place is so cool! Wait.., I can't move!
@@ -147,7 +147,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 10e79216213852e47ad79dfaf96502ba, type: 3}
         cameraTarget: {fileID: 0}
         name: Creature
         sentence: 'Where are my legs?!
@@ -204,7 +204,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: b4f5415d47ed9de4ca047e423add0689, type: 3}
+          clip: {fileID: 8300000, guid: 347aa607581fc0e4297b160f971b2f81, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: No...
@@ -292,7 +292,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: b3b66fe65ac08ed40b789673a550ca45, type: 3}
+          clip: {fileID: 8300000, guid: 0044ed43783c1424393b48e70483ef6a, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: Get off me! I am not in the mood for speaking...
@@ -430,7 +430,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: b3b66fe65ac08ed40b789673a550ca45, type: 3}
+          clip: {fileID: 8300000, guid: 5f743877ef78af44389212b2a810cb9e, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: 'No. I won. We had a deal...
@@ -526,7 +526,7 @@ MonoBehaviour:
       SecondAnimationStateName: 
     audio:
       source: {fileID: 0}
-      clip: {fileID: 0}
+      clip: {fileID: 8300000, guid: a4252ca2f5cca1843bf8c3f2f5891b28, type: 3}
     cameraTarget: {fileID: 0}
     name: Ego
     sentence: Why dont you try to look around a bit, by holding the right mouse button?
@@ -539,7 +539,7 @@ MonoBehaviour:
       SecondAnimationStateName: 
     audio:
       source: {fileID: 0}
-      clip: {fileID: 0}
+      clip: {fileID: 8300000, guid: fac248c5553edd44ea6a6edb52a633b1, type: 3}
     cameraTarget: {fileID: 0}
     name: Ego
     sentence: Get a closer look by scrolling your mouse wheel.
@@ -552,7 +552,7 @@ MonoBehaviour:
       SecondAnimationStateName: 
     audio:
       source: {fileID: 0}
-      clip: {fileID: 0}
+      clip: {fileID: 8300000, guid: dbe779a1da4a27749a9443ec1be4debf, type: 3}
     cameraTarget: {fileID: 0}
     name: 
     sentence: Elios! comon lets go over there! its easy! just hold your left mouse
@@ -566,7 +566,7 @@ MonoBehaviour:
       SecondAnimationStateName: 
     audio:
       source: {fileID: 0}
-      clip: {fileID: 0}
+      clip: {fileID: 8300000, guid: cf967cc205dece447bf587418eb541b4, type: 3}
     cameraTarget: {fileID: 0}
     name: 
     sentence: Oh wow the little light goes red if you can interact with something!

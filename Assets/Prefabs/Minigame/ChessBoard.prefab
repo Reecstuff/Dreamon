@@ -174,7 +174,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7748925604601613190
 Transform:
   m_ObjectHideFlags: 0
@@ -211,13 +211,13 @@ MonoBehaviour:
     type: 3}
   assignedTarget: {fileID: 0}
   movePiece:
-  - {fileID: 8300000, guid: e0f3898d89c2ce448851af4212041147, type: 3}
-  - {fileID: 8300000, guid: dbef3284d6e7bbe458739d58b03fc916, type: 3}
-  - {fileID: 8300000, guid: 218b834caed2d2b469f379cbfcc1ba58, type: 3}
+  - {fileID: 8300000, guid: 23efd9d4cf161ce45abcda45654ffd8e, type: 3}
+  - {fileID: 8300000, guid: 0501e5111df64e943b4826d52a04e1a9, type: 3}
+  - {fileID: 8300000, guid: 70079ad008b764e4e9f38b6e36c3a138, type: 3}
   hitPiece:
-  - {fileID: 8300000, guid: 361f526c704f3bf4f8cbe2b01c8ae422, type: 3}
-  - {fileID: 8300000, guid: feb632eb334b30047923f97dcd92d63f, type: 3}
-  - {fileID: 8300000, guid: f80ea5aafc7fdef44ab97897a0c408cd, type: 3}
+  - {fileID: 8300000, guid: e57b1bae222c4474f84e8c3a257cb328, type: 3}
+  - {fileID: 8300000, guid: 6fb113efcf2eb3b47bcf2338212e3b6d, type: 3}
+  - {fileID: 8300000, guid: 2452f5ed78f421b46a23ee8fc0f82388, type: 3}
   roundText: {fileID: 0}
 --- !u!114 &7748925604601613191
 MonoBehaviour:
