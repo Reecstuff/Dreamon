@@ -41,6 +41,8 @@ public class AnimationObject
 {
 	public Animator animator;
 	public string AnimationStateName;
+	public Animator secondAnimator;
+	public string SecondAnimationStateName;
 }
 
 [System.Serializable]
