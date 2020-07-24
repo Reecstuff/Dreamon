@@ -88,13 +88,13 @@ public class Dementum : DialogueTrigger
 
         if(isLose)
         {
-            blackScreen.Play("BlackOut");
             // Remove all Chairs, etc.
             // + Remove light sources
             DissapearObjects();
             // Except one Light
             // Activate this Light beside Elios
             lostCandleLight.SetActive(true);
+            blackScreen.Play("BlackOut");
         }
         else
         {

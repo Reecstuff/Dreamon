@@ -434,6 +434,11 @@ PrefabInstance:
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].audio.source
       value: 
       objectReference: {fileID: 1605131746}
+    - target: {fileID: 5138805801812047898, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6558981377273023176, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -494,6 +499,11 @@ PrefabInstance:
       propertyPath: nextObjects.Array.data[0]
       value: 
       objectReference: {fileID: 517322841}
+    - target: {fileID: 6740359373691281926, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: deactivateNextObjectsOnStart
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7880585864296020187, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: m_Name
@@ -3687,21 +3697,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 232800489805015884, guid: 28f39d92bb08188449602cd35f923bda,
-        type: 3}
-      propertyPath: drinkWater
-      value: 
-      objectReference: {fileID: 8300000, guid: 72bc68b2e0cd7c5458b0497fc2ed0321, type: 3}
-    - target: {fileID: 232800489805015884, guid: 28f39d92bb08188449602cd35f923bda,
-        type: 3}
-      propertyPath: drinkAlc
-      value: 
-      objectReference: {fileID: 8300000, guid: beef9fe9b545eb94288d92c22edbf988, type: 3}
-    - target: {fileID: 3593583593960480323, guid: 28f39d92bb08188449602cd35f923bda,
-        type: 3}
-      propertyPath: m_InnerSpotAngle
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 5738023402585142804, guid: 28f39d92bb08188449602cd35f923bda,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3762,11 +3757,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: DrinkGame
       objectReference: {fileID: 0}
-    - target: {fileID: 5738023402585142806, guid: 28f39d92bb08188449602cd35f923bda,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5738023402585142807, guid: 28f39d92bb08188449602cd35f923bda,
         type: 3}
       propertyPath: MiniGameCanvas
@@ -3792,11 +3782,11 @@ PrefabInstance:
       propertyPath: assignedTarget
       value: 
       objectReference: {fileID: 1605131745}
-    - target: {fileID: 6456374673831038916, guid: 28f39d92bb08188449602cd35f923bda,
+    - target: {fileID: 5738023402585142807, guid: 28f39d92bb08188449602cd35f923bda,
         type: 3}
-      propertyPath: m_audioClip
+      propertyPath: drinkAnimator
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 575323367}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28f39d92bb08188449602cd35f923bda, type: 3}
 --- !u!114 &2133544471 stripped
@@ -6321,7 +6311,7 @@ PrefabInstance:
     - target: {fileID: 7156026689946373129, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}

@@ -46,7 +46,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5738023402585142804
 Transform:
   m_ObjectHideFlags: 0
@@ -93,6 +93,8 @@ MonoBehaviour:
   bottleTime: 0
   bottles: []
   assignedTarget: {fileID: 0}
+  drinkAnimator: {fileID: 0}
+  drinkAnimationState: Ego_ Demanding
 --- !u!1 &5738023403576437852
 GameObject:
   m_ObjectHideFlags: 0

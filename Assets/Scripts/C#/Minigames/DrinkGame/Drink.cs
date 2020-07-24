@@ -46,7 +46,9 @@ public class Drink : MonoBehaviour
 			drinkManager.drinkBottles++;
 			source.clip = drinkWater;
 		}
+		
 		source.Play();
+		drinkManager.DrinkAnimation();
 
 
 		SetAllRenderer(false);

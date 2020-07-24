@@ -30,6 +30,12 @@ public class DrinkManager : MiniGame
 
 	public GameObject assignedTarget;
 
+	[SerializeField]
+	Animator drinkAnimator;
+
+	[SerializeField]
+	string drinkAnimationState;
+
 	private void Start()
 	{
 		startDrinkTime = drinkTime;
@@ -113,6 +119,19 @@ public class DrinkManager : MiniGame
 		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
 	}
 
+	public void DrinkAnimation()
+    {
+		if(drinkAnimator && !string.IsNullOrEmpty(drinkAnimationState))
+        {
+			if (drinkAnimator.GetCurrentAnimatorStateInfo(0).IsName(drinkAnimationState))
+				drinkAnimator.CrossFade(0, 0.3f);
+			else
+				drinkAnimator.CrossFade(drinkAnimationState, 0.3f);
+
+			drinkAnimator.speed = 2;
+        }
+    }
+
 	void RandomAlc()
 	{
 		// Reset All Bottles
@@ -132,6 +151,7 @@ public class DrinkManager : MiniGame
 
 	void ResetGame()
 	{
+		drinkAnimator.speed = 1;
 		drinkBottles = 0;
 		drunkBottles = 0;
 		bottleTime = 0;

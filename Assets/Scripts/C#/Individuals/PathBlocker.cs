@@ -34,6 +34,7 @@ public class PathBlocker : MonoBehaviour
     public void ClearPathBlocker()
     {
         PlayAudio();
+        EndState();
         SaveState();
     }
 
@@ -42,6 +43,7 @@ public class PathBlocker : MonoBehaviour
         if (dialogueTrigger = GetComponent<DialogueTrigger>())
         {
             dialogueTrigger.enabled = false;
+            dialogueTrigger.hasInteracted = true;
             dialogueTrigger.TheEnd(false);
         }
         transform.position = pathBlockerEndPosition.position;
@@ -77,7 +79,7 @@ public class PathBlocker : MonoBehaviour
         if(SaveManager.instance)
         if (SaveManager.instance.HasInteracted(gameObject.name))
         {
-            ClearPathBlocker();
+            EndState();
         }
     }
 
