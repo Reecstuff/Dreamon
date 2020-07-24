@@ -127,8 +127,6 @@ public class DrinkManager : MiniGame
 				drinkAnimator.CrossFade(0, 0.3f);
 			else
 				drinkAnimator.CrossFade(drinkAnimationState, 0.3f);
-
-			drinkAnimator.speed = 2;
         }
     }
 
@@ -151,7 +149,6 @@ public class DrinkManager : MiniGame
 
 	void ResetGame()
 	{
-		drinkAnimator.speed = 1;
 		drinkBottles = 0;
 		drunkBottles = 0;
 		bottleTime = 0;

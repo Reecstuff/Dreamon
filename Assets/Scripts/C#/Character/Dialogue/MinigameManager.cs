@@ -36,8 +36,8 @@ public class MinigameManager : MonoBehaviour
 	/// </summary>
 	public virtual void StartNewMinigame()
 	{
-		cameraController.MoveToFixedPosition(cameraPosition.position, camTarget);
 		player.motor.StopAgent();
+		cameraController.MoveToFixedPosition(cameraPosition.position, camTarget);
 		Invoke(nameof(SetMinigameActive), cameraController.drivingTime);
 	}
 
