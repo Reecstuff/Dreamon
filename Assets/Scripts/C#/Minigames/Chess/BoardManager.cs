@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using TMPro;
 using UnityEngine;
+using DG.Tweening;
 
 [RequireComponent(typeof(AudioSource))]
 public class BoardManager : MiniGame
@@ -44,7 +45,7 @@ public class BoardManager : MiniGame
 	{
 		source = GetComponent<AudioSource>();
 		Instance = this;
-		SpawnAllChessmans(rounds);
+		SpawnAllChessmans();
 		Cursor.visible = true;
 		selectedHighlight = Instantiate(selectedHighlight, transform);
 	}
@@ -52,6 +53,7 @@ public class BoardManager : MiniGame
     public override void StartMiniGame()
     {
         base.StartMiniGame();
+		rounds = 0;
     }
 
     private void Update()
@@ -63,7 +65,7 @@ public class BoardManager : MiniGame
 
 			CheckForWinLose();
 
-			SpawnAllChessmans(rounds);
+			SpawnAllChessmans();
 		}
 
 		UpdateSelection();
@@ -84,10 +86,11 @@ public class BoardManager : MiniGame
 					if (MoveChessman(selectionX, selectionY))
 					{
 						winRounds++;
-						CheckForWinLose();
+						
+						Invoke(nameof(CheckForWinLose), 0.3f);
 
 
-						SpawnAllChessmans(rounds);
+						Invoke(nameof(SpawnAllChessmans), 0.5f);
 					}
 
 				}
@@ -134,8 +137,13 @@ public class BoardManager : MiniGame
 			{
 				//capture a piece
 				activeChessman.Remove(c.gameObject);
-				Destroy(c.gameObject);
-				Destroy(selectedChessman.gameObject);
+
+				c.transform.DOLocalJump(c.transform.localPosition + new Vector3(0, 0, 1), 0.1f, 1, 0.2f);
+				Destroy(c.gameObject, 0.2f);
+
+				MoveLocalTransform(selectedChessman.transform, new Vector3(x + 0.5f, selectedChessman.transform.localScale.y / 2, z + 0.5f), 0.3f);
+				Destroy(selectedChessman.gameObject, 0.3f);
+
 				currentChessmans--;
 
 				source.clip = hitPiece[Random.Range(0, hitPiece.Length)];
@@ -146,13 +154,16 @@ public class BoardManager : MiniGame
 			}
 
 			Chessmans[selectedChessman.CurrentX, selectedChessman.CurrentY] = null;
-			selectedChessman.transform.localPosition = new Vector3(x + 0.5f, selectedChessman.transform.localScale.y / 2, z + 0.5f);
+
+			Vector3 moveVector = new Vector3(x + 0.5f, selectedChessman.transform.localScale.y / 2, z + 0.5f);
+
+			MoveLocalTransform(selectedChessman.transform, moveVector, 0.3f);
 			selectedChessman.SetPosition(x, z);
 			Chessmans[x, z] = selectedChessman;
 
 			source.Play();
 
-			winningMove = selectedChessman.transform.localPosition.z > 7;
+			winningMove = moveVector.z > 7;
 		}
 
 		BoardHighlights.Instance.Hidehighlights();
@@ -190,19 +201,23 @@ public class BoardManager : MiniGame
 		go.transform.SetParent(transform);
 		go.transform.rotation = transform.rotation;
 
-
-		go.transform.localPosition = new Vector3(x + 0.5f, go.transform.localScale.y / 2, z + 0.5f);
+		MoveLocalTransform(go.transform, new Vector3(x + 0.5f, go.transform.localScale.y / 2, z + 0.5f), 0.5f);
 
 		Chessmans[x, z] = go.GetComponent<Chessman>();
 		Chessmans[x, z].SetPosition(x, z);
 		activeChessman.Add(go);
 	}
 
-	private void SpawnAllChessmans(int round)
+	void MoveLocalTransform(Transform target,Vector3 newPosition, float time)
+    {
+		target.DOLocalJump(newPosition, 0.1f, 1, time);
+    }
+
+	private void SpawnAllChessmans()
 	{
 		Chessmans = new Chessman[8, 8];
 
-		if (round > 0)
+		if (rounds > 0)
 		{
 			for (int i = 0; i < activeChessman.Count; i++)
 			{
@@ -212,7 +227,7 @@ public class BoardManager : MiniGame
 			activeChessman.Clear();
 		}
 
-		if (round == 0)
+		if (rounds == 0)
 		{
 			//Spawn the players pieces
 			SpawnChessman(0, 7, 1);
@@ -224,7 +239,7 @@ public class BoardManager : MiniGame
 				SpawnChessman(1, i, 6);
 			}
 		}
-		else if (round == 1)
+		else if (rounds == 1)
 		{
 			//Spawn the players pieces
 			SpawnChessman(0, 0, 2);
@@ -245,7 +260,7 @@ public class BoardManager : MiniGame
 				SpawnChessman(1, i, 6);
 			}
 		}
-		else if (round == 2)
+		else if (rounds == 2)
 		{
 			//Spawn the players pieces
 			SpawnChessman(0, 4, 0);

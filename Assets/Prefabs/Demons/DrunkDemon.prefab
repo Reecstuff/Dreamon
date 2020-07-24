@@ -892,6 +892,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  - {fileID: 0}
   lostCandleLight: {fileID: 0}
   deathAnimationTime: 6
   Tavernpoltergeist: {fileID: 0}
@@ -938,6 +939,8 @@ MonoBehaviour:
       nextDecisions: 
   lostCameraTransform: {fileID: 219572550171235772}
   backgroundMusicClip: {fileID: 8300000, guid: 92b98deff534038409a8ace4aba6f49c, type: 3}
+  blackScreen: {fileID: 0}
+  blackScreenStateName: Crossfade_End
 --- !u!82 &1080324107628060643
 AudioSource:
   m_ObjectHideFlags: 0

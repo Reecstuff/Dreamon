@@ -33,6 +33,12 @@ public class Dementum : DialogueTrigger
     [SerializeField]
     AudioClip backgroundMusicClip;
 
+    [SerializeField]
+    Animator blackScreen;
+
+    [SerializeField]
+    string blackScreenStateName;
+
     AudioClip oldBackgroundMusic;
 
     protected override void PlaySound()
@@ -82,6 +88,7 @@ public class Dementum : DialogueTrigger
 
         if(isLose)
         {
+            blackScreen.Play("BlackOut");
             // Remove all Chairs, etc.
             // + Remove light sources
             DissapearObjects();
