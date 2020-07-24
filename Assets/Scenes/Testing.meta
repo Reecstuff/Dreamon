@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scenes/Testing.meta
 guid: 22bb39429c8e8194e838c131e5a76c2f
+=======
+guid: cc3c3ebfb7856b541a1e56ca9d49dba0
+>>>>>>> 55dd8f6f8a480111087e63061a6ad0f5bbab5310:Assets/Audio/Sounddesign/Sound FX/Charakter/Ego Crackle.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
