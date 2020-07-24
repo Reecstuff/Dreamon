@@ -94,7 +94,7 @@ MonoBehaviour:
   bottles: []
   assignedTarget: {fileID: 0}
   drinkAnimator: {fileID: 0}
-  drinkAnimationState: Ego_ Demanding
+  drinkAnimationState: Ego_Demanding_Short
 --- !u!1 &5738023403576437852
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     public CallBetweenText callBetween;
 
     Camera cam;
-
+    float holdingTime = float.MaxValue;
 
 
     void Start()
@@ -37,8 +37,15 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        CheckForInteractable();
-        MoveCharacter();
+        if(CheckInput())
+        {
+            if(MoveCharacter())
+                CheckForInteractable();
+        } 
+        else if(CheckInputHold())
+        {
+            MoveCharacter();
+        }
     }
 
     /// <summary>
@@ -63,26 +70,52 @@ public class PlayerController : MonoBehaviour
         SaveManager.instance.Save(transform.position, motor.GetAnimationState(), motor.GetFootstepIndex());
     }
 
+    bool CheckInput()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            holdingTime = Time.time;
+            return true;
+        }
+
+        return false;
+    }
+
+    bool CheckInputHold()
+    {
+
+        if(Input.GetMouseButton(0))
+        {
+            if (Time.time - holdingTime > 0.25f)
+                return true;
+        }
+        else
+        {
+            holdingTime = float.MaxValue;
+        }
+
+        return false;
+    }
+
     /// <summary>
     /// Check for Interactable on Leftclick
     /// </summary>
     void CheckForInteractable()
     {
-        if (Input.GetMouseButtonDown(0))
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100, -1, QueryTriggerInteraction.Ignore))
         {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
+            Interactable interactable;
 
-            if (Physics.Raycast(ray, out hit, 100, -1, QueryTriggerInteraction.Ignore))
+            Debug.Log(hit.collider.gameObject.name);
+
+            //Check if we hit an interactable
+            if (interactable = hit.collider.GetComponent<Interactable>())
             {
-                //Check if we hit an interactable
-                Interactable interactable = hit.collider.GetComponent<Interactable>();
-
-                //If we did set it as our focus
-                if (interactable != null)
-                {
-                    SetFocus(interactable);
-                }
+                Debug.Log("Interact");
+                SetFocus(interactable);
             }
         }
     }
@@ -90,19 +123,26 @@ public class PlayerController : MonoBehaviour
     /// <summary>
     /// Move Character in direction of Mousecursor
     /// </summary>
-    void MoveCharacter()
+    bool MoveCharacter()
     {
-        if (Input.GetMouseButton(0) && focus == null)
-        {
-            Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, 100, movementMask, QueryTriggerInteraction.Ignore))
+        if (Physics.Raycast(ray, out hit, 100, movementMask, QueryTriggerInteraction.Ignore))
+        {
+
+            //Move our player to what we hit
+            motor.MoveToPoint(hit.point);
+
+            if (focus)
             {
-                //Move our player to what we hit
-                motor.MoveToPoint(hit.point);
+                RemoveFocus();
+                return false;
             }
+
+            return true;
         }
+        return true;
     }
 
     /// <summary>

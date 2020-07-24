@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -62,7 +63,6 @@ public class PlayerMotor : MonoBehaviour
         if (target != null && !agent.isStopped)
         {
             MoveToPoint(target.position);
-            FaceTarget();
         }
         if (agent.remainingDistance < 0.05f)
         {
@@ -135,7 +135,6 @@ public class PlayerMotor : MonoBehaviour
     /// </summary>
     public void StopAgent()
     {
-        FaceTarget();
         agent.isStopped = true;
         agent.velocity = Vector3.zero;
         Idle();
@@ -153,7 +152,6 @@ public class PlayerMotor : MonoBehaviour
     public void FollowTarget(Interactable newTarget)
     {
         agent.stoppingDistance = newTarget.radius * 0.5f;
-        agent.updateRotation = false;
 
         target = newTarget.interactionTransform;
     }
@@ -161,20 +159,15 @@ public class PlayerMotor : MonoBehaviour
     public void StopFollowingTarget()
     {
         agent.stoppingDistance = 0f;
-        agent.updateRotation = true;
         target = null;
     }
 
 
-    //The player turns to the object he wants to interact with so that he looks at it
-    void FaceTarget()
+    public void RotatePlayerTo(Transform lookAt)
     {
-        if(target)
-        {
-            Vector3 direction = (target.position - transform.position).normalized;
-            Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0f, direction.z));
-            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 20f);
-        }
+        Vector3 direction = (lookAt.position - transform.position).normalized;
+        Quaternion rotation = Quaternion.LookRotation(new Vector3(direction.x, 0f, direction.z));
+        transform.DORotateQuaternion(rotation, 1f);
     }
 
     void PlaySound()

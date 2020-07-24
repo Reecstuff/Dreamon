@@ -8,6 +8,7 @@ public class HOMinigameManager : MinigameManager
 
     public override void StartNewMinigame()
     {
+        Cursor.visible = false;
         cameraController.MoveToOffset(player.transform);
         cameraController.StartResetCameraToPlayer();
         player.motor.ResumeAgent();

@@ -86,6 +86,9 @@ public class DialogueManager : MonoBehaviour
             cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(currentTrigger.transform.position, cameraController.transform.position, 0.1f), 0.2f), currentTrigger.transform);
         }
 
+        // Rotate Player
+        player.motor.RotatePlayerTo(currentTrigger.transform);
+
         if (currentTrigger.GetComponent<HOMinigameManager>())
         {
             if (!currentTrigger.GetComponent<HOMinigameManager>().isEnd)
@@ -128,7 +131,6 @@ public class DialogueManager : MonoBehaviour
         //Opens the dialog box
         animator.SetBool("IsOpen", true);
 
-      
 
         StartTalk(option);
 
@@ -331,7 +333,6 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void EndDialogue()
     {
-        UnityEngine.Cursor.visible = false;
         StopCoroutine(nameof(TypeSentence));
         animator.SetBool("IsOpen", false);
 
@@ -346,11 +347,13 @@ public class DialogueManager : MonoBehaviour
         //Starts Minigame
         if (selectMinigame)
         {
+            player.motor.StopAgent();
             selectMinigame = false;
             minigameManager.StartNewMinigame();
         }
         else
         {
+            UnityEngine.Cursor.visible = false;
             cameraController.MoveToOffset(player.transform);
             cameraController.StartResetCameraToPlayer();
             player.motor.ResumeAgent();
