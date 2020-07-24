@@ -86,7 +86,17 @@ public class DialogueManager : MonoBehaviour
             cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(currentTrigger.transform.position, cameraController.transform.position, 0.1f), 0.2f), currentTrigger.transform);
         }
 
-        player.motor.StopAgent();
+        if (currentTrigger.GetComponent<HOMinigameManager>())
+        {
+            if (!currentTrigger.GetComponent<HOMinigameManager>().isEnd)
+            {
+                player.motor.StopAgent();
+            }
+        }
+        else
+        {
+            player.motor.StopAgent();
+        }
 
         //Opens the first dialog option
         Dialogue.Option option = currentTrigger.dialogue[currentTrigger.currentDialogue].option[0];
@@ -338,13 +348,6 @@ public class DialogueManager : MonoBehaviour
         {
             selectMinigame = false;
             minigameManager.StartNewMinigame();
-
-            if (minigameManager.minigame.name == "Wimmelbild")
-            {
-                cameraController.MoveToOffset(player.transform);
-                cameraController.StartResetCameraToPlayer();
-                player.motor.ResumeAgent();
-            }
         }
         else
         {

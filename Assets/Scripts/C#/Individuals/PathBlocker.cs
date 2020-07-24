@@ -12,10 +12,22 @@ public class PathBlocker : MonoBehaviour
     AudioSource audioSource;
     DialogueTrigger dialogueTrigger;
 
+    [SerializeField]
+    GameObject[] nextObjects;
+
+    [SerializeField]
+    bool deactivateNextObjectsOnStart = false;
+
 
     private void Start()
     {
         LoadState();
+
+
+        if (deactivateNextObjectsOnStart)
+        {
+            ActivateNextObjects(false);
+        }
     }
 
 
@@ -34,6 +46,15 @@ public class PathBlocker : MonoBehaviour
         }
         transform.position = pathBlockerEndPosition.position;
         transform.rotation = pathBlockerEndPosition.rotation;
+        ActivateNextObjects(true);
+    }
+
+    void ActivateNextObjects(bool setActive = true)
+    {
+        for (int i = 0; i < nextObjects.Length; i++)
+        {
+            nextObjects[i].SetActive(setActive);
+        }
     }
 
     protected virtual void SaveState()

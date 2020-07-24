@@ -79,6 +79,7 @@ public class BetweenText : MonoBehaviour
     IEnumerator GoThroughDialogues()
     {
         int i = 0;
+        float currentdelay = 0;
 
         while(i < currentCount)
         {
@@ -102,8 +103,11 @@ public class BetweenText : MonoBehaviour
                 if (currentTalks[i].audio.clip)
                     PlayAudio(currentTalks[i].audio.source, currentTalks[i].audio.clip);
 
-                yield return new WaitForSeconds(timeToRead + currentTalks[i].delay);
-                i++;
+                currentdelay = currentTalks[i].delay;
+                currentTalks.RemoveAt(i);
+
+                yield return new WaitForSeconds(timeToRead + currentdelay);
+                
                 currentCount = currentTalks.Count;
             }
             else

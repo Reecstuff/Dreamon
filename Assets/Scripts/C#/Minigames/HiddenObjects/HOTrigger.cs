@@ -2,13 +2,22 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HOTrigger : Interactable
+public class HOTrigger : DialogueTrigger
 {
 	public Camera mainCamera;
 
-	public override void Interact()
+	public override void SetEndState(bool isLose)
 	{
-		GetComponent<HOTrigger>().HODestroy();
+		base.SetEndState(isLose);
+
+		HODestroy();
+	}
+
+	public override void TheEnd(bool isLose)
+	{
+		base.TheEnd(isLose);
+
+		SetEndState(isLose);
 	}
 
 	//Destroys the object when you pick it up
@@ -18,6 +27,6 @@ public class HOTrigger : Interactable
 
 		//transform.position = new Vector3(mainCamera.transform.position.x, mainCamera.transform.position.y - 2, mainCamera.transform.position.z + 2);
 
-		Destroy(this.gameObject);
+		gameObject.SetActive(false);
 	}
 }

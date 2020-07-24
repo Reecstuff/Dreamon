@@ -12,14 +12,14 @@ public class MinigameManager : MonoBehaviour
 	public Transform cameraPosition;
 	public MiniGame minigame;
 
-	CameraController cameraController;
+	public CameraController cameraController;
 
 	public int winRounds;
 	public int loseRounds;
 	public int[] nextWinDialog;
 	public int[] nextLoseDialog;
 
-	PlayerController player;
+	public PlayerController player;
 	DialogueTrigger dialogTrigger;
 
 	private void Start()
