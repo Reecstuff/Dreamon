@@ -106,9 +106,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 864d642d741775e4684fa4988944b21b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasInteracted: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineSpacing: 0.01
   radius: 3
   interactionTransform: {fileID: 8390857347853571193}
+  dialogue: []
+  currentDialogue: 0
+  minigameManager: {fileID: 0}
+  camPosition: {fileID: 0}
+  source: {fileID: 0}
   mainCamera: {fileID: 0}
 --- !u!1 &8390857347919774350
 GameObject:
@@ -169,8 +176,6 @@ MonoBehaviour:
   foundObjects: 0
   assignedTarget: {fileID: 0}
   searchTime: 60
-  winDialog: 0
-  loseDialog: 0
 --- !u!1 &8390857348375570721
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,9 +282,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 864d642d741775e4684fa4988944b21b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasInteracted: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineSpacing: 0.01
   radius: 3
   interactionTransform: {fileID: 8390857348375570720}
+  dialogue: []
+  currentDialogue: 0
+  minigameManager: {fileID: 0}
+  camPosition: {fileID: 0}
+  source: {fileID: 0}
   mainCamera: {fileID: 0}
 --- !u!1 &8390857348437640249
 GameObject:
@@ -387,9 +399,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 864d642d741775e4684fa4988944b21b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasInteracted: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineSpacing: 0.01
   radius: 3
   interactionTransform: {fileID: 8390857348437640248}
+  dialogue: []
+  currentDialogue: 0
+  minigameManager: {fileID: 0}
+  camPosition: {fileID: 0}
+  source: {fileID: 0}
   mainCamera: {fileID: 0}
 --- !u!1 &8390857348470473917
 GameObject:
@@ -497,9 +516,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 864d642d741775e4684fa4988944b21b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasInteracted: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineSpacing: 0.01
   radius: 3
   interactionTransform: {fileID: 8390857348470473916}
+  dialogue: []
+  currentDialogue: 0
+  minigameManager: {fileID: 0}
+  camPosition: {fileID: 0}
+  source: {fileID: 0}
   mainCamera: {fileID: 0}
 --- !u!1 &8390857348593392669
 GameObject:
@@ -607,9 +633,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 864d642d741775e4684fa4988944b21b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasInteracted: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineSpacing: 0.01
   radius: 3
   interactionTransform: {fileID: 8390857348593392668}
+  dialogue:
+  - option:
+    - endSentence: 1
+      nextMinigame: 0
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: 
+        sentence: Das ist ein Ring
+      decisions: []
+      nextDecisions: 
+  currentDialogue: 0
+  minigameManager: {fileID: 0}
+  camPosition: {fileID: 0}
+  source: {fileID: 0}
   mainCamera: {fileID: 0}
 --- !u!1 &8390857348750981252
 GameObject:
@@ -717,7 +767,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 864d642d741775e4684fa4988944b21b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasInteracted: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineSpacing: 0.01
   radius: 3
   interactionTransform: {fileID: 8390857348750981251}
+  dialogue: []
+  currentDialogue: 0
+  minigameManager: {fileID: 0}
+  camPosition: {fileID: 0}
+  source: {fileID: 0}
   mainCamera: {fileID: 0}

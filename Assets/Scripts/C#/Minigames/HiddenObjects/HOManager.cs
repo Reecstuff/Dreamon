@@ -23,10 +23,12 @@ public class HOManager : MiniGame
 		if (searchTime < 0)
 		{
 			assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
+			this.gameObject.SetActive(false);
 		}
 		else if (hiddenObjects.Length == foundObjects)
 		{
 			assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
+			this.gameObject.SetActive(false);
 		}
 	}
 }

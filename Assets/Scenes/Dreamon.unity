@@ -148,6 +148,12 @@ MonoBehaviour:
   tintStrength: 1
   useExtinction: 1
   extinction: 0.5
+--- !u!4 &145594105 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8390857348437640248, guid: b05feed56e078724293d1b5bedf9f0a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1784116547}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &207355044 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8054822406851787423, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
@@ -1053,11 +1059,29 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1798434590}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &918208673 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7524595774687124265, guid: 49b1e9fe4328d6943baefa71a6a229eb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1798434590}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 918208671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4245bca6bb8252244a915a3d5279bbc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!223 &924244400 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 730186039756121898, guid: 5a31dc75be3ec0242b376dd50884a72f,
     type: 3}
   m_PrefabInstance: {fileID: 730186039905894042}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &947116341 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8390857348750981251, guid: b05feed56e078724293d1b5bedf9f0a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1784116547}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &968828441 stripped
 GameObject:
@@ -1851,6 +1875,12 @@ AudioSource:
     type: 3}
   m_PrefabInstance: {fileID: 1378851287}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1382192043 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8390857348375570720, guid: b05feed56e078724293d1b5bedf9f0a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1784116547}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &1404191452 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 47977396048909992, guid: fa8338af931a9b544b8d1daefb686829,
@@ -1973,6 +2003,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4478455252826722532, guid: 42fbe90f27e2b9341b3452e7a3770d55,
     type: 3}
   m_PrefabInstance: {fileID: 1378851287}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1500405695 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8390857347853571193, guid: b05feed56e078724293d1b5bedf9f0a9,
+    type: 3}
+  m_PrefabInstance: {fileID: 1784116547}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1527087379
 PrefabInstance:
@@ -2356,6 +2392,36 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8390857347853571192, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857347853571192, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857347853571192, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857347853571192, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: interactionTransform
+      value: 
+      objectReference: {fileID: 1500405695}
+    - target: {fileID: 8390857347853571192, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].endSentence
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857347853571192, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].sentence
+      value: Das ist ein Ring
+      objectReference: {fileID: 0}
     - target: {fileID: 8390857347853571193, guid: b05feed56e078724293d1b5bedf9f0a9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2439,12 +2505,72 @@ PrefabInstance:
     - target: {fileID: 8390857348375570720, guid: b05feed56e078724293d1b5bedf9f0a9,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.18
+      value: -4.32
       objectReference: {fileID: 0}
     - target: {fileID: 8390857348375570720, guid: b05feed56e078724293d1b5bedf9f0a9,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348375570911, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348375570911, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348375570911, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348375570911, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: interactionTransform
+      value: 
+      objectReference: {fileID: 1382192043}
+    - target: {fileID: 8390857348375570911, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].endSentence
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348375570911, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].sentence
+      value: Das ist ein Ring
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348437640247, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348437640247, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348437640247, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348437640247, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: interactionTransform
+      value: 
+      objectReference: {fileID: 145594105}
+    - target: {fileID: 8390857348437640247, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].endSentence
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348437640247, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].sentence
+      value: Das ist ein Ring
       objectReference: {fileID: 0}
     - target: {fileID: 8390857348437640248, guid: b05feed56e078724293d1b5bedf9f0a9,
         type: 3}
@@ -2455,6 +2581,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 11.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348470473915, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348470473915, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348470473915, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348470473915, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: interactionTransform
+      value: 
+      objectReference: {fileID: 320025058}
+    - target: {fileID: 8390857348470473915, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].endSentence
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348470473915, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].sentence
+      value: Das ist ein Ring
       objectReference: {fileID: 0}
     - target: {fileID: 8390857348470473916, guid: b05feed56e078724293d1b5bedf9f0a9,
         type: 3}
@@ -2475,6 +2631,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 10.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348750981250, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348750981250, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348750981250, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348750981250, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: interactionTransform
+      value: 
+      objectReference: {fileID: 947116341}
+    - target: {fileID: 8390857348750981250, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].endSentence
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8390857348750981250, guid: b05feed56e078724293d1b5bedf9f0a9,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].sentence
+      value: Das ist ein Ring
       objectReference: {fileID: 0}
     - target: {fileID: 8390857348750981251, guid: b05feed56e078724293d1b5bedf9f0a9,
         type: 3}
@@ -3209,31 +3395,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Belphe
       objectReference: {fileID: 0}
-    - target: {fileID: 333434876531243822, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: mainCamera
-      value: 
-      objectReference: {fileID: 968828441}
-    - target: {fileID: 333434876531243822, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: camTarget
-      value: 
-      objectReference: {fileID: 1456460297}
-    - target: {fileID: 333434876531243822, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: minigame
-      value: 
-      objectReference: {fileID: 564862952}
-    - target: {fileID: 333434876531243822, guid: 49b1e9fe4328d6943baefa71a6a229eb,
-        type: 3}
-      propertyPath: cameraPosition
-      value: 
-      objectReference: {fileID: 968828447}
     - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
         type: 3}
       propertyPath: camPosition
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
+        type: 3}
+      propertyPath: minigameManager
+      value: 
+      objectReference: {fileID: 918208673}
+    - target: {fileID: 7524595774687124265, guid: 49b1e9fe4328d6943baefa71a6a229eb,
+        type: 3}
+      propertyPath: camTarget
+      value: 
+      objectReference: {fileID: 1456460297}
+    - target: {fileID: 7524595774687124265, guid: 49b1e9fe4328d6943baefa71a6a229eb,
+        type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 968828441}
+    - target: {fileID: 7524595774687124265, guid: 49b1e9fe4328d6943baefa71a6a229eb,
+        type: 3}
+      propertyPath: cameraPosition
+      value: 
+      objectReference: {fileID: 968828447}
+    - target: {fileID: 7524595774687124265, guid: 49b1e9fe4328d6943baefa71a6a229eb,
+        type: 3}
+      propertyPath: minigame
+      value: 
+      objectReference: {fileID: 564862952}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49b1e9fe4328d6943baefa71a6a229eb, type: 3}
 --- !u!1001 &1821549315

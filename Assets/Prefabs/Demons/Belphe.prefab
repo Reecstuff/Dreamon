@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 333434876531243818}
   - component: {fileID: 333434876531243817}
   - component: {fileID: 333434876531243816}
-  - component: {fileID: 333434876531243822}
   - component: {fileID: 333434876531243823}
+  - component: {fileID: 7524595774687124265}
   m_Layer: 0
   m_Name: Belphe
   m_TagString: Untagged
@@ -95,26 +95,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &333434876531243822
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 333434876531243821}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d7c4268f7c154c645be5dcf1130bf241, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camTarget: {fileID: 0}
-  mainCamera: {fileID: 0}
-  cameraPosition: {fileID: 0}
-  minigame: {fileID: 0}
-  winRounds: 0
-  loseRounds: 0
-  nextWinDialog: 01000000
-  nextLoseDialog: 02000000
 --- !u!114 &333434876531243823
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,6 +120,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -150,6 +132,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -165,6 +149,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -180,6 +166,8 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
@@ -189,8 +177,30 @@ MonoBehaviour:
       decisions: []
       nextDecisions: 
   currentDialogue: 0
-  minigameManager: {fileID: 333434876531243822}
+  minigameManager: {fileID: 0}
   camPosition: {fileID: 0}
   source: {fileID: 0}
   objectsToDeactivate: []
   deathAnimationTime: 6
+--- !u!114 &7524595774687124265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333434876531243821}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4245bca6bb8252244a915a3d5279bbc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camTarget: {fileID: 0}
+  mainCamera: {fileID: 0}
+  cameraPosition: {fileID: 0}
+  minigame: {fileID: 0}
+  cameraController: {fileID: 0}
+  winRounds: 0
+  loseRounds: 0
+  nextWinDialog: 01000000
+  nextLoseDialog: 02000000
+  player: {fileID: 0}
