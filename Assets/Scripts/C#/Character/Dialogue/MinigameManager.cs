@@ -34,14 +34,14 @@ public class MinigameManager : MonoBehaviour
 	/// <summary>
 	/// Activates the minigame and point the camera at the minigame
 	/// </summary>
-	public void StartNewMinigame()
+	public virtual void StartNewMinigame()
 	{
 		cameraController.MoveToFixedPosition(cameraPosition.position, camTarget);
 		player.motor.StopAgent();
 		Invoke(nameof(SetMinigameActive), cameraController.drivingTime);
 	}
 
-	void SetMinigameActive()
+	protected void SetMinigameActive()
 	{
 		minigame.StartMiniGame();
 	}
@@ -49,7 +49,7 @@ public class MinigameManager : MonoBehaviour
 	/// <summary>
 	/// Deactivate the mini-game and point the camera back at the player
 	/// </summary>
-	public void EndMinigame()
+	public virtual void EndMinigame()
 	{
 		minigame.gameObject.SetActive(false);
 
