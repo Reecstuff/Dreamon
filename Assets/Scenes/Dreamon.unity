@@ -1038,6 +1038,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1378851287}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &968828447 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2824791702060548859, guid: 42fbe90f27e2b9341b3452e7a3770d55,
+    type: 3}
+  m_PrefabInstance: {fileID: 1378851287}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &977994657 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3316068189003582346, guid: 42fbe90f27e2b9341b3452e7a3770d55,
@@ -1929,6 +1935,12 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!4 &1456460297 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
+    type: 3}
+  m_PrefabInstance: {fileID: 1378851287}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1486137123 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4478455252826722532, guid: 42fbe90f27e2b9341b3452e7a3770d55,
@@ -3169,12 +3181,17 @@ PrefabInstance:
         type: 3}
       propertyPath: camTarget
       value: 
-      objectReference: {fileID: 1486137123}
+      objectReference: {fileID: 1456460297}
     - target: {fileID: 333434876531243822, guid: 49b1e9fe4328d6943baefa71a6a229eb,
         type: 3}
       propertyPath: minigame
       value: 
       objectReference: {fileID: 564862952}
+    - target: {fileID: 333434876531243822, guid: 49b1e9fe4328d6943baefa71a6a229eb,
+        type: 3}
+      propertyPath: cameraPosition
+      value: 
+      objectReference: {fileID: 968828447}
     - target: {fileID: 333434876531243823, guid: 49b1e9fe4328d6943baefa71a6a229eb,
         type: 3}
       propertyPath: camPosition
