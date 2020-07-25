@@ -109,12 +109,9 @@ public class PlayerController : MonoBehaviour
         {
             Interactable interactable;
 
-            Debug.Log(hit.collider.gameObject.name);
-
             //Check if we hit an interactable
             if (interactable = hit.collider.GetComponent<Interactable>())
             {
-                Debug.Log("Interact");
                 SetFocus(interactable);
             }
         }

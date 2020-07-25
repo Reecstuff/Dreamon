@@ -32,7 +32,7 @@ public class AudioZone : MonoBehaviour
         {
             if (BackGroundMusicClip && !AudioManager.Instance.CompareClip(BackGroundMusicClip))
             {
-                AudioManager.Instance.SetSourceClip(BackGroundMusicClip, currentBackTimeSamples);
+                AudioManager.Instance.SetSourceClip(BackGroundMusicClip, 0, currentBackTimeSamples);
             }
             if (FXSoundClip && !AudioManager.Instance.CompareClip(FXSoundClip))
             {
