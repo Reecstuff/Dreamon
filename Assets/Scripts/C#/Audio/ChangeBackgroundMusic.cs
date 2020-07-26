@@ -27,6 +27,6 @@ public class ChangeBackgroundMusic : MonoBehaviour
         if(AudioManager.Instance)
             if (clip)
                 if(!AudioManager.Instance.CompareClip(clip))
-                    AudioManager.Instance.SetSourceClip(clip, 0);
+                    AudioManager.Instance.SetSourceClip(clip, index);
     }
 }

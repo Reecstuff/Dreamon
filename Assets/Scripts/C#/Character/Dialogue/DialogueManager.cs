@@ -86,8 +86,11 @@ public class DialogueManager : MonoBehaviour
             cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(currentTrigger.transform.position, cameraController.transform.position, 0.1f), 0.2f), currentTrigger.transform);
         }
 
-        // Rotate Player
-        player.motor.RotatePlayerTo(currentTrigger.transform);
+        if(currentTrigger.interactionTransform != currentTrigger.transform)
+        {
+            // Rotate Player
+            player.motor.RotatePlayerTo(currentTrigger.transform);
+        }
 
         if (currentTrigger.GetComponent<HOMinigameManager>())
         {

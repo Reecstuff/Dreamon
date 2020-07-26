@@ -122,7 +122,7 @@ MonoBehaviour:
           animator: {fileID: 0}
           AnimationStateName: Elios_Getting_Up
           secondAnimator: {fileID: 0}
-          SecondAnimationStateName: 
+          SecondAnimationStateName: Ego_Idle_02
         audio:
           source: {fileID: 0}
           clip: {fileID: 8300000, guid: 4090ea609ce4fc94896cb15395fe6887, type: 3}
@@ -589,7 +589,9 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   cameraPosition: {fileID: 0}
   minigame: {fileID: 0}
+  cameraController: {fileID: 0}
   winRounds: 0
   loseRounds: 0
   nextWinDialog: 02000000
   nextLoseDialog: 01000000
+  player: {fileID: 0}
