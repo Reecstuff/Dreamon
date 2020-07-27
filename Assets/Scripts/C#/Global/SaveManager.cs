@@ -21,7 +21,9 @@ public class SaveManager : MonoBehaviour
 
     BinaryFormatter formatter;
     string autoPath;
+    string settingsPath;
     SaveData data;
+    SettingsData settingsData;
 
 
     private void Awake()
@@ -91,6 +93,18 @@ public class SaveManager : MonoBehaviour
         SaveGame();
     }
 
+    public void SaveSettings(string index, float value)
+    {
+        settingsData.Add(index, value);
+        SaveGameSettings();
+    }
+
+    public void SaveSettings(string index, int value)
+    {
+        settingsData.Add(index, value);
+        SaveGameSettings();
+    }
+
     #endregion
 
     #region Get Methods
@@ -144,6 +158,16 @@ public class SaveManager : MonoBehaviour
         return data.footstepIndex;
     }
 
+    public float? GetSettingsFloat(string index)
+    {
+        return settingsData.GetFloat(index);
+    }
+
+    public int? GetSettingsInt(string index)
+    {
+        return settingsData.GetInt(index);
+    }
+
     #endregion
 
     /// <summary>
@@ -168,6 +192,11 @@ public class SaveManager : MonoBehaviour
         return File.Exists(autoPath);
     }
 
+    public bool SettingsExists()
+    {
+        return File.Exists(settingsPath);
+    }
+
     void SaveGame()
     {
         data.currentScene = SceneManager.GetActiveScene().buildIndex;
@@ -175,6 +204,14 @@ public class SaveManager : MonoBehaviour
         using (FileStream stream = File.Create(autoPath))
         {
             formatter.Serialize(stream, data);
+        }
+    }
+
+    void SaveGameSettings()
+    {
+        using (FileStream stream = File.Create(settingsPath))
+        {
+            formatter.Serialize(stream, settingsData);
         }
     }
 
@@ -187,8 +224,10 @@ public class SaveManager : MonoBehaviour
 
         formatter = new BinaryFormatter();
         autoPath = Path.Combine(Application.streamingAssetsPath, "auto.dream");
+        settingsPath = Path.Combine(Application.streamingAssetsPath, "settings.dream");
         data = LoadData();
-
+        settingsData = LoadSettings();
+        
         DontDestroyOnLoad(gameObject);
     }
 
@@ -215,6 +254,53 @@ public class SaveManager : MonoBehaviour
         else
         {
             return new SaveData();
+        }
+    }
+
+    SettingsData LoadSettings()
+    {
+        if(SettingsExists())
+        {
+            using (FileStream stream = File.OpenRead(settingsPath))
+            {
+                return formatter.Deserialize(stream) as SettingsData;
+            }
+        }
+        else
+        {
+            return new SettingsData();
+        }
+    }
+
+    public void IntegrateSettingsData()
+    {
+        if (settingsData.IsNew())
+            return;
+
+        float? valuef;
+        int? valuei;
+
+        for (int i = 0; i < AudioManager.Instance.volumeStrings.Length; i++)
+        {
+            if((valuef = (float)settingsData.GetFloat(AudioManager.Instance.volumeStrings[i])) != null)
+            {
+                AudioManager.Instance.SetCurrentVolume(i, (float)valuef);
+            }
+        }
+
+        if((valuei = settingsData.GetInt("graphics")) != null)
+        {
+            QualitySettings.SetQualityLevel((int)valuei, true);
+        }
+
+        if((valuei = settingsData.GetInt("fullscreen")) != null)
+        {
+            Screen.fullScreen = (int)valuei >= 1;
+        }
+
+        if ((valuei = settingsData.GetInt("resolution")) != null)
+        {
+            Screen.SetResolution(Screen.resolutions[(int)valuei].width, Screen.resolutions[(int)valuei].height, Screen.fullScreen);
         }
     }
 }

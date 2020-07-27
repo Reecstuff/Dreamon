@@ -37,10 +37,20 @@ public class OptionMenu : MonoBehaviour
     private void GetResolution()
     {
         List<string> options = new List<string>();
-        int currentResIndex = 0;
+        int? currentResIndex = 0;
 
         resolutions = Screen.resolutions;
         resolutionDropdown.ClearOptions();
+
+        if (SaveManager.instance)
+        {
+            currentResIndex = SaveManager.instance.GetSettingsInt("resolution");
+
+            if (currentResIndex == null)
+            {
+                currentResIndex = 0;
+            }
+        }
 
         // Iterate through every resolution and set resolutionDropdown
         for (int i = 0; i < resolutions.Length; i++)
@@ -48,7 +58,7 @@ public class OptionMenu : MonoBehaviour
             options.Add(resolutions[i].ToString().ToLower());
 
             // Set the resolutionDropdownindex to the current Resolution
-            if (resolutions[i].ToString().Equals(Screen.currentResolution.ToString()))
+            if (currentResIndex <= 0 && resolutions[i].ToString().Equals(Screen.currentResolution.ToString()))
             {
                 currentResIndex = i;
             }
@@ -56,10 +66,9 @@ public class OptionMenu : MonoBehaviour
 
         // Add List to Dropdown
         resolutionDropdown.AddOptions(options);
+       
 
-        // Get Saved Data HERE
-
-        resolutionDropdown.value = currentResIndex;
+        resolutionDropdown.value = (int)currentResIndex;
 
         resolutionDropdown.RefreshShownValue();
         resolutionDropdown.onValueChanged.AddListener((int value) => SetResolution(value));
@@ -73,9 +82,18 @@ public class OptionMenu : MonoBehaviour
         graphicsDropdown.ClearOptions();
         graphicsDropdown.AddOptions(graphicList);
 
-        // Get Saved Data HERE
+        int? valueSave;
 
-        graphicsDropdown.value = QualitySettings.GetQualityLevel();
+        // Get Saved Data
+        if(SaveManager.instance && (valueSave = SaveManager.instance.GetSettingsInt("graphics")) != null)
+        {
+            graphicsDropdown.value = (int)valueSave;
+            SetQuality(graphicsDropdown.value);
+        }
+        else
+        {
+            graphicsDropdown.value = QualitySettings.GetQualityLevel();
+        }
 
         graphicsDropdown.RefreshShownValue();
         graphicsDropdown.onValueChanged.AddListener((int value) => SetQuality(value));
@@ -83,10 +101,19 @@ public class OptionMenu : MonoBehaviour
 
     void GetFullscreen()
     {
+        int? value;
+
         // Get Saved Data HERE
-       
-        fullscreenToggle.isOn = true;
-        
+        if (SaveManager.instance && (value = SaveManager.instance.GetSettingsInt("fullscreen")) != null)
+        {
+            fullscreenToggle.isOn = (int)value >= 1;
+        }
+        else
+        {
+            fullscreenToggle.isOn = true;
+        }
+
+        fullscreenToggle.onValueChanged.AddListener((bool fullscreen) => SetFullscreen(fullscreen));
     }
 
     private void InstantiateVolume()
@@ -121,9 +148,18 @@ public class OptionMenu : MonoBehaviour
     /// </summary>
     private void GetVolume(int index)
     {
-        float volume = AudioManager.Instance.GetCurrentVolume(index);
-        volumeSlider[index].value = volume;
-        // Save Data HERE
+        float? volume;
+
+        if(SaveManager.instance && (volume = SaveManager.instance.GetSettingsFloat(AudioManager.Instance.volumeStrings[index])) != null)
+        {
+            AudioManager.Instance.SetCurrentVolume(index, (float)volume);
+        }
+        else
+        {
+            volume = AudioManager.Instance.GetCurrentVolume(index);
+        }
+
+        volumeSlider[index].value = (float)volume;
     }
 
     #endregion
@@ -136,6 +172,7 @@ public class OptionMenu : MonoBehaviour
     public void SetMasterVolume(float volume)
     {
         AudioManager.Instance.SetCurrentVolume(0, volume);
+        SaveManager.instance?.SaveSettings(AudioManager.Instance.volumeStrings[0], volume);
     }
 
 
@@ -145,6 +182,7 @@ public class OptionMenu : MonoBehaviour
     public void SetMusicVolume(float volume)
     {
         AudioManager.Instance.SetCurrentVolume(1, volume);
+        SaveManager.instance?.SaveSettings(AudioManager.Instance.volumeStrings[1], volume);
     }
 
     /// <summary>
@@ -153,6 +191,7 @@ public class OptionMenu : MonoBehaviour
     public void SetFXVolume(float volume)
     {
         AudioManager.Instance.SetCurrentVolume(2, volume);
+        SaveManager.instance?.SaveSettings(AudioManager.Instance.volumeStrings[2], volume);
     }
 
     /// <summary>
@@ -161,6 +200,7 @@ public class OptionMenu : MonoBehaviour
     public void SetCharacterVolume(float volume)
     {
         AudioManager.Instance.SetCurrentVolume(3, volume);
+        SaveManager.instance?.SaveSettings(AudioManager.Instance.volumeStrings[3], volume);
     }
 
     /// <summary>
@@ -170,6 +210,7 @@ public class OptionMenu : MonoBehaviour
     {
         // Save Data HERE
         QualitySettings.SetQualityLevel(qualityIndex, true);
+        SaveManager.instance?.SaveSettings("graphics", qualityIndex);
     }
 
     /// <summary>
@@ -177,9 +218,8 @@ public class OptionMenu : MonoBehaviour
     /// </summary>
     public void SetFullscreen(bool isFullscreen)
     {
-        // Save Data HERE
-
         Screen.fullScreen = isFullscreen;
+        SaveManager.instance?.SaveSettings("fullscreen", isFullscreen ? 1 : 0);
     }
 
     /// <summary>
@@ -188,9 +228,8 @@ public class OptionMenu : MonoBehaviour
     public void SetResolution(int resolutionIndex)
     {
         // Save Data HERE
-
-
         Screen.SetResolution(resolutions[resolutionIndex].width, resolutions[resolutionIndex].height, fullscreenToggle.isOn);
+        SaveManager.instance?.SaveSettings("resolution", resolutionIndex);
     }
     #endregion
 }
