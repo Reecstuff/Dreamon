@@ -9,10 +9,10 @@ public class Interactable : OutlineObject
 	public float radius = 3f;
 	public Transform interactionTransform;
 
-	bool isFocus = false;
-	Transform player;
+	protected bool isFocus = false;
+	protected Transform player;
 
-	bool hasFocused = true;
+	public bool hasFocused = true;
 
 	protected override void InitValues()
 	{
@@ -24,31 +24,16 @@ public class Interactable : OutlineObject
 	//Allows interaction with integrable objects
 	public virtual void Interact()
 	{
+		Debug.Log(gameObject.name);
 		//This method is meant to be overwritten
 	}
 
-	void Update()
-	{
-		CheckForInteraction();
-	}
-
-	void CheckForInteraction()
-    {
-		if (interactionTransform && isFocus && !hasFocused)
-		{
-			float distance = Vector2.Distance(new Vector2(player.position.x, player.position.z), new Vector2(interactionTransform.position.x, interactionTransform.position.z));
-			if (distance < radius || distance < 0.2f)
-			{
-				Interact();
-				hasFocused = true;
-			}
-		}
-	}
+	
 
 	/// <summary>
 	/// Interactable is focused by the player 
 	/// </summary>
-	public void OnFocused(Transform playerTransform)
+	public virtual void OnFocused(Transform playerTransform)
 	{
 		isFocus = true;
 		player = playerTransform;
@@ -58,7 +43,7 @@ public class Interactable : OutlineObject
 	/// <summary>
 	/// Interactable is no longer focused by the player
 	/// </summary>
-	public void OnDefocused()
+	public virtual void OnDefocused()
 	{
 		isFocus = false;
 		player = null;

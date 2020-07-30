@@ -292,7 +292,8 @@ public class DialogueManager : MonoBehaviour
     /// <returns></returns>
     IEnumerator TypeSentence(string sentence)
     {
-        dialogueText.SetText("");
+        dialogueText.text = string.Empty;
+
 
         int lastlineCount = 1;
 
