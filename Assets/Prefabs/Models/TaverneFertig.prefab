@@ -3197,6 +3197,7 @@ MonoBehaviour:
   outlineSpacing: 0.01
   radius: 4
   interactionTransform: {fileID: 7351349278180376846}
+  hasFocused: 1
   dialogue:
   - option:
     - endSentence: 1
@@ -12382,6 +12383,7 @@ MonoBehaviour:
   outlineSpacing: 0.01
   radius: 0.5
   interactionTransform: {fileID: 5751484556359774203}
+  hasFocused: 1
   dialogue:
   - option:
     - endSentence: 1
@@ -17663,6 +17665,7 @@ MonoBehaviour:
   outlineSpacing: 0.01
   radius: 1
   interactionTransform: {fileID: 5436522712479667035}
+  hasFocused: 1
   dialogue:
   - option:
     - endSentence: 1
@@ -22079,7 +22082,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: ac62ed8a2a9fe394ea23cb68cc5f6272,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.9614916
+      value: 7.93
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ac62ed8a2a9fe394ea23cb68cc5f6272,
         type: 3}
@@ -22094,17 +22097,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: ac62ed8a2a9fe394ea23cb68cc5f6272,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ac62ed8a2a9fe394ea23cb68cc5f6272,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ac62ed8a2a9fe394ea23cb68cc5f6272,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ac62ed8a2a9fe394ea23cb68cc5f6272,
         type: 3}
@@ -22119,7 +22122,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: ac62ed8a2a9fe394ea23cb68cc5f6272,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: ac62ed8a2a9fe394ea23cb68cc5f6272,
         type: 3}

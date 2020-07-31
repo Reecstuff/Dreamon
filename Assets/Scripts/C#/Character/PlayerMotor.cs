@@ -26,6 +26,12 @@ public class PlayerMotor : MonoBehaviour
     [SerializeField]
     AudioSource footSource;
 
+    [SerializeField]
+    AudioSource EgoSource;
+
+    [SerializeField]
+    AudioClip EgoIdleClip;
+
     string currentEliosState = string.Empty;
     int currentFootstepIndex = 0;
     string currentEgoState = string.Empty;
@@ -80,7 +86,7 @@ public class PlayerMotor : MonoBehaviour
         if (!agent.isStopped)
         {
             if (footSource)
-                PlaySound();
+                PlayFootSound();
 
             PlayAnimation(ref animElios, ref animStatesElios[1], ref currentEliosState);
         }
@@ -92,11 +98,12 @@ public class PlayerMotor : MonoBehaviour
     void Idle()
     {
         PlayAnimation(ref animElios, ref animStatesElios[0], ref currentEliosState, true);
-        StopSound();
+        StopFootSound();
         
         if(!dialogueManager.CheckIsDialogue())
         {
             PlayAnimation(ref animEgo, ref animIdleStatesEgo[currentEgoStateCounter], ref currentEgoState, true);
+
 
 
             if(animEgo.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !animEgo.IsInTransition(0))
@@ -104,17 +111,27 @@ public class PlayerMotor : MonoBehaviour
                 // Set another Ego animation after an specfic amount of time
                 StartCoroutine(WaitforSecondsToSetEgoAnimation(5));
             }
-
+            else if(!EgoSource.isPlaying && !EgoSource.clip)
+            {
+                EgoSource.clip = EgoIdleClip;
+                EgoSource.Play();
+            }
         }
     }
 
     
     IEnumerator WaitforSecondsToSetEgoAnimation(float seconds)
     {
+
         yield return new WaitForSeconds(seconds);
 
         // Count in sequence for Ego Idle Animation
         currentEgoStateCounter = currentEgoStateCounter + 1 < animIdleStatesEgo.Length ? currentEgoStateCounter + 1 : 0;
+
+        if(EgoSource.clip && EgoSource.clip.Equals(EgoIdleClip))
+        {
+            EgoSource.clip = null;
+        }
     }
 
 
@@ -170,13 +187,13 @@ public class PlayerMotor : MonoBehaviour
         transform.DORotateQuaternion(rotation, 1f);
     }
 
-    void PlaySound()
+    void PlayFootSound()
     {
         if (!footSource.isPlaying)
             footSource.Play();
     }
 
-    void StopSound()
+    void StopFootSound()
     {
         footSource.Stop();
     }
