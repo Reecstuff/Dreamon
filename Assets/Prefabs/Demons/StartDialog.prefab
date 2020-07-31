@@ -80,6 +80,7 @@ MonoBehaviour:
   outlineSpacing: 0.01
   radius: 3
   interactionTransform: {fileID: 0}
+  hasFocused: 1
   dialogue:
   - option:
     - endSentence: 1
@@ -114,7 +115,7 @@ MonoBehaviour:
           SecondAnimationStateName: Ego_ LookingAtElios
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: bb31dedab7151bf438a0c1f37e94ce5c, type: 3}
         cameraTarget: {fileID: 0}
         name: ...
         sentence: ' '
