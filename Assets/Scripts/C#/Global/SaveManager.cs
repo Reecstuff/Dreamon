@@ -277,12 +277,17 @@ public class SaveManager : MonoBehaviour
         if (settingsData.IsNew())
             return;
 
+
         float? valuef;
         int? valuei;
 
         for (int i = 0; i < AudioManager.Instance.volumeStrings.Length; i++)
         {
-            if((valuef = (float)settingsData.GetFloat(AudioManager.Instance.volumeStrings[i])) != null)
+            // Get Value
+            valuef = (float)settingsData.GetFloat(AudioManager.Instance.volumeStrings[i]);
+
+            // Check for value was saved
+            if (valuef != null)
             {
                 AudioManager.Instance.SetCurrentVolume(i, (float)valuef);
             }
