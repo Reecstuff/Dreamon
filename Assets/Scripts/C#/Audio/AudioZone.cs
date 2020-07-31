@@ -51,8 +51,11 @@ public class AudioZone : MonoBehaviour
             currentBackTimeSamples = AudioManager.Instance.GetSamples(0);
             currentFXTimeSamples = AudioManager.Instance.GetSamples(1);
 
-            AudioManager.Instance.SetSourceClip(null, 0, currentBackTimeSamples);
-            AudioManager.Instance.SetSourceClip(null, 1, currentFXTimeSamples);
+            if(AudioManager.Instance.CompareClip(BackGroundMusicClip))
+                AudioManager.Instance.SetSourceClip(null, 0, currentBackTimeSamples);
+
+            if(AudioManager.Instance.CompareClip(FXSoundClip))
+                AudioManager.Instance.SetSourceClip(null, 1, currentFXTimeSamples);
         }
     }
 

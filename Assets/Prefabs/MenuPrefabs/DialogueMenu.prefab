@@ -525,6 +525,8 @@ MonoBehaviour:
   selectedOpinion: 0
   selectMinigame: 0
   currentDialogObject: {fileID: 0}
+  player: {fileID: 0}
+  cameraController: {fileID: 0}
 --- !u!1 &5694374949559338533
 GameObject:
   m_ObjectHideFlags: 0

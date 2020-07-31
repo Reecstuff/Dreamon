@@ -187,7 +187,7 @@ public class BetweenText : MonoBehaviour
 
         for (int i = 0; i < sentence.ToCharArray().Length; i++)
         {
-            if (!dialogueManager.CheckIsOpen())
+            if (dialogueManager.isTyping || !dialogueManager.CheckIsOpen())
                 break;
 
             textField.text += sentence.ToCharArray()[i];

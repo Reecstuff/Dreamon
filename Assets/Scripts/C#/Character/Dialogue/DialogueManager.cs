@@ -41,6 +41,9 @@ public class DialogueManager : MonoBehaviour
     public PlayerController player;
 
     public CameraController cameraController;
+    public bool isTyping = false;
+
+
     Animator currentAnimator;
     Animator secondCurrentAnimator;
 
@@ -292,6 +295,8 @@ public class DialogueManager : MonoBehaviour
     /// <returns></returns>
     IEnumerator TypeSentence(string sentence)
     {
+        isTyping = true;
+
         dialogueText.text = string.Empty;
 
 
@@ -318,6 +323,8 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(timeForTextInSeconds);
 
         }
+
+        isTyping = false;
     }
 
     public void DisableButtons(bool enabled = false)

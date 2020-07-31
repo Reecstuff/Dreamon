@@ -33,7 +33,12 @@ public class RoofLogic : MonoBehaviour
     {
         if(roofToDeactivate)
         {
-            roofToDeactivate.SetActive(isShown);
+            roofToDeactivate.GetComponent<MeshRenderer>().enabled = isShown;
+
+            for (int i = 0; i < roofToDeactivate.transform.childCount; i++)
+            {
+                roofToDeactivate.transform.GetChild(i).gameObject.SetActive(isShown);
+            }
         }
     }
 }
