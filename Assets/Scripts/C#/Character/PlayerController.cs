@@ -110,9 +110,13 @@ public class PlayerController : MonoBehaviour
             Interactable interactable;
 
             //Check if we hit an interactable
-            if (interactable = hit.collider.GetComponent<Interactable>())
+            if (interactable = hit.collider.GetComponent<DialogueTrigger>())
             {
                 SetFocus(interactable);
+            }
+            else if(interactable = hit.collider.GetComponent<Interactable>())
+            {
+                InteractWithObject(interactable);
             }
         }
     }
@@ -140,6 +144,14 @@ public class PlayerController : MonoBehaviour
             return true;
         }
         return true;
+    }
+
+    void InteractWithObject(Interactable interactable)
+    {
+        if(!interactable.hasInteracted)
+        {
+            interactable.Interact();
+        }
     }
 
     /// <summary>

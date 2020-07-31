@@ -75,7 +75,7 @@ public class BoardManager : MiniGame
 		{
 			if (selectionX >= 0 && selectionY >= 0)
 			{
-				if (selectedChessman == null)
+				if (Chessmans[selectionX, selectionY]?.isEnemy == false)
 				{
 					//Select the chessman
 					SelectChessman(selectionX, selectionY);
@@ -119,6 +119,7 @@ public class BoardManager : MiniGame
 		{
 			return;
 		}
+		BoardHighlights.Instance.Hidehighlights();
 
 		allowedMoves = Chessmans[x, z].PossibleMove();
 		selectedChessman = Chessmans[x, z];
@@ -297,7 +298,8 @@ public class BoardManager : MiniGame
 		//Draw the selection
 		if (selectionX >= 0 && selectionY >= 0)
 		{
-			selectedHighlight.transform.localPosition = Vector3.forward * (selectionY + 0.5f )  + Vector3.right * (selectionX + 0.5f )  + Vector3.up * 0.002f;
+			selectedHighlight.transform.localPosition = Vector3.forward * (selectionY + 0.5f) + Vector3.right * (selectionX + 0.5f) + Vector3.up * 0.002f;
+			selectedHighlight.transform.localRotation *= Quaternion.Euler(0, selectedHighlight.transform.localRotation.y + 2 * Mathf.Sin(Time.time / 2), 0);
 		}
 	}
 

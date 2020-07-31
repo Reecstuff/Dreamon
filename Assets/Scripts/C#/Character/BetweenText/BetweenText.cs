@@ -181,7 +181,7 @@ public class BetweenText : MonoBehaviour
     /// <returns></returns>
     IEnumerator TypeSentence(string sentence)
     {
-        textField.SetText(string.Empty);
+        textField.text = string.Empty;
 
         int lastlineCount = 1;
 
