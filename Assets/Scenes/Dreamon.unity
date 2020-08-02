@@ -688,6 +688,11 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2672919893949804128, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9173834014691732104, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: mainCamera
@@ -3239,6 +3244,11 @@ PrefabInstance:
       propertyPath: minigameManager
       value: 
       objectReference: {fileID: 918208673}
+    - target: {fileID: 564704940502455963, guid: 49b1e9fe4328d6943baefa71a6a229eb,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7524595774687124265, guid: 49b1e9fe4328d6943baefa71a6a229eb,
         type: 3}
       propertyPath: camTarget
