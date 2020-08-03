@@ -52,10 +52,6 @@ public class Dementum : DialogueTrigger
 
     public override void TheEnd(bool isLose)
     {
-        base.TheEnd(isLose);
-
-        SetEndState(isLose);
-
         // Lost the Game:
         if(isLose)
         {
@@ -77,9 +73,11 @@ public class Dementum : DialogueTrigger
         if (AudioManager.Instance)
             AudioManager.Instance.SetSourceClip(null, 1, AudioManager.Instance.GetSamples(1));
 
+        SetEndState(isLose);
         // Tür speichern
         blocker?.ClearPathBlocker();
 
+        base.TheEnd(isLose);
     }
 
     public override void SetEndState(bool isLose)
@@ -94,7 +92,6 @@ public class Dementum : DialogueTrigger
             // Except one Light
             // Activate this Light beside Elios
             lostCandleLight.SetActive(true);
-            blackScreen.Play("BlackOut");
         }
         else
         {
@@ -149,6 +146,7 @@ public class Dementum : DialogueTrigger
 
         if (lostDialogue.Length > 0)
         {
+            blackScreen.Play("BlackOut");
             dialogue = lostDialogue;
 
             // Reset Values
@@ -156,6 +154,8 @@ public class Dementum : DialogueTrigger
             hasInteracted = false;
             currentDialogue = 0;
             camPosition = lostCameraTransform;
+
+
 
             // Start new Dialogue
             TriggerDialogue();

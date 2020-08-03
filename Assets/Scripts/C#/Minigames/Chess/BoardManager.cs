@@ -75,7 +75,7 @@ public class BoardManager : MiniGame
 		{
 			if (selectionX >= 0 && selectionY >= 0)
 			{
-				if (Chessmans[selectionX, selectionY]?.isEnemy == false)
+				if (Chessmans[selectionX, selectionY] && !Chessmans[selectionX, selectionY].isEnemy)
 				{
 					//Select the chessman
 					SelectChessman(selectionX, selectionY);
@@ -88,7 +88,6 @@ public class BoardManager : MiniGame
 						winRounds++;
 						
 						Invoke(nameof(CheckForWinLose), 0.3f);
-
 
 						Invoke(nameof(SpawnAllChessmans), 0.5f);
 					}
