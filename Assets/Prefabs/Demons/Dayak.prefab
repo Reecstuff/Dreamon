@@ -111,10 +111,12 @@ MonoBehaviour:
   mainCamera: {fileID: 0}
   cameraPosition: {fileID: 0}
   minigame: {fileID: 0}
+  cameraController: {fileID: 0}
   winRounds: 0
   loseRounds: 0
   nextWinDialog: 0100000002000000
   nextLoseDialog: 0300000004000000
+  player: {fileID: 0}
 --- !u!114 &5724604354764669987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -132,59 +134,1405 @@ MonoBehaviour:
   outlineSpacing: 0.01
   radius: 4
   interactionTransform: {fileID: 9173834014691732105}
+  hasFocused: 1
   dialogue:
   - option:
-    - endSentence: 1
-      nextMinigame: 1
+    - endSentence: 0
+      nextMinigame: 0
       talks:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 9173834014691732105}
         name: Dayak
-        sentence: SPIEL!
+        sentence: Hahaha. Time?! [giggles] The infinite harmony of seconds, minutes
+          and even hours
       - animation:
           animator: {fileID: 0}
           AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Ego
+        sentence: "Ehem\u2026 Yea\u2026?"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 9173834014691732105}
         name: Dayak
-        sentence: SPIEL!
-      decisions: []
-      nextDecisions: 
-  - option:
-    - endSentence: 1
-      nextMinigame: 1
+        sentence: "Time is so relative. For one it\u2019s faster than others.\r"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Elios
+        sentence: "I just want to know the way out of here. \r"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Dayak
+        sentence: But your time is running out, my friend. hahaha
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: ' '
+        sentence: Dayak stands in front of a table with 30 Casino Chips on it.
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Dayak
+        sentence: You should dare a risk and use your time worthful...  [giggles]
+      decisions:
+      - "Elios: Do you have a chronically cachinnation? Your laugh doesn\u2019t sound
+        healthy. "
+      - "Ego: C\u2019mon... Let\u2019s take the risk."
+      - 'Elios: I think I know for myself how to use my time. '
+      nextDecisions: 010000000200000003000000
+    - endSentence: 0
+      nextMinigame: 0
       talks:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: '[giggles] '
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: Dayak
-        sentence: Win1
+        sentence: "Ohh, Elios. I see you laughing. You\u2019re going to experience
+          the mighty craziness hahaha."
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: "Are you sure about that?\r"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "If you do it right, you will survive this hahaha\r"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: "[sighs]\r"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: ' '
+        sentence: "Dayak presents the chips. \r"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: These are all yours. You left them behind to be prepared for this
+          moment...[giggles]
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Elios
+        sentence: "What are you talking about? I never saw them before. \r"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Dayak
+        sentence: "hehehe Of course you wouldn\u2019t remember."
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Elios
+        sentence: "I don\u2019t like luck based games."
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Ego
+        sentence: Elios! Please play. If these are yours, you should use them!
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Elios
+        sentence: "But I don\u2019t want"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Ego
+        sentence: "I\u2019m gonna be really mad if you don\u2019t do it. Nobody wanna
+          see me like this!"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Elios
+        sentence: "[exhales] Alright. Let\u2019s see what he offers."
+      decisions:
+      - "Ego: C\u2019mon... Let\u2019s take the risk."
+      nextDecisions: 02000000
+    - endSentence: 0
+      nextMinigame: 0
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Hehehehehe\u2026 Now I caught your interest. Listen everyone\u2026"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: I am listening.
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "[giggles] You don\u2019t know how to guide a show, do you? You
+          should better listen well, because what I am offering you will literally
+          kill you hahaha."
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: What is it? What is it? Please, I want to know it!
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "The truth, my little friend\u2026 hahaha"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: "The truth?\u2026 "
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: All you have to do is to set an amount of these chips and we can
+          start the game. [grins]
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Elios
+        sentence: And then we can leave this place?
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Dayak
+        sentence: Of course... if you choose the right decision hahaha.
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Elios
+        sentence: '[exhales]'
+      decisions:
+      - Player sets less than 20 chips
+      - Player sets 20 or more chips
+      nextDecisions: 0500000004000000
+    - endSentence: 0
+      nextMinigame: 0
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: hahaha Of course you do, of course. But how much time have you
+          left to use?
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: I know what you are trying but I am not playing anything.
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "hahaha You don\u2019t have to be a buzzkill. Enjoy\u2026. have
+          fun [grins]"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: No, I have had enough.
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: hehehe You have the free choice to do anything, instead... of this
+          way. [giggles]
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: Ehem. But...this is the only way, right?
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: '[sighs] Fine. If I have to, I will play.'
+      decisions:
+      - "Ego: C\u2019mon... Let\u2019s take the risk."
+      nextDecisions: 02000000
+    - endSentence: 1
+      nextMinigame: 1
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Dayak
+        sentence: "Finally. That\u2019s an amount to deal with. [grins]"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Elios
+        sentence: "Why can\u2019t we just start?"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Dayak
+        sentence: "Haha Here is someone who is a bit impatient. Don\u2019t worry,
+          my friend. After this you will have all the time you need. Maybe in eternity?
+          haha"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Elios
+        sentence: ...
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: ' '
+        sentence: Dayak points at the ring in his hand and prepares three little
+          hats.
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Dayak
+        sentence: "You see this ring. Tell me under which of these little huts it
+          will be. hihihi If you choose three times right [giggles] you can keep
+          the ring and\u2026 I will tell the truth. Easy, isn\u2019t it? hahaaha"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Elios
+        sentence: And if I lose...?
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Dayak
+        sentence: "You will see\u2026 hahahahahahaha"
+      decisions: []
+      nextDecisions: 
+    - endSentence: 1
+      nextMinigame: 1
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Dayak
+        sentence: "You know what the phrase: \u201CNo risk, no fun\u201D means? [grins]"
+      decisions:
+      - Player sets less than 20 chips
+      - Player sets 20 or more chips
+      nextDecisions: 0600000004000000
+    - endSentence: 1
+      nextMinigame: 1
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 9173834014691732105}
+        name: Ego
+        sentence: "Didn\u2019t you hear me? Don\u2019t be so stingy! Set mooore,
+          I want mooore!!! At least 20!"
+      decisions:
+      - Player sets 20 or more chips
+      nextDecisions: 04000000
+  - option:
+    - endSentence: 1
+      nextMinigame: 1
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Hahaha. That\u2019s a game! You can feeeel this exhilaration [grins],
+          this pure tension while playing? That is life, Elios!!"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: 'I feel nothing. '
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: But Elios, I feel it too!
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: '[sighs] Can we just play the second round?'
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: Hihihi Of course. Your wish is my command, Sir...
       decisions: []
       nextDecisions: 
   - option:
+    - endSentence: 0
+      nextMinigame: 0
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Ohh Elios, I\u2019m so proud of you! I\u2019m nearly crying, can
+          you imagine! Too long ago that we played a game, how could you do this.
+          [sniffs]"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: "How could I play with you. You doesn\u2019t even look like a 
+          human\u2026"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: Hihihihi good point. I am more human than you would ever be, but
+          simultaneously I am less human than a real living would allow. [giggles]
+          Do you want to know what I am? hahaha Not human, HILARIOUS!
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: "Stop Elios. I remembered where we are, please don\u2019t ask for
+          the truth, I beg you. I am not sure if you survive this knowledge. "
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: "Then just tell it, Ego. I am so sick of this. \r\n"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: "I can\u2019t, Elios. It\u2019s too early\u2026 Everything is so
+          clear in my head, but you just can\u2019t... because... you\u2019re not
+          ready for this. [sniff]\r"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: "[exhales] That\u2019s just stupid\u2026"
+      decisions:
+      - continue
+      nextDecisions: 01000000
+    - endSentence: 0
+      nextMinigame: 0
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: 'hahahaha What an exhausting little thing you have there, Elios,
+          but I have to admit, you two are a good couple. [grins] '
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: So my dear friends... again [giggles] Do you want to take the ultimate
+          risk? Do you want to know the almighty TRUTH. hahahahahahah
+      decisions:
+      - "Ohh Dayak, you don\u2019t how much I desire the truth..."
+      - "I\u2019ve got no desire."
+      nextDecisions: 0200000003000000
     - endSentence: 1
       nextMinigame: 0
       talks:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: Dayak
-        sentence: Win2
+        sentence: "hahahaha ELIOS, ELIOS. You know what, I call you by your real
+          name hihihi\u2026"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: My real name?... But... my name is Elios?
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "It\u2019s just sad to look at you. So thin and weak. But\u2026
+          hihihi I love it! ELIOT! ELIOT! ELIOT! That\u2019s your real name, nothing
+          else! Eliot hihi Eliot hihi"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: Sorry Elios, but I need to confess something. I am not real.
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: ' '
+        sentence: Ego grows back inside the body of Elios.
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elliot
+        sentence: Why? Where is Ego?
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Couldn\u2019t you see it? [giggles] He is a part of you and builds
+          all you can\u2019t feel or think of. Don\u2019t you feel all the new emotions
+          growing inside you? hihihihi"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elliot
+        sentence: "I want him back! Now! What\u2019s about the truth, what is this
+          all about?!"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "I would love to tell it all, but\u2026 You already know it!!!
+          [giggles]"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: ' '
+        sentence: Dementum appears from the side and laughs.
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dementum
+        sentence: Hey kid, long time no see. You want a drink?
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: Look at us. What do you think are you seeing here?
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elliot
+        sentence: "It can\u2019t be! You are not real! Both of you!"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: hihihi You are right from the physical aspect. I would say we are
+          more an appearance from time to time hahaha
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elliot
+        sentence: "You are like Ego, right? He wasn\u2019t real nether\u2026 "
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dementum
+        sentence: You are just a dump little brat. I always hated it to be with you.
+          Where is my alcohol!!!
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Yes, Eliot wasn\u2019t the best human to be alive. He hadn\u2019t
+          play any games for a long time\u2026"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elliot
+        sentence: Just tell me about this truth!
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "All of this is a dream! Dementum here and me are just constructs
+          of your fantasy to compromise your problems in the real world. You are
+          an alcoholic and a gambler Eliot\u2026"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elliot
+        sentence: I commit suicide...
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Indeed, Eliot. But it wasn\u2019t harmful, you are right now dying
+          because of sleeping pills. Isn\u2019t it a wonderful death? Hahaha let\u2019s
+          see each other maybe in heaven or hell? Does it matter?     hahahahahahahahahahahahahahhahahahahahahahahahaa"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: ' '
+        sentence: "Elios falls to the ground and the screen gets dark. \r\nText appears:
+          \u201CYou commit suicide and died because of an overdose of sleeping pills."
+      decisions:
+      - 
+      - 
+      nextDecisions: 0000000000000000
+    - endSentence: 0
+      nextMinigame: 0
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Hoooooooooo\u2026. [grins]\r"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: 'Ego '
+        sentence: Oh Elios... I knew you would listen to me and choose the right
+          decision wisely. Believe me...It was the right choice.
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "[grins] Why? Why don\u2019t you want to know it\u2026 Every human
+          being wants to know the truth. Don\u2019t you feel a little bit curious?
+          hihi"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: Every human wants to know the truth but not every human can handle
+          the truth. What do you think is the reason for secrets?
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "hehehe No...your wrong. On the one hand it is true that humans
+          can\u2019t handle the truth but on the other hand it isn\u2019t the reason
+          for secrets. Think about it\u2026 Humans are egocentric beings."
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "When humans do actions for others they do want a kind of reward.
+          They don\u2019t have secrets to protect other people... They have secrets
+          because humans don\u2019t want to tell the truth hahah"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: "hmm\u2026"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: ...
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: Well. With this decision you chose you are beyond a normal human.
+          I can see that hehehe
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: 'Look what I got here. Hehe For you humans a ring has different
+          meanings. There are people who are wearing them as an accessoire. '
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "But the real meaning of a ring is the infinite bond of marriage.
+          A ring\u2026 a simple circle. Circles have something cosmic....Yeah even
+          unearthly\u2026 [grins] Don\u2019t you think?"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: It may be.
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: The ring has neither a beginning nor an end. It is infinite and
+          therefore it displays perfection.
+      decisions:
+      - 'Ego: I would take it, Elios. Look how shiny it is.'
+      - "Elios: I don\u2019t need this ring anymore."
+      nextDecisions: 0400000005000000
+    - endSentence: 1
+      nextMinigame: 0
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: ' '
+        sentence: Elios looks at his hand, where you can see a white mark of an earlier
+          ring.
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: '[sighs]'
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: hihihi
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: ' '
+        sentence: 'Dayak gives us the ring. The ring burns in the hand of Elios and
+          he lets the ring fall down. '
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: Ahhh, this burns!
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: "That\u2019s weird. Is something wrong with this ring?"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: ' '
+        sentence: Elios looks again at his hand, a mark glows where the ring laid
+          in his hand.
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Sometimes eternity hurts. You couldn\u2019t handle it, Elios.
+          hihihi But wasn\u2019t it hot in the same time? [grins] I see, what humans
+          mean by marriage doesn\u2019t need to cool down."
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: "Ohh Elios, don\u2019t think too much about this ring. I don\u2019t
+          want to be sad. Dayak, do you think death can be\u2026 magnificent? I just
+          wonder\u2026"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Wonderful\u2026 WONDERFUL\u2026     AHHHHHHHHHHHHHHHHHIHIHIHIHIHUHHHHHAHAHAHAIHIHH"
+      decisions: []
+      nextDecisions: 
+    - endSentence: 1
+      nextMinigame: 0
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Don\u2019t you miss this feeling of love\u2026 desire and\u2026
+          eternity?"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: ...
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "It\u2019s your decision, little Elios, hihihi. But don\u2019t
+          come crying when you miss the memory this ring offer."
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: "I won\u2019t cry. I don\u2019t want to see this ring anymore.
+          Leave me alone!"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "We will see each other again, Elios. Soon\u2026 [grins]"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: ' '
+        sentence: Dayak moves backwards and disappears in the darkness.
       decisions: []
       nextDecisions: 
   - option:
@@ -194,27 +1542,436 @@ MonoBehaviour:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
-        name: 
-        sentence: Lose1
+        name: Dayak
+        sentence: "Oooohhhaahahahahaaaa!!! \u2026 What a miss! Is this already the
+          end for  you, my dear Elios? [grins]"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: 'Ego '
+        sentence: " D-don't worry. W-we get this.\r"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Hihihi Come on Elios\u2026 or don\u2019t you want to know the
+          truth, hehe. [grins]"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: How do you know the truth?
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "[giggles] Are you really questioning me?\u2026 I have witnessed
+          the truth since the first human...  taste of it, hihihihi [grins]"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: ...
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Soooo\u2026. Shall we continue with your\u2026 lucky streak? hahaha
+          You know what one say: \u201Cnew round, new luck\u201D [giggles]"
       decisions: []
       nextDecisions: 
   - option:
+    - endSentence: 0
+      nextMinigame: 0
+      talks:
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Elios\u2026 what should I say? YOU LOOSE HAHAHAHA! Ladies and
+          Gentlemen what a game. Nice that you were here. It was a pleasure hihihi\u2026"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: '[exhales] Ok... What now? Are you killing us?
+
+'
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: "No...! I-I-I am not ready to die. I haven\u2019t lived my life
+          properly... [sniffs] I mean, I haven\u2019t seen the world; haven\u2019t
+          been once...  an alcoh-holic\u2026 "
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: ...
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "\u2026  [grins]"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: "What is about my first kiss\u2026 or my first\u2026 t-time? "
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Hahahahahah\u2026 calm down...you know what? Considering that
+          Elios played so well with me I am going to tell you the truth anyway\u2026[grins]"
+      decisions:
+      - Yes.
+      nextDecisions: 01000000
     - endSentence: 1
       nextMinigame: 0
       talks:
       - animation:
           animator: {fileID: 0}
           AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
-        name: 
-        sentence: Lose2
+        name: Dayak
+        sentence: "hahahaha ELIOS, ELIOS. You know what, I call you by your real
+          name hihihi\u2026"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: My real name?... But... my name is Elios?
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "It\u2019s just sad to look at you. So thin and weak. But\u2026
+          hihihi I love it! ELIOT! ELIOT! ELIOT! That\u2019s your real name, nothing
+          else! Eliot hihi Eliot hihi"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: Sorry Elios, but I need to confess something. I am not real.
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: ' '
+        sentence: 'Ego grows back inside the body of Elios. '
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elliot
+        sentence: Why? Where is Ego?
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Couldn\u2019t you see it? [giggles] He is a part of you and builds
+          all you can\u2019t feel or think of. Don\u2019t you feel all the new emotions
+          growing inside you? hihihihi"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elliot
+        sentence: "I want him back! Now! What\u2019s about the truth, what is this
+          all about?!"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "I would love to tell it all, but\u2026 You already know it!!!
+          [giggles]"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: ' '
+        sentence: 'Dementum appears from the side and laughs. '
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dementum
+        sentence: Hey kid, long time no see. You want a drink?
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: Look at us. What do you think are you seeing here?
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elliot
+        sentence: "It can\u2019t be! You are not real! Both of you!"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: hihihi You are right from the physical aspect. I would say we are
+          more an appearance from time to time hahaha
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elliot
+        sentence: "You are like Ego, right? He wasn\u2019t real nether\u2026"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dementum
+        sentence: You are just a dump little brat. I always hated it to be with you.
+          Where is my alcohol!!!
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Yes, Eliot wasn\u2019t the best human to be alive. He hadn\u2019t
+          play any games for a long time\u2026"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elliot
+        sentence: Just tell me about this truth!
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "All of this is a dream! Dementum here and me are just constructs
+          of your fantasy to compromise your problems in the real world. You are
+          an alcoholic and a gambler Eliot\u2026"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Elliot
+        sentence: I commit suicide...
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Indeed, Eliot. But it wasn\u2019t harmful, you are right now dying
+          because of sleeping pills. Isn\u2019t it a wonderful death? Hahaha let\u2019s
+          see each other maybe in heaven or hell? Does it matter?     hahahahahahahahahahahahahahhahahahahahahahahahaa"
+      - animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: ' '
+        sentence: "Elios falls to the ground and the screen gets dark. \r\nText appears:
+          \u201CYou commit suicide and died because of an overdose of sleeping pills."
       decisions: []
       nextDecisions: 
   currentDialogue: 0
