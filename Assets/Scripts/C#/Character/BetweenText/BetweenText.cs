@@ -67,7 +67,7 @@ public class BetweenText : MonoBehaviour
         StopCoroutine(GoThroughDialogues());
         currentCount = 0;
         currentTalks.Clear();
-        dialogueManager.animator.SetBool("IsOpen", false);
+        dialogueManager.dialogueAnimator.SetBool("IsOpen", false);
     }
 
     void InitValues()
@@ -127,8 +127,7 @@ public class BetweenText : MonoBehaviour
         StopCoroutine(TypeSentence(string.Empty));
 
         dialogueManager.DisableButtons();
-        dialogueManager.animator.SetBool("IsOpen", true);
-
+        dialogueManager.dialogueAnimator.SetBool("IsOpen", true);
         
         if (!string.IsNullOrEmpty(name))
             currentName = name;
@@ -173,7 +172,6 @@ public class BetweenText : MonoBehaviour
         }
     }
 
-
     /// <summary>
     /// Animates the words
     /// </summary>
@@ -214,8 +212,7 @@ public class BetweenText : MonoBehaviour
     {
         yield return new WaitForSeconds(timeToRead);
 
-
         if(textField.text.Equals(text))
-            dialogueManager.animator.SetBool("IsOpen", false);
+            dialogueManager.dialogueAnimator.SetBool("IsOpen", false);
     }
 }

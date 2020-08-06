@@ -513,7 +513,6 @@ MonoBehaviour:
   timeForTextInSeconds: 0.02
   nameText: {fileID: 6111208557124723951}
   dialogueText: {fileID: 6171867237324650123}
-  animator: {fileID: 5694374949559338537}
   continueButton: {fileID: 6263682232439583856}
   endButton: {fileID: 7709306282987045830}
   decisions: {fileID: 5694374949843718678}
@@ -521,12 +520,14 @@ MonoBehaviour:
   - {fileID: 7906275101315343348}
   - {fileID: 6071957491635459600}
   - {fileID: 7840211717439715437}
-  minigameManager: {fileID: 0}
   selectedOpinion: 0
-  selectMinigame: 0
   currentDialogObject: {fileID: 0}
+  minigameManager: {fileID: 0}
+  selectMinigame: 0
+  dialogueAnimator: {fileID: 5694374949559338537}
   player: {fileID: 0}
   cameraController: {fileID: 0}
+  isTyping: 0
 --- !u!1 &5694374949559338533
 GameObject:
   m_ObjectHideFlags: 0
