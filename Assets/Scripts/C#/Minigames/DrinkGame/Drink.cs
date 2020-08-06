@@ -48,7 +48,6 @@ public class Drink : MonoBehaviour
 		}
 		
 		source.Play();
-		drinkManager.DrinkAnimation();
 
 
 		SetAllRenderer(false);
