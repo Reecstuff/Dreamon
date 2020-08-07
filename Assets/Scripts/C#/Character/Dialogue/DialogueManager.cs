@@ -1,47 +1,109 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
-using System.Globalization;
-using System.Linq;
 using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
 
+/// <summary>
+/// Manages the current Dialogue and Minigame
+/// </summary>
 public class DialogueManager : MonoBehaviour
 {
+    /// <summary>
+    /// Time to wait between letters
+    /// </summary>
     [SerializeField]
     float timeForTextInSeconds = 0.5f;
 
+    /// <summary>
+    /// Textfield for the Name of the Character
+    /// </summary>
     public TextMeshProUGUI nameText;
+
+    /// <summary>
+    /// Textfield for the spoken Words of the Character
+    /// </summary>
     public TextMeshProUGUI dialogueText;
 
-    public Animator animator;
 
-    private Queue<string> sentences;
+    /// <summary>
+    /// Button to press to continue the Dialogue
+    /// </summary>
+    public GameObject continueButton;
+
+    /// <summary>
+    /// Button to press to end the Dialogue
+    /// </summary>
+    public GameObject endButton;
+
+    /// <summary>
+    /// Parentobject of decisionsButtons
+    /// </summary>
+    public GameObject decisions;
+
+    /// <summary>
+    /// Buttons to select a different Option
+    /// </summary>
+    public UnityEngine.UI.Button[] decisionsButtons = new UnityEngine.UI.Button[3];
+
+    /// <summary>
+    /// Set the selected Decision of the decisionButton
+    /// </summary>
+    public int selectedOpinion = 0;
+
+    /// <summary>
+    /// Current running dialogue
+    /// </summary>
+    public DialogueTrigger currentDialogObject;
+
+    /// <summary>
+    /// Current minigame
+    /// </summary>
+    public MinigameManager minigameManager;
+    /// <summary>
+    /// Should there play a minigame after dialogue?
+    /// </summary>
+    public bool selectMinigame;
+
+    /// <summary>
+    /// Animator to open and close the dialogue
+    /// </summary>
+    public Animator dialogueAnimator;
+
+    /// <summary>
+    /// PlayerController of player
+    /// </summary>
+    public PlayerController player;
+
+    /// <summary>
+    /// Controller of Camera
+    /// </summary>
+    public CameraController cameraController;
+
+    /// <summary>
+    /// Is a Dialogue currently typing in dialoguefield?
+    /// </summary>
+    public bool isTyping = false;
+
+    /// <summary>
+    /// Is the Dialogue at the end?
+    /// </summary>
+    bool end = false;
+
+    // Queues for dialogue object
+    Queue<string> sentences;
     Queue<Transform> positions;
     Queue<string> names;
     Queue<AnimationObject> animations;
     Queue<AudioObject> audios;
 
-    public GameObject continueButton;
-    public GameObject endButton;
-
-    public GameObject decisions;
-    public UnityEngine.UI.Button[] decisionsButtons = new UnityEngine.UI.Button[3];
-
-    public MinigameManager minigameManager;
-
-    bool end;
-
-    public int selectedOpinion = 0;
-
-    public bool selectMinigame;
-    public DialogueTrigger currentDialogObject;
-    public PlayerController player;
-
-    public CameraController cameraController;
+    /// <summary>
+    /// First Animator in Dialogue to play Animations while speaking
+    /// </summary>
     Animator currentAnimator;
+
+    /// <summary>
+    /// Second Animator in Dialogue to play Animations while speaking
+    /// </summary>
     Animator secondCurrentAnimator;
 
     /// <summary>
@@ -49,6 +111,9 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     float oneTextLineSizeY = 0;
 
+    /// <summary>
+    /// Init Values
+    /// </summary>
     void Awake()
     {
         sentences = new Queue<string>();
@@ -61,67 +126,111 @@ public class DialogueManager : MonoBehaviour
         player = FindObjectOfType<PlayerController>();
     }
 
+
     /// <summary>
     /// Starts the dialog by triggering it from the DialogueTrigger
     /// </summary>
     /// <param name="currentTrigger"></param>
     public void StartDialogue (DialogueTrigger currentTrigger)
     {
-        UnityEngine.Cursor.visible = true;
         currentDialogObject = currentTrigger;
+
+        // Setup Values for Dialogue
+        SetupValues();
+        SetupCamera();
+        RotatePlayer();
+        currentDialogObject.SetPlayerState();
+
+
+        //Opens the first dialog option
+        Dialogue.Option option = currentTrigger.dialogue[currentTrigger.currentDialogue].option[0];
+
+        // Set Decisions
+        ActivateDecisions(ref option);
+        SetDecisions(ref option);
+
+        //Opens the dialog box
+        dialogueAnimator.SetBool("IsOpen", true);
+
+        FillQueues(option);
+
+        end = option.endSentence;
+
+        ResetDecisionButtons();
+        SetupMinigame(ref option);
+        
+        DisplayNextSentence();
+    }
+
+    #region StartDialog() Methods
+
+    /// <summary>
+    /// Set Values on Start Dialogue
+    /// </summary>
+    private void SetupValues()
+    {
+        UnityEngine.Cursor.visible = true;
 
         //Reset the Buttons
         DisableButtons(true);
 
         continueButton.SetActive(true);
         decisions.SetActive(false);
+    }
 
-        if (currentTrigger.camPosition != null)
+    /// <summary>
+    /// Change Cameraposition to fit the Dialogue needs
+    /// </summary>
+    private void SetupCamera()
+    {
+        if (currentDialogObject.camPosition != null)
         {
-            cameraController.MoveToFixedPosition(currentTrigger.camPosition.position, currentTrigger.transform);
+            cameraController.MoveToFixedPosition(currentDialogObject.camPosition.position, currentDialogObject.transform);
         }
         else
         {
             // Set up Camera between Dialogtrigger, Camera and Player
-            cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(currentTrigger.transform.position, cameraController.transform.position, 0.1f), 0.2f), currentTrigger.transform);
+            cameraController.MoveToFixedPosition(Vector3.Lerp(player.facePoint.position, Vector3.Lerp(currentDialogObject.transform.position, cameraController.transform.position, 0.1f), 0.2f), currentDialogObject.transform);
         }
+    }
 
-        if(currentTrigger.interactionTransform != currentTrigger.transform)
+    /// <summary>
+    /// Rotate Player to interactionTransform
+    /// </summary>
+    private void RotatePlayer()
+    {
+        if (currentDialogObject.interactionTransform != currentDialogObject.transform)
         {
             // Rotate Player
-            player.motor.RotatePlayerTo(currentTrigger.transform);
+            player.motor.RotatePlayerTo(currentDialogObject.transform);
         }
+    }
 
-        if (currentTrigger.GetComponent<HOMinigameManager>())
-        {
-            if (!currentTrigger.GetComponent<HOMinigameManager>().isEnd)
-            {
-                player.motor.StopAgent();
-            }
-        }
-        else
-        {
-            player.motor.StopAgent();
-        }
-
-        //Opens the first dialog option
-        Dialogue.Option option = currentTrigger.dialogue[currentTrigger.currentDialogue].option[0];
-
-        //Checks the number of options and then activates the corresponding buttons
+    /// <summary>
+    /// Checks the number of options and then activates the corresponding buttons
+    /// </summary>
+    private void ActivateDecisions(ref Dialogue.Option option)
+    {
         if (option.decisions.Length != decisionsButtons.Length && option.decisions.Length != 0)
         {
             if (option.decisions.Length == 2)
             {
+                decisionsButtons[1].gameObject.SetActive(true);
                 decisionsButtons[2].gameObject.SetActive(false);
             }
-            if (option.decisions.Length == 1)
+            else if (option.decisions.Length == 1)
             {
                 decisionsButtons[1].gameObject.SetActive(false);
                 decisionsButtons[2].gameObject.SetActive(false);
             }
         }
+    }
 
-        //Changes the corresponding values of the buttons
+    /// <summary>
+    /// Changes the corresponding values of the buttons
+    /// </summary>
+    private void SetDecisions(ref Dialogue.Option option)
+    {
         for (int i = 0; i < option.decisions.Length; i++)
         {
             //Set text
@@ -130,38 +239,40 @@ public class DialogueManager : MonoBehaviour
             //Set decision number
             decisionsButtons[i].GetComponent<DecisionButtons>().decisionNumber = option.nextDecisions[i];
         }
+    }
 
-        //Opens the dialog box
-        animator.SetBool("IsOpen", true);
-
-
-        StartTalk(option);
-
-        end = option.endSentence;
-
-        // SetupButtons to select new options
+    /// <summary>
+    /// SetupButtons to select new options
+    /// </summary>
+    private void ResetDecisionButtons()
+    {
         for (int i = 0; i < decisionsButtons.Length; i++)
         {
             decisionsButtons[i].onClick.RemoveAllListeners();
-            //decisionsButtons[i].onClick.RemoveListener(() => SelectOption(currentTrigger.dialogue[currentTrigger.currentDialogue], currentTrigger));
-            decisionsButtons[i].onClick.AddListener(() => SelectOption(currentTrigger.dialogue[currentTrigger.currentDialogue], currentTrigger));
+            decisionsButtons[i].onClick.AddListener(() => SelectOption(currentDialogObject.dialogue[currentDialogObject.currentDialogue]));
         }
+    }
 
+    /// <summary>
+    /// Set Minigame
+    /// </summary>
+    private void SetupMinigame(ref Dialogue.Option option)
+    {
         if (end == true && option.nextMinigame)
         {
             selectMinigame = option.nextMinigame;
-            minigameManager = currentTrigger.minigameManager;
+            minigameManager = currentDialogObject.minigameManager;
         }
-
-        DisplayNextSentence();
     }
+
+    #endregion
 
     /// <summary>
     /// Opens the further dialogues
     /// </summary>
     /// <param name="dialogue"></param>
     /// <param name="currentTrigger"></param>
-    public void SelectOption(Dialogue dialogue, DialogueTrigger currentTrigger)
+    public void SelectOption(Dialogue dialogue)
     {
         //Reset the Buttons
         continueButton.SetActive(true);
@@ -170,45 +281,20 @@ public class DialogueManager : MonoBehaviour
         //Opens the next correct dialog option
         Dialogue.Option option = dialogue.option[selectedOpinion];
 
-        //Checks the number of options and then activates the corresponding buttons
-        if (option.decisions.Length != decisionsButtons.Length && option.decisions.Length != 0)
-        {
-            if (option.decisions.Length == 2)
-            {
-                decisionsButtons[2].gameObject.SetActive(false);
-            }
-            if (option.decisions.Length == 1)
-            {
-                decisionsButtons[1].gameObject.SetActive(false);
-                decisionsButtons[2].gameObject.SetActive(false);
-            }
-        }
 
-        //Changes the corresponding values of the buttons
-        for (int i = 0; i < option.decisions.Length; i++)
-        { 
-            //Set text
-            decisionsButtons[i].GetComponentInChildren<TextMeshProUGUI>().SetText(option.decisions[i].ToString());
+        ActivateDecisions(ref option);
 
-            //Set decision number
-            decisionsButtons[i].GetComponent<DecisionButtons>().decisionNumber = option.nextDecisions[i];
-        }
+        SetDecisions(ref option);
 
         //Opens the dialog box
-        animator.SetBool("IsOpen", true);
+        dialogueAnimator.SetBool("IsOpen", true);
 
-
-
-        StartTalk(option);
+        FillQueues(option);
 
         end = option.endSentence;
 
         //Checks whether the dialog is over to start a mini-game
-        if (end == true)
-        {
-            selectMinigame = option.nextMinigame;
-            minigameManager = currentTrigger.minigameManager;
-        }
+        SetupMinigame(ref option);
 
         DisplayNextSentence();
     }
@@ -217,6 +303,74 @@ public class DialogueManager : MonoBehaviour
     /// Displays the next sentence
     /// </summary>
     public void DisplayNextSentence()
+    {
+        ActivateEndButtons();
+        // Set Charactername
+        SetLine(names.Dequeue());
+        // Camera
+        SetLine(positions.Dequeue());
+        // Audio
+        SetLine(audios.Dequeue());
+        // Animation
+        SetLine(animations.Dequeue());
+        // Stop Typing
+        StopAllCoroutines();
+        // Start typing
+        StartCoroutine(TypeSentence(sentences.Dequeue()));
+    }
+
+    #region SetLine() Methods
+
+    void SetLine(string name)
+    {
+        if (!string.IsNullOrEmpty(name) && !nameText.text.Equals(name))
+        {
+            nameText.SetText(name);
+        }
+    }
+
+    void SetLine(Transform cameraTarget)
+    {
+        if (cameraTarget && !cameraTarget.Equals(cameraController.target))
+        {
+            cameraController.LerpLookAt(cameraTarget);
+        }
+    }
+
+    void SetLine(AudioObject audio)
+    {
+        if (audio.clip && audio.source)
+        {
+            // Clip Audio for Dialogue
+            audio.source.clip = audio.clip;
+            // Play Audio
+            audio.source.Play();
+        }
+    }
+
+    void SetLine(AnimationObject animation)
+    {
+        if (!string.IsNullOrEmpty(animation.AnimationStateName))
+        {
+            if (animation.animator)
+                currentAnimator = animation.animator;
+
+            if (currentAnimator)
+                currentAnimator.CrossFade(animation.AnimationStateName, 0.3f);
+        }
+
+        // Second Animation
+        if (!string.IsNullOrEmpty(animation.SecondAnimationStateName))
+        {
+            if (animation.secondAnimator)
+                secondCurrentAnimator = animation.secondAnimator;
+
+            if (secondCurrentAnimator)
+                secondCurrentAnimator.CrossFade(animation.SecondAnimationStateName, 0.3f);
+        }
+    }
+
+    private void ActivateEndButtons()
     {
         if (end == true && sentences.Count == 1)
         {
@@ -229,61 +383,9 @@ public class DialogueManager : MonoBehaviour
             continueButton.SetActive(false);
             decisions.SetActive(true);
         }
-
-        string sentence = sentences.Dequeue();
-        string charName = names.Dequeue();
-        Transform nextTarget = positions.Dequeue();
-        AudioObject audio = audios.Dequeue();
-        AnimationObject animation = animations.Dequeue();
-
-        // Set Charactername
-        if(!string.IsNullOrEmpty(charName) && !nameText.text.Equals(charName))
-        {
-            nameText.SetText(charName);
-        }
-
-        // Camera
-        if(nextTarget && !nextTarget.Equals(cameraController.target))
-        {
-            cameraController.LerpLookAt(nextTarget);
-        }
-
-        // Audio
-        if(audio.clip && audio.source)
-        {
-            // Clip Audio for Dialogue
-            audio.source.clip = audio.clip;
-            // Play Audio
-            audio.source.Play();
-        }
-
-        // Animation
-        if(!string.IsNullOrEmpty(animation.AnimationStateName))
-        {
-            if(animation.animator)
-                currentAnimator = animation.animator;
-            
-            if(currentAnimator)
-                currentAnimator.CrossFade(animation.AnimationStateName, 0.3f);
-        }
-
-        // Second Animation
-        if(!string.IsNullOrEmpty(animation.SecondAnimationStateName))
-        {
-            if (animation.secondAnimator)
-                secondCurrentAnimator = animation.secondAnimator;
-
-            if (secondCurrentAnimator)
-                secondCurrentAnimator.CrossFade(animation.SecondAnimationStateName, 0.3f);
-
-        }
-
-        // Stop Typing
-        StopAllCoroutines();
-
-        // Start typing
-        StartCoroutine(TypeSentence(sentence));
     }
+
+    #endregion
 
     /// <summary>
     /// Animates the words
@@ -292,10 +394,9 @@ public class DialogueManager : MonoBehaviour
     /// <returns></returns>
     IEnumerator TypeSentence(string sentence)
     {
-        dialogueText.text = string.Empty;
-
-
         int lastlineCount = 1;
+        isTyping = true;
+        dialogueText.text = string.Empty;
 
         for (int i = 0; i < sentence.ToCharArray().Length; i++)
         {
@@ -316,18 +417,18 @@ public class DialogueManager : MonoBehaviour
             }
 
             yield return new WaitForSeconds(timeForTextInSeconds);
-
         }
+
+        isTyping = false;
     }
 
+    /// <summary>
+    /// Disable all Buttons except continue
+    /// </summary>
+    /// <param name="enabled"></param>
     public void DisableButtons(bool enabled = false)
     {
-
-        for (int i = 0; i < decisionsButtons.Length; i++)
-        {
-            decisionsButtons[i].gameObject.SetActive(enabled);
-        }
-
+        decisions.SetActive(enabled);
         continueButton.gameObject.SetActive(enabled);
         endButton.gameObject.SetActive(false);
     }
@@ -338,49 +439,78 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         StopCoroutine(nameof(TypeSentence));
-        animator.SetBool("IsOpen", false);
+        dialogueAnimator.SetBool("IsOpen", false);
 
         //Stop focusing any objects
         player.RemoveFocus();
 
         //Reset the Buttons
-        continueButton.SetActive(false);
-        decisions.SetActive(false);
-        endButton.SetActive(false);
+        DisableButtons();
 
         //Starts Minigame
         if (selectMinigame)
         {
-            player.motor.StopAgent();
-            selectMinigame = false;
-            minigameManager.StartNewMinigame();
+            StartMinigame();
         }
         else
         {
-            UnityEngine.Cursor.visible = false;
-            cameraController.MoveToOffset(player.transform);
-            cameraController.StartResetCameraToPlayer();
-            player.motor.ResumeAgent();
-
-            if(currentDialogObject)
-            {
-                if (currentDialogObject.isLost == true)
-                {
-                    currentDialogObject.TheEnd(true);
-                }
-                else
-                {
-                    currentDialogObject.TheEnd(false);
-                }
-            }
-
-            currentDialogObject = null;
+            ResetDialogueValues();
         }
     }
 
+   
+    /// <summary>
+    /// Start Minigame
+    /// </summary>
+    private void StartMinigame()
+    {
+        player.motor.StopAgent();
+        selectMinigame = false;
+        minigameManager.StartNewMinigame();
+    }
+
+    /// <summary>
+    /// Reset all Values to let the Player play
+    /// </summary>
+    private void ResetDialogueValues()
+    {
+        UnityEngine.Cursor.visible = false;
+        cameraController.MoveToOffset(player.transform);
+        cameraController.StartResetCameraToPlayer();
+        player.motor.ResumeAgent();
+
+        // Call End of Dialogue
+        SetDialogueEnd();
+
+        currentDialogObject = null;
+    }
+
+    /// <summary>
+    /// Call End of the current Dialogue
+    /// </summary>
+    void SetDialogueEnd()
+    {
+        if (currentDialogObject)
+        {
+            if (currentDialogObject.isLost == true)
+            {
+                currentDialogObject.TheEnd(true);
+            }
+            else
+            {
+                currentDialogObject.TheEnd(false);
+            }
+        }
+    }
+
+
+
+    /// <summary>
+    /// Check if Dialogue is currently visible
+    /// </summary>
     public bool CheckIsOpen()
     {
-        return animator.GetBool("IsOpen");
+        return dialogueAnimator.GetBool("IsOpen");
     }
 
     /// <summary>
@@ -392,16 +522,16 @@ public class DialogueManager : MonoBehaviour
         return currentDialogObject;
     }
 
-    void StartTalk(Dialogue.Option option)
+
+    /// <summary>
+    /// Fill Queues to start the Talk
+    /// </summary>
+    void FillQueues(Dialogue.Option option)
     {
-        sentences.Clear();
-        names.Clear();
-        positions.Clear();
-        animations.Clear();
-        audios.Clear();
+        // Clean up
+        ClearQueues();
 
-
-        // Go through Talks and switch Camera
+        // Go through Talks and line up queues
         for (int i = 0; i < option.talks.Length; i++)
         {
             audios.Enqueue(option.talks[i].audio);
@@ -410,5 +540,17 @@ public class DialogueManager : MonoBehaviour
             positions.Enqueue(option.talks[i].cameraTarget);
             sentences.Enqueue(option.talks[i].sentence);
         }
+    }
+
+    /// <summary>
+    /// Clear all Queues
+    /// </summary>
+    void ClearQueues()
+    {
+        sentences.Clear();
+        names.Clear();
+        positions.Clear();
+        animations.Clear();
+        audios.Clear();
     }
 }

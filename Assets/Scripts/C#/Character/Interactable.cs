@@ -10,7 +10,7 @@ public class Interactable : OutlineObject
 	public Transform interactionTransform;
 
 	protected bool isFocus = false;
-	protected Transform player;
+	protected Transform playerTransform;
 
 	public bool hasFocused = true;
 
@@ -36,7 +36,7 @@ public class Interactable : OutlineObject
 	public virtual void OnFocused(Transform playerTransform)
 	{
 		isFocus = true;
-		player = playerTransform;
+		this.playerTransform = playerTransform;
 		hasFocused = false;
 	}
 
@@ -46,7 +46,7 @@ public class Interactable : OutlineObject
 	public virtual void OnDefocused()
 	{
 		isFocus = false;
-		player = null;
+		playerTransform = null;
 		hasFocused = false;
 	}
 

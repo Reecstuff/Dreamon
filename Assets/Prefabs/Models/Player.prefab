@@ -212,7 +212,7 @@ MonoBehaviour:
   - Ego_Idle_03
   footsteps:
   - {fileID: 8300000, guid: 0fae5fa15b06feb4a8b493228dd19d60, type: 3}
-  - {fileID: 8300000, guid: 92a50dfa992166846b0c9a2e364af5de, type: 3}
+  - {fileID: 8300000, guid: 78d890cf6fdc3e149b4fed8072a2c8a6, type: 3}
   footSource: {fileID: 4788438241376480171}
   EgoSource: {fileID: 1378851292}
   EgoIdleClip: {fileID: 8300000, guid: bb31dedab7151bf438a0c1f37e94ce5c, type: 3}

@@ -8,13 +8,19 @@ public class DecisionButtons : MonoBehaviour
 {
 	public int decisionNumber;
 
+	DialogueManager dialogueManager;
+
+
 	private void Start()
 	{
 		GetComponent<Button>().onClick.AddListener(() => SetDecisionNumber());
+
+		// Set DialogManager only once
+		dialogueManager = GetComponentInParent<DialogueManager>();
 	}
 
 	public void SetDecisionNumber()
 	{
-		GetComponentInParent<DialogueManager>().selectedOpinion = decisionNumber;
+		dialogueManager.selectedOpinion = decisionNumber;
 	}
 }

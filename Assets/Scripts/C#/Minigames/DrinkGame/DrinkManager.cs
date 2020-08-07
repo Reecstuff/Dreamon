@@ -49,6 +49,7 @@ public class DrinkManager : MiniGame
         base.StartMiniGame();
 		MiniGameCanvas.gameObject.SetActive(true);
 		UnityEngine.Cursor.visible = true;
+		DrinkAnimation();
 	}
 
 	private void OnDisable()

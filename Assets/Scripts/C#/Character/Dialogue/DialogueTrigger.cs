@@ -19,6 +19,8 @@ public class DialogueTrigger : Interactable
 
 	public bool? isLost;
 
+	protected PlayerController player;
+
 
 
 	protected override void InitValues()
@@ -26,6 +28,7 @@ public class DialogueTrigger : Interactable
 
 		base.InitValues();
 		dialogueManager = FindObjectOfType<DialogueManager>();
+		player = dialogueManager.player;
 		if (SaveManager.instance)
 			SaveManager.instance.OnLoadSave += LoadState;
 	}
@@ -47,6 +50,11 @@ public class DialogueTrigger : Interactable
 			dialogueManager.StartDialogue(this);
 			hasInteracted = true;
 		}
+	}
+
+	public virtual void SetPlayerState()
+    {
+		player.motor.StopAgent();
 	}
 
 	public virtual void TheEnd(bool isLose)
@@ -93,7 +101,7 @@ public class DialogueTrigger : Interactable
 	{
 		if (interactionTransform && isFocus && !hasFocused)
 		{
-			float distance = Vector2.Distance(new Vector2(player.position.x, player.position.z), new Vector2(interactionTransform.position.x, interactionTransform.position.z));
+			float distance = Vector2.Distance(new Vector2(playerTransform.position.x, playerTransform.position.z), new Vector2(interactionTransform.position.x, interactionTransform.position.z));
 			if (distance < radius || distance < 0.2f)
 			{
 				Interact();

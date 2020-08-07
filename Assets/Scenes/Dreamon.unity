@@ -279,18 +279,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 446af6dcc3ea53d4a84ae199664f1e6b, type: 3}
---- !u!114 &209320992 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6171867237324650123, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
-    type: 3}
-  m_PrefabInstance: {fileID: 209320991}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &209320993 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6111208557124723951, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
@@ -449,7 +437,7 @@ PrefabInstance:
     - target: {fileID: 5138805801812047898, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6558981377273023176, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
@@ -691,24 +679,24 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 9173834014691732104, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
-      propertyPath: mainCamera
-      value: 
-      objectReference: {fileID: 968828441}
-    - target: {fileID: 9173834014691732104, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
       propertyPath: camTarget
       value: 
       objectReference: {fileID: 355202933}
     - target: {fileID: 9173834014691732104, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
-      propertyPath: minigame
+      propertyPath: mainCamera
       value: 
-      objectReference: {fileID: 355202932}
+      objectReference: {fileID: 968828441}
     - target: {fileID: 9173834014691732104, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: cameraPosition
       value: 
       objectReference: {fileID: 1411189595}
+    - target: {fileID: 9173834014691732104, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: minigame
+      value: 
+      objectReference: {fileID: 355202932}
     - target: {fileID: 9173834014691732105, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1601,6 +1589,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2824791701659454390, guid: 42fbe90f27e2b9341b3452e7a3770d55,
+        type: 3}
+      propertyPath: footsteps.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 78d890cf6fdc3e149b4fed8072a2c8a6, type: 3}
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1907,6 +1900,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa8338af931a9b544b8d1daefb686829, type: 3}
+--- !u!114 &1566499110 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6171867237324650123, guid: 446af6dcc3ea53d4a84ae199664f1e6b,
+    type: 3}
+  m_PrefabInstance: {fileID: 209320991}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1605131745 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5219269308381401114, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
@@ -3144,6 +3149,21 @@ PrefabInstance:
       propertyPath: minigame
       value: 
       objectReference: {fileID: 2133544471}
+    - target: {fileID: 7915960226169368356, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.475
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915960226169368356, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.086
+      objectReference: {fileID: 0}
+    - target: {fileID: 7915960226169368356, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.122
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a02ddb6b34c88c42a6fb3167d60249b, type: 3}
 --- !u!1001 &1798434590
@@ -3223,6 +3243,11 @@ PrefabInstance:
       propertyPath: minigameManager
       value: 
       objectReference: {fileID: 918208673}
+    - target: {fileID: 564704940502455963, guid: 49b1e9fe4328d6943baefa71a6a229eb,
+        type: 3}
+      propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7524595774687124265, guid: 49b1e9fe4328d6943baefa71a6a229eb,
         type: 3}
       propertyPath: camTarget
@@ -6172,7 +6197,7 @@ PrefabInstance:
         type: 3}
       propertyPath: textField
       value: 
-      objectReference: {fileID: 209320992}
+      objectReference: {fileID: 1566499110}
     - target: {fileID: 6219960328202885195, guid: 2ff7663f6134f4b48857aee1a432cf10,
         type: 3}
       propertyPath: m_Name
@@ -6930,6 +6955,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427893513368639884, guid: 0c90130a9962ef74fabfb9cf435c9158,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 30.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 7427893513368639884, guid: 0c90130a9962ef74fabfb9cf435c9158,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.47
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c90130a9962ef74fabfb9cf435c9158, type: 3}

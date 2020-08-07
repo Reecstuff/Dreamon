@@ -14,11 +14,15 @@ public class Belphe : DialogueTrigger
     [SerializeField]
     float deathAnimationTime = 6;
 
+    public override void SetPlayerState()
+    {
+        if(!(minigameManager as HOMinigameManager).isEnd)
+            player.motor.StopAgent();
+    }
+
     public override void TheEnd(bool isLose)
     {
         base.TheEnd(isLose);
-
-        Debug.Log(gameObject.name + " " + isLose);
 
         Sequence s = DOTween.Sequence();
         // Fly Away

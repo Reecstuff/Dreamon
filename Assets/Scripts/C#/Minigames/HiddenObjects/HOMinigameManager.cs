@@ -20,6 +20,7 @@ public class HOMinigameManager : MinigameManager
     {
         isEnd = true;
 
+        player.motor.ResumeAgent();
         player.motor.FollowTarget(GetComponent<Belphe>());
     }
 }

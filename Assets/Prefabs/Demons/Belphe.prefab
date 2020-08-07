@@ -31,7 +31,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -27.43, y: 0.46, z: -11.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 3789746750731356341}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -112,6 +113,7 @@ MonoBehaviour:
   outlineSpacing: 0.01
   radius: 3
   interactionTransform: {fileID: 0}
+  hasFocused: 1
   dialogue:
   - option:
     - endSentence: 1
@@ -123,8 +125,8 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 564704940502455963}
+          clip: {fileID: 8300000, guid: 2135c7e84c804de439901da166a411e0, type: 3}
         cameraTarget: {fileID: 0}
         name: Belphe
         sentence: "Ich soll dir von Henrik ausrichten das die Dialoge von Bernhardt
@@ -135,8 +137,8 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 564704940502455963}
+          clip: {fileID: 8300000, guid: b93a4492d37079d439a1623562597420, type: 3}
         cameraTarget: {fileID: 0}
         name: Belphe
         sentence: UND NUN SPIELE!
@@ -152,8 +154,8 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 564704940502455963}
+          clip: {fileID: 8300000, guid: 3e5929faa0d15dd4e8a5a1c19b50d47a, type: 3}
         cameraTarget: {fileID: 333434876531243819}
         name: Belphe
         sentence: Win
@@ -169,8 +171,8 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 564704940502455963}
+          clip: {fileID: 8300000, guid: 459334912445e594a93e66fbdc2beeec, type: 3}
         cameraTarget: {fileID: 333434876531243819}
         name: Belphe
         sentence: Lose
@@ -204,3 +206,106 @@ MonoBehaviour:
   nextWinDialog: 01000000
   nextLoseDialog: 02000000
   player: {fileID: 0}
+  isEnd: 0
+--- !u!1001 &3697602264977009707
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 333434876531243819}
+    m_Modifications:
+    - target: {fileID: 560530186406913182, guid: 57d32af74abce9d41b20356fbde5d0f4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 560530186406913182, guid: 57d32af74abce9d41b20356fbde5d0f4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.000000029802322
+      objectReference: {fileID: 0}
+    - target: {fileID: 560530186406913182, guid: 57d32af74abce9d41b20356fbde5d0f4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 560530186406913182, guid: 57d32af74abce9d41b20356fbde5d0f4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 560530186406913182, guid: 57d32af74abce9d41b20356fbde5d0f4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 560530186406913182, guid: 57d32af74abce9d41b20356fbde5d0f4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 560530186406913182, guid: 57d32af74abce9d41b20356fbde5d0f4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 560530186406913182, guid: 57d32af74abce9d41b20356fbde5d0f4,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 560530186406913182, guid: 57d32af74abce9d41b20356fbde5d0f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 560530186406913182, guid: 57d32af74abce9d41b20356fbde5d0f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 560530186406913182, guid: 57d32af74abce9d41b20356fbde5d0f4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784916554528651952, guid: 57d32af74abce9d41b20356fbde5d0f4,
+        type: 3}
+      propertyPath: MinDistance
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784916554528651952, guid: 57d32af74abce9d41b20356fbde5d0f4,
+        type: 3}
+      propertyPath: MaxDistance
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784916554528651952, guid: 57d32af74abce9d41b20356fbde5d0f4,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3784916554528651952, guid: 57d32af74abce9d41b20356fbde5d0f4,
+        type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: -2670160846787771562, guid: aaf1ef32f3fd50c4d9bb9cea86e36964,
+        type: 2}
+    - target: {fileID: 5959399607279281244, guid: 57d32af74abce9d41b20356fbde5d0f4,
+        type: 3}
+      propertyPath: m_Name
+      value: BelpheAudio
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 57d32af74abce9d41b20356fbde5d0f4, type: 3}
+--- !u!4 &3789746750731356341 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 560530186406913182, guid: 57d32af74abce9d41b20356fbde5d0f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 3697602264977009707}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &564704940502455963 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3784916554528651952, guid: 57d32af74abce9d41b20356fbde5d0f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 3697602264977009707}
+  m_PrefabAsset: {fileID: 0}
