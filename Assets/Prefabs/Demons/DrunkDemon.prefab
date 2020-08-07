@@ -807,7 +807,7 @@ MonoBehaviour:
       talks:
       - animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Bottle_Fall
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1082,17 +1082,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 71731a6055ac9ff4c8471f935094cd24,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: 0.122
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 71731a6055ac9ff4c8471f935094cd24,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.289
+      value: -2.475
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 71731a6055ac9ff4c8471f935094cd24,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.176
+      value: -0.086
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 71731a6055ac9ff4c8471f935094cd24,
         type: 3}
