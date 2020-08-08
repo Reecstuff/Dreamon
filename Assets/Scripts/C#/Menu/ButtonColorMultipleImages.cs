@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ButtonColorImage : OverButton
+public class ButtonColorMultipleImages : OverButton
 {
     [SerializeField]
-    Image image;
+    Image[] images;
 
     [SerializeField]
     float time = 3.7f;
@@ -19,29 +19,45 @@ public class ButtonColorImage : OverButton
     {
         base.Initialise();
         button = GetComponent<Button>();
-        normalColor = image.color;
+        normalColor = images[0].color;
     }
 
     protected override void OnButton()
     {
         base.OnButton();
-        image.DOColor(button.colors.highlightedColor, time).SetUpdate(true);
+        DoColor(button.colors.highlightedColor);
     }
 
     protected override void ButtonClicked()
     {
         base.ButtonClicked();
-        image.color = button.colors.pressedColor;
+        SetColor(button.colors.pressedColor);
     }
 
     protected override void ButtonExit()
     {
         base.ButtonExit();
-        image.DOColor(normalColor, time).SetUpdate(true);
+        DoColor(normalColor);
     }
 
     private void OnDisable()
     {
-        image.DOColor(normalColor, time).SetUpdate(true);
+        DoColor(normalColor);
+    }
+
+    void DoColor(Color color)
+    {
+        for (int i = 0; i < images.Length; i++)
+        {
+            images[i].DOColor(color, time).SetUpdate(true);
+        }
+    }
+
+    void SetColor(Color color)
+    {
+        for (int i = 0; i < images.Length; i++)
+        {
+            images[i].color = color;
+        }
     }
 }

@@ -1,9 +1,5 @@
 ﻿using DG.Tweening;
-using System.Collections;
-using System.Collections.Generic;
-using System.Net.NetworkInformation;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 public class ScaleOnMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler 
@@ -14,13 +10,9 @@ public class ScaleOnMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExi
     [SerializeField]
     Vector3 scaleVector = new Vector3(1.07f, 1.07f, 1);
 
-    [SerializeField]
-    float backScaleFactor = 100;
-
     RectTransform recT;
 
     bool scaled = false;
-    Coroutine coroutine;
 
     void Start()
     {
