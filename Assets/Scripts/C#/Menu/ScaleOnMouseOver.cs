@@ -52,23 +52,13 @@ public class ScaleOnMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
         if(scaled)
         {
-            //if (coroutine != null)
-            //    StopCoroutine(coroutine);
-
             recT.DOKill();
             recT.localScale = Vector3.one;
-
-            //coroutine = StartCoroutine(LerpVector(Vector3.one, scaleSpeed / backScaleFactor));
         }
         else
         {
-            //if (coroutine != null)
-            //    StopCoroutine(coroutine);
-
             recT.DOKill();
             recT.DOScale(scaleVector, scaleSpeed).SetUpdate(true);
-
-            //coroutine = StartCoroutine(LerpVector(scaleVector, scaleSpeed));
         }
     }
 
@@ -78,22 +68,6 @@ public class ScaleOnMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExi
         {
             recT.DOKill();
             recT.localScale = Vector3.one;
-        }
-    }
-
-    /// <summary>
-    /// Lerp the localScale to targetScale
-    /// </summary>
-    IEnumerator LerpVector(Vector3 targetScale, float time)
-    {
-        float lerpvalue = 0;
-        Vector3 lerpScale = recT.localScale;
-
-        while (lerpvalue < 1)
-        {
-            lerpvalue += Time.deltaTime / time;
-            recT.localScale = Vector3.Lerp(lerpScale, targetScale, lerpvalue);
-            yield return new WaitForSecondsRealtime(0.008f);
         }
     }
 }

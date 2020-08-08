@@ -108,9 +108,12 @@ public class AudioManager : MonoBehaviour
 
     }
 
-    public void PitchManual(float pitch, int index = 0)
+    public void PitchManual(float pitch, params int[] indices)
     {
-        sources[index].pitch = pitch;
+        for (int i = 0; i < indices.Length; i++)
+        {
+            sources[i].pitch = pitch;
+        }
     }
 
     /// <summary>

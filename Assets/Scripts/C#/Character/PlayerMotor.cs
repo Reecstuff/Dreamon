@@ -191,6 +191,9 @@ public class PlayerMotor : MonoBehaviour
     {
         if (!footSource.isPlaying)
             footSource.Play();
+
+        if (Time.timeScale <= 0)
+            StopFootSound();
     }
 
     void StopFootSound()

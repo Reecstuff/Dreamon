@@ -25,7 +25,7 @@ public class ButtonColorImage : OverButton
     protected override void OnButton()
     {
         base.OnButton();
-        image.DOColor(button.colors.highlightedColor, time);
+        image.DOColor(button.colors.highlightedColor, time).SetUpdate(true);
     }
 
     protected override void ButtonClicked()
@@ -37,7 +37,11 @@ public class ButtonColorImage : OverButton
     protected override void ButtonExit()
     {
         base.ButtonExit();
-        image.DOColor(normalColor, time);
+        image.DOColor(normalColor, time).SetUpdate(true);
     }
 
+    private void OnDisable()
+    {
+        image.DOColor(normalColor, time).SetUpdate(true);
+    }
 }
