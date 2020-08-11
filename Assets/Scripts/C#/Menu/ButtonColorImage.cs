@@ -39,9 +39,4 @@ public class ButtonColorImage : OverButton
         base.ButtonExit();
         image.DOColor(normalColor, time).SetUpdate(true);
     }
-
-    private void OnDisable()
-    {
-        image.DOColor(normalColor, time).SetUpdate(true);
-    }
 }

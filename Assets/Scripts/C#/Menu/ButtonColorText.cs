@@ -41,6 +41,7 @@ public class ButtonColorText : OverButton
 
     private void OnDisable()
     {
-        text.DOColor(button.colors.normalColor, time).SetUpdate(true);
+        if(button)
+            text.DOColor(button.colors.normalColor, time).SetUpdate(true);
     }
 }

@@ -196,7 +196,8 @@ public class PlayerController : MonoBehaviour
         if (SaveManager.instance)
         {
             SaveManager.instance.OnLoadSave -= LoadPlayer;
-            SaveManager.instance.currentAutoSave.OnAutoSave -= SavePlayer;
+            if(SaveManager.instance.currentAutoSave)
+                SaveManager.instance.currentAutoSave.OnAutoSave -= SavePlayer;
         }
     }
 }

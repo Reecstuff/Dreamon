@@ -1,9 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Change Button if a Game is loadable
+/// </summary>
 [RequireComponent(typeof(Button))]
 public class ButtonLoadGame : MonoBehaviour
 {
@@ -12,9 +13,17 @@ public class ButtonLoadGame : MonoBehaviour
 
     void Start()
     {
-        if(SaveManager.instance)
+        CheckContinueGame();
+    }
+
+    /// <summary>
+    /// Check if a Game is available
+    /// </summary>
+    void CheckContinueGame()
+    {
+        if (SaveManager.instance)
         {
-            if(SaveManager.instance.SaveExists())
+            if (SaveManager.instance.SaveExists())
             {
                 GetComponent<Button>().onClick.AddListener(() => SaveManager.instance.LoadSavedGame());
                 GetComponentInChildren<TextMeshProUGUI>().text = loadText;
@@ -25,11 +34,5 @@ public class ButtonLoadGame : MonoBehaviour
                 SaveManager.instance.isNewGame = true;
             }
         }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
