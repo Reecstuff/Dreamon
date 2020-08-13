@@ -187,14 +187,15 @@ MonoBehaviour:
     - endSentence: 0
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 1080324107628060643}
-          clip: {fileID: 8300000, guid: 1675d13edf7479541a15125eccff9631, type: 3}
+          clip: {fileID: 8300000, guid: 93cdf65833310c94f8090c44f69fa1ac, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "Hey you brat, I need your help. We\u2019re gonna play a game!"
@@ -206,7 +207,8 @@ MonoBehaviour:
     - endSentence: 0
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Uncomfortable
           secondAnimator: {fileID: 0}
@@ -217,7 +219,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Ohm.. what the\u2026\r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -228,7 +231,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: You bet! Or is there any other soul?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Depressive
           secondAnimator: {fileID: 0}
@@ -239,7 +243,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: I guess not.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Questioning
           secondAnimator: {fileID: 0}
@@ -250,7 +255,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Hey, what about me?\r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -262,7 +268,8 @@ MonoBehaviour:
         name: Dementum
         sentence: What are you waiting for? Get your ass here and drink a bottle
           of booze!
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Sulky
           secondAnimator: {fileID: 0}
@@ -273,7 +280,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "How rude\u2026\r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Rejecting
           secondAnimator: {fileID: 0}
@@ -284,7 +292,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: I am not interested.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -296,7 +305,8 @@ MonoBehaviour:
         name: Dementum
         sentence: "Hey do you know, who you\u2019re talking to? Show some respect
           and drink with an old man!"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Serious
           secondAnimator: {fileID: 0}
@@ -307,7 +317,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "But I don\u2019t drink anymore."
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -318,7 +329,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "You shut up! Y\u2019all know nothing! You are so weak. "
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Idle
           secondAnimator: {fileID: 0}
@@ -329,7 +341,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: How do you know?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -341,7 +354,8 @@ MonoBehaviour:
         name: Dementum
         sentence: "Haven\u2019t you even noticed yet? You left your wife night by
           night. All the empty bottles in front of your eyes. Are you that blind!?"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Serious
           secondAnimator: {fileID: 0}
@@ -352,7 +366,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: 'Stop it. '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -364,7 +379,8 @@ MonoBehaviour:
         name: Dementum
         sentence: "Broken relationship with the whole family, total isolation and\u2026
           the wish to die\u2026. doesn\u2019t it remind you of somebody!"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Stop_It
           secondAnimator: {fileID: 0}
@@ -375,7 +391,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: Stop it.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -387,7 +404,8 @@ MonoBehaviour:
         name: Dementum
         sentence: "You coward! Remember the pain you feel\u2026 about the kiss\u2026
           about the love\u2026 about the betrayal\u2026 "
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Stop_It_Stop_It
           secondAnimator: {fileID: 0}
@@ -398,7 +416,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: STOP IT! STOP IT! STOP IT!
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Calmdown
           secondAnimator: {fileID: 0}
@@ -410,7 +429,8 @@ MonoBehaviour:
         name: Ego
         sentence: "Calm down buddy. Calm down. He is just teasing you. Let\u2019s
           play the game with him. Trust me, it\u2019s gonna be fun."
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
           secondAnimator: {fileID: 0}
@@ -427,7 +447,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 1
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -438,7 +459,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 5219269308381401104}
         name: ...
         sentence: "Dementum reveals \u201CHIS FACE\u201D and smiles wider."
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Frightened
           secondAnimator: {fileID: 0}
@@ -449,7 +471,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: 'Ego '
         sentence: Ahhhhh.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Uncomfortable
           secondAnimator: {fileID: 0}
@@ -461,7 +484,8 @@ MonoBehaviour:
         name: 'Ego '
         sentence: "What\u2019s that ugly thing! What\u2019s happening! Elios protect
           me!"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
           secondAnimator: {fileID: 0}
@@ -472,7 +496,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "How annoying\u2026"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -483,7 +508,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 5219269308381401104}
         name: ...
         sentence: "Dementum reveals his \u201CFULL APPEARANCE\u201D."
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -494,7 +520,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: Finally. Took you long enough.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
           secondAnimator: {fileID: 0}
@@ -505,7 +532,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "I know.\r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Uncomfortable
           secondAnimator: {fileID: 0}
@@ -516,7 +544,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Hey Elios. I\u2026 I don\u2019t feel safe here. Can we go?\r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Serious
           secondAnimator: {fileID: 0}
@@ -529,18 +558,20 @@ MonoBehaviour:
         sentence: 'No, we stay.
 
 '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 1080324107628060643}
-          clip: {fileID: 8300000, guid: 1f1ef8796ceabd24983ac6686a90fb27, type: 3}
+          clip: {fileID: 8300000, guid: 79bf04bad98ff5d41b7268555371646b, type: 3}
         cameraTarget: {fileID: 0}
         name: Dementum
         sentence: "Good, really good. Haha oh.ch.ohch\r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -552,7 +583,8 @@ MonoBehaviour:
         name: ...
         sentence: 'Dementum is turning back and prepares mugs with alcohol in the
           background. '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -563,7 +595,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Dementum
         sentence: You know what I really like about the booze?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_Accused
           secondAnimator: {fileID: 0}
@@ -574,19 +607,21 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: 'Elios '
         sentence: (pressed lips to the inside) ...
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 1080324107628060643}
-          clip: {fileID: 8300000, guid: 715697622ab1054459093c0b5d09aea4, type: 3}
+          clip: {fileID: 8300000, guid: 3fb2e2ca67c5d6d44b2d8b98e1dcb73c, type: 3}
         cameraTarget: {fileID: 5219269308381401104}
         name: 'Dementum '
         sentence: "(fills mugs) It\u2019s the golden elixir! You gotta try this joyness...
           to fall in love! "
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Exited
           secondAnimator: {fileID: 0}
@@ -597,7 +632,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Wow... That sounds so beautiful! We really need to drink it, Elios!\r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
           secondAnimator: {fileID: 0}
@@ -608,7 +644,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: '[sad sighs]'
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -619,7 +656,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 5219269308381401104}
         name: ...
         sentence: "Dementum brings five jugs in front of Elios and Ego.\r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -630,7 +668,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Dementum
         sentence: 'Open your lug holes, kid. I have two kind of drinks here. '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -642,18 +681,20 @@ MonoBehaviour:
         name: Dementum
         sentence: "The one will make you tired and weak, the other will beat me.
           Consider your decision well, \u2026 before your time runs out. \r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 1080324107628060643}
-          clip: {fileID: 8300000, guid: 9a957cb3af9e2e64cb3fd86dbec0ffe9, type: 3}
+          clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: Dementum
         sentence: "Cheers! Let\u2019s see how much you can deal with."
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Demanding
           secondAnimator: {fileID: 0}
@@ -669,7 +710,8 @@ MonoBehaviour:
     - endSentence: 0
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Questioning
           secondAnimator: {fileID: 0}
@@ -680,7 +722,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Wait Elios! Why do you say no? We haven\u2019t even played yet."
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Serious
           secondAnimator: {fileID: 0}
@@ -691,7 +734,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: No.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Begging
           secondAnimator: {fileID: 0}
@@ -702,7 +746,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Oh come on! Don\u2019t be a douchebag. It\u2019s gonna be fun. "
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -713,7 +758,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "Consider your decision well, kid\u2026 before your time runs out. "
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
           secondAnimator: {fileID: 0}
@@ -731,7 +777,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 1
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -742,7 +789,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "I knew you couldn\u2019t resist! Do you feel free now?"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Calmdown
           secondAnimator: {fileID: 0}
@@ -759,7 +807,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -777,7 +826,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 1
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -788,7 +838,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: 'You gotta be kidding me! How dare you ruin my game! '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ PleasentlySuprised
           secondAnimator: {fileID: 0}
@@ -805,7 +856,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Bottle_Fall
           secondAnimator: {fileID: 0}
@@ -817,7 +869,8 @@ MonoBehaviour:
         name: ...
         sentence: 'Dementum throws the bottle to the bottom and flinches. The bottle
           screams. '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -829,7 +882,8 @@ MonoBehaviour:
         name: Dementum
         sentence: "Ahhhh. Why are you doing this to me. Don\u2019t you love me? You
           can\u2019t escape. I am part of you! "
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Serious
           secondAnimator: {fileID: 0}
@@ -840,7 +894,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: Get out of my sight! We had enough.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -851,7 +906,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 5219269308381401104}
         name: Dementum
         sentence: "We haven\u2019t even started yet! Drink one more, Elios!"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Stop_It
           secondAnimator: {fileID: 0}
@@ -862,7 +918,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: Stop it! We have nothing more to say!
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -898,14 +955,15 @@ MonoBehaviour:
   - {fileID: 0}
   lostCandleLight: {fileID: 0}
   deathAnimationTime: 6
-  Tavernpoltergeist: {fileID: 0}
+  tavernpoltergeister: []
   blocker: {fileID: 0}
   lostDialogue:
   - option:
     - endSentence: 1
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Lying
           secondAnimator: {fileID: 0}
@@ -916,7 +974,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: '[Sigh]'
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Questioning
           secondAnimator: {fileID: 0}
@@ -927,7 +986,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: Why are the lights out???
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Getting_Up
           secondAnimator: {fileID: 0}
@@ -944,6 +1004,8 @@ MonoBehaviour:
   backgroundMusicClip: {fileID: 8300000, guid: 92b98deff534038409a8ace4aba6f49c, type: 3}
   blackScreen: {fileID: 0}
   blackScreenStateName: Crossfade_End
+  activateObject: {fileID: 0}
+  lightSpawn: {fileID: 0}
 --- !u!82 &1080324107628060643
 AudioSource:
   m_ObjectHideFlags: 0
