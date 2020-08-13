@@ -2117,12 +2117,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1784116547}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &1404191452 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 47977396048909992, guid: fa8338af931a9b544b8d1daefb686829,
-    type: 3}
-  m_PrefabInstance: {fileID: 1527087379}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1411189595 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5030839855778669375, guid: 42fbe90f27e2b9341b3452e7a3770d55,
@@ -2222,9 +2216,9 @@ PrefabInstance:
       objectReference: {fileID: 312706724}
     - target: {fileID: 2607370184280613953, guid: fa8338af931a9b544b8d1daefb686829,
         type: 3}
-      propertyPath: animator
+      propertyPath: roundText
       value: 
-      objectReference: {fileID: 1404191452}
+      objectReference: {fileID: 730186039905894045}
     - target: {fileID: 2607370184280615870, guid: fa8338af931a9b544b8d1daefb686829,
         type: 3}
       propertyPath: m_Name

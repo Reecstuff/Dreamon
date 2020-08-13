@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2607370184280613952
 Transform:
   m_ObjectHideFlags: 0
@@ -48,13 +48,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assignedTarget: {fileID: 0}
-  animator: {fileID: 0}
+  animator: {fileID: 47977396048909992}
   shells:
   - {fileID: 4656587066357730479}
   - {fileID: 2739825929630125631}
   - {fileID: 2739825929941905072}
   pointPrefab: {fileID: 4259239415831732587, guid: 3a2bb8756f6588a44b5a41198f8db2f0,
     type: 3}
+  roundText: {fileID: 0}
 --- !u!95 &47977396048909992
 Animator:
   serializedVersion: 3

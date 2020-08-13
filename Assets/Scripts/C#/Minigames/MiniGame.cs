@@ -1,11 +1,21 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MiniGame : MonoBehaviour
 {
     public virtual void StartMiniGame()
     {
-        gameObject.SetActive(true);
+        StartCoroutine(nameof(MiniGameUpdate));
+    }
+
+    protected virtual void EndMiniGame()
+    {
+        StopCoroutine(nameof(MiniGameUpdate));
+        gameObject.SetActive(false);
+    }
+
+    protected virtual IEnumerator MiniGameUpdate()
+    {
+        yield return new WaitForEndOfFrame();
     }
 }
