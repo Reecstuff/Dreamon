@@ -112,7 +112,8 @@ public class AudioManager : MonoBehaviour
     {
         for (int i = 0; i < indices.Length; i++)
         {
-            sources[i].pitch = pitch;
+            if(sources[i])
+                sources[i].pitch = pitch;
         }
     }
 
