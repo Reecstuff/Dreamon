@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Audio;
 using System.Linq;
+using System.Collections;
 
 /// <summary>
 /// Manager of all Audio
@@ -78,6 +79,24 @@ public class AudioManager : MonoBehaviour
             volume = -80;
 
         mainMixer.SetFloat(volumeStrings[index], volume);
+    }
+
+    /// <summary>
+    /// Set the current Volume of the source
+    /// </summary>
+    /// <param name="index">Index of volume in sources</param>
+    /// <param name="volume">Volume to be set</param>
+    public void SetSourceVome(int index, float volume)
+    {
+        sources[index].volume = volume;
+    }
+
+    /// <summary>
+    /// Get the current volume of the source
+    /// </summary>
+    public float GetSourcVolume(int index)
+    {
+        return sources[index].volume;
     }
 
     /// <summary>

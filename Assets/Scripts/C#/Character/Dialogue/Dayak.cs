@@ -14,15 +14,29 @@ public class Dayak : DialogueTrigger
     [SerializeField]
     float deathAnimationTime = 6;
 
+    [SerializeField]
+    AudioClip dayakTheme;
+
+    AudioClip oldBackgroundMusic;
+
+    protected override void PlaySound()
+    {
+        base.PlaySound();
+
+        if(AudioManager.Instance && dayakTheme)
+        {
+            oldBackgroundMusic = AudioManager.Instance.GetSourceClip();
+            AudioManager.Instance.SetSourceClip(dayakTheme);
+        }
+    }
+
     public override void TheEnd(bool isLose)
     {
         base.TheEnd(isLose);
 
-        Debug.Log(gameObject.name + " " + isLose);
-
         Sequence s = DOTween.Sequence();
-        // Fly Away
 
+        // Fly Away
         s.Append(transform.DOScale(Vector3.zero, deathAnimationTime));
         s.Join(transform.DOShakeRotation(deathAnimationTime));
         s.Play();
@@ -33,6 +47,11 @@ public class Dayak : DialogueTrigger
             {
                 objectsToDeactivate[i].SetActive(false);
             }
+        }
+
+        if(AudioManager.Instance)
+        {
+            AudioManager.Instance.SetSourceClip(oldBackgroundMusic);
         }
 
         Invoke(nameof(SetInactive), deathAnimationTime + 0.5f);

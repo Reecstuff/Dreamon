@@ -59,3 +59,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BackGroundMusicClip: {fileID: 8300000, guid: 9a3aa3613b44b2144a2cd23c6e277201, type: 3}
   FXSoundClip: {fileID: 8300000, guid: 26e045645f77b214a8605e326c504a65, type: 3}
+  volumeFactor: 0.8

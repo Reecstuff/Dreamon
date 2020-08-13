@@ -3249,7 +3249,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -3260,7 +3261,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 7351349278180376846}
         name: Ego
         sentence: Elios, look at this light...! I feel so warm and cozy.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -9388,7 +9390,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -9399,7 +9402,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 252570978505166740}
         name: Elios
         sentence: "What\u2019s going on with this bottle?"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -12586,7 +12590,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -18042,7 +18047,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -18053,7 +18059,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 6678624174127021424}
         name: Ego
         sentence: I am thirsty! What kind of drinks do they have?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -22355,7 +22362,7 @@ PrefabInstance:
     - target: {fileID: 2255709759897920732, guid: 61a8626989b54724e88c26b88f669121,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.5699997
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2255709759897920732, guid: 61a8626989b54724e88c26b88f669121,
         type: 3}
