@@ -117,9 +117,10 @@ public class DoorMechanic : MonoBehaviour
         {
             dialogueManager.cameraController.MoveToFixedPosition(camPosition.position, transform);
         }
-        
+
+
         // Reset every Time
-        Invoke(nameof(ResetCutScene), animClip.length);
+        Invoke(nameof(ResetCutScene), animClip.length / 2);
     }
 
     /// <summary>
