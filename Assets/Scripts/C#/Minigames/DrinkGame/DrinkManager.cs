@@ -36,20 +36,17 @@ public class DrinkManager : MiniGame
 	[SerializeField]
 	string drinkAnimationState;
 
-	private void Start()
-	{
+    public override void StartMiniGame()
+    {
+		gameObject.SetActive(true);
+		MiniGameCanvas.gameObject.SetActive(true);
+		UnityEngine.Cursor.visible = true;
+		DrinkAnimation();
 		startDrinkTime = drinkTime;
 		bottles = GetComponentsInChildren<Drink>();
 		bottleTime = maxBottleTimer;
 		RandomAlc();
-	}
-
-    public override void StartMiniGame()
-    {
         base.StartMiniGame();
-		MiniGameCanvas.gameObject.SetActive(true);
-		UnityEngine.Cursor.visible = true;
-		DrinkAnimation();
 	}
 
 	private void OnDisable()
@@ -58,17 +55,23 @@ public class DrinkManager : MiniGame
 			MiniGameCanvas.gameObject.SetActive(false);
 	}
 
-	private void Update()
-	{
-		if(MiniGameCanvas.gameObject.activeInHierarchy)
-		{
-			// TODO: Slider im Krug
-			timerText.text = string.Join(":", (((drinkTime - drinkTime % 60) / 60)).ToString("00"), Mathf.Round(drinkTime % 60).ToString("00"));
-			drinkBottleText.text = string.Concat("Water: ", drinkBottles.ToString(), " / ",  maxBottles.ToString());
-			drunkBottleText.text = string.Concat("<color=yellow>Alcohol: ", drunkBottles.ToString(), " / ", maxAlcBottles.ToString());
-		}
-		CheckGame();
-		TimingBottle();
+    protected override IEnumerator MiniGameUpdate()
+    {
+		do
+        {
+			if (MiniGameCanvas.gameObject.activeInHierarchy)
+			{
+				// TODO: Slider im Krug
+				timerText.text = string.Join(":", (((drinkTime - drinkTime % 60) / 60)).ToString("00"), Mathf.Round(drinkTime % 60).ToString("00"));
+				drinkBottleText.text = string.Concat("Water: ", drinkBottles.ToString(), " / ", maxBottles.ToString());
+				drunkBottleText.text = string.Concat("<color=yellow>Alcohol: ", drunkBottles.ToString(), " / ", maxAlcBottles.ToString());
+			}
+			CheckGame();
+			TimingBottle();
+
+			yield return base.MiniGameUpdate();
+        } while (gameObject.activeInHierarchy);
+
 	}
 
 	void TimingBottle()
@@ -106,18 +109,22 @@ public class DrinkManager : MiniGame
 
 	public void Win()
 	{
-		ResetGame();
-
+		EndMiniGame();
 		//Stop game
 		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
 	}
 
 	public void Lost()
 	{
-		ResetGame();
-
+		EndMiniGame();
 		//Stop game
 		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
+	}
+
+    protected override void EndMiniGame()
+    {
+        base.EndMiniGame();
+		ResetGame();
 	}
 
 	public void DrinkAnimation()

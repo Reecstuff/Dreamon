@@ -56,46 +56,51 @@ public class BoardManager : MiniGame
 		rounds = 0;
     }
 
-    private void Update()
+    protected override IEnumerator MiniGameUpdate()
 	{
-		//If the player lose the game
-		if (currentChessmans == 0)
+		do
 		{
-			loseRounds++;
-
-			CheckForWinLose();
-
-			SpawnAllChessmans();
-		}
-
-		UpdateSelection();
-		DrawChessboard();
-
-		if (Input.GetMouseButtonDown(0))
-		{
-			if (selectionX >= 0 && selectionY >= 0)
+			//If the player lose the game
+			if (currentChessmans == 0)
 			{
-				if (Chessmans[selectionX, selectionY] && !Chessmans[selectionX, selectionY].isEnemy)
+				loseRounds++;
+
+				CheckForWinLose();
+
+				SpawnAllChessmans();
+			}
+
+			UpdateSelection();
+			DrawChessboard();
+
+			if (Input.GetMouseButtonDown(0))
+			{
+				if (selectionX >= 0 && selectionY >= 0)
 				{
-					//Select the chessman
-					SelectChessman(selectionX, selectionY);
-				}
-				else
-				{
-					// Move Chessman and check if Chessman is standing in the last row
-					if (MoveChessman(selectionX, selectionY))
+					if (Chessmans[selectionX, selectionY] && !Chessmans[selectionX, selectionY].isEnemy)
 					{
-						winRounds++;
-						
-						Invoke(nameof(CheckForWinLose), 0.3f);
-
-						Invoke(nameof(SpawnAllChessmans), 0.5f);
+						//Select the chessman
+						SelectChessman(selectionX, selectionY);
 					}
+					else
+					{
+						// Move Chessman and check if Chessman is standing in the last row
+						if (MoveChessman(selectionX, selectionY))
+						{
+							winRounds++;
 
+							Invoke(nameof(CheckForWinLose), 0.3f);
+
+							Invoke(nameof(SpawnAllChessmans), 0.5f);
+						}
+
+					}
 				}
 			}
-		}
-	}
+
+			return base.MiniGameUpdate();
+		} while (gameObject.activeInHierarchy);
+    }
 
 	void CheckForWinLose()
     {
@@ -103,10 +108,12 @@ public class BoardManager : MiniGame
 		{
 			if (winRounds < loseRounds)
 			{
+				EndMiniGame();
 				assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
 			}
 			else if (winRounds > loseRounds)
 			{
+				EndMiniGame();
 				assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
 			}
 		}

@@ -1,5 +1,5 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ShellgameManager : MiniGame
@@ -7,23 +7,33 @@ public class ShellgameManager : MiniGame
 	public GameObject assignedTarget;
 	public Animator animator;
 	public GameObject[] shells = new GameObject[3];
-	int round;
+	int rounds;
 	int rNumber;
 
 	GameObject point;
 	public GameObject pointPrefab;
 
+	[SerializeField]
+	TextMeshProUGUI roundText;
+
 	public override void StartMiniGame()
 	{
-		base.StartMiniGame();
+		gameObject.SetActive(true);
 		ShellAnimation();
 		SetWin();
+		base.StartMiniGame();
 	}
 
-	private void Update()
-	{
-		point.transform.position = new Vector3(shells[rNumber-1].transform.position.x, transform.position.y, shells[rNumber-1].transform.position.z);
-	}
+    protected override IEnumerator MiniGameUpdate()
+    {
+		do
+		{
+			if (point)
+				point.transform.position = new Vector3(shells[rNumber - 1].transform.position.x, transform.position.y, shells[rNumber - 1].transform.position.z);
+
+			return base.MiniGameUpdate();
+		} while (gameObject.activeInHierarchy);
+    }
 
 	private void SetWin()
 	{
@@ -48,20 +58,21 @@ public class ShellgameManager : MiniGame
 
 	private void ShellAnimation()
 	{
-		round++;
+		rounds++;
 
-		if (round == 1)
+		if (rounds == 1)
 		{
 			animator.SetTrigger("Trigger1");
 		}
-		else if (round == 2)
+		else if (rounds == 2)
 		{
 			animator.SetTrigger("Trigger2");
 		}
-		else if (round == 3)
+		else if (rounds == 3)
 		{
 			animator.SetTrigger("Trigger3");
 		}
+		ShowRounds();
 	}
 
 	public void Win()
@@ -69,6 +80,7 @@ public class ShellgameManager : MiniGame
 		Destroy(point);
 
 		//Stop game
+		EndMiniGame();
 		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
 	}
 
@@ -77,6 +89,21 @@ public class ShellgameManager : MiniGame
 		Destroy(point);
 
 		//Stop game
+		EndMiniGame();
 		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
+	}
+
+    protected override void EndMiniGame()
+    {
+        base.EndMiniGame();
+		roundText.SetText(string.Empty);
+    }
+
+    void ShowRounds()
+	{
+		if (rounds <= 3)
+			roundText.SetText(string.Concat("Round\n", rounds));
+		else
+			roundText.SetText(string.Empty);
 	}
 }
