@@ -1241,8 +1241,8 @@ MonoBehaviour:
   closeDoor: Door_Entrance_Close
   animClip: {fileID: 1827226128182048838, guid: 25c3c99a75da3fe4c9636e20a3044426,
     type: 3}
-  openDoorClip: {fileID: 8300000, guid: de25dab053bfd7640b96b511fd344eec, type: 3}
-  closeDoorClip: {fileID: 8300000, guid: f3d475f639db64544a6aa5a6f01f3e96, type: 3}
+  openDoorClip: {fileID: 8300000, guid: c57032acaf0713b488f01d5897655092, type: 3}
+  closeDoorClip: {fileID: 8300000, guid: 0734978881c1cb447bdcef3063625131, type: 3}
   exitPoint: {fileID: 2065010562512898239}
   camPosition: {fileID: 2970043701515066773}
 --- !u!82 &7267632364818619868

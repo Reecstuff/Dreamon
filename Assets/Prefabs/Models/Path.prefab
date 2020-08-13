@@ -101,6 +101,7 @@ MonoBehaviour:
   - {fileID: 4586875898319594813}
   - {fileID: 7214410342853970527}
   - {fileID: 9015561577225313312}
+  speed: 0.8
 --- !u!65 &1444714473640821724
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4110,7 +4111,7 @@ PrefabInstance:
     - target: {fileID: 2255709759897920732, guid: 61a8626989b54724e88c26b88f669121,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2255709759897920732, guid: 61a8626989b54724e88c26b88f669121,
         type: 3}
@@ -4161,6 +4162,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2255709759897920732, guid: 61a8626989b54724e88c26b88f669121,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61a8626989b54724e88c26b88f669121, type: 3}
