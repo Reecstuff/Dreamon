@@ -86,7 +86,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 1
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Lying
           secondAnimator: {fileID: 0}
@@ -97,7 +98,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: ...
         sentence: ' '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ GrowingOutOfElios
           secondAnimator: {fileID: 0}
@@ -108,7 +110,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: ...
         sentence: ' '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Waking_Up
           secondAnimator: {fileID: 0}
@@ -119,7 +122,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: ...
         sentence: ' '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Getting_Up
           secondAnimator: {fileID: 0}
@@ -130,7 +134,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: ...
         sentence: ' '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Wow
           secondAnimator: {fileID: 0}
@@ -141,7 +146,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Creature
         sentence: Wow... this place is so cool! Wait.., I can't move!
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Frightened
           secondAnimator: {fileID: 0}
@@ -154,7 +160,8 @@ MonoBehaviour:
         sentence: 'Where are my legs?!
 
 '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Looking
           secondAnimator: {fileID: 0}
@@ -165,7 +172,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Man
         sentence: "What\u2026? Who\u2026? "
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Questioning
           secondAnimator: {fileID: 0}
@@ -176,7 +184,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Creature
         sentence: "Oh\u2026 Ehm...hey... my name is Ego, and yours\u2026?"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
           secondAnimator: {fileID: 0}
@@ -187,7 +196,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Man
         sentence: " [sighs] Elios\u2026"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Wow
           secondAnimator: {fileID: 0}
@@ -198,7 +208,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Ehm\u2026 Do you know this place? "
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Depressive
           secondAnimator: {fileID: 0}
@@ -209,7 +220,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: No...
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Questioning
           secondAnimator: {fileID: 0}
@@ -220,7 +232,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: Are you alone here?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -231,7 +244,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: I guess so.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Exited
           secondAnimator: {fileID: 0}
@@ -242,7 +256,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Not today! Let\u2019s be friends! "
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Rejecting
           secondAnimator: {fileID: 0}
@@ -253,7 +268,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "I don\u2019t want a friend now..."
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Dissappointed
           secondAnimator: {fileID: 0}
@@ -264,18 +280,20 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: 'Ego '
         sentence: "Ohh\u2026 So you already have a friend!?"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: e3c3e34e6278f7c49b2eb365572bf4af, type: 3}
+          clip: {fileID: 8300000, guid: 9344f524d080ace4fae3dc5f53bc5855, type: 3}
         cameraTarget: {fileID: 0}
         name: 'Elios '
         sentence: (annoyed) No. I am not interested.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Begging
           secondAnimator: {fileID: 0}
@@ -286,7 +304,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: 'Ego '
         sentence: "No? So let\u2019s be friends then!"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Rejecting
           secondAnimator: {fileID: 0}
@@ -297,7 +316,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: Get off me! I am not in the mood for speaking...
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_Absent
           secondAnimator: {fileID: 0}
@@ -308,7 +328,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Maybe...if we play a game\u2026I will go."
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
           secondAnimator: {fileID: 0}
@@ -319,7 +340,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "[sighs] If you say so\u2026 "
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Exited
           secondAnimator: {fileID: 0}
@@ -331,7 +353,8 @@ MonoBehaviour:
         name: Ego
         sentence: "Really\u2026?! Awesome! You good at chess? Let\u2019s play! Let\u2019s
           play! Let\u2019s play!"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Serious
           secondAnimator: {fileID: 0}
@@ -343,7 +366,8 @@ MonoBehaviour:
         name: Ego
         sentence: You just have to get one of your characters behind mine, but be
           careful.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_Absent
           secondAnimator: {fileID: 0}
@@ -360,7 +384,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Depressive
           secondAnimator: {fileID: 0}
@@ -371,7 +396,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "Uhh\u2026 I didn\u2019t win."
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ PleasentlySuprised
           secondAnimator: {fileID: 0}
@@ -382,7 +408,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: 'Ego '
         sentence: "Yea\u2026 of course I won, I knew it!"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
           secondAnimator: {fileID: 0}
@@ -401,7 +428,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ FakeSmile
           secondAnimator: {fileID: 0}
@@ -412,7 +440,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "Oh\u2026 I suppose I won\u2026"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Begging
           secondAnimator: {fileID: 0}
@@ -424,7 +453,8 @@ MonoBehaviour:
         name: Ego
         sentence: "Yea, you won... I wanna play again! Please\u2026 Please\u2026.
           Please\u2026.!"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ LookingAtEgo
           secondAnimator: {fileID: 0}
@@ -437,7 +467,8 @@ MonoBehaviour:
         sentence: 'No. I won. We had a deal...
 
 '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Ego_ Serious
           secondAnimator: {fileID: 0}
@@ -449,7 +480,8 @@ MonoBehaviour:
         name: 'Ego '
         sentence: "I said maybe\u2026 no matter if you win or lose I will be with
           you... "
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: Elios_Emo_ Annoyed
           secondAnimator: {fileID: 0}
@@ -467,7 +499,8 @@ MonoBehaviour:
   camPosition: {fileID: 266097371674798222}
   source: {fileID: 0}
   chessTalk:
-  - animation:
+  - dialogAction: {fileID: 0}
+    animation:
       animator: {fileID: 0}
       AnimationStateName: 
       secondAnimator: {fileID: 0}
@@ -480,7 +513,8 @@ MonoBehaviour:
     sentence: "How annoying\u2026"
     delay: 3
     resultIndex: 0
-  - animation:
+  - dialogAction: {fileID: 0}
+    animation:
       animator: {fileID: 0}
       AnimationStateName: 
       secondAnimator: {fileID: 0}
@@ -493,7 +527,8 @@ MonoBehaviour:
     sentence: "Finally\u2026! It\u2019s playtime!"
     delay: 5
     resultIndex: 0
-  - animation:
+  - dialogAction: {fileID: 0}
+    animation:
       animator: {fileID: 0}
       AnimationStateName: 
       secondAnimator: {fileID: 0}
@@ -506,7 +541,8 @@ MonoBehaviour:
     sentence: "How did you do that?! You\u2019re the best!"
     delay: 5
     resultIndex: 0
-  - animation:
+  - dialogAction: {fileID: 0}
+    animation:
       animator: {fileID: 0}
       AnimationStateName: 
       secondAnimator: {fileID: 0}
@@ -520,7 +556,8 @@ MonoBehaviour:
     delay: 5
     resultIndex: 0
   tutorialTalk:
-  - animation:
+  - dialogAction: {fileID: 0}
+    animation:
       animator: {fileID: 0}
       AnimationStateName: 
       secondAnimator: {fileID: 0}
@@ -533,7 +570,8 @@ MonoBehaviour:
     sentence: Why dont you try to look around a bit, by holding the right mouse button?
     delay: 2
     resultIndex: 0
-  - animation:
+  - dialogAction: {fileID: 0}
+    animation:
       animator: {fileID: 0}
       AnimationStateName: 
       secondAnimator: {fileID: 0}
@@ -546,7 +584,8 @@ MonoBehaviour:
     sentence: Get a closer look by scrolling your mouse wheel.
     delay: 2
     resultIndex: 0
-  - animation:
+  - dialogAction: {fileID: 0}
+    animation:
       animator: {fileID: 0}
       AnimationStateName: 
       secondAnimator: {fileID: 0}
@@ -560,7 +599,8 @@ MonoBehaviour:
       button to walk.
     delay: 4
     resultIndex: 0
-  - animation:
+  - dialogAction: {fileID: 0}
+    animation:
       animator: {fileID: 0}
       AnimationStateName: 
       secondAnimator: {fileID: 0}
