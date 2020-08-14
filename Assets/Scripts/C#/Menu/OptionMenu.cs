@@ -40,7 +40,8 @@ public class OptionMenu : MonoBehaviour
         int? currentResIndex = 0;
 
         resolutions = Screen.resolutions;
-        resolutionDropdown.ClearOptions();
+
+        resolutionDropdown?.ClearOptions();
 
         if (SaveManager.instance)
         {

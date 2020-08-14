@@ -48,13 +48,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assignedTarget: {fileID: 0}
-  animator: {fileID: 0}
+  animator: {fileID: 47977396048909992}
   shells:
   - {fileID: 4656587066357730479}
   - {fileID: 2739825929630125631}
   - {fileID: 2739825929941905072}
   pointPrefab: {fileID: 4259239415831732587, guid: 3a2bb8756f6588a44b5a41198f8db2f0,
     type: 3}
+  roundText: {fileID: 0}
+  startAnimation: {fileID: 7400000, guid: a368e830d51577b40a9534523e4e72bb, type: 2}
+  showResultTime: 1
 --- !u!95 &47977396048909992
 Animator:
   serializedVersion: 3

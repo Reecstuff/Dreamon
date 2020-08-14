@@ -13,22 +13,33 @@ public class HOManager : MiniGame
 
     public override void StartMiniGame()
     {
-        base.StartMiniGame();
+		gameObject.SetActive(true);
+		base.StartMiniGame();
     }
 
-    private void Update()
-	{
-		searchTime -= Time.deltaTime;
-
-		if (searchTime < 0)
-		{
-			assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
-			this.gameObject.SetActive(false);
-		}
-		else if (hiddenObjects.Length == foundObjects)
-		{
-			assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
-			this.gameObject.SetActive(false);
-		}
+    protected override void EndMiniGame()
+    {
+        base.EndMiniGame();
 	}
+
+	protected override IEnumerator MiniGameUpdate()
+    {
+		do
+		{
+			searchTime -= Time.deltaTime;
+
+			if (searchTime < 0)
+			{
+				assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
+				EndMiniGame();
+			}
+			else if (hiddenObjects.Length == foundObjects)
+			{
+				assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
+				EndMiniGame();
+			}
+
+			return base.MiniGameUpdate();
+		} while (gameObject.activeInHierarchy);
+    }
 }

@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &970173243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 970173244}
+  m_Layer: 0
+  m_Name: InteractionTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &970173244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970173243}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.78, y: -0.578, z: 0.45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9173834014691732105}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3808811703789809803
 GameObject:
   m_ObjectHideFlags: 0
@@ -23,8 +53,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3808811703789809803}
-  m_LocalRotation: {x: 0.29051006, y: -0.260826, z: 0.085469574, w: 0.9166617}
-  m_LocalPosition: {x: 3.809246, y: 5.1128063, z: -5.183209}
+  m_LocalRotation: {x: 0.24215072, y: 0.07535296, z: -0.019775352, w: 0.967106}
+  m_LocalPosition: {x: 1.9727409, y: 2.9318986, z: -2.6817381}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9173834014691732105}
@@ -64,6 +94,7 @@ Transform:
   m_Children:
   - {fileID: 7616634341673599877}
   - {fileID: 8711830891425058972}
+  - {fileID: 970173244}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -164,15 +195,16 @@ MonoBehaviour:
   hasInteracted: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineSpacing: 0.01
-  radius: 4
-  interactionTransform: {fileID: 9173834014691732105}
+  radius: 0.3
+  interactionTransform: {fileID: 970173244}
   hasFocused: 1
   dialogue:
   - option:
     - endSentence: 0
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -184,7 +216,8 @@ MonoBehaviour:
         name: Dayak
         sentence: Hahaha. Time?! [giggles] The infinite harmony of seconds, minutes
           and even hours
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -195,7 +228,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 9173834014691732105}
         name: Ego
         sentence: "Ehem\u2026 Yea\u2026?"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -206,7 +240,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 9173834014691732105}
         name: Dayak
         sentence: "Time is so relative. For one it\u2019s faster than others.\r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -217,7 +252,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 9173834014691732105}
         name: Elios
         sentence: "I just want to know the way out of here. \r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -228,7 +264,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 9173834014691732105}
         name: Dayak
         sentence: But your time is running out, my friend. hahaha
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -239,7 +276,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 9173834014691732105}
         name: ' '
         sentence: Dayak stands in front of a table with 30 Casino Chips on it.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -259,7 +297,8 @@ MonoBehaviour:
     - endSentence: 0
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -270,7 +309,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: '[giggles] '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -282,7 +322,8 @@ MonoBehaviour:
         name: Dayak
         sentence: "Ohh, Elios. I see you laughing. You\u2019re going to experience
           the mighty craziness hahaha."
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -293,7 +334,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "Are you sure about that?\r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -304,7 +346,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Dayak
         sentence: "If you do it right, you will survive this hahaha\r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -315,7 +358,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "[sighs]\r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -326,7 +370,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: ' '
         sentence: "Dayak presents the chips. \r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -338,7 +383,8 @@ MonoBehaviour:
         name: Dayak
         sentence: These are all yours. You left them behind to be prepared for this
           moment...[giggles]
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -349,7 +395,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 9173834014691732105}
         name: Elios
         sentence: "What are you talking about? I never saw them before. \r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -360,7 +407,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 9173834014691732105}
         name: Dayak
         sentence: "hehehe Of course you wouldn\u2019t remember."
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -371,7 +419,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 9173834014691732105}
         name: Elios
         sentence: "I don\u2019t like luck based games."
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -382,7 +431,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 9173834014691732105}
         name: Ego
         sentence: Elios! Please play. If these are yours, you should use them!
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -393,7 +443,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 9173834014691732105}
         name: Elios
         sentence: "But I don\u2019t want to."
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -405,7 +456,8 @@ MonoBehaviour:
         name: Ego
         sentence: "I\u2019m gonna be really mad if you don\u2019t do it. Nobody wanna
           see me like this!"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -422,7 +474,8 @@ MonoBehaviour:
     - endSentence: 0
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -433,7 +486,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Dayak
         sentence: "Hehehehehe\u2026 Now I caught your interest. Listen everyone\u2026"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -444,7 +498,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: I am listening.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -457,7 +512,8 @@ MonoBehaviour:
         sentence: "[giggles] You don\u2019t know how to guide a show, do you? You
           should better listen well, because what I am offering you will literally
           kill you hahaha."
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -468,7 +524,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: What is it? What is it? Please, I want to know it!
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -479,7 +536,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Dayak
         sentence: "The truth, my little friend\u2026 hahaha"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -490,7 +548,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "The truth?\u2026 "
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -502,7 +561,8 @@ MonoBehaviour:
         name: Dayak
         sentence: All you have to do is to set an amount of these chips and we can
           start the game. [grins]
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -513,7 +573,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 9173834014691732105}
         name: Elios
         sentence: And then we can leave this place?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -524,7 +585,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 9173834014691732105}
         name: Dayak
         sentence: Of course... if you choose the right decision hahaha.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -536,13 +598,14 @@ MonoBehaviour:
         name: Elios
         sentence: '[exhales]'
       decisions:
-      - Player sets less than 20 chips
-      - Player sets 20 or more chips
+      - Set less than 20 chips
+      - Set 20 or more chips
       nextDecisions: 0500000004000000
     - endSentence: 0
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -554,7 +617,8 @@ MonoBehaviour:
         name: Dayak
         sentence: hahaha Of course you do, of course. But how much time have you
           left to use?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -565,7 +629,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: I know what you are trying but I am not playing anything.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -577,7 +642,8 @@ MonoBehaviour:
         name: Dayak
         sentence: "hahaha You don\u2019t have to be a buzzkill. Enjoy\u2026. have
           fun [grins]"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -588,7 +654,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: No, I have had enough.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -600,7 +667,8 @@ MonoBehaviour:
         name: Dayak
         sentence: hehehe You have the free choice to do anything, instead... of this
           way. [giggles]
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -611,7 +679,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: Ehem. But...this is the only way, right?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -628,7 +697,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 1
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -639,7 +709,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 9173834014691732105}
         name: Dayak
         sentence: "Finally. That\u2019s an amount to deal with. [grins]"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -650,7 +721,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 9173834014691732105}
         name: Elios
         sentence: "Why can\u2019t we just start?"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -663,7 +735,8 @@ MonoBehaviour:
         sentence: "Haha Here is someone who is a bit impatient. Don\u2019t worry,
           my friend. After this you will have all the time you need. Maybe in eternity?
           haha"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -674,7 +747,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 9173834014691732105}
         name: Elios
         sentence: ...
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -686,7 +760,8 @@ MonoBehaviour:
         name: ' '
         sentence: Dayak points at the ring in his hand and prepares three little
           hats.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -699,7 +774,8 @@ MonoBehaviour:
         sentence: "You see this ring. Tell me under which of these little huts it
           will be. hihihi If you choose three times right [giggles] you can keep
           the ring and\u2026 I will tell the truth. Easy, isn\u2019t it? hahaaha"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -710,7 +786,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 9173834014691732105}
         name: Elios
         sentence: And if I lose...?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -726,7 +803,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 1
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -744,7 +822,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 1
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -763,7 +842,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 1
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -775,7 +855,8 @@ MonoBehaviour:
         name: Dayak
         sentence: "Hahaha. That\u2019s a game! You can feeeel this exhilaration [grins],
           this pure tension while playing? That is life, Elios!!"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -786,7 +867,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: 'I feel nothing. '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -797,7 +879,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: But Elios, I feel it too!
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -808,7 +891,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: '[sighs] Can we just play the second round?'
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -825,7 +909,8 @@ MonoBehaviour:
     - endSentence: 0
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -838,7 +923,8 @@ MonoBehaviour:
         sentence: "Ohh Elios, I\u2019m so proud of you! I\u2019m nearly crying, can
           you imagine! Too long ago that we played a game, how could you do this.
           [sniffs]"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -850,7 +936,8 @@ MonoBehaviour:
         name: Elios
         sentence: "How could I play with you. You doesn\u2019t even look like a 
           human\u2026"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -863,7 +950,8 @@ MonoBehaviour:
         sentence: Hihihihi good point. I am more human than you would ever be, but
           simultaneously I am less human than a real living would allow. [giggles]
           Do you want to know what I am? hahaha Not human, HILARIOUS!
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -875,7 +963,8 @@ MonoBehaviour:
         name: Ego
         sentence: "Stop Elios. I remembered where we are, please don\u2019t ask for
           the truth, I beg you. I am not sure if you survive this knowledge. "
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -886,7 +975,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "Then just tell it, Ego. I am so sick of this. \r\n"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -899,7 +989,8 @@ MonoBehaviour:
         sentence: "I can\u2019t, Elios. It\u2019s too early\u2026 Everything is so
           clear in my head, but you just can\u2019t... because... you\u2019re not
           ready for this. [sniff]\r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -916,7 +1007,8 @@ MonoBehaviour:
     - endSentence: 0
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -928,7 +1020,8 @@ MonoBehaviour:
         name: Dayak
         sentence: 'hahahaha What an exhausting little thing you have there, Elios,
           but I have to admit, you two are a good couple. [grins] '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -947,7 +1040,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -959,7 +1053,8 @@ MonoBehaviour:
         name: Dayak
         sentence: "hahahaha ELIOS, ELIOS. You know what, I call you by your real
           name hihihi\u2026"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -970,7 +1065,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: My real name?... But... my name is Elios?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -983,7 +1079,8 @@ MonoBehaviour:
         sentence: "It\u2019s just sad to look at you. So thin and weak. But\u2026
           hihihi I love it! ELIOT! ELIOT! ELIOT! That\u2019s your real name, nothing
           else! Eliot hihi Eliot hihi"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -994,7 +1091,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: Sorry Elios, but I need to confess something. I am not real.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1005,7 +1103,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: ' '
         sentence: Ego grows back inside the body of Elios.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1016,7 +1115,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elliot
         sentence: Why? Where is Ego?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1029,7 +1129,8 @@ MonoBehaviour:
         sentence: "Couldn\u2019t you see it? [giggles] He is a part of you and builds
           all you can\u2019t feel or think of. Don\u2019t you feel all the new emotions
           growing inside you? hihihihi"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1041,7 +1142,8 @@ MonoBehaviour:
         name: Elliot
         sentence: "I want him back! Now! What\u2019s about the truth, what is this
           all about?!"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1053,7 +1155,8 @@ MonoBehaviour:
         name: Dayak
         sentence: "I would love to tell it all, but\u2026 You already know it!!!
           [giggles]"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1064,7 +1167,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: ' '
         sentence: Dementum appears from the side and laughs.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1075,7 +1179,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Dementum
         sentence: Hey kid, long time no see. You want a drink?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1086,7 +1191,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Dayak
         sentence: Look at us. What do you think are you seeing here?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1097,7 +1203,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elliot
         sentence: "It can\u2019t be! You are not real! Both of you!"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1109,7 +1216,8 @@ MonoBehaviour:
         name: Dayak
         sentence: hihihi You are right from the physical aspect. I would say we are
           more an appearance from time to time hahaha
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1120,7 +1228,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elliot
         sentence: "You are like Ego, right? He wasn\u2019t real nether\u2026 "
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1132,7 +1241,8 @@ MonoBehaviour:
         name: Dementum
         sentence: You are just a dump little brat. I always hated it to be with you.
           Where is my alcohol!!!
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1144,7 +1254,8 @@ MonoBehaviour:
         name: Dayak
         sentence: "Yes, Eliot wasn\u2019t the best human to be alive. He hadn\u2019t
           play any games for a long time\u2026"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1155,7 +1266,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elliot
         sentence: Just tell me about this truth!
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1168,7 +1280,8 @@ MonoBehaviour:
         sentence: "All of this is a dream! Dementum here and me are just constructs
           of your fantasy to compromise your problems in the real world. You are
           an alcoholic and a gambler Eliot\u2026"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1179,7 +1292,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elliot
         sentence: I commit suicide...
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1192,7 +1306,8 @@ MonoBehaviour:
         sentence: "Indeed, Eliot. But it wasn\u2019t harmful, you are right now dying
           because of sleeping pills. Isn\u2019t it a wonderful death? Hahaha let\u2019s
           see each other maybe in heaven or hell? Does it matter?     hahahahahahahahahahahahahahhahahahahahahahahahaa"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1211,7 +1326,8 @@ MonoBehaviour:
     - endSentence: 0
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1222,7 +1338,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Dayak
         sentence: "Hoooooooooo\u2026. [grins]\r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1234,7 +1351,8 @@ MonoBehaviour:
         name: 'Ego '
         sentence: Oh Elios... I knew you would listen to me and choose the right
           decision wisely. Believe me...It was the right choice.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1247,7 +1365,8 @@ MonoBehaviour:
         sentence: "[grins] Why? Why don\u2019t you want to know it\u2026 Every human
           being wants to know the truth. Don\u2019t you feel a little bit curious?
           hihi"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1259,7 +1378,8 @@ MonoBehaviour:
         name: Elios
         sentence: Every human wants to know the truth but not every human can handle
           the truth. What do you think is the reason for secrets?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1272,7 +1392,8 @@ MonoBehaviour:
         sentence: "hehehe No...your wrong. On the one hand it is true that humans
           can\u2019t handle the truth but on the other hand it isn\u2019t the reason
           for secrets. Think about it\u2026 Humans are egocentric beings."
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1285,7 +1406,8 @@ MonoBehaviour:
         sentence: "When humans do actions for others they do want a kind of reward.
           They don\u2019t have secrets to protect other people... They have secrets
           because humans don\u2019t want to tell the truth hahah"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1296,7 +1418,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "hmm\u2026"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1307,7 +1430,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: ...
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1319,7 +1443,8 @@ MonoBehaviour:
         name: Dayak
         sentence: Well. With this decision you chose you are beyond a normal human.
           I can see that hehehe
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1331,7 +1456,8 @@ MonoBehaviour:
         name: Dayak
         sentence: 'Look what I got here. Hehe For you humans a ring has different
           meanings. There are people who are wearing them as an accessoire. '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1344,7 +1470,8 @@ MonoBehaviour:
         sentence: "But the real meaning of a ring is the infinite bond of marriage.
           A ring\u2026 a simple circle. Circles have something cosmic....Yeah even
           unearthly\u2026 [grins] Don\u2019t you think?"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1355,7 +1482,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: It may be.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1374,7 +1502,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1386,7 +1515,8 @@ MonoBehaviour:
         name: ' '
         sentence: Elios looks at his hand, where you can see a white mark of an earlier
           ring.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1397,7 +1527,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: '[sighs]'
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1408,7 +1539,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Dayak
         sentence: hihihi
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1420,7 +1552,8 @@ MonoBehaviour:
         name: ' '
         sentence: 'Dayak gives us the ring. The ring burns in the hand of Elios and
           he lets the ring fall down. '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1431,7 +1564,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: Ahhh, this burns!
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1442,7 +1576,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "That\u2019s weird. Is something wrong with this ring?"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1454,7 +1589,8 @@ MonoBehaviour:
         name: ' '
         sentence: Elios looks again at his hand, a mark glows where the ring laid
           in his hand.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1467,7 +1603,8 @@ MonoBehaviour:
         sentence: "Sometimes eternity hurts. You couldn\u2019t handle it, Elios.
           hihihi But wasn\u2019t it hot in the same time? [grins] I see, what humans
           mean by marriage doesn\u2019t need to cool down."
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1480,7 +1617,8 @@ MonoBehaviour:
         sentence: "Ohh Elios, don\u2019t think too much about this ring. I don\u2019t
           want to be sad. Dayak, do you think death can be\u2026 magnificent? I just
           wonder\u2026"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1496,7 +1634,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1508,7 +1647,8 @@ MonoBehaviour:
         name: Dayak
         sentence: "Don\u2019t you miss this feeling of love\u2026 desire and\u2026
           eternity?"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1519,7 +1659,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: ...
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1531,7 +1672,8 @@ MonoBehaviour:
         name: Dayak
         sentence: "It\u2019s your decision, little Elios, hihihi. But don\u2019t
           come crying when you miss the memory this ring offer."
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1543,7 +1685,8 @@ MonoBehaviour:
         name: Elios
         sentence: "I won\u2019t cry. I don\u2019t want to see this ring anymore.
           Leave me alone!"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1554,7 +1697,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Dayak
         sentence: "We will see each other again, Elios. Soon\u2026 [grins]"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1571,7 +1715,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 1
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1583,7 +1728,8 @@ MonoBehaviour:
         name: Dayak
         sentence: "Oooohhhaahahahahaaaa!!! \u2026 What a miss! Is this already the
           end for  you, my dear Elios? [grins]"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1594,7 +1740,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: 'Ego '
         sentence: " D-don't worry. W-we get this.\r"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1606,7 +1753,8 @@ MonoBehaviour:
         name: Dayak
         sentence: "Hihihi Come on Elios\u2026 or don\u2019t you want to know the
           truth, hehe. [grins]"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1617,7 +1765,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: How do you know the truth?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1629,7 +1778,8 @@ MonoBehaviour:
         name: Dayak
         sentence: "[giggles] Are you really questioning me?\u2026 I have witnessed
           the truth since the first human...  taste of it, hihihihi [grins]"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1640,7 +1790,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: ...
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1658,7 +1809,8 @@ MonoBehaviour:
     - endSentence: 0
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1670,7 +1822,8 @@ MonoBehaviour:
         name: Dayak
         sentence: "Elios\u2026 what should I say? YOU LOOSE HAHAHAHA! Ladies and
           Gentlemen what a game. Nice that you were here. It was a pleasure hihihi\u2026"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1683,7 +1836,8 @@ MonoBehaviour:
         sentence: '[exhales] Ok... What now? Are you killing us?
 
 '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1696,7 +1850,8 @@ MonoBehaviour:
         sentence: "No...! I-I-I am not ready to die. I haven\u2019t lived my life
           properly... [sniffs] I mean, I haven\u2019t seen the world; haven\u2019t
           been once...  an alcoh-holic\u2026 "
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1707,7 +1862,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: ...
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1718,7 +1874,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Dayak
         sentence: "\u2026  [grins]"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1729,7 +1886,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "What is about my first kiss\u2026 or my first\u2026 t-time? "
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1747,7 +1905,8 @@ MonoBehaviour:
     - endSentence: 1
       nextMinigame: 0
       talks:
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1759,7 +1918,8 @@ MonoBehaviour:
         name: Dayak
         sentence: "hahahaha ELIOS, ELIOS. You know what, I call you by your real
           name hihihi\u2026"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1770,7 +1930,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: My real name?... But... my name is Elios?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1783,7 +1944,8 @@ MonoBehaviour:
         sentence: "It\u2019s just sad to look at you. So thin and weak. But\u2026
           hihihi I love it! ELIOT! ELIOT! ELIOT! That\u2019s your real name, nothing
           else! Eliot hihi Eliot hihi"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1794,7 +1956,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: Sorry Elios, but I need to confess something. I am not real.
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1805,7 +1968,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: ' '
         sentence: 'Ego grows back inside the body of Elios. '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1816,7 +1980,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elliot
         sentence: Why? Where is Ego?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1829,7 +1994,8 @@ MonoBehaviour:
         sentence: "Couldn\u2019t you see it? [giggles] He is a part of you and builds
           all you can\u2019t feel or think of. Don\u2019t you feel all the new emotions
           growing inside you? hihihihi"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1841,7 +2007,8 @@ MonoBehaviour:
         name: Elliot
         sentence: "I want him back! Now! What\u2019s about the truth, what is this
           all about?!"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1853,7 +2020,8 @@ MonoBehaviour:
         name: Dayak
         sentence: "I would love to tell it all, but\u2026 You already know it!!!
           [giggles]"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1864,7 +2032,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: ' '
         sentence: 'Dementum appears from the side and laughs. '
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1875,7 +2044,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Dementum
         sentence: Hey kid, long time no see. You want a drink?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1886,7 +2056,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Dayak
         sentence: Look at us. What do you think are you seeing here?
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1897,7 +2068,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elliot
         sentence: "It can\u2019t be! You are not real! Both of you!"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1909,7 +2081,8 @@ MonoBehaviour:
         name: Dayak
         sentence: hihihi You are right from the physical aspect. I would say we are
           more an appearance from time to time hahaha
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1920,7 +2093,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elliot
         sentence: "You are like Ego, right? He wasn\u2019t real nether\u2026"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1932,7 +2106,8 @@ MonoBehaviour:
         name: Dementum
         sentence: You are just a dump little brat. I always hated it to be with you.
           Where is my alcohol!!!
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1944,7 +2119,8 @@ MonoBehaviour:
         name: Dayak
         sentence: "Yes, Eliot wasn\u2019t the best human to be alive. He hadn\u2019t
           play any games for a long time\u2026"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1955,7 +2131,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elliot
         sentence: Just tell me about this truth!
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1968,7 +2145,8 @@ MonoBehaviour:
         sentence: "All of this is a dream! Dementum here and me are just constructs
           of your fantasy to compromise your problems in the real world. You are
           an alcoholic and a gambler Eliot\u2026"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1979,7 +2157,8 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elliot
         sentence: I commit suicide...
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -1992,7 +2171,8 @@ MonoBehaviour:
         sentence: "Indeed, Eliot. But it wasn\u2019t harmful, you are right now dying
           because of sleeping pills. Isn\u2019t it a wonderful death? Hahaha let\u2019s
           see each other maybe in heaven or hell? Does it matter?     hahahahahahahahahahahahahahhahahahahahahahahahaa"
-      - animation:
+      - dialogAction: {fileID: 0}
+        animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
@@ -2012,6 +2192,7 @@ MonoBehaviour:
   source: {fileID: 0}
   objectsToDeactivate: []
   deathAnimationTime: 6
+  dayakTheme: {fileID: 0}
 --- !u!1001 &2368990456683122291
 PrefabInstance:
   m_ObjectHideFlags: 0

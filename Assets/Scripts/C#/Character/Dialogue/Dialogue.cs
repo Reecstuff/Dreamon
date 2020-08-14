@@ -8,6 +8,7 @@ public class Dialogue
 	[System.Serializable]
 	public class Talk
 	{
+		public DialogAction dialogAction;
 		public AnimationObject animation;
 		public AudioObject audio;
 		public Transform cameraTarget;

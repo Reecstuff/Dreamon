@@ -19,7 +19,7 @@ public class Dementum : DialogueTrigger
     float deathAnimationTime = 6;
 
     [SerializeField]
-    PolterGeist Tavernpoltergeist;
+    PolterGeist[] tavernpoltergeister;
 
     [SerializeField]
     PathBlocker blocker;
@@ -39,7 +39,18 @@ public class Dementum : DialogueTrigger
     [SerializeField]
     string blackScreenStateName;
 
+    [SerializeField]
+    GameObject activateObject;
+
+    [SerializeField]
+    GhostLightSpawn lightSpawn;
+
     AudioClip oldBackgroundMusic;
+
+    protected override void InitValues()
+    {
+        base.InitValues();
+    }
 
     protected override void PlaySound()
     {
@@ -58,17 +69,13 @@ public class Dementum : DialogueTrigger
             // Lost Dialogue
             LostDialogue();
 
-            // Backgroundmusic off
-            if (AudioManager.Instance)
-                AudioManager.Instance.SetSourceClip(null, 0, AudioManager.Instance.GetSamples(0));
-        }
-        else
-        {
-            AudioManager.Instance.SetSourceClip(oldBackgroundMusic);
         }
 
         // Both Endings:
         
+        // Backgroundmusic off
+        if (AudioManager.Instance)
+            AudioManager.Instance.SetSourceClip(null, 0, AudioManager.Instance.GetSamples(0));
         // Ambience Music off
         if (AudioManager.Instance)
             AudioManager.Instance.SetSourceClip(null, 1, AudioManager.Instance.GetSamples(1));
@@ -99,6 +106,9 @@ public class Dementum : DialogueTrigger
             // Light near Dementum disappears
             // This Light is the first in the List
             objectsToDeactivate.First().SetActive(false);
+
+            activateObject.SetActive(true);
+            Invoke(nameof(MakeLight), deathAnimationTime);
         }
 
         // Both Endings
@@ -107,14 +117,27 @@ public class Dementum : DialogueTrigger
         blocker?.EndState();
         
         // Poltergeist off
-        if (Tavernpoltergeist)
-            Tavernpoltergeist.enabled = false;
+        if (tavernpoltergeister != null)
+        {
+            for (int i = 0; i < tavernpoltergeister.Length; i++)
+            {
+                tavernpoltergeister[i].enabled = false;
+            }
+
+        }
 
         // Dementum dissapears
         DementumDisapears();
 
+
         // Set Gameobject inactive
         Invoke(nameof(SetInactive), deathAnimationTime + 0.5f);
+    }
+
+
+    void MakeLight()
+    {
+        lightSpawn.Light(1);
     }
 
     void DementumDisapears()

@@ -10,6 +10,9 @@ public class RoofLogic : MonoBehaviour
     [SerializeField]
     GameObject roofToDeactivate;
 
+    [SerializeField]
+    bool switchLogic = false;
+
     private void OnTriggerEnter(Collider other)
     {
         // Check Player
@@ -33,12 +36,10 @@ public class RoofLogic : MonoBehaviour
     {
         if(roofToDeactivate)
         {
-            roofToDeactivate.GetComponent<MeshRenderer>().enabled = isShown;
-
-            for (int i = 0; i < roofToDeactivate.transform.childCount; i++)
-            {
-                roofToDeactivate.transform.GetChild(i).gameObject.SetActive(isShown);
-            }
+            if (switchLogic)
+                roofToDeactivate.SetActive(!isShown);
+            else
+                roofToDeactivate.SetActive(isShown);
         }
     }
 }

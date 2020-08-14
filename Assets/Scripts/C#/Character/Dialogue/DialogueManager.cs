@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -95,6 +96,7 @@ public class DialogueManager : MonoBehaviour
     Queue<string> names;
     Queue<AnimationObject> animations;
     Queue<AudioObject> audios;
+    Queue<DialogAction> actions;
 
     /// <summary>
     /// First Animator in Dialogue to play Animations while speaking
@@ -121,6 +123,7 @@ public class DialogueManager : MonoBehaviour
         names = new Queue<string>();
         animations = new Queue<AnimationObject>();
         audios = new Queue<AudioObject>();
+        actions = new Queue<DialogAction>();
         oneTextLineSizeY = nameText.GetPreferredValues("0").y;
         cameraController = Camera.main.GetComponent<CameraController>();
         player = FindObjectOfType<PlayerController>();
@@ -313,6 +316,9 @@ public class DialogueManager : MonoBehaviour
         SetLine(audios.Dequeue());
         // Animation
         SetLine(animations.Dequeue());
+        // Action
+        SetLine(actions.Dequeue());
+
         // Stop Typing
         StopAllCoroutines();
         // Start typing
@@ -367,6 +373,14 @@ public class DialogueManager : MonoBehaviour
 
             if (secondCurrentAnimator)
                 secondCurrentAnimator.CrossFade(animation.SecondAnimationStateName, 0.3f);
+        }
+    }
+
+    void SetLine(DialogAction action)
+    {
+        if(action)
+        {
+            action.DoAction();
         }
     }
 
@@ -534,6 +548,7 @@ public class DialogueManager : MonoBehaviour
         // Go through Talks and line up queues
         for (int i = 0; i < option.talks.Length; i++)
         {
+            actions.Enqueue(option.talks[i].dialogAction);
             audios.Enqueue(option.talks[i].audio);
             animations.Enqueue(option.talks[i].animation);
             names.Enqueue(option.talks[i].name);
@@ -552,5 +567,6 @@ public class DialogueManager : MonoBehaviour
         positions.Clear();
         animations.Clear();
         audios.Clear();
+        actions.Clear();
     }
 }

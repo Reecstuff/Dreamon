@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using DG.Tweening;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,26 +7,29 @@ public class ShellTrigger : Interactable
 {
 	public bool isWin;
 
-	public override void Interact()
+	ShellgameManager shellgameManager;
+
+    protected override void InitValues()
+    {
+        base.InitValues();
+		shellgameManager = GetComponentInParent<ShellgameManager>();
+
+	}
+
+    public override void Interact()
 	{
-		if (GetComponentInParent<ShellgameManager>().animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
+		if (shellgameManager.animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
 		{
-			GetComponent<ShellTrigger>().SelectShell();
+			SelectShell();
 		}
 	}
 
 	public void SelectShell()
 	{
-		//Check for winthing
-		if (isWin == true)
-		{
-			//Win the game
-			GetComponentInParent<ShellgameManager>().Win();
-		}
-		else if (isWin == false)
-		{
-			//Lose the game
-			GetComponentInParent<ShellgameManager>().Lost();
-		}
+		shellgameManager.animator.enabled = false;
+
+		transform.DOLocalMoveY(1, shellgameManager.showResultTime);
+
+		shellgameManager.ShowResult(isWin);
 	}
 }

@@ -24,7 +24,6 @@ public class Interactable : OutlineObject
 	//Allows interaction with integrable objects
 	public virtual void Interact()
 	{
-		Debug.Log(gameObject.name);
 		//This method is meant to be overwritten
 	}
 

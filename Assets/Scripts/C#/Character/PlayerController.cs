@@ -110,7 +110,7 @@ public class PlayerController : MonoBehaviour
             Interactable interactable;
 
             //Check if we hit an interactable
-            if (interactable = hit.collider.GetComponent<DialogueTrigger>())
+            if ((interactable = hit.collider.GetComponent<DialogueTrigger>()))
             {
                 SetFocus(interactable);
             }
@@ -196,7 +196,8 @@ public class PlayerController : MonoBehaviour
         if (SaveManager.instance)
         {
             SaveManager.instance.OnLoadSave -= LoadPlayer;
-            SaveManager.instance.currentAutoSave.OnAutoSave -= SavePlayer;
+            if(SaveManager.instance.currentAutoSave)
+                SaveManager.instance.currentAutoSave.OnAutoSave -= SavePlayer;
         }
     }
 }

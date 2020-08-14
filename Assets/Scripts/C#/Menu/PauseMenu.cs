@@ -48,7 +48,7 @@ public class PauseMenu : MonoBehaviour
 
         pauseMenu.gameObject.SetActive(false);
         Time.timeScale = 1;
-        AudioManager.Instance?.PitchManual(1);
+        AudioManager.Instance?.PitchManual(1, 0, 1);
 
         // Set Cursor to 3D Particle Cursor
         Cursor.visible = cursorWasVisible;
@@ -62,7 +62,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         pauseMenuOpen = true;
 
-        AudioManager.Instance?.PitchManual(0.7f);
+        AudioManager.Instance?.PitchManual(0.7f, 0, 1);
 
         cursorWasVisible = Cursor.visible;
         // Set Cursor to MenuCursor
@@ -76,8 +76,7 @@ public class PauseMenu : MonoBehaviour
         Cursor.visible = true;
         Time.timeScale = 1;
 
-        if(AudioManager.Instance)
-            AudioManager.Instance.PitchManual(1);
+        AudioManager.Instance?.PitchManual(1, 0, 1);
 
         // Set Cursor to 3D Particle Cursor
         Cursor.visible = true;

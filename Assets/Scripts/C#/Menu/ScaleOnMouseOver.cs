@@ -1,9 +1,5 @@
 ﻿using DG.Tweening;
-using System.Collections;
-using System.Collections.Generic;
-using System.Net.NetworkInformation;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
 public class ScaleOnMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler 
@@ -14,13 +10,9 @@ public class ScaleOnMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExi
     [SerializeField]
     Vector3 scaleVector = new Vector3(1.07f, 1.07f, 1);
 
-    [SerializeField]
-    float backScaleFactor = 100;
-
     RectTransform recT;
 
     bool scaled = false;
-    Coroutine coroutine;
 
     void Start()
     {
@@ -52,23 +44,13 @@ public class ScaleOnMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
         if(scaled)
         {
-            //if (coroutine != null)
-            //    StopCoroutine(coroutine);
-
             recT.DOKill();
             recT.localScale = Vector3.one;
-
-            //coroutine = StartCoroutine(LerpVector(Vector3.one, scaleSpeed / backScaleFactor));
         }
         else
         {
-            //if (coroutine != null)
-            //    StopCoroutine(coroutine);
-
             recT.DOKill();
             recT.DOScale(scaleVector, scaleSpeed).SetUpdate(true);
-
-            //coroutine = StartCoroutine(LerpVector(scaleVector, scaleSpeed));
         }
     }
 
@@ -78,22 +60,6 @@ public class ScaleOnMouseOver : MonoBehaviour, IPointerEnterHandler, IPointerExi
         {
             recT.DOKill();
             recT.localScale = Vector3.one;
-        }
-    }
-
-    /// <summary>
-    /// Lerp the localScale to targetScale
-    /// </summary>
-    IEnumerator LerpVector(Vector3 targetScale, float time)
-    {
-        float lerpvalue = 0;
-        Vector3 lerpScale = recT.localScale;
-
-        while (lerpvalue < 1)
-        {
-            lerpvalue += Time.deltaTime / time;
-            recT.localScale = Vector3.Lerp(lerpScale, targetScale, lerpvalue);
-            yield return new WaitForSecondsRealtime(0.008f);
         }
     }
 }
