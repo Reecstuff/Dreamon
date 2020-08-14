@@ -1417,6 +1417,11 @@ PrefabInstance:
       propertyPath: clickAudio
       value: 
       objectReference: {fileID: 8300000, guid: a1cd68d638027f2499c6001327f7bdbe, type: 3}
+    - target: {fileID: 8675673900953465723, guid: fad27ae807bf8c9459db58ef836eaf48,
+        type: 3}
+      propertyPath: hoverAudio
+      value: 
+      objectReference: {fileID: 8300000, guid: 5f05feb3a1fb0ff4d999407fa719e9ff, type: 3}
     - target: {fileID: 8675673900980995802, guid: fad27ae807bf8c9459db58ef836eaf48,
         type: 3}
       propertyPath: m_AnchoredPosition.x
