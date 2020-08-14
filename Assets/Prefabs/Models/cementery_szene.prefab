@@ -6925,7 +6925,7 @@ PrefabInstance:
         type: 3}
       propertyPath: BackGroundMusicClip
       value: 
-      objectReference: {fileID: 8300000, guid: 6df9223ba3a4e974b81b752b6de07f37, type: 3}
+      objectReference: {fileID: 8300000, guid: 8bfed87780ccfc14d8620fdbd473c274, type: 3}
     - target: {fileID: 2255709759897920730, guid: 61a8626989b54724e88c26b88f669121,
         type: 3}
       propertyPath: FXSoundClip

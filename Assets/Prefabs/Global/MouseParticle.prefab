@@ -121,8 +121,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   strength: 1
   useScattering: 0
-  overrideScattering: 0
-  overridingScattering: 0.5
+  overrideScattering: 1
+  overridingScattering: 0
   scatteringBias: 0
   useColorTemperatureTint: 0
   overrideColor: 0
