@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using TMPro;
 using UnityEngine;
+using DG.Tweening;
 
 public class ShellgameManager : MiniGame
 {
@@ -16,11 +17,21 @@ public class ShellgameManager : MiniGame
 	[SerializeField]
 	TextMeshProUGUI roundText;
 
+	[SerializeField]
+	AnimationClip startAnimation;
+
+	public float showResultTime = 1f;
+
 	public override void StartMiniGame()
 	{
+		if (!point)
+			point = Instantiate(pointPrefab, transform);
+		else
+			point.SetActive(true);
+
 		gameObject.SetActive(true);
-		ShellAnimation();
 		SetWin();
+		StartAnimation();
 		base.StartMiniGame();
 	}
 
@@ -39,26 +50,21 @@ public class ShellgameManager : MiniGame
 	{
 		rNumber = Random.Range(1,4);
 
-		if (rNumber == 1)
-		{
-			shells[0].GetComponent<ShellTrigger>().isWin = true;
-			point = Instantiate(pointPrefab, shells[1].transform.position, transform.rotation);
-		}
-		else if (rNumber == 2)
-		{
-			shells[1].GetComponent<ShellTrigger>().isWin = true;
-			point = Instantiate(pointPrefab, shells[1].transform.position, transform.rotation);
-		}
-		else if (rNumber == 3)
-		{
-			shells[2].GetComponent<ShellTrigger>().isWin = true;
-			point = Instantiate(pointPrefab, shells[2].transform.position, transform.rotation);
-		}
+		shells[rNumber - 1].GetComponent<ShellTrigger>().isWin = true;
+		point.transform.position = shells[rNumber-1].transform.position;
 	}
+
+	void StartAnimation()
+    {
+		animator.Play(startAnimation.name);
+		Invoke(nameof(ShellAnimation), startAnimation.length);
+    }
 
 	private void ShellAnimation()
 	{
 		rounds++;
+
+		point.SetActive(false);
 
 		if (rounds == 1)
 		{
@@ -72,13 +78,37 @@ public class ShellgameManager : MiniGame
 		{
 			animator.SetTrigger("Trigger3");
 		}
+
 		ShowRounds();
 	}
 
+
+	public void ShowResult(bool isWin)
+    {
+		point.SetActive(true);
+		point.transform.position = shells[rNumber - 1].transform.position;
+
+		// Fix for position stuck
+		animator.enabled = false;
+
+		if(!isWin)
+        {
+			shells[rNumber - 1].transform.DOLocalMoveY(1, showResultTime);
+        }
+
+
+		if(isWin)
+        {
+			Invoke(nameof(Win), showResultTime * 2);
+        }
+		else
+        {
+			Invoke(nameof(Lost), showResultTime * 2);
+        }
+    }
+
 	public void Win()
 	{
-		Destroy(point);
-
 		//Stop game
 		EndMiniGame();
 		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
@@ -86,8 +116,6 @@ public class ShellgameManager : MiniGame
 
 	public void Lost()
 	{
-		Destroy(point);
-
 		//Stop game
 		EndMiniGame();
 		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
@@ -97,9 +125,11 @@ public class ShellgameManager : MiniGame
     {
         base.EndMiniGame();
 		roundText.SetText(string.Empty);
-    }
+		point.SetActive(true);
+		animator.enabled = true;
+	}
 
-    void ShowRounds()
+	void ShowRounds()
 	{
 		if (rounds <= 3)
 			roundText.SetText(string.Concat("Round\n", rounds));

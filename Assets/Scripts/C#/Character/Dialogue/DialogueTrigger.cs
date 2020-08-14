@@ -38,7 +38,6 @@ public class DialogueTrigger : Interactable
 	public override void Interact()
 	{
 		PlaySound();
-
 		TriggerDialogue();
 	}
 

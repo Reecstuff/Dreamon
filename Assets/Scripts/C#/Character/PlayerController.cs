@@ -110,7 +110,7 @@ public class PlayerController : MonoBehaviour
             Interactable interactable;
 
             //Check if we hit an interactable
-            if (interactable = hit.collider.GetComponent<DialogueTrigger>())
+            if ((interactable = hit.collider.GetComponent<DialogueTrigger>()))
             {
                 SetFocus(interactable);
             }

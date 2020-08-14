@@ -30,9 +30,6 @@ public class StartAnimation : MonoBehaviour
         {
             animator.CrossFadeInFixedTime(allClips[currentstate].name, 0.3f);
 
-            Debug.Log(allClips[currentstate].name);
-
-
             yield return new WaitForSeconds(allClips[currentstate].length + 1);
 
             currentstate++;

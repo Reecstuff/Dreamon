@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &970173243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 970173244}
+  m_Layer: 0
+  m_Name: InteractionTarget
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &970173244
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970173243}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.78, y: -0.578, z: 0.45}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9173834014691732105}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3808811703789809803
 GameObject:
   m_ObjectHideFlags: 0
@@ -23,8 +53,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3808811703789809803}
-  m_LocalRotation: {x: 0.29051006, y: -0.260826, z: 0.085469574, w: 0.9166617}
-  m_LocalPosition: {x: 3.809246, y: 5.1128063, z: -5.183209}
+  m_LocalRotation: {x: 0.24215072, y: 0.07535296, z: -0.019775352, w: 0.967106}
+  m_LocalPosition: {x: 1.9727409, y: 2.9318986, z: -2.6817381}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 9173834014691732105}
@@ -64,6 +94,7 @@ Transform:
   m_Children:
   - {fileID: 7616634341673599877}
   - {fileID: 8711830891425058972}
+  - {fileID: 970173244}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -164,8 +195,8 @@ MonoBehaviour:
   hasInteracted: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineSpacing: 0.01
-  radius: 4
-  interactionTransform: {fileID: 9173834014691732105}
+  radius: 0.3
+  interactionTransform: {fileID: 970173244}
   hasFocused: 1
   dialogue:
   - option:
@@ -2161,6 +2192,7 @@ MonoBehaviour:
   source: {fileID: 0}
   objectsToDeactivate: []
   deathAnimationTime: 6
+  dayakTheme: {fileID: 0}
 --- !u!1001 &2368990456683122291
 PrefabInstance:
   m_ObjectHideFlags: 0
