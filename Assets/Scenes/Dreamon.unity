@@ -4577,6 +4577,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: cementery_szene
       objectReference: {fileID: 0}
+    - target: {fileID: 4952455405056385091, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: BackGroundMusicClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8bfed87780ccfc14d8620fdbd473c274, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e553e249068c32e4aa28f62b9e29f012, type: 3}
 --- !u!1001 &5373525420794999047
@@ -5583,6 +5588,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5206630658507391787, guid: 0c90130a9962ef74fabfb9cf435c9158,
+        type: 3}
+      propertyPath: BackGroundMusicClip
+      value: 
+      objectReference: {fileID: 8300000, guid: cfb350682f86de543a30b61ebe31a59d, type: 3}
     - target: {fileID: 5594471888766772967, guid: 0c90130a9962ef74fabfb9cf435c9158,
         type: 3}
       propertyPath: m_Name

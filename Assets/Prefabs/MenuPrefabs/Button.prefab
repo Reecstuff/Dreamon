@@ -232,7 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickAudio: {fileID: 8300000, guid: 946a1aa515b8d8047bd235083c6cad0f, type: 3}
-  hoverAudio: {fileID: 8300000, guid: 4207cafd1aa1c7b4e9d6728a42ee425e, type: 3}
+  hoverAudio: {fileID: 8300000, guid: 5f05feb3a1fb0ff4d999407fa719e9ff, type: 3}
 --- !u!114 &8478850825089524229
 MonoBehaviour:
   m_ObjectHideFlags: 0
