@@ -96,10 +96,7 @@ public class DoorMechanic : MonoBehaviour
                 animator.Play(buffer);
                 PlaySound(open);
 
-                if(!open)
-                {
-                    SetCutScene();
-                }
+                SetCutScene(open);
             }
         }
     }
@@ -107,13 +104,13 @@ public class DoorMechanic : MonoBehaviour
     /// <summary>
     /// Set Cutscene for object
     /// </summary>
-    void SetCutScene()
+    void SetCutScene(bool open)
     {
         // Set player
         dialogueManager.player.motor.StopAgent();
             
         // Set camera
-        if(camPosition)
+        if(camPosition && !open)
         {
             dialogueManager.cameraController.MoveToFixedPosition(camPosition.position, transform);
         }
