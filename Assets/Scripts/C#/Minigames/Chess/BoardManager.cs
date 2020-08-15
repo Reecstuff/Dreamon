@@ -52,6 +52,7 @@ public class BoardManager : MiniGame
 
     public override void StartMiniGame()
     {
+		gameObject.SetActive(true);
         base.StartMiniGame();
 		rounds = 0;
     }
