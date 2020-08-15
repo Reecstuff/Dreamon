@@ -1079,8 +1079,8 @@ MonoBehaviour:
         sentence: "You will see\u2026 hahahahahahaha"
       decisions: []
       nextDecisions: 
-    - endSentence: 1
-      nextMinigame: 1
+    - endSentence: 0
+      nextMinigame: 0
       talks:
       - dialogAction: {fileID: 0}
         animation:
@@ -1098,8 +1098,8 @@ MonoBehaviour:
       - Player sets less than 20 chips
       - Player sets 20 or more chips
       nextDecisions: 0600000004000000
-    - endSentence: 1
-      nextMinigame: 1
+    - endSentence: 0
+      nextMinigame: 0
       talks:
       - dialogAction: {fileID: 0}
         animation:
