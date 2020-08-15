@@ -2,138 +2,171 @@
 using TMPro;
 using UnityEngine;
 using DG.Tweening;
+using System.Net.Security;
+using System.Diagnostics.Contracts;
 
 public class ShellgameManager : MiniGame
 {
-	public GameObject assignedTarget;
-	public Animator animator;
-	public GameObject[] shells = new GameObject[3];
-	int rounds;
-	int rNumber;
+    [SerializeField]
+    MinigameManager minigameManager;
 
-	GameObject point;
-	public GameObject pointPrefab;
+    [SerializeField]
+    ShellTrigger[] shells;
 
-	[SerializeField]
-	TextMeshProUGUI roundText;
+    [SerializeField]
+    TextMeshProUGUI roundText;
 
-	[SerializeField]
-	AnimationClip startAnimation;
+    [SerializeField]
+    Transform ring;
 
-	public float showResultTime = 1f;
+    [SerializeField]
+    float animduration = 1;
 
-	public override void StartMiniGame()
-	{
-		if (!point)
-			point = Instantiate(pointPrefab, transform);
-		else
-			point.SetActive(true);
+    [SerializeField]
+    float substractDurationPerRound = 2;
 
-		gameObject.SetActive(true);
-		SetWin();
-		StartAnimation();
-		base.StartMiniGame();
-	}
+    ShellTrigger rndShell;
+    int currentRound = 0;
 
-    protected override IEnumerator MiniGameUpdate()
+    bool isLost = true;
+
+    public override void StartMiniGame()
     {
-		do
-		{
-			if (point)
-				point.transform.position = new Vector3(shells[rNumber - 1].transform.position.x, transform.position.y, shells[rNumber - 1].transform.position.z);
+        InitValues();
 
-			return base.MiniGameUpdate();
-		} while (gameObject.activeInHierarchy);
+        ShowRounds();
+        ShowRing();
+        ResetShells();
+        StartAnimation();
+        Invoke(nameof(ShellAnimation), 2);
+        base.StartMiniGame();
     }
 
-	private void SetWin()
-	{
-		rNumber = Random.Range(1,4);
-
-		shells[rNumber - 1].GetComponent<ShellTrigger>().isWin = true;
-		point.transform.position = shells[rNumber-1].transform.position;
-	}
-
-	void StartAnimation()
+    void InitValues()
     {
-		animator.Play(startAnimation.name);
-		Invoke(nameof(ShellAnimation), startAnimation.length);
+        gameObject.SetActive(true);
+        currentRound++;
+        rndShell = shells[Random.Range(0, shells.Length)];
+
+        if(currentRound > 1)
+            animduration -= substractDurationPerRound;
     }
 
-	private void ShellAnimation()
-	{
-		rounds++;
-
-		point.SetActive(false);
-
-		if (rounds == 1)
-		{
-			animator.SetTrigger("Trigger1");
-		}
-		else if (rounds == 2)
-		{
-			animator.SetTrigger("Trigger2");
-		}
-		else if (rounds == 3)
-		{
-			animator.SetTrigger("Trigger3");
-		}
-
-		ShowRounds();
-	}
-
-
-	public void ShowResult(bool isWin)
+    void StartAnimation()
     {
-		point.SetActive(true);
-		point.transform.position = shells[rNumber - 1].transform.position;
+        SetCollider(false);
 
-		// Fix for position stuck
-		animator.enabled = false;
-
-		if(!isWin)
+        for (int i = 0; i < shells.Length; i++)
         {
-			shells[rNumber - 1].transform.DOLocalMoveY(1, showResultTime);
-        }
-
-
-		if(isWin)
-        {
-			Invoke(nameof(Win), showResultTime * 2);
-        }
-		else
-        {
-			Invoke(nameof(Lost), showResultTime * 2);
+            Sequence s = DOTween.Sequence();
+            s.Append(shells[i].transform.DOLocalMoveY(1, 1));
+            s.Append(shells[i].transform.DOLocalMoveY(0, 1));
+            s.Play();
         }
     }
 
-	public void Win()
-	{
-		//Stop game
-		EndMiniGame();
-		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
-	}
+    void ShellAnimation()
+    {
+        ring.GetComponent<Renderer>().enabled = false;
 
-	public void Lost()
-	{
-		//Stop game
-		EndMiniGame();
-		assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
-	}
+
+        StartCoroutine(AnimateShells());
+    }
+
+    void SetCollider(bool enabled)
+    {
+        for (int i = 0; i < shells.Length; i++)
+        {
+            shells[i].GetComponent<Collider>().enabled = enabled;
+        }
+    }
+
+    IEnumerator AnimateShells()
+    {
+        int rndI = 0;
+        int rndL = 0;
+        Cursor.lockState = CursorLockMode.Locked;
+
+        int moveCount = Random.Range(6, 10);
+        float singleduration = animduration / moveCount;
+
+
+        for (int i = 0; i < moveCount; i++)
+        {
+            rndI = Random.Range(0, shells.Length);
+            rndL = Random.Range(0, shells.Length);
+
+            if(rndI == rndL)
+            {
+                if (rndL == 0)
+                    rndL++;
+                else
+                    rndL--;
+            }
+
+            Sequence s = DOTween.Sequence();
+            s.Append(shells[rndI].transform.DOLocalMove(shells[rndI].transform.localPosition + shells[rndI].transform.forward.normalized * 0.4f, singleduration / 2));
+            s.Append(shells[rndI].transform.DOLocalMove(shells[rndL].transform.localPosition, singleduration / 2));
+            s.Play();
+
+            Sequence o = DOTween.Sequence();
+            o.Append(shells[rndL].transform.DOLocalMove(shells[rndL].transform.localPosition - shells[rndL].transform.forward.normalized * 0.4f, singleduration / 2));
+            o.Append(shells[rndL].transform.DOLocalMove(shells[rndI].transform.localPosition, singleduration / 2));
+            o.Play();
+
+            yield return new WaitForSeconds(singleduration);
+        }
+
+        Cursor.lockState = CursorLockMode.None;
+        SetCollider(true);
+    }
+
+
+    void ShowRing()
+    {
+        ring.GetComponent<Renderer>().enabled = true;
+
+        ring.localPosition = new Vector3(rndShell.transform.localPosition.x, ring.localPosition.y, rndShell.transform.localPosition.z);
+    }
+
+
+    public void RevealShell(ShellTrigger shell)
+    {
+
+        ShowRing();
+
+        if(isLost = !rndShell.Equals(shell))
+        {
+            rndShell.transform.DOLocalMoveY(1, 1);
+        }
+        shell.transform.DOLocalMoveY(1, 1);
+
+        Invoke(nameof(EndMiniGame), 1);
+    }
+
 
     protected override void EndMiniGame()
     {
+        ResetShells();
+        roundText.SetText(string.Empty);
+        minigameManager.StartNextDialog(!isLost);
         base.EndMiniGame();
-		roundText.SetText(string.Empty);
-		point.SetActive(true);
-		animator.enabled = true;
-	}
+    }
 
-	void ShowRounds()
-	{
-		if (rounds <= 3)
-			roundText.SetText(string.Concat("Round\n", rounds));
-		else
-			roundText.SetText(string.Empty);
-	}
+    void ResetShells()
+    {
+        for (int i = 0; i < shells.Length; i++)
+        {
+            shells[i].transform.localPosition = new Vector3(shells[i].transform.localPosition.x, 0, shells[i].transform.localPosition.z);
+        }
+    }
+
+
+    void ShowRounds()
+    {
+        if (currentRound <= 3)
+            roundText.SetText(string.Concat("Round\n", currentRound));
+        else
+            roundText.SetText(string.Empty);
+    }
 }
