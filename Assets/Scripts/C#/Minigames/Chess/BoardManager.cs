@@ -41,6 +41,8 @@ public class BoardManager : MiniGame
 
 	AudioSource source;
 
+	bool mouseDown = false;
+
 	private void Start()
 	{
 		source = GetComponent<AudioSource>();
@@ -53,8 +55,13 @@ public class BoardManager : MiniGame
     public override void StartMiniGame()
     {
 		gameObject.SetActive(true);
-        base.StartMiniGame();
 		rounds = 0;
+        base.StartMiniGame();
+    }
+
+    private void Update()
+    {
+		mouseDown = Input.GetMouseButtonDown(0);
     }
 
     protected override IEnumerator MiniGameUpdate()
@@ -74,7 +81,7 @@ public class BoardManager : MiniGame
 			UpdateSelection();
 			DrawChessboard();
 
-			if (Input.GetMouseButtonDown(0))
+			if (mouseDown)
 			{
 				if (selectionX >= 0 && selectionY >= 0)
 				{
@@ -99,8 +106,10 @@ public class BoardManager : MiniGame
 				}
 			}
 
-			return base.MiniGameUpdate();
+			yield return base.MiniGameUpdate();
+
 		} while (gameObject.activeInHierarchy);
+
     }
 
 	void CheckForWinLose()
