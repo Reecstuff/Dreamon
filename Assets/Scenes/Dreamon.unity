@@ -412,15 +412,40 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 794424777321132776, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.587
+      objectReference: {fileID: 0}
     - target: {fileID: 1184107319813808304, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].audio.source
       value: 
       objectReference: {fileID: 1605131746}
+    - target: {fileID: 2710827978246027926, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.415
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615724662136783378, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.084
+      objectReference: {fileID: 0}
+    - target: {fileID: 4297205028185828218, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.20300019
+      objectReference: {fileID: 0}
     - target: {fileID: 5138805801812047898, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6321706371427318194, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.16
       objectReference: {fileID: 0}
     - target: {fileID: 6558981377273023176, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
@@ -477,15 +502,40 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6678624174127021424, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.089000195
+      objectReference: {fileID: 0}
     - target: {fileID: 6740359373691281926, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: nextObjects.Array.data[0]
       value: 
       objectReference: {fileID: 517322841}
+    - target: {fileID: 6923037259968219631, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.414
+      objectReference: {fileID: 0}
     - target: {fileID: 7880585864296020187, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: m_Name
       value: TaverneFertig
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062898668943751447, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.5390003
+      objectReference: {fileID: 0}
+    - target: {fileID: 8635601994269726343, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.465
+      objectReference: {fileID: 0}
+    - target: {fileID: 9079461719359068844, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.4569998
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72b0f8bf5295a3347aa0b84b86b9c910, type: 3}
@@ -2037,7 +2087,7 @@ PrefabInstance:
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -148.98
+      value: -15.22
       objectReference: {fileID: 0}
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
@@ -2047,7 +2097,7 @@ PrefabInstance:
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.27
+      value: -10.06
       objectReference: {fileID: 0}
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
@@ -3379,6 +3429,11 @@ PrefabInstance:
       propertyPath: minigame
       value: 
       objectReference: {fileID: 2133544471}
+    - target: {fileID: 7105008126069239402, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: interactionTransform
+      value: 
+      objectReference: {fileID: 2133544472}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a02ddb6b34c88c42a6fb3167d60249b, type: 3}
 --- !u!1001 &1798434590
@@ -3799,7 +3854,7 @@ PrefabInstance:
     - target: {fileID: 5738023402585142804, guid: 28f39d92bb08188449602cd35f923bda,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.871
+      value: 2.658
       objectReference: {fileID: 0}
     - target: {fileID: 5738023402585142804, guid: 28f39d92bb08188449602cd35f923bda,
         type: 3}
@@ -3900,6 +3955,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4b232d3b49d4504ca39b8ce4d719fd6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &2133544472 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5738023403576437853, guid: 28f39d92bb08188449602cd35f923bda,
+    type: 3}
+  m_PrefabInstance: {fileID: 2133544470}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &328499536965427074
 PrefabInstance:
   m_ObjectHideFlags: 0
