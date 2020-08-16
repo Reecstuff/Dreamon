@@ -34,11 +34,13 @@ public class Dayak : DialogueTrigger
     {
         base.TheEnd(isLose);
 
+
+        Debug.Log(string.Join(" ", gameObject.name, nameof(isLose),  isLose));
+
         Sequence s = DOTween.Sequence();
 
         // Fly Away
         s.Append(transform.DOScale(Vector3.zero, deathAnimationTime));
-        s.Join(transform.DOShakeRotation(deathAnimationTime));
         s.Play();
 
         if (objectsToDeactivate.Length > 0)
