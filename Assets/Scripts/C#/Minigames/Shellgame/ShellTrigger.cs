@@ -5,8 +5,6 @@ using UnityEngine;
 
 public class ShellTrigger : Interactable
 {
-	public bool isWin;
-
 	ShellgameManager shellgameManager;
 
     protected override void InitValues()
@@ -18,18 +16,11 @@ public class ShellTrigger : Interactable
 
     public override void Interact()
 	{
-		if (shellgameManager.animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1)
-		{
-			SelectShell();
-		}
+		SelectShell();
 	}
 
 	public void SelectShell()
 	{
-		shellgameManager.animator.enabled = false;
-
-		transform.DOLocalMoveY(1, shellgameManager.showResultTime);
-
-		shellgameManager.ShowResult(isWin);
+		shellgameManager.RevealShell(this);
 	}
 }
