@@ -91,7 +91,7 @@ public class DialogueTrigger : Interactable
 		}
 	}
 
-	void Update()
+	protected virtual void Update()
 	{
 		CheckForInteraction();
 	}

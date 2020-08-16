@@ -47,7 +47,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7156026689946373128
 Transform:
   m_ObjectHideFlags: 0
@@ -96,8 +96,8 @@ MonoBehaviour:
           source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
-        name: ...
-        sentence: ' '
+        name: 
+        sentence: '[A Man lies on the ground]'
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -106,10 +106,11 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: bb31dedab7151bf438a0c1f37e94ce5c, type: 3}
         cameraTarget: {fileID: 0}
-        name: ...
-        sentence: ' '
+        name: 
+        sentence: '[A Creature is growing out of the Man''s body. It wants to go
+          forward, but is sticking to the Man''s body]'
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -118,10 +119,11 @@ MonoBehaviour:
           SecondAnimationStateName: Ego_ LookingAtElios
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: bb31dedab7151bf438a0c1f37e94ce5c, type: 3}
+          clip: {fileID: 0}
         cameraTarget: {fileID: 0}
-        name: ...
-        sentence: ' '
+        name: 
+        sentence: '[Both are looking at the center of their body and then to each
+          other]'
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -132,8 +134,8 @@ MonoBehaviour:
           source: {fileID: 0}
           clip: {fileID: 8300000, guid: 4090ea609ce4fc94896cb15395fe6887, type: 3}
         cameraTarget: {fileID: 0}
-        name: ...
-        sentence: ' '
+        name: 
+        sentence: '[The Man gets up quickly]'
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}

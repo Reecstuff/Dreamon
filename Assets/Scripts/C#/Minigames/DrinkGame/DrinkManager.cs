@@ -36,6 +36,12 @@ public class DrinkManager : MiniGame
 	[SerializeField]
 	string drinkAnimationState;
 
+	[SerializeField]
+	Animator dementumAnimator;
+
+	[SerializeField]
+	string drinkIdle;
+
     public override void StartMiniGame()
     {
 		gameObject.SetActive(true);
@@ -129,6 +135,11 @@ public class DrinkManager : MiniGame
 
 	public void DrinkAnimation()
     {
+		if(dementumAnimator && !string.IsNullOrEmpty(drinkIdle))
+        {
+			dementumAnimator.CrossFade(drinkIdle, 0.3f);
+        }
+
 		if(drinkAnimator && !string.IsNullOrEmpty(drinkAnimationState))
         {
 			if (drinkAnimator.GetCurrentAnimatorStateInfo(0).IsName(drinkAnimationState))

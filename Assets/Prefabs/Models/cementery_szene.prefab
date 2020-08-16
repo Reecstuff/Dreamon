@@ -46,7 +46,7 @@ Light:
   m_Color: {r: 0.78039217, g: 0.96569234, b: 0.98039216, a: 1}
   m_Intensity: 2
   m_Range: 200
-  m_SpotAngle: 96.1
+  m_SpotAngle: 174.4
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
@@ -124,8 +124,8 @@ MonoBehaviour:
   customCookieDistanceFalloffStartThreshold: 0.1
   customCookieDistanceFalloffEndThreshold: 0.25
   customCookieDistanceFalloffPower: 2
-  customAngularFalloffThreshold: 0.796
-  customAngularFalloffPower: 2
+  customAngularFalloffThreshold: 0.01
+  customAngularFalloffPower: 35
 --- !u!65 &7223202866183507221
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2737,7 +2737,17 @@ PrefabInstance:
     - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
         type: 3}
       propertyPath: strength
-      value: 0.2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
@@ -2926,7 +2936,17 @@ PrefabInstance:
     - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
         type: 3}
       propertyPath: strength
-      value: 0.2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
@@ -3115,7 +3135,17 @@ PrefabInstance:
     - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
         type: 3}
       propertyPath: strength
-      value: 0.2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
@@ -3304,7 +3334,17 @@ PrefabInstance:
     - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
         type: 3}
       propertyPath: strength
-      value: 0.2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
@@ -3413,7 +3453,17 @@ PrefabInstance:
     - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
       propertyPath: strength
-      value: 0.1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6589025805863330356, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
@@ -3668,7 +3718,17 @@ PrefabInstance:
     - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
         type: 3}
       propertyPath: strength
-      value: 0.2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
@@ -3857,7 +3917,17 @@ PrefabInstance:
     - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
         type: 3}
       propertyPath: strength
-      value: 0.1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
@@ -3966,7 +4036,17 @@ PrefabInstance:
     - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
       propertyPath: strength
-      value: 0.1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6589025805863330356, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
@@ -4141,7 +4221,17 @@ PrefabInstance:
     - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
       propertyPath: strength
-      value: 0.1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6589025805863330356, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
@@ -4316,7 +4406,17 @@ PrefabInstance:
     - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
       propertyPath: strength
-      value: 0.2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6589025805863330356, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
@@ -4571,7 +4671,17 @@ PrefabInstance:
     - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
         type: 3}
       propertyPath: strength
-      value: 0.2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
@@ -6824,7 +6934,17 @@ PrefabInstance:
     - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
       propertyPath: strength
-      value: 0.1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6589025805863330356, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
@@ -7109,7 +7229,17 @@ PrefabInstance:
     - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
       propertyPath: strength
-      value: 0.2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6589025805863330356, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
@@ -7284,7 +7414,17 @@ PrefabInstance:
     - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
       propertyPath: strength
-      value: 0.1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6589025805863330356, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
@@ -7459,7 +7599,17 @@ PrefabInstance:
     - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
       propertyPath: strength
-      value: 0.1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6589025805863330356, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
@@ -7634,7 +7784,17 @@ PrefabInstance:
     - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
       propertyPath: strength
-      value: 0.1
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6589025805863330356, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
@@ -7809,12 +7969,22 @@ PrefabInstance:
     - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
       propertyPath: strength
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
       propertyPath: useScattering
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3582256811111365920, guid: f7e46ebaa7ba15b44a06136081ce584d,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6589025805863330356, guid: f7e46ebaa7ba15b44a06136081ce584d,
         type: 3}
@@ -8073,7 +8243,17 @@ PrefabInstance:
     - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
         type: 3}
       propertyPath: strength
-      value: 0.2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
