@@ -691,7 +691,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 740d2115fa652a64fa6238b543d85759, type: 3}
         cameraTarget: {fileID: 1657253038}
         name: Dementum
-        sentence: 'Open your lug holes, kid. I have two kind of drinks here. '
+        sentence: Open your lug holes, kid.
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 1784327008}

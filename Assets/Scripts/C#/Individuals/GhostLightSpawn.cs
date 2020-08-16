@@ -35,6 +35,8 @@ public class GhostLightSpawn : MonoBehaviour
     /// </summary>
     Vector3 currentPoint;
 
+    bool isTrigger = false;
+
     void Start()
     {
         InitValues();
@@ -64,11 +66,13 @@ public class GhostLightSpawn : MonoBehaviour
 
         // Set currentPoint on default value
         currentPoint = ghostLights[0].transform.position;
+        isTrigger = GetComponent<Collider>() ? GetComponent<Collider>().isTrigger : false;
     }
 
     private void OnEnable()
     {
-        Light(1);
+        if(!isTrigger)
+            Light(1);
     }
 
     private void OnDisable()

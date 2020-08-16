@@ -421,8 +421,53 @@ Transform:
   m_Children:
   - {fileID: 7616634341673599877}
   m_Father: {fileID: 9173834014691732105}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &9063298814135693055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7028685321571780036}
+  - component: {fileID: 4777935486054639044}
+  m_Layer: 0
+  m_Name: DialogActions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7028685321571780036
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9063298814135693055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9173834014691732105}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4777935486054639044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9063298814135693055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88bb165d14d08e8418373828ab06c622, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  trigger: {fileID: 5724604354764669987}
+  newIsLostValue: 1
 --- !u!1 &9173834014691732109
 GameObject:
   m_ObjectHideFlags: 0
@@ -455,6 +500,7 @@ Transform:
   m_Children:
   - {fileID: 8711830891425058972}
   - {fileID: 970173244}
+  - {fileID: 7028685321571780036}
   - {fileID: 755291101631610862}
   - {fileID: 9199909850651759779}
   - {fileID: 5760391216701521917}
@@ -668,7 +714,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Annoyed
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1123,8 +1169,8 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: ae3baadb9b248fa499924b7716389605, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: "You will see\u2026 hahahahahahaha"
@@ -1166,7 +1212,7 @@ MonoBehaviour:
         sentence: "Didn\u2019t you hear me? Don\u2019t be so stingy! Set mooore,
           I want mooore!!! At least 20!"
       decisions:
-      - Player sets 20 or more chips
+      - Set 20 or more chips
       nextDecisions: 04000000
   - option:
     - endSentence: 1
@@ -1251,8 +1297,7 @@ MonoBehaviour:
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: "Ohh Elios, I\u2019m so proud of you! I\u2019m nearly crying, can
-          you imagine! Too long ago that we played a game, how could you do this.
-          [sniffs]"
+          you imagine! Too long ago that we played a game, how could you do this."
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -1647,7 +1692,7 @@ MonoBehaviour:
         name: Dayak
         sentence: "Isn\u2019t it a wonderful death? Hahaha let\u2019s see each other
           maybe in heaven or hell? Does it matter?     hahahahahahahahahahahahahahhahahahahahahahahahaa"
-      - dialogAction: {fileID: 0}
+      - dialogAction: {fileID: 4777935486054639044}
         animation:
           animator: {fileID: 0}
           AnimationStateName: 
@@ -1658,8 +1703,7 @@ MonoBehaviour:
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: ' '
-        sentence: "Elios falls to the ground and the screen gets dark. \r\nText appears:
-          \u201CYou commit suicide and died because of an overdose of sleeping pills."
+        sentence: Elios falls to the ground.
       decisions:
       - 
       - 
@@ -2253,20 +2297,20 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
-        cameraTarget: {fileID: 9199909850651759779}
+          clip: {fileID: 8300000, guid: 0c62c803a293482498370e0d4d5f65be, type: 3}
+        cameraTarget: {fileID: 0}
         name: Dayak
         sentence: "hahahaha ELIOS, ELIOS. You know what, I call you by your real
           name hihihi\u2026"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Serious
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 274813be7640c5c4b9fcd75e4a11d2e8, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: My real name?... But... my name is Elios?
@@ -2278,8 +2322,8 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
-        cameraTarget: {fileID: 9199909850651759779}
+          clip: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
+        cameraTarget: {fileID: 0}
         name: Dayak
         sentence: "It\u2019s just sad to look at you. So thin and weak. But\u2026
           hihihi I love it! ELIOT! ELIOT! ELIOT! That\u2019s your real name, nothing
@@ -2287,36 +2331,36 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Uncomfortable
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 19ac4547c53c3d542ae8af5d64f7e4d7, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: Sorry Elios, but I need to confess something. I am not real.
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ HiddenInElios
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 850fbba9716493345a0137dfa9666da8, type: 3}
         cameraTarget: {fileID: 0}
         name: ' '
         sentence: 'Ego grows back inside the body of Elios. '
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ LookingAtEgo
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 9b340d1cbb3b10a4a95883fdaec44d0b, type: 3}
         cameraTarget: {fileID: 0}
         name: Elliot
         sentence: Why? Where is Ego?
@@ -2328,21 +2372,21 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
-        cameraTarget: {fileID: 9199909850651759779}
+          clip: {fileID: 8300000, guid: 35192a9adc8a36d4bb11fba4f6ec43b8, type: 3}
+        cameraTarget: {fileID: 0}
         name: Dayak
-        sentence: "Couldn\u2019t you see it? [giggles] He is a part of you and builds
-          all you can\u2019t feel or think of. Don\u2019t you feel all the new emotions
-          growing inside you? hihihihi"
+        sentence: "Couldn\u2019t you see it? He is a part of you and builds all you
+          can\u2019t feel or think of. Don\u2019t you feel all the new emotions growing
+          inside you? hihihihi"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Stop_It
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 5f743877ef78af44389212b2a810cb9e, type: 3}
         cameraTarget: {fileID: 0}
         name: Elliot
         sentence: "I want him back! Now! What\u2019s about the truth, what is this
@@ -2355,32 +2399,31 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
-        cameraTarget: {fileID: 9199909850651759779}
+          clip: {fileID: 8300000, guid: bcfee76beffe16242826a8e9cb7cdb75, type: 3}
+        cameraTarget: {fileID: 0}
         name: Dayak
-        sentence: "I would love to tell it all, but\u2026 You already know it!!!
-          [giggles]"
+        sentence: "I would love to tell it all, but\u2026 You already know it!!! "
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Dementum_ Laughing
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: de5cce5bcad96de439d2bf060cf67284, type: 3}
         cameraTarget: {fileID: 0}
         name: ' '
         sentence: 'Dementum appears from the side and laughs. '
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Dementum_ Cheers
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: aae5ca03677f4f246bbf06e4a6b6722b, type: 3}
         cameraTarget: {fileID: 0}
         name: Dementum
         sentence: Hey kid, long time no see. You want a drink?
@@ -2392,19 +2435,19 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
-        cameraTarget: {fileID: 9199909850651759779}
+          clip: {fileID: 8300000, guid: ef4bc760929dbfc428af2cdbe07336b0, type: 3}
+        cameraTarget: {fileID: 0}
         name: Dayak
         sentence: Look at us. What do you think are you seeing here?
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Stop_It_Stop_It
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 5f743877ef78af44389212b2a810cb9e, type: 3}
         cameraTarget: {fileID: 0}
         name: Elliot
         sentence: "It can\u2019t be! You are not real! Both of you!"
@@ -2416,32 +2459,32 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
-        cameraTarget: {fileID: 9199909850651759779}
+          clip: {fileID: 8300000, guid: 1257533a4a6e4f54987c02eb9e4a6cf3, type: 3}
+        cameraTarget: {fileID: 0}
         name: Dayak
         sentence: hihihi You are right from the physical aspect. I would say we are
           more an appearance from time to time hahaha
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ FakeSmile
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 05b282e63f63fd8488503092961297ea, type: 3}
         cameraTarget: {fileID: 0}
         name: Elliot
         sentence: "You are like Ego, right? He wasn\u2019t real nether\u2026"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Dementum_ Tick
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 715697622ab1054459093c0b5d09aea4, type: 3}
         cameraTarget: {fileID: 0}
         name: Dementum
         sentence: You are just a dump little brat. I always hated it to be with you.
@@ -2454,20 +2497,20 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
-        cameraTarget: {fileID: 9199909850651759779}
+          clip: {fileID: 8300000, guid: 1257533a4a6e4f54987c02eb9e4a6cf3, type: 3}
+        cameraTarget: {fileID: 0}
         name: Dayak
         sentence: "Yes, Eliot wasn\u2019t the best human to be alive. He hadn\u2019t
           play any games for a long time\u2026"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Stop_It
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 5f743877ef78af44389212b2a810cb9e, type: 3}
         cameraTarget: {fileID: 0}
         name: Elliot
         sentence: Just tell me about this truth!
@@ -2479,8 +2522,8 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
-        cameraTarget: {fileID: 9199909850651759779}
+          clip: {fileID: 8300000, guid: 0c62c803a293482498370e0d4d5f65be, type: 3}
+        cameraTarget: {fileID: 0}
         name: Dayak
         sentence: "All of this is a dream! Dementum here and me are just constructs
           of your fantasy to compromise your problems in the real world. You are
@@ -2488,12 +2531,12 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Depressive
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: a354f5ed07a53a644a26dede0329ecbd, type: 3}
         cameraTarget: {fileID: 0}
         name: Elliot
         sentence: I commit suicide...
@@ -2505,12 +2548,11 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
-        cameraTarget: {fileID: 9199909850651759779}
+          clip: {fileID: 8300000, guid: 35192a9adc8a36d4bb11fba4f6ec43b8, type: 3}
+        cameraTarget: {fileID: 0}
         name: Dayak
         sentence: "Indeed, Eliot. But it wasn\u2019t harmful, you are right now dying
-          because of sleeping pills. Isn\u2019t it a wonderful death? Hahaha let\u2019s
-          see each other maybe in heaven or hell? Does it matter?     hahahahahahahahahahahahahahhahahahahahahahahahaa"
+          because of sleeping pills. Isn\u2019t it a wonderful death?"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -2518,8 +2560,21 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 2672919893949804128}
-          clip: {fileID: 8300000, guid: 7297eac1a4ecbb449a400357fe788403, type: 3}
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Hahaha let\u2019s see each other maybe in heaven or hell? Does
+          it matter?     hahahahahahahahahahahahahahhahahahahahahahahahaa"
+      - dialogAction: {fileID: 4777935486054639044}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Elios_Lying
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 6aaa2d83abb0f8a4283984a9b38ac2b3, type: 3}
         cameraTarget: {fileID: 0}
         name: ' '
         sentence: Elios falls to the ground
@@ -2532,6 +2587,11 @@ MonoBehaviour:
   objectsToDeactivate: []
   deathAnimationTime: 6
   dayakTheme: {fileID: 0}
+  doorAnimator: {fileID: 0}
+  doorAnimationState: 
+  doorSource: {fileID: 0}
+  deathSound: {fileID: 0}
+  deathScene: 
 --- !u!1001 &425324618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2577,7 +2637,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -2724,7 +2784,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3516,7 +3576,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 8d876c0f6d73b784d9ab38ca5b8f85da,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8d876c0f6d73b784d9ab38ca5b8f85da,
         type: 3}
@@ -4671,15 +4731,9 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: -6057140222963153312, guid: 8d876c0f6d73b784d9ab38ca5b8f85da, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8d876c0f6d73b784d9ab38ca5b8f85da, type: 3}
---- !u!1 &4332476695909305853 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8d876c0f6d73b784d9ab38ca5b8f85da,
-    type: 3}
-  m_PrefabInstance: {fileID: 5693079411882611956}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &755291101631610862 stripped
+--- !u!4 &7026845919256664838 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 8d876c0f6d73b784d9ab38ca5b8f85da,
+  m_CorrespondingSourceObject: {fileID: -5871076885011099662, guid: 8d876c0f6d73b784d9ab38ca5b8f85da,
     type: 3}
   m_PrefabInstance: {fileID: 5693079411882611956}
   m_PrefabAsset: {fileID: 0}
@@ -4689,15 +4743,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5693079411882611956}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &755291101631610862 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 8d876c0f6d73b784d9ab38ca5b8f85da,
+    type: 3}
+  m_PrefabInstance: {fileID: 5693079411882611956}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3869776248486446813 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -381163910321073623, guid: 8d876c0f6d73b784d9ab38ca5b8f85da,
     type: 3}
   m_PrefabInstance: {fileID: 5693079411882611956}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &7026845919256664838 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -5871076885011099662, guid: 8d876c0f6d73b784d9ab38ca5b8f85da,
+--- !u!1 &4332476695909305853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8d876c0f6d73b784d9ab38ca5b8f85da,
     type: 3}
   m_PrefabInstance: {fileID: 5693079411882611956}
   m_PrefabAsset: {fileID: 0}
@@ -4746,7 +4806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4888,7 +4948,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 4da1e8b7263e39a458443b0a386348ac,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4da1e8b7263e39a458443b0a386348ac,
         type: 3}
