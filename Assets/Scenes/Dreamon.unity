@@ -381,6 +381,169 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1527087379}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &394883681
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1476125870}
+    m_Modifications:
+    - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Name
+      value: CandleLight 01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.11
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.8942698
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.44752836
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Range
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Color.r
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Color.g
+      value: 0.53333336
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1145617535516771059, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 4294936690
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: overridingColor.r
+      value: 0.999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: overridingColor.g
+      value: 0.999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: overridingColor.b
+      value: 0.999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: outOfPhaseColor.r
+      value: 0.0000010132779
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: outOfPhaseColor.g
+      value: 0.999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: outOfPhaseColor.b
+      value: 0.999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: strength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+--- !u!4 &394883682 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 394883681}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &394883683 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 394883681}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &394883684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 394883683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae665f66ce2d1ab4085647c2d0fb3e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minRange: 0.3
+  maxRange: 1
+  duration: 10
+  maxStartingTime: 1
 --- !u!4 &440143944 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7761552655150463856, guid: 4f62762282eee734d95da04c5cec6920,
@@ -709,18 +872,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1444691797}
---- !u!95 &741028793 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1987366899158460704, guid: e553e249068c32e4aa28f62b9e29f012,
-    type: 3}
-  m_PrefabInstance: {fileID: 5273266731733337228}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &741028794 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 7797549943236925780, guid: e553e249068c32e4aa28f62b9e29f012,
-    type: 3}
-  m_PrefabInstance: {fileID: 5273266731733337228}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &831179860 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8047170885738875437, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
@@ -1338,6 +1489,230 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1378851287}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1476125867
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1476125870}
+  - component: {fileID: 1476125868}
+  - component: {fileID: 1476125869}
+  m_Layer: 0
+  m_Name: CreditStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1476125868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476125867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69c85d978b42e80459e6283ab57e8deb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transition: {fileID: 1822245818}
+--- !u!65 &1476125869
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476125867}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.619629, y: 2.543419, z: 4.136875}
+  m_Center: {x: -1.6633911, y: 0.77170944, z: -1.5684376}
+--- !u!4 &1476125870
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476125867}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -143.39105, y: 0.98, z: 29.46}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1484136325}
+  - {fileID: 1842401081}
+  - {fileID: 394883682}
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1484136324
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1476125870}
+    m_Modifications:
+    - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Name
+      value: CandleLight 01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.008
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.9503
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.939
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.8942698
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.44752836
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Range
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Color.r
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Color.g
+      value: 0.53333336
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1145617535516771059, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 4294936690
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: overridingColor.r
+      value: 0.999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: overridingColor.g
+      value: 0.999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: overridingColor.b
+      value: 0.999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: outOfPhaseColor.r
+      value: 0.0000010132779
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: outOfPhaseColor.g
+      value: 0.999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: outOfPhaseColor.b
+      value: 0.999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: strength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+--- !u!4 &1484136325 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 1484136324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1484136326 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 1484136324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1484136327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484136326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae665f66ce2d1ab4085647c2d0fb3e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minRange: 0.3
+  maxRange: 1
+  duration: 10
+  maxStartingTime: 1
 --- !u!4 &1486137123 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4478455252826722532, guid: 42fbe90f27e2b9341b3452e7a3770d55,
@@ -2789,6 +3164,169 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7156026689738615707}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1842401080
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1476125870}
+    m_Modifications:
+    - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Name
+      value: CandleLight 01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.8942698
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.44752836
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Range
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Lightmapping
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Color.r
+      value: 0.44705883
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Color.g
+      value: 0.53333336
+      objectReference: {fileID: 0}
+    - target: {fileID: 10800000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1145617535516771059, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: m_Color.rgba
+      value: 4294936690
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: overridingColor.r
+      value: 0.999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: overridingColor.g
+      value: 0.999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: overridingColor.b
+      value: 0.999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: outOfPhaseColor.r
+      value: 0.0000010132779
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: outOfPhaseColor.g
+      value: 0.999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: outOfPhaseColor.b
+      value: 0.999999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: strength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffThreshold
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3439651691918324614, guid: f6ed800c864114a42a2b17acd84a6188,
+        type: 3}
+      propertyPath: customDistanceFalloffPower
+      value: 25
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+--- !u!4 &1842401081 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 1842401080}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1842401082 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 1842401080}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1842401083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842401082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae665f66ce2d1ab4085647c2d0fb3e89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minRange: 0.3
+  maxRange: 1
+  duration: 10
+  maxStartingTime: 1
 --- !u!114 &1931361142 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 730186040762172908, guid: 5a31dc75be3ec0242b376dd50884a72f,
@@ -3560,11 +4098,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.size
-      value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[1].animation.animator
       value: 
       objectReference: {fileID: 575323367}
@@ -4310,9 +4843,24 @@ PrefabInstance:
       objectReference: {fileID: 1378851288}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
+      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[1].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
       propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[1].cameraTarget
       value: 
       objectReference: {fileID: 1411189595}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[3].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[3].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[3].cameraTarget
@@ -4320,9 +4868,29 @@ PrefabInstance:
       objectReference: {fileID: 1411189595}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[1].animation.animator
+      value: 
+      objectReference: {fileID: 575323367}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[1].audio.source
+      value: 
+      objectReference: {fileID: 1378851292}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
       propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[1].cameraTarget
       value: 
       objectReference: {fileID: 1378851288}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[3].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[3].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[3].cameraTarget
@@ -4330,9 +4898,19 @@ PrefabInstance:
       objectReference: {fileID: 1411189595}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[5].animation.animator
+      value: 
+      objectReference: {fileID: 575323367}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
       propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[5].cameraTarget
       value: 
       objectReference: {fileID: 1378851288}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[1].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[1].cameraTarget
@@ -4340,9 +4918,24 @@ PrefabInstance:
       objectReference: {fileID: 1411189595}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[2].animation.animator
+      value: 
+      objectReference: {fileID: 575323367}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[2].audio.source
+      value: 
+      objectReference: {fileID: 1378851292}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[2].cameraTarget
       value: 
       objectReference: {fileID: 1378851288}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[3].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[3].cameraTarget
@@ -4350,9 +4943,29 @@ PrefabInstance:
       objectReference: {fileID: 1411189595}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[5].animation.animator
+      value: 
+      objectReference: {fileID: 575323367}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[5].audio.source
+      value: 
+      objectReference: {fileID: 1378851292}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[5].cameraTarget
       value: 
       objectReference: {fileID: 1378851288}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[1].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[1].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[1].cameraTarget
@@ -4360,9 +4973,29 @@ PrefabInstance:
       objectReference: {fileID: 1411189595}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[3].animation.animator
+      value: 
+      objectReference: {fileID: 575323367}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[3].audio.source
+      value: 
+      objectReference: {fileID: 1378851292}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[3].cameraTarget
       value: 
       objectReference: {fileID: 1378851288}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[4].animation.animator
+      value: 
+      objectReference: {fileID: 575323367}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[4].audio.source
+      value: 
+      objectReference: {fileID: 1378851292}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[4].cameraTarget
@@ -4370,9 +5003,29 @@ PrefabInstance:
       objectReference: {fileID: 1378851288}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[5].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[5].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[5].cameraTarget
       value: 
       objectReference: {fileID: 1411189595}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[7].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[7].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[7].cameraTarget
@@ -4380,9 +5033,29 @@ PrefabInstance:
       objectReference: {fileID: 1411189595}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[12].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[12].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[12].cameraTarget
       value: 
       objectReference: {fileID: 1411189595}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[14].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[14].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[14].cameraTarget
@@ -4395,603 +5068,9 @@ PrefabInstance:
       objectReference: {fileID: 1411189595}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[19].cameraTarget
-      value: 
-      objectReference: {fileID: 1411189595}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[21].cameraTarget
-      value: 
-      objectReference: {fileID: 5273266731733337232}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[0].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 6e725ef9bb9d7ee4ba4577170cd90cf3, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[1].animation.animator
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[19].animation.animator
       value: 
       objectReference: {fileID: 1378851289}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[1].animation.AnimationStateName
-      value: Elios_Emo_Accused
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[2].audio.source
-      value: 
-      objectReference: {fileID: 741028794}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[2].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[3].audio.source
-      value: 
-      objectReference: {fileID: 1378851293}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[3].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 5f743877ef78af44389212b2a810cb9e, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[3].animation.animator
-      value: 
-      objectReference: {fileID: 1378851289}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[3].animation.AnimationStateName
-      value: Elios_Emo_ Stop_It
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[4].audio.source
-      value: 
-      objectReference: {fileID: 741028794}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[4].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: ce5aa8f67bfa5394599992f06c6a7bb7, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[4].sentence
-      value: "We will see each other again, Elios. Soon\u2026"
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[0].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[0].sentence
-      value: "Oooohhhaahahahahaaaa!!! \u2026 What a miss! Is this already the end
-        for  you, my dear Elios?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[0].audio.source
-      value: 
-      objectReference: {fileID: 741028794}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[1].audio.source
-      value: 
-      objectReference: {fileID: 1378851292}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[1].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 01d5de9bed787b247adc9f214f318c78, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[1].animation.animator
-      value: 
-      objectReference: {fileID: 575323367}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[1].animation.AnimationStateName
-      value: Ego_ Uncomfortable
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[2].audio.source
-      value: 
-      objectReference: {fileID: 741028794}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[2].sentence
-      value: "Hihihi Come on Elios\u2026 or don\u2019t you want to know the truth,
-        hehe."
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[2].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 9c3ed70f46f1ddc4aa0c9a5d5ebb3527, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[3].audio.source
-      value: 
-      objectReference: {fileID: 1378851293}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[3].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: e75f528839bd4e94fb688fb93322d9cd, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[3].animation.animator
-      value: 
-      objectReference: {fileID: 1378851289}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[3].animation.AnimationStateName
-      value: Elios_Emo_ Serious
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[4].audio.source
-      value: 
-      objectReference: {fileID: 741028794}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[4].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: e43d4a3290af93d40be1971233136e35, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[4].sentence
-      value: "Are you really questioning me?\u2026 I have witnessed the truth since
-        the first human...  taste of it, hihihihi"
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[5].animation.animator
-      value: 
-      objectReference: {fileID: 575323367}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[5].animation.AnimationStateName
-      value: Ego_Absent
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[6].sentence
-      value: "Soooo\u2026. Shall we continue with your\u2026 lucky streak? hahaha
-        You know what one say: \u201Cnew round, new luck\u201D "
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[0].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[1].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 5f82e4c00225e974ea4823008af81afb, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[1].sentence
-      value: 'Ok... What now? Are you killing us?
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[1].animation.animator
-      value: 
-      objectReference: {fileID: 1378851289}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[1].animation.AnimationStateName
-      value: Elios_Emo_ FakeSmile
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[2].audio.source
-      value: 
-      objectReference: {fileID: 1378851292}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[2].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 10e79216213852e47ad79dfaf96502ba, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[2].animation.AnimationStateName
-      value: Ego_ Frightened
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[2].animation.animator
-      value: 
-      objectReference: {fileID: 575323367}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[3].animation.animator
-      value: 
-      objectReference: {fileID: 1378851289}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[3].animation.AnimationStateName
-      value: Elios_Emo_ LookingAtEgo
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[4].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: b0a2b3ba3d51a044b93ab1819f882e8c, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[4].sentence
-      value: "\u2026 "
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[4].audio.source
-      value: 
-      objectReference: {fileID: 741028794}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[5].audio.source
-      value: 
-      objectReference: {fileID: 1378851292}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[5].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 01d5de9bed787b247adc9f214f318c78, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[5].animation.animator
-      value: 
-      objectReference: {fileID: 575323367}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[5].animation.AnimationStateName
-      value: Ego_ Uncomfortable
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[6].audio.source
-      value: 
-      objectReference: {fileID: 741028794}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[6].sentence
-      value: "Hahahahahah\u2026 calm down...you know what? Considering that Elios
-        played so well with me I am going to tell you the truth anyway\u2026"
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[6].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: d4952c6cc64feb74c8012685e7c0ed00, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[0].audio.source
-      value: 
-      objectReference: {fileID: 741028794}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[0].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 0c62c803a293482498370e0d4d5f65be, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[1].audio.source
-      value: 
-      objectReference: {fileID: 1378851293}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[1].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 274813be7640c5c4b9fcd75e4a11d2e8, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[1].animation.animator
-      value: 
-      objectReference: {fileID: 1378851289}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[1].animation.AnimationStateName
-      value: Elios_Emo_ Serious
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[2].audio.source
-      value: 
-      objectReference: {fileID: 741028794}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[2].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[3].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 19ac4547c53c3d542ae8af5d64f7e4d7, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[3].audio.source
-      value: 
-      objectReference: {fileID: 1378851292}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[3].animation.animator
-      value: 
-      objectReference: {fileID: 575323367}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[3].animation.AnimationStateName
-      value: Ego_ Uncomfortable
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[4].animation.animator
-      value: 
-      objectReference: {fileID: 575323367}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[4].animation.AnimationStateName
-      value: Ego_ HiddenInElios
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[4].audio.source
-      value: 
-      objectReference: {fileID: 1378851292}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[4].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 850fbba9716493345a0137dfa9666da8, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[5].audio.source
-      value: 
-      objectReference: {fileID: 1378851293}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[5].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 9b340d1cbb3b10a4a95883fdaec44d0b, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[5].animation.animator
-      value: 
-      objectReference: {fileID: 1378851289}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[5].animation.AnimationStateName
-      value: Elios_Emo_ LookingAtEgo
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[6].audio.source
-      value: 
-      objectReference: {fileID: 741028794}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[6].sentence
-      value: "Couldn\u2019t you see it? He is a part of you and builds all you can\u2019t
-        feel or think of. Don\u2019t you feel all the new emotions growing inside
-        you? hihihihi"
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[6].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 35192a9adc8a36d4bb11fba4f6ec43b8, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[7].audio.source
-      value: 
-      objectReference: {fileID: 1378851293}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[7].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 5f743877ef78af44389212b2a810cb9e, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[7].animation.animator
-      value: 
-      objectReference: {fileID: 1378851289}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[7].animation.AnimationStateName
-      value: Elios_Emo_ Stop_It
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[8].audio.source
-      value: 
-      objectReference: {fileID: 741028794}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[8].sentence
-      value: "I would love to tell it all, but\u2026 You already know it!!! "
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[8].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: bcfee76beffe16242826a8e9cb7cdb75, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[8].dialogAction
-      value: 
-      objectReference: {fileID: 5273266731733337229}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[9].cameraTarget
-      value: 
-      objectReference: {fileID: 5273266731733337230}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[9].audio.source
-      value: 
-      objectReference: {fileID: 5273266731733337231}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[9].animation.animator
-      value: 
-      objectReference: {fileID: 741028793}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[9].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: de5cce5bcad96de439d2bf060cf67284, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[9].animation.AnimationStateName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[10].cameraTarget
-      value: 
-      objectReference: {fileID: 5273266731733337230}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[10].audio.source
-      value: 
-      objectReference: {fileID: 5273266731733337231}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[10].animation.AnimationStateName
-      value: Dementum_ Cheers
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[10].animation.animator
-      value: 
-      objectReference: {fileID: 741028793}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[10].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: aae5ca03677f4f246bbf06e4a6b6722b, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[11].audio.source
-      value: 
-      objectReference: {fileID: 741028794}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[11].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: ef4bc760929dbfc428af2cdbe07336b0, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[12].audio.source
-      value: 
-      objectReference: {fileID: 1378851293}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[12].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 5f743877ef78af44389212b2a810cb9e, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[12].animation.animator
-      value: 
-      objectReference: {fileID: 1378851289}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[12].animation.AnimationStateName
-      value: Elios_Emo_ Stop_It_Stop_It
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[13].audio.source
-      value: 
-      objectReference: {fileID: 741028794}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[13].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 1257533a4a6e4f54987c02eb9e4a6cf3, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[14].audio.source
-      value: 
-      objectReference: {fileID: 1378851293}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[14].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 05b282e63f63fd8488503092961297ea, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[14].animation.animator
-      value: 
-      objectReference: {fileID: 1378851289}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[14].animation.AnimationStateName
-      value: Elios_Emo_ FakeSmile
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[15].cameraTarget
-      value: 
-      objectReference: {fileID: 5273266731733337230}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[15].audio.source
-      value: 
-      objectReference: {fileID: 5273266731733337231}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[15].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 715697622ab1054459093c0b5d09aea4, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[15].animation.animator
-      value: 
-      objectReference: {fileID: 741028793}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[15].animation.AnimationStateName
-      value: Dementum_ Tick
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[16].audio.source
-      value: 
-      objectReference: {fileID: 741028794}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[16].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 1257533a4a6e4f54987c02eb9e4a6cf3, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[18].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 0c62c803a293482498370e0d4d5f65be, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[18].audio.source
-      value: 
-      objectReference: {fileID: 741028794}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[19].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: a354f5ed07a53a644a26dede0329ecbd, type: 3}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[19].audio.source
@@ -4999,45 +5078,9 @@ PrefabInstance:
       objectReference: {fileID: 1378851293}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[19].animation.animator
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[19].cameraTarget
       value: 
-      objectReference: {fileID: 1378851289}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[19].animation.AnimationStateName
-      value: Elios_Emo_ Depressive
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[21].audio.source
-      value: 
-      objectReference: {fileID: 741028794}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[21].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[21].name
-      value: Dayak
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[21].sentence
-      value: "Hahaha let\u2019s see each other maybe in heaven or hell? Does it matter?    
-        hahahahahahahahahahahahahahhahahahahahahahahahaa"
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[22].audio.source
-      value: 
-      objectReference: {fileID: 741028794}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[22].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 7297eac1a4ecbb449a400357fe788403, type: 3}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[22].cameraTarget
@@ -5045,30 +5088,19 @@ PrefabInstance:
       objectReference: {fileID: 1411189595}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[22].name
-      value: ' '
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[22].sentence
-      value: Elios falls to the ground
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[20].sentence
-      value: "Indeed, Eliot. But it wasn\u2019t harmful, you are right now dying
-        because of sleeping pills. Isn\u2019t it a wonderful death?"
-      objectReference: {fileID: 0}
-    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[20].audio.source
+      propertyPath: doorSource
       value: 
-      objectReference: {fileID: 741028794}
+      objectReference: {fileID: 5273266731733337230}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[20].audio.clip
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[22].animation.animator
       value: 
-      objectReference: {fileID: 8300000, guid: 35192a9adc8a36d4bb11fba4f6ec43b8, type: 3}
+      objectReference: {fileID: 1378851289}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[22].animation.AnimationStateName
+      value: Elios_Lying
+      objectReference: {fileID: 0}
     - target: {fileID: 1283069029152691190, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5151,36 +5183,109 @@ PrefabInstance:
       objectReference: {fileID: 355202932}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e553e249068c32e4aa28f62b9e29f012, type: 3}
---- !u!114 &5273266731733337229 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5273266731733337230, guid: e553e249068c32e4aa28f62b9e29f012,
+--- !u!1 &5273266731733337229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2273043346907287784, guid: e553e249068c32e4aa28f62b9e29f012,
     type: 3}
   m_PrefabInstance: {fileID: 5273266731733337228}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc66bdfa0d129cc44905f1619eb0db3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &5273266731733337230 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2562204990137492430, guid: e553e249068c32e4aa28f62b9e29f012,
-    type: 3}
-  m_PrefabInstance: {fileID: 5273266731733337228}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &5273266731733337231 stripped
+--- !u!82 &5273266731733337230
 AudioSource:
-  m_CorrespondingSourceObject: {fileID: 3170644176660779744, guid: e553e249068c32e4aa28f62b9e29f012,
-    type: 3}
-  m_PrefabInstance: {fileID: 5273266731733337228}
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &5273266731733337232 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3927927652107019159, guid: e553e249068c32e4aa28f62b9e29f012,
-    type: 3}
-  m_PrefabInstance: {fileID: 5273266731733337228}
-  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5273266731733337229}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -6547479504731321655, guid: aaf1ef32f3fd50c4d9bb9cea86e36964,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: c57032acaf0713b488f01d5897655092, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 10
+  MaxDistance: 20
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &5373525420794999047
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5268,7 +5373,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1679476649406998129, guid: 1801d5c861831044bba2b0f5e1203b02, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1801d5c861831044bba2b0f5e1203b02, type: 3}
 --- !u!1001 &6219960329308188017
 PrefabInstance:
