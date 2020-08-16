@@ -4347,6 +4347,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.size
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[1].animation.animator
       value: 
       objectReference: {fileID: 0}
@@ -5124,7 +5129,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[21].cameraTarget
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 3927927652107019159}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: dialogue.Array.data[2].option.Array.data[2].talks.Array.data[10].animation.animator
@@ -5380,6 +5385,507 @@ PrefabInstance:
       propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[0].audio.source
       value: 
       objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[0].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 6e725ef9bb9d7ee4ba4577170cd90cf3, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[1].animation.AnimationStateName
+      value: Elios_Emo_Accused
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[2].audio.source
+      value: 
+      objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[2].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[3].animation.AnimationStateName
+      value: Elios_Emo_ Stop_It
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[3].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5f743877ef78af44389212b2a810cb9e, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[4].audio.source
+      value: 
+      objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[4].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: ce5aa8f67bfa5394599992f06c6a7bb7, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[2].option.Array.data[5].talks.Array.data[4].sentence
+      value: "We will see each other again, Elios. Soon\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[0].audio.source
+      value: 
+      objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[0].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[0].sentence
+      value: "Oooohhhaahahahahaaaa!!! \u2026 What a miss! Is this already the end
+        for  you, my dear Elios?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[1].animation.AnimationStateName
+      value: Ego_ Uncomfortable
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[1].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 01d5de9bed787b247adc9f214f318c78, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[2].audio.source
+      value: 
+      objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[2].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9c3ed70f46f1ddc4aa0c9a5d5ebb3527, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[2].sentence
+      value: "Hihihi Come on Elios\u2026 or don\u2019t you want to know the truth,
+        hehe."
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[3].animation.AnimationStateName
+      value: Elios_Emo_ Serious
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[3].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e75f528839bd4e94fb688fb93322d9cd, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[4].audio.source
+      value: 
+      objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[4].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e43d4a3290af93d40be1971233136e35, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[4].sentence
+      value: "Are you really questioning me?\u2026 I have witnessed the truth since
+        the first human...  taste of it, hihihihi"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[5].animation.AnimationStateName
+      value: Ego_Absent
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[3].option.Array.data[0].talks.Array.data[6].sentence
+      value: "Soooo\u2026. Shall we continue with your\u2026 lucky streak? hahaha
+        You know what one say: \u201Cnew round, new luck\u201D "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[0].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[1].animation.AnimationStateName
+      value: Elios_Emo_ FakeSmile
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[1].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5f82e4c00225e974ea4823008af81afb, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[1].sentence
+      value: 'Ok... What now? Are you killing us?
+
+'
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[2].animation.AnimationStateName
+      value: Ego_ Frightened
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[2].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 10e79216213852e47ad79dfaf96502ba, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[3].animation.AnimationStateName
+      value: Elios_Emo_ LookingAtEgo
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[4].audio.source
+      value: 
+      objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[4].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: b0a2b3ba3d51a044b93ab1819f882e8c, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[4].sentence
+      value: "\u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[5].animation.AnimationStateName
+      value: Ego_ Uncomfortable
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[5].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 01d5de9bed787b247adc9f214f318c78, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[6].audio.source
+      value: 
+      objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[6].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d4952c6cc64feb74c8012685e7c0ed00, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[6].sentence
+      value: "Hahahahahah\u2026 calm down...you know what? Considering that Elios
+        played so well with me I am going to tell you the truth anyway\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[0].audio.source
+      value: 
+      objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[0].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0c62c803a293482498370e0d4d5f65be, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[1].animation.AnimationStateName
+      value: Elios_Emo_ Serious
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[1].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 274813be7640c5c4b9fcd75e4a11d2e8, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[2].audio.source
+      value: 
+      objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[2].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[3].animation.AnimationStateName
+      value: Ego_ Uncomfortable
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[3].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 19ac4547c53c3d542ae8af5d64f7e4d7, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[4].animation.AnimationStateName
+      value: Ego_ HiddenInElios
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[4].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 850fbba9716493345a0137dfa9666da8, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[5].animation.AnimationStateName
+      value: Elios_Emo_ LookingAtEgo
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[5].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9b340d1cbb3b10a4a95883fdaec44d0b, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[6].audio.source
+      value: 
+      objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[6].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 35192a9adc8a36d4bb11fba4f6ec43b8, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[6].sentence
+      value: "Couldn\u2019t you see it? He is a part of you and builds all you can\u2019t
+        feel or think of. Don\u2019t you feel all the new emotions growing inside
+        you? hihihihi"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[7].animation.AnimationStateName
+      value: Elios_Emo_ Stop_It
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[7].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5f743877ef78af44389212b2a810cb9e, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[8].dialogAction
+      value: 
+      objectReference: {fileID: 5273266731733337230}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[8].audio.source
+      value: 
+      objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[8].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: bcfee76beffe16242826a8e9cb7cdb75, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[8].sentence
+      value: "I would love to tell it all, but\u2026 You already know it!!! "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[9].animation.animator
+      value: 
+      objectReference: {fileID: 1987366899158460704}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[9].audio.source
+      value: 
+      objectReference: {fileID: 3170644176660779744}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[9].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: de5cce5bcad96de439d2bf060cf67284, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[9].cameraTarget
+      value: 
+      objectReference: {fileID: 2562204990137492430}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[10].animation.animator
+      value: 
+      objectReference: {fileID: 1987366899158460704}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[10].animation.AnimationStateName
+      value: Dementum_ Cheers
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[10].audio.source
+      value: 
+      objectReference: {fileID: 3170644176660779744}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[10].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: aae5ca03677f4f246bbf06e4a6b6722b, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[10].cameraTarget
+      value: 
+      objectReference: {fileID: 2562204990137492430}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[11].audio.source
+      value: 
+      objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[11].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: ef4bc760929dbfc428af2cdbe07336b0, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[12].animation.AnimationStateName
+      value: Elios_Emo_ Stop_It_Stop_It
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[12].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5f743877ef78af44389212b2a810cb9e, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[13].audio.source
+      value: 
+      objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[13].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1257533a4a6e4f54987c02eb9e4a6cf3, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[14].animation.AnimationStateName
+      value: Elios_Emo_ FakeSmile
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[14].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 05b282e63f63fd8488503092961297ea, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[15].animation.animator
+      value: 
+      objectReference: {fileID: 1987366899158460704}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[15].animation.AnimationStateName
+      value: Dementum_ Tick
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[15].audio.source
+      value: 
+      objectReference: {fileID: 3170644176660779744}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[15].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 715697622ab1054459093c0b5d09aea4, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[15].cameraTarget
+      value: 
+      objectReference: {fileID: 2562204990137492430}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[16].audio.source
+      value: 
+      objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[16].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1257533a4a6e4f54987c02eb9e4a6cf3, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[18].audio.source
+      value: 
+      objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[18].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 0c62c803a293482498370e0d4d5f65be, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[19].animation.AnimationStateName
+      value: Elios_Emo_ Depressive
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[19].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: a354f5ed07a53a644a26dede0329ecbd, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[20].audio.source
+      value: 
+      objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[20].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 35192a9adc8a36d4bb11fba4f6ec43b8, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[20].sentence
+      value: "Indeed, Eliot. But it wasn\u2019t harmful, you are right now dying
+        because of sleeping pills. Isn\u2019t it a wonderful death?"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[21].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[21].name
+      value: Dayak
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[21].sentence
+      value: "Hahaha let\u2019s see each other maybe in heaven or hell? Does it matter?    
+        hahahahahahahahahahahahahahhahahahahahahahahahaa"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[22].audio.source
+      value: 
+      objectReference: {fileID: 7797549943236925780}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[22].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7297eac1a4ecbb449a400357fe788403, type: 3}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[22].name
+      value: ' '
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[22].sentence
+      value: Elios falls to the ground
+      objectReference: {fileID: 0}
     - target: {fileID: 5760391216701521917, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5477,21 +5983,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6, type: 3}
---- !u!4 &3926691687516757437 stripped
+--- !u!4 &2562204990137492430 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 9173834014691732105, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+  m_CorrespondingSourceObject: {fileID: 7683334454249657594, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
     type: 3}
   m_PrefabInstance: {fileID: 5273266732070532916}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5273266731733337230 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 741028794, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+    type: 3}
+  m_PrefabInstance: {fileID: 5273266732070532916}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc66bdfa0d129cc44905f1619eb0db3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &1987366899158460704 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5961327252251041300, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
     type: 3}
   m_PrefabInstance: {fileID: 5273266732070532916}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &3170644176660779744 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 7290778260243490260, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+    type: 3}
+  m_PrefabInstance: {fileID: 5273266732070532916}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3927927652107019159 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9199909850651759779, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+    type: 3}
+  m_PrefabInstance: {fileID: 5273266732070532916}
+  m_PrefabAsset: {fileID: 0}
 --- !u!82 &7797549943236925780 stripped
 AudioSource:
   m_CorrespondingSourceObject: {fileID: 2672919893949804128, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+    type: 3}
+  m_PrefabInstance: {fileID: 5273266732070532916}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &3926691687516757437 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9173834014691732105, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
     type: 3}
   m_PrefabInstance: {fileID: 5273266732070532916}
   m_PrefabAsset: {fileID: 0}
@@ -7653,15 +8189,21 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 0a441122c7b8d36459d0bea45a1a7a94, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f601025a849a8b74cb615137b0a93789, type: 3}
+--- !u!1 &3248332784939100955 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8465865693860420285, guid: f601025a849a8b74cb615137b0a93789,
+    type: 3}
+  m_PrefabInstance: {fileID: 6370533587224867238}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2038097912735170257 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4909039915812048759, guid: f601025a849a8b74cb615137b0a93789,
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3941776310545104708 stripped
+--- !u!1 &437867972217880155 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 7988451291748404962, guid: f601025a849a8b74cb615137b0a93789,
+  m_CorrespondingSourceObject: {fileID: 6808088116753764349, guid: f601025a849a8b74cb615137b0a93789,
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
@@ -7671,9 +8213,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3151734674626321742 stripped
+--- !u!1 &3941776310545104708 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8346748421471317224, guid: f601025a849a8b74cb615137b0a93789,
+  m_CorrespondingSourceObject: {fileID: 7988451291748404962, guid: f601025a849a8b74cb615137b0a93789,
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
@@ -7683,9 +8225,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7698770651040848125 stripped
+--- !u!1 &3151734674626321742 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3656687144761928027, guid: f601025a849a8b74cb615137b0a93789,
+  m_CorrespondingSourceObject: {fileID: 8346748421471317224, guid: f601025a849a8b74cb615137b0a93789,
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
@@ -7785,6 +8327,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7144151142539301586 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4273266335548056436, guid: f601025a849a8b74cb615137b0a93789,
+    type: 3}
+  m_PrefabInstance: {fileID: 6370533587224867238}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8766235254453523462 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2436238556680611232, guid: f601025a849a8b74cb615137b0a93789,
@@ -7839,36 +8387,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1170240566521716113 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5212117309048286263, guid: f601025a849a8b74cb615137b0a93789,
-    type: 3}
-  m_PrefabInstance: {fileID: 6370533587224867238}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3985407141224702084 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8009559743158505762, guid: f601025a849a8b74cb615137b0a93789,
-    type: 3}
-  m_PrefabInstance: {fileID: 6370533587224867238}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2919792793715812114 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8137334481546024628, guid: f601025a849a8b74cb615137b0a93789,
-    type: 3}
-  m_PrefabInstance: {fileID: 6370533587224867238}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &5462728351512327843 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1416150041703433989, guid: f601025a849a8b74cb615137b0a93789,
-    type: 3}
-  m_PrefabInstance: {fileID: 6370533587224867238}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1264540933879846257 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5324420018671379671, guid: f601025a849a8b74cb615137b0a93789,
-    type: 3}
-  m_PrefabInstance: {fileID: 6370533587224867238}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6192102777040148525 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 974583057963788683, guid: f601025a849a8b74cb615137b0a93789,
@@ -7881,9 +8399,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6307553209789036797 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1143985439663851867, guid: f601025a849a8b74cb615137b0a93789,
+--- !u!4 &5462728351512327843 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1416150041703433989, guid: f601025a849a8b74cb615137b0a93789,
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
@@ -7899,15 +8417,69 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &157054229881842664 stripped
+--- !u!1 &8153301599706507257 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6504703604017846862, guid: f601025a849a8b74cb615137b0a93789,
+  m_CorrespondingSourceObject: {fileID: 2976586955893691999, guid: f601025a849a8b74cb615137b0a93789,
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3164508193399172722 stripped
+--- !u!1 &8527477744469818450 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8323278712957394900, guid: f601025a849a8b74cb615137b0a93789,
+  m_CorrespondingSourceObject: {fileID: 3332383728710684148, guid: f601025a849a8b74cb615137b0a93789,
+    type: 3}
+  m_PrefabInstance: {fileID: 6370533587224867238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1264540933879846257 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5324420018671379671, guid: f601025a849a8b74cb615137b0a93789,
+    type: 3}
+  m_PrefabInstance: {fileID: 6370533587224867238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3985407141224702084 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8009559743158505762, guid: f601025a849a8b74cb615137b0a93789,
+    type: 3}
+  m_PrefabInstance: {fileID: 6370533587224867238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2919792793715812114 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8137334481546024628, guid: f601025a849a8b74cb615137b0a93789,
+    type: 3}
+  m_PrefabInstance: {fileID: 6370533587224867238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6307553209789036797 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1143985439663851867, guid: f601025a849a8b74cb615137b0a93789,
+    type: 3}
+  m_PrefabInstance: {fileID: 6370533587224867238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7698770651040848125 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3656687144761928027, guid: f601025a849a8b74cb615137b0a93789,
+    type: 3}
+  m_PrefabInstance: {fileID: 6370533587224867238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3546288298934819947 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7592608141906931149, guid: f601025a849a8b74cb615137b0a93789,
+    type: 3}
+  m_PrefabInstance: {fileID: 6370533587224867238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &839091870179021719 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6038661997771088433, guid: f601025a849a8b74cb615137b0a93789,
+    type: 3}
+  m_PrefabInstance: {fileID: 6370533587224867238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4268219031765464020 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7157183065503728242, guid: f601025a849a8b74cb615137b0a93789,
+    type: 3}
+  m_PrefabInstance: {fileID: 6370533587224867238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4628097843296282404 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1752710578865346178, guid: f601025a849a8b74cb615137b0a93789,
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
@@ -7917,9 +8489,21 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &9082348625102605246 stripped
+--- !u!1 &3164508193399172722 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 2765867128551914008, guid: f601025a849a8b74cb615137b0a93789,
+  m_CorrespondingSourceObject: {fileID: 8323278712957394900, guid: f601025a849a8b74cb615137b0a93789,
+    type: 3}
+  m_PrefabInstance: {fileID: 6370533587224867238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &157054229881842664 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6504703604017846862, guid: f601025a849a8b74cb615137b0a93789,
+    type: 3}
+  m_PrefabInstance: {fileID: 6370533587224867238}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6049465986105066883 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 836732509598413861, guid: f601025a849a8b74cb615137b0a93789,
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
@@ -7935,9 +8519,9 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &3546288298934819947 stripped
+--- !u!1 &1170240566521716113 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 7592608141906931149, guid: f601025a849a8b74cb615137b0a93789,
+  m_CorrespondingSourceObject: {fileID: 5212117309048286263, guid: f601025a849a8b74cb615137b0a93789,
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
@@ -7947,51 +8531,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8527477744469818450 stripped
+--- !u!1 &9082348625102605246 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 3332383728710684148, guid: f601025a849a8b74cb615137b0a93789,
-    type: 3}
-  m_PrefabInstance: {fileID: 6370533587224867238}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4268219031765464020 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7157183065503728242, guid: f601025a849a8b74cb615137b0a93789,
-    type: 3}
-  m_PrefabInstance: {fileID: 6370533587224867238}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &2879767548321677237 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9195879677679537683, guid: f601025a849a8b74cb615137b0a93789,
-    type: 3}
-  m_PrefabInstance: {fileID: 6370533587224867238}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6049465986105066883 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 836732509598413861, guid: f601025a849a8b74cb615137b0a93789,
-    type: 3}
-  m_PrefabInstance: {fileID: 6370533587224867238}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &839091870179021719 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6038661997771088433, guid: f601025a849a8b74cb615137b0a93789,
-    type: 3}
-  m_PrefabInstance: {fileID: 6370533587224867238}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &8153301599706507257 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2976586955893691999, guid: f601025a849a8b74cb615137b0a93789,
-    type: 3}
-  m_PrefabInstance: {fileID: 6370533587224867238}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &4628097843296282404 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1752710578865346178, guid: f601025a849a8b74cb615137b0a93789,
-    type: 3}
-  m_PrefabInstance: {fileID: 6370533587224867238}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &3248332784939100955 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8465865693860420285, guid: f601025a849a8b74cb615137b0a93789,
+  m_CorrespondingSourceObject: {fileID: 2765867128551914008, guid: f601025a849a8b74cb615137b0a93789,
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
@@ -8001,15 +8543,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &437867972217880155 stripped
+--- !u!1 &2879767548321677237 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 6808088116753764349, guid: f601025a849a8b74cb615137b0a93789,
-    type: 3}
-  m_PrefabInstance: {fileID: 6370533587224867238}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &7144151142539301586 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4273266335548056436, guid: f601025a849a8b74cb615137b0a93789,
+  m_CorrespondingSourceObject: {fileID: 9195879677679537683, guid: f601025a849a8b74cb615137b0a93789,
     type: 3}
   m_PrefabInstance: {fileID: 6370533587224867238}
   m_PrefabAsset: {fileID: 0}
