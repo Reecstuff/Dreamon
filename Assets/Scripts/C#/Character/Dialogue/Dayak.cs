@@ -44,8 +44,6 @@ public class Dayak : DialogueTrigger
     public override void TheEnd(bool isLose)
     {
 
-        Debug.Log(string.Join(" ", gameObject.name, nameof(isLose), isLose));
-
         // Lost:
         if(isLose)
         {

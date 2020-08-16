@@ -1381,7 +1381,7 @@ PrefabInstance:
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.22
+      value: -150.44
       objectReference: {fileID: 0}
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
@@ -1391,7 +1391,7 @@ PrefabInstance:
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10.06
+      value: 12.17
       objectReference: {fileID: 0}
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
@@ -1528,7 +1528,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1476125867}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 15.619629, y: 2.543419, z: 4.136875}
@@ -1544,9 +1544,9 @@ Transform:
   m_LocalPosition: {x: -143.39105, y: 0.98, z: 29.46}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1484136325}
   - {fileID: 1842401081}
   - {fileID: 394883682}
+  - {fileID: 1484136325}
   m_Father: {fileID: 0}
   m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5098,9 +5098,24 @@ PrefabInstance:
       objectReference: {fileID: 1378851289}
     - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[22].animation.AnimationStateName
-      value: Elios_Lying
-      objectReference: {fileID: 0}
+      propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[4].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[17].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[17].animation.animator
+      value: 
+      objectReference: {fileID: 1378851289}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[22].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
     - target: {fileID: 1283069029152691190, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5181,6 +5196,16 @@ PrefabInstance:
       propertyPath: minigame
       value: 
       objectReference: {fileID: 355202932}
+    - target: {fileID: 4851851682733164762, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4851851682733164762, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.615
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e553e249068c32e4aa28f62b9e29f012, type: 3}
 --- !u!1 &5273266731733337229 stripped
