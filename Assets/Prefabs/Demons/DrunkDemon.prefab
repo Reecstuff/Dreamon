@@ -766,7 +766,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: b4f5415d47ed9de4ca047e423add0689, type: 3}
+          clip: {fileID: 8300000, guid: 05b282e63f63fd8488503092961297ea, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: No.
