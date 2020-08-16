@@ -45,12 +45,40 @@ public class Dementum : DialogueTrigger
     [SerializeField]
     GhostLightSpawn lightSpawn;
 
+    [SerializeField]
+    Animator animator;
+
+    [SerializeField]
+    string[] idleAnimations;
+
+    int currentidle = 0;
+
     AudioClip oldBackgroundMusic;
 
     protected override void InitValues()
     {
         base.InitValues();
     }
+
+    protected override void Update()
+    {
+        base.Update();
+        PlayIdleAnimation();
+    }
+
+    void PlayIdleAnimation()
+    {
+        if(!hasInteracted)
+        {
+            if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !animator.IsInTransition(0))
+            {
+                animator.CrossFade(idleAnimations[currentidle], 0.3f);
+
+                currentidle = currentidle + 1 >= idleAnimations.Length ? 0 : currentidle + 1;
+            }
+        }
+    }
+
 
     protected override void PlaySound()
     {
@@ -126,10 +154,6 @@ public class Dementum : DialogueTrigger
 
         }
 
-        // Dementum dissapears
-        DementumDisapears();
-
-
         // Set Gameobject inactive
         Invoke(nameof(SetInactive), deathAnimationTime + 0.5f);
     }
@@ -140,15 +164,6 @@ public class Dementum : DialogueTrigger
         lightSpawn.Light(1);
     }
 
-    void DementumDisapears()
-    {
-        // Shrink and Shake
-        Sequence s = DOTween.Sequence();
-
-        s.Append(transform.DOScale(Vector3.zero, deathAnimationTime));
-        s.Join(transform.DOShakeRotation(deathAnimationTime));
-        s.Play();
-    }
 
     void DissapearObjects()
     {

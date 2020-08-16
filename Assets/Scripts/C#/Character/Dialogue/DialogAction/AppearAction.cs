@@ -5,10 +5,10 @@ using UnityEngine;
 public class AppearAction : DialogAction
 {
     [SerializeField]
-    GameObject objectToAppear;
+    protected GameObject objectToAppear;
 
     [SerializeField]
-    bool visible = false;
+    protected bool visible = false;
 
     protected override void InitValues()
     {
