@@ -603,7 +603,7 @@ PrefabInstance:
     - target: {fileID: 5138805801812047898, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6321706371427318194, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
@@ -1381,7 +1381,7 @@ PrefabInstance:
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -150.44
+      value: -15.22
       objectReference: {fileID: 0}
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
@@ -1391,7 +1391,7 @@ PrefabInstance:
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 12.17
+      value: -10.06
       objectReference: {fileID: 0}
     - target: {fileID: 2824791701659454391, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
@@ -3339,6 +3339,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!4 &1960547236 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3927927652107019159, guid: e553e249068c32e4aa28f62b9e29f012,
+    type: 3}
+  m_PrefabInstance: {fileID: 5273266731733337228}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1965782542
 GameObject:
   m_ObjectHideFlags: 0
@@ -5116,6 +5122,51 @@ PrefabInstance:
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[22].audio.source
       value: 
       objectReference: {fileID: 1378851293}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[20].cameraTarget
+      value: 
+      objectReference: {fileID: 1960547236}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[18].cameraTarget
+      value: 
+      objectReference: {fileID: 1960547236}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[16].cameraTarget
+      value: 
+      objectReference: {fileID: 1960547236}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[13].cameraTarget
+      value: 
+      objectReference: {fileID: 1960547236}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[11].cameraTarget
+      value: 
+      objectReference: {fileID: 1960547236}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[8].cameraTarget
+      value: 
+      objectReference: {fileID: 1960547236}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[6].cameraTarget
+      value: 
+      objectReference: {fileID: 1960547236}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[2].cameraTarget
+      value: 
+      objectReference: {fileID: 1960547236}
+    - target: {fileID: 459236818183123735, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[0].cameraTarget
+      value: 
+      objectReference: {fileID: 1960547236}
     - target: {fileID: 1283069029152691190, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5575,7 +5626,7 @@ PrefabInstance:
     - target: {fileID: 7156026689946373129, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
