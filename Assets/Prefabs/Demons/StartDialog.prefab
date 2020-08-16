@@ -47,7 +47,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7156026689946373128
 Transform:
   m_ObjectHideFlags: 0
@@ -197,7 +197,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 5f82e4c00225e974ea4823008af81afb, type: 3}
         cameraTarget: {fileID: 0}
         name: Man
-        sentence: " [sighs] Elios\u2026"
+        sentence: " Elios\u2026"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -293,7 +293,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 9344f524d080ace4fae3dc5f53bc5855, type: 3}
         cameraTarget: {fileID: 0}
         name: 'Elios '
-        sentence: (annoyed) No. I am not interested.
+        sentence: No. I am not interested.
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -341,7 +341,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 581845f88e1b648439223407ee6560fe, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
-        sentence: "[sighs] If you say so\u2026 "
+        sentence: "If you say so\u2026 "
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}

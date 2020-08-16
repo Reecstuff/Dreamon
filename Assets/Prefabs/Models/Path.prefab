@@ -586,7 +586,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 3e-45, y: 0, z: 0, w: 1e-45}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -941,6 +941,8 @@ Transform:
   - {fileID: 6414923367402185372}
   - {fileID: 3034449596192371320}
   - {fileID: 5206630658507391789}
+  - {fileID: 4064219053083133517}
+  - {fileID: 4064219054117916809}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1349,7 +1351,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (4)
+      value: CandleLight 08
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -1460,15 +1462,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
---- !u!1 &49850299252426957 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
-    type: 3}
-  m_PrefabInstance: {fileID: 49850299252395629}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &49850299252528365 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 49850299252395629}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &49850299252426957 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
     type: 3}
   m_PrefabInstance: {fileID: 49850299252395629}
   m_PrefabAsset: {fileID: 0}
@@ -1481,7 +1483,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (10)
+      value: CandleLight 24
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -1613,7 +1615,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (5)
+      value: CandleLight 09
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -1724,15 +1726,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
---- !u!4 &671261067458454239 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
-    type: 3}
-  m_PrefabInstance: {fileID: 671261067458852959}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &671261067458821887 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 671261067458852959}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &671261067458454239 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
     type: 3}
   m_PrefabInstance: {fileID: 671261067458852959}
   m_PrefabAsset: {fileID: 0}
@@ -1745,7 +1747,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight
+      value: CandleLight 25
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -1962,15 +1964,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3029a3705089ba42b9c5ac7c9c2b067, type: 3}
---- !u!4 &5378463997725667702 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b3029a3705089ba42b9c5ac7c9c2b067,
-    type: 3}
-  m_PrefabInstance: {fileID: 1143510015587637868}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &9007055607852467045 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: b3029a3705089ba42b9c5ac7c9c2b067,
+    type: 3}
+  m_PrefabInstance: {fileID: 1143510015587637868}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5378463997725667702 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b3029a3705089ba42b9c5ac7c9c2b067,
     type: 3}
   m_PrefabInstance: {fileID: 1143510015587637868}
   m_PrefabAsset: {fileID: 0}
@@ -1983,7 +1985,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (9)
+      value: CandleLight 03
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -2115,7 +2117,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (12)
+      value: CandleLight 14
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -2226,15 +2228,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
---- !u!1 &1566568375932494334 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
-    type: 3}
-  m_PrefabInstance: {fileID: 1566568375932462942}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1566568375932861918 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 1566568375932462942}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1566568375932494334 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
     type: 3}
   m_PrefabInstance: {fileID: 1566568375932462942}
   m_PrefabAsset: {fileID: 0}
@@ -2247,7 +2249,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (3)
+      value: CandleLight 11
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -2358,15 +2360,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
---- !u!1 &2123038285631912393 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
-    type: 3}
-  m_PrefabInstance: {fileID: 2123038285631946601}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2123038285631809001 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 2123038285631946601}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2123038285631912393 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
     type: 3}
   m_PrefabInstance: {fileID: 2123038285631946601}
   m_PrefabAsset: {fileID: 0}
@@ -2379,7 +2381,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (2)
+      value: CandleLight 17
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -2511,7 +2513,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (1)
+      value: CandleLight 22
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -2622,15 +2624,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
---- !u!1 &3149709878204506960 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
-    type: 3}
-  m_PrefabInstance: {fileID: 3149709878204474864}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3149709878204612464 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 3149709878204474864}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3149709878204506960 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
     type: 3}
   m_PrefabInstance: {fileID: 3149709878204474864}
   m_PrefabAsset: {fileID: 0}
@@ -2643,7 +2645,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (2)
+      value: CandleLight 15
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -2754,15 +2756,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
---- !u!1 &3171927646367456139 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
-    type: 3}
-  m_PrefabInstance: {fileID: 3171927646367423787}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3171927646367811499 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 3171927646367423787}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3171927646367456139 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
     type: 3}
   m_PrefabInstance: {fileID: 3171927646367423787}
   m_PrefabAsset: {fileID: 0}
@@ -2775,7 +2777,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (8)
+      value: CandleLight 16
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -2886,15 +2888,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
---- !u!1 &3859223391005779036 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
-    type: 3}
-  m_PrefabInstance: {fileID: 3859223391005745916}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3859223391005358204 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 3859223391005745916}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3859223391005779036 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
     type: 3}
   m_PrefabInstance: {fileID: 3859223391005745916}
   m_PrefabAsset: {fileID: 0}
@@ -2907,7 +2909,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (1)
+      value: CandleLight 19
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -3039,7 +3041,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (4)
+      value: CandleLight 12
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -3150,15 +3152,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
---- !u!1 &4212273449368955895 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
-    type: 3}
-  m_PrefabInstance: {fileID: 4212273449369054551}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4212273449369188311 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 4212273449369054551}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4212273449368955895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
     type: 3}
   m_PrefabInstance: {fileID: 4212273449369054551}
   m_PrefabAsset: {fileID: 0}
@@ -3171,7 +3173,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (10)
+      value: CandleLight 18
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -3303,7 +3305,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (9)
+      value: CandleLight 10
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -3414,15 +3416,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
---- !u!1 &4337654323544349161 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
-    type: 3}
-  m_PrefabInstance: {fileID: 4337654323544448841}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4337654323544311241 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 4337654323544448841}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4337654323544349161 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
     type: 3}
   m_PrefabInstance: {fileID: 4337654323544448841}
   m_PrefabAsset: {fileID: 0}
@@ -3435,7 +3437,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (8)
+      value: CandleLight 07
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -3567,7 +3569,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (13)
+      value: CandleLight 26
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -3678,15 +3680,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
---- !u!4 &4586875898319632669 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
-    type: 3}
-  m_PrefabInstance: {fileID: 4586875898319496093}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &4586875898319594813 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 4586875898319496093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4586875898319632669 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
     type: 3}
   m_PrefabInstance: {fileID: 4586875898319496093}
   m_PrefabAsset: {fileID: 0}
@@ -3699,7 +3701,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (6)
+      value: CandleLight 02
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -3831,7 +3833,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (12)
+      value: CandleLight 21
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -3963,7 +3965,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (6)
+      value: CandleLight 04
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -4074,15 +4076,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
---- !u!4 &5804476120201321745 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
-    type: 3}
-  m_PrefabInstance: {fileID: 5804476120200923025}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &5804476120201019697 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 5804476120200923025}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &5804476120201321745 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
     type: 3}
   m_PrefabInstance: {fileID: 5804476120200923025}
   m_PrefabAsset: {fileID: 0}
@@ -4190,7 +4192,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (11)
+      value: CandleLight 20
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -4322,7 +4324,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (13)
+      value: CandleLight 27
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -4433,15 +4435,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
---- !u!4 &7214410342853547647 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
-    type: 3}
-  m_PrefabInstance: {fileID: 7214410342853938431}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &7214410342853970527 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 7214410342853938431}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &7214410342853547647 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
     type: 3}
   m_PrefabInstance: {fileID: 7214410342853938431}
   m_PrefabAsset: {fileID: 0}
@@ -4454,7 +4456,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (7)
+      value: CandleLight 05
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -4462,7 +4464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 36.18
+      value: 30.64
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4470,7 +4472,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.1800003
+      value: -9.47
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4565,15 +4567,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
---- !u!1 &7427893513368602028 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
-    type: 3}
-  m_PrefabInstance: {fileID: 7427893513368503052}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7427893513368639884 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 7427893513368503052}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7427893513368602028 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
     type: 3}
   m_PrefabInstance: {fileID: 7427893513368503052}
   m_PrefabAsset: {fileID: 0}
@@ -4586,7 +4588,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (5)
+      value: CandleLight 06
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -4718,7 +4720,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (3)
+      value: CandleLight 13
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -4850,7 +4852,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (7)
+      value: CandleLight 01
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -4961,15 +4963,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
---- !u!1 &7924974801675575722 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
-    type: 3}
-  m_PrefabInstance: {fileID: 7924974801675544330}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7924974801675681162 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188,
+    type: 3}
+  m_PrefabInstance: {fileID: 7924974801675544330}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7924974801675575722 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188,
     type: 3}
   m_PrefabInstance: {fileID: 7924974801675544330}
   m_PrefabAsset: {fileID: 0}
@@ -4982,7 +4984,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight (11)
+      value: CandleLight 23
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
@@ -5105,6 +5107,222 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 8066929902251743739}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9015561575762537815
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6613805120641168072}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -28.080177
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.323
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.771492
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_Name
+      value: corpsebag_LP
+      objectReference: {fileID: 0}
+    - target: {fileID: 622181408136833560, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 622181408136833560, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 622181408136833560, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.18271673
+      objectReference: {fileID: 0}
+    - target: {fileID: 622181408136833560, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.30118388
+      objectReference: {fileID: 0}
+    - target: {fileID: 622181408136833560, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.07137423
+      objectReference: {fileID: 0}
+    - target: {fileID: 622181408136833560, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.93317133
+      objectReference: {fileID: 0}
+    - target: {fileID: 622181408136833560, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -17.339
+      objectReference: {fileID: 0}
+    - target: {fileID: 622181408136833560, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -38.039
+      objectReference: {fileID: 0}
+    - target: {fileID: 622181408136833560, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 14.765
+      objectReference: {fileID: 0}
+    - target: {fileID: 622181408136833560, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.318
+      objectReference: {fileID: 0}
+    - target: {fileID: 6443779311386458257, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 27c8458056801f1438c8d4568e0dd03a, type: 2}
+    - target: {fileID: 6443779311386458257, guid: 75b4244a831520e48b7105d39728ef30,
+        type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: e909868a9dcc662479131572b46afcdc, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 75b4244a831520e48b7105d39728ef30, type: 3}
+--- !u!4 &4064219053083133517 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 75b4244a831520e48b7105d39728ef30,
+    type: 3}
+  m_PrefabInstance: {fileID: 9015561575762537815}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9015561576795290515
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6613805120641168072}
+    m_Modifications:
+    - target: {fileID: -4216859302048453862, guid: 917a40eeeb5bbe648a68b3029dfadcfc,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.205
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 917a40eeeb5bbe648a68b3029dfadcfc,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.009
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 917a40eeeb5bbe648a68b3029dfadcfc,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.484
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 917a40eeeb5bbe648a68b3029dfadcfc,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.1297323
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 917a40eeeb5bbe648a68b3029dfadcfc,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.15320086
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 917a40eeeb5bbe648a68b3029dfadcfc,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0020822824
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 917a40eeeb5bbe648a68b3029dfadcfc,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9796401
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 917a40eeeb5bbe648a68b3029dfadcfc,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 917a40eeeb5bbe648a68b3029dfadcfc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 14.7630005
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 917a40eeeb5bbe648a68b3029dfadcfc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -18.050001
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 917a40eeeb5bbe648a68b3029dfadcfc,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -2.114
+      objectReference: {fileID: 0}
+    - target: {fileID: -1504981713932161579, guid: 917a40eeeb5bbe648a68b3029dfadcfc,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: -7547527643682827439, guid: 25c3c99a75da3fe4c9636e20a3044426,
+        type: 3}
+    - target: {fileID: -927199367670048503, guid: 917a40eeeb5bbe648a68b3029dfadcfc,
+        type: 3}
+      propertyPath: m_Name
+      value: skull_pile
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 917a40eeeb5bbe648a68b3029dfadcfc, type: 3}
+--- !u!4 &4064219054117916809 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 917a40eeeb5bbe648a68b3029dfadcfc,
+    type: 3}
+  m_PrefabInstance: {fileID: 9015561576795290515}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9015561577225345664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5114,7 +5332,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_Name
-      value: CandleLight
+      value: CandleLight 28
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_IsActive
