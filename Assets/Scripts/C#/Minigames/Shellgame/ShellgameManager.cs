@@ -132,7 +132,7 @@ public class ShellgameManager : MiniGame
 
     public void RevealShell(ShellTrigger shell)
     {
-
+        SetCollider(false);
         ShowRing();
 
         if(isLost = !rndShell.Equals(shell))
