@@ -25,10 +25,16 @@ public class ShellgameManager : MiniGame
     [SerializeField]
     float substractDurationPerRound = 2;
 
+
+    [SerializeField]
+    bool crazyMode = false;
+
     ShellTrigger rndShell;
     int currentRound = 0;
 
     bool isLost = true;
+
+    
 
     public override void StartMiniGame()
     {
@@ -89,6 +95,13 @@ public class ShellgameManager : MiniGame
 
         int moveCount = Random.Range(6, 10);
         float singleduration = animduration / moveCount;
+
+
+        if(crazyMode)
+        {
+            moveCount = 2000000;
+            singleduration = 0.1f;
+        }
 
 
         for (int i = 0; i < moveCount; i++)
@@ -164,6 +177,9 @@ public class ShellgameManager : MiniGame
 
     void ShowRounds()
     {
+        if (crazyMode)
+            return;
+
         if (currentRound <= 3)
             roundText.SetText(string.Concat("Round\n", currentRound));
         else

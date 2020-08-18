@@ -129,6 +129,13 @@ public class DialogueManager : MonoBehaviour
         player = FindObjectOfType<PlayerController>();
     }
 
+    private void Update()
+    {
+        if (currentDialogObject && minigameManager && CheckIsOpen() && !minigameManager.minigame.gameObject.activeInHierarchy && currentDialogObject.camPosition)
+            cameraController.transform.position = currentDialogObject.camPosition.position;
+        else if (minigameManager && minigameManager.minigame.gameObject.activeInHierarchy)
+            cameraController.transform.position = minigameManager.cameraPosition.position;
+    }
 
     /// <summary>
     /// Starts the dialog by triggering it from the DialogueTrigger
