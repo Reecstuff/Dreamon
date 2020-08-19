@@ -24,11 +24,14 @@ public class OptionMenu : MonoBehaviour
     #region Start Methods
     private void Start()
     {
-        GetResolution();
-        GetGraphic();
-        GetFullscreen();
+        if(resolutionDropdown && graphicsDropdown)
+        {
+            GetResolution();
+            GetGraphic();
+            GetFullscreen();
 
-        InstantiateVolume();
+            InstantiateVolume();
+        }
     }
 
     /// <summary>
@@ -36,6 +39,7 @@ public class OptionMenu : MonoBehaviour
     /// </summary>
     private void GetResolution()
     {
+
         List<string> options = new List<string>();
         int? currentResIndex = 0;
 

@@ -146,7 +146,7 @@ public class BoardManager : MiniGame
 	{
 		bool winningMove = false;
 
-		if (allowedMoves[x,z])
+		if (allowedMoves != null && allowedMoves[x,z])
 		{
 			Chessman c = Chessmans[x, z];
 
