@@ -329,7 +329,7 @@ public class DialogueManager : MonoBehaviour
 
     void SetLine(string name)
     {
-        if (!string.IsNullOrEmpty(name) && !nameText.text.Equals(name))
+        if (!nameText.text.Equals(name))
         {
             nameText.SetText(name);
         }

@@ -4911,7 +4911,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cam: {fileID: 0}
   yOffset: 0.2
-  maxDistance: 15
+  maxDistance: 25
   minDistance: 10
   cursorParticleSystem: {fileID: 3625145728277787653}
   cursorLight: {fileID: 8229088239424004418}

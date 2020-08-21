@@ -981,7 +981,7 @@ MonoBehaviour:
           animator: {fileID: 1784327008}
           AnimationStateName: Dementum_ Endpart2
           secondAnimator: {fileID: 0}
-          SecondAnimationStateName: 
+          SecondAnimationStateName: Ego_ Relieved
         audio:
           source: {fileID: 1080324107628060643}
           clip: {fileID: 8300000, guid: 335b6cdedd2730b49a3f63aa4863f06e, type: 3}
