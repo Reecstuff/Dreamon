@@ -146,9 +146,11 @@ public class BoardManager : MiniGame
 	{
 		bool winningMove = false;
 
-		if (allowedMoves != null && allowedMoves[x,z])
+		if (selectedChessman != null && allowedMoves != null && allowedMoves[x,z])
 		{
 			Chessman c = Chessmans[x, z];
+
+			Chessmans[selectedChessman.CurrentX, selectedChessman.CurrentY] = null;
 
 			if (c != null)
 			{
@@ -168,15 +170,14 @@ public class BoardManager : MiniGame
 			else
 			{
 				source.clip = movePiece[Random.Range(0, movePiece.Length)];
+				selectedChessman.SetPosition(x, z);
+				Chessmans[x, z] = selectedChessman;
 			}
 
-			Chessmans[selectedChessman.CurrentX, selectedChessman.CurrentY] = null;
 
 			Vector3 moveVector = new Vector3(x + 0.5f, selectedChessman.transform.localScale.y / 2, z + 0.5f);
 
 			MoveLocalTransform(selectedChessman.transform, moveVector, 0.3f);
-			selectedChessman.SetPosition(x, z);
-			Chessmans[x, z] = selectedChessman;
 
 			source.Play();
 
