@@ -492,6 +492,8 @@ public class DialogueManager : MonoBehaviour
         cameraController.MoveToOffset(player.transform);
         cameraController.StartResetCameraToPlayer();
         player.motor.ResumeAgent();
+        nameText.text = string.Empty;
+        
 
         // Call End of Dialogue
         SetDialogueEnd();

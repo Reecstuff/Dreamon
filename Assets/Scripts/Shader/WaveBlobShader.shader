@@ -20,6 +20,8 @@ Shader "CustomShader/WaveBlobShader"
         LOD 200
 
         CGPROGRAM
+// Upgrade NOTE: excluded shader from DX11 because it uses wrong array syntax (type[size] name)
+#pragma exclude_renderers d3d11
         #pragma surface surf  Standard fullforwardshadows addshadow vertex:vertex_shader
 
         #pragma target 3.0
@@ -38,6 +40,7 @@ Shader "CustomShader/WaveBlobShader"
         half _Amplitude;
         float _Speed;
         fixed4 _Axis;
+        float[4] array;
 
       
         UNITY_INSTANCING_BUFFER_START(Props)

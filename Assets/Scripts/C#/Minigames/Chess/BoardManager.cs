@@ -41,6 +41,8 @@ public class BoardManager : MiniGame
 
 	AudioSource source;
 
+	bool mouseDown = false;
+
 	private void Start()
 	{
 		source = GetComponent<AudioSource>();
@@ -52,8 +54,14 @@ public class BoardManager : MiniGame
 
     public override void StartMiniGame()
     {
-        base.StartMiniGame();
+		gameObject.SetActive(true);
 		rounds = 0;
+        base.StartMiniGame();
+    }
+
+    private void Update()
+    {
+		mouseDown = Input.GetMouseButtonDown(0);
     }
 
     protected override IEnumerator MiniGameUpdate()
@@ -73,7 +81,7 @@ public class BoardManager : MiniGame
 			UpdateSelection();
 			DrawChessboard();
 
-			if (Input.GetMouseButtonDown(0))
+			if (mouseDown)
 			{
 				if (selectionX >= 0 && selectionY >= 0)
 				{
@@ -98,8 +106,10 @@ public class BoardManager : MiniGame
 				}
 			}
 
-			return base.MiniGameUpdate();
+			yield return base.MiniGameUpdate();
+
 		} while (gameObject.activeInHierarchy);
+
     }
 
 	void CheckForWinLose()
@@ -136,9 +146,11 @@ public class BoardManager : MiniGame
 	{
 		bool winningMove = false;
 
-		if (allowedMoves[x,z])
+		if (selectedChessman != null && allowedMoves != null && allowedMoves[x,z])
 		{
 			Chessman c = Chessmans[x, z];
+
+			Chessmans[selectedChessman.CurrentX, selectedChessman.CurrentY] = null;
 
 			if (c != null)
 			{
@@ -158,15 +170,14 @@ public class BoardManager : MiniGame
 			else
 			{
 				source.clip = movePiece[Random.Range(0, movePiece.Length)];
+				selectedChessman.SetPosition(x, z);
+				Chessmans[x, z] = selectedChessman;
 			}
 
-			Chessmans[selectedChessman.CurrentX, selectedChessman.CurrentY] = null;
 
 			Vector3 moveVector = new Vector3(x + 0.5f, selectedChessman.transform.localScale.y / 2, z + 0.5f);
 
 			MoveLocalTransform(selectedChessman.transform, moveVector, 0.3f);
-			selectedChessman.SetPosition(x, z);
-			Chessmans[x, z] = selectedChessman;
 
 			source.Play();
 
