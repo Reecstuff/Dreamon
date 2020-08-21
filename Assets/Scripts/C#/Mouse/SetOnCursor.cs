@@ -54,6 +54,11 @@ public class SetOnCursor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Return))
+        {
+            Cursor.visible = true;
+        }
+
         if(Time.timeScale > 0 && !Cursor.visible)
         {
             if(cursorParticleSystem.isPaused)

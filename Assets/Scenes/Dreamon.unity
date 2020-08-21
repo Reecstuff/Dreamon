@@ -1635,6 +1635,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2824791702060548858, guid: 42fbe90f27e2b9341b3452e7a3770d55,
+        type: 3}
+      propertyPath: rotateSpeed
+      value: 37
+      objectReference: {fileID: 0}
     - target: {fileID: 6886172033053995432, guid: 42fbe90f27e2b9341b3452e7a3770d55,
         type: 3}
       propertyPath: m_Volume
@@ -3123,6 +3128,41 @@ PrefabInstance:
       propertyPath: dialogue.Array.data[4].option.Array.data[0].talks.Array.data[6].animation.SecondAnimationStateName
       value: Ego_ Relieved
       objectReference: {fileID: 0}
+    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0010711253
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9966851
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.08001596
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.014671236
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0023231506
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.56885934
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132076722556807739, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.8288536
+      objectReference: {fileID: 0}
     - target: {fileID: 5219269308381401104, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4155,6 +4195,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: MinigameMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 730186039768941105, guid: 5a31dc75be3ec0242b376dd50884a72f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 730186040390908975, guid: 5a31dc75be3ec0242b376dd50884a72f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 730186040457597848, guid: 5a31dc75be3ec0242b376dd50884a72f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 730186041292611859, guid: 5a31dc75be3ec0242b376dd50884a72f,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5a31dc75be3ec0242b376dd50884a72f, type: 3}

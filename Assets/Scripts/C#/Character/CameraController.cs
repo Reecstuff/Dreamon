@@ -25,6 +25,9 @@ public class CameraController : MonoBehaviour
     [SerializeField]
     float betweenFacesSpeed = 0.1f;
 
+    [SerializeField]
+    float rotateSpeed = 1000;
+
 
     float targetZoom = 0;
     float zoomValue = 0;
@@ -40,6 +43,13 @@ public class CameraController : MonoBehaviour
 
     public float dampingTime = 15;
     float timer = 0;
+
+    float oldrotateSpeed;
+
+    private void Start()
+    {
+        oldrotateSpeed = rotateSpeed;
+    }
 
     void Update()
     {
@@ -64,10 +74,29 @@ public class CameraController : MonoBehaviour
     {
         if (Input.GetKey(KeyCode.Mouse1))
         {
-            Quaternion camTurnAngle = Quaternion.AngleAxis(Input.GetAxis("Mouse X") * Time.deltaTime * 1000f, Vector3.up);
-
-            offset = camTurnAngle * offset;
+            CalcRotation(Input.GetAxis("Mouse X"));
         }
+
+        if(Input.GetKey(KeyCode.KeypadPlus))
+        {
+            rotateSpeed = 1000;
+        }
+        if (Input.GetKey(KeyCode.KeypadMinus))
+        {
+            rotateSpeed = oldrotateSpeed;
+        }
+
+        if (Input.GetKey(KeyCode.RightArrow))
+            CalcRotation(-1);
+        else if (Input.GetKey(KeyCode.LeftArrow))
+            CalcRotation(1);
+    }
+
+    void CalcRotation(float value)
+    {
+        Quaternion camTurnAngle = Quaternion.AngleAxis(value * Time.deltaTime * rotateSpeed, Vector3.up);
+
+        offset = camTurnAngle * offset;
     }
 
     #endregion

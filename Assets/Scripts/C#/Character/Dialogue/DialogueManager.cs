@@ -135,6 +135,37 @@ public class DialogueManager : MonoBehaviour
             cameraController.transform.position = currentDialogObject.camPosition.position;
         else if (minigameManager && minigameManager.minigame.gameObject.activeInHierarchy)
             cameraController.transform.position = minigameManager.cameraPosition.position;
+
+        if(currentDialogObject && CheckIsOpen())
+        {
+            if(Input.GetKeyDown(KeyCode.Return))
+            {
+                if(continueButton.gameObject.activeInHierarchy)
+                {
+                    DisplayNextSentence();
+                }
+                else if(endButton.gameObject.activeInHierarchy)
+                {
+                    EndDialogue();
+                }
+                else
+                {
+                    SelectOption(currentDialogObject.dialogue[currentDialogObject.currentDialogue]);
+                }
+            }
+            if(Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                selectedOpinion = 0;
+            }
+            if(Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                selectedOpinion = 1;
+            }
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                selectedOpinion = 2;
+            }
+        }
     }
 
     /// <summary>
