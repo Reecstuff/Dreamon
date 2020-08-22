@@ -416,7 +416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6762290652140747497}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.801, z: 0}
+  m_LocalPosition: {x: 0, y: 3.693, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7616634341673599877}
@@ -732,7 +732,7 @@ MonoBehaviour:
         audio:
           source: {fileID: 0}
           clip: {fileID: 0}
-        cameraTarget: {fileID: 9199909850651759779}
+        cameraTarget: {fileID: 0}
         name: ' '
         sentence: "Dayak presents the chips. \r"
       - dialogAction: {fileID: 0}
@@ -1543,8 +1543,8 @@ MonoBehaviour:
         sentence: Dementum appears from the side.
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: 
+          animator: {fileID: 5961327252251041300}
+          AnimationStateName: Dementum_ Cheers
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1604,8 +1604,8 @@ MonoBehaviour:
         sentence: "You are like Ego, right? He wasn\u2019t real nether\u2026 "
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: 
+          animator: {fileID: 5961327252251041300}
+          AnimationStateName: Dementum_ Tick
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1752,7 +1752,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_Accused
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1769,8 +1769,8 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: ef4bc760929dbfc428af2cdbe07336b0, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: "hehehe No...your wrong. On the one hand it is true that humans
@@ -1783,8 +1783,8 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: ae3baadb9b248fa499924b7716389605, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: "When humans do actions for others they do want a kind of reward.
@@ -1793,19 +1793,19 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Depressive
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 347aa607581fc0e4297b160f971b2f81, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "hmm\u2026"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Uncomfortable
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1821,8 +1821,8 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: 1257533a4a6e4f54987c02eb9e4a6cf3, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: Well. With this decision you chose you are beyond a normal human.
@@ -1834,8 +1834,8 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: 691e8ee553131f741a18464dd93295ce, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: 'Look what I got here. Hehe For you humans a ring has different
@@ -1847,22 +1847,22 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: e43d4a3290af93d40be1971233136e35, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: "But the real meaning of a ring is the infinite bond of marriage.
           A ring\u2026 a simple circle. Circles have something cosmic....Yeah even
-          unearthly\u2026 [grins] Don\u2019t you think?"
+          unearthly\u2026 Don\u2019t you think?"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ LookingAtEgo
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 581845f88e1b648439223407ee6560fe, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: It may be.
@@ -1873,8 +1873,8 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: ef4bc760929dbfc428af2cdbe07336b0, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: The ring has neither a beginning nor an end. It is infinite and
@@ -1902,12 +1902,12 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Annoyed
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 9fe6c9db52d54e443a1edea255852bdf, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: '[sighs]'
@@ -1918,8 +1918,8 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: hihihi
@@ -1934,8 +1934,8 @@ MonoBehaviour:
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: ' '
-        sentence: 'Dayak gives us the ring. The ring burns in the hand of Elios and
-          he lets the ring fall down. '
+        sentence: 'Dayak gives Elios the ring. The ring burns in the hand of Elios
+          and he lets the ring fall down. '
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -1951,12 +1951,12 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Questioning
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: c07a970965d582b43af547235e074994, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "That\u2019s weird. Is something wrong with this ring?"
@@ -1980,22 +1980,22 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: 0c62c803a293482498370e0d4d5f65be, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: "Sometimes eternity hurts. You couldn\u2019t handle it, Elios.
-          hihihi But wasn\u2019t it hot in the same time? [grins] I see, what humans
-          mean by marriage doesn\u2019t need to cool down."
+          hihihi But wasn\u2019t it hot in the same time? I see, what humans mean
+          by marriage doesn\u2019t need to cool down."
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Calmdown
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 8b78ac54db1406646bf871abde7c9d46, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Ohh Elios, don\u2019t think too much about this ring. I don\u2019t
@@ -2008,8 +2008,8 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: 1ca38ba4dd67ed6429b727932cf2a238, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: "Wonderful\u2026 WONDERFUL\u2026     AHHHHHHHHHHHHHHHHHIHIHIHIHIHUHHHHHAHAHAHAIHIHH"
@@ -2025,8 +2025,8 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: 6e725ef9bb9d7ee4ba4577170cd90cf3, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: "Don\u2019t you miss this feeling of love\u2026 desire and\u2026
@@ -2034,7 +2034,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_Accused
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -2050,8 +2050,8 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: "It\u2019s your decision, little Elios, hihihi. But don\u2019t
@@ -2059,12 +2059,12 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Stop_It
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 5f743877ef78af44389212b2a810cb9e, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "I won\u2019t cry. I don\u2019t want to see this ring anymore.
@@ -2076,11 +2076,11 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: ce5aa8f67bfa5394599992f06c6a7bb7, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
-        sentence: "We will see each other again, Elios. Soon\u2026 [grins]"
+        sentence: "We will see each other again, Elios. Soon\u2026"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -2106,21 +2106,21 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: "Oooohhhaahahahahaaaa!!! \u2026 What a miss! Is this already the
-          end for  you, my dear Elios? [grins]"
+          end for  you, my dear Elios?"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Uncomfortable
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 01d5de9bed787b247adc9f214f318c78, type: 3}
         cameraTarget: {fileID: 0}
         name: 'Ego '
         sentence: " D-don't worry. W-we get this.\r"
@@ -2131,21 +2131,21 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: 9c3ed70f46f1ddc4aa0c9a5d5ebb3527, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: "Hihihi Come on Elios\u2026 or don\u2019t you want to know the
-          truth, hehe. [grins]"
+          truth, hehe."
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ Serious
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: e75f528839bd4e94fb688fb93322d9cd, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: How do you know the truth?
@@ -2156,16 +2156,16 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: e43d4a3290af93d40be1971233136e35, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
-        sentence: "[giggles] Are you really questioning me?\u2026 I have witnessed
-          the truth since the first human...  taste of it, hihihihi [grins]"
+        sentence: "Are you really questioning me?\u2026 I have witnessed the truth
+          since the first human...  taste of it, hihihihi"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_Absent
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -2186,7 +2186,7 @@ MonoBehaviour:
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: "Soooo\u2026. Shall we continue with your\u2026 lucky streak? hahaha
-          You know what one say: \u201Cnew round, new luck\u201D [giggles]"
+          You know what one say: \u201Cnew round, new luck\u201D "
       decisions: []
       nextDecisions: 
   - option:
@@ -2201,7 +2201,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 2672919893949804128}
-          clip: {fileID: 8300000, guid: da425f4d0ede23e4ba0c9213833d5f07, type: 3}
+          clip: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: "Elios\u2026 what should I say? YOU LOOSE HAHAHAHA! Ladies and
@@ -2209,26 +2209,26 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ FakeSmile
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 2672919893949804128}
-          clip: {fileID: 8300000, guid: 7992c54359a84be4b851babd5bd704e6, type: 3}
+          clip: {fileID: 8300000, guid: 5f82e4c00225e974ea4823008af81afb, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
-        sentence: '[exhales] Ok... What now? Are you killing us?
+        sentence: 'Ok... What now? Are you killing us?
 
 '
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Frightened
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 10e79216213852e47ad79dfaf96502ba, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "No...! I-I-I am not ready to die. I haven\u2019t lived my life
@@ -2237,7 +2237,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Elios_Emo_ LookingAtEgo
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -2253,20 +2253,20 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: b0a2b3ba3d51a044b93ab1819f882e8c, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
-        sentence: "\u2026  [grins]"
+        sentence: "\u2026 "
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Uncomfortable
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 01d5de9bed787b247adc9f214f318c78, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "What is about my first kiss\u2026 or my first\u2026 t-time? "
@@ -2277,12 +2277,12 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
-          clip: {fileID: 0}
+          source: {fileID: 2672919893949804128}
+          clip: {fileID: 8300000, guid: d4952c6cc64feb74c8012685e7c0ed00, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: "Hahahahahah\u2026 calm down...you know what? Considering that
-          Elios played so well with me I am going to tell you the truth anyway\u2026[grins]"
+          Elios played so well with me I am going to tell you the truth anyway\u2026"
       decisions:
       - Yes.
       nextDecisions: 01000000
@@ -2296,7 +2296,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 2672919893949804128}
           clip: {fileID: 8300000, guid: 0c62c803a293482498370e0d4d5f65be, type: 3}
         cameraTarget: {fileID: 0}
         name: Dayak
@@ -2321,7 +2321,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 2672919893949804128}
           clip: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
         cameraTarget: {fileID: 0}
         name: Dayak
@@ -2371,7 +2371,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 2672919893949804128}
           clip: {fileID: 8300000, guid: 35192a9adc8a36d4bb11fba4f6ec43b8, type: 3}
         cameraTarget: {fileID: 0}
         name: Dayak
@@ -2391,40 +2391,40 @@ MonoBehaviour:
         name: Elliot
         sentence: "I want him back! Now! What\u2019s about the truth, what is this
           all about?!"
-      - dialogAction: {fileID: 0}
+      - dialogAction: {fileID: 741028794}
         animation:
           animator: {fileID: 0}
           AnimationStateName: 
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 2672919893949804128}
           clip: {fileID: 8300000, guid: bcfee76beffe16242826a8e9cb7cdb75, type: 3}
         cameraTarget: {fileID: 0}
         name: Dayak
         sentence: "I would love to tell it all, but\u2026 You already know it!!! "
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
+          animator: {fileID: 5961327252251041300}
           AnimationStateName: Dementum_ Laughing
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 7290778260243490260}
           clip: {fileID: 8300000, guid: de5cce5bcad96de439d2bf060cf67284, type: 3}
-        cameraTarget: {fileID: 0}
+        cameraTarget: {fileID: 7683334454249657594}
         name: ' '
         sentence: 'Dementum appears from the side and laughs. '
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
+          animator: {fileID: 5961327252251041300}
           AnimationStateName: Dementum_ Cheers
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 7290778260243490260}
           clip: {fileID: 8300000, guid: aae5ca03677f4f246bbf06e4a6b6722b, type: 3}
-        cameraTarget: {fileID: 0}
+        cameraTarget: {fileID: 7683334454249657594}
         name: Dementum
         sentence: Hey kid, long time no see. You want a drink?
       - dialogAction: {fileID: 0}
@@ -2434,7 +2434,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 2672919893949804128}
           clip: {fileID: 8300000, guid: ef4bc760929dbfc428af2cdbe07336b0, type: 3}
         cameraTarget: {fileID: 0}
         name: Dayak
@@ -2458,7 +2458,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 2672919893949804128}
           clip: {fileID: 8300000, guid: 1257533a4a6e4f54987c02eb9e4a6cf3, type: 3}
         cameraTarget: {fileID: 0}
         name: Dayak
@@ -2478,14 +2478,14 @@ MonoBehaviour:
         sentence: "You are like Ego, right? He wasn\u2019t real nether\u2026"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
+          animator: {fileID: 5961327252251041300}
           AnimationStateName: Dementum_ Tick
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 7290778260243490260}
           clip: {fileID: 8300000, guid: 715697622ab1054459093c0b5d09aea4, type: 3}
-        cameraTarget: {fileID: 0}
+        cameraTarget: {fileID: 7683334454249657594}
         name: Dementum
         sentence: You are just a dump little brat. I always hated it to be with you.
           Where is my alcohol!!!
@@ -2496,7 +2496,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 2672919893949804128}
           clip: {fileID: 8300000, guid: 1257533a4a6e4f54987c02eb9e4a6cf3, type: 3}
         cameraTarget: {fileID: 0}
         name: Dayak
@@ -2521,7 +2521,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 2672919893949804128}
           clip: {fileID: 8300000, guid: 0c62c803a293482498370e0d4d5f65be, type: 3}
         cameraTarget: {fileID: 0}
         name: Dayak
@@ -2547,7 +2547,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 2672919893949804128}
           clip: {fileID: 8300000, guid: 35192a9adc8a36d4bb11fba4f6ec43b8, type: 3}
         cameraTarget: {fileID: 0}
         name: Dayak
@@ -2562,7 +2562,7 @@ MonoBehaviour:
         audio:
           source: {fileID: 0}
           clip: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
-        cameraTarget: {fileID: 0}
+        cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: "Hahaha let\u2019s see each other maybe in heaven or hell? Does
           it matter?     hahahahahahahahahahahahahahhahahahahahahahahahaa"
@@ -2573,7 +2573,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 2672919893949804128}
           clip: {fileID: 8300000, guid: 6aaa2d83abb0f8a4283984a9b38ac2b3, type: 3}
         cameraTarget: {fileID: 0}
         name: ' '
@@ -2583,15 +2583,16 @@ MonoBehaviour:
   currentDialogue: 0
   minigameManager: {fileID: 9173834014691732104}
   camPosition: {fileID: 8711830891425058972}
-  source: {fileID: 0}
-  objectsToDeactivate: []
+  source: {fileID: 2672919893949804128}
+  objectsToDeactivate:
+  - {fileID: 4332476695909305853}
   deathAnimationTime: 6
   dayakTheme: {fileID: 0}
   doorAnimator: {fileID: 0}
-  doorAnimationState: 
+  doorAnimationState: Door_Exit_Open
   doorSource: {fileID: 0}
-  deathSound: {fileID: 0}
-  deathScene: 
+  deathSound: {fileID: 8300000, guid: 3f9d4b60a32730f40acef30f2c18bc0f, type: 3}
+  deathScene: DeathScene
 --- !u!1001 &425324618
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2609,7 +2610,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.075
+      value: 2.351
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2617,7 +2618,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.977
+      value: -1.23
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2756,7 +2757,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.643
+      value: 2.919
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2764,7 +2765,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.504
+      value: -1.757
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4778,7 +4779,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.066
+      value: 3.342
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4786,7 +4787,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.818
+      value: -1.071
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalRotation.x
@@ -4918,7 +4919,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 4da1e8b7263e39a458443b0a386348ac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.249
+      value: 1.52
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4da1e8b7263e39a458443b0a386348ac,
         type: 3}
@@ -4933,7 +4934,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 4da1e8b7263e39a458443b0a386348ac,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.89050895
+      value: 0.9996033
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4da1e8b7263e39a458443b0a386348ac,
         type: 3}
@@ -4943,7 +4944,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 4da1e8b7263e39a458443b0a386348ac,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.45496586
+      value: 0.02816495
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4da1e8b7263e39a458443b0a386348ac,
         type: 3}
@@ -4958,7 +4959,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 4da1e8b7263e39a458443b0a386348ac,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 125.87501
+      value: 176.772
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4da1e8b7263e39a458443b0a386348ac,
         type: 3}
