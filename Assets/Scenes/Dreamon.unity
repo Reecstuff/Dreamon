@@ -345,102 +345,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &285386247
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 715808760}
-    m_Modifications:
-    - target: {fileID: 1511997467199068462, guid: 149413b9336eeef428aff53ecaf6a1db,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.367
-      objectReference: {fileID: 0}
-    - target: {fileID: 1511997467199068462, guid: 149413b9336eeef428aff53ecaf6a1db,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.196
-      objectReference: {fileID: 0}
-    - target: {fileID: 1511997467199068462, guid: 149413b9336eeef428aff53ecaf6a1db,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.463
-      objectReference: {fileID: 0}
-    - target: {fileID: 1511997467199068462, guid: 149413b9336eeef428aff53ecaf6a1db,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1511997467199068462, guid: 149413b9336eeef428aff53ecaf6a1db,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.165909
-      objectReference: {fileID: 0}
-    - target: {fileID: 1511997467199068462, guid: 149413b9336eeef428aff53ecaf6a1db,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1511997467199068462, guid: 149413b9336eeef428aff53ecaf6a1db,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.98614115
-      objectReference: {fileID: 0}
-    - target: {fileID: 1511997467199068462, guid: 149413b9336eeef428aff53ecaf6a1db,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1511997467199068462, guid: 149413b9336eeef428aff53ecaf6a1db,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1511997467199068462, guid: 149413b9336eeef428aff53ecaf6a1db,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: -19.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1511997467199068462, guid: 149413b9336eeef428aff53ecaf6a1db,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2495249793813982013, guid: 149413b9336eeef428aff53ecaf6a1db,
-        type: 3}
-      propertyPath: m_Name
-      value: casinochips
-      objectReference: {fileID: 0}
-    - target: {fileID: 5146923076488375956, guid: 149413b9336eeef428aff53ecaf6a1db,
-        type: 3}
-      propertyPath: speed
-      value: 700
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425830372263038606, guid: 149413b9336eeef428aff53ecaf6a1db,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.317
-      objectReference: {fileID: 0}
-    - target: {fileID: 8425830372263038606, guid: 149413b9336eeef428aff53ecaf6a1db,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.207
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 149413b9336eeef428aff53ecaf6a1db, type: 3}
---- !u!1 &285386248 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2495249793813982013, guid: 149413b9336eeef428aff53ecaf6a1db,
-    type: 3}
-  m_PrefabInstance: {fileID: 285386247}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &285386249 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1511997467199068462, guid: 149413b9336eeef428aff53ecaf6a1db,
-    type: 3}
-  m_PrefabInstance: {fileID: 285386247}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &323225908 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1512866234497486073, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
@@ -913,48 +817,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 425716426, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 949791372, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 970173244, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 755291101631610862, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 755291101631610862, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 4.615
-      objectReference: {fileID: 0}
-    - target: {fileID: 755291101631610862, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 3708646485425323814, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: objectsToDeactivate.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: doorAnimator
-      value: 
-      objectReference: {fileID: 5273266731733337236}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[1].animation.animator
@@ -1025,11 +887,6 @@ PrefabInstance:
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[4].cameraTarget
       value: 
       objectReference: {fileID: 1411189595}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[5].cameraTarget
-      value: 
-      objectReference: {fileID: 285386249}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[7].animation.animator
@@ -1977,29 +1834,14 @@ PrefabInstance:
       objectReference: {fileID: 1411189595}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
-      propertyPath: objectsToDeactivate.Array.data[1]
+      propertyPath: doorAnimator
       value: 
-      objectReference: {fileID: 285386248}
+      objectReference: {fileID: 5273266731733337236}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: doorSource
       value: 
       objectReference: {fileID: 5273266731733337230}
-    - target: {fileID: 5760391216701521917, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 7028685321571780036, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8711830891425058972, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9173834014691732104, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: camTarget
@@ -2080,19 +1922,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dayak
       objectReference: {fileID: 0}
-    - target: {fileID: 9199909850651759779, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6, type: 3}
---- !u!4 &715808760 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 9173834014691732105, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-    type: 3}
-  m_PrefabInstance: {fileID: 715808759}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &831179860 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8047170885738875437, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
@@ -4752,248 +4583,6 @@ MonoBehaviour:
   customCookieDistanceFalloffPower: 2
   customAngularFalloffThreshold: 0.8
   customAngularFalloffPower: 2
---- !u!1001 &1980358500
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 9015561575518496181}
-    m_Modifications:
-    - target: {fileID: 1466146782633867825, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: m_Radius
-      value: 5.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[0].name
-      value: Ego
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[0].sentence
-      value: 'Why are so many big stones around here? They look like a puzzle.
-
-'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: saveIndex
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[0].audio.source
-      value: 
-      objectReference: {fileID: 1378851292}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[0].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: cf5c69dd039512f4286b52806f079192, type: 3}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[1].audio.source
-      value: 
-      objectReference: {fileID: 1378851293}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[1].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: d33539975aa12704abad2b9c40484193, type: 3}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[1].name
-      value: Elios
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[1].sentence
-      value: "[sighs] That are Gravestones\u2026"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[2].audio.source
-      value: 
-      objectReference: {fileID: 1378851292}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[2].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: d142c2a68d0ff4f4880da82fc7ea9ac6, type: 3}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[2].name
-      value: Ego
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[2].sentence
-      value: "Hm\u2026really? I heard of it! These are stones to remember dead people,
-        right? Wow\u2026 "
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[3].audio.source
-      value: 
-      objectReference: {fileID: 1378851293}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[3].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 9344f524d080ace4fae3dc5f53bc5855, type: 3}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[3].name
-      value: Elios
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[3].sentence
-      value: "\u2026"
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[4].audio.source
-      value: 
-      objectReference: {fileID: 1378851292}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[4].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 10e79216213852e47ad79dfaf96502ba, type: 3}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[4].name
-      value: Ego
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[4].sentence
-      value: Ahh. So we are walking over dead persons?!
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[5].audio.source
-      value: 
-      objectReference: {fileID: 1378851292}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[5].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: cf5c69dd039512f4286b52806f079192, type: 3}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[5].name
-      value: Ego
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[5].sentence
-      value: Are all the plants dead as well?
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[4].resultIndex
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[5].resultIndex
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[6].audio.source
-      value: 
-      objectReference: {fileID: 1378851293}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[6].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 8dcdb9d935856dc4b9097e5c096deb67, type: 3}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[6].name
-      value: Elios
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[6].sentence
-      value: '[Sigh]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: timedTalks.Array.data[6].resultIndex
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867827, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -15.72
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867827, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867827, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867827, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867827, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867827, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867827, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867827, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867827, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867827, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867827, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1466146782633867836, guid: 075e782944edeb849b60783a3552c5db,
-        type: 3}
-      propertyPath: m_Name
-      value: BetweenTrigger
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 075e782944edeb849b60783a3552c5db, type: 3}
 --- !u!4 &1995144031 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5738023402585142804, guid: 28f39d92bb08188449602cd35f923bda,
@@ -5705,6 +5294,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: cementery_szene
       objectReference: {fileID: 0}
+    - target: {fileID: 6734751284313072031, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: timedTalks.Array.data[0].audio.source
+      value: 
+      objectReference: {fileID: 1378851292}
+    - target: {fileID: 6734751284313072031, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: timedTalks.Array.data[1].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
+    - target: {fileID: 6734751284313072031, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: timedTalks.Array.data[2].audio.source
+      value: 
+      objectReference: {fileID: 1378851292}
+    - target: {fileID: 6734751284313072031, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: timedTalks.Array.data[3].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
+    - target: {fileID: 6734751284313072031, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: timedTalks.Array.data[4].audio.source
+      value: 
+      objectReference: {fileID: 1378851292}
+    - target: {fileID: 6734751284313072031, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: timedTalks.Array.data[5].audio.source
+      value: 
+      objectReference: {fileID: 1378851292}
+    - target: {fileID: 6734751284313072031, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: timedTalks.Array.data[6].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
     - target: {fileID: 6734751284699303501, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: timedTalks.Array.data[0].audio.source
@@ -6719,11 +6343,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7585603046839681250, guid: 0c90130a9962ef74fabfb9cf435c9158,
+        type: 3}
+      propertyPath: timedTalks.Array.data[0].audio.source
+      value: 
+      objectReference: {fileID: 1378851292}
+    - target: {fileID: 7585603046839681250, guid: 0c90130a9962ef74fabfb9cf435c9158,
+        type: 3}
+      propertyPath: timedTalks.Array.data[1].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
+    - target: {fileID: 7585603046839681250, guid: 0c90130a9962ef74fabfb9cf435c9158,
+        type: 3}
+      propertyPath: timedTalks.Array.data[2].audio.source
+      value: 
+      objectReference: {fileID: 1378851292}
+    - target: {fileID: 7585603046839681250, guid: 0c90130a9962ef74fabfb9cf435c9158,
+        type: 3}
+      propertyPath: timedTalks.Array.data[3].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c90130a9962ef74fabfb9cf435c9158, type: 3}
---- !u!4 &9015561575518496181 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6613805120641168072, guid: 0c90130a9962ef74fabfb9cf435c9158,
-    type: 3}
-  m_PrefabInstance: {fileID: 9015561575518496180}
-  m_PrefabAsset: {fileID: 0}
