@@ -601,7 +601,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 2672919893949804128}
-          clip: {fileID: 8300000, guid: b0a2b3ba3d51a044b93ab1819f882e8c, type: 3}
+          clip: {fileID: 8300000, guid: ef4bc760929dbfc428af2cdbe07336b0, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: "Time is so relative. For one it\u2019s faster than others.\r"
@@ -637,7 +637,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 2672919893949804128}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: ce5aa8f67bfa5394599992f06c6a7bb7, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: ' '
         sentence: Dayak stands in front of a table with 30 Casino Chips on it.
@@ -649,7 +649,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 2672919893949804128}
-          clip: {fileID: 8300000, guid: d4952c6cc64feb74c8012685e7c0ed00, type: 3}
+          clip: {fileID: 8300000, guid: ef4bc760929dbfc428af2cdbe07336b0, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: You should dare a risk and use your time worthful...
@@ -695,7 +695,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 9b340d1cbb3b10a4a95883fdaec44d0b, type: 3}
+          clip: {fileID: 8300000, guid: 9344f524d080ace4fae3dc5f53bc5855, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "Are you sure about that?\r"
@@ -719,7 +719,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: ecfcadf9efbc06e4b9bbe5365063064f, type: 3}
+          clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "[sighs]\r"
@@ -731,7 +731,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 3ed266bf85ea949458ed6c742224b750, type: 3}
+          clip: {fileID: 0}
         cameraTarget: {fileID: 9199909850651759779}
         name: ' '
         sentence: "Dayak presents the chips. \r"
@@ -743,7 +743,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 2672919893949804128}
-          clip: {fileID: 8300000, guid: ae3baadb9b248fa499924b7716389605, type: 3}
+          clip: {fileID: 8300000, guid: 70845be6b5d371c47b3131c335d11cd4, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: These are all yours. You left them behind to be prepared for this
@@ -756,7 +756,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 274813be7640c5c4b9fcd75e4a11d2e8, type: 3}
+          clip: {fileID: 8300000, guid: 63405c3e5a3b3654f9156839a9381b31, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "What are you talking about? I never saw them before. \r"
@@ -2008,7 +2008,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 2672919893949804128}
+          source: {fileID: 0}
           clip: {fileID: 0}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
