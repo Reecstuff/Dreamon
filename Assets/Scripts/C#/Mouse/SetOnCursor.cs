@@ -54,9 +54,9 @@ public class SetOnCursor : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Return))
+        if(Input.GetKeyDown(KeyCode.Space))
         {
-            Cursor.visible = true;
+            Cursor.visible = !Cursor.visible;
         }
 
         if(Time.timeScale > 0 && !Cursor.visible)
