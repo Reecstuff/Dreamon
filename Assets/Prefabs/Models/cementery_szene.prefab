@@ -6682,22 +6682,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[0].cameraTarget
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[1].animation.animator
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[1].audio.source
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[2].cameraTarget
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
@@ -6732,27 +6722,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[6].cameraTarget
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[7].animation.animator
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[7].audio.source
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[8].cameraTarget
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[11].cameraTarget
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
@@ -6767,22 +6742,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[13].cameraTarget
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[14].animation.animator
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[14].audio.source
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[16].cameraTarget
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
@@ -6797,22 +6762,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[18].cameraTarget
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[19].animation.animator
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[19].audio.source
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[20].cameraTarget
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
@@ -6828,6 +6783,11 @@ PrefabInstance:
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[22].cameraTarget
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[5].cameraTarget
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5760391216701521917, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
