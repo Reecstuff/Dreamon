@@ -60,11 +60,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hasInteracted: 0
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
-  outlineSpacing: 0.01
+  outlineSpacing: 0.2
   radius: 3
   interactionTransform: {fileID: 3029471949424239701}
   hasFocused: 1
-  isWin: 0
 --- !u!1001 &2383496516908464275
 PrefabInstance:
   m_ObjectHideFlags: 0

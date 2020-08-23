@@ -109,8 +109,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: bb31dedab7151bf438a0c1f37e94ce5c, type: 3}
         cameraTarget: {fileID: 0}
         name: 
-        sentence: '[A Creature is growing out of the Man''s body. It wants to go
-          forward, but is sticking to the Man''s body]'
+        sentence: '[A Creature is growing out of him.]'
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -122,8 +121,7 @@ MonoBehaviour:
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: 
-        sentence: '[Both are looking at the center of their body and then to each
-          other]'
+        sentence: '[It wants to go forward, but is sticking to the Man''s body]'
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -135,7 +133,8 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 4090ea609ce4fc94896cb15395fe6887, type: 3}
         cameraTarget: {fileID: 0}
         name: 
-        sentence: '[The Man gets up quickly]'
+        sentence: '[Both are looking to the center of their bodies and then to each
+          other.] '
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -144,10 +143,10 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: cf967cc205dece447bf587418eb541b4, type: 3}
+          clip: {fileID: 0}
         cameraTarget: {fileID: 0}
-        name: Creature
-        sentence: Wow... this place is so cool! Wait.., I can't move!
+        name: ' '
+        sentence: '[The Man gets up quickly.] '
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -159,9 +158,8 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 10e79216213852e47ad79dfaf96502ba, type: 3}
         cameraTarget: {fileID: 0}
         name: Creature
-        sentence: 'Where are my legs?!
-
-'
+        sentence: "(looking around) Wow... this place is so amazing! I can\u2019t
+          believe it!"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -173,7 +171,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 432202ea2a66fff4da99a4f4044a4da9, type: 3}
         cameraTarget: {fileID: 0}
         name: Man
-        sentence: "What\u2026? Who\u2026? "
+        sentence: "Wha\u2026? Who are you?"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -185,7 +183,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: e99295ca771ca794896f2324e8501189, type: 3}
         cameraTarget: {fileID: 0}
         name: Creature
-        sentence: "Oh\u2026 Ehm...hey... my name is Ego, and yours\u2026?"
+        sentence: Wait a moment... I can't move! Where are my legs?!
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -197,7 +195,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 5f82e4c00225e974ea4823008af81afb, type: 3}
         cameraTarget: {fileID: 0}
         name: Man
-        sentence: " Elios\u2026"
+        sentence: How should I know? What are you doing on my side?
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -209,7 +207,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: c07a970965d582b43af547235e074994, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
-        sentence: "Ehm\u2026 Do you know this place? "
+        sentence: "Oh\u2026 Ehm...hey... my name is Ego, and yours\u2026?"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -221,7 +219,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 347aa607581fc0e4297b160f971b2f81, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
-        sentence: No...
+        sentence: "[depressed sighs] Elios\u2026"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -233,7 +231,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: c2951428792baeb4f98b151c02e0be38, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
-        sentence: Are you alone here?
+        sentence: "Ehm\u2026 Do you know this place?"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -245,7 +243,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 63405c3e5a3b3654f9156839a9381b31, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
-        sentence: I guess so.
+        sentence: No...
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -257,7 +255,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 923cf273a96e6c744ad513532a81688c, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
-        sentence: "Not today! Let\u2019s be friends! "
+        sentence: Are you alone here?
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -269,7 +267,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 28d98e7573b34eb45a8a02d03a9f5a95, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
-        sentence: "I don\u2019t want a friend now..."
+        sentence: I guess so.
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -281,7 +279,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: c07a970965d582b43af547235e074994, type: 3}
         cameraTarget: {fileID: 0}
         name: 'Ego '
-        sentence: "Ohh\u2026 So you already have a friend!?"
+        sentence: "Not today! Let\u2019s be friends!"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -293,7 +291,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 9344f524d080ace4fae3dc5f53bc5855, type: 3}
         cameraTarget: {fileID: 0}
         name: 'Elios '
-        sentence: No. I am not interested.
+        sentence: "I don\u2019t want a friend now...\r"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -305,7 +303,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 25b520c26ba3ae44d981f2fa648dadb4, type: 3}
         cameraTarget: {fileID: 0}
         name: 'Ego '
-        sentence: "No? So let\u2019s be friends then!"
+        sentence: "Too bad\u2026 So you already have a friend?"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -317,7 +315,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 0044ed43783c1424393b48e70483ef6a, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
-        sentence: Get off me! I am not in the mood for speaking...
+        sentence: No. I am not interested.
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -329,7 +327,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: a4252ca2f5cca1843bf8c3f2f5891b28, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
-        sentence: "Maybe...if we play a game\u2026I will go."
+        sentence: "No? So let\u2019s be friends then!"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -341,7 +339,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 581845f88e1b648439223407ee6560fe, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
-        sentence: "If you say so\u2026 "
+        sentence: "Get off me... I am not in the mood for speaking\u2026"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -353,8 +351,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 10e79216213852e47ad79dfaf96502ba, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
-        sentence: "Really\u2026?! Awesome! You good at chess? Let\u2019s play! Let\u2019s
-          play! Let\u2019s play!"
+        sentence: "Maybe...if we play a game\u2026I will go."
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -365,9 +362,8 @@ MonoBehaviour:
           source: {fileID: 0}
           clip: {fileID: 8300000, guid: 01d5de9bed787b247adc9f214f318c78, type: 3}
         cameraTarget: {fileID: 0}
-        name: Ego
-        sentence: You just have to get one of your characters behind mine, but be
-          careful.
+        name: Elios
+        sentence: "[sighs] If you say so\u2026 "
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -379,7 +375,103 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
-        sentence: Because if you hit one of my figures then yours will be destroyed.
+        sentence: "Really\u2026?! Awesome! You good at chess?"
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Ego_Absent
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: "Not really\u2026\r"
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Ego_Absent
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: "This one is easy, don\u2019t worry! \r\n"
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Ego_Absent
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: "You just have to put one of your figures behind mine. \r"
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Ego_Absent
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: "If you reach the last line you win! \r"
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Ego_Absent
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: "That\u2019s all?\r"
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Ego_Absent
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: Ohh, I forgot.
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Ego_Absent
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: "Your figures will be destroyed when they hit mine... hihihi\r"
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Ego_Absent
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: "Let\u2019s play! Let\u2019s play! Let\u2019s play! \r"
       decisions: []
       nextDecisions: 
   - option:

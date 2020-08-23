@@ -5,12 +5,14 @@
 /// </summary>
 public class TurnAround : MonoBehaviour
 {
-    [Range(0,20)]
     [SerializeField]
     float speed = 10;
 
+    [SerializeField]
+    Vector3 rotateAroundThisVector = new Vector3(0, 1, 0);
+
     private void Update()
     {
-        transform.Rotate(Vector3.up * speed * Time.deltaTime, Space.Self);
+        transform.Rotate(rotateAroundThisVector * speed * Time.deltaTime, Space.Self);
     }
 }
