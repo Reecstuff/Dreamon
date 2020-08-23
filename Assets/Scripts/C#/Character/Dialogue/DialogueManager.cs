@@ -150,20 +150,21 @@ public class DialogueManager : MonoBehaviour
                 }
                 else
                 {
+                    selectedOpinion = decisionsButtons[0].GetComponent<DecisionButtons>().decisionNumber;
                     SelectOption(currentDialogObject.dialogue[currentDialogObject.currentDialogue]);
                 }
             }
             if(Input.GetKeyDown(KeyCode.Alpha1))
             {
-                selectedOpinion = 0;
+                selectedOpinion = decisionsButtons[0].GetComponent<DecisionButtons>().decisionNumber;
             }
             if(Input.GetKeyDown(KeyCode.Alpha2))
             {
-                selectedOpinion = 1;
+                selectedOpinion = decisionsButtons[1].GetComponent<DecisionButtons>().decisionNumber;
             }
             if (Input.GetKeyDown(KeyCode.Alpha3))
             {
-                selectedOpinion = 2;
+                selectedOpinion = decisionsButtons[2].GetComponent<DecisionButtons>().decisionNumber;
             }
         }
     }
