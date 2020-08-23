@@ -576,84 +576,11 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 2672919893949804128}
-          clip: {fileID: 8300000, guid: ef4bc760929dbfc428af2cdbe07336b0, type: 3}
-        cameraTarget: {fileID: 9199909850651759779}
-        name: Dayak
-        sentence: Hahaha. Time?! The infinite harmony of seconds, minutes and even
-          hours
-      - dialogAction: {fileID: 0}
-        animation:
-          animator: {fileID: 0}
-          AnimationStateName: Ego_ Questioning
-          secondAnimator: {fileID: 0}
-          SecondAnimationStateName: 
-        audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: c07a970965d582b43af547235e074994, type: 3}
-        cameraTarget: {fileID: 0}
-        name: Ego
-        sentence: "Ehem\u2026 Yea\u2026?"
-      - dialogAction: {fileID: 0}
-        animation:
-          animator: {fileID: 0}
-          AnimationStateName: 
-          secondAnimator: {fileID: 0}
-          SecondAnimationStateName: 
-        audio:
-          source: {fileID: 2672919893949804128}
-          clip: {fileID: 8300000, guid: ef4bc760929dbfc428af2cdbe07336b0, type: 3}
+          clip: {fileID: 0}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
-        sentence: "Time is so relative. For one it\u2019s faster than others.\r"
-      - dialogAction: {fileID: 0}
-        animation:
-          animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Rejecting
-          secondAnimator: {fileID: 0}
-          SecondAnimationStateName: 
-        audio:
-          source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 63405c3e5a3b3654f9156839a9381b31, type: 3}
-        cameraTarget: {fileID: 0}
-        name: Elios
-        sentence: "I just want to know the way out of here. \r"
-      - dialogAction: {fileID: 0}
-        animation:
-          animator: {fileID: 0}
-          AnimationStateName: 
-          secondAnimator: {fileID: 0}
-          SecondAnimationStateName: 
-        audio:
-          source: {fileID: 2672919893949804128}
-          clip: {fileID: 8300000, guid: 494701b4f4329844f97e89c26f17aaf4, type: 3}
-        cameraTarget: {fileID: 9199909850651759779}
-        name: Dayak
-        sentence: But your time is running out, my friend.
-      - dialogAction: {fileID: 0}
-        animation:
-          animator: {fileID: 0}
-          AnimationStateName: 
-          secondAnimator: {fileID: 0}
-          SecondAnimationStateName: 
-        audio:
-          source: {fileID: 2672919893949804128}
-          clip: {fileID: 8300000, guid: ce5aa8f67bfa5394599992f06c6a7bb7, type: 3}
-        cameraTarget: {fileID: 9199909850651759779}
-        name: ' '
-        sentence: Dayak stands in front of a table with 30 Casino Chips on it.
-      - dialogAction: {fileID: 0}
-        animation:
-          animator: {fileID: 0}
-          AnimationStateName: 
-          secondAnimator: {fileID: 0}
-          SecondAnimationStateName: 
-        audio:
-          source: {fileID: 2672919893949804128}
-          clip: {fileID: 8300000, guid: ef4bc760929dbfc428af2cdbe07336b0, type: 3}
-        cameraTarget: {fileID: 9199909850651759779}
-        name: Dayak
-        sentence: You should dare a risk and use your time worthful...
+        sentence: You should dare a risk and use your time worthful...  [giggles]
       decisions:
       - "Elios: Your laugh doesn\u2019t sound healthy. "
       - "Ego: C\u2019mon... Let\u2019s take the risk."
@@ -722,7 +649,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 347aa607581fc0e4297b160f971b2f81, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
-        sentence: "[sighs]\r"
+        sentence: "[sighs]\r Another game?\r"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -832,10 +759,36 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 8dcdb9d935856dc4b9097e5c096deb67, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
-        sentence: "Alright. Let\u2019s see what he offers."
+        sentence: "[exhales] I play the game\u2026 \r\n"
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Elios_Emo_ Annoyed
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 8dcdb9d935856dc4b9097e5c096deb67, type: 3}
+        cameraTarget: {fileID: 0}
+        name: Dayak
+        sentence: "Wonderful [grins] Now, set your amount of chips. hihi. We all
+          want to have a realistic luck game, right? hahaha\r"
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Elios_Emo_ Annoyed
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 8dcdb9d935856dc4b9097e5c096deb67, type: 3}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: ...
       decisions:
-      - "Ego: C\u2019mon... Let\u2019s take the risk."
-      nextDecisions: 02000000
+      - Set less than 20 chips
+      - Set 20 or more chips
+      nextDecisions: 0700000004000000
     - endSentence: 0
       nextMinigame: 0
       talks:
@@ -960,11 +913,11 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: f17b7bf5d1438fa4ea506680575b38a2, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
-        sentence: '[exhales]'
+        sentence: "[exhales] Alright, I play the game\u2026 "
       decisions:
       - Set less than 20 chips
       - Set 20 or more chips
-      nextDecisions: 0500000004000000
+      nextDecisions: 0700000004000000
     - endSentence: 0
       nextMinigame: 0
       talks:
@@ -1084,7 +1037,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 8f61ba6446d64884c8b3307929a6a2cd, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
-        sentence: "Why can\u2019t we just start?"
+        sentence: "Why can\u2019t we just start? I don\u2019t mind these chips...\r"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -1096,9 +1049,9 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: ea92f452c66a2024b9e91d4061ea85ce, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
-        sentence: "Haha Here is someone who is a bit impatient. Don\u2019t worry,
-          my friend. After this you will have all the time you need. Maybe in eternity?
-          haha"
+        sentence: "Haha without real money there is no fun in life. Don\u2019t worry,
+          my friend. After this little game you will have all the time you need.
+          Maybe in eternity? haha"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -1192,8 +1145,8 @@ MonoBehaviour:
         name: Dayak
         sentence: "You know what the phrase: \u201CNo risk, no fun\u201D means?"
       decisions:
-      - Player sets less than 20 chips
-      - Player sets 20 or more chips
+      - Sets less than 20 chips
+      - Sets 20 or more chips
       nextDecisions: 0600000004000000
     - endSentence: 0
       nextMinigame: 0
@@ -1210,10 +1163,29 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Didn\u2019t you hear me? Don\u2019t be so stingy! Set mooore,
-          I want mooore!!! At least 20!"
+          I want mooore!!! At least 20!\r"
       decisions:
       - Set 20 or more chips
       nextDecisions: 04000000
+    - endSentence: 0
+      nextMinigame: 0
+      talks:
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Ego_ Demanding
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: ea45bf52436c4014f91bba2c9e654d98, type: 3}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: "Why so less, Elios? Don\u2019t be stingy."
+      decisions:
+      - Sets less than 20 chips
+      - Set 20 or more chips
+      nextDecisions: 0500000004000000
   - option:
     - endSentence: 1
       nextMinigame: 1
@@ -1409,7 +1381,7 @@ MonoBehaviour:
         sentence: So my dear friends... again. Do you want to take the ultimate risk?
           Do you want to know the almighty TRUTH. hahahahahahah
       decisions:
-      - "Ohh Dayak, you don\u2019t how much I desire the truth..."
+      - "Ohh Dayak, you don\u2019t know how much I desire the truth..."
       - "I\u2019ve got no desire."
       nextDecisions: 0200000003000000
     - endSentence: 1
@@ -1773,7 +1745,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: ef4bc760929dbfc428af2cdbe07336b0, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
-        sentence: "hehehe No...your wrong. On the one hand it is true that humans
+        sentence: "hehehe No... you're wrong. On the one hand it is true that humans
           can\u2019t handle the truth but on the other hand it isn\u2019t the reason
           for secrets. Think about it\u2026 Humans are egocentric beings."
       - dialogAction: {fileID: 0}
@@ -1789,7 +1761,7 @@ MonoBehaviour:
         name: Dayak
         sentence: "When humans do actions for others they do want a kind of reward.
           They don\u2019t have secrets to protect other people... They have secrets
-          because humans don\u2019t want to tell the truth hahah"
+          because humans don\u2019t want to tell the truth at all hahaha"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -1838,8 +1810,8 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 691e8ee553131f741a18464dd93295ce, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
-        sentence: 'Look what I got here. Hehe For you humans a ring has different
-          meanings. There are people who are wearing them as an accessoire. '
+        sentence: Look what I got here. Hehe For you humans a ring has different
+          meanings. Some are wearing them as a nice accessoire...
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -1851,7 +1823,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: e43d4a3290af93d40be1971233136e35, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
-        sentence: "But the real meaning of a ring is the infinite bond of marriage.
+        sentence: "But... the real meaning of a ring is the infinite bond of marriage.
           A ring\u2026 a simple circle. Circles have something cosmic....Yeah even
           unearthly\u2026 Don\u2019t you think?"
       - dialogAction: {fileID: 0}
@@ -1934,8 +1906,8 @@ MonoBehaviour:
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: ' '
-        sentence: 'Dayak gives Elios the ring. The ring burns in the hand of Elios
-          and he lets the ring fall down. '
+        sentence: "Dayak gives us the ring. The ring burns into the hand of Elios
+          and he drops the ring afterwards. \r"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -1947,7 +1919,9 @@ MonoBehaviour:
           clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: Elios
-        sentence: Ahhh, this burns!
+        sentence: 'Ahhh... this burns!
+
+'
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -1985,8 +1959,20 @@ MonoBehaviour:
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
         sentence: "Sometimes eternity hurts. You couldn\u2019t handle it, Elios.
-          hihihi But wasn\u2019t it hot in the same time? I see, what humans mean
-          by marriage doesn\u2019t need to cool down."
+          hihihi But wasn\u2019t it hot at the same time? [grins] "
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Ego_ Calmdown
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 8b78ac54db1406646bf871abde7c9d46, type: 3}
+        cameraTarget: {fileID: 9199909850651759779}
+        name: Dayak
+        sentence: "I see, what humans mean by marriage doesn\u2019t need to cool
+          down. "
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -1998,21 +1984,81 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 8b78ac54db1406646bf871abde7c9d46, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
-        sentence: "Ohh Elios, don\u2019t think too much about this ring. I don\u2019t
-          want to be sad. Dayak, do you think death can be\u2026 magnificent? I just
-          wonder\u2026"
+        sentence: 'Am I human, Dayak? '
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: 
+          AnimationStateName: Ego_ Calmdown
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 2672919893949804128}
-          clip: {fileID: 8300000, guid: 1ca38ba4dd67ed6429b727932cf2a238, type: 3}
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 8b78ac54db1406646bf871abde7c9d46, type: 3}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: "hmmm\u2026"
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Ego_ Calmdown
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 8b78ac54db1406646bf871abde7c9d46, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
-        sentence: "Wonderful\u2026 WONDERFUL\u2026     AHHHHHHHHHHHHHHHHHIHIHIHIHIHUHHHHHAHAHAHAIHIHH"
+        sentence: "Wonderful, my little friend. Really wonderful\u2026 haha\r\nBut,
+          don\u2019t you know it already? You are just a fiction of Elios. hihi\r"
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Ego_ Calmdown
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 8b78ac54db1406646bf871abde7c9d46, type: 3}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: "But\u2026 That can\u2019t be. I am real! Elios, tell me I am real!!!"
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Ego_ Calmdown
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 8b78ac54db1406646bf871abde7c9d46, type: 3}
+        cameraTarget: {fileID: 0}
+        name: Elios
+        sentence: ...
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Ego_ Calmdown
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 8b78ac54db1406646bf871abde7c9d46, type: 3}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: "So, if I am really nothing. Does this all matter anything? Everything
+          feels so\u2026 meaningless\u2026 "
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Ego_ Calmdown
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 8b78ac54db1406646bf871abde7c9d46, type: 3}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: Hahahahahahahahahahahahahahahahahahaha
       decisions: []
       nextDecisions: 
     - endSentence: 1
@@ -2054,8 +2100,8 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 9ebc285e0e554ae409d90ab7e3fc7527, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
-        sentence: "It\u2019s your decision, little Elios, hihihi. But don\u2019t
-          come crying when you miss the memory this ring offer."
+        sentence: "It\u2019s your decision, little Elios, hihihi. But  if you are
+          nostalgic sometimes, don\u2019t come back crying."
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -2067,7 +2113,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 5f743877ef78af44389212b2a810cb9e, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
-        sentence: "I won\u2019t cry. I don\u2019t want to see this ring anymore.
+        sentence: "I won\u2019t cry. I don\u2019t want to see this ring ever again.
           Leave me alone!"
       - dialogAction: {fileID: 0}
         animation:
@@ -2080,7 +2126,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: ce5aa8f67bfa5394599992f06c6a7bb7, type: 3}
         cameraTarget: {fileID: 9199909850651759779}
         name: Dayak
-        sentence: "We will see each other again, Elios. Soon\u2026"
+        sentence: "We will meet each other again, Elios. Soon\u2026 [grins]\r"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -2092,7 +2138,7 @@ MonoBehaviour:
           clip: {fileID: 0}
         cameraTarget: {fileID: 9199909850651759779}
         name: ' '
-        sentence: Dayak moves backwards and disappears in the darkness.
+        sentence: Dayak moves backwards and disappears into the darkness.
       decisions: []
       nextDecisions: 
   - option:
