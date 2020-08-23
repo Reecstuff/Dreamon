@@ -917,7 +917,7 @@ MonoBehaviour:
       decisions:
       - Set less than 20 chips
       - Set 20 or more chips
-      nextDecisions: 0500000004000000
+      nextDecisions: 0700000004000000
     - endSentence: 0
       nextMinigame: 0
       talks:
@@ -1147,7 +1147,7 @@ MonoBehaviour:
       decisions:
       - Sets less than 20 chips
       - Sets 20 or more chips
-      nextDecisions: 0700000004000000
+      nextDecisions: 0600000004000000
     - endSentence: 0
       nextMinigame: 0
       talks:
