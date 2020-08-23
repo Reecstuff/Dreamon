@@ -522,8 +522,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 19ac4547c53c3d542ae8af5d64f7e4d7, type: 3}
         cameraTarget: {fileID: 4064219054117916809}
         name: Ego
-        sentence: "No, of course not. I've just\u2026 never seen the death so\u2026
-          close\u2026"
+        sentence: "No, of course not. I've just\u2026 never seen death so\u2026 close\u2026\r"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -535,7 +534,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 63405c3e5a3b3654f9156839a9381b31, type: 3}
         cameraTarget: {fileID: 4064219054117916809}
         name: Elios
-        sentence: "Hmpf. Why are you so fascinated about the death\u2026?"
+        sentence: "Hmpf. Why are you so fascinated about death\u2026?"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
