@@ -2055,7 +2055,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 8b78ac54db1406646bf871abde7c9d46, type: 3}
+          clip: {fileID: 8300000, guid: bfbe684ce4933ed43a4723710c33accf, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: Hahahahahahahahahahahahahahahahahahaha
