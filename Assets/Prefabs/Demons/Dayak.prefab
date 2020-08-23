@@ -719,7 +719,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 347aa607581fc0e4297b160f971b2f81, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "[sighs]\r"
@@ -730,7 +730,7 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 0}
+          source: {fileID: 2672919893949804128}
           clip: {fileID: 0}
         cameraTarget: {fileID: 1511997466266312926}
         name: ' '
@@ -1549,7 +1549,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 7290778260243490260}
-          clip: {fileID: 8300000, guid: 3fb2e2ca67c5d6d44b2d8b98e1dcb73c, type: 3}
+          clip: {fileID: 8300000, guid: 1675d13edf7479541a15125eccff9631, type: 3}
         cameraTarget: {fileID: 7683334454249657594}
         name: Dementum
         sentence: Hey kid, long time no see. You want a drink?

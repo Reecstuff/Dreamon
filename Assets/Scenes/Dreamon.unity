@@ -884,6 +884,11 @@ PrefabInstance:
       objectReference: {fileID: 1378851289}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[4].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[4].cameraTarget
       value: 
       objectReference: {fileID: 1411189595}
