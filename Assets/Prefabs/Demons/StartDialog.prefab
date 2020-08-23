@@ -143,7 +143,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: cf967cc205dece447bf587418eb541b4, type: 3}
+          clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: ' '
         sentence: '[The Man gets up quickly.] '
