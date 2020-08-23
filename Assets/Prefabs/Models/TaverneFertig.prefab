@@ -9397,11 +9397,23 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 5263941446477949815}
-          clip: {fileID: 8300000, guid: bde4b0b52df76f248a80ea0461de793b, type: 3}
-        cameraTarget: {fileID: 252570978505166740}
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
+        name: Ego
+        sentence: "What\u2019s going on with this bottle?  "
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 0}
+        cameraTarget: {fileID: 0}
         name: Elios
-        sentence: "What\u2019s going on with this bottle?"
+        sentence: " It\u2019s over\u2026 We can leave this scruffy mess behind.\r"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -9413,7 +9425,33 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: ecfcadf9efbc06e4b9bbe5365063064f, type: 3}
         cameraTarget: {fileID: 252570978505166740}
         name: Ego
-        sentence: "It\u2019s over\u2026 You can leave this scruffy mess behind, Elios."
+        sentence: "But this noise? \r"
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 5263941446477949815}
+          clip: {fileID: 8300000, guid: ecfcadf9efbc06e4b9bbe5365063064f, type: 3}
+        cameraTarget: {fileID: 252570978505166740}
+        name: Elios
+        sentence: 'We can move on now.
+
+'
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 5263941446477949815}
+          clip: {fileID: 8300000, guid: ecfcadf9efbc06e4b9bbe5365063064f, type: 3}
+        cameraTarget: {fileID: 252570978505166740}
+        name: Ego
+        sentence: Hm, you are right.
       decisions: []
       nextDecisions: 
   currentDialogue: 0
@@ -12601,8 +12639,8 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: cf5c69dd039512f4286b52806f079192, type: 3}
         cameraTarget: {fileID: 8054822406851787423}
         name: Ego
-        sentence: "Why you wanna go now? Don\u2019t run from the things. You have
-          to face them!\r"
+        sentence: "Why you wanna go now? Don\u2019t run from things. You have to
+          face it!\r"
       decisions: []
       nextDecisions: 
   currentDialogue: 0
