@@ -530,7 +530,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: cc66e3922f7568b4280dca8a230ad004, type: 3}
+          clip: {fileID: 8300000, guid: 14b43c25e0d3a73448efb11e2fb07fec, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "Oh\u2026 I suppose I won\u2026"
@@ -555,7 +555,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 5f743877ef78af44389212b2a810cb9e, type: 3}
+          clip: {fileID: 8300000, guid: 8f61ba6446d64884c8b3307929a6a2cd, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: 'No. I won. We had a deal...
@@ -615,7 +615,7 @@ MonoBehaviour:
       SecondAnimationStateName: 
     audio:
       source: {fileID: 0}
-      clip: {fileID: 8300000, guid: 2486578f8d56c93469db60d2a9633aa6, type: 3}
+      clip: {fileID: 8300000, guid: e99295ca771ca794896f2324e8501189, type: 3}
     cameraTarget: {fileID: 0}
     name: Ego
     sentence: "Finally\u2026! It\u2019s playtime!"
