@@ -351,7 +351,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 0.78039217, g: 0.96569234, b: 0.98039216, a: 1}
-  m_Intensity: 0
+  m_Intensity: 0.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -949,7 +949,7 @@ PrefabInstance:
     - target: {fileID: 5138805801812047898, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6321706371427318194, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
@@ -7294,6 +7294,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CandleLight
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f6ed800c864114a42a2b17acd84a6188, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.96
@@ -9529,7 +9533,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 024a2cbfe1a7b49499cb57d83e349e04, type: 2}
+      objectReference: {fileID: 2100000, guid: b4e9046306e15aa4c9632d60011e7df2, type: 2}
     - target: {fileID: 8285436709463214230, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: m_LocalRotation.y
@@ -10448,7 +10452,7 @@ PrefabInstance:
     - target: {fileID: 7156026689946373129, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
@@ -10469,7 +10473,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].cameraTarget
       value: 
-      objectReference: {fileID: 1198012143}
+      objectReference: {fileID: 1301637982}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[1].animation.animator
@@ -10974,7 +10978,7 @@ PrefabInstance:
         type: 3}
       propertyPath: camPosition
       value: 
-      objectReference: {fileID: 1497176089}
+      objectReference: {fileID: 729593466}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].animation.AnimationStateName
