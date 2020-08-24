@@ -75,7 +75,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2bdce08c02355b94ab3da141e9827148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasInteracted: 0
+  hasInteracted: 1
   outlineColor: {r: 1, g: 1, b: 1, a: 1}
   outlineSpacing: 0.01
   radius: 3
@@ -228,7 +228,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: c2951428792baeb4f98b151c02e0be38, type: 3}
+          clip: {fileID: 8300000, guid: c07a970965d582b43af547235e074994, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Ehm\u2026 Do you know this place?"
@@ -252,7 +252,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 923cf273a96e6c744ad513532a81688c, type: 3}
+          clip: {fileID: 8300000, guid: 01d5de9bed787b247adc9f214f318c78, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: Are you alone here?
@@ -276,7 +276,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: c07a970965d582b43af547235e074994, type: 3}
+          clip: {fileID: 8300000, guid: 923cf273a96e6c744ad513532a81688c, type: 3}
         cameraTarget: {fileID: 0}
         name: 'Ego '
         sentence: "Not today! Let\u2019s be friends!"
@@ -300,7 +300,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 25b520c26ba3ae44d981f2fa648dadb4, type: 3}
+          clip: {fileID: 8300000, guid: cf5c69dd039512f4286b52806f079192, type: 3}
         cameraTarget: {fileID: 0}
         name: 'Ego '
         sentence: "Too bad\u2026 So you already have a friend?"
@@ -312,7 +312,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 0044ed43783c1424393b48e70483ef6a, type: 3}
+          clip: {fileID: 8300000, guid: 581845f88e1b648439223407ee6560fe, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: No. I am not interested.
@@ -336,7 +336,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 581845f88e1b648439223407ee6560fe, type: 3}
+          clip: {fileID: 8300000, guid: 0044ed43783c1424393b48e70483ef6a, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "Get off me... I am not in the mood for speaking\u2026"
@@ -348,7 +348,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 10e79216213852e47ad79dfaf96502ba, type: 3}
+          clip: {fileID: 8300000, guid: a4252ca2f5cca1843bf8c3f2f5891b28, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Maybe...if we play a game\u2026I will go."
@@ -360,7 +360,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 01d5de9bed787b247adc9f214f318c78, type: 3}
+          clip: {fileID: 8300000, guid: 5f82e4c00225e974ea4823008af81afb, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "[sighs] If you say so\u2026 "
@@ -372,7 +372,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
+          clip: {fileID: 8300000, guid: 10e79216213852e47ad79dfaf96502ba, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Really\u2026?! Awesome! You good at chess?"
@@ -384,7 +384,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
+          clip: {fileID: 8300000, guid: c4944a2a12c75ff45bd578379260613a, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "Not really\u2026\r"
@@ -396,7 +396,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
+          clip: {fileID: 8300000, guid: cf967cc205dece447bf587418eb541b4, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "This one is easy, don\u2019t worry! \r\n"
@@ -408,7 +408,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
+          clip: {fileID: 8300000, guid: fac248c5553edd44ea6a6edb52a633b1, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "You just have to put one of your figures behind mine. \r"
@@ -420,7 +420,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
+          clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "If you reach the last line you win! \r"
@@ -432,7 +432,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
+          clip: {fileID: 8300000, guid: 9b340d1cbb3b10a4a95883fdaec44d0b, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "That\u2019s all?\r"
@@ -444,7 +444,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
+          clip: {fileID: 8300000, guid: c2951428792baeb4f98b151c02e0be38, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: Ohh, I forgot.
@@ -456,7 +456,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
+          clip: {fileID: 0}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Your figures will be destroyed when they hit mine... hihihi\r"
@@ -468,7 +468,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 43e6488d2e68dde41ac43d4ebb11df14, type: 3}
+          clip: {fileID: 8300000, guid: 2486578f8d56c93469db60d2a9633aa6, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Let\u2019s play! Let\u2019s play! Let\u2019s play! \r"
@@ -498,7 +498,7 @@ MonoBehaviour:
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: dbe779a1da4a27749a9443ec1be4debf, type: 3}
+          clip: {fileID: 8300000, guid: e99295ca771ca794896f2324e8501189, type: 3}
         cameraTarget: {fileID: 0}
         name: 'Ego '
         sentence: "Yea\u2026 of course I won, I knew it!"
