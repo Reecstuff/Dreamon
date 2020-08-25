@@ -72,7 +72,7 @@ LightmapSettings:
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
-    m_BakeBackend: 2
+    m_BakeBackend: 1
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 64
     m_PVRSampleCount: 512
@@ -1616,7 +1616,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[2].option.Array.data[4].talks.Array.data[10].animation.animator
       value: 
-      objectReference: {fileID: 575323367}
+      objectReference: {fileID: 1378851289}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: dialogue.Array.data[2].option.Array.data[4].talks.Array.data[10].audio.source
@@ -1627,11 +1627,6 @@ PrefabInstance:
       propertyPath: dialogue.Array.data[2].option.Array.data[4].talks.Array.data[10].cameraTarget
       value: 
       objectReference: {fileID: 1411189595}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[4].talks.Array.data[11].animation.animator
-      value: 
-      objectReference: {fileID: 575323367}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: dialogue.Array.data[2].option.Array.data[4].talks.Array.data[12].animation.animator
@@ -1651,7 +1646,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[2].option.Array.data[4].talks.Array.data[13].animation.animator
       value: 
-      objectReference: {fileID: 575323367}
+      objectReference: {fileID: 1378851289}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: dialogue.Array.data[2].option.Array.data[4].talks.Array.data[13].audio.source
@@ -5673,6 +5668,36 @@ PrefabInstance:
     - target: {fileID: 1283069029152691190, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916603889488691868, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: m_Shadows.m_Resolution
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916603889488691868, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.x
+      value: -0.03740692
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916603889488691868, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.y
+      value: 0.078481674
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916603889488691868, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.z
+      value: -0.038561344
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916603889488691868, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: m_BoundingSphereOverride.w
+      value: 0.0060813427
+      objectReference: {fileID: 0}
+    - target: {fileID: 1916603889488691868, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2852249311375614437, guid: e553e249068c32e4aa28f62b9e29f012,

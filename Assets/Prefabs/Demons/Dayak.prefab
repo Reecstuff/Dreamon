@@ -1988,7 +1988,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_ Calmdown
+          AnimationStateName: Elios_Emo_ Serious
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -2000,7 +2000,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_ Calmdown
+          AnimationStateName: 
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -2013,7 +2013,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_ Calmdown
+          AnimationStateName: Ego_ Frightened
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -2025,7 +2025,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_ Calmdown
+          AnimationStateName: Elios_Emo_ Rejecting
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -2037,7 +2037,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_ Calmdown
+          AnimationStateName: Ego_ Dissappointed
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -2050,7 +2050,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_ Calmdown
+          AnimationStateName: Ego_ Exited
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
