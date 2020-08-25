@@ -396,7 +396,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: -0.8, y: 7.2000003, z: 7.2, w: -8.8}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -949,7 +949,7 @@ PrefabInstance:
     - target: {fileID: 5138805801812047898, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6321706371427318194, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
@@ -10473,12 +10473,12 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].cameraTarget
       value: 
-      objectReference: {fileID: 1301637982}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[1].animation.animator
       value: 
-      objectReference: {fileID: 1378851289}
+      objectReference: {fileID: 575323367}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[1].audio.source
@@ -10493,7 +10493,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[2].animation.secondAnimator
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 575323367}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[2].cameraTarget
@@ -10508,7 +10508,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[3].animation.secondAnimator
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 575323367}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[3].audio.source
@@ -10978,7 +10978,7 @@ PrefabInstance:
         type: 3}
       propertyPath: camPosition
       value: 
-      objectReference: {fileID: 729593466}
+      objectReference: {fileID: 7156026689738615708}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].animation.AnimationStateName
@@ -10987,7 +10987,7 @@ PrefabInstance:
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[1].animation.AnimationStateName
-      value: Elios_Getting_Up_Trailer
+      value: Ego_ GrowingOutOfElios
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
@@ -10997,25 +10997,31 @@ PrefabInstance:
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[2].animation.AnimationStateName
-      value: Elios_Lying
+      value: Elios_Waking_Up
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[3].animation.AnimationStateName
-      value: Elios_Getting_Up_Trailer
+      value: Elios_Getting_Up
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[2].animation.SecondAnimationStateName
-      value: 
+      value: Ego_ LookingAtElios
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[3].animation.SecondAnimationStateName
-      value: 
+      value: Ego_Idle_02
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ecaff3d0076bb6428f674170f69227b, type: 3}
+--- !u!4 &7156026689738615708 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 266097371674798222, guid: 1ecaff3d0076bb6428f674170f69227b,
+    type: 3}
+  m_PrefabInstance: {fileID: 7156026689738615707}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8296172669285715175 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2495249793813982013, guid: 149413b9336eeef428aff53ecaf6a1db,
