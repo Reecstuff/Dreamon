@@ -537,7 +537,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          AnimationStateName: Elios_Emo_ Rejecting
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -549,7 +549,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          AnimationStateName: Elios_Emo_ LookingAtEgo
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -561,7 +561,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          AnimationStateName: Ego_ Begging
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -573,7 +573,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          AnimationStateName: Ego_ Demanding
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -824,8 +824,8 @@ MonoBehaviour:
         sentence: "Haha. You can\u2019t listen one second, can\u2019t you?...\r"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Ego_ Demanding
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Pushy
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -836,8 +836,8 @@ MonoBehaviour:
         sentence: "It's the most disgusting tasting substance ever. \r"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Ego_ Demanding
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Tick
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -849,7 +849,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_ Demanding
+          AnimationStateName: Ego_ Questioning
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -861,8 +861,8 @@ MonoBehaviour:
           \r"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Ego_ Demanding
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Drinking
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -873,8 +873,8 @@ MonoBehaviour:
         sentence: ...
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Ego_ Demanding
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Cheers
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -962,8 +962,8 @@ MonoBehaviour:
         sentence: No.
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Laughing
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -971,7 +971,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: de5cce5bcad96de439d2bf060cf67284, type: 3}
         cameraTarget: {fileID: 1657253038}
         name: Dementum
-        sentence: You need to face me to find the way out of here. [grins]
+        sentence: You need to face me to find the way out of here.
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -989,7 +989,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          AnimationStateName: Ego_ Exited
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1002,7 +1002,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          AnimationStateName: Elios_Emo_ Rejecting
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1014,7 +1014,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          AnimationStateName: Ego_ Amused
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1026,7 +1026,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          AnimationStateName: Elios_Emo_ Depressive
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1037,8 +1037,8 @@ MonoBehaviour:
         sentence: "Alright. We play. \r\n"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Getting_Drinks
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1049,8 +1049,8 @@ MonoBehaviour:
         sentence: 'Dementum brings the jugs in front of Elios and Ego. '
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Explaining_Game1
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1061,8 +1061,8 @@ MonoBehaviour:
         sentence: Open your lug holes, kid.
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Explaining_Game2
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1087,8 +1087,8 @@ MonoBehaviour:
 '
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Explaining_Game3
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1099,8 +1099,8 @@ MonoBehaviour:
         sentence: "Haha. You can\u2019t listen one second, can\u2019t you?...\r\n"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Telling
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1111,20 +1111,20 @@ MonoBehaviour:
         sentence: "It's the most disgusting tasting substance ever. \r\n"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Pushy
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 1080324107628060643}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: aae5ca03677f4f246bbf06e4a6b6722b, type: 3}
         cameraTarget: {fileID: 1657253038}
         name: Dementum
         sentence: "Simple water is your way to victory\u2026 \r\n"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          AnimationStateName: Ego_ Exited
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1136,7 +1136,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          AnimationStateName: Elios_Emo_Accused
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1147,8 +1147,8 @@ MonoBehaviour:
         sentence: ...
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Cheers
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1160,7 +1160,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          AnimationStateName: Ego_ Demanding
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1232,8 +1232,8 @@ MonoBehaviour:
         sentence: "You can\u2019t make it. I am a part of you. hahaha"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 1784327008}
-          AnimationStateName: Dementum_ Laughing
+          animator: {fileID: 0}
+          AnimationStateName: Ego_ Dissappointed
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1244,8 +1244,8 @@ MonoBehaviour:
         sentence: "Why can\u2019t you handle a little bit of alcohol?"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 1784327008}
-          AnimationStateName: Dementum_ Laughing
+          animator: {fileID: 0}
+          AnimationStateName: Elios_Emo_ Rejecting
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1256,8 +1256,8 @@ MonoBehaviour:
         sentence: "I don\u2019t like it\u2026"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 1784327008}
-          AnimationStateName: Dementum_ Laughing
+          animator: {fileID: 0}
+          AnimationStateName: Ego_ Sulky
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1268,8 +1268,8 @@ MonoBehaviour:
         sentence: "Hmpf... But we\u2019ve lost, because of your stupid resistance\u2026"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 1784327008}
-          AnimationStateName: Dementum_ Laughing
+          animator: {fileID: 0}
+          AnimationStateName: Ego_ Demanding
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1280,13 +1280,13 @@ MonoBehaviour:
         sentence: "I\u2019d love to drink more of this\u2026 joyness\u2026 "
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 1784327008}
-          AnimationStateName: Dementum_ Laughing
+          animator: {fileID: 0}
+          AnimationStateName: Elios_Emo_ Annoyed
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: 9fe6c9db52d54e443a1edea255852bdf, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "...  \r"
@@ -1390,8 +1390,8 @@ MonoBehaviour:
         sentence: "Don\u2019t you love me anymore?\n"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Stop_It
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Pushy
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -1402,10 +1402,10 @@ MonoBehaviour:
         sentence: "You can\u2019t escape me, I am part of you, Elios! \r"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 1784327008}
-          AnimationStateName: Dementum_ Endpart2
+          animator: {fileID: 0}
+          AnimationStateName: Elios_Emo_ Stop_It
           secondAnimator: {fileID: 0}
-          SecondAnimationStateName: Ego_ Relieved
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 8300000, guid: 1d2ace3c2b61b9d488a37a1b457624bf, type: 3}
@@ -1417,9 +1417,9 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 1784327008}
-          AnimationStateName: Dementum_ Endpart2
+          AnimationStateName: Dementum_ Endpart1
           secondAnimator: {fileID: 0}
-          SecondAnimationStateName: Ego_ Relieved
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 1080324107628060643}
           clip: {fileID: 8300000, guid: 335b6cdedd2730b49a3f63aa4863f06e, type: 3}
@@ -1429,9 +1429,21 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 1784327008}
-          AnimationStateName: Dementum_ Endpart2
+          AnimationStateName: Dementum_ Endpart1
           secondAnimator: {fileID: 0}
-          SecondAnimationStateName: Ego_ Relieved
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 1080324107628060643}
+          clip: {fileID: 8300000, guid: 335b6cdedd2730b49a3f63aa4863f06e, type: 3}
+        cameraTarget: {fileID: 5219269308381401104}
+        name: 
+        sentence: Dementum is flying backwards and dissapears into the darkness...
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: Ego_ Questioning
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 8300000, guid: cf5c69dd039512f4286b52806f079192, type: 3}
@@ -1440,10 +1452,10 @@ MonoBehaviour:
         sentence: "Wow\u2026 that came unexpected. How could he be a part of you?\r"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 1784327008}
-          AnimationStateName: Dementum_ Endpart2
+          animator: {fileID: 0}
+          AnimationStateName: Elios_Emo_ LookingAtEgo
           secondAnimator: {fileID: 0}
-          SecondAnimationStateName: Ego_ Relieved
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 8300000, guid: 63405c3e5a3b3654f9156839a9381b31, type: 3}
@@ -1452,10 +1464,10 @@ MonoBehaviour:
         sentence: "Who knows\u2026 "
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 1784327008}
-          AnimationStateName: Dementum_ Endpart2
+          animator: {fileID: 0}
+          AnimationStateName: Ego_ Exited
           secondAnimator: {fileID: 0}
-          SecondAnimationStateName: Ego_ Relieved
+          SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
           clip: {fileID: 8300000, guid: 8d6af9e058150954988a34a5a2fab5e0, type: 3}

@@ -355,7 +355,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_ Serious
+          AnimationStateName: Elios_Emo_ Depressive
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -367,7 +367,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_Absent
+          AnimationStateName: Ego_ Exited
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -379,7 +379,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_Absent
+          AnimationStateName: Elios_Emo_ Rejecting
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -391,7 +391,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_Absent
+          AnimationStateName: Ego_ Amused
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -403,7 +403,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_Absent
+          AnimationStateName: Ego_ Serious
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -415,7 +415,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_Absent
+          AnimationStateName: Ego_ Wow
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -427,7 +427,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_Absent
+          AnimationStateName: Elios_Emo_ LookingAtEgo
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -439,7 +439,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_Absent
+          AnimationStateName: Ego_ Questioning
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -451,19 +451,19 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_Absent
+          AnimationStateName: Ego_ Amused
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 0}
+          clip: {fileID: 8300000, guid: e99295ca771ca794896f2324e8501189, type: 3}
         cameraTarget: {fileID: 0}
         name: Ego
         sentence: "Your figures will be destroyed when they hit mine... hihihi\r"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_Absent
+          AnimationStateName: Ego_ Exited
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
