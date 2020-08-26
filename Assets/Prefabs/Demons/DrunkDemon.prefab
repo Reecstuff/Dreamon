@@ -270,8 +270,8 @@ MonoBehaviour:
         sentence: "What the\u2026Ohm\u2026 Why is he naked?"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 1784327008}
-          AnimationStateName: Dementum_ Drunk
+          animator: {fileID: 0}
+          AnimationStateName: Elios_Emo_ Annoyed
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -282,8 +282,8 @@ MonoBehaviour:
         sentence: ...
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Depressive
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Drunk
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -295,12 +295,12 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_ Questioning
+          AnimationStateName: Elios_Emo_ FakeSmile
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
           source: {fileID: 0}
-          clip: {fileID: 8300000, guid: 1d2ace3c2b61b9d488a37a1b457624bf, type: 3}
+          clip: {fileID: 8300000, guid: 60096453801765a4b96fbe5c3bd367c8, type: 3}
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: 'I guess not.
@@ -308,8 +308,8 @@ MonoBehaviour:
 '
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 1784327008}
-          AnimationStateName: Dementum_ Rude
+          animator: {fileID: 0}
+          AnimationStateName: Ego_Idle_02
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -320,8 +320,8 @@ MonoBehaviour:
         sentence: Hey, listen to me! I am here!
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Ego_ Sulky
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Pushy
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -334,7 +334,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Rejecting
+          AnimationStateName: Ego_ Sulky
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -345,8 +345,8 @@ MonoBehaviour:
         sentence: "You\u2019re rude and naked\u2026 "
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 1784327008}
-          AnimationStateName: Dementum_ Bragging
+          animator: {fileID: 0}
+          AnimationStateName: Elios_Emo_ LookingAtEgo
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -359,8 +359,8 @@ MonoBehaviour:
 '
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Serious
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Tick
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -372,8 +372,8 @@ MonoBehaviour:
           and drink with an old man!"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 1784327008}
-          AnimationStateName: Dementum_ Tick
+          animator: {fileID: 0}
+          AnimationStateName: Elios_Emo_ Rejecting
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -384,8 +384,8 @@ MonoBehaviour:
         sentence: "But I don\u2019t drink anymore."
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Elios_Idle
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Bragging
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -396,8 +396,8 @@ MonoBehaviour:
         sentence: "You shut up! Y\u2019all know nothing! You are so weak\u2026 "
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 1784327008}
-          AnimationStateName: Dementum_ Telling
+          animator: {fileID: 0}
+          AnimationStateName: Elios_Emo_Accused
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -408,8 +408,8 @@ MonoBehaviour:
         sentence: "How do you know?\r"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Serious
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Rude
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -434,7 +434,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Stop_It
+          AnimationStateName: Elios_Emo_Accused
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -459,7 +459,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Stop_It_Stop_It
+          AnimationStateName: Elios_Emo_ Stop_It
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -472,8 +472,8 @@ MonoBehaviour:
 '
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Ego_ Calmdown
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Tick
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -486,7 +486,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          AnimationStateName: Elios_Emo_ Stop_It_Stop_It
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -500,7 +500,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          AnimationStateName: Ego_ Calmdown
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -512,8 +512,8 @@ MonoBehaviour:
           play the game with him. Trust me, it\u2019s gonna be fun.\n"
       - dialogAction: {fileID: 0}
         animation:
-          animator: {fileID: 0}
-          AnimationStateName: Elios_Emo_ Annoyed
+          animator: {fileID: 1784327008}
+          AnimationStateName: Dementum_ Rude
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
@@ -871,7 +871,7 @@ MonoBehaviour:
         cameraTarget: {fileID: 1657253038}
         name: Dementum
         sentence: ...
-      - dialogAction: {fileID: 0}
+      - dialogAction: {fileID: 1650828342}
         animation:
           animator: {fileID: 1784327008}
           AnimationStateName: Dementum_ Cheers
@@ -1035,7 +1035,7 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: "Alright. We play. \r\n"
-      - dialogAction: {fileID: 0}
+      - dialogAction: {fileID: 1784327010}
         animation:
           animator: {fileID: 1784327008}
           AnimationStateName: Dementum_ Getting_Drinks
@@ -1145,7 +1145,7 @@ MonoBehaviour:
         cameraTarget: {fileID: 0}
         name: Elios
         sentence: ...
-      - dialogAction: {fileID: 0}
+      - dialogAction: {fileID: 1650828342}
         animation:
           animator: {fileID: 1784327008}
           AnimationStateName: Dementum_ Cheers
@@ -1429,7 +1429,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 1784327008}
-          AnimationStateName: Dementum_ Endpart1
+          AnimationStateName: Dementum_ Endpart2
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:

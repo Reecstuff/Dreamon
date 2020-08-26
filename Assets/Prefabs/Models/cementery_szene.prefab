@@ -428,7 +428,7 @@ MonoBehaviour:
           clip: {fileID: 0}
         cameraTarget: {fileID: 3048112186972145670}
         name: 
-        sentence: 
+        sentence: Erika Dejnes - DIed of Overworking - Herself to Death.
       decisions: []
       nextDecisions: 
   currentDialogue: 0
@@ -1753,7 +1753,8 @@ MonoBehaviour:
           clip: {fileID: 0}
         cameraTarget: {fileID: 8360650906720444588}
         name: 
-        sentence: 
+        sentence: Bernhard Arnold - Died of Karma Because - He Threw a Stone against
+          Glass - and it Flew back to his Head.
       decisions: []
       nextDecisions: 
   currentDialogue: 0
@@ -1907,7 +1908,7 @@ Light:
   m_CookieSize: 10
   m_Shadows:
     m_Type: 1
-    m_Resolution: -1
+    m_Resolution: 2
     m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
@@ -1945,7 +1946,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: -0.03740692, y: 0.078481674, z: -0.038561344, w: 0.0060813427}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -2055,7 +2056,8 @@ MonoBehaviour:
           clip: {fileID: 0}
         cameraTarget: {fileID: 2118627358791931010}
         name: 
-        sentence: 
+        sentence: Laura Wurst - Died of Her Incompetence - of Walking which - Smashed
+          Her Body to Death.
       decisions: []
       nextDecisions: 
   currentDialogue: 0
@@ -2401,7 +2403,7 @@ MonoBehaviour:
           clip: {fileID: 0}
         cameraTarget: {fileID: 661694879506534538}
         name: 
-        sentence: 
+        sentence: Waldemar Markin - Died of excessive Overuse of Cannabinoids.
       decisions: []
       nextDecisions: 
   currentDialogue: 0
@@ -2515,7 +2517,8 @@ MonoBehaviour:
           clip: {fileID: 0}
         cameraTarget: {fileID: 7141422429271672706}
         name: 
-        sentence: 
+        sentence: Lucas Wetzel - Died of His - Desperate Low Self Esteem - through
+          Looking at other Artworks.
       decisions: []
       nextDecisions: 
   currentDialogue: 0
@@ -2569,7 +2572,8 @@ MonoBehaviour:
           clip: {fileID: 0}
         cameraTarget: {fileID: 8285436709463214230}
         name: 
-        sentence: 
+        sentence: Sebastian Fenske - Died of the Wounds Caused by a Gun - He Received
+          in the - Glorious Battle off Fears.
       decisions: []
       nextDecisions: 
   currentDialogue: 0
@@ -2653,7 +2657,8 @@ MonoBehaviour:
           clip: {fileID: 0}
         cameraTarget: {fileID: 2759874360532709405}
         name: 
-        sentence: 
+        sentence: Henrik Hafner - Died of the Wounds - He Reveived in an Honorable
+          Fight against a Bear.
       decisions: []
       nextDecisions: 
   currentDialogue: 0
@@ -2890,7 +2895,7 @@ MonoBehaviour:
           clip: {fileID: 0}
         cameraTarget: {fileID: 394163228629388544}
         name: 
-        sentence: 
+        sentence: Hans-Christian Dolling - His Death Wasn't Scheduled.
       decisions: []
       nextDecisions: 
   currentDialogue: 0
