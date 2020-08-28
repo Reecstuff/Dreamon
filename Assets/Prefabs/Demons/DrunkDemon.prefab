@@ -309,7 +309,7 @@ MonoBehaviour:
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
-          AnimationStateName: Ego_Idle_02
+          AnimationStateName: Ego_ Questioning
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
