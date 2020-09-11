@@ -9420,7 +9420,7 @@ MonoBehaviour:
   currentDialogue: 0
   minigameManager: {fileID: 0}
   camPosition: {fileID: 209573227}
-  source: {fileID: 0}
+  source: {fileID: 6833667415956788286}
 --- !u!82 &6833667415956788286
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9433,7 +9433,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -6547479504731321655, guid: aaf1ef32f3fd50c4d9bb9cea86e36964,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 30bbc862fea52164bbac7837b4779a6b, type: 3}
-  m_PlayOnAwake: 0
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -12512,7 +12512,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5124400522745111626}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.939, y: 0, z: -3.011}
+  m_LocalPosition: {x: 8.56, y: 0, z: 0.99}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7727774985498178751}
@@ -12589,7 +12589,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8054822406851787423
 Transform:
   m_ObjectHideFlags: 0
@@ -18156,7 +18156,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: dbe779a1da4a27749a9443ec1be4debf, type: 3}
         cameraTarget: {fileID: 6678624174127021424}
         name: Ego
-        sentence: I am thirsty! What kind of drinks do they have?
+        sentence: I am thirsty! I wonder what kind of drinks do they have?
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}

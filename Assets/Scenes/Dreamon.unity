@@ -128,12 +128,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 571200853}
   m_PrefabAsset: {fileID: 0}
---- !u!82 &39863956 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 6833667415956788286, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
-    type: 3}
-  m_PrefabInstance: {fileID: 571200853}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &50979535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -569,24 +563,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 39863956, guid: 72b0f8bf5295a3347aa0b84b86b9c910, type: 3}
-      propertyPath: source
-      value: 
-      objectReference: {fileID: 39863956}
     - target: {fileID: 1184107319813808304, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].audio.source
       value: 
       objectReference: {fileID: 1605131746}
-    - target: {fileID: 2743695255234901343, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+    - target: {fileID: 1314596058289575176, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
-      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].sentence
-      value: I am thirsty! I wonder what kind of drinks do they have?
+      propertyPath: m_LocalPosition.x
+      value: 9.455
       objectReference: {fileID: 0}
-    - target: {fileID: 5138805801812047898, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+    - target: {fileID: 1314596058289575176, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
-      propertyPath: m_IsActive
-      value: 1
+      propertyPath: m_LocalPosition.z
+      value: 1.623
       objectReference: {fileID: 0}
     - target: {fileID: 6558981377273023176, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
@@ -648,11 +638,6 @@ PrefabInstance:
       propertyPath: nextObjects.Array.data[0]
       value: 
       objectReference: {fileID: 517322841}
-    - target: {fileID: 6833667415956788286, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
-        type: 3}
-      propertyPath: m_PlayOnAwake
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 7880585864296020187, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: m_Name
@@ -3511,6 +3496,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 219572550171235772, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.402
+      objectReference: {fileID: 0}
+    - target: {fileID: 219572550171235772, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.959
+      objectReference: {fileID: 0}
+    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: objectsToDeactivate.Array.size
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: dialogue.Array.data[0].option.Array.data[1].talks.Array.data[0].animation.animator
@@ -4506,6 +4506,16 @@ PrefabInstance:
       propertyPath: lightSpawn
       value: 
       objectReference: {fileID: 831179860}
+    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: lostPlayerPos
+      value: 
+      objectReference: {fileID: 1784327007}
+    - target: {fileID: 2510484452659403245, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+        type: 3}
+      propertyPath: objectsToDeactivate.Array.data[17]
+      value: 
+      objectReference: {fileID: 1817177363}
     - target: {fileID: 5219269308381401104, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4588,6 +4598,12 @@ PrefabInstance:
       objectReference: {fileID: 2133544471}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9a02ddb6b34c88c42a6fb3167d60249b, type: 3}
+--- !u!4 &1784327007 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1373807525235331037, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1784327006}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1798434590
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4697,6 +4713,12 @@ PrefabInstance:
       objectReference: {fileID: 564862952}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49b1e9fe4328d6943baefa71a6a229eb, type: 3}
+--- !u!1 &1817177363 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3321290329092210746, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+    type: 3}
+  m_PrefabInstance: {fileID: 571200853}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1821549315
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6087,7 +6109,7 @@ PrefabInstance:
     - target: {fileID: 7156026689946373129, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}

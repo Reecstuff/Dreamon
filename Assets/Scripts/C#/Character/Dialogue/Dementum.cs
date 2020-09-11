@@ -31,6 +31,9 @@ public class Dementum : DialogueTrigger
     Transform lostCameraTransform;
 
     [SerializeField]
+    Transform lostPlayerPos;
+
+    [SerializeField]
     AudioClip backgroundMusicClip;
 
     [SerializeField]
@@ -193,8 +196,10 @@ public class Dementum : DialogueTrigger
             dialogueManager.cameraController.CancelResetCameraToPlayer();
             hasInteracted = false;
             currentDialogue = 0;
+            
+            // Set Positions
             camPosition = lostCameraTransform;
-
+            player.transform.position = lostPlayerPos.position;
 
 
             // Start new Dialogue
