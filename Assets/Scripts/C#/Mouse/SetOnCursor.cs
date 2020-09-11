@@ -34,6 +34,7 @@ public class SetOnCursor : MonoBehaviour
     AuraLight auraLight;
     RaycastHit hit;
     Vector3 nextPosition;
+    ParticleSystem.MainModule partMain;
 
     // Start is called before the first frame update
     void Start()
@@ -49,6 +50,7 @@ public class SetOnCursor : MonoBehaviour
         Cursor.visible = false;
         flare = GetComponent<LensFlare>();
         auraLight = cursorLight.gameObject.GetComponent<AuraLight>();
+        partMain = cursorParticleSystem.main;
     }
 
     // Update is called once per frame
@@ -116,6 +118,7 @@ public class SetOnCursor : MonoBehaviour
                 {
                     cursorLight.color = interactColor;
                     flare.color = interactColor;
+                    partMain.startColor = interactColor;
                 }
             }
         }
@@ -125,6 +128,7 @@ public class SetOnCursor : MonoBehaviour
             {
                 cursorLight.color = Color.white;
                 flare.color = Color.white;
+                partMain.startColor = Color.white;
             }
         }
     }
