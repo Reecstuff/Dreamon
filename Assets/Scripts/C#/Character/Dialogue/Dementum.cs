@@ -54,6 +54,7 @@ public class Dementum : DialogueTrigger
     int currentidle = 0;
 
     AudioClip oldBackgroundMusic;
+    bool endCall = false; 
 
     protected override void InitValues()
     {
@@ -68,7 +69,7 @@ public class Dementum : DialogueTrigger
 
     void PlayIdleAnimation()
     {
-        if(!hasInteracted)
+        if(!hasInteracted && !endCall)
         {
             if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 && !animator.IsInTransition(0))
             {
@@ -91,6 +92,7 @@ public class Dementum : DialogueTrigger
 
     public override void TheEnd(bool isLose)
     {
+        endCall = !endCall;
         // Lost the Game:
         if(isLose)
         {
