@@ -1952,6 +1952,32 @@ PrefabInstance:
       propertyPath: doorSource
       value: 
       objectReference: {fileID: 5273266731733337230}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[2].option.Array.data[2].talks.Array.data[14].sentence
+      value: "You are like Ego, right? He wasn\u2019t real neither\u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[2].option.Array.data[2].talks.Array.data[15].sentence
+      value: You are just a dumb little brat. I always hated it to be with you. Where
+        is my alcohol!!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[2].option.Array.data[2].talks.Array.data[19].sentence
+      value: I commited suicide...
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[14].sentence
+      value: "You are like Ego, right? He wasn\u2019t real neither\u2026"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[19].sentence
+      value: I commited suicide...
+      objectReference: {fileID: 0}
     - target: {fileID: 9173834014691732104, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: camTarget
@@ -2025,11 +2051,6 @@ PrefabInstance:
     - target: {fileID: 9173834014691732105, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9173834014691732108, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9173834014691732109, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,

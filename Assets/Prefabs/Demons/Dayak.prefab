@@ -519,7 +519,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9173834014691732109}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 3.3520663, z: 1}
@@ -1573,7 +1573,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 2525df8f397fc604b8ecc601c3f4e5f0, type: 3}
         cameraTarget: {fileID: 0}
         name: Elliot
-        sentence: "You are like Ego, right? He wasn\u2019t real nether\u2026 "
+        sentence: "You are like Ego, right? He wasn\u2019t real neither\u2026 "
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 5961327252251041300}
@@ -1585,7 +1585,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 6bd64e4495f545d4ca90e99e31547747, type: 3}
         cameraTarget: {fileID: 7683334454249657594}
         name: Dementum
-        sentence: You are just a dump little brat. I always hated it to be with you.
+        sentence: You are just a dumb little brat. I always hated it to be with you.
           Where is my alcohol!!!
       - dialogAction: {fileID: 0}
         animation:
@@ -1637,7 +1637,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 6aaa2d83abb0f8a4283984a9b38ac2b3, type: 3}
         cameraTarget: {fileID: 0}
         name: Elliot
-        sentence: I commit suicide...
+        sentence: I commited suicide...
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
@@ -2521,7 +2521,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 05b282e63f63fd8488503092961297ea, type: 3}
         cameraTarget: {fileID: 0}
         name: Elliot
-        sentence: "You are like Ego, right? He wasn\u2019t real nether\u2026"
+        sentence: "You are like Ego, right? He wasn\u2019t real neither\u2026"
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 5961327252251041300}
@@ -2533,7 +2533,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: 715697622ab1054459093c0b5d09aea4, type: 3}
         cameraTarget: {fileID: 7683334454249657594}
         name: Dementum
-        sentence: You are just a dump little brat. I always hated it to be with you.
+        sentence: You are just a dumb little brat. I always hated it to be with you.
           Where is my alcohol!!!
       - dialogAction: {fileID: 0}
         animation:
@@ -2585,7 +2585,7 @@ MonoBehaviour:
           clip: {fileID: 8300000, guid: a354f5ed07a53a644a26dede0329ecbd, type: 3}
         cameraTarget: {fileID: 0}
         name: Elliot
-        sentence: I commit suicide...
+        sentence: I commited suicide...
       - dialogAction: {fileID: 0}
         animation:
           animator: {fileID: 0}
