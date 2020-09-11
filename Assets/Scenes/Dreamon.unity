@@ -1952,32 +1952,6 @@ PrefabInstance:
       propertyPath: doorSource
       value: 
       objectReference: {fileID: 5273266731733337230}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[2].talks.Array.data[14].sentence
-      value: "You are like Ego, right? He wasn\u2019t real neither\u2026 "
-      objectReference: {fileID: 0}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[2].talks.Array.data[15].sentence
-      value: You are just a dumb little brat. I always hated it to be with you. Where
-        is my alcohol!!!
-      objectReference: {fileID: 0}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: dialogue.Array.data[2].option.Array.data[2].talks.Array.data[19].sentence
-      value: I commited suicide...
-      objectReference: {fileID: 0}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[14].sentence
-      value: "You are like Ego, right? He wasn\u2019t real neither\u2026"
-      objectReference: {fileID: 0}
-    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
-        type: 3}
-      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[19].sentence
-      value: I commited suicide...
-      objectReference: {fileID: 0}
     - target: {fileID: 9173834014691732104, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: camTarget
@@ -6130,7 +6104,7 @@ PrefabInstance:
     - target: {fileID: 7156026689946373129, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
