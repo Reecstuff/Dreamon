@@ -4776,6 +4776,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3625145728277787654, guid: 8e7d85c5036bf234586106830204b26d,
+        type: 3}
+      propertyPath: interactColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625145728277787654, guid: 8e7d85c5036bf234586106830204b26d,
+        type: 3}
+      propertyPath: particleInteractColor.a
+      value: 0.16862746
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625145728277787654, guid: 8e7d85c5036bf234586106830204b26d,
+        type: 3}
+      propertyPath: particleInteractColor.r
+      value: 0.4528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625145728277787654, guid: 8e7d85c5036bf234586106830204b26d,
+        type: 3}
+      propertyPath: particleInteractColor.g
+      value: 0.4528302
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625145728277787654, guid: 8e7d85c5036bf234586106830204b26d,
+        type: 3}
+      propertyPath: particleInteractColor.b
+      value: 0.4528302
+      objectReference: {fileID: 0}
     - target: {fileID: 3625145728277787675, guid: 8e7d85c5036bf234586106830204b26d,
         type: 3}
       propertyPath: m_Name
@@ -6104,7 +6129,7 @@ PrefabInstance:
     - target: {fileID: 7156026689946373129, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}

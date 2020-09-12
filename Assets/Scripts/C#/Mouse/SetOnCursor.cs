@@ -31,6 +31,9 @@ public class SetOnCursor : MonoBehaviour
     [SerializeField]
     Color interactColor = Color.blue;
 
+    [SerializeField]
+    Color particleInteractColor = Color.white;
+
     AuraLight auraLight;
     RaycastHit hit;
     Vector3 nextPosition;
@@ -118,7 +121,7 @@ public class SetOnCursor : MonoBehaviour
                 {
                     cursorLight.color = interactColor;
                     flare.color = interactColor;
-                    partMain.startColor = interactColor;
+                    partMain.startColor = particleInteractColor;
                 }
             }
         }
