@@ -7454,5 +7454,10 @@ PrefabInstance:
       propertyPath: timedTalks.Array.data[3].audio.source
       value: 
       objectReference: {fileID: 1378851293}
+    - target: {fileID: 7585603046839681250, guid: 0c90130a9962ef74fabfb9cf435c9158,
+        type: 3}
+      propertyPath: timedTalks.Array.data[3].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 581845f88e1b648439223407ee6560fe, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c90130a9962ef74fabfb9cf435c9158, type: 3}
