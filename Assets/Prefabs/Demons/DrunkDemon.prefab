@@ -1581,7 +1581,7 @@ MonoBehaviour:
       nextDecisions: 
   lostCameraTransform: {fileID: 219572550171235772}
   lostPlayerPos: {fileID: 0}
-  backgroundMusicClip: {fileID: 8300000, guid: 92b98deff534038409a8ace4aba6f49c, type: 3}
+  backgroundMusicClip: {fileID: 8300000, guid: 3fcbb4bdb22ac2a489e2766d46a5e8a0, type: 3}
   blackScreen: {fileID: 0}
   blackScreenStateName: Crossfade_End
   activateObject: {fileID: 0}
