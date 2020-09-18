@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 
@@ -14,7 +15,6 @@ public class TimedTalk : Dialogue.Talk
     /// Is added to readingtime
     /// </summary>
     public float delay = 0;
-    public int resultIndex = 0;
 }
 
 
@@ -30,7 +30,10 @@ public class BetweenText : MonoBehaviour
     TextMeshProUGUI nameField, textField;
 
     [SerializeField]
-    float timeToRead = 5;
+    float timeToReadPerWord = 0.3f;
+
+    [SerializeField]
+    float defaultTime = 1.2f;
 
     List<TimedTalk> currentTalks;
 
@@ -56,10 +59,13 @@ public class BetweenText : MonoBehaviour
     public void SetText(TimedTalk[] talks)
     {
         currentTalks.AddRange(talks);
-        currentCount = currentTalks.Count;
 
-        StopCoroutine(GoThroughDialogues());
-        StartCoroutine(GoThroughDialogues());
+        if(currentCount <= 0)
+        {
+            currentCount = currentTalks.Count;
+            StopCoroutine(GoThroughDialogues());
+            StartCoroutine(GoThroughDialogues());
+        }
     }
 
     public void ClearText()
@@ -87,13 +93,31 @@ public class BetweenText : MonoBehaviour
                 break;
 
             // Delay before Betweentext
-            yield return new WaitForSeconds(2);
+            yield return new WaitForSeconds(0.5f);
+
 
             if (!dialogueManager.CheckIsOpen())
             {
+                //currentdelay = timeToRead + currentTalks[i].delay;
+
+
                 // Play Text
                 if (!string.IsNullOrEmpty(currentTalks[i].sentence))
-                ShowText(currentTalks[i].name, currentTalks[i].sentence);
+                {
+                    // Autocalc delay
+                    currentdelay = Regex.Matches(currentTalks[i].sentence, @"\s").Count * timeToReadPerWord;
+                    
+                    // Add manual delay
+                    currentdelay += currentTalks[i].delay;
+
+                    ShowText(currentTalks[i].name, currentTalks[i].sentence);
+                    StopCoroutine(nameof(CloseDialogue));
+                    StartCoroutine(CloseDialogue(currentTalks[i].sentence, currentdelay > 1f ? currentdelay : defaultTime));
+                }
+                else
+                {
+                    currentdelay = defaultTime;
+                }
 
                 // Play Animation
                 if (!string.IsNullOrEmpty(currentTalks[i].animation.AnimationStateName))
@@ -103,10 +127,13 @@ public class BetweenText : MonoBehaviour
                 if (currentTalks[i].audio.clip)
                     PlayAudio(currentTalks[i].audio.source, currentTalks[i].audio.clip);
 
-                currentdelay = currentTalks[i].delay;
+                
+                
                 currentTalks.RemoveAt(i);
 
-                yield return new WaitForSeconds(timeToRead + currentdelay);
+
+
+                yield return new WaitForSeconds(currentdelay);
                 
                 currentCount = currentTalks.Count;
             }
@@ -138,7 +165,7 @@ public class BetweenText : MonoBehaviour
         if(!string.IsNullOrEmpty(text))
             StartCoroutine(TypeSentence(text));
 
-        StartCoroutine(CloseDialogue(text));
+        //StartCoroutine(CloseDialogue(text));
     }
 
     /// <summary>
@@ -208,11 +235,12 @@ public class BetweenText : MonoBehaviour
     /// <summary>
     /// Clear text after a specific amount of time
     /// </summary>
-    IEnumerator CloseDialogue(string text)
+    IEnumerator CloseDialogue(string text, float readingTime)
     {
-        yield return new WaitForSeconds(timeToRead);
+        yield return new WaitForSeconds(readingTime);
 
-        if(textField.text.Equals(text))
+
+        if (textField.text.Equals(text))
             dialogueManager.dialogueAnimator.SetBool("IsOpen", false);
     }
 }

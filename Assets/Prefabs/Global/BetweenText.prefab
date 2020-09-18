@@ -46,4 +46,5 @@ MonoBehaviour:
   dialogueManager: {fileID: 0}
   nameField: {fileID: 0}
   textField: {fileID: 0}
-  timeToRead: 7
+  timeToReadPerWord: 0.3
+  defaultTime: 1.2
