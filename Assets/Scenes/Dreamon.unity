@@ -578,6 +578,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 1.623
       objectReference: {fileID: 0}
+    - target: {fileID: 5138805801812047898, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6558981377273023176, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5706,6 +5711,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: cementery_szene
       objectReference: {fileID: 0}
+    - target: {fileID: 3917976133034509253, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: timedTalks.Array.data[0].audio.source
+      value: 
+      objectReference: {fileID: 1378851292}
+    - target: {fileID: 3917976133034509253, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: timedTalks.Array.data[1].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
+    - target: {fileID: 3917976133034509253, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: timedTalks.Array.data[2].audio.source
+      value: 
+      objectReference: {fileID: 1378851292}
+    - target: {fileID: 3917976133034509253, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: timedTalks.Array.data[3].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
     - target: {fileID: 6734751284313072031, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: timedTalks.Array.data[0].audio.source
@@ -5741,39 +5766,29 @@ PrefabInstance:
       propertyPath: timedTalks.Array.data[6].audio.source
       value: 
       objectReference: {fileID: 1378851293}
-    - target: {fileID: 6734751284699303501, guid: e553e249068c32e4aa28f62b9e29f012,
+    - target: {fileID: 7419943018014934697, guid: e553e249068c32e4aa28f62b9e29f012,
+        type: 3}
+      propertyPath: timedTalks.Array.data[0].animation.animator
+      value: 
+      objectReference: {fileID: 575323367}
+    - target: {fileID: 7419943018014934697, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: timedTalks.Array.data[0].audio.source
       value: 
       objectReference: {fileID: 1378851292}
-    - target: {fileID: 6734751284699303501, guid: e553e249068c32e4aa28f62b9e29f012,
+    - target: {fileID: 7419943018014934697, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: timedTalks.Array.data[1].audio.source
       value: 
       objectReference: {fileID: 1378851293}
-    - target: {fileID: 6734751284699303501, guid: e553e249068c32e4aa28f62b9e29f012,
+    - target: {fileID: 7419943018014934697, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: timedTalks.Array.data[2].audio.source
       value: 
       objectReference: {fileID: 1378851292}
-    - target: {fileID: 6734751284699303501, guid: e553e249068c32e4aa28f62b9e29f012,
+    - target: {fileID: 7419943018014934697, guid: e553e249068c32e4aa28f62b9e29f012,
         type: 3}
       propertyPath: timedTalks.Array.data[3].audio.source
-      value: 
-      objectReference: {fileID: 1378851293}
-    - target: {fileID: 6734751284699303501, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: timedTalks.Array.data[4].audio.source
-      value: 
-      objectReference: {fileID: 1378851292}
-    - target: {fileID: 6734751284699303501, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: timedTalks.Array.data[5].audio.source
-      value: 
-      objectReference: {fileID: 1378851292}
-    - target: {fileID: 6734751284699303501, guid: e553e249068c32e4aa28f62b9e29f012,
-        type: 3}
-      propertyPath: timedTalks.Array.data[6].audio.source
       value: 
       objectReference: {fileID: 1378851293}
     - target: {fileID: 8683881814863072780, guid: e553e249068c32e4aa28f62b9e29f012,
@@ -6129,7 +6144,7 @@ PrefabInstance:
     - target: {fileID: 7156026689946373129, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
@@ -7454,10 +7469,5 @@ PrefabInstance:
       propertyPath: timedTalks.Array.data[3].audio.source
       value: 
       objectReference: {fileID: 1378851293}
-    - target: {fileID: 7585603046839681250, guid: 0c90130a9962ef74fabfb9cf435c9158,
-        type: 3}
-      propertyPath: timedTalks.Array.data[3].audio.clip
-      value: 
-      objectReference: {fileID: 8300000, guid: 581845f88e1b648439223407ee6560fe, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0c90130a9962ef74fabfb9cf435c9158, type: 3}
