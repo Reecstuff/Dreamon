@@ -31,6 +31,9 @@ public class DoorMechanic : MonoBehaviour
     [SerializeField]
     Transform camPosition;
 
+    [SerializeField]
+    GameObject[] objectsToActivate;
+
     DialogueManager dialogueManager;
     AudioSource source;
     bool closeForever;
@@ -46,6 +49,7 @@ public class DoorMechanic : MonoBehaviour
         {
             source = GetComponent<AudioSource>();
             dialogueManager = FindObjectOfType<DialogueManager>();
+            ActivateObjects(false);
         }
     }
 
@@ -66,6 +70,7 @@ public class DoorMechanic : MonoBehaviour
             if(exitPoint && CheckExitSide(other.transform.position))
             {
                 MoveDoor(false);
+                ActivateObjects(true);
                 closeForever = true;
                 SaveState();
             }
@@ -97,6 +102,21 @@ public class DoorMechanic : MonoBehaviour
                 PlaySound(open);
 
                 SetCutScene(open);
+            }
+        }
+    }
+
+    /// <summary>
+    /// Activate / Deactivate Objects
+    /// </summary>
+    /// <param name="setActive">Should the Objects be active</param>
+    void ActivateObjects(bool setActive)
+    {
+        if(objectsToActivate != null && objectsToActivate.Length > 0)
+        {
+            for (int i = 0; i < objectsToActivate.Length; i++)
+            {
+                objectsToActivate[i].SetActive(setActive);
             }
         }
     }
