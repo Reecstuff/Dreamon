@@ -21,10 +21,12 @@ public class Interactable : OutlineObject
 			interactionTransform = transform;
 	}
 
-	//Allows interaction with integrable objects
+	/// <summary>
+	/// Allows Interaction with interactable Objects
+	/// </summary>
 	public virtual void Interact()
 	{
-		//This method is meant to be overwritten
+		// This method is meant to be overwritten
 	}
 
 	

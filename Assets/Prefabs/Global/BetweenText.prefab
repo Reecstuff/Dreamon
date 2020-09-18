@@ -47,4 +47,4 @@ MonoBehaviour:
   nameField: {fileID: 0}
   textField: {fileID: 0}
   timeToReadPerWord: 0.3
-  defaultTime: 1.2
+  defaultTime: 1.4

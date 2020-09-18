@@ -33,7 +33,7 @@ public class BetweenText : MonoBehaviour
     float timeToReadPerWord = 0.3f;
 
     [SerializeField]
-    float defaultTime = 1.2f;
+    float defaultTime = 1.4f;
 
     List<TimedTalk> currentTalks;
 
@@ -50,6 +50,11 @@ public class BetweenText : MonoBehaviour
         InitValues();
     }
 
+    void InitValues()
+    {
+        oneTextLineSizeY = nameField.GetPreferredValues("0").y;
+        currentTalks = new List<TimedTalk>();
+    }
 
     /// <summary>
     /// Set text to show on UI
@@ -68,6 +73,9 @@ public class BetweenText : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Clear Text after Call ended
+    /// </summary>
     public void ClearText()
     {
         StopCoroutine(GoThroughDialogues());
@@ -76,12 +84,9 @@ public class BetweenText : MonoBehaviour
         dialogueManager.dialogueAnimator.SetBool("IsOpen", false);
     }
 
-    void InitValues()
-    {
-        oneTextLineSizeY = nameField.GetPreferredValues("0").y;
-        currentTalks = new List<TimedTalk>();
-    }
-
+    /// <summary>
+    /// Iterate through all Dialogues and play at the right time
+    /// </summary>
     IEnumerator GoThroughDialogues()
     {
         int i = 0;
@@ -106,7 +111,7 @@ public class BetweenText : MonoBehaviour
                 {
                     // Autocalc delay
                     currentdelay = Regex.Matches(currentTalks[i].sentence, @"\s").Count * timeToReadPerWord;
-                    
+
                     // Add manual delay
                     currentdelay += currentTalks[i].delay;
 
@@ -128,17 +133,19 @@ public class BetweenText : MonoBehaviour
                     PlayAudio(currentTalks[i].audio.source, currentTalks[i].audio.clip);
 
                 
-                
+                // Remove Talk to play next one
                 currentTalks.RemoveAt(i);
 
 
 
                 yield return new WaitForSeconds(currentdelay);
                 
+                // Set new Count
                 currentCount = currentTalks.Count;
             }
             else
             {
+                // Check for Dialog is closed and ready for waiting Talks
                 yield return new WaitForSeconds(1);
             }
         }
