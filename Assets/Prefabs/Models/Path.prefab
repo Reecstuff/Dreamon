@@ -5703,7 +5703,7 @@ PrefabInstance:
         type: 3}
       propertyPath: timedTalks.Array.data[3].audio.clip
       value: 
-      objectReference: {fileID: 8300000, guid: 9344f524d080ace4fae3dc5f53bc5855, type: 3}
+      objectReference: {fileID: 8300000, guid: 581845f88e1b648439223407ee6560fe, type: 3}
     - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
         type: 3}
       propertyPath: timedTalks.Array.data[3].name
@@ -5789,10 +5789,30 @@ PrefabInstance:
       propertyPath: timedTalks.Array.data[6].resultIndex
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
+        type: 3}
+      propertyPath: timedTalks.Array.data[0].delay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
+        type: 3}
+      propertyPath: timedTalks.Array.data[1].delay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
+        type: 3}
+      propertyPath: timedTalks.Array.data[2].delay
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466146782633867826, guid: 075e782944edeb849b60783a3552c5db,
+        type: 3}
+      propertyPath: timedTalks.Array.data[3].delay
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1466146782633867827, guid: 075e782944edeb849b60783a3552c5db,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.72
+      value: -11.59
       objectReference: {fileID: 0}
     - target: {fileID: 1466146782633867827, guid: 075e782944edeb849b60783a3552c5db,
         type: 3}
