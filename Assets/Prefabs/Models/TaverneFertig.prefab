@@ -9398,10 +9398,10 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 5263941446477949815}
-          clip: {fileID: 8300000, guid: 14b43c25e0d3a73448efb11e2fb07fec, type: 3}
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 69657c8175f8c094a88ae78d6f05e0a4, type: 3}
         cameraTarget: {fileID: 252570978505166740}
-        name: Elios
+        name: Ego
         sentence: "What\u2019s going on with this bottle?"
       - dialogAction: {fileID: 0}
         animation:
@@ -9410,11 +9410,47 @@ MonoBehaviour:
           secondAnimator: {fileID: 0}
           SecondAnimationStateName: 
         audio:
-          source: {fileID: 5263941446477949815}
-          clip: {fileID: 8300000, guid: 69657c8175f8c094a88ae78d6f05e0a4, type: 3}
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: d33539975aa12704abad2b9c40484193, type: 3}
+        cameraTarget: {fileID: 252570978505166740}
+        name: Elios
+        sentence: "It\u2019s over\u2026 You can leave this scruffy mess behind."
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 8d6af9e058150954988a34a5a2fab5e0, type: 3}
         cameraTarget: {fileID: 252570978505166740}
         name: Ego
-        sentence: "It\u2019s over\u2026 You can leave this scruffy mess behind, Elios."
+        sentence: But this noise?
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 63405c3e5a3b3654f9156839a9381b31, type: 3}
+        cameraTarget: {fileID: 252570978505166740}
+        name: Elios
+        sentence: We can move on now.
+      - dialogAction: {fileID: 0}
+        animation:
+          animator: {fileID: 0}
+          AnimationStateName: 
+          secondAnimator: {fileID: 0}
+          SecondAnimationStateName: 
+        audio:
+          source: {fileID: 0}
+          clip: {fileID: 8300000, guid: 923cf273a96e6c744ad513532a81688c, type: 3}
+        cameraTarget: {fileID: 252570978505166740}
+        name: Ego
+        sentence: Hm, you are right.
       decisions: []
       nextDecisions: 
   currentDialogue: 0
@@ -9433,10 +9469,10 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: -6547479504731321655, guid: aaf1ef32f3fd50c4d9bb9cea86e36964,
     type: 2}
   m_audioClip: {fileID: 8300000, guid: 30bbc862fea52164bbac7837b4779a6b, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -9478,7 +9514,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -12589,7 +12625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8054822406851787423
 Transform:
   m_ObjectHideFlags: 0
