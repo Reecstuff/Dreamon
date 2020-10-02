@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 1466146782633867827}
   - component: {fileID: 1466146782633867825}
   - component: {fileID: 1466146782633867826}
-  - component: {fileID: 760207393}
   m_Layer: 0
   m_Name: BetweenTrigger
   m_TagString: Untagged
@@ -58,44 +57,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a52c5d160cfa193408c8a98332f29ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timedTalks:
-  - dialogAction: {fileID: 0}
-    animation:
-      animator: {fileID: 0}
-      AnimationStateName: 
-      secondAnimator: {fileID: 0}
-      SecondAnimationStateName: 
-    audio:
-      source: {fileID: 0}
-      clip: {fileID: 8300000, guid: 72060bdda6738274eb15f48f21468696, type: 3}
-    cameraTarget: {fileID: 0}
-    name: Ego
-    sentence: "Nothing left? But\u2026 Where is all the golden Elixir? I need more\u2026 "
-    delay: 0
-  - dialogAction: {fileID: 0}
-    animation:
-      animator: {fileID: 0}
-      AnimationStateName: 
-      secondAnimator: {fileID: 0}
-      SecondAnimationStateName: 
-    audio:
-      source: {fileID: 0}
-      clip: {fileID: 8300000, guid: 93855bbb7232218409513a51fea8fa1d, type: 3}
-    cameraTarget: {fileID: 0}
-    name: Elios
-    sentence: "Maybe it\u2019s better like this\u2026"
-    delay: 0
---- !u!114 &760207393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1466146782633867836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc66bdfa0d129cc44905f1619eb0db3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToAppear: {fileID: 1466146782633867836}
-  visible: 0
+  timedTalks: []

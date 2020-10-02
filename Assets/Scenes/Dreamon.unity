@@ -590,6 +590,11 @@ PrefabInstance:
       objectReference: {fileID: 1605131746}
     - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
+      propertyPath: timedTalks.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
       propertyPath: timedTalks.Array.data[0].audio.source
       value: 
       objectReference: {fileID: 1378851292}
@@ -598,6 +603,118 @@ PrefabInstance:
       propertyPath: timedTalks.Array.data[1].audio.source
       value: 
       objectReference: {fileID: 1378851293}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[0].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: abdf82803ae1f7347bb32aa59b4a53fc, type: 3}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[0].name
+      value: Ego
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[0].sentence
+      value: "Nothing left? But\u2026 Where is all the golden Elixir? I need more\u2026
+        \r"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[1].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: fdf16b20f6b14c9429db0525d285e420, type: 3}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[1].name
+      value: Elios
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[1].sentence
+      value: "Maybe it\u2019s better like this\u2026 \r\n"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[2].audio.source
+      value: 
+      objectReference: {fileID: 1378851292}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[2].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4233c2c1af0e3974db6e1e702a118a6c, type: 3}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[2].name
+      value: Ego
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[2].sentence
+      value: "I don\u2019t have legs! You are always the only one who can decide
+        the direction! So unfair!!!!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[3].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[3].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 5f82e4c00225e974ea4823008af81afb, type: 3}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[3].name
+      value: Elios
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[3].sentence
+      value: '[sighs] Where do you want to go? '
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[4].audio.source
+      value: 
+      objectReference: {fileID: 1378851292}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[4].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 25b520c26ba3ae44d981f2fa648dadb4, type: 3}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[4].name
+      value: Ego
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[4].sentence
+      value: Hm, I forgot something in the tavern. Hihi
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[5].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[5].audio.clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9fe6c9db52d54e443a1edea255852bdf, type: 3}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[5].name
+      value: Elios
+      objectReference: {fileID: 0}
+    - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: timedTalks.Array.data[5].sentence
+      value: "Whatever\u2026 "
+      objectReference: {fileID: 0}
     - target: {fileID: 6558981377273023176, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2066,18 +2183,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7c4268f7c154c645be5dcf1130bf241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &760207393 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 571200875, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+--- !u!1 &760207392 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1466146782646712182, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
     type: 3}
   m_PrefabInstance: {fileID: 571200853}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!114 &760207393
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 760207392}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc66bdfa0d129cc44905f1619eb0db3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  objectToAppear: {fileID: 760207392}
+  visible: 0
 --- !u!114 &831179860 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8047170885738875437, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
