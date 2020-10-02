@@ -307,22 +307,38 @@ public class DialogueManager : MonoBehaviour
     /// </summary>
     public void DisplayNextSentence()
     {
-        ActivateEndButtons();
-        // Set Charactername
-        SetLine(names.Dequeue());
+        DisableButtons();
+        //ActivateEndButtons();
+
         // Camera
         SetLine(positions.Dequeue());
-        // Audio
-        SetLine(audios.Dequeue());
+
         // Animation
         SetLine(animations.Dequeue());
+
+        StopCoroutine(WaitForCam());
+        StartCoroutine(WaitForCam());
+        
+    }
+
+    IEnumerator WaitForCam()
+    {
+        yield return new WaitWhile(() => cameraController.onLookAtLerp);
+
+
+        // Set Charactername
+        SetLine(names.Dequeue());
+        // Audio
+        SetLine(audios.Dequeue());
         // Action
         SetLine(actions.Dequeue());
 
         // Stop Typing
-        StopAllCoroutines();
+        StopCoroutine(nameof(TypeSentence));
         // Start typing
         StartCoroutine(TypeSentence(sentences.Dequeue()));
+
+        ActivateEndButtons();
     }
 
     #region SetLine() Methods
@@ -386,16 +402,21 @@ public class DialogueManager : MonoBehaviour
 
     private void ActivateEndButtons()
     {
-        if (end == true && sentences.Count == 1)
+        if (end == true && sentences.Count <= 1)
         {
             continueButton.SetActive(false);
             decisions.SetActive(false);
             endButton.SetActive(true);
         }
-        else if (end == false && sentences.Count == 1)
+        else if (end == false && sentences.Count <= 1)
         {
             continueButton.SetActive(false);
             decisions.SetActive(true);
+        }
+        else
+        {
+            continueButton.SetActive(true);
+            decisions.SetActive(false);
         }
     }
 
@@ -415,7 +436,7 @@ public class DialogueManager : MonoBehaviour
         for (int i = 0; i < sentence.ToCharArray().Length; i++)
         {
 
-            if (!CheckIsOpen())
+            if (!CheckIsOpen() && !isTyping)
                 break;
 
             dialogueText.text += sentence.ToCharArray()[i];
@@ -460,6 +481,9 @@ public class DialogueManager : MonoBehaviour
 
         //Reset the Buttons
         DisableButtons();
+
+        SetLine("");
+        StartCoroutine(TypeSentence(""));
 
         //Starts Minigame
         if (selectMinigame)

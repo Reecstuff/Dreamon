@@ -34,7 +34,7 @@ public class CameraController : MonoBehaviour
 
     bool fixedCamera = false;
     bool onOffsetReset = false;
-    bool onLookAtLerp = false;
+    public bool onLookAtLerp = false;
 
     public float drivingTime = 2;
 

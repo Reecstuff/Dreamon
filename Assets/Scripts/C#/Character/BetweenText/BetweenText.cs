@@ -115,6 +115,7 @@ public class BetweenText : MonoBehaviour
                     // Add manual delay
                     currentdelay += currentTalks[i].delay;
 
+                    ShowDialogAction(currentTalks[i].dialogAction);
                     ShowText(currentTalks[i].name, currentTalks[i].sentence);
                     StopCoroutine(nameof(CloseDialogue));
                     StartCoroutine(CloseDialogue(currentTalks[i].sentence, currentdelay > 1f ? currentdelay : defaultTime));
@@ -151,6 +152,12 @@ public class BetweenText : MonoBehaviour
         }
 
         currentTalks.Clear();
+    }
+
+    void ShowDialogAction(DialogAction action)
+    {
+        if (action)
+            action.DoAction();
     }
 
     /// <summary>
