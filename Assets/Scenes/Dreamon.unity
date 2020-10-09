@@ -668,8 +668,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: TaverneFertig
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 760207393, guid: 72b0f8bf5295a3347aa0b84b86b9c910, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 72b0f8bf5295a3347aa0b84b86b9c910, type: 3}
 --- !u!1 &571200854 stripped
 GameObject:
@@ -5006,26 +5005,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1989730458 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7585603045298156265, guid: 0c90130a9962ef74fabfb9cf435c9158,
-    type: 3}
-  m_PrefabInstance: {fileID: 9015561575518496180}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1989730460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1989730458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc66bdfa0d129cc44905f1619eb0db3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objectToAppear: {fileID: 760207392}
-  visible: 0
 --- !u!4 &1995144031 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5738023402585142804, guid: 28f39d92bb08188449602cd35f923bda,
@@ -6170,7 +6149,7 @@ PrefabInstance:
     - target: {fileID: 7156026689946373129, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
@@ -7415,6 +7394,10 @@ PrefabInstance:
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[5].audio.source
       value: 
       objectReference: {fileID: 1378851293}
+    - target: {fileID: 1989730460, guid: 0c90130a9962ef74fabfb9cf435c9158, type: 3}
+      propertyPath: objectToAppear
+      value: 
+      objectReference: {fileID: 760207392}
     - target: {fileID: 3431548969089483996, guid: 0c90130a9962ef74fabfb9cf435c9158,
         type: 3}
       propertyPath: m_Name
@@ -7477,11 +7460,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7585603045298156263, guid: 0c90130a9962ef74fabfb9cf435c9158,
         type: 3}
-      propertyPath: timedTalks.Array.data[0].dialogAction
-      value: 
-      objectReference: {fileID: 1989730460}
-    - target: {fileID: 7585603045298156263, guid: 0c90130a9962ef74fabfb9cf435c9158,
-        type: 3}
       propertyPath: timedTalks.Array.data[0].audio.source
       value: 
       objectReference: {fileID: 1378851292}
@@ -7510,11 +7488,6 @@ PrefabInstance:
       propertyPath: timedTalks.Array.data[5].audio.source
       value: 
       objectReference: {fileID: 1378851293}
-    - target: {fileID: 7585603045298156263, guid: 0c90130a9962ef74fabfb9cf435c9158,
-        type: 3}
-      propertyPath: timedTalks.Array.data[5].dialogAction
-      value: 
-      objectReference: {fileID: 0}
     - target: {fileID: 7585603046839681250, guid: 0c90130a9962ef74fabfb9cf435c9158,
         type: 3}
       propertyPath: timedTalks.Array.data[0].audio.source
@@ -7533,6 +7506,26 @@ PrefabInstance:
     - target: {fileID: 7585603046839681250, guid: 0c90130a9962ef74fabfb9cf435c9158,
         type: 3}
       propertyPath: timedTalks.Array.data[3].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
+    - target: {fileID: 9015561575518496182, guid: 0c90130a9962ef74fabfb9cf435c9158,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].audio.source
+      value: 
+      objectReference: {fileID: 1378851292}
+    - target: {fileID: 9015561575518496182, guid: 0c90130a9962ef74fabfb9cf435c9158,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[1].audio.source
+      value: 
+      objectReference: {fileID: 1378851293}
+    - target: {fileID: 9015561575518496182, guid: 0c90130a9962ef74fabfb9cf435c9158,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[2].audio.source
+      value: 
+      objectReference: {fileID: 1378851292}
+    - target: {fileID: 9015561575518496182, guid: 0c90130a9962ef74fabfb9cf435c9158,
+        type: 3}
+      propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[3].audio.source
       value: 
       objectReference: {fileID: 1378851293}
     m_RemovedComponents: []
