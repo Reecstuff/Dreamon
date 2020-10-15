@@ -41,6 +41,7 @@ public class Belphe : DialogueTrigger
 
         Invoke(nameof(SetInactive), deathAnimationTime + 0.5f);
 
+        player.motor.ResumeAgent();
     }
 
     public override void SetEndState(bool isLose)

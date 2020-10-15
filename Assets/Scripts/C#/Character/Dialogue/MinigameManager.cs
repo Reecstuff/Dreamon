@@ -62,8 +62,7 @@ public class MinigameManager : MonoBehaviour
 	}
 
 	public void StartNextDialog(bool isWin)
-	{ 
-
+	{
 		if (isWin == true)
 		{
 			for (int i = 0; i < nextWinDialog.Length; i++)

@@ -22,24 +22,40 @@ public class HOManager : MiniGame
         base.EndMiniGame();
 	}
 
-	protected override IEnumerator MiniGameUpdate()
-    {
-		do
+	private void Update()
+	{
+		searchTime -= Time.deltaTime;
+
+		if (searchTime < 0)
 		{
-			searchTime -= Time.deltaTime;
+			assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
+			EndMiniGame();
+		}
+		else if (hiddenObjects.Length == foundObjects)
+		{
+			assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
+			EndMiniGame();
+		}
+	}
 
-			if (searchTime < 0)
-			{
-				assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
-				EndMiniGame();
-			}
-			else if (hiddenObjects.Length == foundObjects)
-			{
-				assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
-				EndMiniGame();
-			}
+	//protected override IEnumerator MiniGameUpdate()
+ //   {
+	//	do
+	//	{
+	//		searchTime -= Time.deltaTime;
 
-			return base.MiniGameUpdate();
-		} while (gameObject.activeInHierarchy);
-    }
+	//		if (searchTime < 0)
+	//		{
+	//			assignedTarget.GetComponent<MinigameManager>().StartNextDialog(false);
+	//			EndMiniGame();
+	//		}
+	//		else if (hiddenObjects.Length == foundObjects)
+	//		{
+	//			assignedTarget.GetComponent<MinigameManager>().StartNextDialog(true);
+	//			EndMiniGame();
+	//		}
+	//	} while (gameObject.activeInHierarchy);
+
+	//	return base.MiniGameUpdate();
+	//}
 }
