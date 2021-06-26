@@ -588,6 +588,11 @@ PrefabInstance:
       propertyPath: dialogue.Array.data[0].option.Array.data[0].talks.Array.data[0].audio.source
       value: 
       objectReference: {fileID: 1605131746}
+    - target: {fileID: 1466146782646712182, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1466146782646712184, guid: 72b0f8bf5295a3347aa0b84b86b9c910,
         type: 3}
       propertyPath: timedTalks.Array.data[0].audio.source
@@ -1456,7 +1461,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogue.Array.data[2].option.Array.data[2].talks.Array.data[17].cameraTarget
       value: 
-      objectReference: {fileID: 1378851288}
+      objectReference: {fileID: 1411189595}
     - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: dialogue.Array.data[2].option.Array.data[2].talks.Array.data[19].animation.animator
@@ -1977,6 +1982,46 @@ PrefabInstance:
       propertyPath: doorSource
       value: 
       objectReference: {fileID: 5273266731733337230}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[0].cameraTarget
+      value: 
+      objectReference: {fileID: 1621527912}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[2].cameraTarget
+      value: 
+      objectReference: {fileID: 1621527912}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[6].cameraTarget
+      value: 
+      objectReference: {fileID: 1621527912}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[11].cameraTarget
+      value: 
+      objectReference: {fileID: 1621527912}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[13].cameraTarget
+      value: 
+      objectReference: {fileID: 1621527912}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[16].cameraTarget
+      value: 
+      objectReference: {fileID: 1621527912}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[18].cameraTarget
+      value: 
+      objectReference: {fileID: 1621527912}
+    - target: {fileID: 5724604354764669987, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+        type: 3}
+      propertyPath: dialogue.Array.data[4].option.Array.data[1].talks.Array.data[20].cameraTarget
+      value: 
+      objectReference: {fileID: 1621527912}
     - target: {fileID: 9173834014691732104, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
         type: 3}
       propertyPath: camTarget
@@ -3123,6 +3168,12 @@ AudioSource:
   m_CorrespondingSourceObject: {fileID: 1080324107628060643, guid: 9a02ddb6b34c88c42a6fb3167d60249b,
     type: 3}
   m_PrefabInstance: {fileID: 1784327006}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1621527912 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9199909850651759779, guid: 7f3b18c26d4ccc0488eeea8c432fbcf6,
+    type: 3}
+  m_PrefabInstance: {fileID: 715808759}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1629000418 stripped
 MonoBehaviour:
@@ -6190,7 +6241,7 @@ PrefabInstance:
     - target: {fileID: 7156026689946373129, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7156026689946373135, guid: 1ecaff3d0076bb6428f674170f69227b,
         type: 3}

@@ -333,8 +333,11 @@ public class DialogueManager : MonoBehaviour
         // Action
         SetLine(actions.Dequeue());
 
+        isTyping = false;
         // Stop Typing
-        StopCoroutine(nameof(TypeSentence));
+        //StopCoroutine(nameof(TypeSentence));
+        StopAllCoroutines();
+
         // Start typing
         StartCoroutine(TypeSentence(sentences.Dequeue()));
 
@@ -437,8 +440,9 @@ public class DialogueManager : MonoBehaviour
         {
 
             if (!CheckIsOpen() && !isTyping)
-                break;
-
+            {
+                yield break;
+            }
             dialogueText.text += sentence.ToCharArray()[i];
 
             // Check for new lines
